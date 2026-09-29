@@ -1,0 +1,207 @@
+# Pages CMS — Elite Platok boshqaruv paneli (https://app.pagescms.org)
+media:
+  input: images
+  output: images
+
+content:
+  - name: sozlamalar
+    label: "⚙️ Umumiy sozlamalar va kontaktlar"
+    type: file
+    path: content/sozlamalar.json
+    format: json
+    fields:
+      - { name: logo, label: "Logotip matni", type: string }
+      - { name: top_bar, label: "Eng tepadagi qora chiziq matni", type: string }
+      - { name: phone, label: "Telefon raqami", type: string }
+      - { name: telegram, label: "Telegram havolasi (https://t.me/...)", type: string }
+      - { name: instagram, label: "Instagram havolasi", type: string }
+      - { name: whatsapp, label: "WhatsApp havolasi (https://wa.me/998...)", type: string }
+      - { name: order_button, label: "Yuqoridagi «Buyurtma» tugmasi", type: string }
+      - { name: order_button_mobile, label: "Telefonda pastdagi tugma matni", type: string }
+      - { name: card_order_label, label: "Mahsulot rasmi ustidagi tugma", type: string }
+      - { name: menu_new, label: "Menyu: Yangi", type: string }
+      - { name: menu_fabrics, label: "Menyu: Matolar", type: string }
+      - { name: menu_offer, label: "Menyu: Aksiya", type: string }
+      - { name: menu_accessories, label: "Menyu: Aksessuarlar", type: string }
+      - { name: menu_store, label: "Menyu: Do‘kon", type: string }
+      - { name: footer_tagline, label: "Pastki qism shiori", type: string }
+      - { name: footer_copy, label: "Pastki qism © yozuvi", type: string }
+      - { name: seo_title, label: "Google'dagi sarlavha", type: string }
+      - { name: seo_description, label: "Google'dagi tavsif", type: text }
+
+  - name: bosh-ekran
+    label: "🏠 Bosh ekran"
+    type: file
+    path: content/bosh-ekran.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv (sarlavha ustida)", type: string }
+      - { name: title, label: "Asosiy sarlavha", type: text }
+      - { name: subtitle, label: "Sarlavha ostidagi matn", type: string }
+      - { name: button, label: "Tugma matni", type: string }
+      - { name: image_left, label: "Chap rasm", type: image }
+      - { name: image_center, label: "Markaziy rasm (telefonda faqat shu ko‘rinadi)", type: image }
+      - { name: image_right, label: "O‘ng rasm", type: image }
+
+  - name: yangi
+    label: "🆕 Yangi kolleksiya"
+    type: file
+    path: content/yangi.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - { name: text, label: "Tavsif", type: text }
+      - { name: link_label, label: "Havola matni (Instagramga olib boradi)", type: string }
+      - name: products
+        label: "Mahsulotlar"
+        type: object
+        list: true
+        fields:
+          - { name: image, label: "Rasm", type: image }
+          - { name: name, label: "Nomi", type: string }
+          - { name: size, label: "O‘lchami / kelib chiqishi", type: string }
+          - { name: description, label: "Qisqa tavsif", type: text }
+          - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
+          - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
+          - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
+
+  - name: top
+    label: "⭐ Eng ko‘p sotilayotganlar"
+    type: file
+    path: content/top.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - { name: text, label: "Tavsif", type: text }
+      - { name: link_label, label: "Havola matni (Instagramga olib boradi)", type: string }
+      - name: products
+        label: "Mahsulotlar"
+        type: object
+        list: true
+        fields:
+          - { name: image, label: "Rasm", type: image }
+          - { name: name, label: "Nomi", type: string }
+          - { name: size, label: "O‘lchami / kelib chiqishi", type: string }
+          - { name: description, label: "Qisqa tavsif", type: text }
+          - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
+          - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
+          - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
+
+  - name: matolar
+    label: "🧵 Matolar"
+    type: file
+    path: content/matolar.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - { name: text, label: "Tavsif", type: text }
+      - { name: link_label, label: "Har bir mato ostidagi havola matni", type: string }
+      - name: items
+        label: "Matolar ro‘yxati"
+        type: object
+        list: true
+        fields:
+          - { name: name, label: "Mato nomi", type: string }
+          - { name: description, label: "Tavsifi", type: text }
+
+  - name: ranglar
+    label: "🎨 Ranglar"
+    type: file
+    path: content/ranglar.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - name: items
+        label: "Ranglar"
+        type: object
+        list: true
+        fields:
+          - { name: name, label: "Rang nomi", type: string }
+          - { name: color, label: "Rang kodi (masalan #d9c7b3)", type: string }
+
+  - name: afzalliklar
+    label: "✨ Ro‘mollar afzalliklari"
+    type: file
+    path: content/afzalliklar.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - { name: text, label: "Tavsif", type: text }
+      - { name: image, label: "Rasm", type: image }
+      - name: items
+        label: "Afzalliklar"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "Nomi", type: string }
+          - { name: text, label: "Matni", type: text }
+
+  - name: aksiya
+    label: "🏷️ Aksiya"
+    type: file
+    path: content/aksiya.json
+    format: json
+    fields:
+      - { name: show, label: "Aksiya bo‘limini ko‘rsatish", type: boolean }
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - { name: subtitle, label: "Ikkinchi qator", type: string }
+      - { name: text, label: "Matn", type: text }
+      - { name: button, label: "Tugma matni", type: string }
+      - { name: image, label: "Orqa fon rasmi", type: image }
+
+  - name: aksessuarlar
+    label: "📌 Aksessuarlar"
+    type: file
+    path: content/aksessuarlar.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - { name: text, label: "Tavsif", type: text }
+      - { name: button, label: "Tugma matni", type: string }
+      - { name: image, label: "Rasm", type: image }
+      - name: items
+        label: "Aksessuarlar"
+        type: object
+        list: true
+        fields:
+          - { name: name, label: "Nomi", type: string }
+          - { name: note, label: "Izoh / narx", type: string }
+
+  - name: nega-biz
+    label: "💬 Nega Elite Platok?"
+    type: file
+    path: content/nega-biz.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - name: items
+        label: "Punktlar"
+        type: object
+        list: true
+        fields:
+          - { name: number, label: "Raqam (masalan 100+)", type: string }
+          - { name: title, label: "Nomi", type: string }
+          - { name: text, label: "Matni", type: text }
+
+  - name: dokon
+    label: "📍 Do‘kon manzili"
+    type: file
+    path: content/dokon.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - { name: image, label: "Rasm", type: image }
+      - { name: address, label: "Manzil", type: string }
+      - { name: landmark, label: "Mo‘ljal", type: string }
+      - { name: map_link, label: "Xarita havolasi (Google yoki Yandex)", type: string }
+      - { name: map_button, label: "Xarita tugmasi matni", type: string }
+      - { name: call_button, label: "Qo‘ng‘iroq tugmasi matni", type: string }

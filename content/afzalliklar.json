@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Ro‘mollarimiz afzalliklari",
+  "title": "Kiyganda farqini sezasiz",
+  "text": "Har bir ro‘molni mato, rang va sifatiga qarab o‘zimiz tanlaymiz.",
+  "image": "images/turkiya.jpg",
+  "items": [
+    {"title": "Quloqda shitirlamaydi", "text": "Mayin matolar harakatlanganda shovqin qilmaydi — kun bo‘yi qulay."},
+    {"title": "Yuzga chiroyli tushadi", "text": "Peshona qismi dumaloq shaklda turadi va yuz shaklini ochib beradi."},
+    {"title": "Sirpanmaydi", "text": "Trikotaj va tvil matolar boshda mahkam turadi — qayta to‘g‘rilash shart emas."},
+    {"title": "Havo o‘tkazadi", "text": "Yengil matolar teri nafas olishiga imkon beradi, issiq kunlarda ham qulay."},
+    {"title": "Oson parvarish", "text": "Ko‘p matolarimiz g‘ijimlanmaydi — ertalab vaqtingizni tejaydi."},
+    {"title": "Har faslga", "text": "Yozga shifon va batist, qishga sherst va kashemir — yil bo‘yi tanlov."}
+  ]
+}

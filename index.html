@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elite Platok — nafis ro‘mollar do‘koni, Toshkent</title>
+<meta name="description" content="Elite Platok — obrazingizni yanada chiroyli ko‘rsatadigan ro‘mollar. 100+ turdagi ro‘mol, sifatli matolar, Toshkent bo‘ylab yetkazib berish. Tashkent City Boulvard, Furqat ko‘chasi 2A.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f3ee; --bg-2:#efe8df; --ink:#2b2622; --muted:#857a70; --line:#ddd3c7; --accent:#8c6a4f;
+    --serif:"Cormorant Garamond", Georgia, serif; --sans:"Inter", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:.01em}
+  h2{font-size:clamp(30px,4vw,46px);line-height:1.12;margin:12px 0 14px}
+  .lead{color:var(--muted);max-width:540px}
+  .btn{display:inline-block;padding:15px 34px;border:1px solid var(--ink);font-size:12px;letter-spacing:.2em;text-transform:uppercase;transition:.3s;text-align:center}
+  .btn:hover{background:var(--ink);color:var(--bg)}
+  .btn.solid{background:var(--ink);color:var(--bg)}
+  .btn.solid:hover{background:transparent;color:var(--ink)}
+  .link{font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:4px;white-space:nowrap}
+  section{padding:110px 0}
+  .alt{background:var(--bg-2)}
+  .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+  .center{justify-content:center;text-align:center}.center .lead{margin:0 auto}
+
+  /* top bar + header */
+  .bar{background:var(--ink);color:var(--bg);text-align:center;font-size:10px;letter-spacing:.25em;text-transform:uppercase;padding:9px 16px}
+  header{position:sticky;top:0;z-index:20;background:rgba(247,243,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:72px}
+  .logo{font-family:var(--serif);font-size:24px;letter-spacing:.22em;grid-column:2;text-align:center;white-space:nowrap}
+  .menu{grid-column:1;grid-row:1;display:flex;gap:26px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+  .menu a{color:var(--muted);transition:.2s}.menu a:hover{color:var(--ink)}
+  .nav-cta{grid-column:3;justify-self:end;font-size:11px;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--ink);padding:9px 16px;transition:.3s}
+  .nav-cta:hover{background:var(--ink);color:var(--bg)}
+  .burger{display:none;grid-column:1;grid-row:1;background:none;border:0;width:28px;height:20px;position:relative;cursor:pointer}
+  .burger span{position:absolute;left:0;right:0;height:1px;background:var(--ink)}
+  .burger span:nth-child(1){top:4px}.burger span:nth-child(2){bottom:4px}
+
+  /* hero */
+  .hero{position:relative;height:calc(100vh - 106px);min-height:560px;display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:4px;background:var(--ink)}
+  .hero img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,16,13,.72) 0%,rgba(20,16,13,.15) 45%,rgba(20,16,13,0) 70%);pointer-events:none}
+  .hero-txt{position:absolute;left:0;right:0;bottom:0;z-index:2;text-align:center;color:#fff;padding:0 16px 64px}
+  .hero-txt .eyebrow{color:rgba(255,255,255,.75)}
+  .hero h1{font-size:clamp(36px,5.4vw,74px);line-height:1.04;margin:14px 0 16px}
+  .hero p{font-size:15px;opacity:.88;margin-bottom:30px}
+  .hero .btn{border-color:#fff;color:#fff;margin:4px}
+  .hero .btn:hover,.hero .btn.solid{background:#fff;color:var(--ink)}
+  .hero .btn.solid:hover{background:transparent;color:#fff}
+
+  /* products */
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 24px}
+  .card .ph{aspect-ratio:3/4;margin-bottom:16px;position:relative;overflow:hidden;background:var(--bg-2)}
+  .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease}
+  .card:hover .ph img{transform:scale(1.05)}
+  .card h3{font-size:22px;line-height:1.2}
+  .card .meta{font-size:12px;color:var(--muted);letter-spacing:.06em;margin-top:2px}
+  .card .d{font-size:13px;opacity:.8;margin-top:8px;line-height:1.5}
+  .price{display:flex;gap:10px;align-items:baseline;margin-top:10px;font-weight:400;font-size:15px}
+  .price s{color:var(--muted);font-size:13px;font-weight:300}
+  .badge{position:absolute;top:14px;left:14px;z-index:1;background:var(--bg);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:6px 10px}
+  .badge.dark{background:var(--ink);color:var(--bg)}
+  .order{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(247,243,238,.95);text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:12px;opacity:0;transform:translateY(8px);transition:.35s}
+  .card:hover .order{opacity:1;transform:none}
+
+  /* fabrics */
+  .fab{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .fab a{background:var(--bg);padding:34px 30px;display:flex;flex-direction:column;gap:10px;transition:background .3s}
+  .fab a:hover{background:var(--bg-2)}
+  .fab h3{font-size:26px}
+  .fab p{font-size:14px;color:var(--muted);flex:1}
+  .fab span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:8px}
+  .fab a:hover span{color:var(--accent)}
+
+  /* colors */
+  .colors{display:flex;flex-wrap:wrap;gap:40px 56px;justify-content:center}
+  .color{display:flex;flex-direction:column;align-items:center;gap:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .color i{width:84px;height:84px;border-radius:50%;border:1px solid var(--line);transition:.3s}
+  .color:hover i{transform:translateY(-6px);box-shadow:0 14px 30px rgba(43,38,34,.12)}
+  .color:hover{color:var(--ink)}
+
+  /* benefits */
+  .ben-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:70px;align-items:center}
+  .ben-img{aspect-ratio:3/4;overflow:hidden}
+  .ben-img img{width:100%;height:100%;object-fit:cover}
+  .ben{display:grid;grid-template-columns:1fr 1fr;gap:40px 40px;margin-top:40px}
+  .ben .ic{width:40px;height:40px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;margin-bottom:18px;font-family:var(--serif);font-size:17px}
+  .ben h3{font-size:23px;margin-bottom:6px}
+  .ben p{font-size:14px;color:var(--muted)}
+
+  /* offer */
+  .offer{position:relative;color:#fff;text-align:center;padding:150px 0;overflow:hidden;background:var(--ink)}
+  .offer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+  .offer .wrap{position:relative}
+  .offer .eyebrow{color:rgba(255,255,255,.7)}
+  .offer h2{font-size:clamp(40px,6vw,78px);margin:18px 0}
+  .offer .sub{font-family:var(--serif);font-style:italic;font-size:26px;color:#e4cfb8;margin-bottom:12px}
+  .offer p{color:rgba(255,255,255,.75);max-width:440px;margin:0 auto 44px}
+  .offer .btn{border-color:#fff;color:#fff}
+  .offer .btn:hover{background:#fff;color:var(--ink)}
+
+  /* accessories */
+  .acc{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .acc ul{list-style:none;margin:30px 0 40px;border-top:1px solid var(--line)}
+  .acc li{padding:18px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+  .acc li b{font-family:var(--serif);font-weight:400;font-size:26px}
+  .acc li small{font-size:13px;color:var(--muted);text-align:right}
+  .acc-img{aspect-ratio:4/5;overflow:hidden}
+  .acc-img img{width:100%;height:100%;object-fit:cover}
+
+  /* why */
+  .why{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+  .why div{border-top:1px solid var(--ink);padding-top:26px}
+  .why b{display:block;font-family:var(--serif);font-weight:400;font-size:46px;line-height:1;color:var(--accent);margin-bottom:18px}
+  .why h3{font-size:24px;margin-bottom:10px}
+  .why p{color:var(--muted);font-size:14px}
+
+  /* store */
+  .store{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .store-img{aspect-ratio:4/3;overflow:hidden}
+  .store-img img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .store h3{font-size:clamp(30px,3.6vw,42px);margin:14px 0 18px;line-height:1.15}
+  .store dl{border-top:1px solid var(--line);margin-bottom:36px}
+  .store dl div{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .store dt{color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase;padding-top:3px}
+  .store .btns{display:flex;gap:12px;flex-wrap:wrap}
+
+  /* footer */
+  footer{border-top:1px solid var(--line);padding:80px 0 40px;text-align:center}
+  footer .logo{font-size:32px;display:block}
+  footer .tag{color:var(--muted);font-family:var(--serif);font-style:italic;font-size:21px;margin:12px 0 36px}
+  .social{display:flex;justify-content:center;gap:32px;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+  .social a{border-bottom:1px solid transparent;padding-bottom:3px}.social a:hover{border-color:var(--ink)}
+  .copy{margin-top:60px;font-size:11px;color:var(--muted);letter-spacing:.1em}
+
+  /* floating order button (mobile) */
+  .fab-order{display:none}
+
+  /* reveal */
+  .r{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+  .r.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}}
+
+  @media (max-width:1000px){
+    .menu{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line)}
+    .menu.open{display:flex}
+    .menu a{padding:18px 24px;border-top:1px solid var(--line);font-size:12px}
+    .burger{display:block}
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .why{grid-template-columns:1fr 1fr}
+    .fab{grid-template-columns:1fr 1fr}
+    .ben-wrap,.acc,.store{grid-template-columns:1fr;gap:44px}
+    .ben-img{aspect-ratio:4/3}
+  }
+  @media (max-width:760px){
+    section{padding:76px 0}
+    .hero{grid-template-columns:1fr;height:82vh;min-height:520px}
+    .hero img:not(.main){display:none}
+    .hero-txt{padding-bottom:44px}
+    .nav-cta{display:none}
+    .logo{font-size:20px;letter-spacing:.18em}
+    .colors{gap:28px 30px}
+    .color i{width:60px;height:60px}
+    .offer{padding:100px 0}
+    .fab-order{display:block;position:fixed;left:16px;right:16px;bottom:16px;z-index:30;background:var(--ink);color:var(--bg);text-align:center;padding:15px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+    footer{padding-bottom:100px}
+  }
+  @media (max-width:520px){
+    .wrap{padding:0 16px}
+    .why,.fab,.ben{grid-template-columns:1fr}
+    .grid{gap:26px 12px}
+    .card h3{font-size:18px}
+    .card .d{display:none}
+    .price{font-size:14px}
+    .fab a{padding:26px 20px}
+    .head{margin-bottom:30px}
+    .store dl div{grid-template-columns:1fr;gap:4px}
+    .store .btns .btn{flex:1}
+    .social{gap:20px;flex-wrap:wrap}
+    .acc li b{font-size:22px}
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="padding:40px;text-align:center">Saytni ko‘rish uchun JavaScript yoqilgan bo‘lishi kerak.</p></noscript>
+
+<script>
+const FILES = ['sozlamalar','bosh-ekran','yangi','top','matolar','ranglar','afzalliklar','aksiya','aksessuarlar','nega-biz','dokon'];
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const txt = s => esc(s).replace(/\n/g, '<br>');
+const img = p => esc(String(p || '').replace(/^\/+/, ''));
+const ext = 'target="_blank" rel="noopener"';
+const tel = p => 'tel:' + String(p || '').replace(/[^\d+]/g, '');
+
+function head(d, link, center) {
+  return `<div class="head${center ? ' center' : ''} r"><div>
+    ${d.eyebrow ? `<div class="eyebrow">${txt(d.eyebrow)}</div>` : ''}
+    <h2>${txt(d.title)}</h2>
+    ${d.text ? `<p class="lead">${txt(d.text)}</p>` : ''}
+  </div>${link || ''}</div>`;
+}
+
+function card(p, S) {
+  return `<a class="card r" href="${esc(S.telegram)}" ${ext}>
+    <div class="ph">${p.image ? `<img src="${img(p.image)}" alt="${esc(p.name)}" loading="lazy">` : ''}
+      ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}
+      <span class="order">${txt(S.card_order_label)}</span></div>
+    <h3>${txt(p.name)}</h3>${p.size ? `<div class="meta">${txt(p.size)}</div>` : ''}
+    ${p.description ? `<p class="d">${txt(p.description)}</p>` : ''}
+    ${p.price ? `<div class="price">${txt(p.price)}${p.old_price ? ` <s>${txt(p.old_price)}</s>` : ''}</div>` : ''}
+  </a>`;
+}
+
+function products(id, d, S, alt) {
+  const link = d.link_label ? `<a href="${esc(S.instagram)}" ${ext} class="link">${txt(d.link_label)}</a>` : '';
+  return `<section ${id ? `id="${id}"` : ''} class="${alt ? 'alt' : ''}"><div class="wrap">
+    ${head(d, link)}
+    <div class="grid">${(d.products || []).map(p => card(p, S)).join('')}</div>
+  </div></section>`;
+}
+
+function render(C) {
+  const S = C['sozlamalar'], H = C['bosh-ekran'], F = C['matolar'], R = C['ranglar'], B = C['afzalliklar'],
+        O = C['aksiya'], A = C['aksessuarlar'], W = C['nega-biz'], D = C['dokon'];
+  document.title = S.seo_title || S.logo;
+  document.querySelector('meta[name=description]').setAttribute('content', S.seo_description || '');
+
+  return `
+<div class="bar">${txt(S.top_bar)}</div>
+<header><div class="wrap nav">
+  <nav class="menu" id="menu">
+    <a href="#yangi">${txt(S.menu_new)}</a><a href="#matolar">${txt(S.menu_fabrics)}</a>
+    ${O.show !== false ? `<a href="#aksiya">${txt(S.menu_offer)}</a>` : ''}
+    <a href="#aksessuarlar">${txt(S.menu_accessories)}</a><a href="#dokon">${txt(S.menu_store)}</a>
+  </nav>
+  <button class="burger" aria-label="Menyu" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span></button>
+  <a href="#" class="logo">${txt(S.logo)}</a>
+  <a href="${esc(S.telegram)}" ${ext} class="nav-cta">${txt(S.order_button)}</a>
+</div></header>
+
+<div class="hero">
+  <img src="${img(H.image_left)}" alt="">
+  <img class="main" src="${img(H.image_center)}" alt="">
+  <img src="${img(H.image_right)}" alt="">
+  <div class="hero-txt r">
+    <div class="eyebrow">${txt(H.eyebrow)}</div>
+    <h1>${txt(H.title)}</h1>
+    <p>${txt(H.subtitle)}</p>
+    <a href="#yangi" class="btn solid">${txt(H.button)}</a>
+  </div>
+</div>
+
+${products('yangi', C['yangi'], S)}
+${products('', C['top'], S, true)}
+
+<section id="matolar"><div class="wrap">
+  ${head(F)}
+  <div class="fab r">${(F.items || []).map(m => `<a href="${esc(S.telegram)}" ${ext}><h3>${txt(m.name)}</h3><p>${txt(m.description)}</p><span>${txt(F.link_label)}</span></a>`).join('')}</div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  ${head(R, '', true)}
+  <div class="colors r">${(R.items || []).map(c => `<span class="color"><i style="background:${esc(c.color)}"></i>${txt(c.name)}</span>`).join('')}</div>
+</div></section>
+
+<section><div class="wrap ben-wrap">
+  <div class="ben-img r"><img src="${img(B.image)}" alt="" loading="lazy"></div>
+  <div>${head(B).replace('class="head r"', 'class="r"')}
+    <div class="ben">${(B.items || []).map((b, i) => `<div class="r"><div class="ic">${i + 1}</div><h3>${txt(b.title)}</h3><p>${txt(b.text)}</p></div>`).join('')}</div>
+  </div>
+</div></section>
+
+${O.show !== false ? `<section class="offer" id="aksiya">
+  ${O.image ? `<img src="${img(O.image)}" alt="" loading="lazy">` : ''}
+  <div class="wrap r">
+    <div class="eyebrow">${txt(O.eyebrow)}</div>
+    <h2>${txt(O.title)}</h2>
+    <div class="sub">${txt(O.subtitle)}</div>
+    <p>${txt(O.text)}</p>
+    <a href="${esc(S.telegram)}" ${ext} class="btn">${txt(O.button)}</a>
+  </div>
+</section>` : ''}
+
+<section id="aksessuarlar"><div class="wrap acc">
+  <div class="acc-img r"><img src="${img(A.image)}" alt="" loading="lazy"></div>
+  <div class="r">
+    <div class="eyebrow">${txt(A.eyebrow)}</div>
+    <h2>${txt(A.title)}</h2>
+    <p class="lead">${txt(A.text)}</p>
+    <ul>${(A.items || []).map(a => `<li><b>${txt(a.name)}</b><small>${txt(a.note)}</small></li>`).join('')}</ul>
+    <a href="${esc(S.telegram)}" ${ext} class="btn">${txt(A.button)}</a>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  ${head(W)}
+  <div class="why">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div>
+</div></section>
+
+<section id="dokon"><div class="wrap store">
+  <div class="store-img r"><img src="${img(D.image)}" alt="" loading="lazy"></div>
+  <div class="r">
+    <div class="eyebrow">${txt(D.eyebrow)}</div>
+    <h3>${txt(D.title)}</h3>
+    <dl>
+      <div><dt>Manzil</dt><dd>${txt(D.address)}</dd></div>
+      ${D.landmark ? `<div><dt>Mo‘ljal</dt><dd>${txt(D.landmark)}</dd></div>` : ''}
+      <div><dt>Telefon</dt><dd><a href="${tel(S.phone)}">${txt(S.phone)}</a></dd></div>
+    </dl>
+    <div class="btns">
+      <a href="${esc(D.map_link)}" ${ext} class="btn solid">${txt(D.map_button)}</a>
+      <a href="${tel(S.phone)}" class="btn">${txt(D.call_button)}</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <a href="#" class="logo">${txt(S.logo)}</a>
+  <p class="tag">${txt(S.footer_tagline)}</p>
+  <div class="social">
+    ${S.instagram ? `<a href="${esc(S.instagram)}" ${ext}>Instagram</a>` : ''}
+    ${S.telegram ? `<a href="${esc(S.telegram)}" ${ext}>Telegram</a>` : ''}
+    ${S.whatsapp ? `<a href="${esc(S.whatsapp)}" ${ext}>WhatsApp</a>` : ''}
+  </div>
+  <div class="copy">${txt(S.footer_copy)}</div>
+</div></footer>
+
+<a href="${esc(S.telegram)}" ${ext} class="fab-order">${txt(S.order_button_mobile)}</a>`;
+}
+
+Promise.all(FILES.map(f => fetch(`content/${f}.json`, { cache: 'no-cache' }).then(r => r.json())))
+  .then(list => {
+    const C = Object.fromEntries(FILES.map((f, i) => [f, list[i]]));
+    document.getElementById('app').innerHTML = render(C);
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: .12 });
+    document.querySelectorAll('.r').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 80 + 'ms'; io.observe(el); });
+    document.querySelectorAll('.menu a').forEach(a => a.onclick = () => document.getElementById('menu').classList.remove('open'));
+  })
+  .catch(err => {
+    document.getElementById('app').innerHTML = '<p style="padding:60px 20px;text-align:center">Ma’lumotlarni yuklab bo‘lmadi. Sahifani yangilang.</p>';
+    console.error(err);
+  });
+</script>
+</body>
+</html>

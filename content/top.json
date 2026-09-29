@@ -1,0 +1,16 @@
+{
+  "eyebrow": "Eng ko‘p sotilayotganlar",
+  "title": "Mijozlar tanlovi",
+  "text": "Mijozlarimiz eng ko‘p tanlaydigan ro‘mollar.",
+  "link_label": "Instagramda ko‘rish",
+  "products": [
+    {"name": "Jatiy ipak", "size": "110 × 110 sm", "description": "Klassik paisley naqsh va popuklar — boy, iliq ranglar.", "price": "99 000 so‘m", "old_price": "", "badge": "", "image": "images/jatiy-ipak.jpg"},
+    {"name": "Eron sholk", "size": "110 × 110 sm", "description": "Tabiiy yaltiroq shoyi, nafis naqshlar — maxsus kunlar uchun.", "price": "35 $", "old_price": "", "badge": "", "image": "images/eron-sholk.jpg"},
+    {"name": "Organza", "size": "100 × 100 sm", "description": "Silliq, jilo beruvchi mato — kulrang, sut rang va zumrad.", "price": "99 000 so‘m", "old_price": "", "badge": "", "image": "images/organza.jpg"},
+    {"name": "Shifon", "size": "110 × 110 sm", "description": "Yengil, havodor mato, mayda gulli naqsh va rangli hoshiya.", "price": "70 000 so‘m", "old_price": "", "badge": "", "image": "images/shifon.jpg"},
+    {"name": "Sherst", "size": "150 × 150 sm", "description": "Katta o‘lchamli jun ro‘mol — yelkani ham yopib, iliq saqlaydi.", "price": "170 000 so‘m", "old_price": "", "badge": "", "image": "images/sherst.jpg"},
+    {"name": "Dvaynoy luks", "size": "110 × 110 sm", "description": "Ikki qavatli premium ro‘mol — zich, yaxshi turadi.", "price": "199 000 so‘m", "old_price": "", "badge": "", "image": "images/dvaynoy-luks.jpg"},
+    {"name": "Kashemir sharf", "size": "85 × 175 sm", "description": "Ikki qavatli kashemir, popukli — qish uchun eng iliq tanlov.", "price": "275 000 so‘m", "old_price": "", "badge": "", "image": "images/kashemir-sharf.jpg"},
+    {"name": "Turkiya ro‘moli", "size": "Turkiya", "description": "Quloqda shitirlamaydi, peshona qismi dumaloq — yuzga chiroyli tushadi.", "price": "3 ta — 100 000 so‘m", "old_price": "", "badge": "", "image": "images/turkiya.jpg"}
+  ]
+}

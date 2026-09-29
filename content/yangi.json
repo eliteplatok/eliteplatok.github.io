@@ -1,0 +1,12 @@
+{
+  "eyebrow": "Yangi kolleksiya",
+  "title": "Yangi kelganlar",
+  "text": "Yangi kelgan nafis va zamonaviy ro‘mollar.",
+  "link_label": "Barchasini ko‘rish",
+  "products": [
+    {"name": "Turkiya tvil", "size": "Turkiya", "description": "Mayin, shaklini ushlaydigan tvil — kun bo‘yi tartibli turadi.", "price": "3 ta — 100 000 so‘m", "old_price": "", "badge": "Yangi", "image": "images/turkiya-tvil.jpg"},
+    {"name": "Kashka", "size": "170 sm", "description": "Uzun, yengil va yaltiroq — hajmli, chiroyli bog‘lash uchun.", "price": "4 ta — 100 000 so‘m", "old_price": "", "badge": "Yangi", "image": "images/kashka.jpg"},
+    {"name": "Pion masla", "size": "110 × 110 sm", "description": "Nozik pion gulli naqsh — bahor va bayram obrazlari uchun.", "price": "110 000 so‘m", "old_price": "", "badge": "Yangi", "image": "images/pion-masla.jpg"},
+    {"name": "Dvaynoy sherst", "size": "110 × 110 sm", "description": "Ikki qavatli jun ro‘mol — sovuq kunlarda iliq va chiroyli.", "price": "179 000 so‘m", "old_price": "199 000", "badge": "Chegirma", "image": "images/sherst-dvaynoy.jpg"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "eyebrow": "Nega Elite Platok?",
+  "title": "Sizga qulaylik — bizga mas’uliyat",
+  "items": [
+    {"number": "100+", "title": "Turdagi ro‘mol", "text": "Har qanday did va obraz uchun katta tanlov."},
+    {"number": "01", "title": "Sifatli matolar", "text": "Yoqimli, yengil va qulay matolar."},
+    {"number": "02", "title": "Qulay narxlar", "text": "Chiroyli va sifatli ro‘molni hamyonbop narxda xarid qiling."},
+    {"number": "03", "title": "Yetkazib berish", "text": "Toshkent bo‘ylab. Buyurtmangizni qulay usulda qabul qiling."}
+  ]
+}

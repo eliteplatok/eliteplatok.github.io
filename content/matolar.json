@@ -1,0 +1,17 @@
+{
+  "eyebrow": "Matosiga ko‘ra tanlang",
+  "title": "Har bir mato — o‘z xarakteri",
+  "text": "Qaysi mato sizga mosligini bilmasangiz — bizga yozing, maslahat beramiz.",
+  "link_label": "So‘rash →",
+  "items": [
+    {"name": "Tvil sholki", "description": "Diagonal to‘qimali, shaklini yaxshi ushlaydi. Yumshoq jilo — kundalik va rasmiy obraz uchun."},
+    {"name": "Dubay sholki", "description": "Silliq va oqimli mato, nozik yaltiroqlik bilan. Bayram va mehmondorchilik uchun ideal."},
+    {"name": "Italia sholk", "description": "Zich, og‘ir va boy rangli premium shoyi. Yuzga yoqimli tushadi, uzoq xizmat qiladi."},
+    {"name": "Atlas", "description": "Yaltiroq, nafis mato. To‘y, bayram va maxsus kunlar uchun chiroyli tanlov."},
+    {"name": "Batist", "description": "Juda yupqa va havo o‘tkazuvchan. Issiq yoz kunlarida ham yengil va qulay."},
+    {"name": "Shifon", "description": "Yengil, havodor va biroz shaffof. Qatlamli, hajmdor bog‘lash uchun juda mos."},
+    {"name": "Jatka", "description": "Burma teksturali mato — dazmol talab qilmaydi va har doim tartibli ko‘rinadi."},
+    {"name": "Kaliforniya trikotaj", "description": "Cho‘ziluvchan va sirpanmaydi. Ish, o‘qish va faol kunlar uchun qulay."},
+    {"name": "Turkiya trikotaj", "description": "Yumshoq, zich trikotaj. Ignasiz ham yaxshi turadi, kundalik kiyim uchun eng qulayi."}
+  ]
+}

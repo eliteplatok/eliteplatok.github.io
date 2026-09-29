@@ -1,0 +1,12 @@
+{
+  "eyebrow": "Aksessuarlar",
+  "title": "Obrazni to‘ldiruvchi detallar",
+  "text": "Ro‘mol chiroyli va mahkam turishi uchun kerakli hamma narsa bir joyda.",
+  "button": "Aksessuarlarni ko‘rish",
+  "image": "images/toshli-bonne.jpg",
+  "items": [
+    {"name": "Magnitlar", "note": "ignasiz mahkamlash"},
+    {"name": "Ignalar", "note": "klassik va bezakli"},
+    {"name": "Podxijabniklar", "note": "toshli bonne, kepka bonne, balaklava — 70 000 so‘m"}
+  ]
+}

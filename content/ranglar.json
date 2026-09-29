@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Rangiga ko‘ra tanlang",
+  "title": "Sevimli rangingizni toping",
+  "items": [
+    {"name": "Bej", "color": "#d9c7b3"},
+    {"name": "Qora", "color": "#2b2622"},
+    {"name": "Jigarrang", "color": "#7a5a43"},
+    {"name": "Bordo", "color": "#6b2d35"},
+    {"name": "Pushti", "color": "#e9c3c4"},
+    {"name": "Yashil", "color": "#2f4d3c"},
+    {"name": "Oq", "color": "#fbf9f6"}
+  ]
+}
