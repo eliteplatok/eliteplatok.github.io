@@ -20,7 +20,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Kashka",
@@ -38,7 +39,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Pion masla",
@@ -57,7 +59,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Dvaynoy sherst",
@@ -75,7 +78,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Jatiy ipak",
@@ -94,7 +98,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Eron sholk",
@@ -112,7 +117,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Organza",
@@ -130,7 +136,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Shifon",
@@ -149,7 +156,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Sherst",
@@ -167,7 +175,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Dvaynoy luks",
@@ -185,7 +194,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Kashemir sharf",
@@ -203,7 +213,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     },
     {
       "name": "Turkiya ro‘moli",
@@ -221,7 +232,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": ""
+      "badge": "",
+      "promo_group": ""
     }
   ]
 }

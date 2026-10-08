@@ -106,6 +106,7 @@ content:
           - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
           - { name: price_note, label: "Narx ostidagi aksiya yozuvi (masalan: 3 tasi — 100 000 so‘m)", type: string }
           - { name: promo3, label: "«Istalgan 3 tasi» aksiyasiga kiradi (savatda avtomatik hisoblanadi)", type: boolean }
+          - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
           - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
@@ -136,6 +137,7 @@ content:
           - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
           - { name: price_note, label: "Narx ostidagi aksiya yozuvi (masalan: 3 tasi — 100 000 so‘m)", type: string }
           - { name: promo3, label: "«Istalgan 3 tasi» aksiyasiga kiradi (savatda avtomatik hisoblanadi)", type: boolean }
+          - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
           - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }

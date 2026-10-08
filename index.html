@@ -483,17 +483,22 @@ function cartLines() {
   return cart.map(x => ({ ...x, p: findP(x.slug) })).filter(x => x.p);
 }
 function cartTotals(lines) {
-  let sum = 0, unknown = false, promoQty = 0, promoUnit = 0, saved = 0;
+  // "3 for X" offers are counted per promo group, so different products' offers never mix
+  let sum = 0, unknown = false, saved = 0;
+  const groups = {};
   lines.forEach(x => {
     const v = +x.p.price_number || 0;
     if (!v) { unknown = true; return; }
-    if (x.p.promo3 && +S_.promo3_total) { promoQty += x.qty; promoUnit = promoUnit || v; return; }
+    if (x.p.promo3 && +S_.promo3_total) {
+      const g = groups[x.p.promo_group || x.slug] ||= { qty: 0, unit: v };
+      g.qty += x.qty; return;
+    }
     sum += v * x.qty;
   });
-  if (promoQty) {
-    const full = Math.floor(promoQty / 3) * +S_.promo3_total + (promoQty % 3) * promoUnit;
-    saved = promoQty * promoUnit - full; sum += full;
-  }
+  Object.values(groups).forEach(g => {
+    const full = Math.floor(g.qty / 3) * +S_.promo3_total + (g.qty % 3) * g.unit;
+    saved += g.qty * g.unit - full; sum += full;
+  });
   return { sum, unknown, saved };
 }
 function renderCart(view = 'list') {

@@ -47,7 +47,8 @@
       "old_price": "",
       "price_number": 45000,
       "promo3": true,
-      "badge": "Aksiya"
+      "badge": "Aksiya",
+      "promo_group": "tvil"
     },
     {
       "name": "Jakkard ro‘mollar",
@@ -79,7 +80,41 @@
       "old_price": "120 000",
       "price_number": 99000,
       "promo3": false,
-      "badge": "Aksiya"
+      "badge": "Aksiya",
+      "promo_group": ""
+    },
+    {
+      "name": "Kashka sharflar",
+      "images": [
+        "images/kashka-1.jpg",
+        "images/kashka-2.jpg",
+        "images/kashka-3.jpg",
+        "images/kashka-4.jpg",
+        "images/kashka-5.jpg",
+        "images/kashka-6.jpg",
+        "images/kashka-7.jpg",
+        "images/kashka-8.jpg",
+        "images/kashka-9.jpg",
+        "images/kashka-10.jpg",
+        "images/kashka-11.jpg",
+        "images/kashka-12.jpg",
+        "images/kashka-13.jpg",
+        "images/kashka-14.jpg",
+        "images/kashka-15.jpg"
+      ],
+      "size": "70 × 170 sm",
+      "material": "Kaliforniya trikotaj",
+      "color": "15 xil: jigarrang, terrakota, leopard, binafsha, zaytun, to‘q ko‘k, qora, kulrang, yalpiz, xaki, olcha, bordo, och yashil, ko‘k, to‘q yashil",
+      "description": "Kaliforniya trikotajidan uzun sharf — 15 xil rangda, kundalik obraz uchun eng qulayi.",
+      "details": "Kashka sharflari kaliforniya trikotajidan tikilgan: mato yumshoq, biroz cho‘ziluvchan va boshda sirpanmaydi — ignasiz ham chiroyli turadi. O‘lchami 70 × 170 sm: uzunligi turli usulda o‘rash, yelkaga tashlash yoki hajmli qilib bog‘lash uchun yetarli.\n\nRanglar palitrasi keng — sokin jigarrang, qora va to‘q ko‘kdan yorqin binafsha, ko‘k va yalpiz ranglarigacha, leopard naqshli modeli ham bor. Ba’zi ranglari nozik bezak bilan to‘ldirilgan.\n\nIsh, o‘qish, sayr va safar uchun ideal: g‘ijimlanmaydi, yuvishga chidamli, kun bo‘yi qulay.",
+      "care": "30°C da nozik rejimda yoki qo‘lda yuving. Siqmang, tekis holda quriting — shunda shaklini yo‘qotmaydi. Bezakli joylarini teskari tomondan, past haroratda dazmollang.",
+      "price": "45 000 so‘m",
+      "price_note": "3 tasi — 100 000 so‘m",
+      "old_price": "",
+      "price_number": 45000,
+      "promo3": true,
+      "badge": "Aksiya",
+      "promo_group": "kashka"
     },
     {
       "name": "Gulli naqshli to‘plam",
@@ -101,7 +136,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": "Yangi"
+      "badge": "Yangi",
+      "promo_group": ""
     },
     {
       "name": "Arab naqshli ro‘mol",
@@ -121,7 +157,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": "Yangi"
+      "badge": "Yangi",
+      "promo_group": ""
     },
     {
       "name": "Turkiya atlas ro‘moli",
@@ -143,7 +180,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": "Yangi"
+      "badge": "Yangi",
+      "promo_group": ""
     },
     {
       "name": "Organza ro‘mol",
@@ -164,7 +202,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
-      "badge": "Yangi"
+      "badge": "Yangi",
+      "promo_group": ""
     }
   ]
 }
