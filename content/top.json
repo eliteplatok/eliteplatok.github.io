@@ -1,16 +1,227 @@
 {
-  "eyebrow": "Eng ko‘p sotilayotganlar",
-  "title": "Mijozlar tanlovi",
-  "text": "Mijozlarimiz eng ko‘p tanlaydigan ro‘mollar.",
+  "eyebrow": "Katalog",
+  "title": "Barcha ro‘mollar",
+  "text": "Narx va ranglar mavjudligi bo‘yicha menejerimiz batafsil ma’lumot beradi.",
   "link_label": "Instagramda ko‘rish",
   "products": [
-    {"name": "Jatiy ipak", "size": "110 × 110 sm", "description": "Klassik paisley naqsh va popuklar — boy, iliq ranglar.", "price": "99 000 so‘m", "old_price": "", "badge": "", "image": "images/jatiy-ipak.jpg"},
-    {"name": "Eron sholk", "size": "110 × 110 sm", "description": "Tabiiy yaltiroq shoyi, nafis naqshlar — maxsus kunlar uchun.", "price": "35 $", "old_price": "", "badge": "", "image": "images/eron-sholk.jpg"},
-    {"name": "Organza", "size": "100 × 100 sm", "description": "Silliq, jilo beruvchi mato — kulrang, sut rang va zumrad.", "price": "99 000 so‘m", "old_price": "", "badge": "", "image": "images/organza.jpg"},
-    {"name": "Shifon", "size": "110 × 110 sm", "description": "Yengil, havodor mato, mayda gulli naqsh va rangli hoshiya.", "price": "70 000 so‘m", "old_price": "", "badge": "", "image": "images/shifon.jpg"},
-    {"name": "Sherst", "size": "150 × 150 sm", "description": "Katta o‘lchamli jun ro‘mol — yelkani ham yopib, iliq saqlaydi.", "price": "170 000 so‘m", "old_price": "", "badge": "", "image": "images/sherst.jpg"},
-    {"name": "Dvaynoy luks", "size": "110 × 110 sm", "description": "Ikki qavatli premium ro‘mol — zich, yaxshi turadi.", "price": "199 000 so‘m", "old_price": "", "badge": "", "image": "images/dvaynoy-luks.jpg"},
-    {"name": "Kashemir sharf", "size": "85 × 175 sm", "description": "Ikki qavatli kashemir, popukli — qish uchun eng iliq tanlov.", "price": "275 000 so‘m", "old_price": "", "badge": "", "image": "images/kashemir-sharf.jpg"},
-    {"name": "Turkiya ro‘moli", "size": "Turkiya", "description": "Quloqda shitirlamaydi, peshona qismi dumaloq — yuzga chiroyli tushadi.", "price": "3 ta — 100 000 so‘m", "old_price": "", "badge": "", "image": "images/turkiya.jpg"}
+    {
+      "name": "Turkiya tvil",
+      "images": [
+        "images/turkiya-tvil.jpg"
+      ],
+      "size": "",
+      "material": "Tvil (Turkiya)",
+      "color": "Oq, qora gulli naqsh",
+      "description": "Mayin, shaklini ushlaydigan tvil — kun bo‘yi tartibli turadi.",
+      "details": "Turkiyada ishlab chiqarilgan mayin tvil ro‘mol. Diagonal to‘qimasi tufayli shaklini yaxshi ushlaydi, boshda sirpanmaydi va kun bo‘yi tartibli turadi. Kundalik va rasmiy obrazlar uchun birdek mos.",
+      "care": "30°C da qo‘lda yoki nozik rejimda yuving. Oqartiruvchi ishlatmang. O‘rta haroratda teskari tomonidan dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Kashka",
+      "images": [
+        "images/kashka.jpg"
+      ],
+      "size": "170 sm",
+      "material": "Yengil yaltiroq mato",
+      "color": "Lavanda",
+      "description": "Uzun, yengil va yaltiroq — hajmli, chiroyli bog‘lash uchun.",
+      "details": "170 sm uzunlikdagi yengil, nozik yaltiroq ro‘mol. Hajmli va qatlamli bog‘lash uchun qulay, yuzga yorqinlik beradi.",
+      "care": "Sovuq suvda qo‘lda yuving, siqmang. Past haroratda dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Pion masla",
+      "images": [
+        "images/pion-masla.jpg",
+        "images/pion-masla-2.jpg"
+      ],
+      "size": "110 × 110 sm",
+      "material": "Masla",
+      "color": "Sutrang, pushti pion gullari",
+      "description": "Nozik pion gulli naqsh — bahor va bayram obrazlari uchun.",
+      "details": "Nozik pion gulli naqshli masla ro‘mol, o‘lchami 110 × 110 sm. Bahor, bayram va mehmondorchilik obrazlari uchun.",
+      "care": "30°C da qo‘lda yuving. Quyoshda emas, soyada quriting. Past haroratda dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Dvaynoy sherst",
+      "images": [
+        "images/sherst-dvaynoy.jpg"
+      ],
+      "size": "110 × 110 sm",
+      "material": "Ikki qavatli jun (sherst)",
+      "color": "Turli ranglar, gulli naqsh",
+      "description": "Ikki qavatli jun ro‘mol — sovuq kunlarda iliq va chiroyli.",
+      "details": "Ikki qavatli jun ro‘mol, 110 × 110 sm. Sovuq kunlarda iliq saqlaydi, zichligi tufayli shaklini yaxshi ushlaydi.",
+      "care": "Jun uchun mo‘ljallangan vosita bilan sovuq suvda qo‘lda yuving. Gorizontal holatda quriting.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Jatiy ipak",
+      "images": [
+        "images/jatiy-ipak.jpg",
+        "images/jatiy-ipak-2.jpg"
+      ],
+      "size": "110 × 110 sm",
+      "material": "Ipak",
+      "color": "Jigarrang, yashil, oltinrang",
+      "description": "Klassik paisley naqsh va popuklar — boy, iliq ranglar.",
+      "details": "Klassik paisley naqshli, popukli ipak ro‘mol, 110 × 110 sm. Boy, iliq ranglar har qanday kuzgi obrazni to‘ldiradi.",
+      "care": "Faqat qo‘lda, sovuq suvda yuving. Siqmang. Past haroratda dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Eron sholk",
+      "images": [
+        "images/eron-sholk.jpg"
+      ],
+      "size": "110 × 110 sm",
+      "material": "Shoyi (Eron)",
+      "color": "Oq, bordo, sutrang",
+      "description": "Tabiiy yaltiroq shoyi, nafis naqshlar — maxsus kunlar uchun.",
+      "details": "Tabiiy yaltiroq Eron shoyisi, 110 × 110 sm. Nafis naqshlar maxsus kunlar va bayramlar uchun.",
+      "care": "Faqat qo‘lda, sovuq suvda yuving yoki kimyoviy tozalashga bering. Past haroratda dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Organza",
+      "images": [
+        "images/organza.jpg"
+      ],
+      "size": "100 × 100 sm",
+      "material": "Organza",
+      "color": "Kulrang, sutrang, zumrad",
+      "description": "Silliq, jilo beruvchi mato — kulrang, sut rang va zumrad.",
+      "details": "Silliq, jilo beruvchi organza ro‘mol, 100 × 100 sm. Yengil va havodor, bayram obrazlari uchun.",
+      "care": "Sovuq suvda qo‘lda yuving. Past haroratda, mato orqali dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Shifon",
+      "images": [
+        "images/shifon.jpg",
+        "images/shifon-2.jpg"
+      ],
+      "size": "110 × 110 sm",
+      "material": "Shifon",
+      "color": "Oq gulli, qora; rangli hoshiya",
+      "description": "Yengil, havodor mato, mayda gulli naqsh va rangli hoshiya.",
+      "details": "Yengil, havodor shifon ro‘mol, 110 × 110 sm. Mayda gulli naqsh va rangli hoshiya bilan.",
+      "care": "30°C da qo‘lda yuving. Past haroratda dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Sherst",
+      "images": [
+        "images/sherst.jpg"
+      ],
+      "size": "150 × 150 sm",
+      "material": "Jun (sherst)",
+      "color": "Bej-jigarrang naqsh",
+      "description": "Katta o‘lchamli jun ro‘mol — yelkani ham yopib, iliq saqlaydi.",
+      "details": "Katta o‘lchamli jun ro‘mol, 150 × 150 sm. Yelkani ham yopadi va sovuq kunlarda iliq saqlaydi.",
+      "care": "Jun uchun vosita bilan sovuq suvda qo‘lda yuving. Gorizontal holatda quriting.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Dvaynoy luks",
+      "images": [
+        "images/dvaynoy-luks.jpg"
+      ],
+      "size": "110 × 110 sm",
+      "material": "Ikki qavatli premium mato",
+      "color": "Sutrang, ko‘k, kulrang naqshlar",
+      "description": "Ikki qavatli premium ro‘mol — zich, yaxshi turadi.",
+      "details": "Ikki qavatli premium ro‘mol, 110 × 110 sm. Zich, boshda yaxshi turadi va shaklini yo‘qotmaydi.",
+      "care": "30°C da qo‘lda yuving. O‘rta haroratda dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Kashemir sharf",
+      "images": [
+        "images/kashemir-sharf.jpg"
+      ],
+      "size": "85 × 175 sm",
+      "material": "Kashemir, ikki qavatli",
+      "color": "Kulrang-oq naqsh",
+      "description": "Ikki qavatli kashemir, popukli — qish uchun eng iliq tanlov.",
+      "details": "Popukli ikki qavatli kashemir sharf, 85 × 175 sm. Qish uchun eng iliq va yumshoq tanlov.",
+      "care": "Faqat qo‘lda, sovuq suvda yuving yoki kimyoviy tozalashga bering. Gorizontal holatda quriting.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    },
+    {
+      "name": "Turkiya ro‘moli",
+      "images": [
+        "images/turkiya.jpg"
+      ],
+      "size": "",
+      "material": "Mayin mato (Turkiya)",
+      "color": "Jigarrang",
+      "description": "Quloqda shitirlamaydi, peshona qismi dumaloq — yuzga chiroyli tushadi.",
+      "details": "Quloqda shitirlamaydi, peshona qismi dumaloq shaklda turadi — yuzga chiroyli tushadi. Kundalik kiyish uchun eng qulay ro‘mollardan biri.",
+      "care": "30°C da qo‘lda yoki nozik rejimda yuving. O‘rta haroratda dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": ""
+    }
   ]
 }

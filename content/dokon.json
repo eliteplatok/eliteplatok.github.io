@@ -2,9 +2,9 @@
   "eyebrow": "Bizning do‘konimiz",
   "title": "Kelib, matolarni o‘z qo‘lingiz bilan ushlab ko‘ring",
   "image": "images/sherst.jpg",
-  "address": "Tashkent City Boulvard, Furqat ko‘chasi 2A",
-  "landmark": "Bulvar markaziy favvorasi, Sirali restoran qatori",
-  "map_link": "https://maps.google.com/?q=Tashkent+City+Boulevard+Furqat+2A",
+  "address": "Toshkent, Yunusobod tumani, 15-mavze, 27-uy",
+  "landmark": "",
+  "map_link": "https://www.google.com/maps/search/?api=1&query=Toshkent+Yunusobod+15-mavze+27",
   "map_button": "Xaritada ko‘rish",
   "call_button": "Qo‘ng‘iroq qilish"
 }

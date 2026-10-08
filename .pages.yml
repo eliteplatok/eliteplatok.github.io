@@ -26,6 +26,42 @@ content:
       - { name: menu_store, label: "Menyu: Do‘kon", type: string }
       - { name: footer_tagline, label: "Pastki qism shiori", type: string }
       - { name: footer_copy, label: "Pastki qism © yozuvi", type: string }
+      - { name: product_call_button, label: "Mahsulot oynasi: qo‘ng‘iroq tugmasi", type: string }
+      - { name: product_share_button, label: "Mahsulot oynasi: ulashish tugmasi", type: string }
+      - { name: product_link_copied, label: "Havola nusxalanganda chiqadigan yozuv", type: string }
+      - { name: product_label_size, label: "Mahsulot oynasi: «O‘lcham» yozuvi", type: string }
+      - { name: product_label_material, label: "Mahsulot oynasi: «Mato» yozuvi", type: string }
+      - { name: product_label_color, label: "Mahsulot oynasi: «Rang» yozuvi", type: string }
+      - { name: product_tab_details, label: "Bo‘lim nomi: Batafsil", type: string }
+      - { name: product_tab_care, label: "Bo‘lim nomi: Parvarish", type: string }
+      - { name: product_tab_delivery, label: "Bo‘lim nomi: Yetkazib berish", type: string }
+      - { name: delivery_text, label: "Yetkazib berish va to‘lov matni (barcha mahsulotlarda)", type: text }
+      - { name: order_endpoint, label: "Buyurtma qabul qiluvchi manzil (Google Apps Script URL; bo‘sh bo‘lsa buyurtma Telegram orqali yuboriladi)", type: string }
+      - { name: price_on_request, label: "Narx yozilmagan mahsulotda chiqadigan yozuv", type: string }
+      - { name: promo3_total, label: "Aksiya: 3 ta ro‘molning umumiy narxi (so‘m)", type: number }
+      - { name: promo3_label, label: "Aksiya: savatda chiqadigan yozuv", type: string }
+      - { name: product_add_button, label: "Mahsulot oynasi: «Savatga qo‘shish»", type: string }
+      - { name: cart_title, label: "Savat: sarlavha", type: string }
+      - { name: cart_empty, label: "Savat: bo‘sh bo‘lganda", type: string }
+      - { name: cart_continue, label: "Savat: xaridni davom ettirish tugmasi", type: string }
+      - { name: cart_total, label: "Savat: «Jami»", type: string }
+      - { name: cart_total_note, label: "Savat: narxi hisoblanmagan mahsulotlar izohi", type: text }
+      - { name: cart_checkout, label: "Savat: «Buyurtma berish» tugmasi", type: string }
+      - { name: cart_added, label: "Savatga qo‘shilganda chiqadigan yozuv", type: string }
+      - { name: form_title, label: "Forma: sarlavha", type: string }
+      - { name: form_name, label: "Forma: ism", type: string }
+      - { name: form_phone, label: "Forma: telefon", type: string }
+      - { name: form_delivery, label: "Forma: yetkazib berish", type: string }
+      - { name: form_pickup, label: "Forma: do‘kondan olib ketish", type: string }
+      - { name: form_address, label: "Forma: manzil", type: string }
+      - { name: form_comment, label: "Forma: izoh", type: string }
+      - { name: form_submit, label: "Forma: yuborish tugmasi", type: string }
+      - { name: form_back, label: "Forma: savatga qaytish", type: string }
+      - { name: form_error, label: "Forma: to‘ldirilmagan maydon xatosi", type: string }
+      - { name: form_sending, label: "Forma: yuborilayotganda", type: string }
+      - { name: success_title, label: "Buyurtmadan keyin: sarlavha", type: string }
+      - { name: success_text, label: "Buyurtmadan keyin: matn", type: text }
+      - { name: fallback_text, label: "Yuborib bo‘lmaganda chiqadigan xabar", type: text }
       - { name: seo_title, label: "Google'dagi sarlavha", type: string }
       - { name: seo_description, label: "Google'dagi tavsif", type: text }
 
@@ -58,11 +94,18 @@ content:
         type: object
         list: true
         fields:
-          - { name: image, label: "Rasm", type: image }
           - { name: name, label: "Nomi", type: string }
-          - { name: size, label: "O‘lchami / kelib chiqishi", type: string }
-          - { name: description, label: "Qisqa tavsif", type: text }
+          - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
+          - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
+          - { name: material, label: "Mato", type: string }
+          - { name: color, label: "Rang", type: string }
+          - { name: description, label: "Qisqa tavsif (kartochkada)", type: text }
+          - { name: details, label: "Batafsil tavsif (mahsulot oynasida)", type: text }
+          - { name: care, label: "Parvarish", type: text }
           - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
+          - { name: price_note, label: "Narx ostidagi aksiya yozuvi (masalan: 3 tasi — 100 000 so‘m)", type: string }
+          - { name: promo3, label: "«Istalgan 3 tasi» aksiyasiga kiradi (savatda avtomatik hisoblanadi)", type: boolean }
+          - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
 
@@ -81,11 +124,18 @@ content:
         type: object
         list: true
         fields:
-          - { name: image, label: "Rasm", type: image }
           - { name: name, label: "Nomi", type: string }
-          - { name: size, label: "O‘lchami / kelib chiqishi", type: string }
-          - { name: description, label: "Qisqa tavsif", type: text }
+          - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
+          - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
+          - { name: material, label: "Mato", type: string }
+          - { name: color, label: "Rang", type: string }
+          - { name: description, label: "Qisqa tavsif (kartochkada)", type: text }
+          - { name: details, label: "Batafsil tavsif (mahsulot oynasida)", type: text }
+          - { name: care, label: "Parvarish", type: text }
           - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
+          - { name: price_note, label: "Narx ostidagi aksiya yozuvi (masalan: 3 tasi — 100 000 so‘m)", type: string }
+          - { name: promo3, label: "«Istalgan 3 tasi» aksiyasiga kiradi (savatda avtomatik hisoblanadi)", type: boolean }
+          - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
 
