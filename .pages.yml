@@ -29,6 +29,7 @@ content:
       - { name: product_call_button, label: "Mahsulot oynasi: qo‘ng‘iroq tugmasi", type: string }
       - { name: product_share_button, label: "Mahsulot oynasi: ulashish tugmasi", type: string }
       - { name: product_link_copied, label: "Havola nusxalanganda chiqadigan yozuv", type: string }
+      - { name: product_all_colors, label: "Mahsulot oynasi: «Barcha ranglar» sarlavhasi", type: string }
       - { name: product_label_size, label: "Mahsulot oynasi: «O‘lcham» yozuvi", type: string }
       - { name: product_label_material, label: "Mahsulot oynasi: «Mato» yozuvi", type: string }
       - { name: product_label_color, label: "Mahsulot oynasi: «Rang» yozuvi", type: string }

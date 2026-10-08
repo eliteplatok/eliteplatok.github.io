@@ -127,6 +127,13 @@
   .pm-btns .btn.solid{grid-column:1/-1;padding:18px}
   button.btn{background:transparent;color:var(--ink);font-family:inherit;font-weight:300;cursor:pointer}
   button.btn:hover{background:var(--ink);color:var(--bg)}
+  .allc{margin:0 0 34px}
+  .allc-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px;display:flex;justify-content:space-between}
+  .allc-h span{color:var(--muted)}
+  .allc-g{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+  .allc-g button{border:1px solid var(--line);background:#fff;padding:0;cursor:pointer;aspect-ratio:3/4;overflow:hidden;transition:border-color .2s,transform .2s}
+  .allc-g button:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .allc-g img{width:100%;height:100%;object-fit:cover}
   .acc-item{border-top:1px solid var(--line)}
   .acc-item:last-child{border-bottom:1px solid var(--line)}
   .acc-item summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
@@ -400,12 +407,17 @@ function openProduct(i, push = true) {
           ${S.phone ? `<a class="btn" href="${tel(S.phone)}">${txt(S.product_call_button)}</a>` : ''}
           <button class="btn" data-share>${txt(S.product_share_button)}</button>
         </div>
+        ${p.ims.length > 4 ? `<div class="allc"><div class="allc-h">${txt(S.product_all_colors)} <span>${p.ims.length}</span></div><div class="allc-g">${p.ims.map((s, k) => `<button data-k="${k}" aria-label="${k + 1}"><img src="${img(s)}" alt="" loading="lazy"></button>`).join('')}</div></div>` : ''}
         ${acc(S.product_tab_details, p.details, true)}${acc(S.product_tab_care, p.care)}${acc(S.product_tab_delivery, S.delivery_text)}
       </div>
     </div>`;
   const track = pm.querySelector('.pm-slides');
   bindSlider(track, pm.querySelector('.pm-gal'));
   pm.querySelectorAll('.pm-thumbs button').forEach(b => b.onclick = () => track.scrollTo({ left: b.dataset.k * track.clientWidth, behavior: 'smooth' }));
+  pm.querySelectorAll('.allc-g button').forEach(b => b.onclick = () => {
+    track.scrollTo({ left: b.dataset.k * track.clientWidth });
+    pm.scrollTo({ top: 0, behavior: 'smooth' });
+  });
   pm.querySelectorAll('[data-close]').forEach(b => b.onclick = e => { e.preventDefault(); closeProduct(); });
   pm.querySelector('[data-add]').onclick = () => { cartAdd(p.slug); toast(S.cart_added); openCart(); };
   pm.querySelector('[data-share]').onclick = async () => {

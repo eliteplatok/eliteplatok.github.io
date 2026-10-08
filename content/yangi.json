@@ -52,7 +52,7 @@
       "badge": "Aksiya"
     },
     {
-      "name": "Jakkard ipak ro‘mol",
+      "name": "Jakkard ro‘mollar",
       "images": [
         "images/jakkard-1.jpg",
         "images/jakkard-2.jpg",
@@ -70,18 +70,18 @@
         "images/jakkard-14.jpg",
         "images/jakkard-15.jpg"
       ],
-      "size": "",
-      "material": "Jakkard ipak, tovlanuvchi",
-      "color": "Oltinrang, pushti, bordo, to‘q ko‘k, yashil, jigarrang, lila-mis va boshqa ranglar",
-      "description": "Bodom naqshli jakkard va oltin hoshiya — tantanali, boy ko‘rinish.",
-      "details": "Mato ichiga to‘qilgan bodom (paisley) naqshi yorug‘likda tovlanib, ro‘molga boy va nafis ko‘rinish beradi. Chetlaridagi oltinrang hoshiya obrazni yakunlaydi. Mato silliq, og‘irligi o‘rtacha — boshda chiroyli burmalanadi va shaklini yaxshi ushlaydi.\n\nRanglar keng: oltinrang, pushti, bordo, to‘q ko‘k, yashil, jigarrang, lila-mis tuslari. To‘y, bayram, mehmondorchilik va maxsus kunlar uchun ideal; sovg‘a sifatida ham juda chiroyli.",
-      "care": "Faqat qo‘lda, sovuq suvda yuving yoki kimyoviy tozalashga bering. Siqmang. Past haroratda, mato orqali dazmollang.",
-      "price": "",
+      "size": "1 × 1 m (100 × 100 sm)",
+      "material": "Jakkard, tovlanuvchi ipaksimon mato",
+      "color": "15 xil rang: oltinrang, bordo, to‘q ko‘k, yashil, jigarrang, pushti, lila-mis va boshqalar",
+      "description": "Tovlanuvchi bodom naqsh va oltin hoshiya — har qanday tadbirda e’tibor markazida bo‘lasiz.",
+      "details": "Jakkard ro‘mollarimiz — tantanali kunlar uchun yaratilgan. Bodom (paisley) naqshi matoga bosilmagan, balki uning ichiga to‘qilgan: shuning uchun naqsh yuvilganda o‘chmaydi va har bir burilishda yorug‘likda nafis tovlanadi. Chetidagi oltinrang hoshiya ro‘molga qimmatbaho, boy ko‘rinish beradi.\n\nO‘lchami 1 × 1 metr — boshni to‘liq yopadi, ko‘krak qismigacha chiroyli tushadi va har xil usulda o‘rashga yetadi. Mato silliq, og‘irligi o‘rtacha: sirpanib ketmaydi, burmalari tartibli turadi, ignasiz ham shaklini ushlaydi.\n\n15 xil rangdan o‘zingizga mosini tanlang: oltinrang va mis tuslari kechki tadbirlar uchun, bordo va to‘q ko‘k — klassik obraz uchun, pushti va lila — nozik, ayollarga xos ko‘rinish uchun. To‘y, nikoh, mavlud, bayram va mehmondorchilik — har biriga mos. Onangiz, opa-singlingiz yoki dugonangizga sovg‘a sifatida ham ajoyib tanlov.",
+      "care": "Faqat qo‘lda, sovuq suvda (30°C gacha) yuving yoki kimyoviy tozalashga bering. Siqmang va burab chirmamang — soyada, tekis holda quriting. Past haroratda, mato orqali dazmollang.",
+      "price": "99 000 so‘m",
       "price_note": "",
-      "old_price": "",
-      "price_number": 0,
+      "old_price": "120 000",
+      "price_number": 99000,
       "promo3": false,
-      "badge": "Yangi"
+      "badge": "Aksiya"
     },
     {
       "name": "Gulli naqshli to‘plam",
