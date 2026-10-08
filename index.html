@@ -490,13 +490,13 @@ function cartTotals(lines) {
     const v = +x.p.price_number || 0;
     if (!v) { unknown = true; return; }
     if (x.p.promo3 && +S_.promo3_total) {
-      const g = groups[x.p.promo_group || x.slug] ||= { qty: 0, unit: v };
+      const g = groups[x.p.promo_group || x.slug] ||= { qty: 0, unit: v, n: +x.p.promo_qty || 3, total: +x.p.promo_total || +S_.promo3_total };
       g.qty += x.qty; return;
     }
     sum += v * x.qty;
   });
   Object.values(groups).forEach(g => {
-    const full = Math.floor(g.qty / 3) * +S_.promo3_total + (g.qty % 3) * g.unit;
+    const full = Math.floor(g.qty / g.n) * g.total + (g.qty % g.n) * g.unit;
     saved += g.qty * g.unit - full; sum += full;
   });
   return { sum, unknown, saved };
@@ -506,7 +506,7 @@ function renderCart(view = 'list') {
   cart = cart.filter(x => findP(x.slug));
   const lines = cartLines(), { sum, unknown, saved } = cartTotals(lines);
   const head = t => `<div class="dr-head"><h3>${txt(t)}</h3><button class="dr-x" data-x aria-label="Yopish">×</button></div>`;
-  const total = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' so‘m' : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)} · −${fmt(saved)} so‘m</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}`;
+  const total = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' so‘m' : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)}: −${fmt(saved)} so‘m</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}`;
   if (view === 'ok') {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="ok"><div class="ic">✓</div><h3>${txt(S.success_title)}</h3><p>${txt(S.success_text)}</p><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
   } else if (!lines.length) {

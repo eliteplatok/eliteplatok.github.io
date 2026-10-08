@@ -39,7 +39,7 @@ content:
       - { name: delivery_text, label: "Yetkazib berish va to‘lov matni (barcha mahsulotlarda)", type: text }
       - { name: order_endpoint, label: "Buyurtma qabul qiluvchi manzil (Google Apps Script URL; bo‘sh bo‘lsa buyurtma Telegram orqali yuboriladi)", type: string }
       - { name: price_on_request, label: "Narx yozilmagan mahsulotda chiqadigan yozuv", type: string }
-      - { name: promo3_total, label: "Aksiya: 3 ta ro‘molning umumiy narxi (so‘m)", type: number }
+      - { name: promo3_total, label: "Aksiya: umumiy narx, agar mahsulotda ko‘rsatilmagan bo‘lsa (so‘m)", type: number }
       - { name: promo3_label, label: "Aksiya: savatda chiqadigan yozuv", type: string }
       - { name: product_add_button, label: "Mahsulot oynasi: «Savatga qo‘shish»", type: string }
       - { name: cart_title, label: "Savat: sarlavha", type: string }
@@ -105,7 +105,9 @@ content:
           - { name: care, label: "Parvarish", type: text }
           - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
           - { name: price_note, label: "Narx ostidagi aksiya yozuvi (masalan: 3 tasi — 100 000 so‘m)", type: string }
-          - { name: promo3, label: "«Istalgan 3 tasi» aksiyasiga kiradi (savatda avtomatik hisoblanadi)", type: boolean }
+          - { name: promo3, label: "Aksiyada (savatda avtomatik hisoblanadi)", type: boolean }
+          - { name: promo_qty, label: "Aksiya: nechta olinganda (masalan 3 yoki 2)", type: number }
+          - { name: promo_total, label: "Aksiya: shuncha donaning umumiy narxi, so‘m (masalan 100000)", type: number }
           - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
           - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
@@ -136,7 +138,9 @@ content:
           - { name: care, label: "Parvarish", type: text }
           - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
           - { name: price_note, label: "Narx ostidagi aksiya yozuvi (masalan: 3 tasi — 100 000 so‘m)", type: string }
-          - { name: promo3, label: "«Istalgan 3 tasi» aksiyasiga kiradi (savatda avtomatik hisoblanadi)", type: boolean }
+          - { name: promo3, label: "Aksiyada (savatda avtomatik hisoblanadi)", type: boolean }
+          - { name: promo_qty, label: "Aksiya: nechta olinganda (masalan 3 yoki 2)", type: number }
+          - { name: promo_total, label: "Aksiya: shuncha donaning umumiy narxi, so‘m (masalan 100000)", type: number }
           - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
           - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }

@@ -47,6 +47,8 @@
       "old_price": "",
       "price_number": 45000,
       "promo3": true,
+      "promo_qty": 3,
+      "promo_total": 100000,
       "badge": "Aksiya",
       "promo_group": "tvil"
     },
@@ -80,6 +82,8 @@
       "old_price": "120 000",
       "price_number": 99000,
       "promo3": false,
+      "promo_qty": 3,
+      "promo_total": 0,
       "badge": "Aksiya",
       "promo_group": ""
     },
@@ -113,8 +117,34 @@
       "old_price": "",
       "price_number": 45000,
       "promo3": true,
+      "promo_qty": 3,
+      "promo_total": 100000,
       "badge": "Aksiya",
       "promo_group": "kashka"
+    },
+    {
+      "name": "Shifon sharflar",
+      "images": [
+        "images/shifon-sharf-1.jpg",
+        "images/shifon-sharf-2.jpg",
+        "images/shifon-sharf-3.jpg",
+        "images/shifon-sharf-4.jpg"
+      ],
+      "size": "",
+      "material": "Shifon",
+      "color": "To‘q olxo‘ri, bej, lila, qizil",
+      "description": "Yengil, havodor shifon — nafis burmalar va yumshoq tushish.",
+      "details": "Shifon sharflar — yengillik va nafislikni sevuvchilar uchun. Mato havodor va biroz shaffof: boshda hajmli, chiroyli burmalar hosil qiladi va yuzga yumshoq tushadi. Issiq kunlarda ham qulay, kiyilganda deyarli sezilmaydi.\n\nTo‘q olxo‘ri, bej, lila va yorqin qizil ranglarda — kundalik obraz uchun ham, bayram va mehmondorchilik uchun ham mos. Qatlamli o‘rash yoki uzun uchini yelkaga tashlab kiyish uchun qulay.",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "price": "99 000 so‘m",
+      "price_note": "2 tasi — 150 000 so‘m",
+      "old_price": "",
+      "price_number": 99000,
+      "promo3": true,
+      "promo_qty": 2,
+      "promo_total": 150000,
+      "promo_group": "shifon",
+      "badge": "Aksiya"
     },
     {
       "name": "Gulli naqshli to‘plam",
@@ -136,6 +166,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
+      "promo_qty": 3,
+      "promo_total": 0,
       "badge": "Yangi",
       "promo_group": ""
     },
@@ -157,6 +189,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
+      "promo_qty": 3,
+      "promo_total": 0,
       "badge": "Yangi",
       "promo_group": ""
     },
@@ -180,6 +214,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
+      "promo_qty": 3,
+      "promo_total": 0,
       "badge": "Yangi",
       "promo_group": ""
     },
@@ -202,6 +238,8 @@
       "old_price": "",
       "price_number": 0,
       "promo3": false,
+      "promo_qty": 3,
+      "promo_total": 0,
       "badge": "Yangi",
       "promo_group": ""
     }
