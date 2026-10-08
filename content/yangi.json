@@ -52,6 +52,38 @@
       "badge": "Aksiya"
     },
     {
+      "name": "Jakkard ipak ro‘mol",
+      "images": [
+        "images/jakkard-1.jpg",
+        "images/jakkard-2.jpg",
+        "images/jakkard-3.jpg",
+        "images/jakkard-4.jpg",
+        "images/jakkard-5.jpg",
+        "images/jakkard-6.jpg",
+        "images/jakkard-7.jpg",
+        "images/jakkard-8.jpg",
+        "images/jakkard-9.jpg",
+        "images/jakkard-10.jpg",
+        "images/jakkard-11.jpg",
+        "images/jakkard-12.jpg",
+        "images/jakkard-13.jpg",
+        "images/jakkard-14.jpg",
+        "images/jakkard-15.jpg"
+      ],
+      "size": "",
+      "material": "Jakkard ipak, tovlanuvchi",
+      "color": "Oltinrang, pushti, bordo, to‘q ko‘k, yashil, jigarrang, lila-mis va boshqa ranglar",
+      "description": "Bodom naqshli jakkard va oltin hoshiya — tantanali, boy ko‘rinish.",
+      "details": "Mato ichiga to‘qilgan bodom (paisley) naqshi yorug‘likda tovlanib, ro‘molga boy va nafis ko‘rinish beradi. Chetlaridagi oltinrang hoshiya obrazni yakunlaydi. Mato silliq, og‘irligi o‘rtacha — boshda chiroyli burmalanadi va shaklini yaxshi ushlaydi.\n\nRanglar keng: oltinrang, pushti, bordo, to‘q ko‘k, yashil, jigarrang, lila-mis tuslari. To‘y, bayram, mehmondorchilik va maxsus kunlar uchun ideal; sovg‘a sifatida ham juda chiroyli.",
+      "care": "Faqat qo‘lda, sovuq suvda yuving yoki kimyoviy tozalashga bering. Siqmang. Past haroratda, mato orqali dazmollang.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "price_number": 0,
+      "promo3": false,
+      "badge": "Yangi"
+    },
+    {
       "name": "Gulli naqshli to‘plam",
       "images": [
         "images/gulli-toplam-1.jpg",
