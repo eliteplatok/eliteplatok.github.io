@@ -13,6 +13,151 @@
   "link_label_en": "View all",
   "products": [
     {
+      "name": "Dubay ipak ro‘mollari",
+      "name_ru": "Платки из дубайского шёлка",
+      "name_en": "Dubai Silk Scarves",
+      "images": [
+
+      ],
+      "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
+      "material": "Dubay ipagi, batistdek mayin",
+      "material_ru": "Дубайский шёлк, мягкий как батист",
+      "material_en": "Dubai silk, soft as batiste",
+      "color": "10 xil: pushti, to‘q zaytun, sutrang, zaytun-bej, qora hoshiyali, qizil, fistashka, bordo, yashil, oq hoshiyali zaytun",
+      "color_ru": "10 вариантов: розовый, тёмно-оливковый, молочный, оливково-бежевый, с чёрной каймой, красный, фисташковый, бордовый, зелёный, оливковый с белой каймой",
+      "color_en": "10 options: pink, dark olive, milky white, olive beige, black border, red, pistachio, burgundy, green, olive with white border",
+      "description": "Nafis bodom naqshi, batistdek mayin mato — har kuni kiyish uchun yoqimli.",
+      "description_ru": "Изящный узор пейсли и ткань, мягкая как батист, — приятно носить каждый день.",
+      "description_en": "An elegant paisley pattern on fabric as soft as batiste — a pleasure to wear every day.",
+      "details": "Dubay ipagidan tayyorlangan ro‘mollar — mato juda mayin va yengil, teksturasi batistni eslatadi: teriga yoqimli tegadi, havo o‘tkazadi va boshda chiroyli tushadi. O‘lchami 110 × 110 sm — har xil usulda o‘rashga yetadi. Chetlari mashinada toza va pishiq bukilgan.\n\nKlassik bodom (paisley) naqshi va hoshiyali ramka ro‘molga boy, sokin ko‘rinish beradi. 10 xil rangdan tanlang: nozik pushti va sutrangdan to‘q zaytun, bordo va yashilgacha — kundalik kiyim, ish va mehmondorchilik uchun birdek mos.\n\nHar bir rangning manekendagi va yoyilgan ko‘rinishi bor — naqsh va rangni yaqindan ko‘ring.",
+      "details_ru": "Платки из дубайского шёлка — ткань очень мягкая и лёгкая, по текстуре напоминает батист: приятна к коже, пропускает воздух и красиво ложится. Размер 110 × 110 см — хватает для разных способов завязывания. Края аккуратно и прочно подшиты на машинке.\n\nКлассический узор пейсли и обрамляющая кайма придают платку богатый, спокойный вид. Выберите из 10 расцветок: от нежного розового и молочного до тёмно-оливкового, бордового и зелёного — подходят для повседневной носки, работы и походов в гости.\n\nДля каждого цвета есть фото на манекене и в развёрнутом виде — рассмотрите узор и цвет вблизи.",
+      "details_en": "Scarves made of Dubai silk — the fabric is very soft and light, with a texture reminiscent of batiste: gentle on the skin, breathable and drapes beautifully. The 110 × 110 cm size is enough for many ways of wrapping. The edges are neatly and durably machine-hemmed.\n\nA classic paisley pattern with a framing border gives the scarf a rich yet calm look. Choose from 10 colourways: from delicate pink and milky white to dark olive, burgundy and green — suitable for everyday wear, work and visits.\n\nEach colour has a photo on the mannequin and laid out flat — see the pattern and colour up close.",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
+      "price": "",
+      "price_note": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_group": "",
+      "badge": "Yangi",
+      "badge_ru": "Новинка",
+      "badge_en": "New",
+      "variants": [
+        {
+          "name": "Pushti",
+          "name_ru": "Розовый",
+          "name_en": "Pink",
+          "hex": "#c49a96",
+          "images": [
+            "images/dubay-ipak-1.jpg",
+            "images/dubay-ipak-mato-1.jpg"
+          ]
+        },
+        {
+          "name": "To‘q zaytun",
+          "name_ru": "Тёмно-оливковый",
+          "name_en": "Dark olive",
+          "hex": "#4f4c3c",
+          "images": [
+            "images/dubay-ipak-2.jpg",
+            "images/dubay-ipak-mato-2.jpg"
+          ]
+        },
+        {
+          "name": "Sutrang",
+          "name_ru": "Молочный",
+          "name_en": "Milky white",
+          "hex": "#d8c9b6",
+          "images": [
+            "images/dubay-ipak-3.jpg",
+            "images/dubay-ipak-mato-3.jpg"
+          ]
+        },
+        {
+          "name": "Zaytun-bej",
+          "name_ru": "Оливково-бежевый",
+          "name_en": "Olive beige",
+          "hex": "#8f8466",
+          "images": [
+            "images/dubay-ipak-4.jpg",
+            "images/dubay-ipak-mato-4.jpg"
+          ]
+        },
+        {
+          "name": "Qora hoshiyali",
+          "name_ru": "С чёрной каймой",
+          "name_en": "Black border",
+          "hex": "#7a5546",
+          "images": [
+            "images/dubay-ipak-5.jpg",
+            "images/dubay-ipak-mato-5.jpg"
+          ]
+        },
+        {
+          "name": "Qizil",
+          "name_ru": "Красный",
+          "name_en": "Red",
+          "hex": "#a3283a",
+          "images": [
+            "images/dubay-ipak-6.jpg",
+            "images/dubay-ipak-mato-6.jpg"
+          ]
+        },
+        {
+          "name": "Fistashka",
+          "name_ru": "Фисташковый",
+          "name_en": "Pistachio",
+          "hex": "#a39a80",
+          "images": [
+            "images/dubay-ipak-7.jpg",
+            "images/dubay-ipak-mato-7.jpg"
+          ]
+        },
+        {
+          "name": "Bordo",
+          "name_ru": "Бордовый",
+          "name_en": "Burgundy",
+          "hex": "#6a2229",
+          "images": [
+            "images/dubay-ipak-8.jpg",
+            "images/dubay-ipak-mato-8.jpg"
+          ]
+        },
+        {
+          "name": "Yashil",
+          "name_ru": "Зелёный",
+          "name_en": "Green",
+          "hex": "#2f4a40",
+          "images": [
+            "images/dubay-ipak-9.jpg",
+            "images/dubay-ipak-mato-9.jpg"
+          ]
+        },
+        {
+          "name": "Zaytun, oq hoshiya",
+          "name_ru": "Оливковый с белой каймой",
+          "name_en": "Olive, white border",
+          "hex": "#5c5a34",
+          "images": [
+            "images/dubay-ipak-10.jpg",
+            "images/dubay-ipak-mato-10.jpg"
+          ]
+        }
+      ],
+      "price_ru": "",
+      "price_en": "",
+      "price_note_ru": "",
+      "price_note_en": ""
+    },
+    {
       "name": "Turkiya tvil sholk ro‘mollar",
       "name_ru": "Турецкие платки твиль шолк",
       "name_en": "Turkish Twill Silk Scarves",
