@@ -268,7 +268,10 @@
 .opt-btn:hover{background:var(--bg);animation-play-state:paused}
 @keyframes optShake{0%,72%,100%{transform:none}75%{transform:translateX(-5px) rotate(-1.5deg)}79%{transform:translateX(5px) rotate(1.5deg)}83%{transform:translateX(-4px) rotate(-1deg)}87%{transform:translateX(4px) rotate(1deg)}91%{transform:translateX(-2px)}95%{transform:translateX(2px)}}
 @keyframes optRing{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(1.12,1.35)}}
-@media (prefers-reduced-motion:reduce){.opt-btn,.opt-btn::after{animation:none}}
+.hero-txt .btn.solid{position:relative;animation:optShake 3.2s ease-in-out 1.2s infinite}
+  .hero-txt .btn.solid::after{content:"";position:absolute;inset:0;border:2px solid #fff;animation:optRing 1.6s ease-out infinite;pointer-events:none}
+  .hero-txt .btn.solid:hover{animation-play-state:paused}
+  @media (prefers-reduced-motion:reduce){.opt-btn,.opt-btn::after,.hero-txt .btn.solid,.hero-txt .btn.solid::after{animation:none}}
 @media (max-width:760px){.opt{flex-direction:column;align-items:stretch;padding:30px 22px;gap:22px;margin-bottom:40px}.opt-btn{text-align:center;padding:18px 20px}}
   .why{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
 #biz{padding:56px 0}
