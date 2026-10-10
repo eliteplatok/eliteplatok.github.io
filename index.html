@@ -240,14 +240,17 @@
 
   /* offer */
   .offer{position:relative;color:#fff;text-align:center;padding:150px 0;overflow:hidden;background:var(--ink)}
-  .offer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
-  .offer .wrap{position:relative}
+  .offer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%;opacity:.62}
+  .offer::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse 60% 70% at 50% 55%,rgba(20,16,13,.62) 0%,rgba(20,16,13,.35) 60%,rgba(20,16,13,.2) 100%);pointer-events:none}
+  .offer .wrap{position:relative;z-index:2}
+  .offer h2,.offer .sub,.offer p{text-shadow:0 2px 14px rgba(0,0,0,.5)}
   .offer .eyebrow{color:rgba(255,255,255,.7)}
   .offer h2{font-size:clamp(40px,6vw,78px);margin:18px 0}
   .offer .sub{font-family:var(--serif);font-style:italic;font-size:26px;color:#e4cfb8;margin-bottom:12px}
-  .offer p{color:rgba(255,255,255,.75);max-width:440px;margin:0 auto 44px}
-  .offer .btn{border-color:#fff;color:#fff}
-  .offer .btn:hover{background:#fff;color:var(--ink)}
+  .offer p{color:#fff;font-size:16px;font-weight:400;max-width:520px;margin:0 auto 40px}
+  .offer .btn{position:relative;border-color:#fff;background:#fff;color:var(--ink);font-weight:500;animation:optShake 3.2s ease-in-out .6s infinite}
+  .offer .btn::after{content:"";position:absolute;inset:0;border:2px solid #fff;animation:optRing 1.6s ease-out infinite;pointer-events:none}
+  .offer .btn:hover{background:transparent;color:#fff;animation-play-state:paused}
 
   /* accessories */
   .acc{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
@@ -271,7 +274,7 @@
 .hero-txt .btn.solid{position:relative;animation:optShake 3.2s ease-in-out 1.2s infinite}
   .hero-txt .btn.solid::after{content:"";position:absolute;inset:0;border:2px solid #fff;animation:optRing 1.6s ease-out infinite;pointer-events:none}
   .hero-txt .btn.solid:hover{animation-play-state:paused}
-  @media (prefers-reduced-motion:reduce){.opt-btn,.opt-btn::after,.hero-txt .btn.solid,.hero-txt .btn.solid::after{animation:none}}
+  @media (prefers-reduced-motion:reduce){.opt-btn,.opt-btn::after,.hero-txt .btn.solid,.hero-txt .btn.solid::after,.offer .btn,.offer .btn::after{animation:none}}
 @media (max-width:760px){.opt{flex-direction:column;align-items:stretch;padding:30px 22px;gap:22px;margin-bottom:40px}.opt-btn{text-align:center;padding:18px 20px}}
   .why{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
 #biz{padding:56px 0}
