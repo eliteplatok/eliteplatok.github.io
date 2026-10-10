@@ -137,6 +137,9 @@ content:
       - { name: cart_total_note, label: "Savat: narxi hisoblanmagan mahsulotlar izohi", type: text }
       - { name: cart_total_note_ru, label: "Savat: narxi hisoblanmagan mahsulotlar izohi (RU)", type: text }
       - { name: cart_total_note_en, label: "Savat: narxi hisoblanmagan mahsulotlar izohi (EN)", type: text }
+      - { name: cart_delivery_note, label: "Savat: yetkazib berish eslatmasi", type: string }
+      - { name: cart_delivery_note_ru, label: "Savat: yetkazib berish eslatmasi (RU)", type: string }
+      - { name: cart_delivery_note_en, label: "Savat: yetkazib berish eslatmasi (EN)", type: string }
       - { name: cart_checkout, label: "Savat: «Buyurtma berish» tugmasi", type: string }
       - { name: cart_checkout_ru, label: "Savat: «Buyurtma berish» tugmasi (RU)", type: string }
       - { name: cart_checkout_en, label: "Savat: «Buyurtma berish» tugmasi (EN)", type: string }
@@ -505,6 +508,51 @@ content:
           - { name: note, label: "Izoh / narx", type: string }
           - { name: note_ru, label: "Izoh / narx (RU)", type: string }
           - { name: note_en, label: "Izoh / narx (EN)", type: string }
+
+  - name: yetkazish
+    label: "🚚 Buyurtma va yetkazib berish"
+    type: file
+    path: content/yetkazish.json
+    format: json
+    fields:
+      - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
+      - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
+      - { name: text, label: "Matn", type: text }
+      - { name: text_ru, label: "Matn (RU)", type: text }
+      - { name: text_en, label: "Matn (EN)", type: text }
+      - { name: button, label: "Telegram tugmasi", type: string }
+      - { name: button_ru, label: "Telegram tugmasi (RU)", type: string }
+      - { name: button_en, label: "Telegram tugmasi (EN)", type: string }
+      - { name: call_button, label: "Qo‘ng‘iroq tugmasi", type: string }
+      - { name: call_button_ru, label: "Qo‘ng‘iroq tugmasi (RU)", type: string }
+      - { name: call_button_en, label: "Qo‘ng‘iroq tugmasi (EN)", type: string }
+      - name: steps
+        label: "Qadamlar"
+        type: object
+        list: true
+        fields:
+          - { name: number, label: "Raqam", type: string }
+          - { name: title, label: "Sarlavha", type: string }
+          - { name: title_ru, label: "Sarlavha (RU)", type: string }
+          - { name: title_en, label: "Sarlavha (EN)", type: string }
+          - { name: text, label: "Matn", type: text }
+          - { name: text_ru, label: "Matn (RU)", type: text }
+          - { name: text_en, label: "Matn (EN)", type: text }
+      - name: info
+        label: "Ma’lumot kartochkalari"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "Sarlavha", type: string }
+          - { name: title_ru, label: "Sarlavha (RU)", type: string }
+          - { name: title_en, label: "Sarlavha (EN)", type: string }
+          - { name: text, label: "Matn", type: text }
+          - { name: text_ru, label: "Matn (RU)", type: text }
+          - { name: text_en, label: "Matn (EN)", type: text }
 
   - name: nega-biz
     label: "💬 Biz haqimizda (Nega Elite Platok, optom)"

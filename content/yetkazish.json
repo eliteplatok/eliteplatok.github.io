@@ -1,0 +1,89 @@
+{
+  "eyebrow": "Buyurtma va yetkazib berish",
+  "eyebrow_ru": "Заказ и доставка",
+  "eyebrow_en": "Ordering & delivery",
+  "title": "Buyurtma berish — bir daqiqalik ish",
+  "title_ru": "Заказать — дело одной минуты",
+  "title_en": "Ordering takes just a minute",
+  "text": "Ro‘molni tanlang — qolganini o‘zimiz hal qilamiz. Uydan chiqmasdan buyurtma bering, biz eshigingizgacha yetkazamiz.",
+  "text_ru": "Выберите платок — остальное мы возьмём на себя. Заказывайте не выходя из дома, мы доставим до двери.",
+  "text_en": "Pick your scarf — we’ll take care of the rest. Order from home and we’ll deliver to your door.",
+  "button": "Telegramda yozish",
+  "button_ru": "Написать в Telegram",
+  "button_en": "Message us on Telegram",
+  "call_button": "Qo‘ng‘iroq qilish",
+  "call_button_ru": "Позвонить",
+  "call_button_en": "Call us",
+  "steps": [
+    {
+      "number": "01",
+      "title": "Tanlang",
+      "title_ru": "Выберите",
+      "title_en": "Choose",
+      "text": "Yoqqan ro‘molingizni oching, rangini yoki printini tanlang va «Savatga qo‘shish»ni bosing.",
+      "text_ru": "Откройте понравившийся платок, выберите цвет или принт и нажмите «Добавить в корзину».",
+      "text_en": "Open the scarf you like, pick a colour or print and tap “Add to cart”."
+    },
+    {
+      "number": "02",
+      "title": "Buyurtma qoldiring",
+      "title_ru": "Оставьте заказ",
+      "title_en": "Place your order",
+      "text": "Savatda ismingiz va telefon raqamingizni yozing. Xohlasangiz, to‘g‘ridan-to‘g‘ri Telegram yoki telefon orqali buyurtma bering.",
+      "text_ru": "В корзине укажите имя и номер телефона. Или закажите напрямую через Telegram или по телефону.",
+      "text_en": "Enter your name and phone number in the cart — or order directly via Telegram or by phone."
+    },
+    {
+      "number": "03",
+      "title": "Tasdiqlaymiz",
+      "title_ru": "Подтверждаем",
+      "title_en": "We confirm",
+      "text": "Menejerimiz tez orada bog‘lanadi: rang, mavjudlik, narx va yetkazish vaqtini aniqlab beradi.",
+      "text_ru": "Наш менеджер быстро свяжется с вами и уточнит цвет, наличие, цену и время доставки.",
+      "text_en": "Our manager will contact you shortly to confirm the colour, availability, price and delivery time."
+    },
+    {
+      "number": "04",
+      "title": "Yetkazamiz",
+      "title_ru": "Доставляем",
+      "title_en": "We deliver",
+      "text": "Buyurtmangizni O‘zbekiston bo‘ylab tez va ehtiyotkorlik bilan, qulay vaqtda yetkazib beramiz.",
+      "text_ru": "Быстро и бережно доставим заказ по всему Узбекистану в удобное для вас время.",
+      "text_en": "We deliver your order quickly and carefully across Uzbekistan at a time that suits you."
+    }
+  ],
+  "info": [
+    {
+      "title": "O‘zbekiston bo‘ylab",
+      "title_ru": "По всему Узбекистану",
+      "title_en": "Across Uzbekistan",
+      "text": "Toshkent va barcha viloyatlarga yetkazamiz. Muddat va narxini menejer oldindan aytadi.",
+      "text_ru": "Доставляем в Ташкент и во все регионы. Сроки и стоимость менеджер сообщит заранее.",
+      "text_en": "We deliver to Tashkent and all regions. The manager will tell you the timing and cost in advance."
+    },
+    {
+      "title": "Qulay to‘lov",
+      "title_ru": "Удобная оплата",
+      "title_en": "Easy payment",
+      "text": "Naqd yoki karta orqali — sizga qanday qulay bo‘lsa.",
+      "text_ru": "Наличными или картой — как вам удобнее.",
+      "text_en": "Cash or card — whichever suits you."
+    },
+    {
+      "title": "Chegirma o‘zi hisoblanadi",
+      "title_ru": "Скидка считается сама",
+      "title_en": "Discounts applied automatically",
+      "text": "«2 tasi», «3 tasi» kabi maxsus narxlar savatda avtomatik qo‘llanadi.",
+      "text_ru": "Специальные цены «2 шт.», «3 шт.» применяются в корзине автоматически.",
+      "text_en": "Bundle prices like “2 for” or “3 for” are applied in the cart automatically."
+    },
+    {
+      "title": "Optom — 10 donadan",
+      "title_ru": "Опт — от 10 штук",
+      "title_en": "Wholesale — 10+ pieces",
+      "text": "10 dona va undan ko‘p xaridga maxsus narx. Menejerga «OPTOM» deb yozing.",
+      "text_ru": "Специальная цена при покупке от 10 штук. Напишите менеджеру «ОПТОМ».",
+      "text_en": "Special prices for 10 or more pieces. Message our manager “OPTOM”."
+    }
+  ]
+}

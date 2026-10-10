@@ -283,6 +283,19 @@
 #biz .opt-b{margin-bottom:10px}
 #biz .opt-btn{padding:16px 28px}
 .opt-s{display:none}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+  .step{background:var(--bg);padding:28px 24px 26px;position:relative}
+  .step b{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--bg);font-family:var(--serif);font-weight:400;font-size:18px;margin-bottom:18px}
+  .step h3{font-size:22px;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:14px}
+  .dinfo{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:20px}
+  .dinfo div{border-top:1px solid var(--ink);padding-top:16px}
+  .dinfo h4{font-family:var(--serif);font-weight:400;font-size:20px;margin-bottom:6px}
+  .dinfo p{color:var(--muted);font-size:14px}
+  .dbtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+  .dnote{font-size:12px;color:var(--muted);margin:10px 0 0;text-align:center}
+  @media (max-width:1000px){.steps,.dinfo{grid-template-columns:1fr 1fr}}
+  @media (max-width:760px){#yetkazish{padding:44px 0}#yetkazish .head{margin-bottom:22px}.steps{grid-template-columns:1fr;gap:8px}.step{display:grid;grid-template-columns:34px 1fr;column-gap:14px;padding:14px 14px}.step b{grid-row:span 2;width:34px;height:34px;font-size:15px;margin:0}.step h3{font-size:18px;margin-bottom:2px}.step p,.dinfo p{font-size:13px}.dinfo{gap:16px 14px}.dinfo h4{font-size:17px}.dbtns .btn{flex:1;padding:14px 10px}}
   .why-m{padding:64px 0}
 .why-m .why b{font-size:38px;margin-bottom:12px}
 @media (max-width:760px){#biz .opt-b,#biz .opt-l{display:none}#biz .opt-s{display:block}#biz .opt h3{font-size:22px}#biz .opt-btn{padding:14px 18px;font-size:12px}#biz{padding:36px 0}#biz .opt{padding:18px 18px 20px;gap:14px}.why-m{padding:44px 0}.why-m .why{gap:22px 20px}.why-m .why div{padding-top:16px}.why-m .why b{font-size:30px;margin-bottom:8px}.why-m .why h3{font-size:19px}}
@@ -385,7 +398,7 @@ let LANG = (() => {
   try { const l = localStorage.getItem('ep-lang'); if (LANGS.includes(l)) return l; } catch (e) {}
   return 'uz';
 })();
-const FILES = ['sozlamalar','bosh-ekran','yangi','top','matolar','ranglar','afzalliklar','aksiya','aksessuarlar','nega-biz','dokon'];
+const FILES = ['sozlamalar','yetkazish','bosh-ekran','yangi','top','matolar','ranglar','afzalliklar','aksiya','aksessuarlar','nega-biz','dokon'];
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const txt = s => esc(s).replace(/\n/g, '<br>');
@@ -577,7 +590,7 @@ function renderCart(view = 'list') {
   cart = cart.filter(x => { const p = findP(x.slug); return p && (!x.v || p.vars[x.v]); });
   const lines = cartLines(), { sum, unknown, saved } = cartTotals(lines);
   const head = t => `<div class="dr-head"><h3>${txt(t)}</h3><button class="dr-x" data-x aria-label="${esc(S.close_label)}">×</button></div>`;
-  const total = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' ' + S.currency : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)}: −${fmt(saved)} ${txt(S.currency)}</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}`;
+  const total = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' ' + S.currency : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)}: −${fmt(saved)} ${txt(S.currency)}</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}${S.cart_delivery_note ? `<p class="dnote">${txt(S.cart_delivery_note)}</p>` : ''}`;
   if (view === 'ok') {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="ok"><div class="ic">✓</div><h3>${txt(S.success_title)}</h3><p>${txt(S.success_text)}</p><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
   } else if (!lines.length) {
@@ -705,6 +718,12 @@ function render(C) {
 </div></section>
 
 ${products('yangi', C['yangi'], S)}
+${(() => { const Y = C['yetkazish']; return Y && Y.title ? `<section id="yetkazish" class="alt"><div class="wrap">
+  ${head(Y)}
+  <div class="steps">${(Y.steps || []).map(x => `<div class="step r"><b>${txt(x.number)}</b><h3>${txt(x.title)}</h3><p>${txt(x.text)}</p></div>`).join('')}</div>
+  <div class="dinfo">${(Y.info || []).map(x => `<div class="r"><h4>${txt(x.title)}</h4><p>${txt(x.text)}</p></div>`).join('')}</div>
+  <div class="dbtns r"><a href="${esc(S.telegram)}" ${ext} class="btn solid">${txt(Y.button)}</a>${S.phone ? `<a href="${tel(S.phone)}" class="btn">${txt(Y.call_button)}</a>` : ''}</div>
+</div></section>` : ''; })()}
 <section class="why-m"><div class="wrap"><div class="why">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div></div></section>
 ${products('', C['top'], S, true)}
 
