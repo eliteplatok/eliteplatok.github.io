@@ -267,6 +267,8 @@
 @media (prefers-reduced-motion:reduce){.opt-btn,.opt-btn::after{animation:none}}
 @media (max-width:760px){.opt{flex-direction:column;align-items:stretch;padding:30px 22px;gap:22px;margin-bottom:40px}.opt-btn{text-align:center;padding:18px 20px}}
   .why{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+  .why-m{display:none}
+  @media (max-width:760px){.why-d{display:none}.why-m{display:block}#biz .opt{margin-bottom:0}}
   .why div{border-top:1px solid var(--ink);padding-top:26px}
   .why b{display:block;font-family:var(--serif);font-weight:400;font-size:46px;line-height:1;color:var(--accent);margin-bottom:18px}
   .why h3{font-size:24px;margin-bottom:10px}
@@ -683,10 +685,11 @@ function render(C) {
     <div>${W.wholesale_badge ? `<span class="opt-b">${txt(W.wholesale_badge)}</span>` : ''}<h3>${txt(W.wholesale_title)}</h3><p>${txt(W.wholesale_text)}</p></div>
     <a class="opt-btn" href="${esc(S.telegram)}${S.telegram.includes('?') ? '&' : '?'}text=${encodeURIComponent(W.wholesale_message || 'OPTOM')}" ${ext}>${txt(W.wholesale_button)} <span>→</span></a>
   </div>` : ''}
-  <div class="why">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div>
+  <div class="why why-d">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div>
 </div></section>
 
 ${products('yangi', C['yangi'], S)}
+<section class="why-m"><div class="wrap"><div class="why">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div></div></section>
 ${products('', C['top'], S, true)}
 
 <section id="matolar"><div class="wrap">
