@@ -37,16 +37,16 @@
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
       "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
       "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
-      "price": "",
-      "price_note": "",
+      "price": "55 000 so‘m",
+      "price_note": "3 tasi — 150 000 so‘m",
       "old_price": "",
       "old_price_ru": "",
       "old_price_en": "",
-      "price_number": 0,
-      "promo3": false,
-      "promo_qty": 0,
-      "promo_total": 0,
-      "promo_group": "",
+      "price_number": 55000,
+      "promo3": true,
+      "promo_qty": 3,
+      "promo_total": 150000,
+      "promo_group": "dubay-ipak",
       "badge": "Yangi",
       "badge_ru": "Новинка",
       "badge_en": "New",
@@ -152,10 +152,10 @@
           ]
         }
       ],
-      "price_ru": "",
-      "price_en": "",
-      "price_note_ru": "",
-      "price_note_en": ""
+      "price_ru": "55 000 сум",
+      "price_en": "55,000 UZS",
+      "price_note_ru": "3 шт. — 150 000 сум",
+      "price_note_en": "3 for 150,000 UZS"
     },
     {
       "name": "Turkiya tvil sholk ro‘mollar",
