@@ -14,6 +14,7 @@
     --serif:"Cormorant Garamond", Georgia, serif; --sans:"Inter", system-ui, sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
+  [hidden]{display:none!important}
   html{scroll-behavior:smooth}
   body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
@@ -53,7 +54,7 @@
   .burger span:nth-child(1){top:4px}.burger span:nth-child(2){bottom:4px}
 
   /* hero */
-  .hero{position:relative;height:calc(100vh - 106px);min-height:560px;display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:4px;background:var(--ink)}
+  .hero{position:relative;overflow:hidden;grid-template-rows:100%;height:calc(100vh - 106px);min-height:560px;display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:4px;background:var(--ink)}
   .hero img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
   .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,16,13,.72) 0%,rgba(20,16,13,.15) 45%,rgba(20,16,13,0) 70%);pointer-events:none}
   .hero-txt{position:absolute;left:0;right:0;bottom:0;z-index:2;text-align:center;color:#fff;padding:0 16px 64px}
@@ -254,6 +255,17 @@
   .acc-img img{width:100%;height:100%;object-fit:cover}
 
   /* why */
+.opt{display:flex;align-items:center;justify-content:space-between;gap:36px;background:var(--ink);color:var(--bg);padding:40px 48px;margin:0 0 56px}
+.opt-b{display:inline-block;font-size:10px;letter-spacing:.24em;text-transform:uppercase;border:1px solid rgba(247,243,238,.4);padding:5px 10px;margin-bottom:14px}
+.opt h3{font-size:clamp(26px,3vw,36px);line-height:1.15;margin-bottom:10px}
+.opt p{color:rgba(247,243,238,.78);max-width:620px;font-size:15px}
+.opt-btn{flex:none;position:relative;background:#c9a27a;color:var(--ink);font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:20px 34px;animation:optShake 3.2s ease-in-out infinite}
+.opt-btn::after{content:"";position:absolute;inset:0;border:2px solid #c9a27a;animation:optRing 1.6s ease-out infinite;pointer-events:none}
+.opt-btn:hover{background:var(--bg);animation-play-state:paused}
+@keyframes optShake{0%,72%,100%{transform:none}75%{transform:translateX(-5px) rotate(-1.5deg)}79%{transform:translateX(5px) rotate(1.5deg)}83%{transform:translateX(-4px) rotate(-1deg)}87%{transform:translateX(4px) rotate(1deg)}91%{transform:translateX(-2px)}95%{transform:translateX(2px)}}
+@keyframes optRing{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(1.12,1.35)}}
+@media (prefers-reduced-motion:reduce){.opt-btn,.opt-btn::after{animation:none}}
+@media (max-width:760px){.opt{flex-direction:column;align-items:stretch;padding:30px 22px;gap:22px;margin-bottom:40px}.opt-btn{text-align:center;padding:18px 20px}}
   .why{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
   .why div{border-top:1px solid var(--ink);padding-top:26px}
   .why b{display:block;font-family:var(--serif);font-weight:400;font-size:46px;line-height:1;color:var(--accent);margin-bottom:18px}
@@ -665,6 +677,15 @@ function render(C) {
   </div>
 </div>
 
+<section id="biz" class="alt"><div class="wrap">
+  ${head(W)}
+  ${W.wholesale_title ? `<div class="opt r">
+    <div>${W.wholesale_badge ? `<span class="opt-b">${txt(W.wholesale_badge)}</span>` : ''}<h3>${txt(W.wholesale_title)}</h3><p>${txt(W.wholesale_text)}</p></div>
+    <a class="opt-btn" href="${esc(S.telegram)}${S.telegram.includes('?') ? '&' : '?'}text=${encodeURIComponent(W.wholesale_message || 'OPTOM')}" ${ext}>${txt(W.wholesale_button)} <span>→</span></a>
+  </div>` : ''}
+  <div class="why">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div>
+</div></section>
+
 ${products('yangi', C['yangi'], S)}
 ${products('', C['top'], S, true)}
 
@@ -705,11 +726,6 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
     <ul>${(A.items || []).map(a => `<li><b>${txt(a.name)}</b><small>${txt(a.note)}</small></li>`).join('')}</ul>
     <a href="${esc(S.telegram)}" ${ext} class="btn">${txt(A.button)}</a>
   </div>
-</div></section>
-
-<section class="alt"><div class="wrap">
-  ${head(W)}
-  <div class="why">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div>
 </div></section>
 
 <section id="dokon"><div class="wrap store">

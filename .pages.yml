@@ -506,7 +506,7 @@ content:
           - { name: note_en, label: "Izoh / narx (EN)", type: string }
 
   - name: nega-biz
-    label: "💬 Nega Elite Platok?"
+    label: "💬 Biz haqimizda (Nega Elite Platok, optom)"
     type: file
     path: content/nega-biz.json
     format: json
@@ -517,6 +517,21 @@ content:
       - { name: title, label: "Sarlavha", type: string }
       - { name: title_ru, label: "Sarlavha (RU)", type: string }
       - { name: title_en, label: "Sarlavha (EN)", type: string }
+      - { name: wholesale_badge, label: "Optom: kichik yozuv", type: string }
+      - { name: wholesale_badge_ru, label: "Optom: kichik yozuv (RU)", type: string }
+      - { name: wholesale_badge_en, label: "Optom: kichik yozuv (EN)", type: string }
+      - { name: wholesale_title, label: "Optom: sarlavha", type: string }
+      - { name: wholesale_title_ru, label: "Optom: sarlavha (RU)", type: string }
+      - { name: wholesale_title_en, label: "Optom: sarlavha (EN)", type: string }
+      - { name: wholesale_text, label: "Optom: matn", type: text }
+      - { name: wholesale_text_ru, label: "Optom: matn (RU)", type: text }
+      - { name: wholesale_text_en, label: "Optom: matn (EN)", type: text }
+      - { name: wholesale_button, label: "Optom: tugma yozuvi", type: string }
+      - { name: wholesale_button_ru, label: "Optom: tugma yozuvi (RU)", type: string }
+      - { name: wholesale_button_en, label: "Optom: tugma yozuvi (EN)", type: string }
+      - { name: wholesale_message, label: "Optom: menejerga boradigan tayyor xabar", type: text }
+      - { name: wholesale_message_ru, label: "Optom: menejerga boradigan tayyor xabar (RU)", type: text }
+      - { name: wholesale_message_en, label: "Optom: menejerga boradigan tayyor xabar (EN)", type: text }
       - name: items
         label: "Punktlar"
         type: object

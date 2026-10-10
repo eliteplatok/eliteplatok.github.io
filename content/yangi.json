@@ -35,14 +35,14 @@
       "care": "30°C da qo‘lda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
       "care_ru": "Стирать вручную при 30°C или сдавать в химчистку. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
       "care_en": "Hand wash at 30°C or dry clean. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
-      "price": "",
-      "price_note": "",
+      "price": "99 000 so‘m",
+      "price_note": "2 tasi — 149 000 so‘m",
       "old_price": "",
-      "price_number": 0,
-      "promo3": false,
-      "promo_qty": 3,
-      "promo_total": 0,
-      "promo_group": "",
+      "price_number": 99000,
+      "promo3": true,
+      "promo_qty": 2,
+      "promo_total": 149000,
+      "promo_group": "tvil-birton",
       "badge": "Yangi",
       "badge_ru": "Новинка",
       "badge_en": "New",
@@ -218,7 +218,11 @@
             "images/atlas-17.jpg"
           ]
         }
-      ]
+      ],
+      "price_ru": "99 000 сум",
+      "price_en": "99,000 UZS",
+      "price_note_ru": "2 шт. — 149 000 сум",
+      "price_note_en": "2 for 149,000 UZS"
     },
     {
       "name": "Italyan tvil ro‘mollar",
