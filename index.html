@@ -729,7 +729,6 @@ ${(() => { const Y = C['yetkazish']; return Y && Y.title ? `<section id="yetkazi
   <div class="dinfo">${(Y.info || []).map(x => `<div class="r"><h4>${txt(x.title)}</h4><p>${txt(x.text)}</p></div>`).join('')}</div>
   <div class="dbtns r"><a href="${esc(S.telegram)}" ${ext} class="btn solid">${txt(Y.button)}</a>${S.phone ? `<a href="${tel(S.phone)}" class="btn">${txt(Y.call_button)}</a>` : ''}</div>
 </div></section>` : ''; })()}
-<section class="why-m"><div class="wrap"><div class="why">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div></div></section>
 ${products('', C['top'], S, true)}
 
 <section id="matolar"><div class="wrap">
@@ -787,6 +786,8 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
     </div>
   </div>
 </div></section>
+
+<section class="why-m alt"><div class="wrap"><div class="why">${(W.items || []).map(w => `<div class="r"><b>${txt(w.number)}</b><h3>${txt(w.title)}</h3><p>${txt(w.text)}</p></div>`).join('')}</div></div></section>
 
 <footer><div class="wrap">
   <a href="#" class="logo">${txt(S.logo)}</a>
