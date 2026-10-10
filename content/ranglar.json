@@ -1,13 +1,52 @@
 {
   "eyebrow": "Rangiga ko‘ra tanlang",
+  "eyebrow_ru": "Выберите по цвету",
+  "eyebrow_en": "Choose by colour",
   "title": "Sevimli rangingizni toping",
+  "title_ru": "Найдите свой любимый цвет",
+  "title_en": "Find your favourite colour",
   "items": [
-    {"name": "Bej", "color": "#d9c7b3"},
-    {"name": "Qora", "color": "#2b2622"},
-    {"name": "Jigarrang", "color": "#7a5a43"},
-    {"name": "Bordo", "color": "#6b2d35"},
-    {"name": "Pushti", "color": "#e9c3c4"},
-    {"name": "Yashil", "color": "#2f4d3c"},
-    {"name": "Oq", "color": "#fbf9f6"}
+    {
+      "name": "Bej",
+      "name_ru": "Бежевый",
+      "name_en": "Beige",
+      "color": "#d9c7b3"
+    },
+    {
+      "name": "Qora",
+      "name_ru": "Чёрный",
+      "name_en": "Black",
+      "color": "#2b2622"
+    },
+    {
+      "name": "Jigarrang",
+      "name_ru": "Коричневый",
+      "name_en": "Brown",
+      "color": "#7a5a43"
+    },
+    {
+      "name": "Bordo",
+      "name_ru": "Бордовый",
+      "name_en": "Burgundy",
+      "color": "#6b2d35"
+    },
+    {
+      "name": "Pushti",
+      "name_ru": "Розовый",
+      "name_en": "Pink",
+      "color": "#e9c3c4"
+    },
+    {
+      "name": "Yashil",
+      "name_ru": "Зелёный",
+      "name_en": "Green",
+      "color": "#2f4d3c"
+    },
+    {
+      "name": "Oq",
+      "name_ru": "Белый",
+      "name_en": "White",
+      "color": "#fbf9f6"
+    }
   ]
 }

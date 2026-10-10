@@ -1,12 +1,41 @@
 {
   "eyebrow": "Aksessuarlar",
+  "eyebrow_ru": "Аксессуары",
+  "eyebrow_en": "Accessories",
   "title": "Obrazni to‘ldiruvchi detallar",
+  "title_ru": "Детали, дополняющие образ",
+  "title_en": "Details that complete the look",
   "text": "Ro‘mol chiroyli va mahkam turishi uchun kerakli hamma narsa bir joyda.",
+  "text_ru": "Всё, чтобы платок сидел красиво и надёжно, — в одном месте.",
+  "text_en": "Everything to keep your scarf beautiful and secure — in one place.",
   "button": "Aksessuarlarni ko‘rish",
+  "button_ru": "Смотреть аксессуары",
+  "button_en": "View accessories",
   "image": "images/toshli-bonne.jpg",
   "items": [
-    {"name": "Magnitlar", "note": "ignasiz mahkamlash"},
-    {"name": "Ignalar", "note": "klassik va bezakli"},
-    {"name": "Podxijabniklar", "note": "toshli bonne, kepka bonne, balaklava — 70 000 so‘m"}
+    {
+      "name": "Magnitlar",
+      "name_ru": "Магниты",
+      "name_en": "Magnets",
+      "note": "ignasiz mahkamlash",
+      "note_ru": "крепление без булавок",
+      "note_en": "pin-free fastening"
+    },
+    {
+      "name": "Ignalar",
+      "name_ru": "Булавки",
+      "name_en": "Pins",
+      "note": "klassik va bezakli",
+      "note_ru": "классические и декоративные",
+      "note_en": "classic and decorative"
+    },
+    {
+      "name": "Podxijabniklar",
+      "name_ru": "Подхиджабники",
+      "name_en": "Underscarves",
+      "note": "toshli bonne, kepka bonne, balaklava — 70 000 so‘m",
+      "note_ru": "бонне со стразами, бонне-кепка, балаклава — 70 000 сум",
+      "note_en": "rhinestone bonnet, cap bonnet, balaclava — 70,000 UZS"
+    }
   ]
 }

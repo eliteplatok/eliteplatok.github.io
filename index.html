@@ -42,6 +42,12 @@
   .menu a{color:var(--muted);transition:.2s}.menu a:hover{color:var(--ink)}
   .nav-cta{grid-column:3;justify-self:end;font-size:11px;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--ink);padding:9px 16px;transition:.3s}
   .nav-cta:hover{background:var(--ink);color:var(--bg)}
+  .nav-r{grid-column:3;justify-self:end;display:flex;align-items:center;gap:22px}
+  .lang{display:flex;gap:2px}
+  .lang button{background:none;border:0;font:inherit;font-size:11px;letter-spacing:.14em;color:var(--muted);padding:6px 6px 4px;cursor:pointer;border-bottom:1px solid transparent;transition:.2s}
+  .lang button:hover{color:var(--ink)}
+  .lang button.on{color:var(--ink);border-bottom-color:var(--ink)}
+  .lang-bar{display:none}
   .burger{display:none;grid-column:1;grid-row:1;background:none;border:0;width:28px;height:20px;position:relative;cursor:pointer}
   .burger span{position:absolute;left:0;right:0;height:1px;background:var(--ink)}
   .burger span:nth-child(1){top:4px}.burger span:nth-child(2){bottom:4px}
@@ -127,6 +133,17 @@
   .pm-btns .btn.solid{grid-column:1/-1;padding:18px}
   button.btn{background:transparent;color:var(--ink);font-family:inherit;font-weight:300;cursor:pointer}
   button.btn:hover{background:var(--ink);color:var(--bg)}
+  .sw{margin:-6px 0 30px}
+  .sw-h{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .sw-h b{color:var(--ink);font-weight:500;margin-left:6px}
+  .sw-g{display:flex;flex-wrap:wrap;gap:12px}
+  .sw-g button{width:36px;height:36px;border-radius:50%;border:1px solid rgba(43,38,34,.14);background:var(--c);cursor:pointer;padding:0;transition:box-shadow .2s,transform .2s}
+  .sw-g button:hover{transform:scale(1.08)}
+  .sw-g button.on{box-shadow:0 0 0 3px var(--bg),0 0 0 4px var(--ink)}
+  .sw-mini{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0 2px}
+  .sw-mini button{width:14px;height:14px;border-radius:50%;border:1px solid rgba(43,38,34,.16);background:var(--c);padding:0;cursor:pointer}
+  .sw-mini button.on{box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--ink)}
+  .sw-mini span{font-size:11px;color:var(--muted);margin-left:2px}
   .allc{margin:0 0 34px}
   .allc-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px;display:flex;justify-content:space-between}
   .allc-h span{color:var(--muted)}
@@ -290,6 +307,12 @@
     .hero img:not(.main){display:none}
     .hero-txt{padding-bottom:44px}
     .nav-cta{display:none}
+    .lang-nav{display:none}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;padding:5px 10px 5px 16px}
+    .bar span{line-height:1.5;padding:4px 0}
+    .lang-bar{display:flex;flex:none}
+    .lang-bar button{color:rgba(247,243,238,.6);font-size:10px;padding:5px 5px 3px}
+    .lang-bar button.on{color:var(--bg);border-bottom-color:var(--bg)}
     .cart-ic{display:block}
     .logo{font-size:20px;letter-spacing:.18em}
     .colors{gap:28px 30px}
@@ -324,6 +347,13 @@
 <noscript><p style="padding:40px;text-align:center">Saytni ko‘rish uchun JavaScript yoqilgan bo‘lishi kerak.</p></noscript>
 
 <script>
+const LANGS = ['uz', 'ru', 'en'];
+let LANG = (() => {
+  const q = new URLSearchParams(location.search).get('lang');
+  if (LANGS.includes(q)) return q;
+  try { const l = localStorage.getItem('ep-lang'); if (LANGS.includes(l)) return l; } catch (e) {}
+  return 'uz';
+})();
 const FILES = ['sozlamalar','bosh-ekran','yangi','top','matolar','ranglar','afzalliklar','aksiya','aksessuarlar','nega-biz','dokon'];
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -341,6 +371,7 @@ function head(d, link, center) {
 }
 
 const PRODUCTS = [];
+const VARS = p => (Array.isArray(p.variants) ? p.variants : []).map(v => ({ ...v, ims: imgsOf(v) })).filter(v => v.ims.length);
 const imgsOf = p => (Array.isArray(p.images) && p.images.length ? p.images : (p.image ? [p.image] : [])).map(x => typeof x === 'string' ? x : x && x.image).filter(Boolean);
 const slugify = s => String(s || '').toLowerCase().replace(/[‘’ʻʼ'`]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const dots = n => n > 8 ? `<div class="count">1 / ${n}</div>`
@@ -349,18 +380,19 @@ const priceHtml = p => (p.price ? `<div class="price">${txt(p.price)}${p.old_pri
   + (p.price_note ? `<div class="pnote">${txt(p.price_note)}</div>` : '');
 
 function card(p, S) {
-  const i = PRODUCTS.length, ims = imgsOf(p);
-  let slug = slugify(p.name) || 'mahsulot';
+  const i = PRODUCTS.length, vars = VARS(p), ims = vars.length ? vars.map(v => v.ims[0]) : imgsOf(p);
+  let slug = slugify(p.name_uz || p.name) || 'mahsulot';
   if (PRODUCTS.some(x => x.slug === slug)) slug += '-' + i;
-  PRODUCTS.push({ ...p, ims, slug });
+  PRODUCTS.push({ ...p, ims, vars, slug });
+  const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${k ? '' : 'on'}" data-v="${k}" style="--c:${esc(v.hex || '#ccc')}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
   return `<div class="card r" data-p="${i}" role="button" tabindex="0" aria-label="${esc(p.name)}">
     <div class="ph">
       <div class="slides">${ims.map((s, k) => `<img src="${img(s)}" alt="${esc(p.name)}" loading="lazy" draggable="false">`).join('')}</div>
-      ${ims.length > 1 ? `<button class="arr prev" aria-label="Oldingi">‹</button><button class="arr next" aria-label="Keyingi">›</button>` : ''}
+      ${ims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>` : ''}
       ${dots(ims.length)}
       ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}
       <span class="order">${txt(S.card_order_label)}</span></div>
-    <h3>${txt(p.name)}</h3>${p.size || p.material ? `<div class="meta">${txt(p.size || p.material)}</div>` : ''}
+    <h3>${txt(p.name)}</h3>${p.size || p.material ? `<div class="meta">${txt(p.size || p.material)}</div>` : ''}${sw}
     ${p.description ? `<p class="d">${txt(p.description)}</p>` : ''}
     ${priceHtml(p)}
   </div>`;
@@ -377,37 +409,41 @@ function bindSlider(track, root) {
     ds.forEach((d, j) => d.classList.toggle('on', j === k));
     const cnt = root.querySelector('.count'); if (cnt) cnt.textContent = `${k + 1} / ${track.children.length}`;
     root.querySelectorAll('.pm-thumbs button').forEach((b, j) => b.classList.toggle('on', j === k));
+    root.querySelectorAll('.sw-mini button').forEach((b, j) => b.classList.toggle('on', j === k));
   }, { passive: true });
   return go;
 }
 
 /* --- product window --- */
 let S_ = {}, pushed = false;
-function openProduct(i, push = true) {
+function openProduct(i, push = true, vi = 0) {
   const p = PRODUCTS[i]; if (!p) return;
+  vi = p.vars.length ? Math.max(0, Math.min(p.vars.length - 1, vi | 0)) : 0;
+  const v = p.vars[vi], ims = v ? v.ims : p.ims, hash = p.slug + (v && vi ? '/' + (vi + 1) : '');
   const S = S_, pm = document.getElementById('pm');
   const row = (l, v) => v ? `<div><dt>${txt(l)}</dt><dd>${txt(v)}</dd></div>` : '';
   const acc = (t, v, open) => v ? `<details class="acc-item"${open ? ' open' : ''}><summary>${txt(t)}</summary><p>${txt(v)}</p></details>` : '';
   pm.innerHTML = `
-    <div class="pm-top"><a href="#" class="logo" data-close>${txt(S.logo)}</a><button class="pm-x" data-close>Yopish <b>×</b></button></div>
+    <div class="pm-top"><a href="#" class="logo" data-close>${txt(S.logo)}</a><button class="pm-x" data-close>${txt(S.close_label)} <b>×</b></button></div>
     <div class="pm-body">
       <div class="pm-gal">
-        <div class="pm-slides">${p.ims.map(s => `<img src="${img(s)}" alt="${esc(p.name)}" draggable="false">`).join('')}</div>
-        ${p.ims.length > 1 ? `<button class="arr prev" aria-label="Oldingi">‹</button><button class="arr next" aria-label="Keyingi">›</button>${dots(p.ims.length)}` : ''}
-        ${p.ims.length > 1 ? `<div class="pm-thumbs">${p.ims.map((s, k) => `<button class="${k ? '' : 'on'}" data-k="${k}"><img src="${img(s)}" alt=""></button>`).join('')}</div>` : ''}
+        <div class="pm-slides">${ims.map(s => `<img src="${img(s)}" alt="${esc(p.name + (v ? ' — ' + v.name : ''))}" draggable="false">`).join('')}</div>
+        ${ims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>${dots(ims.length)}` : ''}
+        ${ims.length > 1 ? `<div class="pm-thumbs">${ims.map((s, k) => `<button class="${k ? '' : 'on'}" data-k="${k}"><img src="${img(s)}" alt=""></button>`).join('')}</div>` : ''}
       </div>
       <div class="pm-info">
         ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}
         <h2>${txt(p.name)}</h2>
         ${priceHtml(p)}
+        ${p.vars.length ? `<div class="sw"><div class="sw-h">${txt(S.product_label_color)} —<b>${txt(v.name)}</b></div><div class="sw-g">${p.vars.map((x, k) => `<button class="${k === vi ? 'on' : ''}" data-v="${k}" style="--c:${esc(x.hex || '#ccc')}" aria-label="${esc(x.name)}" title="${esc(x.name)}"></button>`).join('')}</div></div>` : ''}
         ${p.description ? `<p class="lead">${txt(p.description)}</p>` : ''}
-        <dl class="spec">${row(S.product_label_size, p.size)}${row(S.product_label_material, p.material)}${row(S.product_label_color, p.color)}</dl>
+        <dl class="spec">${row(S.product_label_size, p.size)}${row(S.product_label_material, p.material)}${p.vars.length ? "" : row(S.product_label_color, p.color)}</dl>
         <div class="pm-btns">
           <button class="btn solid" data-add>${txt(S.product_add_button)}</button>
           ${S.phone ? `<a class="btn" href="${tel(S.phone)}">${txt(S.product_call_button)}</a>` : ''}
           <button class="btn" data-share>${txt(S.product_share_button)}</button>
         </div>
-        ${p.ims.length > 4 ? `<div class="allc"><div class="allc-h">${txt(S.product_all_colors)} <span>${p.ims.length}</span></div><div class="allc-g">${p.ims.map((s, k) => `<button data-k="${k}" aria-label="${k + 1}"><img src="${img(s)}" alt="" loading="lazy"></button>`).join('')}</div></div>` : ''}
+        ${!p.vars.length && p.ims.length > 4 ? `<div class="allc"><div class="allc-h">${txt(S.product_all_colors)} <span>${p.ims.length}</span></div><div class="allc-g">${p.ims.map((s, k) => `<button data-k="${k}" aria-label="${k + 1}"><img src="${img(s)}" alt="" loading="lazy"></button>`).join('')}</div></div>` : ''}
         ${acc(S.product_tab_details, p.details, true)}${acc(S.product_tab_care, p.care)}${acc(S.product_tab_delivery, S.delivery_text)}
       </div>
     </div>`;
@@ -418,19 +454,21 @@ function openProduct(i, push = true) {
     track.scrollTo({ left: b.dataset.k * track.clientWidth });
     pm.scrollTo({ top: 0, behavior: 'smooth' });
   });
+  pm.querySelectorAll('.sw-g button').forEach(b => b.onclick = () => { const st = pm.scrollTop; openProduct(i, true, +b.dataset.v); pm.scrollTop = st;
+    const g = pm.querySelector(".pm-gal").getBoundingClientRect(); if (g.bottom < 120) pm.scrollTo({ top: 0, behavior: "smooth" }); });
   pm.querySelectorAll('[data-close]').forEach(b => b.onclick = e => { e.preventDefault(); closeProduct(); });
-  pm.querySelector('[data-add]').onclick = () => { cartAdd(p.slug); toast(S.cart_added); openCart(); };
+  pm.querySelector('[data-add]').onclick = () => { cartAdd(p.slug, vi); toast(S.cart_added); openCart(); };
   pm.querySelector('[data-share]').onclick = async () => {
-    const url = location.origin + location.pathname + '#' + p.slug;
+    const url = location.origin + location.pathname + '#' + hash;
     try { if (navigator.share) { await navigator.share({ title: p.name, url }); return; } } catch (e) { return; }
     try { await navigator.clipboard.writeText(url); toast(S.product_link_copied); } catch (e) { prompt('', url); }
   };
   pm.scrollTop = 0;
   pm.classList.add('open'); document.body.classList.add('lock');
   document.title = `${p.name} — ${S.logo}`;
-  if (push && location.hash !== '#' + p.slug) {
-    if (pushed) history.replaceState({ p: i }, '', '#' + p.slug);
-    else { history.pushState({ p: i }, '', '#' + p.slug); pushed = true; }
+  if (push && location.hash !== '#' + hash) {
+    if (pushed) history.replaceState({ p: i }, '', '#' + hash);
+    else { history.pushState({ p: i }, '', '#' + hash); pushed = true; }
   }
 }
 function closeProduct(fromPop) {
@@ -438,15 +476,15 @@ function closeProduct(fromPop) {
   if (!pm.classList.contains('open')) return;
   pm.classList.remove('open'); document.body.classList.remove('lock');
   document.title = S_.seo_title || S_.logo;
-  if (!fromPop && PRODUCTS.some(p => '#' + p.slug === location.hash)) {
+  if (!fromPop && PRODUCTS.some(p => '#' + p.slug === location.hash.split('/')[0])) {
     if (pushed) history.back();
     else history.replaceState(null, '', location.pathname + location.search);
   }
   pushed = false;
 }
 function fromHash() {
-  const i = PRODUCTS.findIndex(p => '#' + p.slug === location.hash);
-  i >= 0 ? openProduct(i, false) : closeProduct(true);
+  const [h, n] = location.hash.split('/'), i = PRODUCTS.findIndex(p => '#' + p.slug === h);
+  i >= 0 ? openProduct(i, false, (+n || 1) - 1) : closeProduct(true);
 }
 /* --- cart --- */
 const CART_KEY = 'ep-cart';
@@ -454,9 +492,10 @@ let cart = [];
 try { cart = JSON.parse(localStorage.getItem(CART_KEY)) || []; } catch (e) { cart = []; }
 const saveCart = () => { try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch (e) {} updateBadges(); };
 const findP = slug => PRODUCTS.find(p => p.slug === slug);
-const fmt = n => n.toLocaleString('ru-RU').replace(/ /g, ' ');
-function cartAdd(slug) { const it = cart.find(x => x.slug === slug); it ? it.qty++ : cart.push({ slug, qty: 1 }); saveCart(); }
-function cartQty(slug, d) { const it = cart.find(x => x.slug === slug); if (!it) return; it.qty += d; if (it.qty < 1) cart = cart.filter(x => x !== it); saveCart(); renderCart(); }
+const fmt = n => n.toLocaleString(LANG === 'en' ? 'en-US' : 'ru-RU').replace(/ /g, ' ');
+const keyOf = x => x.slug + (x.v ? '/' + x.v : '');
+function cartAdd(slug, v = 0) { const it = cart.find(x => x.slug === slug && (x.v || 0) === v); it ? it.qty++ : cart.push(v ? { slug, v, qty: 1 } : { slug, qty: 1 }); saveCart(); }
+function cartQty(key, d) { const it = cart.find(x => keyOf(x) === key); if (!it) return; it.qty += d; if (it.qty < 1) cart = cart.filter(x => x !== it); saveCart(); renderCart(); }
 function cartCount() { return cart.reduce((a, x) => a + x.qty, 0); }
 function updateBadges() {
   const n = cartCount();
@@ -480,7 +519,8 @@ function closeCart() {
   if (!document.getElementById('pm').classList.contains('open')) document.body.classList.remove('lock');
 }
 function cartLines() {
-  return cart.map(x => ({ ...x, p: findP(x.slug) })).filter(x => x.p);
+  return cart.map(x => { const p = findP(x.slug), v = p && p.vars[x.v || 0];
+    return p && { ...x, p, key: keyOf(x), name: p.name + (v ? ' — ' + v.name : ''), name_uz: (p.name_uz || p.name) + (v ? ' — ' + (v.name_uz || v.name) : ''), im: v ? v.ims[0] : p.ims[0] }; }).filter(Boolean);
 }
 function cartTotals(lines) {
   // "3 for X" offers are counted per promo group, so different products' offers never mix
@@ -503,10 +543,10 @@ function cartTotals(lines) {
 }
 function renderCart(view = 'list') {
   const S = S_, dr = document.getElementById('drawer');
-  cart = cart.filter(x => findP(x.slug));
+  cart = cart.filter(x => { const p = findP(x.slug); return p && (!x.v || p.vars[x.v]); });
   const lines = cartLines(), { sum, unknown, saved } = cartTotals(lines);
-  const head = t => `<div class="dr-head"><h3>${txt(t)}</h3><button class="dr-x" data-x aria-label="Yopish">×</button></div>`;
-  const total = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' so‘m' : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)}: −${fmt(saved)} so‘m</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}`;
+  const head = t => `<div class="dr-head"><h3>${txt(t)}</h3><button class="dr-x" data-x aria-label="${esc(S.close_label)}">×</button></div>`;
+  const total = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' ' + S.currency : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)}: −${fmt(saved)} ${txt(S.currency)}</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}`;
   if (view === 'ok') {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="ok"><div class="ic">✓</div><h3>${txt(S.success_title)}</h3><p>${txt(S.success_text)}</p><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
   } else if (!lines.length) {
@@ -520,7 +560,7 @@ function renderCart(view = 'list') {
       <label>${txt(S.form_comment)}<textarea name="comment" maxlength="500"></textarea></label>
       <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="err" aria-live="polite"></div>
-      <div class="mini">${lines.map(x => `<div><span>${txt(x.p.name)} × ${x.qty}</span><span>${txt(x.p.price || S.price_on_request)}</span></div>`).join('')}</div>
+      <div class="mini">${lines.map(x => `<div><span>${txt(x.name)} × ${x.qty}</span><span>${txt(x.p.price || S.price_on_request)}</span></div>`).join('')}</div>
     </form></div>
     <div class="dr-foot">${total}<button class="btn solid" data-send>${txt(S.form_submit)}</button><button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
     const f = dr.querySelector('form'), addr = dr.querySelector('.addr');
@@ -530,10 +570,10 @@ function renderCart(view = 'list') {
     dr.querySelector('[data-back]').onclick = () => renderCart('list');
   } else {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body">${lines.map(x => `
-      <div class="ci"><img src="${img(x.p.ims[0])}" alt="">
-        <div><h4>${txt(x.p.name)}</h4><div class="pr">${txt(x.p.price || S.price_on_request)}</div>
-          <div class="qty"><button data-q="-1" data-s="${x.slug}" aria-label="Kamaytirish">−</button><span>${x.qty}</span><button data-q="1" data-s="${x.slug}" aria-label="Ko‘paytirish">+</button></div></div>
-        <button class="rm" data-rm="${x.slug}">×</button></div>`).join('')}</div>
+      <div class="ci"><img src="${img(x.im)}" alt="">
+        <div><h4>${txt(x.name)}</h4><div class="pr">${txt(x.p.price || S.price_on_request)}</div>
+          <div class="qty"><button data-q="-1" data-s="${x.key}" aria-label="${esc(S.qty_less)}">−</button><span>${x.qty}</span><button data-q="1" data-s="${x.key}" aria-label="${esc(S.qty_more)}">+</button></div></div>
+        <button class="rm" data-rm="${x.key}">×</button></div>`).join('')}</div>
       <div class="dr-foot">${total}<button class="btn solid" data-go>${txt(S.cart_checkout)}</button></div>`;
     dr.querySelectorAll('[data-q]').forEach(b => b.onclick = () => cartQty(b.dataset.s, +b.dataset.q));
     dr.querySelectorAll('[data-rm]').forEach(b => b.onclick = () => cartQty(b.dataset.rm, -999));
@@ -542,11 +582,13 @@ function renderCart(view = 'list') {
   dr.querySelectorAll('[data-x]').forEach(b => b.onclick = closeCart);
 }
 function orderText(o) {
-  const L = [`🛍 Yangi buyurtma — ${S_.logo}`, '', `👤 ${o.name}`, `📞 ${o.phone}`,
-    o.how === 'pickup' ? `🏬 ${S_.form_pickup}` : `🚚 ${S_.form_delivery}: ${o.address || '—'}`];
+  const U = S_UZ;
+  const L = [`🛍 Yangi buyurtma — ${U.logo}`, '', `👤 ${o.name}`, `📞 ${o.phone}`,
+    o.how === 'pickup' ? `🏬 ${U.form_pickup}` : `🚚 ${U.form_delivery}: ${o.address || '—'}`];
+  if (o.lang !== 'uz') L.push(`🌐 Mijoz tili: ${o.lang.toUpperCase()}`);
   if (o.comment) L.push(`💬 ${o.comment}`);
   L.push('', ...o.items.map((x, i) => `${i + 1}. ${x.name} × ${x.qty} — ${x.price}`));
-  L.push('', `${S_.cart_total}: ${o.total ? fmt(o.total) + ' so‘m' : '—'}${o.unknown ? ' (+ aksiya / $ mahsulotlar)' : ''}`);
+  L.push('', `${U.cart_total}: ${o.total ? o.total.toLocaleString('ru-RU') + ' so‘m' : '—'}${o.unknown ? ' (+ aksiya / $ mahsulotlar)' : ''}`);
   return L.join('\n');
 }
 async function sendOrder(f) {
@@ -555,9 +597,9 @@ async function sendOrder(f) {
   const o = { name: E('name').value.trim(), phone: E('phone').value.trim(), how: E('how').value, address: E('address').value.trim(), comment: E('comment').value.trim(), website: E('website').value };
   if (o.name.length < 2 || o.phone.replace(/\D/g, '').length < 7) { err.textContent = S.form_error; return; }
   const lines = cartLines(), t = cartTotals(lines);
-  o.items = lines.map(x => ({ name: x.p.name, qty: x.qty, price: x.p.price || S.price_on_request, link: location.origin + location.pathname + '#' + x.slug,
-    image: x.p.ims[0] ? new URL(String(x.p.ims[0]).replace(/^\/+/, ''), location.origin + location.pathname).href : '' }));
-  o.total = t.sum; o.unknown = t.unknown; o.text = orderText(o);
+  o.items = lines.map(x => ({ name: x.name_uz, qty: x.qty, price: x.p.price_uz || x.p.price || S_UZ.price_on_request, link: location.origin + location.pathname + '#' + x.key,
+    image: x.im ? new URL(String(x.im).replace(/^\/+/, ''), location.origin + location.pathname).href : '' }));
+  o.total = t.sum; o.unknown = t.unknown; o.lang = LANG; o.text = orderText(o);
   btn.disabled = true; btn.textContent = S.form_sending;
   let ok = false;
   if (S.order_endpoint) {
@@ -597,17 +639,18 @@ function render(C) {
   document.querySelector('meta[name=description]').setAttribute('content', S.seo_description || '');
 
   return `
-<div class="bar">${txt(S.top_bar)}</div>
+<div class="bar"><span>${txt(S.top_bar)}</span>${langHtml("lang-bar")}</div>
 <header><div class="wrap nav">
   <nav class="menu" id="menu">
     <a href="#yangi">${txt(S.menu_new)}</a><a href="#matolar">${txt(S.menu_fabrics)}</a>
     ${O.show !== false ? `<a href="#aksiya">${txt(S.menu_offer)}</a>` : ''}
     <a href="#aksessuarlar">${txt(S.menu_accessories)}</a><a href="#dokon">${txt(S.menu_store)}</a>
   </nav>
-  <button class="burger" aria-label="Menyu" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span></button>
+  <button class="burger" aria-label="${esc(S.menu_label)}" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span></button>
   <a href="#" class="logo">${txt(S.logo)}</a>
+  <div class="nav-r">${langHtml('lang-nav')}
   <button class="nav-cta" data-cart>${txt(S.order_button)}<span class="n" hidden></span></button>
-  <button class="cart-ic" data-cart aria-label="${esc(S.cart_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button>
+  <button class="cart-ic" data-cart aria-label="${esc(S.cart_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button></div>
 </div></header>
 
 <div class="hero">
@@ -675,9 +718,9 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
     <div class="eyebrow">${txt(D.eyebrow)}</div>
     <h3>${txt(D.title)}</h3>
     <dl>
-      <div><dt>Manzil</dt><dd>${txt(D.address)}</dd></div>
-      ${D.landmark ? `<div><dt>Mo‘ljal</dt><dd>${txt(D.landmark)}</dd></div>` : ''}
-      <div><dt>Telefon</dt><dd><a href="${tel(S.phone)}">${txt(S.phone)}</a></dd></div>
+      <div><dt>${txt(S.store_label_address)}</dt><dd>${txt(D.address)}</dd></div>
+      ${D.landmark ? `<div><dt>${txt(S.store_label_landmark)}</dt><dd>${txt(D.landmark)}</dd></div>` : ''}
+      <div><dt>${txt(S.store_label_phone)}</dt><dd><a href="${tel(S.phone)}">${txt(S.phone)}</a></dd></div>
     </dl>
     <div class="btns">
       <a href="${esc(D.map_link)}" ${ext} class="btn solid">${txt(D.map_button)}</a>
@@ -704,40 +747,75 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
 <div class="toast" id="toast"></div>`;
 }
 
+/* --- language: uz (default) / ru / en; each text field may have a key_ru / key_en twin --- */
+function loc(o) {
+  if (Array.isArray(o)) return o.map(loc);
+  if (!o || typeof o !== 'object') return o;
+  const r = {};
+  for (const k in o) if (!/_(ru|en)$/.test(k)) r[k] = loc(o[k]);
+  if (LANG !== 'uz') for (const k in r) {
+    const t = o[k + '_' + LANG];
+    if (typeof t === 'string' && t.trim()) { r[k + '_uz'] = r[k]; r[k] = t; }
+  }
+  return r;
+}
+const langHtml = cls => `<div class="lang ${cls}">${LANGS.map(l => `<button data-lang="${l}" lang="${l}" class="${l === LANG ? 'on' : ''}">${l.toUpperCase()}</button>`).join('')}</div>`;
+let RAW = null, S_UZ = {};
+function boot(again) {
+  S_UZ = RAW['sozlamalar'];
+  document.documentElement.lang = LANG;
+  document.getElementById('app').innerHTML = render(loc(RAW));
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12 });
+  document.querySelectorAll('.r').forEach((el, i) => { if (again) el.classList.add('in'); else { el.style.transitionDelay = (i % 4) * 80 + 'ms'; io.observe(el); } });
+  document.querySelectorAll('.menu a').forEach(a => a.onclick = () => document.getElementById('menu').classList.remove('open'));
+  document.querySelectorAll('.card').forEach(c => {
+    bindSlider(c.querySelector('.slides'), c);
+    const sl = c.querySelector('.slides');
+    c.querySelectorAll('.sw-mini button').forEach(b => b.onclick = e => { e.stopPropagation(); sl.scrollTo({ left: b.dataset.v * sl.clientWidth, behavior: 'smooth' }); });
+    const open = () => openProduct(+c.dataset.p, true, PRODUCTS[+c.dataset.p].vars.length ? Math.round(sl.scrollLeft / (sl.clientWidth || 1)) : 0);
+    let sx = 0;
+    c.addEventListener('pointerdown', e => sx = e.clientX);
+    c.addEventListener('click', e => { if (Math.abs(e.clientX - sx) < 8 && !e.target.closest('.arr, .sw-mini')) open(); });
+    c.addEventListener('keydown', e => { if (e.key === 'Enter') open(); });
+  });
+  document.querySelectorAll('[data-cart]').forEach(b => b.onclick = () => openCart());
+  document.querySelectorAll('[data-lang]').forEach(b => b.onclick = () => setLang(b.dataset.lang));
+  document.getElementById('shade').onclick = closeCart;
+  updateBadges();
+}
+function setLang(l) {
+  if (l === LANG || !LANGS.includes(l)) return;
+  LANG = l;
+  try { localStorage.setItem('ep-lang', l); } catch (e) {}
+  if (new URLSearchParams(location.search).has('lang')) history.replaceState(history.state, '', location.pathname + location.hash);
+  const y = scrollY, cartOpen = document.getElementById('drawer').classList.contains('on');
+  boot(true);
+  scrollTo({ top: y, behavior: 'instant' });
+  fromHash();
+  if (cartOpen) openCart();
+}
+addEventListener('popstate', fromHash);
+addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.getElementById('drawer')?.classList.contains('on')) return closeCart();
+  const pm = document.getElementById('pm');
+  if (!pm || !pm.classList.contains('open')) return;
+  if (e.key === 'Escape') closeProduct();
+  const t = pm.querySelector('.pm-slides');
+  if (e.key === 'ArrowRight') t.scrollBy({ left: t.clientWidth, behavior: 'smooth' });
+  if (e.key === 'ArrowLeft') t.scrollBy({ left: -t.clientWidth, behavior: 'smooth' });
+});
+
 Promise.all(FILES.map(f => fetch(`content/${f}.json`, { cache: 'no-cache' }).then(r => r.json())))
   .then(list => {
-    const C = Object.fromEntries(FILES.map((f, i) => [f, list[i]]));
-    document.getElementById('app').innerHTML = render(C);
-    const io = new IntersectionObserver(es => es.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    }), { threshold: .12 });
-    document.querySelectorAll('.r').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 80 + 'ms'; io.observe(el); });
-    document.querySelectorAll('.menu a').forEach(a => a.onclick = () => document.getElementById('menu').classList.remove('open'));
-    document.querySelectorAll('.card').forEach(c => {
-      bindSlider(c.querySelector('.slides'), c);
-      const open = () => openProduct(+c.dataset.p);
-      let sx = 0;
-      c.addEventListener('pointerdown', e => sx = e.clientX);
-      c.addEventListener('click', e => { if (Math.abs(e.clientX - sx) < 8 && !e.target.closest('.arr')) open(); });
-      c.addEventListener('keydown', e => { if (e.key === 'Enter') open(); });
-    });
-    document.querySelectorAll('[data-cart]').forEach(b => b.onclick = () => openCart());
-    document.getElementById('shade').onclick = closeCart;
-    updateBadges();
-    addEventListener('popstate', fromHash);
-    addEventListener('keydown', e => {
-      if (e.key === 'Escape' && document.getElementById('drawer').classList.contains('on')) return closeCart();
-      const pm = document.getElementById('pm');
-      if (!pm.classList.contains('open')) return;
-      if (e.key === 'Escape') closeProduct();
-      const t = pm.querySelector('.pm-slides');
-      if (e.key === 'ArrowRight') t.scrollBy({ left: t.clientWidth, behavior: 'smooth' });
-      if (e.key === 'ArrowLeft') t.scrollBy({ left: -t.clientWidth, behavior: 'smooth' });
-    });
+    RAW = Object.fromEntries(FILES.map((f, i) => [f, list[i]]));
+    boot();
     fromHash();
   })
   .catch(err => {
-    document.getElementById('app').innerHTML = '<p style="padding:60px 20px;text-align:center">Ma’lumotlarni yuklab bo‘lmadi. Sahifani yangilang.</p>';
+    const msg = { uz: 'Ma’lumotlarni yuklab bo‘lmadi. Sahifani yangilang.', ru: 'Не удалось загрузить данные. Обновите страницу.', en: 'Could not load the page. Please refresh.' }[LANG];
+    document.getElementById('app').innerHTML = `<p style="padding:60px 20px;text-align:center">${msg}</p>`;
     console.error(err);
   });
 </script>

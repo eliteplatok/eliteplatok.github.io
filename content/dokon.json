@@ -1,10 +1,22 @@
 {
   "eyebrow": "Bizning do‘konimiz",
+  "eyebrow_ru": "Наш магазин",
+  "eyebrow_en": "Our store",
   "title": "Kelib, matolarni o‘z qo‘lingiz bilan ushlab ko‘ring",
+  "title_ru": "Приходите и потрогайте ткани своими руками",
+  "title_en": "Come and feel the fabrics with your own hands",
   "image": "images/sherst.jpg",
   "address": "Toshkent, Yunusobod tumani, 15-mavze, 27-uy",
+  "address_ru": "Ташкент, Юнусабадский район, 15-квартал, дом 27",
+  "address_en": "Tashkent, Yunusabad district, block 15, building 27",
   "landmark": "",
+  "landmark_ru": "",
+  "landmark_en": "",
   "map_link": "https://www.google.com/maps/search/?api=1&query=Toshkent+Yunusobod+15-mavze+27",
   "map_button": "Xaritada ko‘rish",
-  "call_button": "Qo‘ng‘iroq qilish"
+  "map_button_ru": "Посмотреть на карте",
+  "map_button_en": "View on map",
+  "call_button": "Qo‘ng‘iroq qilish",
+  "call_button_ru": "Позвонить",
+  "call_button_en": "Call us"
 }

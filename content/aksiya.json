@@ -1,9 +1,19 @@
 {
   "show": true,
   "eyebrow": "Maxsus taklif",
+  "eyebrow_ru": "Специальное предложение",
+  "eyebrow_en": "Special offer",
   "title": "3 ta ro‘mol — 100 000 so‘m",
+  "title_ru": "3 платка — 100 000 сум",
+  "title_en": "3 scarves — 100,000 UZS",
   "subtitle": "Har biri atigi 33 000 so‘mdan",
+  "subtitle_ru": "Всего по 33 000 сум за каждый",
+  "subtitle_en": "Just 33,000 UZS each",
   "text": "Nafis, yengil va kundalik obrazingiz uchun qulay ro‘mollar.",
+  "text_ru": "Изящные, лёгкие и удобные платки для вашего повседневного образа.",
+  "text_en": "Elegant, light and comfortable scarves for your everyday look.",
   "button": "Xarid qilish",
+  "button_ru": "Купить",
+  "button_en": "Shop now",
   "image": "images/turkiya-tvil.jpg"
 }

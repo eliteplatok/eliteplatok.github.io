@@ -1,14 +1,62 @@
 {
   "eyebrow": "Ro‘mollarimiz afzalliklari",
+  "eyebrow_ru": "Преимущества наших платков",
+  "eyebrow_en": "Benefits of our scarves",
   "title": "Kiyganda farqini sezasiz",
+  "title_ru": "Почувствуйте разницу, когда наденете",
+  "title_en": "Feel the difference when you wear it",
   "text": "Har bir ro‘molni mato, rang va sifatiga qarab o‘zimiz tanlaymiz.",
+  "text_ru": "Каждый платок мы выбираем сами — по ткани, цвету и качеству.",
+  "text_en": "We hand-pick every scarf by fabric, colour and quality.",
   "image": "images/turkiya.jpg",
   "items": [
-    {"title": "Quloqda shitirlamaydi", "text": "Mayin matolar harakatlanganda shovqin qilmaydi — kun bo‘yi qulay."},
-    {"title": "Yuzga chiroyli tushadi", "text": "Peshona qismi dumaloq shaklda turadi va yuz shaklini ochib beradi."},
-    {"title": "Sirpanmaydi", "text": "Trikotaj va tvil matolar boshda mahkam turadi — qayta to‘g‘rilash shart emas."},
-    {"title": "Havo o‘tkazadi", "text": "Yengil matolar teri nafas olishiga imkon beradi, issiq kunlarda ham qulay."},
-    {"title": "Oson parvarish", "text": "Ko‘p matolarimiz g‘ijimlanmaydi — ertalab vaqtingizni tejaydi."},
-    {"title": "Har faslga", "text": "Yozga shifon va batist, qishga sherst va kashemir — yil bo‘yi tanlov."}
+    {
+      "title": "Quloqda shitirlamaydi",
+      "title_ru": "Не шуршит у ушей",
+      "title_en": "No rustling by the ears",
+      "text": "Mayin matolar harakatlanganda shovqin qilmaydi — kun bo‘yi qulay.",
+      "text_ru": "Мягкие ткани не шумят при движении — удобно весь день.",
+      "text_en": "Soft fabrics make no noise when you move — comfortable all day."
+    },
+    {
+      "title": "Yuzga chiroyli tushadi",
+      "title_ru": "Красиво обрамляет лицо",
+      "title_en": "Beautifully frames the face",
+      "text": "Peshona qismi dumaloq shaklda turadi va yuz shaklini ochib beradi.",
+      "text_ru": "Лобная часть держит округлую форму и открывает овал лица.",
+      "text_en": "The front holds a rounded shape and opens up the face."
+    },
+    {
+      "title": "Sirpanmaydi",
+      "title_ru": "Не соскальзывает",
+      "title_en": "Doesn’t slip",
+      "text": "Trikotaj va tvil matolar boshda mahkam turadi — qayta to‘g‘rilash shart emas.",
+      "text_ru": "Трикотаж и твил крепко держатся на голове — не нужно поправлять.",
+      "text_en": "Jersey and twill stay firmly in place — no need to adjust."
+    },
+    {
+      "title": "Havo o‘tkazadi",
+      "title_ru": "Пропускает воздух",
+      "title_en": "Breathable",
+      "text": "Yengil matolar teri nafas olishiga imkon beradi, issiq kunlarda ham qulay.",
+      "text_ru": "Лёгкие ткани дают коже дышать — удобно даже в жару.",
+      "text_en": "Light fabrics let your skin breathe — comfortable even on hot days."
+    },
+    {
+      "title": "Oson parvarish",
+      "title_ru": "Лёгкий уход",
+      "title_en": "Easy care",
+      "text": "Ko‘p matolarimiz g‘ijimlanmaydi — ertalab vaqtingizni tejaydi.",
+      "text_ru": "Многие наши ткани не мнутся — экономят ваше время по утрам.",
+      "text_en": "Many of our fabrics don’t crease — saving you time in the morning."
+    },
+    {
+      "title": "Har faslga",
+      "title_ru": "На любой сезон",
+      "title_en": "For every season",
+      "text": "Yozga shifon va batist, qishga sherst va kashemir — yil bo‘yi tanlov.",
+      "text_ru": "Летом шифон и батист, зимой шерсть и кашемир — выбор круглый год.",
+      "text_en": "Chiffon and batiste for summer, wool and cashmere for winter — choice all year round."
+    }
   ]
 }

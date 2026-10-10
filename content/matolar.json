@@ -1,17 +1,88 @@
 {
   "eyebrow": "Matosiga ko‘ra tanlang",
+  "eyebrow_ru": "Выберите по ткани",
+  "eyebrow_en": "Choose by fabric",
   "title": "Har bir mato — o‘z xarakteri",
+  "title_ru": "У каждой ткани — свой характер",
+  "title_en": "Every fabric has its own character",
   "text": "Qaysi mato sizga mosligini bilmasangiz — bizga yozing, maslahat beramiz.",
+  "text_ru": "Не знаете, какая ткань вам подходит, — напишите нам, мы подскажем.",
+  "text_en": "Not sure which fabric suits you? Write to us and we’ll advise.",
   "link_label": "So‘rash →",
+  "link_label_ru": "Спросить →",
+  "link_label_en": "Ask →",
   "items": [
-    {"name": "Tvil sholki", "description": "Diagonal to‘qimali, shaklini yaxshi ushlaydi. Yumshoq jilo — kundalik va rasmiy obraz uchun."},
-    {"name": "Dubay sholki", "description": "Silliq va oqimli mato, nozik yaltiroqlik bilan. Bayram va mehmondorchilik uchun ideal."},
-    {"name": "Italia sholk", "description": "Zich, og‘ir va boy rangli premium shoyi. Yuzga yoqimli tushadi, uzoq xizmat qiladi."},
-    {"name": "Atlas", "description": "Yaltiroq, nafis mato. To‘y, bayram va maxsus kunlar uchun chiroyli tanlov."},
-    {"name": "Batist", "description": "Juda yupqa va havo o‘tkazuvchan. Issiq yoz kunlarida ham yengil va qulay."},
-    {"name": "Shifon", "description": "Yengil, havodor va biroz shaffof. Qatlamli, hajmdor bog‘lash uchun juda mos."},
-    {"name": "Jatka", "description": "Burma teksturali mato — dazmol talab qilmaydi va har doim tartibli ko‘rinadi."},
-    {"name": "Kaliforniya trikotaj", "description": "Cho‘ziluvchan va sirpanmaydi. Ish, o‘qish va faol kunlar uchun qulay."},
-    {"name": "Turkiya trikotaj", "description": "Yumshoq, zich trikotaj. Ignasiz ham yaxshi turadi, kundalik kiyim uchun eng qulayi."}
+    {
+      "name": "Tvil sholki",
+      "name_ru": "Твил шёлк",
+      "name_en": "Twill silk",
+      "description": "Diagonal to‘qimali, shaklini yaxshi ushlaydi. Yumshoq jilo — kundalik va rasmiy obraz uchun.",
+      "description_ru": "Диагональное плетение, хорошо держит форму. Мягкий блеск — для повседневного и делового образа.",
+      "description_en": "Diagonal weave that holds its shape well. A soft sheen for everyday and formal looks."
+    },
+    {
+      "name": "Dubay sholki",
+      "name_ru": "Дубайский шёлк",
+      "name_en": "Dubai silk",
+      "description": "Silliq va oqimli mato, nozik yaltiroqlik bilan. Bayram va mehmondorchilik uchun ideal.",
+      "description_ru": "Гладкая струящаяся ткань с нежным блеском. Идеальна для праздников и походов в гости.",
+      "description_en": "Smooth, flowing fabric with a delicate sheen. Ideal for celebrations and visits."
+    },
+    {
+      "name": "Italia sholk",
+      "name_ru": "Итальянский шёлк",
+      "name_en": "Italian silk",
+      "description": "Zich, og‘ir va boy rangli premium shoyi. Yuzga yoqimli tushadi, uzoq xizmat qiladi.",
+      "description_ru": "Плотный, тяжёлый премиальный шёлк насыщенных цветов. Красиво ложится, служит долго.",
+      "description_en": "Dense, weighty premium silk in rich colours. Drapes beautifully and lasts long."
+    },
+    {
+      "name": "Atlas",
+      "name_ru": "Атлас",
+      "name_en": "Satin",
+      "description": "Yaltiroq, nafis mato. To‘y, bayram va maxsus kunlar uchun chiroyli tanlov.",
+      "description_ru": "Блестящая, изящная ткань. Красивый выбор для свадьбы, праздника и особых дней.",
+      "description_en": "Lustrous, elegant fabric. A beautiful choice for weddings, celebrations and special days."
+    },
+    {
+      "name": "Batist",
+      "name_ru": "Батист",
+      "name_en": "Batiste",
+      "description": "Juda yupqa va havo o‘tkazuvchan. Issiq yoz kunlarida ham yengil va qulay.",
+      "description_ru": "Очень тонкий и воздухопроницаемый. Лёгкий и удобный даже в жаркие летние дни.",
+      "description_en": "Very fine and breathable. Light and comfortable even on hot summer days."
+    },
+    {
+      "name": "Shifon",
+      "name_ru": "Шифон",
+      "name_en": "Chiffon",
+      "description": "Yengil, havodor va biroz shaffof. Qatlamli, hajmdor bog‘lash uchun juda mos.",
+      "description_ru": "Лёгкий, воздушный и слегка прозрачный. Отлично подходит для многослойного, объёмного завязывания.",
+      "description_en": "Light, airy and slightly sheer. Perfect for layered, voluminous styling."
+    },
+    {
+      "name": "Jatka",
+      "name_ru": "Жатка",
+      "name_en": "Crinkle",
+      "description": "Burma teksturali mato — dazmol talab qilmaydi va har doim tartibli ko‘rinadi.",
+      "description_ru": "Ткань с жатой текстурой — не требует глажки и всегда выглядит аккуратно.",
+      "description_en": "Crinkled fabric — needs no ironing and always looks neat."
+    },
+    {
+      "name": "Kaliforniya trikotaj",
+      "name_ru": "Калифорнийский трикотаж",
+      "name_en": "Californian jersey",
+      "description": "Cho‘ziluvchan va sirpanmaydi. Ish, o‘qish va faol kunlar uchun qulay.",
+      "description_ru": "Тянется и не соскальзывает. Удобен для работы, учёбы и активных дней.",
+      "description_en": "Stretchy and non-slip. Comfortable for work, study and active days."
+    },
+    {
+      "name": "Turkiya trikotaj",
+      "name_ru": "Турецкий трикотаж",
+      "name_en": "Turkish jersey",
+      "description": "Yumshoq, zich trikotaj. Ignasiz ham yaxshi turadi, kundalik kiyim uchun eng qulayi.",
+      "description_ru": "Мягкий плотный трикотаж. Хорошо держится даже без булавок — самый удобный на каждый день.",
+      "description_en": "Soft, dense jersey. Stays in place even without pins — the most comfortable for every day."
+    }
   ]
 }

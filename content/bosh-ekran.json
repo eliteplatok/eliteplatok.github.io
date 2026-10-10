@@ -1,8 +1,16 @@
 {
   "eyebrow": "Elite Platok · Toshkent",
+  "eyebrow_ru": "Elite Platok · Ташкент",
+  "eyebrow_en": "Elite Platok · Tashkent",
   "title": "Obrazingizni yanada chiroyli\nko‘rsatadigan ro‘mollar",
+  "title_ru": "Платки, которые делают\nваш образ ещё красивее",
+  "title_en": "Scarves that make\nyour look even more beautiful",
   "subtitle": "Nafis matolar, sokin ranglar, har kungi qulaylik",
+  "subtitle_ru": "Изящные ткани, спокойные цвета, комфорт каждый день",
+  "subtitle_en": "Elegant fabrics, calm colours, everyday comfort",
   "button": "Kolleksiyani ko‘rish",
+  "button_ru": "Смотреть коллекцию",
+  "button_en": "View collection",
   "image_left": "images/turkiya.jpg",
   "image_center": "images/turkiya-tvil.jpg",
   "image_right": "images/kashka.jpg"

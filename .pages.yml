@@ -12,59 +12,185 @@ content:
     fields:
       - { name: logo, label: "Logotip matni", type: string }
       - { name: top_bar, label: "Eng tepadagi qora chiziq matni", type: string }
+      - { name: top_bar_ru, label: "Eng tepadagi qora chiziq matni (RU)", type: string }
+      - { name: top_bar_en, label: "Eng tepadagi qora chiziq matni (EN)", type: string }
       - { name: phone, label: "Telefon raqami", type: string }
       - { name: telegram, label: "Telegram havolasi (https://t.me/...)", type: string }
       - { name: instagram, label: "Instagram havolasi", type: string }
       - { name: whatsapp, label: "WhatsApp havolasi (https://wa.me/998...)", type: string }
       - { name: order_button, label: "Yuqoridagi «Buyurtma» tugmasi", type: string }
+      - { name: order_button_ru, label: "Yuqoridagi «Buyurtma» tugmasi (RU)", type: string }
+      - { name: order_button_en, label: "Yuqoridagi «Buyurtma» tugmasi (EN)", type: string }
       - { name: order_button_mobile, label: "Telefonda pastdagi tugma matni", type: string }
+      - { name: order_button_mobile_ru, label: "Telefonda pastdagi tugma matni (RU)", type: string }
+      - { name: order_button_mobile_en, label: "Telefonda pastdagi tugma matni (EN)", type: string }
       - { name: card_order_label, label: "Mahsulot rasmi ustidagi tugma", type: string }
+      - { name: card_order_label_ru, label: "Mahsulot rasmi ustidagi tugma (RU)", type: string }
+      - { name: card_order_label_en, label: "Mahsulot rasmi ustidagi tugma (EN)", type: string }
       - { name: menu_new, label: "Menyu: Yangi", type: string }
+      - { name: menu_new_ru, label: "Menyu: Yangi (RU)", type: string }
+      - { name: menu_new_en, label: "Menyu: Yangi (EN)", type: string }
       - { name: menu_fabrics, label: "Menyu: Matolar", type: string }
+      - { name: menu_fabrics_ru, label: "Menyu: Matolar (RU)", type: string }
+      - { name: menu_fabrics_en, label: "Menyu: Matolar (EN)", type: string }
       - { name: menu_offer, label: "Menyu: Aksiya", type: string }
+      - { name: menu_offer_ru, label: "Menyu: Aksiya (RU)", type: string }
+      - { name: menu_offer_en, label: "Menyu: Aksiya (EN)", type: string }
       - { name: menu_accessories, label: "Menyu: Aksessuarlar", type: string }
+      - { name: menu_accessories_ru, label: "Menyu: Aksessuarlar (RU)", type: string }
+      - { name: menu_accessories_en, label: "Menyu: Aksessuarlar (EN)", type: string }
       - { name: menu_store, label: "Menyu: Do‘kon", type: string }
+      - { name: menu_store_ru, label: "Menyu: Do‘kon (RU)", type: string }
+      - { name: menu_store_en, label: "Menyu: Do‘kon (EN)", type: string }
       - { name: footer_tagline, label: "Pastki qism shiori", type: string }
+      - { name: footer_tagline_ru, label: "Pastki qism shiori (RU)", type: string }
+      - { name: footer_tagline_en, label: "Pastki qism shiori (EN)", type: string }
       - { name: footer_copy, label: "Pastki qism © yozuvi", type: string }
+      - { name: footer_copy_ru, label: "Pastki qism © yozuvi (RU)", type: string }
+      - { name: footer_copy_en, label: "Pastki qism © yozuvi (EN)", type: string }
       - { name: product_call_button, label: "Mahsulot oynasi: qo‘ng‘iroq tugmasi", type: string }
+      - { name: product_call_button_ru, label: "Mahsulot oynasi: qo‘ng‘iroq tugmasi (RU)", type: string }
+      - { name: product_call_button_en, label: "Mahsulot oynasi: qo‘ng‘iroq tugmasi (EN)", type: string }
       - { name: product_share_button, label: "Mahsulot oynasi: ulashish tugmasi", type: string }
+      - { name: product_share_button_ru, label: "Mahsulot oynasi: ulashish tugmasi (RU)", type: string }
+      - { name: product_share_button_en, label: "Mahsulot oynasi: ulashish tugmasi (EN)", type: string }
       - { name: product_link_copied, label: "Havola nusxalanganda chiqadigan yozuv", type: string }
+      - { name: product_link_copied_ru, label: "Havola nusxalanganda chiqadigan yozuv (RU)", type: string }
+      - { name: product_link_copied_en, label: "Havola nusxalanganda chiqadigan yozuv (EN)", type: string }
       - { name: product_all_colors, label: "Mahsulot oynasi: «Barcha ranglar» sarlavhasi", type: string }
+      - { name: product_all_colors_ru, label: "Mahsulot oynasi: «Barcha ranglar» sarlavhasi (RU)", type: string }
+      - { name: product_all_colors_en, label: "Mahsulot oynasi: «Barcha ranglar» sarlavhasi (EN)", type: string }
+      - { name: close_label, label: "Tugma: Yopish", type: string }
+      - { name: close_label_ru, label: "Tugma: Yopish (RU)", type: string }
+      - { name: close_label_en, label: "Tugma: Yopish (EN)", type: string }
+      - { name: prev_label, label: "Karusel: Oldingi", type: string }
+      - { name: prev_label_ru, label: "Karusel: Oldingi (RU)", type: string }
+      - { name: prev_label_en, label: "Karusel: Oldingi (EN)", type: string }
+      - { name: next_label, label: "Karusel: Keyingi", type: string }
+      - { name: next_label_ru, label: "Karusel: Keyingi (RU)", type: string }
+      - { name: next_label_en, label: "Karusel: Keyingi (EN)", type: string }
+      - { name: menu_label, label: "Menyu tugmasi", type: string }
+      - { name: menu_label_ru, label: "Menyu tugmasi (RU)", type: string }
+      - { name: menu_label_en, label: "Menyu tugmasi (EN)", type: string }
+      - { name: qty_less, label: "Savat: kamaytirish", type: string }
+      - { name: qty_less_ru, label: "Savat: kamaytirish (RU)", type: string }
+      - { name: qty_less_en, label: "Savat: kamaytirish (EN)", type: string }
+      - { name: qty_more, label: "Savat: ko‘paytirish", type: string }
+      - { name: qty_more_ru, label: "Savat: ko‘paytirish (RU)", type: string }
+      - { name: qty_more_en, label: "Savat: ko‘paytirish (EN)", type: string }
+      - { name: currency, label: "Pul birligi (so‘m)", type: string }
+      - { name: currency_ru, label: "Pul birligi (RU)", type: string }
+      - { name: currency_en, label: "Pul birligi (EN)", type: string }
+      - { name: store_label_address, label: "Do‘kon: Manzil", type: string }
+      - { name: store_label_address_ru, label: "Do‘kon: Manzil (RU)", type: string }
+      - { name: store_label_address_en, label: "Do‘kon: Manzil (EN)", type: string }
+      - { name: store_label_landmark, label: "Do‘kon: Mo‘ljal", type: string }
+      - { name: store_label_landmark_ru, label: "Do‘kon: Mo‘ljal (RU)", type: string }
+      - { name: store_label_landmark_en, label: "Do‘kon: Mo‘ljal (EN)", type: string }
+      - { name: store_label_phone, label: "Do‘kon: Telefon", type: string }
+      - { name: store_label_phone_ru, label: "Do‘kon: Telefon (RU)", type: string }
+      - { name: store_label_phone_en, label: "Do‘kon: Telefon (EN)", type: string }
       - { name: product_label_size, label: "Mahsulot oynasi: «O‘lcham» yozuvi", type: string }
+      - { name: product_label_size_ru, label: "Mahsulot oynasi: «O‘lcham» yozuvi (RU)", type: string }
+      - { name: product_label_size_en, label: "Mahsulot oynasi: «O‘lcham» yozuvi (EN)", type: string }
       - { name: product_label_material, label: "Mahsulot oynasi: «Mato» yozuvi", type: string }
+      - { name: product_label_material_ru, label: "Mahsulot oynasi: «Mato» yozuvi (RU)", type: string }
+      - { name: product_label_material_en, label: "Mahsulot oynasi: «Mato» yozuvi (EN)", type: string }
       - { name: product_label_color, label: "Mahsulot oynasi: «Rang» yozuvi", type: string }
+      - { name: product_label_color_ru, label: "Mahsulot oynasi: «Rang» yozuvi (RU)", type: string }
+      - { name: product_label_color_en, label: "Mahsulot oynasi: «Rang» yozuvi (EN)", type: string }
       - { name: product_tab_details, label: "Bo‘lim nomi: Batafsil", type: string }
+      - { name: product_tab_details_ru, label: "Bo‘lim nomi: Batafsil (RU)", type: string }
+      - { name: product_tab_details_en, label: "Bo‘lim nomi: Batafsil (EN)", type: string }
       - { name: product_tab_care, label: "Bo‘lim nomi: Parvarish", type: string }
+      - { name: product_tab_care_ru, label: "Bo‘lim nomi: Parvarish (RU)", type: string }
+      - { name: product_tab_care_en, label: "Bo‘lim nomi: Parvarish (EN)", type: string }
       - { name: product_tab_delivery, label: "Bo‘lim nomi: Yetkazib berish", type: string }
+      - { name: product_tab_delivery_ru, label: "Bo‘lim nomi: Yetkazib berish (RU)", type: string }
+      - { name: product_tab_delivery_en, label: "Bo‘lim nomi: Yetkazib berish (EN)", type: string }
       - { name: delivery_text, label: "Yetkazib berish va to‘lov matni (barcha mahsulotlarda)", type: text }
+      - { name: delivery_text_ru, label: "Yetkazib berish va to‘lov matni (RU)", type: text }
+      - { name: delivery_text_en, label: "Yetkazib berish va to‘lov matni (EN)", type: text }
       - { name: order_endpoint, label: "Buyurtma qabul qiluvchi manzil (Google Apps Script URL; bo‘sh bo‘lsa buyurtma Telegram orqali yuboriladi)", type: string }
       - { name: price_on_request, label: "Narx yozilmagan mahsulotda chiqadigan yozuv", type: string }
+      - { name: price_on_request_ru, label: "Narx yozilmagan mahsulotda chiqadigan yozuv (RU)", type: string }
+      - { name: price_on_request_en, label: "Narx yozilmagan mahsulotda chiqadigan yozuv (EN)", type: string }
       - { name: promo3_total, label: "Aksiya: umumiy narx, agar mahsulotda ko‘rsatilmagan bo‘lsa (so‘m)", type: number }
       - { name: promo3_label, label: "Aksiya: savatda chiqadigan yozuv", type: string }
+      - { name: promo3_label_ru, label: "Aksiya: savatda chiqadigan yozuv (RU)", type: string }
+      - { name: promo3_label_en, label: "Aksiya: savatda chiqadigan yozuv (EN)", type: string }
       - { name: product_add_button, label: "Mahsulot oynasi: «Savatga qo‘shish»", type: string }
+      - { name: product_add_button_ru, label: "Mahsulot oynasi: «Savatga qo‘shish» (RU)", type: string }
+      - { name: product_add_button_en, label: "Mahsulot oynasi: «Savatga qo‘shish» (EN)", type: string }
       - { name: cart_title, label: "Savat: sarlavha", type: string }
+      - { name: cart_title_ru, label: "Savat: sarlavha (RU)", type: string }
+      - { name: cart_title_en, label: "Savat: sarlavha (EN)", type: string }
       - { name: cart_empty, label: "Savat: bo‘sh bo‘lganda", type: string }
+      - { name: cart_empty_ru, label: "Savat: bo‘sh bo‘lganda (RU)", type: string }
+      - { name: cart_empty_en, label: "Savat: bo‘sh bo‘lganda (EN)", type: string }
       - { name: cart_continue, label: "Savat: xaridni davom ettirish tugmasi", type: string }
+      - { name: cart_continue_ru, label: "Savat: xaridni davom ettirish tugmasi (RU)", type: string }
+      - { name: cart_continue_en, label: "Savat: xaridni davom ettirish tugmasi (EN)", type: string }
       - { name: cart_total, label: "Savat: «Jami»", type: string }
+      - { name: cart_total_ru, label: "Savat: «Jami» (RU)", type: string }
+      - { name: cart_total_en, label: "Savat: «Jami» (EN)", type: string }
       - { name: cart_total_note, label: "Savat: narxi hisoblanmagan mahsulotlar izohi", type: text }
+      - { name: cart_total_note_ru, label: "Savat: narxi hisoblanmagan mahsulotlar izohi (RU)", type: text }
+      - { name: cart_total_note_en, label: "Savat: narxi hisoblanmagan mahsulotlar izohi (EN)", type: text }
       - { name: cart_checkout, label: "Savat: «Buyurtma berish» tugmasi", type: string }
+      - { name: cart_checkout_ru, label: "Savat: «Buyurtma berish» tugmasi (RU)", type: string }
+      - { name: cart_checkout_en, label: "Savat: «Buyurtma berish» tugmasi (EN)", type: string }
       - { name: cart_added, label: "Savatga qo‘shilganda chiqadigan yozuv", type: string }
+      - { name: cart_added_ru, label: "Savatga qo‘shilganda chiqadigan yozuv (RU)", type: string }
+      - { name: cart_added_en, label: "Savatga qo‘shilganda chiqadigan yozuv (EN)", type: string }
       - { name: form_title, label: "Forma: sarlavha", type: string }
+      - { name: form_title_ru, label: "Forma: sarlavha (RU)", type: string }
+      - { name: form_title_en, label: "Forma: sarlavha (EN)", type: string }
       - { name: form_name, label: "Forma: ism", type: string }
+      - { name: form_name_ru, label: "Forma: ism (RU)", type: string }
+      - { name: form_name_en, label: "Forma: ism (EN)", type: string }
       - { name: form_phone, label: "Forma: telefon", type: string }
+      - { name: form_phone_ru, label: "Forma: telefon (RU)", type: string }
+      - { name: form_phone_en, label: "Forma: telefon (EN)", type: string }
       - { name: form_delivery, label: "Forma: yetkazib berish", type: string }
+      - { name: form_delivery_ru, label: "Forma: yetkazib berish (RU)", type: string }
+      - { name: form_delivery_en, label: "Forma: yetkazib berish (EN)", type: string }
       - { name: form_pickup, label: "Forma: do‘kondan olib ketish", type: string }
+      - { name: form_pickup_ru, label: "Forma: do‘kondan olib ketish (RU)", type: string }
+      - { name: form_pickup_en, label: "Forma: do‘kondan olib ketish (EN)", type: string }
       - { name: form_address, label: "Forma: manzil", type: string }
+      - { name: form_address_ru, label: "Forma: manzil (RU)", type: string }
+      - { name: form_address_en, label: "Forma: manzil (EN)", type: string }
       - { name: form_comment, label: "Forma: izoh", type: string }
+      - { name: form_comment_ru, label: "Forma: izoh (RU)", type: string }
+      - { name: form_comment_en, label: "Forma: izoh (EN)", type: string }
       - { name: form_submit, label: "Forma: yuborish tugmasi", type: string }
+      - { name: form_submit_ru, label: "Forma: yuborish tugmasi (RU)", type: string }
+      - { name: form_submit_en, label: "Forma: yuborish tugmasi (EN)", type: string }
       - { name: form_back, label: "Forma: savatga qaytish", type: string }
+      - { name: form_back_ru, label: "Forma: savatga qaytish (RU)", type: string }
+      - { name: form_back_en, label: "Forma: savatga qaytish (EN)", type: string }
       - { name: form_error, label: "Forma: to‘ldirilmagan maydon xatosi", type: string }
+      - { name: form_error_ru, label: "Forma: to‘ldirilmagan maydon xatosi (RU)", type: string }
+      - { name: form_error_en, label: "Forma: to‘ldirilmagan maydon xatosi (EN)", type: string }
       - { name: form_sending, label: "Forma: yuborilayotganda", type: string }
+      - { name: form_sending_ru, label: "Forma: yuborilayotganda (RU)", type: string }
+      - { name: form_sending_en, label: "Forma: yuborilayotganda (EN)", type: string }
       - { name: success_title, label: "Buyurtmadan keyin: sarlavha", type: string }
+      - { name: success_title_ru, label: "Buyurtmadan keyin: sarlavha (RU)", type: string }
+      - { name: success_title_en, label: "Buyurtmadan keyin: sarlavha (EN)", type: string }
       - { name: success_text, label: "Buyurtmadan keyin: matn", type: text }
+      - { name: success_text_ru, label: "Buyurtmadan keyin: matn (RU)", type: text }
+      - { name: success_text_en, label: "Buyurtmadan keyin: matn (EN)", type: text }
       - { name: fallback_text, label: "Yuborib bo‘lmaganda chiqadigan xabar", type: text }
+      - { name: fallback_text_ru, label: "Yuborib bo‘lmaganda chiqadigan xabar (RU)", type: text }
+      - { name: fallback_text_en, label: "Yuborib bo‘lmaganda chiqadigan xabar (EN)", type: text }
       - { name: seo_title, label: "Google'dagi sarlavha", type: string }
+      - { name: seo_title_ru, label: "Google'dagi sarlavha (RU)", type: string }
+      - { name: seo_title_en, label: "Google'dagi sarlavha (EN)", type: string }
       - { name: seo_description, label: "Google'dagi tavsif", type: text }
+      - { name: seo_description_ru, label: "Google'dagi tavsif (RU)", type: text }
+      - { name: seo_description_en, label: "Google'dagi tavsif (EN)", type: text }
 
   - name: bosh-ekran
     label: "🏠 Bosh ekran"
@@ -73,9 +199,17 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv (sarlavha ustida)", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Asosiy sarlavha", type: text }
+      - { name: title_ru, label: "Asosiy sarlavha (RU)", type: text }
+      - { name: title_en, label: "Asosiy sarlavha (EN)", type: text }
       - { name: subtitle, label: "Sarlavha ostidagi matn", type: string }
+      - { name: subtitle_ru, label: "Sarlavha ostidagi matn (RU)", type: string }
+      - { name: subtitle_en, label: "Sarlavha ostidagi matn (EN)", type: string }
       - { name: button, label: "Tugma matni", type: string }
+      - { name: button_ru, label: "Tugma matni (RU)", type: string }
+      - { name: button_en, label: "Tugma matni (EN)", type: string }
       - { name: image_left, label: "Chap rasm", type: image }
       - { name: image_center, label: "Markaziy rasm (telefonda faqat shu ko‘rinadi)", type: image }
       - { name: image_right, label: "O‘ng rasm", type: image }
@@ -87,31 +221,75 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - { name: text, label: "Tavsif", type: text }
+      - { name: text_ru, label: "Tavsif (RU)", type: text }
+      - { name: text_en, label: "Tavsif (EN)", type: text }
       - { name: link_label, label: "Havola matni (Instagramga olib boradi)", type: string }
+      - { name: link_label_ru, label: "Havola matni (RU)", type: string }
+      - { name: link_label_en, label: "Havola matni (EN)", type: string }
       - name: products
         label: "Mahsulotlar"
         type: object
         list: true
         fields:
           - { name: name, label: "Nomi", type: string }
+          - { name: name_ru, label: "Nomi (RU)", type: string }
+          - { name: name_en, label: "Nomi (EN)", type: string }
           - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
+          - name: variants
+            label: "Ranglar (bir rangli tovar uchun: har rangga o‘z rasmlari va dumaloq rang tugmasi; to‘ldirilsa yuqoridagi «Rasmlar» o‘rniga ishlatiladi)"
+            type: object
+            list: true
+            fields:
+              - { name: name, label: "Rang nomi (masalan Pushti)", type: string }
+              - { name: name_ru, label: "Rang nomi (RU)", type: string }
+              - { name: name_en, label: "Rang nomi (EN)", type: string }
+              - { name: name_ru, label: "Rang nomi (RU)", type: string }
+              - { name: name_en, label: "Rang nomi (EN)", type: string }
+              - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
+              - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
           - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
+          - { name: size_ru, label: "O‘lchami (RU)", type: string }
+          - { name: size_en, label: "O‘lchami (EN)", type: string }
           - { name: material, label: "Mato", type: string }
+          - { name: material_ru, label: "Mato (RU)", type: string }
+          - { name: material_en, label: "Mato (EN)", type: string }
           - { name: color, label: "Rang", type: string }
+          - { name: color_ru, label: "Rang (RU)", type: string }
+          - { name: color_en, label: "Rang (EN)", type: string }
           - { name: description, label: "Qisqa tavsif (kartochkada)", type: text }
+          - { name: description_ru, label: "Qisqa tavsif (RU)", type: text }
+          - { name: description_en, label: "Qisqa tavsif (EN)", type: text }
           - { name: details, label: "Batafsil tavsif (mahsulot oynasida)", type: text }
+          - { name: details_ru, label: "Batafsil tavsif (RU)", type: text }
+          - { name: details_en, label: "Batafsil tavsif (EN)", type: text }
           - { name: care, label: "Parvarish", type: text }
+          - { name: care_ru, label: "Parvarish (RU)", type: text }
+          - { name: care_en, label: "Parvarish (EN)", type: text }
           - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
+          - { name: price_ru, label: "Narxi (RU)", type: string }
+          - { name: price_en, label: "Narxi (EN)", type: string }
           - { name: price_note, label: "Narx ostidagi aksiya yozuvi (masalan: 3 tasi — 100 000 so‘m)", type: string }
+          - { name: price_note_ru, label: "Narx ostidagi aksiya yozuvi (RU)", type: string }
+          - { name: price_note_en, label: "Narx ostidagi aksiya yozuvi (EN)", type: string }
           - { name: promo3, label: "Aksiyada (savatda avtomatik hisoblanadi)", type: boolean }
           - { name: promo_qty, label: "Aksiya: nechta olinganda (masalan 3 yoki 2)", type: number }
           - { name: promo_total, label: "Aksiya: shuncha donaning umumiy narxi, so‘m (masalan 100000)", type: number }
           - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
+          - { name: promo_group_ru, label: "Aksiya guruhi (RU)", type: string }
+          - { name: promo_group_en, label: "Aksiya guruhi (EN)", type: string }
           - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
+          - { name: old_price_ru, label: "Eski narxi (RU)", type: string }
+          - { name: old_price_en, label: "Eski narxi (EN)", type: string }
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
+          - { name: badge_ru, label: "Belgi (RU)", type: string }
+          - { name: badge_en, label: "Belgi (EN)", type: string }
 
   - name: top
     label: "⭐ Eng ko‘p sotilayotganlar"
@@ -120,31 +298,75 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - { name: text, label: "Tavsif", type: text }
+      - { name: text_ru, label: "Tavsif (RU)", type: text }
+      - { name: text_en, label: "Tavsif (EN)", type: text }
       - { name: link_label, label: "Havola matni (Instagramga olib boradi)", type: string }
+      - { name: link_label_ru, label: "Havola matni (RU)", type: string }
+      - { name: link_label_en, label: "Havola matni (EN)", type: string }
       - name: products
         label: "Mahsulotlar"
         type: object
         list: true
         fields:
           - { name: name, label: "Nomi", type: string }
+          - { name: name_ru, label: "Nomi (RU)", type: string }
+          - { name: name_en, label: "Nomi (EN)", type: string }
           - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
+          - name: variants
+            label: "Ranglar (bir rangli tovar uchun: har rangga o‘z rasmlari va dumaloq rang tugmasi; to‘ldirilsa yuqoridagi «Rasmlar» o‘rniga ishlatiladi)"
+            type: object
+            list: true
+            fields:
+              - { name: name, label: "Rang nomi (masalan Pushti)", type: string }
+              - { name: name_ru, label: "Rang nomi (RU)", type: string }
+              - { name: name_en, label: "Rang nomi (EN)", type: string }
+              - { name: name_ru, label: "Rang nomi (RU)", type: string }
+              - { name: name_en, label: "Rang nomi (EN)", type: string }
+              - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
+              - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
           - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
+          - { name: size_ru, label: "O‘lchami (RU)", type: string }
+          - { name: size_en, label: "O‘lchami (EN)", type: string }
           - { name: material, label: "Mato", type: string }
+          - { name: material_ru, label: "Mato (RU)", type: string }
+          - { name: material_en, label: "Mato (EN)", type: string }
           - { name: color, label: "Rang", type: string }
+          - { name: color_ru, label: "Rang (RU)", type: string }
+          - { name: color_en, label: "Rang (EN)", type: string }
           - { name: description, label: "Qisqa tavsif (kartochkada)", type: text }
+          - { name: description_ru, label: "Qisqa tavsif (RU)", type: text }
+          - { name: description_en, label: "Qisqa tavsif (EN)", type: text }
           - { name: details, label: "Batafsil tavsif (mahsulot oynasida)", type: text }
+          - { name: details_ru, label: "Batafsil tavsif (RU)", type: text }
+          - { name: details_en, label: "Batafsil tavsif (EN)", type: text }
           - { name: care, label: "Parvarish", type: text }
+          - { name: care_ru, label: "Parvarish (RU)", type: text }
+          - { name: care_en, label: "Parvarish (EN)", type: text }
           - { name: price, label: "Narxi (masalan: 99 000 so‘m)", type: string }
+          - { name: price_ru, label: "Narxi (RU)", type: string }
+          - { name: price_en, label: "Narxi (EN)", type: string }
           - { name: price_note, label: "Narx ostidagi aksiya yozuvi (masalan: 3 tasi — 100 000 so‘m)", type: string }
+          - { name: price_note_ru, label: "Narx ostidagi aksiya yozuvi (RU)", type: string }
+          - { name: price_note_en, label: "Narx ostidagi aksiya yozuvi (EN)", type: string }
           - { name: promo3, label: "Aksiyada (savatda avtomatik hisoblanadi)", type: boolean }
           - { name: promo_qty, label: "Aksiya: nechta olinganda (masalan 3 yoki 2)", type: number }
           - { name: promo_total, label: "Aksiya: shuncha donaning umumiy narxi, so‘m (masalan 100000)", type: number }
           - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
+          - { name: promo_group_ru, label: "Aksiya guruhi (RU)", type: string }
+          - { name: promo_group_en, label: "Aksiya guruhi (EN)", type: string }
           - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
+          - { name: old_price_ru, label: "Eski narxi (RU)", type: string }
+          - { name: old_price_en, label: "Eski narxi (EN)", type: string }
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
+          - { name: badge_ru, label: "Belgi (RU)", type: string }
+          - { name: badge_en, label: "Belgi (EN)", type: string }
 
   - name: matolar
     label: "🧵 Matolar"
@@ -153,16 +375,28 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - { name: text, label: "Tavsif", type: text }
+      - { name: text_ru, label: "Tavsif (RU)", type: text }
+      - { name: text_en, label: "Tavsif (EN)", type: text }
       - { name: link_label, label: "Har bir mato ostidagi havola matni", type: string }
+      - { name: link_label_ru, label: "Har bir mato ostidagi havola matni (RU)", type: string }
+      - { name: link_label_en, label: "Har bir mato ostidagi havola matni (EN)", type: string }
       - name: items
         label: "Matolar ro‘yxati"
         type: object
         list: true
         fields:
           - { name: name, label: "Mato nomi", type: string }
+          - { name: name_ru, label: "Mato nomi (RU)", type: string }
+          - { name: name_en, label: "Mato nomi (EN)", type: string }
           - { name: description, label: "Tavsifi", type: text }
+          - { name: description_ru, label: "Tavsifi (RU)", type: text }
+          - { name: description_en, label: "Tavsifi (EN)", type: text }
 
   - name: ranglar
     label: "🎨 Ranglar"
@@ -171,14 +405,22 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - name: items
         label: "Ranglar"
         type: object
         list: true
         fields:
           - { name: name, label: "Rang nomi", type: string }
+          - { name: name_ru, label: "Rang nomi (RU)", type: string }
+          - { name: name_en, label: "Rang nomi (EN)", type: string }
           - { name: color, label: "Rang kodi (masalan #d9c7b3)", type: string }
+          - { name: color_ru, label: "Rang kodi (RU)", type: string }
+          - { name: color_en, label: "Rang kodi (EN)", type: string }
 
   - name: afzalliklar
     label: "✨ Ro‘mollar afzalliklari"
@@ -187,8 +429,14 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - { name: text, label: "Tavsif", type: text }
+      - { name: text_ru, label: "Tavsif (RU)", type: text }
+      - { name: text_en, label: "Tavsif (EN)", type: text }
       - { name: image, label: "Rasm", type: image }
       - name: items
         label: "Afzalliklar"
@@ -196,7 +444,11 @@ content:
         list: true
         fields:
           - { name: title, label: "Nomi", type: string }
+          - { name: title_ru, label: "Nomi (RU)", type: string }
+          - { name: title_en, label: "Nomi (EN)", type: string }
           - { name: text, label: "Matni", type: text }
+          - { name: text_ru, label: "Matni (RU)", type: text }
+          - { name: text_en, label: "Matni (EN)", type: text }
 
   - name: aksiya
     label: "🏷️ Aksiya"
@@ -206,10 +458,20 @@ content:
     fields:
       - { name: show, label: "Aksiya bo‘limini ko‘rsatish", type: boolean }
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - { name: subtitle, label: "Ikkinchi qator", type: string }
+      - { name: subtitle_ru, label: "Ikkinchi qator (RU)", type: string }
+      - { name: subtitle_en, label: "Ikkinchi qator (EN)", type: string }
       - { name: text, label: "Matn", type: text }
+      - { name: text_ru, label: "Matn (RU)", type: text }
+      - { name: text_en, label: "Matn (EN)", type: text }
       - { name: button, label: "Tugma matni", type: string }
+      - { name: button_ru, label: "Tugma matni (RU)", type: string }
+      - { name: button_en, label: "Tugma matni (EN)", type: string }
       - { name: image, label: "Orqa fon rasmi", type: image }
 
   - name: aksessuarlar
@@ -219,9 +481,17 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - { name: text, label: "Tavsif", type: text }
+      - { name: text_ru, label: "Tavsif (RU)", type: text }
+      - { name: text_en, label: "Tavsif (EN)", type: text }
       - { name: button, label: "Tugma matni", type: string }
+      - { name: button_ru, label: "Tugma matni (RU)", type: string }
+      - { name: button_en, label: "Tugma matni (EN)", type: string }
       - { name: image, label: "Rasm", type: image }
       - name: items
         label: "Aksessuarlar"
@@ -229,7 +499,11 @@ content:
         list: true
         fields:
           - { name: name, label: "Nomi", type: string }
+          - { name: name_ru, label: "Nomi (RU)", type: string }
+          - { name: name_en, label: "Nomi (EN)", type: string }
           - { name: note, label: "Izoh / narx", type: string }
+          - { name: note_ru, label: "Izoh / narx (RU)", type: string }
+          - { name: note_en, label: "Izoh / narx (EN)", type: string }
 
   - name: nega-biz
     label: "💬 Nega Elite Platok?"
@@ -238,7 +512,11 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - name: items
         label: "Punktlar"
         type: object
@@ -246,7 +524,11 @@ content:
         fields:
           - { name: number, label: "Raqam (masalan 100+)", type: string }
           - { name: title, label: "Nomi", type: string }
+          - { name: title_ru, label: "Nomi (RU)", type: string }
+          - { name: title_en, label: "Nomi (EN)", type: string }
           - { name: text, label: "Matni", type: text }
+          - { name: text_ru, label: "Matni (RU)", type: text }
+          - { name: text_en, label: "Matni (EN)", type: text }
 
   - name: dokon
     label: "📍 Do‘kon manzili"
@@ -255,10 +537,22 @@ content:
     format: json
     fields:
       - { name: eyebrow, label: "Kichik yozuv", type: string }
+      - { name: eyebrow_ru, label: "Kichik yozuv (RU)", type: string }
+      - { name: eyebrow_en, label: "Kichik yozuv (EN)", type: string }
       - { name: title, label: "Sarlavha", type: string }
+      - { name: title_ru, label: "Sarlavha (RU)", type: string }
+      - { name: title_en, label: "Sarlavha (EN)", type: string }
       - { name: image, label: "Rasm", type: image }
       - { name: address, label: "Manzil", type: string }
+      - { name: address_ru, label: "Manzil (RU)", type: string }
+      - { name: address_en, label: "Manzil (EN)", type: string }
       - { name: landmark, label: "Mo‘ljal", type: string }
+      - { name: landmark_ru, label: "Mo‘ljal (RU)", type: string }
+      - { name: landmark_en, label: "Mo‘ljal (EN)", type: string }
       - { name: map_link, label: "Xarita havolasi (Google yoki Yandex)", type: string }
       - { name: map_button, label: "Xarita tugmasi matni", type: string }
+      - { name: map_button_ru, label: "Xarita tugmasi matni (RU)", type: string }
+      - { name: map_button_en, label: "Xarita tugmasi matni (EN)", type: string }
       - { name: call_button, label: "Qo‘ng‘iroq tugmasi matni", type: string }
+      - { name: call_button_ru, label: "Qo‘ng‘iroq tugmasi matni (RU)", type: string }
+      - { name: call_button_en, label: "Qo‘ng‘iroq tugmasi matni (EN)", type: string }

@@ -1,10 +1,46 @@
 {
   "eyebrow": "Nega Elite Platok?",
+  "eyebrow_ru": "Почему Elite Platok?",
+  "eyebrow_en": "Why Elite Platok?",
   "title": "Sizga qulaylik — bizga mas’uliyat",
+  "title_ru": "Вам — удобство, нам — ответственность",
+  "title_en": "Comfort for you, responsibility for us",
   "items": [
-    {"number": "100+", "title": "Turdagi ro‘mol", "text": "Har qanday did va obraz uchun katta tanlov."},
-    {"number": "01", "title": "Sifatli matolar", "text": "Yoqimli, yengil va qulay matolar."},
-    {"number": "02", "title": "Qulay narxlar", "text": "Chiroyli va sifatli ro‘molni hamyonbop narxda xarid qiling."},
-    {"number": "03", "title": "Yetkazib berish", "text": "Toshkent bo‘ylab. Buyurtmangizni qulay usulda qabul qiling."}
+    {
+      "number": "100+",
+      "title": "Turdagi ro‘mol",
+      "title_ru": "видов платков",
+      "title_en": "scarf styles",
+      "text": "Har qanday did va obraz uchun katta tanlov.",
+      "text_ru": "Большой выбор на любой вкус и образ.",
+      "text_en": "A wide choice for every taste and look."
+    },
+    {
+      "number": "01",
+      "title": "Sifatli matolar",
+      "title_ru": "Качественные ткани",
+      "title_en": "Quality fabrics",
+      "text": "Yoqimli, yengil va qulay matolar.",
+      "text_ru": "Приятные, лёгкие и удобные ткани.",
+      "text_en": "Pleasant, light and comfortable fabrics."
+    },
+    {
+      "number": "02",
+      "title": "Qulay narxlar",
+      "title_ru": "Доступные цены",
+      "title_en": "Affordable prices",
+      "text": "Chiroyli va sifatli ro‘molni hamyonbop narxda xarid qiling.",
+      "text_ru": "Красивый и качественный платок по доступной цене.",
+      "text_en": "A beautiful, quality scarf at an affordable price."
+    },
+    {
+      "number": "03",
+      "title": "Yetkazib berish",
+      "title_ru": "Доставка",
+      "title_en": "Delivery",
+      "text": "Toshkent bo‘ylab. Buyurtmangizni qulay usulda qabul qiling.",
+      "text_ru": "По Ташкенту. Получите заказ удобным способом.",
+      "text_en": "Across Tashkent. Receive your order the way that suits you."
+    }
   ]
 }

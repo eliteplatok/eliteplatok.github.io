@@ -48,6 +48,8 @@ function doPost(e) {
       '📞 ' + esc_(phone),
       o.how === 'pickup' ? '🏬 Do‘kondan olib ketadi' : '🚚 Yetkazib berish: ' + esc_(clean_(o.address, 200) || '—'),
     ];
+    const lang = clean_(o.lang, 5);
+    if (lang && lang !== 'uz') lines.push('🌐 Mijoz tili: ' + esc_(lang.toUpperCase()));
     const comment = clean_(o.comment, 500);
     if (comment) lines.push('💬 ' + esc_(comment));
     lines.push('');

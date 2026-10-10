@@ -1,54 +1,40 @@
 {
   "eyebrow": "Hozir sotuvda",
+  "eyebrow_ru": "Сейчас в продаже",
+  "eyebrow_en": "Now in stock",
   "title": "Yangi kelgan ro‘mollar",
+  "title_ru": "Новые поступления",
+  "title_en": "New arrivals",
   "text": "Do‘konimizda hozir mavjud ro‘mollar. Ranglar va mavjudligini menejerdan aniqlang.",
+  "text_ru": "Платки, которые сейчас есть в нашем магазине. Цвета и наличие уточняйте у менеджера.",
+  "text_en": "Scarves currently available in our store. Check colours and availability with the manager.",
   "link_label": "Barchasini ko‘rish",
+  "link_label_ru": "Смотреть все",
+  "link_label_en": "View all",
   "products": [
     {
       "name": "Tvil sholk bir ton",
+      "name_ru": "Твиль шолк однотонный",
+      "name_en": "Solid Colour Twill Silk",
       "images": [
-        "images/atlas-1.jpg",
-        "images/atlas-mato-18.jpg",
-        "images/atlas-2.jpg",
-        "images/atlas-mato-10.jpg",
-        "images/atlas-3.jpg",
-        "images/atlas-mato-2.jpg",
-        "images/atlas-mato-17.jpg",
-        "images/atlas-4.jpg",
-        "images/atlas-mato-3.jpg",
-        "images/atlas-5.jpg",
-        "images/atlas-mato-4.jpg",
-        "images/atlas-6.jpg",
-        "images/atlas-mato-5.jpg",
-        "images/atlas-7.jpg",
-        "images/atlas-mato-6.jpg",
-        "images/atlas-8.jpg",
-        "images/atlas-mato-7.jpg",
-        "images/atlas-9.jpg",
-        "images/atlas-mato-8.jpg",
-        "images/atlas-10.jpg",
-        "images/atlas-mato-9.jpg",
-        "images/atlas-11.jpg",
-        "images/atlas-mato-1.jpg",
-        "images/atlas-mato-11.jpg",
-        "images/atlas-12.jpg",
-        "images/atlas-mato-16.jpg",
-        "images/atlas-13.jpg",
-        "images/atlas-mato-13.jpg",
-        "images/atlas-14.jpg",
-        "images/atlas-mato-12.jpg",
-        "images/atlas-15.jpg",
-        "images/atlas-mato-14.jpg",
-        "images/atlas-16.jpg",
-        "images/atlas-mato-15.jpg",
-        "images/atlas-17.jpg"
+
       ],
       "size": "",
       "material": "Tvil shoyi, bir rangli",
+      "material_ru": "Твил шёлк, однотонный",
+      "material_en": "Twill silk, solid colour",
       "color": "17 xil: qora, sutrang, krem, oq, to‘q binafsha, binafsha, och pushti, pushti, fuksiya, havorang, to‘q ko‘k, kulrang, to‘q kulrang, bordo, olxo‘ri-kulrang, kulrang-jigarrang, bej",
+      "color_ru": "17 цветов: чёрный, молочный, кремовый, белый, тёмно-фиолетовый, фиолетовый, светло-розовый, розовый, фуксия, голубой, тёмно-синий, серый, тёмно-серый, бордовый, сливово-серый, серо-коричневый, бежевый",
+      "color_en": "17 colours: black, milky white, cream, white, dark purple, purple, light pink, pink, fuchsia, sky blue, navy, grey, dark grey, burgundy, plum grey, grey-brown, beige",
       "description": "Bir rangli tvil shoyi — silliq, yumshoq jilo, 17 xil rangda.",
+      "description_ru": "Однотонный твил шёлк — гладкий, с мягким блеском, в 17 цветах.",
+      "description_en": "Solid colour twill silk — smooth, with a soft sheen, in 17 colours.",
       "details": "Bir tonli tvil sholk ro‘mollarimiz — oddiylikdagi nafislik. Mato silliq va yengil, yorug‘likda mayin tovlanadi, boshda chiroyli burmalanadi va yuzni yorqin ko‘rsatadi.\n\n17 xil rang: klassik qora, oq va sutrangdan tortib, nozik pushti, havorang, binafsha va to‘q ko‘k ranglargacha. Bir rangli bo‘lgani uchun har qanday libos — kundalik, ish yoki bayram kiyimi bilan oson moslashadi.\n\nHar bir rangdan keyin o‘sha ro‘molning yoyilgan ko‘rinishi bor — mato tuzilishi va asl rangini yaqindan ko‘ring.",
+      "details_ru": "Наши однотонные платки из твил шёлка — изящество в простоте. Ткань гладкая и лёгкая, мягко переливается на свету, красиво драпируется и делает лицо ярче.\n\n17 цветов: от классических чёрного, белого и молочного до нежного розового, голубого, фиолетового и тёмно-синего. Благодаря однотонности легко сочетается с любой одеждой — повседневной, деловой или праздничной.\n\nПосле каждого цвета есть фото этого платка в развёрнутом виде — рассмотрите структуру ткани и её настоящий цвет вблизи.",
+      "details_en": "Our solid colour twill silk scarves are elegance in simplicity. The fabric is smooth and light, softly shimmers in the light, drapes beautifully and brightens the face.\n\n17 colours: from classic black, white and milky white to delicate pink, sky blue, purple and navy. Being a single colour, it pairs easily with any outfit — everyday, work or festive.\n\nAfter each colour there is a photo of that scarf laid out flat — see the fabric texture and its true colour up close.",
       "care": "30°C da qo‘lda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Стирать вручную при 30°C или сдавать в химчистку. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash at 30°C or dry clean. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
       "price": "",
       "price_note": "",
       "old_price": "",
@@ -57,10 +43,187 @@
       "promo_qty": 3,
       "promo_total": 0,
       "promo_group": "",
-      "badge": "Yangi"
+      "badge": "Yangi",
+      "badge_ru": "Новинка",
+      "badge_en": "New",
+      "variants": [
+        {
+          "name": "Qora",
+          "name_ru": "Чёрный",
+          "name_en": "Black",
+          "hex": "#1f1d1d",
+          "images": [
+            "images/atlas-1.jpg",
+            "images/atlas-mato-18.jpg"
+          ]
+        },
+        {
+          "name": "Sutrang",
+          "name_ru": "Молочный",
+          "name_en": "Milky white",
+          "hex": "#dccdbd",
+          "images": [
+            "images/atlas-2.jpg",
+            "images/atlas-mato-10.jpg"
+          ]
+        },
+        {
+          "name": "To‘q binafsha",
+          "name_ru": "Тёмно-фиолетовый",
+          "name_en": "Dark purple",
+          "hex": "#431b44",
+          "images": [
+            "images/atlas-3.jpg",
+            "images/atlas-mato-2.jpg",
+            "images/atlas-mato-17.jpg"
+          ]
+        },
+        {
+          "name": "Binafsha",
+          "name_ru": "Фиолетовый",
+          "name_en": "Purple",
+          "hex": "#9c74ae",
+          "images": [
+            "images/atlas-4.jpg",
+            "images/atlas-mato-3.jpg"
+          ]
+        },
+        {
+          "name": "Och pushti",
+          "name_ru": "Светло-розовый",
+          "name_en": "Light pink",
+          "hex": "#f1acbb",
+          "images": [
+            "images/atlas-5.jpg",
+            "images/atlas-mato-4.jpg"
+          ]
+        },
+        {
+          "name": "Fuksiya",
+          "name_ru": "Фуксия",
+          "name_en": "Fuchsia",
+          "hex": "#ef3f82",
+          "images": [
+            "images/atlas-6.jpg",
+            "images/atlas-mato-5.jpg"
+          ]
+        },
+        {
+          "name": "Pushti",
+          "name_ru": "Розовый",
+          "name_en": "Pink",
+          "hex": "#e3aab3",
+          "images": [
+            "images/atlas-7.jpg",
+            "images/atlas-mato-6.jpg"
+          ]
+        },
+        {
+          "name": "Havorang",
+          "name_ru": "Голубой",
+          "name_en": "Sky blue",
+          "hex": "#8aa2c3",
+          "images": [
+            "images/atlas-8.jpg",
+            "images/atlas-mato-7.jpg"
+          ]
+        },
+        {
+          "name": "To‘q ko‘k",
+          "name_ru": "Тёмно-синий",
+          "name_en": "Navy",
+          "hex": "#161e36",
+          "images": [
+            "images/atlas-9.jpg",
+            "images/atlas-mato-8.jpg"
+          ]
+        },
+        {
+          "name": "To‘q kulrang",
+          "name_ru": "Тёмно-серый",
+          "name_en": "Dark grey",
+          "hex": "#5b595c",
+          "images": [
+            "images/atlas-10.jpg",
+            "images/atlas-mato-9.jpg"
+          ]
+        },
+        {
+          "name": "Kulrang",
+          "name_ru": "Серый",
+          "name_en": "Grey",
+          "hex": "#8f8d93",
+          "images": [
+            "images/atlas-11.jpg",
+            "images/atlas-mato-1.jpg",
+            "images/atlas-mato-11.jpg"
+          ]
+        },
+        {
+          "name": "Krem",
+          "name_ru": "Кремовый",
+          "name_en": "Cream",
+          "hex": "#d0bca7",
+          "images": [
+            "images/atlas-12.jpg",
+            "images/atlas-mato-16.jpg"
+          ]
+        },
+        {
+          "name": "Oq",
+          "name_ru": "Белый",
+          "name_en": "White",
+          "hex": "#e0dad8",
+          "images": [
+            "images/atlas-13.jpg",
+            "images/atlas-mato-13.jpg"
+          ]
+        },
+        {
+          "name": "Bordo",
+          "name_ru": "Бордовый",
+          "name_en": "Burgundy",
+          "hex": "#55101d",
+          "images": [
+            "images/atlas-14.jpg",
+            "images/atlas-mato-12.jpg"
+          ]
+        },
+        {
+          "name": "Olxo‘ri-kulrang",
+          "name_ru": "Сливово-серый",
+          "name_en": "Plum grey",
+          "hex": "#a27b78",
+          "images": [
+            "images/atlas-15.jpg",
+            "images/atlas-mato-14.jpg"
+          ]
+        },
+        {
+          "name": "Kulrang-jigarrang",
+          "name_ru": "Серо-коричневый",
+          "name_en": "Grey-brown",
+          "hex": "#937570",
+          "images": [
+            "images/atlas-16.jpg",
+            "images/atlas-mato-15.jpg"
+          ]
+        },
+        {
+          "name": "Bej",
+          "name_ru": "Бежевый",
+          "name_en": "Beige",
+          "hex": "#c8a894",
+          "images": [
+            "images/atlas-17.jpg"
+          ]
+        }
+      ]
     },
     {
       "name": "Italyan tvil ro‘mollar",
+      "name_ru": "Итальянские твил платки",
+      "name_en": "Italian twill scarves",
       "images": [
         "images/qora-toplam-1.jpg",
         "images/qora-toplam-2.jpg",
@@ -92,117 +255,476 @@
         "images/tvil-qoshimcha-5.jpg"
       ],
       "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
       "material": "Italyan tvil shoyi",
+      "material_ru": "Итальянский твил шёлк",
+      "material_en": "Italian twill silk",
       "color": "Oq-qora naqshlar, kulrang va to‘q ko‘k monogramma naqshlar, manzarali printlar (zaytun, havorang, bej, terrakota), pastel pushti va bej, yorqin gulli",
+      "color_ru": "Чёрно-белые узоры, серые и тёмно-синие монограммные узоры, пейзажные принты (оливковый, голубой, бежевый, терракотовый), пастельные розовые и бежевые, яркие цветочные",
+      "color_en": "Black-and-white patterns, grey and navy monogram patterns, landscape prints (olive, sky blue, beige, terracotta), pastel pink and beige, bright florals",
       "description": "20 dan ortiq naqsh — klassik oq-qoradan nafis manzaralar va pastel ranglargacha.",
+      "description_ru": "Более 20 узоров — от классического чёрно-белого до изящных пейзажей и пастельных тонов.",
+      "description_en": "Over 20 patterns — from classic black-and-white to elegant landscapes and pastel tones.",
       "details": "Italyan tvil shoyisidan tayyorlangan ro‘mollar: yuzasi silliq, yengil jilo beradi, boshda sirpanmaydi va shaklini yaxshi ushlaydi.\n\nTanlov keng: oq-qora geometrik, nuqtali, gulli va barokko naqshlar; daraxt va qushlar tasvirlangan nafis manzara printlari keng chiziqli hoshiya bilan; yumshoq pastel pushti va bej ornamentlar; to‘q yashil fondagi yorqin lolalar.\n\nKundalik kiyim, ish va mehmondorchilik uchun birdek mos. Bir nechta naqshni olib, liboslaringizga qarab almashtirib yurish qulay — buning uchun maxsus taklif ham bor.",
+      "details_ru": "Платки из итальянского твил шёлка: гладкая поверхность с лёгким блеском, не соскальзывают и хорошо держат форму.\n\nШирокий выбор: чёрно-белые геометрические, в горошек, цветочные и барочные узоры; изящные пейзажные принты с деревьями и птицами в широкой полосатой кайме; нежные пастельные розовые и бежевые орнаменты; яркие тюльпаны на тёмно-зелёном фоне.\n\nПодходят для повседневной носки, работы и походов в гости. Удобно взять несколько узоров и менять их под наряды — для этого есть специальное предложение.",
+      "details_en": "Scarves made of Italian twill silk: a smooth surface with a light sheen, they don’t slip and hold their shape well.\n\nA wide choice: black-and-white geometric, polka dot, floral and baroque patterns; elegant landscape prints with trees and birds framed by a wide striped border; soft pastel pink and beige ornaments; bright tulips on a dark green background.\n\nSuitable for everyday wear, work and visits. It’s handy to take several patterns and switch them to match your outfits — there’s a special offer for that.",
       "care": "30°C da qo‘lda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Стирать вручную при 30°C или сдавать в химчистку. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C or dry clean. Do not wring, dry in the shade. Iron inside out at low temperature.",
       "price": "45 000 so‘m",
+      "price_ru": "45 000 сум",
+      "price_en": "45,000 UZS",
       "price_note": "3 tasi — 100 000 so‘m",
+      "price_note_ru": "3 шт. — 100 000 сум",
+      "price_note_en": "3 for 100,000 UZS",
       "old_price": "",
       "price_number": 45000,
       "promo3": true,
       "promo_qty": 3,
       "promo_total": 100000,
       "badge": "Aksiya",
+      "badge_ru": "Акция",
+      "badge_en": "Offers",
       "promo_group": "tvil"
     },
     {
       "name": "Jakkard ro‘mollar",
+      "name_ru": "Жаккардовые платки",
+      "name_en": "Jacquard scarves",
       "images": [
-        "images/jakkard-1.jpg",
-        "images/jakkard-2.jpg",
-        "images/jakkard-3.jpg",
-        "images/jakkard-4.jpg",
-        "images/jakkard-5.jpg",
-        "images/jakkard-6.jpg",
-        "images/jakkard-7.jpg",
-        "images/jakkard-8.jpg",
-        "images/jakkard-9.jpg",
-        "images/jakkard-10.jpg",
-        "images/jakkard-11.jpg",
-        "images/jakkard-12.jpg",
-        "images/jakkard-13.jpg",
-        "images/jakkard-14.jpg",
-        "images/jakkard-15.jpg"
+
       ],
       "size": "1 × 1 m (100 × 100 sm)",
+      "size_ru": "1 × 1 м (100 × 100 см)",
+      "size_en": "1 × 1 m (100 × 100 cm)",
       "material": "Jakkard, tovlanuvchi ipaksimon mato",
+      "material_ru": "Жаккард, переливающаяся шелковистая ткань",
+      "material_en": "Jacquard, shimmering silky fabric",
       "color": "15 xil rang: oltinrang, bordo, to‘q ko‘k, yashil, jigarrang, pushti, lila-mis va boshqalar",
+      "color_ru": "15 цветов: золотистый, бордовый, тёмно-синий, зелёный, коричневый, розовый, лилово-медный и другие",
+      "color_en": "15 colours: gold, burgundy, navy, green, brown, pink, lilac-copper and more",
       "description": "Tovlanuvchi bodom naqsh va oltin hoshiya — har qanday tadbirda e’tibor markazida bo‘lasiz.",
+      "description_ru": "Переливающийся узор пейсли и золотая кайма — вы будете в центре внимания на любом мероприятии.",
+      "description_en": "A shimmering paisley pattern and gold border — you’ll be the centre of attention at any event.",
       "details": "Jakkard ro‘mollarimiz — tantanali kunlar uchun yaratilgan. Bodom (paisley) naqshi matoga bosilmagan, balki uning ichiga to‘qilgan: shuning uchun naqsh yuvilganda o‘chmaydi va har bir burilishda yorug‘likda nafis tovlanadi. Chetidagi oltinrang hoshiya ro‘molga qimmatbaho, boy ko‘rinish beradi.\n\nO‘lchami 1 × 1 metr — boshni to‘liq yopadi, ko‘krak qismigacha chiroyli tushadi va har xil usulda o‘rashga yetadi. Mato silliq, og‘irligi o‘rtacha: sirpanib ketmaydi, burmalari tartibli turadi, ignasiz ham shaklini ushlaydi.\n\n15 xil rangdan o‘zingizga mosini tanlang: oltinrang va mis tuslari kechki tadbirlar uchun, bordo va to‘q ko‘k — klassik obraz uchun, pushti va lila — nozik, ayollarga xos ko‘rinish uchun. To‘y, nikoh, mavlud, bayram va mehmondorchilik — har biriga mos. Onangiz, opa-singlingiz yoki dugonangizga sovg‘a sifatida ham ajoyib tanlov.",
+      "details_ru": "Наши жаккардовые платки созданы для торжественных дней. Узор пейсли не напечатан на ткани, а вплетён в неё: поэтому он не стирается и изящно переливается на свету при каждом повороте. Золотистая кайма по краю придаёт платку дорогой, богатый вид.\n\nРазмер 1 × 1 метр — полностью закрывает голову, красиво ниспадает до груди и подходит для разных способов завязывания. Ткань гладкая, средней плотности: не соскальзывает, складки лежат аккуратно, держит форму даже без булавок.\n\nВыберите свой из 15 цветов: золотистые и медные оттенки — для вечерних мероприятий, бордовый и тёмно-синий — для классического образа, розовый и лиловый — для нежного, женственного вида. Свадьба, никах, мавлид, праздник и походы в гости — подойдёт для каждого случая. Прекрасный выбор и в подарок маме, сестре или подруге.",
+      "details_en": "Our jacquard scarves are made for celebrations. The paisley pattern isn’t printed on the fabric but woven into it, so it never washes out and shimmers elegantly in the light with every turn. The gold border adds a rich, luxurious look.\n\nThe 1 × 1 metre size fully covers the head, drapes beautifully down to the chest and is enough for many ways of wrapping. The fabric is smooth and of medium weight: it doesn’t slip, the folds stay neat and it holds its shape even without pins.\n\nChoose yours from 15 colours: gold and copper tones for evening events, burgundy and navy for a classic look, pink and lilac for a delicate, feminine style. Weddings, nikah, mawlid, holidays and visits — it suits every occasion. A wonderful gift for your mother, sister or friend, too.",
       "care": "Faqat qo‘lda, sovuq suvda (30°C gacha) yuving yoki kimyoviy tozalashga bering. Siqmang va burab chirmamang — soyada, tekis holda quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Только ручная стирка в холодной воде (до 30°C) или химчистка. Не отжимать и не скручивать — сушить в тени, в расправленном виде. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash only in cold water (up to 30°C), or dry clean. Do not wring or twist — dry flat in the shade. Iron through a cloth at low temperature.",
       "price": "99 000 so‘m",
+      "price_ru": "99 000 сум",
+      "price_en": "99,000 UZS",
       "price_note": "",
       "old_price": "120 000",
+      "old_price_ru": "120 000",
+      "old_price_en": "120,000",
       "price_number": 99000,
       "promo3": false,
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "Aksiya",
-      "promo_group": ""
+      "badge_ru": "Акция",
+      "badge_en": "Offers",
+      "promo_group": "",
+      "variants": [
+        {
+          "name": "Oltinrang",
+          "name_ru": "Золотистый",
+          "name_en": "Gold",
+          "hex": "#8a7048",
+          "images": [
+            "images/jakkard-1.jpg"
+          ]
+        },
+        {
+          "name": "Kumush-lila",
+          "name_ru": "Серебристо-лиловый",
+          "name_en": "Silver lilac",
+          "hex": "#988083",
+          "images": [
+            "images/jakkard-2.jpg"
+          ]
+        },
+        {
+          "name": "Bordo",
+          "name_ru": "Бордовый",
+          "name_en": "Burgundy",
+          "hex": "#682d3a",
+          "images": [
+            "images/jakkard-3.jpg"
+          ]
+        },
+        {
+          "name": "To‘q ko‘k",
+          "name_ru": "Тёмно-синий",
+          "name_en": "Navy",
+          "hex": "#3e4866",
+          "images": [
+            "images/jakkard-4.jpg"
+          ]
+        },
+        {
+          "name": "Yashil",
+          "name_ru": "Зелёный",
+          "name_en": "Green",
+          "hex": "#3f5a4a",
+          "images": [
+            "images/jakkard-5.jpg"
+          ]
+        },
+        {
+          "name": "To‘q yashil",
+          "name_ru": "Тёмно-зелёный",
+          "name_en": "Dark green",
+          "hex": "#2f4440",
+          "images": [
+            "images/jakkard-6.jpg"
+          ]
+        },
+        {
+          "name": "Lila-mis",
+          "name_ru": "Лилово-медный",
+          "name_en": "Lilac copper",
+          "hex": "#886f65",
+          "images": [
+            "images/jakkard-7.jpg"
+          ]
+        },
+        {
+          "name": "Jigarrang-oltin",
+          "name_ru": "Коричнево-золотой",
+          "name_en": "Brown gold",
+          "hex": "#947d6c",
+          "images": [
+            "images/jakkard-8.jpg"
+          ]
+        },
+        {
+          "name": "Kulrang-lila",
+          "name_ru": "Серо-лиловый",
+          "name_en": "Grey lilac",
+          "hex": "#7c645e",
+          "images": [
+            "images/jakkard-9.jpg"
+          ]
+        },
+        {
+          "name": "Bej-jigarrang",
+          "name_ru": "Бежево-коричневый",
+          "name_en": "Beige brown",
+          "hex": "#937a6c",
+          "images": [
+            "images/jakkard-10.jpg"
+          ]
+        },
+        {
+          "name": "Lila-oltin",
+          "name_ru": "Лилово-золотой",
+          "name_en": "Lilac gold",
+          "hex": "#8e756f",
+          "images": [
+            "images/jakkard-11.jpg"
+          ]
+        },
+        {
+          "name": "Och lila",
+          "name_ru": "Светло-лиловый",
+          "name_en": "Light lilac",
+          "hex": "#af9aa0",
+          "images": [
+            "images/jakkard-12.jpg"
+          ]
+        },
+        {
+          "name": "Pushti-mis",
+          "name_ru": "Розово-медный",
+          "name_en": "Pink copper",
+          "hex": "#9a7064",
+          "images": [
+            "images/jakkard-13.jpg"
+          ]
+        },
+        {
+          "name": "Qizil-bordo",
+          "name_ru": "Красно-бордовый",
+          "name_en": "Crimson",
+          "hex": "#7a2333",
+          "images": [
+            "images/jakkard-14.jpg"
+          ]
+        },
+        {
+          "name": "Kumushrang",
+          "name_ru": "Серебристый",
+          "name_en": "Silver",
+          "hex": "#a8979a",
+          "images": [
+            "images/jakkard-15.jpg"
+          ]
+        }
+      ]
     },
     {
       "name": "Kashka sharflar",
+      "name_ru": "Шарфы кашка",
+      "name_en": "Kashka scarves",
       "images": [
-        "images/kashka-1.jpg",
-        "images/kashka-2.jpg",
-        "images/kashka-3.jpg",
-        "images/kashka-4.jpg",
-        "images/kashka-5.jpg",
-        "images/kashka-6.jpg",
-        "images/kashka-7.jpg",
-        "images/kashka-8.jpg",
-        "images/kashka-9.jpg",
-        "images/kashka-10.jpg",
-        "images/kashka-11.jpg",
-        "images/kashka-12.jpg",
-        "images/kashka-13.jpg",
-        "images/kashka-14.jpg",
-        "images/kashka-15.jpg"
+
       ],
       "size": "70 × 170 sm",
+      "size_ru": "70 × 170 см",
+      "size_en": "70 × 170 cm",
       "material": "Kaliforniya trikotaj",
+      "material_ru": "Калифорнийский трикотаж",
+      "material_en": "Californian jersey",
       "color": "15 xil: jigarrang, terrakota, leopard, binafsha, zaytun, to‘q ko‘k, qora, kulrang, yalpiz, xaki, olcha, bordo, och yashil, ko‘k, to‘q yashil",
+      "color_ru": "15 цветов: коричневый, терракотовый, леопард, фиолетовый, оливковый, тёмно-синий, чёрный, серый, мятный, хаки, вишнёвый, бордовый, светло-зелёный, синий, тёмно-зелёный",
+      "color_en": "15 colours: brown, terracotta, leopard, purple, olive, navy, black, grey, mint, khaki, cherry, burgundy, light green, blue, dark green",
       "description": "Kaliforniya trikotajidan uzun sharf — 15 xil rangda, kundalik obraz uchun eng qulayi.",
+      "description_ru": "Длинный шарф из калифорнийского трикотажа — 15 цветов, самый удобный для повседневного образа.",
+      "description_en": "A long scarf of Californian jersey — 15 colours, the most comfortable for everyday looks.",
       "details": "Kashka sharflari kaliforniya trikotajidan tikilgan: mato yumshoq, biroz cho‘ziluvchan va boshda sirpanmaydi — ignasiz ham chiroyli turadi. O‘lchami 70 × 170 sm: uzunligi turli usulda o‘rash, yelkaga tashlash yoki hajmli qilib bog‘lash uchun yetarli.\n\nRanglar palitrasi keng — sokin jigarrang, qora va to‘q ko‘kdan yorqin binafsha, ko‘k va yalpiz ranglarigacha, leopard naqshli modeli ham bor. Ba’zi ranglari nozik bezak bilan to‘ldirilgan.\n\nIsh, o‘qish, sayr va safar uchun ideal: g‘ijimlanmaydi, yuvishga chidamli, kun bo‘yi qulay.",
+      "details_ru": "Шарфы кашка сшиты из калифорнийского трикотажа: ткань мягкая, слегка тянется и не соскальзывает — красиво держится даже без булавок. Размер 70 × 170 см: длины хватает, чтобы завязать по-разному, накинуть на плечи или сделать объёмный узел.\n\nШирокая палитра — от спокойных коричневого, чёрного и тёмно-синего до ярких фиолетового, синего и мятного, есть и модель с леопардовым принтом. Некоторые цвета дополнены нежным декором.\n\nИдеальны для работы, учёбы, прогулок и поездок: не мнутся, выдерживают стирку, удобны весь день.",
+      "details_en": "Kashka scarves are made of Californian jersey: the fabric is soft, slightly stretchy and doesn’t slip — it stays beautifully in place even without pins. The 70 × 170 cm size is long enough to wrap in different ways, drape over the shoulders or tie into a voluminous knot.\n\nA wide palette — from calm brown, black and navy to bright purple, blue and mint, plus a leopard print model. Some colours are finished with delicate embellishment.\n\nIdeal for work, study, walks and travel: crease-free, easy to wash and comfortable all day.",
       "care": "30°C da nozik rejimda yoki qo‘lda yuving. Siqmang, tekis holda quriting — shunda shaklini yo‘qotmaydi. Bezakli joylarini teskari tomondan, past haroratda dazmollang.",
+      "care_ru": "Стирать в деликатном режиме при 30°C или вручную. Не отжимать, сушить в расправленном виде — так шарф не потеряет форму. Места с декором гладить с изнанки при низкой температуре.",
+      "care_en": "Gentle or hand wash at 30°C. Do not wring, dry flat — so the scarf keeps its shape. Iron embellished areas inside out at low temperature.",
       "price": "45 000 so‘m",
+      "price_ru": "45 000 сум",
+      "price_en": "45,000 UZS",
       "price_note": "3 tasi — 100 000 so‘m",
+      "price_note_ru": "3 шт. — 100 000 сум",
+      "price_note_en": "3 for 100,000 UZS",
       "old_price": "",
       "price_number": 45000,
       "promo3": true,
       "promo_qty": 3,
       "promo_total": 100000,
       "badge": "Aksiya",
-      "promo_group": "kashka"
+      "badge_ru": "Акция",
+      "badge_en": "Offers",
+      "promo_group": "kashka",
+      "variants": [
+        {
+          "name": "Jigarrang",
+          "name_ru": "Коричневый",
+          "name_en": "Brown",
+          "hex": "#6b3427",
+          "images": [
+            "images/kashka-1.jpg"
+          ]
+        },
+        {
+          "name": "Terrakota",
+          "name_ru": "Терракотовый",
+          "name_en": "Terracotta",
+          "hex": "#8a4326",
+          "images": [
+            "images/kashka-2.jpg"
+          ]
+        },
+        {
+          "name": "Leopard",
+          "name_ru": "Леопард",
+          "name_en": "Leopard",
+          "hex": "#a07a4a",
+          "images": [
+            "images/kashka-3.jpg"
+          ]
+        },
+        {
+          "name": "Binafsha",
+          "name_ru": "Фиолетовый",
+          "name_en": "Purple",
+          "hex": "#772f71",
+          "images": [
+            "images/kashka-4.jpg"
+          ]
+        },
+        {
+          "name": "Zaytun",
+          "name_ru": "Оливковый",
+          "name_en": "Olive",
+          "hex": "#80741a",
+          "images": [
+            "images/kashka-5.jpg"
+          ]
+        },
+        {
+          "name": "To‘q ko‘k",
+          "name_ru": "Тёмно-синий",
+          "name_en": "Navy",
+          "hex": "#141a33",
+          "images": [
+            "images/kashka-6.jpg"
+          ]
+        },
+        {
+          "name": "Qora",
+          "name_ru": "Чёрный",
+          "name_en": "Black",
+          "hex": "#0f0f11",
+          "images": [
+            "images/kashka-7.jpg"
+          ]
+        },
+        {
+          "name": "Kulrang",
+          "name_ru": "Серый",
+          "name_en": "Grey",
+          "hex": "#aeadb0",
+          "images": [
+            "images/kashka-8.jpg"
+          ]
+        },
+        {
+          "name": "Yalpiz",
+          "name_ru": "Мятный",
+          "name_en": "Mint",
+          "hex": "#6eada0",
+          "images": [
+            "images/kashka-9.jpg"
+          ]
+        },
+        {
+          "name": "Xaki",
+          "name_ru": "Хаки",
+          "name_en": "Khaki",
+          "hex": "#3a3c2c",
+          "images": [
+            "images/kashka-10.jpg"
+          ]
+        },
+        {
+          "name": "Olcha",
+          "name_ru": "Вишнёвый",
+          "name_en": "Cherry",
+          "hex": "#4a0f22",
+          "images": [
+            "images/kashka-11.jpg"
+          ]
+        },
+        {
+          "name": "Bordo",
+          "name_ru": "Бордовый",
+          "name_en": "Burgundy",
+          "hex": "#5a1020",
+          "images": [
+            "images/kashka-12.jpg"
+          ]
+        },
+        {
+          "name": "Och yashil",
+          "name_ru": "Светло-зелёный",
+          "name_en": "Light green",
+          "hex": "#b6cbb7",
+          "images": [
+            "images/kashka-13.jpg"
+          ]
+        },
+        {
+          "name": "Ko‘k",
+          "name_ru": "Синий",
+          "name_en": "Blue",
+          "hex": "#143387",
+          "images": [
+            "images/kashka-14.jpg"
+          ]
+        },
+        {
+          "name": "To‘q yashil",
+          "name_ru": "Тёмно-зелёный",
+          "name_en": "Dark green",
+          "hex": "#12302a",
+          "images": [
+            "images/kashka-15.jpg"
+          ]
+        }
+      ]
     },
     {
       "name": "Shifon sharflar",
+      "name_ru": "Шифоновые шарфы",
+      "name_en": "Chiffon scarves",
       "images": [
-        "images/shifon-sharf-1.jpg",
-        "images/shifon-sharf-2.jpg",
-        "images/shifon-sharf-3.jpg",
-        "images/shifon-sharf-4.jpg"
+
       ],
       "size": "",
       "material": "Shifon",
+      "material_ru": "Шифон",
+      "material_en": "Chiffon",
       "color": "To‘q olxo‘ri, bej, lila, qizil",
+      "color_ru": "Тёмная слива, бежевый, лиловый, красный",
+      "color_en": "Dark plum, beige, lilac, red",
       "description": "Yengil, havodor shifon — nafis burmalar va yumshoq tushish.",
+      "description_ru": "Лёгкий воздушный шифон — изящные складки и мягкое ниспадание.",
+      "description_en": "Light, airy chiffon — graceful folds and a soft drape.",
       "details": "Shifon sharflar — yengillik va nafislikni sevuvchilar uchun. Mato havodor va biroz shaffof: boshda hajmli, chiroyli burmalar hosil qiladi va yuzga yumshoq tushadi. Issiq kunlarda ham qulay, kiyilganda deyarli sezilmaydi.\n\nTo‘q olxo‘ri, bej, lila va yorqin qizil ranglarda — kundalik obraz uchun ham, bayram va mehmondorchilik uchun ham mos. Qatlamli o‘rash yoki uzun uchini yelkaga tashlab kiyish uchun qulay.",
+      "details_ru": "Шифоновые шарфы — для тех, кто любит лёгкость и изящество. Ткань воздушная и слегка прозрачная: на голове образует объёмные красивые складки и мягко обрамляет лицо. Удобны даже в жару, при носке почти не ощущаются.\n\nВ цветах тёмная слива, бежевый, лиловый и яркий красный — подходят и для повседневного образа, и для праздников и походов в гости. Удобно завязывать многослойно или носить, перекинув длинный конец через плечо.",
+      "details_en": "Chiffon scarves are for those who love lightness and elegance. The fabric is airy and slightly sheer: it forms beautiful, voluminous folds and softly frames the face. Comfortable even in the heat — you barely feel it when worn.\n\nIn dark plum, beige, lilac and bright red — suitable for everyday looks as well as celebrations and visits. Easy to wrap in layers or wear with the long end over the shoulder.",
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
       "price": "99 000 so‘m",
+      "price_ru": "99 000 сум",
+      "price_en": "99,000 UZS",
       "price_note": "2 tasi — 150 000 so‘m",
+      "price_note_ru": "2 шт. — 150 000 сум",
+      "price_note_en": "2 for 150,000 UZS",
       "old_price": "",
       "price_number": 99000,
       "promo3": true,
       "promo_qty": 2,
       "promo_total": 150000,
       "promo_group": "shifon",
-      "badge": "Aksiya"
+      "badge": "Aksiya",
+      "badge_ru": "Акция",
+      "badge_en": "Offers",
+      "variants": [
+        {
+          "name": "To‘q olxo‘ri",
+          "name_ru": "Тёмная слива",
+          "name_en": "Dark plum",
+          "hex": "#4f273b",
+          "images": [
+            "images/shifon-sharf-1.jpg"
+          ]
+        },
+        {
+          "name": "Bej",
+          "name_ru": "Бежевый",
+          "name_en": "Beige",
+          "hex": "#d8af72",
+          "images": [
+            "images/shifon-sharf-2.jpg"
+          ]
+        },
+        {
+          "name": "Lila",
+          "name_ru": "Лиловый",
+          "name_en": "Lilac",
+          "hex": "#7d4666",
+          "images": [
+            "images/shifon-sharf-3.jpg"
+          ]
+        },
+        {
+          "name": "Qizil",
+          "name_ru": "Красный",
+          "name_en": "Red",
+          "hex": "#d7001a",
+          "images": [
+            "images/shifon-sharf-4.jpg"
+          ]
+        }
+      ]
     },
     {
       "name": "Gulli naqshli to‘plam",
+      "name_ru": "Набор с цветочным узором",
+      "name_en": "Floral pattern collection",
       "images": [
         "images/gulli-toplam-1.jpg",
         "images/gulli-toplam-2.jpg",
@@ -211,12 +733,26 @@
         "images/gulli-toplam-5.jpg"
       ],
       "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
       "material": "Yengil shoyisimon mato",
+      "material_ru": "Лёгкая шелковистая ткань",
+      "material_en": "Light silky fabric",
       "color": "Sutrang fonda shaftoli, kulrang, ko‘k va zaytun rang gullar",
+      "color_ru": "Персиковые, серые, голубые и оливковые цветы на молочном фоне",
+      "color_en": "Peach, grey, blue and olive flowers on a milky white background",
       "description": "Nafis gul naqshlari va rangli hoshiya — har kuni yangi obraz.",
+      "description_ru": "Изящные цветочные узоры и цветная кайма — каждый день новый образ.",
+      "description_en": "Elegant floral patterns and a coloured border — a new look every day.",
       "details": "Sutrang fondagi yirik va mayda gul naqshlari ro‘molga yengillik va bahoriy kayfiyat beradi. Har bir rangda hoshiyasi naqsh rangiga moslab tanlangan: shaftoli, zaytun, ko‘k va kulrang. Mato yengil, silliq va yumshoq — boshda chiroyli tushadi, bog‘lash oson.\n\nKundalik kiyim bilan ham, mehmondorchilik obrazi bilan ham birdek mos. Bir nechta rangini olib, liboslaringizga qarab almashtirib yurish qulay.",
+      "details_ru": "Крупные и мелкие цветочные узоры на молочном фоне придают платку лёгкость и весеннее настроение. В каждом цвете кайма подобрана в тон узору: персиковая, оливковая, голубая и серая. Ткань лёгкая, гладкая и мягкая — красиво ложится, легко завязывается.\n\nОдинаково хорошо сочетается и с повседневной одеждой, и с образом для гостей. Удобно взять несколько цветов и менять их под наряды.",
+      "details_en": "Large and small floral patterns on a milky white background give the scarf lightness and a spring mood. In each colour the border matches the pattern: peach, olive, blue and grey. The fabric is light, smooth and soft — it drapes beautifully and is easy to tie.\n\nPairs equally well with everyday clothes and with an outfit for visits. It’s handy to take several colours and switch them to match your outfits.",
       "care": "30°C da qo‘lda yoki nozik rejimda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Стирать вручную или в деликатном режиме при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand or gentle wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
       "price": "3 ta — 100 000 so‘m",
+      "price_ru": "3 шт. — 100 000 сум",
+      "price_en": "3 for 100,000 UZS",
       "price_note": "",
       "old_price": "",
       "price_number": 0,
@@ -224,22 +760,40 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "Yangi",
+      "badge_ru": "Новинка",
+      "badge_en": "New",
       "promo_group": ""
     },
     {
       "name": "Arab naqshli ro‘mol",
+      "name_ru": "Платок с арабским узором",
+      "name_en": "Arabic pattern scarf",
       "images": [
         "images/arab-naqsh-1.jpg",
         "images/arab-naqsh-2.jpg",
         "images/arab-naqsh-3.jpg"
       ],
       "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
       "material": "Dubay ipagi",
+      "material_ru": "Дубайский шёлк",
+      "material_en": "Dubai silk",
       "color": "Bordo, sutrang, qora",
+      "color_ru": "Бордовый, молочный, чёрный",
+      "color_en": "Burgundy, milky white, black",
       "description": "Arab xattotligidan ilhomlangan naqsh — nafis va o‘ziga xos.",
+      "description_ru": "Узор, вдохновлённый арабской каллиграфией, — изящный и самобытный.",
+      "description_en": "A pattern inspired by Arabic calligraphy — elegant and distinctive.",
       "details": "Ro‘mol yuzasi arab harflari uslubidagi erkin, oqimli naqsh bilan bezatilgan. Bordo, sutrang va qora ranglarda — naqsh har birida mato rangiga mos, sokin tusda berilgan. Matosi Dubay ipagi: yengil, yumshoq va boshda yaxshi turadi; chetlari qo‘lda bukilgan.\n\nKundalik obrazga ham, mehmondorchilikka ham mos keladigan, ko‘zga tashlanadigan, lekin bosiq ro‘mol.",
+      "details_ru": "Поверхность платка украшена свободным струящимся узором в стиле арабских букв. В бордовом, молочном и чёрном цветах — в каждом узор выполнен в спокойном тоне под цвет ткани. Ткань — дубайский шёлк: лёгкая, мягкая и хорошо держится на голове; края подшиты вручную.\n\nЗаметный, но сдержанный платок, который подойдёт и к повседневному образу, и для походов в гости.",
+      "details_en": "The scarf is decorated with a free, flowing pattern in the style of Arabic letters. In burgundy, milky white and black — in each, the pattern is in a calm tone matching the fabric. The fabric is Dubai silk: light, soft and stays well in place; the edges are hand-hemmed.\n\nA noticeable yet understated scarf that suits both everyday looks and visits.",
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
       "price": "3 ta — 100 000 so‘m",
+      "price_ru": "3 шт. — 100 000 сум",
+      "price_en": "3 for 100,000 UZS",
       "price_note": "",
       "old_price": "",
       "price_number": 0,
@@ -247,23 +801,35 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "Yangi",
+      "badge_ru": "Новинка",
+      "badge_en": "New",
       "promo_group": ""
     },
     {
       "name": "Turkiya atlas ro‘moli",
+      "name_ru": "Турецкий атласный платок",
+      "name_en": "Turkish satin scarf",
       "images": [
-        "images/turkiya-atlas-1.jpg",
-        "images/turkiya-atlas-2.jpg",
-        "images/turkiya-atlas-3.jpg",
-        "images/turkiya-atlas-4.jpg",
-        "images/turkiya-atlas-5.jpg"
+
       ],
       "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
       "material": "Atlas (Turkiya)",
+      "material_ru": "Атлас (Турция)",
+      "material_en": "Satin (Turkey)",
       "color": "Kumushrang, sutrang, oq, kulrang",
+      "color_ru": "Серебристый, молочный, белый, серый",
+      "color_en": "Silver, milky white, white, grey",
       "description": "Yumshoq jilo beruvchi silliq atlas — tantanali va kundalik obraz uchun.",
+      "description_ru": "Гладкий атлас с мягким блеском — для торжественного и повседневного образа.",
+      "description_en": "Smooth satin with a soft sheen — for festive and everyday looks.",
       "details": "Turkiyada ishlab chiqarilgan silliq atlas ro‘mol. Matosining tabiiy jilosi yuzni yorqin ko‘rsatadi, ranglari esa sokin va nafis — kumushrang, sutrang, oq va kulrang. Mato og‘ir emas, boshda yaxshi turadi va burmalari chiroyli tushadi.\n\nTo‘y, bayram va rasmiy uchrashuvlar uchun ideal, lekin bir rangli bo‘lgani uchun kundalik kiyim bilan ham oson uyg‘unlashadi.",
+      "details_ru": "Гладкий атласный платок турецкого производства. Естественный блеск ткани делает лицо ярче, а цвета спокойные и изящные — серебристый, молочный, белый и серый. Ткань не тяжёлая, хорошо держится на голове, складки ложатся красиво.\n\nИдеален для свадеб, праздников и официальных встреч, но благодаря однотонности легко сочетается и с повседневной одеждой.",
+      "details_en": "A smooth satin scarf made in Turkey. The natural sheen of the fabric brightens the face, and the colours are calm and elegant — silver, milky white, white and grey. The fabric isn’t heavy, stays well in place and the folds fall beautifully.\n\nIdeal for weddings, celebrations and formal occasions, yet as a solid colour it pairs easily with everyday clothes too.",
       "care": "Sovuq suvda qo‘lda yuving yoki kimyoviy tozalashga bering. Siqmang. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Стирать вручную в холодной воде или сдавать в химчистку. Не отжимать. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash in cold water or dry clean. Do not wring. Iron through a cloth at low temperature.",
       "price": "",
       "price_note": "",
       "old_price": "",
@@ -272,22 +838,74 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "Yangi",
-      "promo_group": ""
+      "badge_ru": "Новинка",
+      "badge_en": "New",
+      "promo_group": "",
+      "variants": [
+        {
+          "name": "Kumushrang",
+          "name_ru": "Серебристый",
+          "name_en": "Silver",
+          "hex": "#c6c0c0",
+          "images": [
+            "images/turkiya-atlas-1.jpg",
+            "images/turkiya-atlas-4.jpg"
+          ]
+        },
+        {
+          "name": "Oq",
+          "name_ru": "Белый",
+          "name_en": "White",
+          "hex": "#e6e8e5",
+          "images": [
+            "images/turkiya-atlas-2.jpg"
+          ]
+        },
+        {
+          "name": "Kulrang",
+          "name_ru": "Серый",
+          "name_en": "Grey",
+          "hex": "#8b8789",
+          "images": [
+            "images/turkiya-atlas-3.jpg"
+          ]
+        },
+        {
+          "name": "Sutrang",
+          "name_ru": "Молочный",
+          "name_en": "Milky white",
+          "hex": "#dcdcc8",
+          "images": [
+            "images/turkiya-atlas-5.jpg"
+          ]
+        }
+      ]
     },
     {
       "name": "Organza ro‘mol",
+      "name_ru": "Платок из органзы",
+      "name_en": "Organza scarf",
       "images": [
-        "images/organza-yangi-1.jpg",
-        "images/organza-yangi-2.jpg",
-        "images/organza-yangi-3.jpg",
-        "images/organza-yangi-4.jpg"
+
       ],
       "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
       "material": "Organza",
+      "material_ru": "Органза",
+      "material_en": "Organza",
       "color": "Oq, jigarrang, qora, kulrang",
+      "color_ru": "Белый, коричневый, чёрный, серый",
+      "color_en": "White, brown, black, grey",
       "description": "Yengil, havodor va nozik jilo — obrazga nafislik qo‘shadi.",
+      "description_ru": "Лёгкий, воздушный, с нежным блеском — добавляет образу изящества.",
+      "description_en": "Light, airy, with a delicate sheen — adds elegance to your look.",
       "details": "Organza — yengil, havo o‘tkazuvchan va nozik jiloli mato. Ro‘mol shaklini yaxshi ushlaydi, boshda hajmli va chiroyli turadi. Oq, jigarrang, qora va kulrang ranglari har qanday libos bilan oson moslashadi.\n\nIssiq kunlarda ham qulay, bayram va kundalik obrazlar uchun birdek mos.",
+      "details_ru": "Органза — лёгкая, воздухопроницаемая ткань с нежным блеском. Платок хорошо держит форму, на голове выглядит объёмно и красиво. Белый, коричневый, чёрный и серый цвета легко сочетаются с любой одеждой.\n\nУдобен даже в жаркие дни, одинаково подходит для праздничных и повседневных образов.",
+      "details_en": "Organza is a light, breathable fabric with a delicate sheen. The scarf holds its shape well and looks voluminous and beautiful. White, brown, black and grey pair easily with any outfit.\n\nComfortable even on hot days, equally suited to festive and everyday looks.",
       "care": "Sovuq suvda qo‘lda yuving. Siqmang. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Стирать вручную в холодной воде. Не отжимать. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash in cold water. Do not wring. Iron through a cloth at low temperature.",
       "price": "",
       "price_note": "",
       "old_price": "",
@@ -296,7 +914,31 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "Yangi",
-      "promo_group": ""
+      "badge_ru": "Новинка",
+      "badge_en": "New",
+      "promo_group": "",
+      "variants": [
+        {
+          "name": "Oq",
+          "name_ru": "Белый",
+          "name_en": "White",
+          "hex": "#e0e3dc",
+          "images": [
+            "images/organza-yangi-1.jpg",
+            "images/organza-yangi-3.jpg"
+          ]
+        },
+        {
+          "name": "Jigarrang",
+          "name_ru": "Коричневый",
+          "name_en": "Brown",
+          "hex": "#986454",
+          "images": [
+            "images/organza-yangi-2.jpg",
+            "images/organza-yangi-4.jpg"
+          ]
+        }
+      ]
     }
   ]
 }
