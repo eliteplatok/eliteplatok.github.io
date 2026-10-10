@@ -527,6 +527,9 @@ content:
       - { name: wholesale_text, label: "Optom: matn", type: text }
       - { name: wholesale_text_ru, label: "Optom: matn (RU)", type: text }
       - { name: wholesale_text_en, label: "Optom: matn (EN)", type: text }
+      - { name: wholesale_text_short, label: "Optom: qisqa matn (telefonda)", type: string }
+      - { name: wholesale_text_short_ru, label: "Optom: qisqa matn (telefonda) (RU)", type: string }
+      - { name: wholesale_text_short_en, label: "Optom: qisqa matn (telefonda) (EN)", type: string }
       - { name: wholesale_button, label: "Optom: tugma yozuvi", type: string }
       - { name: wholesale_button_ru, label: "Optom: tugma yozuvi (RU)", type: string }
       - { name: wholesale_button_en, label: "Optom: tugma yozuvi (EN)", type: string }

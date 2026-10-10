@@ -278,9 +278,10 @@
 #biz .opt p{font-size:14px}
 #biz .opt-b{margin-bottom:10px}
 #biz .opt-btn{padding:16px 28px}
-.why-m{padding:64px 0}
+.opt-s{display:none}
+  .why-m{padding:64px 0}
 .why-m .why b{font-size:38px;margin-bottom:12px}
-@media (max-width:760px){#biz{padding:36px 0}#biz .opt{padding:22px 18px;gap:16px}.why-m{padding:44px 0}.why-m .why{gap:22px 20px}.why-m .why div{padding-top:16px}.why-m .why b{font-size:30px;margin-bottom:8px}.why-m .why h3{font-size:19px}}
+@media (max-width:760px){#biz .opt-b,#biz .opt-l{display:none}#biz .opt-s{display:block}#biz .opt h3{font-size:22px}#biz .opt-btn{padding:14px 18px;font-size:12px}#biz{padding:36px 0}#biz .opt{padding:18px 18px 20px;gap:14px}.why-m{padding:44px 0}.why-m .why{gap:22px 20px}.why-m .why div{padding-top:16px}.why-m .why b{font-size:30px;margin-bottom:8px}.why-m .why h3{font-size:19px}}
   .why div{border-top:1px solid var(--ink);padding-top:26px}
   .why b{display:block;font-family:var(--serif);font-weight:400;font-size:46px;line-height:1;color:var(--accent);margin-bottom:18px}
   .why h3{font-size:24px;margin-bottom:10px}
@@ -694,7 +695,7 @@ function render(C) {
 <section id="biz" class="alt"><div class="wrap">
   ${head(W)}
   ${W.wholesale_title ? `<div class="opt r">
-    <div>${W.wholesale_badge ? `<span class="opt-b">${txt(W.wholesale_badge)}</span>` : ''}<h3>${txt(W.wholesale_title)}</h3><p>${txt(W.wholesale_text)}</p></div>
+    <div>${W.wholesale_badge ? `<span class="opt-b">${txt(W.wholesale_badge)}</span>` : ''}<h3>${txt(W.wholesale_title)}</h3><p class="opt-l">${txt(W.wholesale_text)}</p>${W.wholesale_text_short ? `<p class="opt-s">${txt(W.wholesale_text_short)}</p>` : ''}</div>
     <a class="opt-btn" href="${esc(S.telegram)}${S.telegram.includes('?') ? '&' : '?'}text=${encodeURIComponent(W.wholesale_message || 'OPTOM')}" ${ext}>${txt(W.wholesale_button)} <span>→</span></a>
   </div>` : ''}
 </div></section>
