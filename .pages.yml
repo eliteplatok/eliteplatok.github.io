@@ -141,6 +141,9 @@ content:
       - { name: search_chips, label: "Qidiruv: tezkor tugmalar (vergul bilan)", type: string }
       - { name: search_chips_ru, label: "Qidiruv: tezkor tugmalar (vergul bilan) (RU)", type: string }
       - { name: search_chips_en, label: "Qidiruv: tezkor tugmalar (vergul bilan) (EN)", type: string }
+      - { name: search_filters, label: "Qidiruv: filtr nomlari (tartib: yangi, bestseller, bir rangli, printli, bandanka, shoyi, tvil, chegirma, aksiya)", type: string }
+      - { name: search_filters_ru, label: "Qidiruv: filtr nomlari (RU)", type: string }
+      - { name: search_filters_en, label: "Qidiruv: filtr nomlari (EN)", type: string }
       - { name: promo3_label, label: "Aksiya: savatda chiqadigan yozuv", type: string }
       - { name: promo3_label_ru, label: "Aksiya: savatda chiqadigan yozuv (RU)", type: string }
       - { name: promo3_label_en, label: "Aksiya: savatda chiqadigan yozuv (EN)", type: string }
@@ -323,6 +326,7 @@ content:
           - { name: badge_en, label: "Belgi (EN)", type: string }
           - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
           - { name: sold_photos, label: "Tugagan ro‘mollar — rasm raqamlari (ranglari bo‘lmagan tovar uchun, masalan: 3, 7)", type: string }
+          - { name: tags, label: "Qidiruv teglari (vergul bilan): bir rangli / printli / bestseller / bandanka", type: string }
 
   - name: top
     label: "⭐ Eng ko‘p sotilayotganlar"
@@ -404,6 +408,7 @@ content:
           - { name: badge_en, label: "Belgi (EN)", type: string }
           - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
           - { name: sold_photos, label: "Tugagan ro‘mollar — rasm raqamlari (ranglari bo‘lmagan tovar uchun, masalan: 3, 7)", type: string }
+          - { name: tags, label: "Qidiruv teglari (vergul bilan): bir rangli / printli / bestseller / bandanka", type: string }
 
   - name: matolar
     label: "🧵 Matolar"

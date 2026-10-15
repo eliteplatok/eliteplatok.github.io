@@ -56,6 +56,7 @@
       "badge_en": "Exclusive",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "printli",
       "price_ru": "35 $",
       "price_en": "$35",
       "price_note_ru": "Единственный экземпляр · Двусторонний",
@@ -102,6 +103,7 @@
       "badge_en": "New",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "printli",
       "variants": [
         {
           "name": "Pushti",
@@ -256,6 +258,7 @@
       "badge_en": "New",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "bir rangli",
       "variants": [
         {
           "name": "Qora",
@@ -520,6 +523,7 @@
       "badge_en": "Offers",
       "sold_out": false,
       "sold_photos": "12",
+      "tags": "printli",
       "promo_group": "tvil"
     },
     {
@@ -564,6 +568,7 @@
       "badge_en": "Offers",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "printli",
       "promo_group": "",
       "variants": [
         {
@@ -760,6 +765,7 @@
       "badge_en": "Offers",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "bir rangli",
       "promo_group": "kashka",
       "variants": [
         {
@@ -955,6 +961,7 @@
       "badge_en": "Offers",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "bir rangli",
       "variants": [
         {
           "name": "To‘q olxo‘ri",
@@ -1042,6 +1049,7 @@
       "badge_en": "New",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "printli",
       "promo_group": ""
     },
     {
@@ -1086,6 +1094,7 @@
       "badge_en": "New",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "printli",
       "promo_group": ""
     },
     {
@@ -1126,6 +1135,7 @@
       "badge_en": "New",
       "sold_out": false,
       "sold_photos": "",
+      "tags": "bir rangli",
       "promo_group": "",
       "variants": [
         {

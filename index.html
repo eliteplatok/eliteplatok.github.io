@@ -163,6 +163,9 @@ img.so{filter:grayscale(.55) opacity(.5)}
     .srch-chips{display:flex;gap:8px;flex-wrap:wrap;padding:16px 24px 0;max-width:1240px;margin:0 auto}
     .srch-chips button{border:1px solid var(--line);background:#fff;border-radius:18px;padding:7px 14px;font:inherit;font-size:13px;cursor:pointer;color:var(--ink)}
     .srch-chips button:hover{border-color:var(--ink)}
+    .srch-f button{background:var(--bg-2);border-color:transparent;font-weight:500;letter-spacing:.02em}
+    .srch-f button.on{background:var(--ink);color:var(--bg)}
+    .srch-f{padding-bottom:4px}
     .srch-res{max-width:1240px;margin:0 auto;padding:18px 24px 60px}
     .srch-hint,.srch-n{color:var(--muted);font-size:14px;margin:6px 0 16px}
     .srch-g{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px 14px}
@@ -737,10 +740,27 @@ function searchTerms(q) {
 }
 // colour words: Latin ones must match a whole word (so “olcha” ≠ “o‘lchamli”), Russian stems match word starts
 const hits = (text, terms) => { const toks = norm(text).split(/[^a-zа-я0-9]+/); return terms.every(g => g.list.some(t => toks.some(k => g.fam && /^[a-z]/.test(t) ? k === t : k.startsWith(t)))); };
+const tagsOf = p => norm(p.tags_uz || p.tags).split(/\s*,\s*/).filter(Boolean);
+const silkRe = /(^|[^a-z])(sholk|shoyi|shoyisi|ipak|ipagi)([^a-z]|$)/;
+const FILTERS = [
+  ['new', p => p.sec === 'yangi'],
+  ['best', p => tagsOf(p).includes('bestseller')],
+  ['solid', p => tagsOf(p).includes('bir rangli')],
+  ['print', p => tagsOf(p).includes('printli')],
+  ['bandana', p => tagsOf(p).some(t => t.startsWith('bandan'))],
+  ['silk', p => silkRe.test(norm([p.name_uz || p.name, p.material_uz || p.material].join(' ')))],
+  ['twill', p => /tvil/.test(norm([p.name_uz || p.name, p.material_uz || p.material].join(' ')))],
+  ['sale', p => !!String(p.old_price || '').trim()],
+  ['promo', p => !!p.promo3]
+];
+let SEARCH_F = -1;
 function runSearch(q) {
-  const terms = searchTerms(q); if (!terms.length) return [];
+  const terms = searchTerms(q), fil = SEARCH_F >= 0 ? FILTERS[SEARCH_F][1] : null;
+  if (!terms.length && !fil) return [];
   const out = [];
   PRODUCTS.forEach((p, i) => {
+    if (fil && !fil(p)) return;
+    if (!terms.length) { out.push({ i, k: 0, im: p.ims[0], name: p.name, sub: p.size || p.material || '', p, sold: p.sold_out }); return; }
     const base = [p.name, p.name_uz, p.material, p.badge].join(' ');
     if (p.vars.length) {
       const colourOnly = p.vars.map((v, k) => ({ v, k })).filter(({ v }) => hits([base, v.name, v.name_uz, v.name_ru, v.name_en].join(' '), terms));
@@ -751,7 +771,7 @@ function runSearch(q) {
 }
 function renderSearch(q) {
   const S = S_, box = document.querySelector('#srch .srch-res');
-  if (!q.trim()) { box.innerHTML = `<p class="srch-hint">${txt(S.search_hint)}</p>`; return; }
+  if (!q.trim() && SEARCH_F < 0) { box.innerHTML = `<p class="srch-hint">${txt(S.search_hint)}</p>`; return; }
   const r = runSearch(q);
   box.innerHTML = r.length ? `<p class="srch-n">${r.length} ${txt(S.search_found)}</p><div class="srch-g">${r.map(x => `<button class="srch-it" data-i="${x.i}" data-k="${x.k}"><span class="ph"><img class="${x.sold ? 'so' : ''}" ${smImg(x.im, 'alt="" loading="lazy"')}>${x.sold ? `<span class="so-tag">${txt(S.sold_out_label)}</span>` : `<span class="srch-add" role="button" tabindex="0" data-add-i="${x.i}" data-add-k="${x.k}" aria-label="${esc(S.product_add_button)}" title="${esc(S.product_add_button)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M12 11v6M9 14h6"/></svg></span>`}</span><b>${txt(x.name)}</b>${x.sub ? `<em>${txt(x.sub)}</em>` : ''}<i>${txt(x.p.price || S.price_on_request)}</i></button>`).join('')}</div>`
     : `<p class="srch-hint">${txt(S.search_empty)}</p>`;
@@ -761,11 +781,16 @@ function renderSearch(q) {
 function openSearch() {
   const S = S_, el = document.getElementById('srch');
   const chips = String(S.search_chips || '').split(',').map(x => x.trim()).filter(Boolean);
+  const fl = String(S.search_filters || '').split(',').map(x => x.trim());
+  const fchips = FILTERS.map(([key, fn], n) => ({ n, label: fl[n] })).filter(x => x.label && PRODUCTS.some(FILTERS[x.n][1]));
+  SEARCH_F = -1;
   el.innerHTML = `<div class="srch-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg><input type="search" placeholder="${esc(S.search_placeholder)}" aria-label="${esc(S.search_title)}" autocomplete="off"><button class="pm-x" data-sx>${txt(S.close_label)} <b>×</b></button></div>
-    ${chips.length ? `<div class="srch-chips">${chips.map(c => `<button>${txt(c)}</button>`).join('')}</div>` : ''}<div class="srch-res"></div>`;
+    ${fchips.length ? `<div class="srch-chips srch-f">${fchips.map(x => `<button data-f="${x.n}">${txt(x.label)}</button>`).join('')}</div>` : ''}
+    ${chips.length ? `<div class="srch-chips srch-c">${chips.map(c => `<button>${txt(c)}</button>`).join('')}</div>` : ''}<div class="srch-res"></div>`;
   const inp = el.querySelector('input'); let t;
   inp.oninput = () => { clearTimeout(t); t = setTimeout(() => renderSearch(inp.value), 120); };
-  el.querySelectorAll('.srch-chips button').forEach(b => b.onclick = () => { inp.value = b.textContent; renderSearch(inp.value); });
+  el.querySelectorAll('.srch-c button').forEach(b => b.onclick = () => { inp.value = inp.value.trim().toLowerCase() === b.textContent.toLowerCase() ? '' : b.textContent; renderSearch(inp.value); });
+  el.querySelectorAll('.srch-f button').forEach(b => b.onclick = () => { const n = +b.dataset.f; SEARCH_F = SEARCH_F === n ? -1 : n; el.querySelectorAll('.srch-f button').forEach(x => x.classList.toggle('on', +x.dataset.f === SEARCH_F)); renderSearch(inp.value); });
   el.querySelector('[data-sx]').onclick = closeSearch;
   renderSearch('');
   el.classList.add('open'); document.body.classList.add('lock');
@@ -784,7 +809,7 @@ function products(id, d, S, alt) {
   const link = d.link_label ? `<a href="${esc(S.instagram)}" ${ext} class="link">${txt(d.link_label)}</a>` : '';
   return `<section ${id ? `id="${id}"` : ''} class="${alt ? 'alt' : ''}"><div class="wrap">
     ${head(d, link)}
-    <div class="grid">${(d.products || []).map(p => card(p, S)).join('')}</div>
+    <div class="grid">${(d.products || []).map(p => card({ ...p, sec: id || 'katalog' }, S)).join('')}</div>
   </div></section>`;
 }
 

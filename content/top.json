@@ -46,7 +46,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Kashka",
@@ -84,7 +85,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "bir rangli"
     },
     {
       "name": "Pion masla",
@@ -123,7 +125,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Dvaynoy sherst",
@@ -161,7 +164,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Jatiy ipak",
@@ -200,7 +204,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Eron sholk",
@@ -238,7 +243,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Organza",
@@ -276,7 +282,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "bir rangli"
     },
     {
       "name": "Shifon",
@@ -315,7 +322,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Sherst",
@@ -353,7 +361,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Dvaynoy luks",
@@ -391,7 +400,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Kashemir sharf",
@@ -429,7 +439,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "printli"
     },
     {
       "name": "Turkiya ro‘moli",
@@ -465,7 +476,8 @@
       "badge": "",
       "promo_group": "",
       "sold_out": false,
-      "sold_photos": ""
+      "sold_photos": "",
+      "tags": "bir rangli"
     }
   ]
 }
