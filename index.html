@@ -70,7 +70,7 @@
   .hero .btn.solid:hover{background:transparent;color:#fff}
 
   /* products */
-  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 24px}
+  .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 24px}
   .card .ph{aspect-ratio:3/4;margin-bottom:16px;position:relative;overflow:hidden;background:var(--bg-2)}
   .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease}
   .card:hover .ph img{transform:scale(1.05)}
@@ -338,7 +338,7 @@
     .menu.open{display:flex}
     .menu a{padding:18px 24px;border-top:1px solid var(--line);font-size:12px}
     .burger{display:block}
-    .grid{grid-template-columns:repeat(2,1fr)}
+    .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     .why{grid-template-columns:1fr 1fr}
     .fab{grid-template-columns:1fr 1fr}
     .ben-wrap,.acc,.store{grid-template-columns:1fr;gap:44px}
@@ -436,7 +436,7 @@ function card(p, S) {
   const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${k ? '' : 'on'}" data-v="${k}" style="--c:${esc(v.hex || '#ccc')}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
   return `<div class="card r" data-p="${i}" role="button" tabindex="0" aria-label="${esc(p.name)}">
     <div class="ph">
-      <div class="slides">${ims.map((s, k) => k ? `<img data-src="${esc(smP(s))}" data-full="${img(s)}" alt="${esc(p.name)}" decoding="async" draggable="false">` : `<img ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
+      <div class="slides">${ims.map((s, k) => k ? `<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
       ${ims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>` : ''}
       ${dots(ims.length)}
       ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}
