@@ -150,6 +150,11 @@
   .sw-mini{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0 2px}
   .sw-mini button{width:14px;height:14px;border-radius:50%;border:1px solid rgba(43,38,34,.16);background:var(--c);padding:0;cursor:pointer}
   .sw-mini button.on{box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--ink)}
+img.so{filter:grayscale(.55) opacity(.5)}
+  .so-tag{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;background:rgba(43,38,34,.82);color:#fff;font-size:11px;letter-spacing:.24em;text-transform:uppercase;padding:9px 16px;pointer-events:none;white-space:nowrap}
+  .pm-gal .so-tag{font-size:13px;padding:12px 22px}
+  .sw-g button.so,.sw-mini button.so{background:linear-gradient(to top right,transparent calc(50% - 1px),rgba(43,38,34,.75) calc(50% - 1px),rgba(43,38,34,.75) calc(50% + 1px),transparent calc(50% + 1px)),linear-gradient(rgba(239,232,223,.6),rgba(239,232,223,.6)),var(--c)}
+  .btn[disabled]{opacity:.45;cursor:not-allowed}
   .sw-mini span{font-size:11px;color:var(--muted);margin-left:2px}
   .allc{margin:0 0 34px}
   .allc-h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px;display:flex;justify-content:space-between}
@@ -440,13 +445,15 @@ function card(p, S) {
   let slug = slugify(p.name_uz || p.name) || 'mahsulot';
   if (PRODUCTS.some(x => x.slug === slug)) slug += '-' + i;
   PRODUCTS.push({ ...p, ims, vars, slug });
-  const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${k ? '' : 'on'}" data-v="${k}" style="--c:${esc(v.hex || '#ccc')}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
+  const soldAt = k => !!(p.sold_out || (vars.length && vars[k] && vars[k].sold_out));
+  const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${k ? '' : 'on'}${v.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" style="--c:${esc(v.hex || '#ccc')}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
   return `<div class="card r" data-p="${i}" role="button" tabindex="0" aria-label="${esc(p.name)}">
     <div class="ph">
-      <div class="slides">${ims.map((s, k) => k ? `<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
+      <div class="slides">${ims.map((s, k) => k ? `<img class="${soldAt(k) ? 'so' : ''}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img class="${soldAt(k) ? 'so' : ''}" ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
       ${ims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>` : ''}
       ${dots(ims.length)}
       ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}
+      <span class="so-tag"${soldAt(0) ? '' : ' hidden'}>${txt(S.sold_out_label)}</span>
       <span class="order">${txt(S.card_order_label)}</span></div>
     <h3>${txt(p.name)}</h3>${p.size || p.material ? `<div class="meta">${txt(p.size || p.material)}</div>` : ''}${sw}
     ${p.description ? `<p class="d">${txt(p.description)}</p>` : ''}
@@ -466,6 +473,7 @@ function bindSlider(track, root) {
     const cnt = root.querySelector('.count'); if (cnt) cnt.textContent = `${k + 1} / ${track.children.length}`;
     root.querySelectorAll('.pm-thumbs button').forEach((b, j) => b.classList.toggle('on', j === k));
     root.querySelectorAll('.sw-mini button').forEach((b, j) => b.classList.toggle('on', j === k));
+    const tag = root.querySelector('.card .so-tag, .so-tag'); if (tag && root.classList.contains('card')) tag.hidden = !(track.children[k] && track.children[k].classList.contains('so'));
   }, { passive: true });
   return go;
 }
@@ -475,15 +483,15 @@ let S_ = {}, pushed = false;
 function openProduct(i, push = true, vi = 0) {
   const p = PRODUCTS[i]; if (!p) return;
   vi = p.vars.length ? Math.max(0, Math.min(p.vars.length - 1, vi | 0)) : 0;
-  const v = p.vars[vi], ims = v ? v.ims : p.ims, hash = p.slug + (v && vi ? '/' + (vi + 1) : '');
+  const v = p.vars[vi], ims = v ? v.ims : p.ims, sold = !!(p.sold_out || (v && v.sold_out)), hash = p.slug + (v && vi ? '/' + (vi + 1) : '');
   const S = S_, pm = document.getElementById('pm');
   const row = (l, v) => v ? `<div><dt>${txt(l)}</dt><dd>${txt(v)}</dd></div>` : '';
   const acc = (t, v, open) => v ? `<details class="acc-item"${open ? ' open' : ''}><summary>${txt(t)}</summary><p>${txt(v)}</p></details>` : '';
   pm.innerHTML = `
     <div class="pm-top"><a href="#" class="logo" data-close>${txt(S.logo)}</a><button class="pm-x" data-close>${txt(S.close_label)} <b>×</b></button></div>
     <div class="pm-body">
-      <div class="pm-gal">
-        <div class="pm-slides">${ims.map((s, k) => `<img src="${img(s)}" loading="${k ? 'lazy' : 'eager'}" decoding="async" alt="${esc(p.name + (v ? ' — ' + v.name : ''))}" draggable="false">`).join('')}</div>
+      <div class="pm-gal">${sold ? `<span class="so-tag">${txt(S.sold_out_label)}</span>` : ''}
+        <div class="pm-slides">${ims.map((s, k) => `<img class="${sold ? 'so' : ''}" src="${img(s)}" loading="${k ? 'lazy' : 'eager'}" decoding="async" alt="${esc(p.name + (v ? ' — ' + v.name : ''))}" draggable="false">`).join('')}</div>
         ${ims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>${dots(ims.length)}` : ''}
         ${ims.length > 1 ? `<div class="pm-thumbs">${ims.map((s, k) => `<button class="${k ? '' : 'on'}" data-k="${k}"><img ${smImg(s, 'alt="" loading="lazy" decoding="async"')}></button>`).join('')}</div>` : ''}
       </div>
@@ -491,11 +499,11 @@ function openProduct(i, push = true, vi = 0) {
         ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}
         <h2>${txt(p.name)}</h2>
         ${priceHtml(p)}
-        ${p.vars.length ? `<div class="sw"><div class="sw-h">${txt(S.product_label_color)} —<b>${txt(v.name)}</b></div><div class="sw-g">${p.vars.map((x, k) => `<button class="${k === vi ? 'on' : ''}" data-v="${k}" style="--c:${esc(x.hex || '#ccc')}" aria-label="${esc(x.name)}" title="${esc(x.name)}"></button>`).join('')}</div></div>` : ''}
+        ${p.vars.length ? `<div class="sw"><div class="sw-h">${txt(S.product_label_color)} —<b>${txt(v.name)}</b></div><div class="sw-g">${p.vars.map((x, k) => `<button class="${k === vi ? 'on' : ''}${x.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" style="--c:${esc(x.hex || '#ccc')}" aria-label="${esc(x.name)}" title="${esc(x.name)}"></button>`).join('')}</div></div>` : ''}
         ${p.description ? `<p class="lead">${txt(p.description)}</p>` : ''}
         <dl class="spec">${row(S.product_label_size, p.size)}${row(S.product_label_material, p.material)}${p.vars.length ? "" : row(S.product_label_color, p.color)}</dl>
         <div class="pm-btns">
-          <button class="btn solid" data-add>${txt(S.product_add_button)}</button>
+          <button class="btn solid" data-add${sold ? ' disabled' : ''}>${txt(sold ? S.sold_out_label : S.product_add_button)}</button>
           ${S.phone ? `<a class="btn" href="${tel(S.phone)}">${txt(S.product_call_button)}</a>` : ''}
           <button class="btn" data-share>${txt(S.product_share_button)}</button>
         </div>
@@ -513,7 +521,7 @@ function openProduct(i, push = true, vi = 0) {
   pm.querySelectorAll('.sw-g button').forEach(b => b.onclick = () => { const st = pm.scrollTop; openProduct(i, true, +b.dataset.v); pm.scrollTop = st;
     const g = pm.querySelector(".pm-gal").getBoundingClientRect(); if (g.bottom < 120) pm.scrollTo({ top: 0, behavior: "smooth" }); });
   pm.querySelectorAll('[data-close]').forEach(b => b.onclick = e => { e.preventDefault(); closeProduct(); });
-  pm.querySelector('[data-add]').onclick = () => { cartAdd(p.slug, vi); toast(S.cart_added); openCart(); };
+  pm.querySelector('[data-add]').onclick = () => { if (sold) return; cartAdd(p.slug, vi); toast(S.cart_added); openCart(); };
   pm.querySelector('[data-share]').onclick = async () => {
     const url = location.origin + location.pathname + '#' + hash;
     try { if (navigator.share) { await navigator.share({ title: p.name, url }); return; } } catch (e) { return; }

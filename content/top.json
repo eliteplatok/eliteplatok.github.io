@@ -44,7 +44,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Kashka",
@@ -80,7 +81,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Pion masla",
@@ -117,7 +119,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Dvaynoy sherst",
@@ -153,7 +156,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Jatiy ipak",
@@ -190,7 +194,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Eron sholk",
@@ -226,7 +231,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Organza",
@@ -262,7 +268,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Shifon",
@@ -299,7 +306,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Sherst",
@@ -335,7 +343,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Dvaynoy luks",
@@ -371,7 +380,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Kashemir sharf",
@@ -407,7 +417,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     },
     {
       "name": "Turkiya ro‘moli",
@@ -441,7 +452,8 @@
       "promo_qty": 3,
       "promo_total": 0,
       "badge": "",
-      "promo_group": ""
+      "promo_group": "",
+      "sold_out": false
     }
   ]
 }

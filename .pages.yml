@@ -120,6 +120,9 @@ content:
       - { name: usd_rate_label, label: "Yozuv: «MB kursi»", type: string }
       - { name: usd_rate_label_ru, label: "Yozuv: «MB kursi» (RU)", type: string }
       - { name: usd_rate_label_en, label: "Yozuv: «MB kursi» (EN)", type: string }
+      - { name: sold_out_label, label: "Yozuv: «Sotildi»", type: string }
+      - { name: sold_out_label_ru, label: "Yozuv: «Sotildi» (RU)", type: string }
+      - { name: sold_out_label_en, label: "Yozuv: «Sotildi» (EN)", type: string }
       - { name: promo3_label, label: "Aksiya: savatda chiqadigan yozuv", type: string }
       - { name: promo3_label_ru, label: "Aksiya: savatda chiqadigan yozuv (RU)", type: string }
       - { name: promo3_label_en, label: "Aksiya: savatda chiqadigan yozuv (EN)", type: string }
@@ -260,6 +263,7 @@ content:
               - { name: name_ru, label: "Rang nomi (RU)", type: string }
               - { name: name_en, label: "Rang nomi (EN)", type: string }
               - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
+              - { name: sold_out, label: "Tugagan (sotildi) — rasmda «Sotildi» yozuvi chiqadi", type: boolean }
               - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
           - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
           - { name: size_ru, label: "O‘lchami (RU)", type: string }
@@ -299,6 +303,7 @@ content:
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
           - { name: badge_ru, label: "Belgi (RU)", type: string }
           - { name: badge_en, label: "Belgi (EN)", type: string }
+          - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
 
   - name: top
     label: "⭐ Eng ko‘p sotilayotganlar"
@@ -338,6 +343,7 @@ content:
               - { name: name_ru, label: "Rang nomi (RU)", type: string }
               - { name: name_en, label: "Rang nomi (EN)", type: string }
               - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
+              - { name: sold_out, label: "Tugagan (sotildi) — rasmda «Sotildi» yozuvi chiqadi", type: boolean }
               - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
           - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
           - { name: size_ru, label: "O‘lchami (RU)", type: string }
@@ -377,6 +383,7 @@ content:
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
           - { name: badge_ru, label: "Belgi (RU)", type: string }
           - { name: badge_en, label: "Belgi (EN)", type: string }
+          - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
 
   - name: matolar
     label: "🧵 Matolar"

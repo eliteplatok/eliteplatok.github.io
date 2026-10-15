@@ -54,6 +54,7 @@
       "badge": "Eksklyuziv",
       "badge_ru": "Эксклюзив",
       "badge_en": "Exclusive",
+      "sold_out": false,
       "price_ru": "35 $",
       "price_en": "$35",
       "price_note_ru": "Единственный экземпляр · Двусторонний",
@@ -98,6 +99,7 @@
       "badge": "Yangi",
       "badge_ru": "Новинка",
       "badge_en": "New",
+      "sold_out": false,
       "variants": [
         {
           "name": "Pushti",
@@ -107,7 +109,8 @@
           "images": [
             "images/dubay-ipak-1.jpg",
             "images/dubay-ipak-mato-1.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "To‘q zaytun",
@@ -117,7 +120,8 @@
           "images": [
             "images/dubay-ipak-2.jpg",
             "images/dubay-ipak-mato-2.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Sutrang",
@@ -127,7 +131,8 @@
           "images": [
             "images/dubay-ipak-3.jpg",
             "images/dubay-ipak-mato-3.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Zaytun-bej",
@@ -137,7 +142,8 @@
           "images": [
             "images/dubay-ipak-4.jpg",
             "images/dubay-ipak-mato-4.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Qora hoshiyali",
@@ -147,7 +153,8 @@
           "images": [
             "images/dubay-ipak-5.jpg",
             "images/dubay-ipak-mato-5.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Qizil",
@@ -157,7 +164,8 @@
           "images": [
             "images/dubay-ipak-6.jpg",
             "images/dubay-ipak-mato-6.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Fistashka",
@@ -167,7 +175,8 @@
           "images": [
             "images/dubay-ipak-7.jpg",
             "images/dubay-ipak-mato-7.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Bordo",
@@ -177,7 +186,8 @@
           "images": [
             "images/dubay-ipak-8.jpg",
             "images/dubay-ipak-mato-8.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Yashil",
@@ -187,7 +197,8 @@
           "images": [
             "images/dubay-ipak-9.jpg",
             "images/dubay-ipak-mato-9.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Zaytun, oq hoshiya",
@@ -197,7 +208,8 @@
           "images": [
             "images/dubay-ipak-10.jpg",
             "images/dubay-ipak-mato-10.jpg"
-          ]
+          ],
+          "sold_out": false
         }
       ],
       "price_ru": "55 000 сум",
@@ -240,6 +252,7 @@
       "badge": "Yangi",
       "badge_ru": "Новинка",
       "badge_en": "New",
+      "sold_out": false,
       "variants": [
         {
           "name": "Qora",
@@ -249,7 +262,8 @@
           "images": [
             "images/atlas-1.jpg",
             "images/atlas-mato-18.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Sutrang",
@@ -259,7 +273,8 @@
           "images": [
             "images/atlas-2.jpg",
             "images/atlas-mato-10.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "To‘q binafsha",
@@ -270,7 +285,8 @@
             "images/atlas-3.jpg",
             "images/atlas-mato-2.jpg",
             "images/atlas-mato-17.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Binafsha",
@@ -280,7 +296,8 @@
           "images": [
             "images/atlas-4.jpg",
             "images/atlas-mato-3.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Och pushti",
@@ -290,7 +307,8 @@
           "images": [
             "images/atlas-5.jpg",
             "images/atlas-mato-4.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Fuksiya",
@@ -300,7 +318,8 @@
           "images": [
             "images/atlas-6.jpg",
             "images/atlas-mato-5.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Pushti",
@@ -310,7 +329,8 @@
           "images": [
             "images/atlas-7.jpg",
             "images/atlas-mato-6.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Havorang",
@@ -320,7 +340,8 @@
           "images": [
             "images/atlas-8.jpg",
             "images/atlas-mato-7.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "To‘q ko‘k",
@@ -330,7 +351,8 @@
           "images": [
             "images/atlas-9.jpg",
             "images/atlas-mato-8.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "To‘q kulrang",
@@ -340,7 +362,8 @@
           "images": [
             "images/atlas-10.jpg",
             "images/atlas-mato-9.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Kulrang",
@@ -351,7 +374,8 @@
             "images/atlas-11.jpg",
             "images/atlas-mato-1.jpg",
             "images/atlas-mato-11.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Krem",
@@ -361,7 +385,8 @@
           "images": [
             "images/atlas-12.jpg",
             "images/atlas-mato-16.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Oq",
@@ -371,7 +396,8 @@
           "images": [
             "images/atlas-13.jpg",
             "images/atlas-mato-13.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Bordo",
@@ -381,7 +407,8 @@
           "images": [
             "images/atlas-14.jpg",
             "images/atlas-mato-12.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Olxo‘ri-kulrang",
@@ -391,7 +418,8 @@
           "images": [
             "images/atlas-15.jpg",
             "images/atlas-mato-14.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Kulrang-jigarrang",
@@ -401,7 +429,8 @@
           "images": [
             "images/atlas-16.jpg",
             "images/atlas-mato-15.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Bej",
@@ -410,7 +439,8 @@
           "hex": "#c8a894",
           "images": [
             "images/atlas-17.jpg"
-          ]
+          ],
+          "sold_out": false
         }
       ],
       "price_ru": "99 000 сум",
@@ -485,6 +515,7 @@
       "badge": "Aksiya",
       "badge_ru": "Акция",
       "badge_en": "Offers",
+      "sold_out": false,
       "promo_group": "tvil"
     },
     {
@@ -527,6 +558,7 @@
       "badge": "Aksiya",
       "badge_ru": "Акция",
       "badge_en": "Offers",
+      "sold_out": false,
       "promo_group": "",
       "variants": [
         {
@@ -536,7 +568,8 @@
           "hex": "#8a7048",
           "images": [
             "images/jakkard-1.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Kumush-lila",
@@ -545,7 +578,8 @@
           "hex": "#988083",
           "images": [
             "images/jakkard-2.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Bordo",
@@ -554,7 +588,8 @@
           "hex": "#682d3a",
           "images": [
             "images/jakkard-3.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "To‘q ko‘k",
@@ -563,7 +598,8 @@
           "hex": "#3e4866",
           "images": [
             "images/jakkard-4.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Yashil",
@@ -572,7 +608,8 @@
           "hex": "#3f5a4a",
           "images": [
             "images/jakkard-5.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "To‘q yashil",
@@ -581,7 +618,8 @@
           "hex": "#2f4440",
           "images": [
             "images/jakkard-6.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Lila-mis",
@@ -590,7 +628,8 @@
           "hex": "#886f65",
           "images": [
             "images/jakkard-7.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Jigarrang-oltin",
@@ -599,7 +638,8 @@
           "hex": "#947d6c",
           "images": [
             "images/jakkard-8.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Kulrang-lila",
@@ -608,7 +648,8 @@
           "hex": "#7c645e",
           "images": [
             "images/jakkard-9.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Bej-jigarrang",
@@ -617,7 +658,8 @@
           "hex": "#937a6c",
           "images": [
             "images/jakkard-10.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Lila-oltin",
@@ -626,7 +668,8 @@
           "hex": "#8e756f",
           "images": [
             "images/jakkard-11.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Och lila",
@@ -635,7 +678,8 @@
           "hex": "#af9aa0",
           "images": [
             "images/jakkard-12.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Pushti-mis",
@@ -644,7 +688,8 @@
           "hex": "#9a7064",
           "images": [
             "images/jakkard-13.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Qizil-bordo",
@@ -653,7 +698,8 @@
           "hex": "#7a2333",
           "images": [
             "images/jakkard-14.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Kumushrang",
@@ -662,7 +708,8 @@
           "hex": "#a8979a",
           "images": [
             "images/jakkard-15.jpg"
-          ]
+          ],
+          "sold_out": false
         }
       ]
     },
@@ -706,6 +753,7 @@
       "badge": "Aksiya",
       "badge_ru": "Акция",
       "badge_en": "Offers",
+      "sold_out": false,
       "promo_group": "kashka",
       "variants": [
         {
@@ -715,7 +763,8 @@
           "hex": "#6b3427",
           "images": [
             "images/kashka-1.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Terrakota",
@@ -724,7 +773,8 @@
           "hex": "#8a4326",
           "images": [
             "images/kashka-2.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Leopard",
@@ -733,7 +783,8 @@
           "hex": "#a07a4a",
           "images": [
             "images/kashka-3.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Binafsha",
@@ -742,7 +793,8 @@
           "hex": "#772f71",
           "images": [
             "images/kashka-4.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Zaytun",
@@ -751,7 +803,8 @@
           "hex": "#80741a",
           "images": [
             "images/kashka-5.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "To‘q ko‘k",
@@ -760,7 +813,8 @@
           "hex": "#141a33",
           "images": [
             "images/kashka-6.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Qora",
@@ -769,7 +823,8 @@
           "hex": "#0f0f11",
           "images": [
             "images/kashka-7.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Kulrang",
@@ -778,7 +833,8 @@
           "hex": "#aeadb0",
           "images": [
             "images/kashka-8.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Yalpiz",
@@ -787,7 +843,8 @@
           "hex": "#6eada0",
           "images": [
             "images/kashka-9.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Xaki",
@@ -796,7 +853,8 @@
           "hex": "#3a3c2c",
           "images": [
             "images/kashka-10.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Olcha",
@@ -805,7 +863,8 @@
           "hex": "#4a0f22",
           "images": [
             "images/kashka-11.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Bordo",
@@ -814,7 +873,8 @@
           "hex": "#5a1020",
           "images": [
             "images/kashka-12.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Och yashil",
@@ -823,7 +883,8 @@
           "hex": "#b6cbb7",
           "images": [
             "images/kashka-13.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Ko‘k",
@@ -832,7 +893,8 @@
           "hex": "#143387",
           "images": [
             "images/kashka-14.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "To‘q yashil",
@@ -841,7 +903,8 @@
           "hex": "#12302a",
           "images": [
             "images/kashka-15.jpg"
-          ]
+          ],
+          "sold_out": false
         }
       ]
     },
@@ -884,6 +947,7 @@
       "badge": "Aksiya",
       "badge_ru": "Акция",
       "badge_en": "Offers",
+      "sold_out": false,
       "variants": [
         {
           "name": "To‘q olxo‘ri",
@@ -892,7 +956,8 @@
           "hex": "#4f273b",
           "images": [
             "images/shifon-sharf-1.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Bej",
@@ -901,7 +966,8 @@
           "hex": "#d8af72",
           "images": [
             "images/shifon-sharf-2.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Lila",
@@ -910,7 +976,8 @@
           "hex": "#7d4666",
           "images": [
             "images/shifon-sharf-3.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Qizil",
@@ -919,7 +986,8 @@
           "hex": "#d7001a",
           "images": [
             "images/shifon-sharf-4.jpg"
-          ]
+          ],
+          "sold_out": false
         }
       ]
     },
@@ -965,6 +1033,7 @@
       "badge": "Yangi",
       "badge_ru": "Новинка",
       "badge_en": "New",
+      "sold_out": false,
       "promo_group": ""
     },
     {
@@ -1007,6 +1076,7 @@
       "badge": "Yangi",
       "badge_ru": "Новинка",
       "badge_en": "New",
+      "sold_out": false,
       "promo_group": ""
     },
     {
@@ -1045,6 +1115,7 @@
       "badge": "Yangi",
       "badge_ru": "Новинка",
       "badge_en": "New",
+      "sold_out": false,
       "promo_group": "",
       "variants": [
         {
@@ -1055,7 +1126,8 @@
           "images": [
             "images/organza-yangi-1.jpg",
             "images/organza-yangi-3.jpg"
-          ]
+          ],
+          "sold_out": false
         },
         {
           "name": "Jigarrang",
@@ -1065,7 +1137,8 @@
           "images": [
             "images/organza-yangi-2.jpg",
             "images/organza-yangi-4.jpg"
-          ]
+          ],
+          "sold_out": false
         }
       ]
     }
