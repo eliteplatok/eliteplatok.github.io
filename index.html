@@ -715,14 +715,15 @@ async function sendOrder(f) {
 /* --- search: by name and colour, colour families include their shades (pushti → och pushti, fuksiya…) --- */
 const norm = t => String(t || '').toLowerCase().replace(/[‘’ʻʼ'`]/g, '').replace(/ё/g, 'е');
 const COLOR_FAMILIES = [
-  ['pushti', 'fuksiya', 'pion', 'pink', 'fuchsia', 'rose', 'розов', 'фукси', 'пион'],
+  ['pushti', 'fuksiya', 'pink', 'fuchsia', 'розов', 'фукси'],
   ['qizil', 'bordo', 'olcha', 'qirmizi', 'red', 'burgundy', 'cherry', 'crimson', 'красн', 'бордо', 'вишн'],
   ['kok', 'havorang', 'moviy', 'blue', 'navy', 'синий', 'синя', 'голуб'],
   ['yashil', 'zaytun', 'yalpiz', 'xaki', 'fistashka', 'zumrad', 'green', 'olive', 'mint', 'khaki', 'pistachio', 'emerald', 'зелен', 'олив', 'мят', 'хаки', 'фисташ', 'изумруд'],
   ['qora', 'black', 'черн'],
   ['oq', 'sutrang', 'krem', 'white', 'cream', 'milky', 'ivory', 'бел', 'молоч', 'крем'],
   ['kulrang', 'kumush', 'grey', 'gray', 'silver', 'сер', 'серебр'],
-  ['jigarrang', 'bej', 'terrakota', 'mis', 'brown', 'beige', 'terracotta', 'copper', 'корич', 'беж', 'терракот', 'медн'],
+  ['bej', 'beige', 'беж'],
+  ['jigarrang', 'terrakota', 'mis', 'brown', 'terracotta', 'copper', 'корич', 'терракот', 'медн'],
   ['binafsha', 'lila', 'lavanda', 'olxori', 'purple', 'lilac', 'lavender', 'plum', 'violet', 'фиолет', 'лилов', 'лаванд', 'слив'],
   ['oltin', 'sariq', 'gold', 'yellow', 'золот', 'желт']
 ];
@@ -740,7 +741,7 @@ function runSearch(q) {
     if (p.vars.length) {
       const colourOnly = p.vars.map((v, k) => ({ v, k })).filter(({ v }) => hits([base, v.name, v.name_uz, v.name_ru, v.name_en].join(' '), terms));
       colourOnly.forEach(({ v, k }) => out.push({ i, k, im: v.ims[0], name: p.name, sub: v.name, p, sold: p.sold_out || v.sold_out }));
-    } else if (hits([base, p.color, p.color_uz, p.description].join(' '), terms)) out.push({ i, k: 0, im: p.ims[0], name: p.name, sub: p.size || p.material || '', p, sold: p.sold_out });
+    } else if (hits(p.ims.length > 4 ? base : [base, p.color, p.color_uz, p.description].join(' '), terms)) out.push({ i, k: 0, im: p.ims[0], name: p.name, sub: p.size || p.material || '', p, sold: p.sold_out });
   });
   return out;
 }
