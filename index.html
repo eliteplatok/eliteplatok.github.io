@@ -171,6 +171,10 @@ img.so{filter:grayscale(.55) opacity(.5)}
     .srch-it .ph{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;background:var(--bg-2);margin-bottom:8px}
     .srch-it img{width:100%;height:100%;object-fit:cover}
     .srch-it b{display:block;font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.25}
+    .srch-add{position:absolute;right:8px;bottom:8px;z-index:3;width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .2s,background .2s}
+    .srch-add svg{width:20px;height:20px}
+    .srch-add:hover{transform:scale(1.08)}
+    .srch-add.ok{background:#5d7a4f}
     .srch-it em{display:block;font-style:normal;font-size:13px;color:var(--accent);margin-top:2px}
     .srch-it i{display:block;font-style:normal;font-size:13px;margin-top:4px}
     @media (max-width:1000px){.srch-g{grid-template-columns:repeat(3,minmax(0,1fr))}}
@@ -749,8 +753,9 @@ function renderSearch(q) {
   const S = S_, box = document.querySelector('#srch .srch-res');
   if (!q.trim()) { box.innerHTML = `<p class="srch-hint">${txt(S.search_hint)}</p>`; return; }
   const r = runSearch(q);
-  box.innerHTML = r.length ? `<p class="srch-n">${r.length} ${txt(S.search_found)}</p><div class="srch-g">${r.map(x => `<button class="srch-it" data-i="${x.i}" data-k="${x.k}"><span class="ph"><img class="${x.sold ? 'so' : ''}" ${smImg(x.im, 'alt="" loading="lazy"')}>${x.sold ? `<span class="so-tag">${txt(S.sold_out_label)}</span>` : ''}</span><b>${txt(x.name)}</b>${x.sub ? `<em>${txt(x.sub)}</em>` : ''}<i>${txt(x.p.price || S.price_on_request)}</i></button>`).join('')}</div>`
+  box.innerHTML = r.length ? `<p class="srch-n">${r.length} ${txt(S.search_found)}</p><div class="srch-g">${r.map(x => `<button class="srch-it" data-i="${x.i}" data-k="${x.k}"><span class="ph"><img class="${x.sold ? 'so' : ''}" ${smImg(x.im, 'alt="" loading="lazy"')}>${x.sold ? `<span class="so-tag">${txt(S.sold_out_label)}</span>` : `<span class="srch-add" role="button" tabindex="0" data-add-i="${x.i}" data-add-k="${x.k}" aria-label="${esc(S.product_add_button)}" title="${esc(S.product_add_button)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M12 11v6M9 14h6"/></svg></span>`}</span><b>${txt(x.name)}</b>${x.sub ? `<em>${txt(x.sub)}</em>` : ''}<i>${txt(x.p.price || S.price_on_request)}</i></button>`).join('')}</div>`
     : `<p class="srch-hint">${txt(S.search_empty)}</p>`;
+  box.querySelectorAll('.srch-add').forEach(a => a.onclick = e => { e.stopPropagation(); const p = PRODUCTS[+a.dataset.addI]; cartAdd(p.slug, p.vars.length ? +a.dataset.addK : 0); toast(S.cart_added); a.classList.add('ok'); setTimeout(() => a.classList.remove('ok'), 900); });
   box.querySelectorAll('.srch-it').forEach(b => b.onclick = () => { closeSearch(); openProduct(+b.dataset.i, true, +b.dataset.k); });
 }
 function openSearch() {

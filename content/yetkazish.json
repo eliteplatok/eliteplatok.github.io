@@ -47,19 +47,19 @@
       "title": "Yetkazamiz",
       "title_ru": "Доставляем",
       "title_en": "We deliver",
-      "text": "Buyurtmangizni O‘zbekiston bo‘ylab tez va ehtiyotkorlik bilan, qulay vaqtda yetkazib beramiz.",
-      "text_ru": "Быстро и бережно доставим заказ по всему Узбекистану в удобное для вас время.",
-      "text_en": "We deliver your order quickly and carefully across Uzbekistan at a time that suits you."
+      "text": "Toshkent bo‘ylab kun davomida kuryer orqali, viloyatlarga BTS pochta orqali 1 kunda yetkazamiz.",
+      "text_ru": "По Ташкенту — курьером в течение дня, в регионы — почтой BTS за 1 день.",
+      "text_en": "Within Tashkent by courier the same day, to the regions via BTS post in 1 day."
     }
   ],
   "info": [
     {
-      "title": "O‘zbekiston bo‘ylab",
-      "title_ru": "По всему Узбекистану",
-      "title_en": "Across Uzbekistan",
-      "text": "Toshkent va barcha viloyatlarga yetkazamiz. Muddat va narxini menejer oldindan aytadi.",
-      "text_ru": "Доставляем в Ташкент и во все регионы. Сроки и стоимость менеджер сообщит заранее.",
-      "text_en": "We deliver to Tashkent and all regions. The manager will tell you the timing and cost in advance."
+      "title": "BTS pochta — 1 kunda",
+      "title_ru": "Почта BTS — за 1 день",
+      "title_en": "BTS post — in 1 day",
+      "text": "O‘zbekiston bo‘ylab BTS pochta orqali 1 kunda yetkazamiz. Toshkent bo‘ylab — kun davomida kuryer orqali.",
+      "text_ru": "По всему Узбекистану — почтой BTS за 1 день. По Ташкенту — курьером в течение дня.",
+      "text_en": "Across Uzbekistan via BTS post in 1 day. Within Tashkent — by courier the same day."
     },
     {
       "title": "Qulay to‘lov",
