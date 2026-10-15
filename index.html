@@ -62,7 +62,7 @@
   .hero.wide::after{background:linear-gradient(to top,rgba(20,16,13,.85) 0%,rgba(20,16,13,.55) 45%,rgba(20,16,13,.32) 100%)}
   .hero-txt{position:absolute;left:0;right:0;bottom:0;z-index:2;text-align:center;color:#fff;padding:0 16px 64px}
   .hero-txt .eyebrow{color:rgba(255,255,255,.75)}
-  .hero h1{font-size:clamp(36px,5.4vw,74px);line-height:1.04;margin:14px 0 16px}
+  .hero h1{font-size:clamp(30px,4.3vw,60px);line-height:1.1;margin:14px auto 28px;max-width:1000px;text-wrap:balance}
   .hero p{font-size:16px;font-weight:400;opacity:1;margin:0 auto 30px;max-width:580px;line-height:1.6;text-shadow:0 1px 12px rgba(0,0,0,.45)}
   .hero h1{text-shadow:0 2px 18px rgba(0,0,0,.35)}
   .hero .btn{border-color:#fff;color:#fff;margin:4px}
@@ -812,7 +812,7 @@ function render(C) {
   <div class="hero-txt r">
     <div class="eyebrow">${txt(H.eyebrow)}</div>
     <h1>${txt(H.title)}</h1>
-    <p>${txt(H.subtitle)}</p>
+    ${H.subtitle ? `<p>${txt(H.subtitle)}</p>` : ''}
     <div class="hero-act"><a href="#yangi" class="btn solid">${txt(H.button)}</a><button class="srch-btn" data-search aria-label="${esc(S.search_title)}" title="${esc(S.search_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></button></div>
   </div>
 </div>
