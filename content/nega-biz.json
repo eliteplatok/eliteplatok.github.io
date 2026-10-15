@@ -2,31 +2,31 @@
   "eyebrow": "Biz haqimizda",
   "eyebrow_ru": "О нас",
   "eyebrow_en": "About us",
-  "title": "ELITE PLATOK — bu",
-  "title_ru": "ELITE PLATOK — это",
-  "title_en": "ELITE PLATOK is about",
+  "title": "ELITE PLATOK — bu:",
+  "title_ru": "ELITE PLATOK — это:",
+  "title_en": "ELITE PLATOK is:",
   "mission": [
     {
-      "title": "Sifat — qulay narxda",
-      "title_ru": "Качество по доступной цене",
-      "title_en": "Quality at a fair price",
-      "text": "Ayollarga sifatli ro‘mollarni qulay narxda taqdim etib, ularning ehtiyojini yengillashtirish.",
+      "title": "",
+      "title_ru": "",
+      "title_en": "",
+      "text": "Аёлларга сифатли рўмолларни қулай нархда тақдим этиб, уларнинг эҳтиёжини енгиллаштириш.",
       "text_ru": "Предлагать женщинам качественные платки по доступной цене и облегчать их заботы.",
       "text_en": "Offering women quality scarves at a fair price and making their everyday needs easier."
     },
     {
-      "title": "Hayo va iffat yo‘lida",
-      "title_ru": "На пути скромности и целомудрия",
-      "title_en": "In the spirit of modesty",
-      "text": "Ayollarning hayo va iffatni saqlash yo‘lidagi ehtiyojlariga xizmat qilish.",
+      "title": "",
+      "title_ru": "",
+      "title_en": "",
+      "text": "Аёлларнинг ҳаё ва иффатни сақлаш йўлидаги эҳтиёжларига хизмат қилиш.",
       "text_ru": "Служить потребностям женщин, стремящихся сохранять скромность и целомудрие.",
       "text_en": "Serving the needs of women who choose modesty and chastity."
     },
     {
-      "title": "Hijobga muhabbat bilan",
-      "title_ru": "С любовью к хиджабу",
-      "title_en": "With love for hijab",
-      "text": "Ayollarni hijobga muhabbat bilan yaqinlashtiradigan chiroyli va qulay ro‘mollar taklif qilish.",
+      "title": "",
+      "title_ru": "",
+      "title_en": "",
+      "text": "Аёлларни ҳижобга муҳаббат билан яқинлаштирадиган чиройли ва қулай рўмоллар таклиф қилиш.",
       "text_ru": "Предлагать красивые и удобные платки, которые с любовью приближают женщин к хиджабу.",
       "text_en": "Offering beautiful, comfortable scarves that bring women closer to hijab with love."
     }
