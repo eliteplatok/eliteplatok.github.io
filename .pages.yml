@@ -123,6 +123,24 @@ content:
       - { name: sold_out_label, label: "Yozuv: «Sotildi»", type: string }
       - { name: sold_out_label_ru, label: "Yozuv: «Sotildi» (RU)", type: string }
       - { name: sold_out_label_en, label: "Yozuv: «Sotildi» (EN)", type: string }
+      - { name: search_title, label: "Qidiruv: sarlavha", type: string }
+      - { name: search_title_ru, label: "Qidiruv: sarlavha (RU)", type: string }
+      - { name: search_title_en, label: "Qidiruv: sarlavha (EN)", type: string }
+      - { name: search_placeholder, label: "Qidiruv: maydon ichidagi yozuv", type: string }
+      - { name: search_placeholder_ru, label: "Qidiruv: maydon ichidagi yozuv (RU)", type: string }
+      - { name: search_placeholder_en, label: "Qidiruv: maydon ichidagi yozuv (EN)", type: string }
+      - { name: search_hint, label: "Qidiruv: yo‘riqnoma", type: string }
+      - { name: search_hint_ru, label: "Qidiruv: yo‘riqnoma (RU)", type: string }
+      - { name: search_hint_en, label: "Qidiruv: yo‘riqnoma (EN)", type: string }
+      - { name: search_empty, label: "Qidiruv: topilmadi", type: string }
+      - { name: search_empty_ru, label: "Qidiruv: topilmadi (RU)", type: string }
+      - { name: search_empty_en, label: "Qidiruv: topilmadi (EN)", type: string }
+      - { name: search_found, label: "Qidiruv: «… ta ro‘mol topildi»", type: string }
+      - { name: search_found_ru, label: "Qidiruv: «… ta ro‘mol topildi» (RU)", type: string }
+      - { name: search_found_en, label: "Qidiruv: «… ta ro‘mol topildi» (EN)", type: string }
+      - { name: search_chips, label: "Qidiruv: tezkor tugmalar (vergul bilan)", type: string }
+      - { name: search_chips_ru, label: "Qidiruv: tezkor tugmalar (vergul bilan) (RU)", type: string }
+      - { name: search_chips_en, label: "Qidiruv: tezkor tugmalar (vergul bilan) (EN)", type: string }
       - { name: promo3_label, label: "Aksiya: savatda chiqadigan yozuv", type: string }
       - { name: promo3_label_ru, label: "Aksiya: savatda chiqadigan yozuv (RU)", type: string }
       - { name: promo3_label_en, label: "Aksiya: savatda chiqadigan yozuv (EN)", type: string }

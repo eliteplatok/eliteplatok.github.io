@@ -151,6 +151,30 @@
   .sw-mini button{width:14px;height:14px;border-radius:50%;border:1px solid rgba(43,38,34,.16);background:var(--c);padding:0;cursor:pointer}
   .sw-mini button.on{box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--ink)}
 img.so{filter:grayscale(.55) opacity(.5)}
+.hero-act{display:inline-flex;align-items:center;gap:10px}
+    .srch-btn{width:52px;height:52px;border-radius:50%;border:1px solid #fff;background:rgba(255,255,255,.12);color:#fff;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(4px);transition:.25s}
+    .srch-btn:hover{background:#fff;color:var(--ink)}
+    .srch-btn svg{width:22px;height:22px}
+    .srch{position:fixed;inset:0;z-index:60;background:var(--bg);overflow-y:auto;display:none}
+    .srch.open{display:block}
+    .srch-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:12px;padding:0 24px;height:72px;background:rgba(247,243,238,.96);border-bottom:1px solid var(--line)}
+    .srch-top svg{width:22px;height:22px;flex:none;color:var(--muted)}
+    .srch-top input{flex:1;min-width:0;border:0;background:none;font:inherit;font-size:18px;color:var(--ink);outline:none}
+    .srch-chips{display:flex;gap:8px;flex-wrap:wrap;padding:16px 24px 0;max-width:1240px;margin:0 auto}
+    .srch-chips button{border:1px solid var(--line);background:#fff;border-radius:18px;padding:7px 14px;font:inherit;font-size:13px;cursor:pointer;color:var(--ink)}
+    .srch-chips button:hover{border-color:var(--ink)}
+    .srch-res{max-width:1240px;margin:0 auto;padding:18px 24px 60px}
+    .srch-hint,.srch-n{color:var(--muted);font-size:14px;margin:6px 0 16px}
+    .srch-g{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px 14px}
+    .srch-it{background:none;border:0;padding:0;text-align:left;cursor:pointer;font:inherit;color:var(--ink);display:flex;flex-direction:column;justify-content:flex-start;align-self:start}
+    .srch-top input::-webkit-search-cancel-button{display:none}
+    .srch-it .ph{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;background:var(--bg-2);margin-bottom:8px}
+    .srch-it img{width:100%;height:100%;object-fit:cover}
+    .srch-it b{display:block;font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.25}
+    .srch-it em{display:block;font-style:normal;font-size:13px;color:var(--accent);margin-top:2px}
+    .srch-it i{display:block;font-style:normal;font-size:13px;margin-top:4px}
+    @media (max-width:1000px){.srch-g{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media (max-width:520px){.srch-top{padding:0 16px}.srch-chips,.srch-res{padding-left:16px;padding-right:16px}.srch-g{grid-template-columns:repeat(2,minmax(0,1fr))}.srch-btn{width:48px;height:48px}.hero-act .btn{padding:15px 22px}}
   .so-tag{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;background:rgba(43,38,34,.82);color:#fff;font-size:11px;letter-spacing:.24em;text-transform:uppercase;padding:9px 16px;pointer-events:none;white-space:nowrap}
   .pm-gal .so-tag{font-size:13px;padding:12px 22px}
   .sw-g button.so,.sw-mini button.so{background:linear-gradient(to top right,transparent calc(50% - 1px),rgba(43,38,34,.75) calc(50% - 1px),rgba(43,38,34,.75) calc(50% + 1px),transparent calc(50% + 1px)),linear-gradient(rgba(239,232,223,.6),rgba(239,232,223,.6)),var(--c)}
@@ -688,6 +712,63 @@ async function sendOrder(f) {
   renderCart('ok');
 }
 
+/* --- search: by name and colour, colour families include their shades (pushti → och pushti, fuksiya…) --- */
+const norm = t => String(t || '').toLowerCase().replace(/[‘’ʻʼ'`]/g, '').replace(/ё/g, 'е');
+const COLOR_FAMILIES = [
+  ['pushti', 'fuksiya', 'pion', 'pink', 'fuchsia', 'rose', 'розов', 'фукси', 'пион'],
+  ['qizil', 'bordo', 'olcha', 'qirmizi', 'red', 'burgundy', 'cherry', 'crimson', 'красн', 'бордо', 'вишн'],
+  ['kok', 'havorang', 'moviy', 'blue', 'navy', 'синий', 'синя', 'голуб'],
+  ['yashil', 'zaytun', 'yalpiz', 'xaki', 'fistashka', 'zumrad', 'green', 'olive', 'mint', 'khaki', 'pistachio', 'emerald', 'зелен', 'олив', 'мят', 'хаки', 'фисташ', 'изумруд'],
+  ['qora', 'black', 'черн'],
+  ['oq', 'sutrang', 'krem', 'white', 'cream', 'milky', 'ivory', 'бел', 'молоч', 'крем'],
+  ['kulrang', 'kumush', 'grey', 'gray', 'silver', 'сер', 'серебр'],
+  ['jigarrang', 'bej', 'terrakota', 'mis', 'brown', 'beige', 'terracotta', 'copper', 'корич', 'беж', 'терракот', 'медн'],
+  ['binafsha', 'lila', 'lavanda', 'olxori', 'purple', 'lilac', 'lavender', 'plum', 'violet', 'фиолет', 'лилов', 'лаванд', 'слив'],
+  ['oltin', 'sariq', 'gold', 'yellow', 'золот', 'желт']
+];
+function searchTerms(q) {
+  const words = norm(q).split(/[^a-zа-я0-9]+/).filter(w => w.length > 1);
+  return words.map(w => { const fam = COLOR_FAMILIES.find(f => f.some(t => t.startsWith(w) || w.startsWith(t))); return fam ? { fam: true, list: fam } : { fam: false, list: [w] }; });
+}
+// colour words: Latin ones must match a whole word (so “olcha” ≠ “o‘lchamli”), Russian stems match word starts
+const hits = (text, terms) => { const toks = norm(text).split(/[^a-zа-я0-9]+/); return terms.every(g => g.list.some(t => toks.some(k => g.fam && /^[a-z]/.test(t) ? k === t : k.startsWith(t)))); };
+function runSearch(q) {
+  const terms = searchTerms(q); if (!terms.length) return [];
+  const out = [];
+  PRODUCTS.forEach((p, i) => {
+    const base = [p.name, p.name_uz, p.material, p.badge].join(' ');
+    if (p.vars.length) {
+      const colourOnly = p.vars.map((v, k) => ({ v, k })).filter(({ v }) => hits([base, v.name, v.name_uz, v.name_ru, v.name_en].join(' '), terms));
+      colourOnly.forEach(({ v, k }) => out.push({ i, k, im: v.ims[0], name: p.name, sub: v.name, p, sold: p.sold_out || v.sold_out }));
+    } else if (hits([base, p.color, p.color_uz, p.description].join(' '), terms)) out.push({ i, k: 0, im: p.ims[0], name: p.name, sub: p.size || p.material || '', p, sold: p.sold_out });
+  });
+  return out;
+}
+function renderSearch(q) {
+  const S = S_, box = document.querySelector('#srch .srch-res');
+  if (!q.trim()) { box.innerHTML = `<p class="srch-hint">${txt(S.search_hint)}</p>`; return; }
+  const r = runSearch(q);
+  box.innerHTML = r.length ? `<p class="srch-n">${r.length} ${txt(S.search_found)}</p><div class="srch-g">${r.map(x => `<button class="srch-it" data-i="${x.i}" data-k="${x.k}"><span class="ph"><img class="${x.sold ? 'so' : ''}" ${smImg(x.im, 'alt="" loading="lazy"')}>${x.sold ? `<span class="so-tag">${txt(S.sold_out_label)}</span>` : ''}</span><b>${txt(x.name)}</b>${x.sub ? `<em>${txt(x.sub)}</em>` : ''}<i>${txt(x.p.price || S.price_on_request)}</i></button>`).join('')}</div>`
+    : `<p class="srch-hint">${txt(S.search_empty)}</p>`;
+  box.querySelectorAll('.srch-it').forEach(b => b.onclick = () => { closeSearch(); openProduct(+b.dataset.i, true, +b.dataset.k); });
+}
+function openSearch() {
+  const S = S_, el = document.getElementById('srch');
+  const chips = String(S.search_chips || '').split(',').map(x => x.trim()).filter(Boolean);
+  el.innerHTML = `<div class="srch-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg><input type="search" placeholder="${esc(S.search_placeholder)}" aria-label="${esc(S.search_title)}" autocomplete="off"><button class="pm-x" data-sx>${txt(S.close_label)} <b>×</b></button></div>
+    ${chips.length ? `<div class="srch-chips">${chips.map(c => `<button>${txt(c)}</button>`).join('')}</div>` : ''}<div class="srch-res"></div>`;
+  const inp = el.querySelector('input'); let t;
+  inp.oninput = () => { clearTimeout(t); t = setTimeout(() => renderSearch(inp.value), 120); };
+  el.querySelectorAll('.srch-chips button').forEach(b => b.onclick = () => { inp.value = b.textContent; renderSearch(inp.value); });
+  el.querySelector('[data-sx]').onclick = closeSearch;
+  renderSearch('');
+  el.classList.add('open'); document.body.classList.add('lock');
+  setTimeout(() => inp.focus(), 60);
+}
+function closeSearch() {
+  const el = document.getElementById('srch'); if (!el || !el.classList.contains('open')) return;
+  el.classList.remove('open'); if (!document.getElementById('pm').classList.contains('open')) document.body.classList.remove('lock');
+}
 function toast(t) {
   const el = document.getElementById('toast'); el.textContent = t; el.classList.add('on');
   clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove('on'), 2200);
@@ -731,7 +812,7 @@ function render(C) {
     <div class="eyebrow">${txt(H.eyebrow)}</div>
     <h1>${txt(H.title)}</h1>
     <p>${txt(H.subtitle)}</p>
-    <a href="#yangi" class="btn solid">${txt(H.button)}</a>
+    <div class="hero-act"><a href="#yangi" class="btn solid">${txt(H.button)}</a><button class="srch-btn" data-search aria-label="${esc(S.search_title)}" title="${esc(S.search_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></button></div>
   </div>
 </div>
 
@@ -826,6 +907,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
 <div class="shade" id="shade"></div>
 <aside class="drawer" id="drawer" aria-label="${esc(S.cart_title)}"></aside>
 <div class="pm" id="pm" role="dialog" aria-modal="true"></div>
+<div class="srch" id="srch" role="dialog" aria-modal="true" aria-label="${esc(S.search_title)}"></div>
 <div class="toast" id="toast"></div>`;
 }
 
@@ -868,6 +950,7 @@ function boot(again) {
     c.addEventListener('keydown', e => { if (e.key === 'Enter') open(); });
   });
   document.querySelectorAll('[data-cart]').forEach(b => b.onclick = () => openCart());
+  document.querySelectorAll('[data-search]').forEach(b => b.onclick = openSearch);
   document.querySelectorAll('[data-lang]').forEach(b => b.onclick = () => setLang(b.dataset.lang));
   document.getElementById('shade').onclick = closeCart;
   updateBadges();
@@ -885,6 +968,7 @@ function setLang(l) {
 }
 addEventListener('popstate', fromHash);
 addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.getElementById('srch')?.classList.contains('open')) return closeSearch();
   if (e.key === 'Escape' && document.getElementById('drawer')?.classList.contains('on')) return closeCart();
   const pm = document.getElementById('pm');
   if (!pm || !pm.classList.contains('open')) return;
