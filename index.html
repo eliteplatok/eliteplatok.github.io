@@ -286,6 +286,12 @@ img.so{filter:grayscale(.55) opacity(.5)}
   .why{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
 #biz{padding:56px 0}
 #biz .head{margin-bottom:22px}
+  .mis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0 0 26px}
+  .mis div{background:var(--bg);padding:22px 22px 20px;border-top:2px solid #c9a27a}
+  .mis span{font-family:var(--serif);font-size:15px;color:#a8835f}
+  .mis h3{font-size:22px;margin:6px 0 6px}
+  .mis p{color:var(--muted);font-size:14px}
+  @media (max-width:760px){.mis{grid-template-columns:1fr;gap:8px;margin-bottom:16px}.mis div{display:grid;grid-template-columns:26px 1fr;column-gap:10px;padding:12px 14px}.mis span{grid-row:span 2;padding-top:3px}.mis h3{font-size:18px;margin:0 0 2px}.mis p{font-size:13px}}
 #biz .head h2{font-size:clamp(26px,3vw,36px);margin:8px 0 0}
 #biz .opt{margin-bottom:0;padding:26px 36px;gap:28px}
 #biz .opt h3{font-size:clamp(22px,2.4vw,28px);margin-bottom:6px}
@@ -732,6 +738,7 @@ function render(C) {
 
 <section id="biz" class="alt"><div class="wrap">
   ${head(W)}
+  ${(W.mission || []).length ? `<div class="mis">${W.mission.map((m, i) => `<div class="r"><span>0${i + 1}</span><h3>${txt(m.title)}</h3><p>${txt(m.text)}</p></div>`).join('')}</div>` : ''}
   ${W.wholesale_title ? `<div class="opt r">
     <div>${W.wholesale_badge ? `<span class="opt-b">${txt(W.wholesale_badge)}</span>` : ''}<h3>${txt(W.wholesale_title)}</h3><p class="opt-l">${txt(W.wholesale_text)}</p>${W.wholesale_text_short ? `<p class="opt-s">${txt(W.wholesale_text_short)}</p>` : ''}</div>
     <a class="opt-btn" href="${esc(S.telegram)}${S.telegram.includes('?') ? '&' : '?'}text=${encodeURIComponent(W.wholesale_message || 'OPTOM')}" ${ext}>${txt(W.wholesale_button)} <span>→</span></a>
