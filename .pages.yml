@@ -116,6 +116,10 @@ content:
       - { name: price_on_request_ru, label: "Narx yozilmagan mahsulotda chiqadigan yozuv (RU)", type: string }
       - { name: price_on_request_en, label: "Narx yozilmagan mahsulotda chiqadigan yozuv (EN)", type: string }
       - { name: promo3_total, label: "Aksiya: umumiy narx, agar mahsulotda ko‘rsatilmagan bo‘lsa (so‘m)", type: number }
+      - { name: usd_rate, label: "Dollar kursi (zaxira: Markaziy bank kursi olinmasa ishlatiladi)", type: number }
+      - { name: usd_rate_label, label: "Yozuv: «MB kursi»", type: string }
+      - { name: usd_rate_label_ru, label: "Yozuv: «MB kursi» (RU)", type: string }
+      - { name: usd_rate_label_en, label: "Yozuv: «MB kursi» (EN)", type: string }
       - { name: promo3_label, label: "Aksiya: savatda chiqadigan yozuv", type: string }
       - { name: promo3_label_ru, label: "Aksiya: savatda chiqadigan yozuv (RU)", type: string }
       - { name: promo3_label_en, label: "Aksiya: savatda chiqadigan yozuv (EN)", type: string }
@@ -287,7 +291,8 @@ content:
           - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
           - { name: promo_group_ru, label: "Aksiya guruhi (RU)", type: string }
           - { name: promo_group_en, label: "Aksiya guruhi (EN)", type: string }
-          - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
+          - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun)", type: number }
+          - { name: price_usd, label: "Narx dollarda (to‘ldirilsa, MB kursi bo‘yicha so‘mga o‘girilib, savatda hisoblanadi)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
           - { name: old_price_ru, label: "Eski narxi (RU)", type: string }
           - { name: old_price_en, label: "Eski narxi (EN)", type: string }
@@ -364,7 +369,8 @@ content:
           - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
           - { name: promo_group_ru, label: "Aksiya guruhi (RU)", type: string }
           - { name: promo_group_en, label: "Aksiya guruhi (EN)", type: string }
-          - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun; aksiya yoki $ bo‘lsa 0)", type: number }
+          - { name: price_number, label: "Narx raqamda, so‘m (savatda jami hisoblash uchun)", type: number }
+          - { name: price_usd, label: "Narx dollarda (to‘ldirilsa, MB kursi bo‘yicha so‘mga o‘girilib, savatda hisoblanadi)", type: number }
           - { name: old_price, label: "Eski narxi (chegirma bo‘lsa, bo‘lmasa bo‘sh qoldiring)", type: string }
           - { name: old_price_ru, label: "Eski narxi (RU)", type: string }
           - { name: old_price_en, label: "Eski narxi (EN)", type: string }

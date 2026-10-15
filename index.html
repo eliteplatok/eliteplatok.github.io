@@ -80,6 +80,8 @@
   .price{display:flex;gap:10px;align-items:baseline;margin-top:10px;font-weight:400;font-size:15px}
   .price s{color:var(--muted);font-size:13px;font-weight:300}
   .pnote{display:inline-block;margin-top:6px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px solid currentColor;padding:3px 8px}
+  .pconv{font-size:13px;color:var(--muted);margin:-4px 0 8px}
+  .pm-info .pconv{margin:-20px 0 24px}
   .pm-info .pnote{margin:-18px 0 26px}
   .price.ask{font-weight:300;font-size:13px;color:var(--muted);letter-spacing:.04em}
   .badge{position:absolute;top:14px;left:14px;z-index:1;background:var(--bg);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:6px 10px}
@@ -425,8 +427,13 @@ const imgsOf = p => (Array.isArray(p.images) && p.images.length ? p.images : (p.
 const slugify = s => String(s || '').toLowerCase().replace(/[‘’ʻʼ'`]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const dots = n => n > 8 ? `<div class="count">1 / ${n}</div>`
   : n > 1 ? `<div class="dots">${Array.from({ length: n }, (_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('')}</div>` : '';
+let USD = 0; // so‘m per 1 $ (Central Bank rate, refreshed daily)
+const usdSum = p => +p.price_usd > 0 && USD ? Math.round(+p.price_usd * USD / 1000) * 1000 : 0;
+const priceNum = p => usdSum(p) || +p.price_number || 0;
+const convHtml = p => usdSum(p) ? `<div class="pconv">≈ ${fmt(usdSum(p))} ${txt(S_.currency)} · ${txt(S_.usd_rate_label)}: ${fmt(Math.round(USD))}</div>` : '';
+const priceText = (p, S) => (p.price || S.price_on_request) + (usdSum(p) ? ` (≈ ${fmt(usdSum(p))} ${S.currency})` : '');
 const priceHtml = p => (p.price ? `<div class="price">${txt(p.price)}${p.old_price ? ` <s>${txt(p.old_price)}</s>` : ''}</div>` : `<div class="price ask">${txt(S_.price_on_request)}</div>`)
-  + (p.price_note ? `<div class="pnote">${txt(p.price_note)}</div>` : '');
+  + convHtml(p) + (p.price_note ? `<div class="pnote">${txt(p.price_note)}</div>` : '');
 
 function card(p, S) {
   const i = PRODUCTS.length, vars = VARS(p), ims = vars.length ? vars.map(v => v.ims[0]) : imgsOf(p);
@@ -576,7 +583,7 @@ function cartTotals(lines) {
   let sum = 0, unknown = false, saved = 0;
   const groups = {};
   lines.forEach(x => {
-    const v = +x.p.price_number || 0;
+    const v = priceNum(x.p);
     if (!v) { unknown = true; return; }
     if (x.p.promo3 && +S_.promo3_total) {
       const g = groups[x.p.promo_group || x.slug] ||= { qty: 0, unit: v, n: +x.p.promo_qty || 3, total: +x.p.promo_total || +S_.promo3_total };
@@ -609,7 +616,7 @@ function renderCart(view = 'list') {
       <label>${txt(S.form_comment)}<textarea name="comment" maxlength="500"></textarea></label>
       <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="err" aria-live="polite"></div>
-      <div class="mini">${lines.map(x => `<div><span>${txt(x.name)} × ${x.qty}</span><span>${txt(x.p.price || S.price_on_request)}</span></div>`).join('')}</div>
+      <div class="mini">${lines.map(x => `<div><span>${txt(x.name)} × ${x.qty}</span><span>${txt(priceText(x.p, S))}</span></div>`).join('')}</div>
     </form></div>
     <div class="dr-foot">${total}<button class="btn solid" data-send>${txt(S.form_submit)}</button><button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
     const f = dr.querySelector('form'), addr = dr.querySelector('.addr');
@@ -620,7 +627,7 @@ function renderCart(view = 'list') {
   } else {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body">${lines.map(x => `
       <div class="ci"><img ${smImg(x.im, 'alt=""')}>
-        <div><h4>${txt(x.name)}</h4><div class="pr">${txt(x.p.price || S.price_on_request)}</div>
+        <div><h4>${txt(x.name)}</h4><div class="pr">${txt(priceText(x.p, S))}</div>
           <div class="qty"><button data-q="-1" data-s="${x.key}" aria-label="${esc(S.qty_less)}">−</button><span>${x.qty}</span><button data-q="1" data-s="${x.key}" aria-label="${esc(S.qty_more)}">+</button></div></div>
         <button class="rm" data-rm="${x.key}">×</button></div>`).join('')}</div>
       <div class="dr-foot">${total}<button class="btn solid" data-go>${txt(S.cart_checkout)}</button></div>`;
@@ -646,7 +653,7 @@ async function sendOrder(f) {
   const o = { name: E('name').value.trim(), phone: E('phone').value.trim(), how: E('how').value, address: E('address').value.trim(), comment: E('comment').value.trim(), website: E('website').value };
   if (o.name.length < 2 || o.phone.replace(/\D/g, '').length < 7) { err.textContent = S.form_error; return; }
   const lines = cartLines(), t = cartTotals(lines);
-  o.items = lines.map(x => ({ name: x.name_uz, qty: x.qty, price: x.p.price_uz || x.p.price || S_UZ.price_on_request, link: location.origin + location.pathname + '#' + x.key,
+  o.items = lines.map(x => ({ name: x.name_uz, qty: x.qty, price: priceText({ ...x.p, price: x.p.price_uz || x.p.price }, S_UZ), link: location.origin + location.pathname + '#' + x.key,
     image: x.im ? new URL(String(x.im).replace(/^\/+/, ''), location.origin + location.pathname).href : '' }));
   o.total = t.sum; o.unknown = t.unknown; o.lang = LANG; o.text = orderText(o);
   btn.disabled = true; btn.textContent = S.form_sending;
@@ -872,9 +879,21 @@ addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') t.scrollBy({ left: -t.clientWidth, behavior: 'smooth' });
 });
 
-Promise.all(FILES.map(f => fetch(`content/${f}.json`, { cache: 'no-cache' }).then(r => r.json())))
-  .then(list => {
+async function usdRate() {
+  const day = new Date().toISOString().slice(0, 10);
+  try { const c = JSON.parse(localStorage.getItem('ep-usd')); if (c && c.day === day && c.rate > 0) return c.rate; } catch (e) {}
+  try {
+    const ctl = new AbortController(); setTimeout(() => ctl.abort(), 3000);
+    const j = await (await fetch('https://cbu.uz/uz/arkhiv-kursov-valyut/json/USD/', { signal: ctl.signal })).json();
+    const rate = parseFloat(j[0].Rate);
+    if (rate > 0) { try { localStorage.setItem('ep-usd', JSON.stringify({ day, rate })); } catch (e) {} return rate; }
+  } catch (e) {}
+  return 0;
+}
+Promise.all([usdRate(), ...FILES.map(f => fetch(`content/${f}.json`, { cache: 'no-cache' }).then(r => r.json()))])
+  .then(([rate, ...list]) => {
     RAW = Object.fromEntries(FILES.map((f, i) => [f, list[i]]));
+    USD = rate || +RAW.sozlamalar.usd_rate || 0;
     boot();
     fromHash();
   })
