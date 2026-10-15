@@ -434,6 +434,7 @@ const dots = n => n > 8 ? `<div class="count">1 / ${n}</div>`
   : n > 1 ? `<div class="dots">${Array.from({ length: n }, (_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('')}</div>` : '';
 let USD = 0; // so‘m per 1 $ (Central Bank rate, refreshed daily)
 const usdSum = p => +p.price_usd > 0 && USD ? Math.round(+p.price_usd * USD / 1000) * 1000 : 0;
+const soldPhotos = p => new Set(String(p.sold_photos || '').split(/[^0-9]+/).filter(Boolean).map(Number)); // 1-based photo numbers
 const priceNum = p => usdSum(p) || +p.price_number || 0;
 const convHtml = p => usdSum(p) ? `<div class="pconv">≈ ${fmt(usdSum(p))} ${txt(S_.currency)} · ${txt(S_.usd_rate_label)}: ${fmt(Math.round(USD))}</div>` : '';
 const priceText = (p, S) => (p.price || S.price_on_request) + (usdSum(p) ? ` (≈ ${fmt(usdSum(p))} ${S.currency})` : '');
@@ -445,7 +446,7 @@ function card(p, S) {
   let slug = slugify(p.name_uz || p.name) || 'mahsulot';
   if (PRODUCTS.some(x => x.slug === slug)) slug += '-' + i;
   PRODUCTS.push({ ...p, ims, vars, slug });
-  const soldAt = k => !!(p.sold_out || (vars.length && vars[k] && vars[k].sold_out));
+  const sp = soldPhotos(p), soldAt = k => !!(p.sold_out || (vars.length ? vars[k] && vars[k].sold_out : sp.has(k + 1)));
   const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${k ? '' : 'on'}${v.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" style="--c:${esc(v.hex || '#ccc')}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
   return `<div class="card r" data-p="${i}" role="button" tabindex="0" aria-label="${esc(p.name)}">
     <div class="ph">
@@ -473,7 +474,7 @@ function bindSlider(track, root) {
     const cnt = root.querySelector('.count'); if (cnt) cnt.textContent = `${k + 1} / ${track.children.length}`;
     root.querySelectorAll('.pm-thumbs button').forEach((b, j) => b.classList.toggle('on', j === k));
     root.querySelectorAll('.sw-mini button').forEach((b, j) => b.classList.toggle('on', j === k));
-    const tag = root.querySelector('.card .so-tag, .so-tag'); if (tag && root.classList.contains('card')) tag.hidden = !(track.children[k] && track.children[k].classList.contains('so'));
+    const tag = root.querySelector('.so-tag'); if (tag) tag.hidden = !(track.children[k] && track.children[k].classList.contains('so'));
   }, { passive: true });
   return go;
 }
@@ -483,15 +484,15 @@ let S_ = {}, pushed = false;
 function openProduct(i, push = true, vi = 0) {
   const p = PRODUCTS[i]; if (!p) return;
   vi = p.vars.length ? Math.max(0, Math.min(p.vars.length - 1, vi | 0)) : 0;
-  const v = p.vars[vi], ims = v ? v.ims : p.ims, sold = !!(p.sold_out || (v && v.sold_out)), hash = p.slug + (v && vi ? '/' + (vi + 1) : '');
+  const v = p.vars[vi], ims = v ? v.ims : p.ims, sold = !!(p.sold_out || (v && v.sold_out)), sp = v ? new Set() : soldPhotos(p), soldK = k => sold || sp.has(k + 1), hash = p.slug + (v && vi ? '/' + (vi + 1) : '');
   const S = S_, pm = document.getElementById('pm');
   const row = (l, v) => v ? `<div><dt>${txt(l)}</dt><dd>${txt(v)}</dd></div>` : '';
   const acc = (t, v, open) => v ? `<details class="acc-item"${open ? ' open' : ''}><summary>${txt(t)}</summary><p>${txt(v)}</p></details>` : '';
   pm.innerHTML = `
     <div class="pm-top"><a href="#" class="logo" data-close>${txt(S.logo)}</a><button class="pm-x" data-close>${txt(S.close_label)} <b>×</b></button></div>
     <div class="pm-body">
-      <div class="pm-gal">${sold ? `<span class="so-tag">${txt(S.sold_out_label)}</span>` : ''}
-        <div class="pm-slides">${ims.map((s, k) => `<img class="${sold ? 'so' : ''}" src="${img(s)}" loading="${k ? 'lazy' : 'eager'}" decoding="async" alt="${esc(p.name + (v ? ' — ' + v.name : ''))}" draggable="false">`).join('')}</div>
+      <div class="pm-gal"><span class="so-tag"${soldK(0) ? '' : ' hidden'}>${txt(S.sold_out_label)}</span>
+        <div class="pm-slides">${ims.map((s, k) => `<img class="${soldK(k) ? 'so' : ''}" src="${img(s)}" loading="${k ? 'lazy' : 'eager'}" decoding="async" alt="${esc(p.name + (v ? ' — ' + v.name : ''))}" draggable="false">`).join('')}</div>
         ${ims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>${dots(ims.length)}` : ''}
         ${ims.length > 1 ? `<div class="pm-thumbs">${ims.map((s, k) => `<button class="${k ? '' : 'on'}" data-k="${k}"><img ${smImg(s, 'alt="" loading="lazy" decoding="async"')}></button>`).join('')}</div>` : ''}
       </div>

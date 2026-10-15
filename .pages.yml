@@ -304,6 +304,7 @@ content:
           - { name: badge_ru, label: "Belgi (RU)", type: string }
           - { name: badge_en, label: "Belgi (EN)", type: string }
           - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
+          - { name: sold_photos, label: "Tugagan ro‘mollar — rasm raqamlari (ranglari bo‘lmagan tovar uchun, masalan: 3, 7)", type: string }
 
   - name: top
     label: "⭐ Eng ko‘p sotilayotganlar"
@@ -384,6 +385,7 @@ content:
           - { name: badge_ru, label: "Belgi (RU)", type: string }
           - { name: badge_en, label: "Belgi (EN)", type: string }
           - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
+          - { name: sold_photos, label: "Tugagan ro‘mollar — rasm raqamlari (ranglari bo‘lmagan tovar uchun, masalan: 3, 7)", type: string }
 
   - name: matolar
     label: "🧵 Matolar"

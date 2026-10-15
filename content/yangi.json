@@ -55,6 +55,7 @@
       "badge_ru": "Эксклюзив",
       "badge_en": "Exclusive",
       "sold_out": false,
+      "sold_photos": "",
       "price_ru": "35 $",
       "price_en": "$35",
       "price_note_ru": "Единственный экземпляр · Двусторонний",
@@ -100,6 +101,7 @@
       "badge_ru": "Новинка",
       "badge_en": "New",
       "sold_out": false,
+      "sold_photos": "",
       "variants": [
         {
           "name": "Pushti",
@@ -253,6 +255,7 @@
       "badge_ru": "Новинка",
       "badge_en": "New",
       "sold_out": false,
+      "sold_photos": "",
       "variants": [
         {
           "name": "Qora",
@@ -297,7 +300,7 @@
             "images/atlas-4.jpg",
             "images/atlas-mato-3.jpg"
           ],
-          "sold_out": false
+          "sold_out": true
         },
         {
           "name": "Och pushti",
@@ -516,6 +519,7 @@
       "badge_ru": "Акция",
       "badge_en": "Offers",
       "sold_out": false,
+      "sold_photos": "",
       "promo_group": "tvil"
     },
     {
@@ -559,6 +563,7 @@
       "badge_ru": "Акция",
       "badge_en": "Offers",
       "sold_out": false,
+      "sold_photos": "",
       "promo_group": "",
       "variants": [
         {
@@ -754,6 +759,7 @@
       "badge_ru": "Акция",
       "badge_en": "Offers",
       "sold_out": false,
+      "sold_photos": "",
       "promo_group": "kashka",
       "variants": [
         {
@@ -948,6 +954,7 @@
       "badge_ru": "Акция",
       "badge_en": "Offers",
       "sold_out": false,
+      "sold_photos": "",
       "variants": [
         {
           "name": "To‘q olxo‘ri",
@@ -1034,6 +1041,7 @@
       "badge_ru": "Новинка",
       "badge_en": "New",
       "sold_out": false,
+      "sold_photos": "",
       "promo_group": ""
     },
     {
@@ -1077,6 +1085,7 @@
       "badge_ru": "Новинка",
       "badge_en": "New",
       "sold_out": false,
+      "sold_photos": "",
       "promo_group": ""
     },
     {
@@ -1116,6 +1125,7 @@
       "badge_ru": "Новинка",
       "badge_en": "New",
       "sold_out": false,
+      "sold_photos": "",
       "promo_group": "",
       "variants": [
         {
