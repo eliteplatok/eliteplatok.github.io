@@ -74,9 +74,9 @@
       "material": "Dubay ipagi, batistdek mayin",
       "material_ru": "Дубайский шёлк, мягкий как батист",
       "material_en": "Dubai silk, soft as batiste",
-      "color": "10 xil: pushti, to‘q zaytun, sutrang, zaytun-bej, qizil-jigarrang, qizil, fistashka, bordo, yashil, oq hoshiyali zaytun",
-      "color_ru": "10 вариантов: розовый, тёмно-оливковый, молочный, оливково-бежевый, красно-коричневый, красный, фисташковый, бордовый, зелёный, оливковый с белой каймой",
-      "color_en": "10 options: pink, dark olive, milky white, olive beige, reddish brown, red, pistachio, burgundy, green, olive with white border",
+      "color": "10 xil: pushti, to‘q zaytun, sutrang, zaytun-bej, qizil-jigarrang, qizil, fistashka, bordo, yashil, zaytun-yashil",
+      "color_ru": "10 вариантов: розовый, тёмно-оливковый, молочный, оливково-бежевый, красно-коричневый, красный, фисташковый, бордовый, зелёный, оливково-зелёный",
+      "color_en": "10 options: pink, dark olive, milky white, olive beige, reddish brown, red, pistachio, burgundy, green, olive green",
       "description": "Nafis bodom naqshi, batistdek mayin mato — har kuni kiyish uchun yoqimli.",
       "description_ru": "Изящный узор пейсли и ткань, мягкая как батист, — приятно носить каждый день.",
       "description_en": "An elegant paisley pattern on fabric as soft as batiste — a pleasure to wear every day.",
@@ -203,9 +203,9 @@
           "sold_out": false
         },
         {
-          "name": "Zaytun, oq hoshiya",
-          "name_ru": "Оливковый с белой каймой",
-          "name_en": "Olive, white border",
+          "name": "Zaytun-yashil",
+          "name_ru": "Оливково-зелёный",
+          "name_en": "Olive green",
           "hex": "#5c5a34",
           "images": [
             "images/dubay-ipak-10.jpg",
