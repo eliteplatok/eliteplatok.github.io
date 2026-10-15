@@ -472,7 +472,7 @@ let USD = 0; // so‘m per 1 $ (Central Bank rate, refreshed daily)
 const usdSum = p => +p.price_usd > 0 && USD ? Math.round(+p.price_usd * USD / 1000) * 1000 : 0;
 const soldPhotos = p => new Set(String(p.sold_photos || '').split(/[^0-9]+/).filter(Boolean).map(Number)); // 1-based photo numbers
 const priceNum = p => usdSum(p) || +p.price_number || 0;
-const convHtml = p => usdSum(p) ? `<div class="pconv">≈ ${fmt(usdSum(p))} ${txt(S_.currency)} · ${txt(S_.usd_rate_label)}: ${fmt(Math.round(USD))}</div>` : '';
+const convHtml = p => usdSum(p) ? `<div class="pconv">≈ ${fmt(usdSum(p))} ${txt(S_.currency)}</div>` : '';
 const priceText = (p, S) => (p.price || S.price_on_request) + (usdSum(p) ? ` (≈ ${fmt(usdSum(p))} ${S.currency})` : '');
 const priceHtml = p => (p.price ? `<div class="price">${txt(p.price)}${p.old_price ? ` <s>${txt(p.old_price)}</s>` : ''}</div>` : `<div class="price ask">${txt(S_.price_on_request)}</div>`)
   + convHtml(p) + (p.price_note ? `<div class="pnote">${txt(p.price_note)}</div>` : '');
