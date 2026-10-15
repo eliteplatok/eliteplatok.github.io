@@ -324,6 +324,7 @@ content:
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
           - { name: badge_ru, label: "Belgi (RU)", type: string }
           - { name: badge_en, label: "Belgi (EN)", type: string }
+          - { name: is_new, label: "Yangi (o‘ng burchakda miltillovchi NEW belgisi)", type: boolean }
           - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
           - { name: sold_photos, label: "Tugagan ro‘mollar — rasm raqamlari (ranglari bo‘lmagan tovar uchun, masalan: 3, 7)", type: string }
           - { name: tags, label: "Qidiruv teglari (vergul bilan): bir rangli / printli / bestseller / bandanka", type: string }
@@ -406,6 +407,7 @@ content:
           - { name: badge, label: "Belgi (Yangi / Chegirma / bo‘sh)", type: string }
           - { name: badge_ru, label: "Belgi (RU)", type: string }
           - { name: badge_en, label: "Belgi (EN)", type: string }
+          - { name: is_new, label: "Yangi (o‘ng burchakda miltillovchi NEW belgisi)", type: boolean }
           - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
           - { name: sold_photos, label: "Tugagan ro‘mollar — rasm raqamlari (ranglari bo‘lmagan tovar uchun, masalan: 3, 7)", type: string }
           - { name: tags, label: "Qidiruv teglari (vergul bilan): bir rangli / printli / bestseller / bandanka", type: string }
