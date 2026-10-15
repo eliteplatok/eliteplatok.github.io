@@ -26,9 +26,9 @@
       "title": "",
       "title_ru": "",
       "title_en": "",
-      "text": "Sotib olingan ro‘mol uchun to‘langan pul qaytarilmaydi, lekin ro‘molni boshqasiga almashtirish mumkin.",
-      "text_ru": "Деньги за купленный платок не возвращаются, но платок можно обменять на другой.",
-      "text_en": "Payment for a purchased scarf is non-refundable, but the scarf can be exchanged for another one."
+      "text": "Sotib olingan ro‘mol qaytarib olinmaydi, faqat almashtiriladi.",
+      "text_ru": "Купленный платок возврату не подлежит, только обмену.",
+      "text_en": "Purchased scarves cannot be returned, only exchanged."
     }
   ],
   "wholesale_badge": "Donaga va optom",
