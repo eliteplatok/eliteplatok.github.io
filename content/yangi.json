@@ -64,6 +64,208 @@
       "price_note_en": "One of a kind · Reversible"
     },
     {
+      "name": "Jatka ro‘mollar",
+      "name_ru": "Платки из жатки",
+      "name_en": "Crinkle Cotton Scarves",
+      "images": [
+
+      ],
+      "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
+      "material": "Jatka — yumshoq Turkiya paxtasi",
+      "material_ru": "Жатка — мягкий турецкий хлопок",
+      "material_en": "Crinkle fabric — soft Turkish cotton",
+      "color": "15 xil: qora, oq, sutrang, bej, karamel, pushti, fuksiya, binafsha, to‘q ko‘k, kulrang, to‘q kulrang, kulrang-zaytun, zaytun, fistashka, bordo",
+      "color_ru": "15 цветов: чёрный, белый, молочный, бежевый, карамельный, розовый, фуксия, фиолетовый, тёмно-синий, серый, тёмно-серый, серо-оливковый, оливковый, фисташковый, бордовый",
+      "color_en": "15 colours: black, white, milky white, beige, caramel, pink, fuchsia, purple, navy, grey, dark grey, grey olive, olive, pistachio, burgundy",
+      "description": "Yumshoq Turkiya paxtasidan jatka ro‘mol — dazmol talab qilmaydi, kun bo‘yi qulay.",
+      "description_ru": "Платок из мягкого турецкого хлопка с эффектом жатки — не требует глажки, удобен весь день.",
+      "description_en": "A crinkle scarf of soft Turkish cotton — no ironing needed, comfortable all day.",
+      "details": "Jatka ro‘mollarimiz yumshoq va sifatli Turkiya paxtasidan tayyorlangan. Matoning burma (jatka) teksturasi uni dazmolsiz ham doim tartibli ko‘rsatadi: g‘ijimlanishdan qo‘rqmaysiz, yo‘lga, ishga yoki o‘qishga olib chiqish qulay.\n\nPaxta havo o‘tkazadi va teriga yoqimli tegadi — issiq kunda ham, kun bo‘yi kiyganda ham qulay. Mato boshda sirpanmaydi va yumshoq, tabiiy burmalar bilan chiroyli tushadi. O‘lchami 90 × 90 sm.\n\n15 xil rangdan tanlang: klassik qora, oq va sutrangdan tortib bej, karamel, nozik pushti, fuksiya, to‘q ko‘k, kulrang va zaytun tuslarigacha.",
+      "details_ru": "Наши платки из жатки сделаны из мягкого качественного турецкого хлопка. Жатая фактура ткани делает платок всегда аккуратным без глажки: он не боится складок, его удобно брать в дорогу, на работу или учёбу.\n\nХлопок пропускает воздух и приятен к коже — удобно и в жару, и при носке весь день. Ткань не соскальзывает и красиво ложится мягкими естественными складками. Размер 90 × 90 см.\n\nВыберите из 15 цветов: от классических чёрного, белого и молочного до бежевого, карамельного, нежно-розового, фуксии, тёмно-синего, серого и оливковых оттенков.",
+      "details_en": "Our crinkle scarves are made of soft, quality Turkish cotton. The crinkled texture keeps the scarf neat without ironing — no worries about creases, easy to take on trips, to work or to class.\n\nCotton is breathable and gentle on the skin — comfortable in the heat and all day long. The fabric doesn’t slip and drapes beautifully in soft, natural folds. Size 90 × 90 cm.\n\nChoose from 15 colours: from classic black, white and milky white to beige, caramel, soft pink, fuchsia, navy, grey and olive shades.",
+      "care": "30°C da qo‘lda yoki nozik rejimda yuving. Siqmang, tekis holda quriting. Dazmol talab qilmaydi.",
+      "care_ru": "Стирать вручную или в деликатном режиме при 30°C. Не отжимать, сушить в расправленном виде. Глажка не требуется.",
+      "care_en": "Hand or gentle wash at 30°C. Do not wring, dry flat. No ironing needed.",
+      "price": "90 000 so‘m",
+      "price_note": "2 tasi — 120 000 so‘m",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 90000,
+      "price_usd": 0,
+      "promo3": true,
+      "promo_qty": 2,
+      "promo_total": 120000,
+      "promo_group": "jatka",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "bir rangli",
+      "variants": [
+        {
+          "name": "Qora",
+          "name_ru": "Чёрный",
+          "name_en": "Black",
+          "hex": "#1c1a1b",
+          "sold_out": false,
+          "images": [
+            "images/jatka-qora.jpg"
+          ]
+        },
+        {
+          "name": "Oq",
+          "name_ru": "Белый",
+          "name_en": "White",
+          "hex": "#e6e3e6",
+          "sold_out": false,
+          "images": [
+            "images/jatka-oq.jpg"
+          ]
+        },
+        {
+          "name": "Sutrang",
+          "name_ru": "Молочный",
+          "name_en": "Milky white",
+          "hex": "#e9d8c7",
+          "sold_out": false,
+          "images": [
+            "images/jatka-sutrang.jpg"
+          ]
+        },
+        {
+          "name": "Bej",
+          "name_ru": "Бежевый",
+          "name_en": "Beige",
+          "hex": "#c49e7c",
+          "sold_out": false,
+          "images": [
+            "images/jatka-bej.jpg",
+            "images/jatka-bej-mato.jpg"
+          ]
+        },
+        {
+          "name": "Karamel",
+          "name_ru": "Карамельный",
+          "name_en": "Caramel",
+          "hex": "#b77a51",
+          "sold_out": false,
+          "images": [
+            "images/jatka-karamel.jpg"
+          ]
+        },
+        {
+          "name": "Pushti",
+          "name_ru": "Розовый",
+          "name_en": "Pink",
+          "hex": "#d8a2a4",
+          "sold_out": false,
+          "images": [
+            "images/jatka-pushti.jpg"
+          ]
+        },
+        {
+          "name": "Fuksiya",
+          "name_ru": "Фуксия",
+          "name_en": "Fuchsia",
+          "hex": "#ef3c6f",
+          "sold_out": false,
+          "images": [
+            "images/jatka-fuksiya.jpg"
+          ]
+        },
+        {
+          "name": "Binafsha",
+          "name_ru": "Фиолетовый",
+          "name_en": "Purple",
+          "hex": "#6e4a63",
+          "sold_out": false,
+          "images": [
+            "images/jatka-binafsha.jpg"
+          ]
+        },
+        {
+          "name": "To‘q ko‘k",
+          "name_ru": "Тёмно-синий",
+          "name_en": "Navy",
+          "hex": "#1d2f59",
+          "sold_out": false,
+          "images": [
+            "images/jatka-toq-kok.jpg"
+          ]
+        },
+        {
+          "name": "Kulrang",
+          "name_ru": "Серый",
+          "name_en": "Grey",
+          "hex": "#85878d",
+          "sold_out": false,
+          "images": [
+            "images/jatka-kulrang.jpg"
+          ]
+        },
+        {
+          "name": "To‘q kulrang",
+          "name_ru": "Тёмно-серый",
+          "name_en": "Dark grey",
+          "hex": "#5b5556",
+          "sold_out": false,
+          "images": [
+            "images/jatka-toq-kulrang.jpg"
+          ]
+        },
+        {
+          "name": "Kulrang-zaytun",
+          "name_ru": "Серо-оливковый",
+          "name_en": "Grey olive",
+          "hex": "#8f8f80",
+          "sold_out": false,
+          "images": [
+            "images/jatka-kulrang-zaytun.jpg"
+          ]
+        },
+        {
+          "name": "Zaytun",
+          "name_ru": "Оливковый",
+          "name_en": "Olive",
+          "hex": "#9a9670",
+          "sold_out": false,
+          "images": [
+            "images/jatka-zaytun.jpg",
+            "images/jatka-zaytun-mato.jpg"
+          ]
+        },
+        {
+          "name": "Fistashka",
+          "name_ru": "Фисташковый",
+          "name_en": "Pistachio",
+          "hex": "#a8ad6c",
+          "sold_out": false,
+          "images": [
+            "images/jatka-fistashka.jpg"
+          ]
+        },
+        {
+          "name": "Bordo",
+          "name_ru": "Бордовый",
+          "name_en": "Burgundy",
+          "hex": "#6e1a24",
+          "sold_out": false,
+          "images": [
+            "images/jatka-bordo-mato.jpg"
+          ]
+        }
+      ],
+      "price_ru": "90 000 сум",
+      "price_en": "90,000 UZS",
+      "price_note_ru": "2 шт. — 120 000 сум",
+      "price_note_en": "2 for 120,000 UZS"
+    },
+    {
       "name": "Dubay ipak ro‘mollari",
       "name_ru": "Платки из дубайского шёлка",
       "name_en": "Dubai Silk Scarves",
