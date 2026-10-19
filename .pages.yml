@@ -273,6 +273,7 @@ content:
           - { name: name_ru, label: "Nomi (RU)", type: string }
           - { name: name_en, label: "Nomi (EN)", type: string }
           - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
+          - { name: cover, label: "Muqova rasmi (ranglari bor tovar uchun: kartochkada birinchi chiqadi)", type: image }
           - name: variants
             label: "Ranglar (bir rangli tovar uchun: har rangga o‘z rasmlari va dumaloq rang tugmasi; to‘ldirilsa yuqoridagi «Rasmlar» o‘rniga ishlatiladi)"
             type: object
@@ -285,6 +286,7 @@ content:
               - { name: name_en, label: "Rang nomi (EN)", type: string }
               - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
               - { name: sold_out, label: "Tugagan (sotildi) — rasmda «Sotildi» yozuvi chiqadi", type: boolean }
+              - { name: card_hide, label: "Kartochka karuselida ko‘rsatilmasin (faqat tovar ochilganda)", type: boolean }
               - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
           - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
           - { name: size_ru, label: "O‘lchami (RU)", type: string }
@@ -356,6 +358,7 @@ content:
           - { name: name_ru, label: "Nomi (RU)", type: string }
           - { name: name_en, label: "Nomi (EN)", type: string }
           - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
+          - { name: cover, label: "Muqova rasmi (ranglari bor tovar uchun: kartochkada birinchi chiqadi)", type: image }
           - name: variants
             label: "Ranglar (bir rangli tovar uchun: har rangga o‘z rasmlari va dumaloq rang tugmasi; to‘ldirilsa yuqoridagi «Rasmlar» o‘rniga ishlatiladi)"
             type: object
@@ -368,6 +371,7 @@ content:
               - { name: name_en, label: "Rang nomi (EN)", type: string }
               - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
               - { name: sold_out, label: "Tugagan (sotildi) — rasmda «Sotildi» yozuvi chiqadi", type: boolean }
+              - { name: card_hide, label: "Kartochka karuselida ko‘rsatilmasin (faqat tovar ochilganda)", type: boolean }
               - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
           - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
           - { name: size_ru, label: "O‘lchami (RU)", type: string }

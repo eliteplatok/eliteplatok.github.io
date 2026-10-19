@@ -485,13 +485,16 @@ function card(p, S) {
   let slug = slugify(p.name_uz || p.name) || 'mahsulot';
   if (PRODUCTS.some(x => x.slug === slug)) slug += '-' + i;
   PRODUCTS.push({ ...p, ims, vars, slug });
-  const sp = soldPhotos(p), soldAt = k => !!(p.sold_out || (vars.length ? vars[k] && vars[k].sold_out : sp.has(k + 1)));
-  const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${k ? '' : 'on'}${v.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" style="--c:${esc(v.hex || '#ccc')}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
-  return `<div class="card r" data-p="${i}" role="button" tabindex="0" aria-label="${esc(p.name)}">
+  // card slides: optional cover first, then one photo per colour (colours marked card_hide only appear in the product window)
+  const slides = vars.length ? [...(p.cover ? [{ im: p.cover, v: -1 }] : []), ...vars.map((v, k) => ({ im: v.ims[0], v: k })).filter(x => !vars[x.v].card_hide)] : ims.map(im => ({ im, v: -1 }));
+  const cims = slides.map(x => x.im), slideOf = k => slides.findIndex(x => x.v === k), off = 0;
+  const sp = soldPhotos(p), soldAt = k => !!(p.sold_out || (vars.length ? slides[k] && slides[k].v >= 0 && vars[slides[k].v].sold_out : sp.has(k + 1)));
+  const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${slideOf(k) === 0 ? 'on' : ''}${v.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" data-s="${slideOf(k)}" style="--c:${esc(v.hex || '#ccc')}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
+  return `<div class="card r" data-p="${i}" data-map="${slides.map(x => x.v).join(',')}" role="button" tabindex="0" aria-label="${esc(p.name)}">
     <div class="ph">
-      <div class="slides">${ims.map((s, k) => k ? `<img class="${soldAt(k) ? 'so' : ''}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img class="${soldAt(k) ? 'so' : ''}" ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
-      ${ims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>` : ''}
-      ${dots(ims.length)}
+      <div class="slides">${cims.map((s, k) => k ? `<img class="${soldAt(k) ? 'so' : ''}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img class="${soldAt(k) ? 'so' : ''}" ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
+      ${cims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>` : ''}
+      ${dots(cims.length)}
       ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}${p.is_new ? '<span class="newb">NEW</span>' : ''}
       <span class="so-tag"${soldAt(0) ? '' : ' hidden'}>${txt(S.sold_out_label)}</span>
       <span class="order">${txt(S.card_order_label)}</span></div>
@@ -512,7 +515,7 @@ function bindSlider(track, root) {
     ds.forEach((d, j) => d.classList.toggle('on', j === k));
     const cnt = root.querySelector('.count'); if (cnt) cnt.textContent = `${k + 1} / ${track.children.length}`;
     root.querySelectorAll('.pm-thumbs button').forEach((b, j) => b.classList.toggle('on', j === k));
-    root.querySelectorAll('.sw-mini button').forEach((b, j) => b.classList.toggle('on', j === k));
+    root.querySelectorAll('.sw-mini button').forEach(b => b.classList.toggle('on', +b.dataset.s === k));
     const tag = root.querySelector('.so-tag'); if (tag) tag.hidden = !(track.children[k] && track.children[k].classList.contains('so'));
   }, { passive: true });
   return go;
@@ -976,8 +979,9 @@ function boot(again) {
     c.querySelector('.slides').addEventListener('scroll', () => wake(c, true), { once: true, passive: true });
     bindSlider(c.querySelector('.slides'), c);
     const sl = c.querySelector('.slides');
-    c.querySelectorAll('.sw-mini button').forEach(b => b.onclick = e => { e.stopPropagation(); sl.scrollTo({ left: b.dataset.v * sl.clientWidth, behavior: 'smooth' }); });
-    const open = () => openProduct(+c.dataset.p, true, PRODUCTS[+c.dataset.p].vars.length ? Math.round(sl.scrollLeft / (sl.clientWidth || 1)) : 0);
+    c.querySelectorAll('.sw-mini button').forEach(b => b.onclick = e => { e.stopPropagation(); +b.dataset.s >= 0 ? sl.scrollTo({ left: b.dataset.s * sl.clientWidth, behavior: 'smooth' }) : openProduct(+c.dataset.p, true, +b.dataset.v); });
+    const map = (c.dataset.map || '').split(',').map(Number);
+    const open = () => openProduct(+c.dataset.p, true, PRODUCTS[+c.dataset.p].vars.length ? Math.max(0, map[Math.round(sl.scrollLeft / (sl.clientWidth || 1))] || 0) : 0);
     let sx = 0;
     c.addEventListener('pointerdown', e => sx = e.clientX);
     c.addEventListener('click', e => { if (Math.abs(e.clientX - sx) < 8 && !e.target.closest('.arr, .sw-mini')) open(); });

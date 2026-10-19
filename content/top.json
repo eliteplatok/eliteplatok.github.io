@@ -19,6 +19,7 @@
       "images": [
         "images/turkiya-tvil.jpg"
       ],
+      "cover": "",
       "size": "",
       "material": "Tvil (Turkiya)",
       "material_ru": "Твил (Турция)",
@@ -56,6 +57,7 @@
       "images": [
         "images/kashka.jpg"
       ],
+      "cover": "",
       "size": "170 sm",
       "size_ru": "170 см",
       "size_en": "170 cm",
@@ -96,6 +98,7 @@
         "images/pion-masla.jpg",
         "images/pion-masla-2.jpg"
       ],
+      "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
       "size_en": "110 × 110 cm",
@@ -135,6 +138,7 @@
       "images": [
         "images/sherst-dvaynoy.jpg"
       ],
+      "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
       "size_en": "110 × 110 cm",
@@ -175,6 +179,7 @@
         "images/jatiy-ipak.jpg",
         "images/jatiy-ipak-2.jpg"
       ],
+      "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
       "size_en": "110 × 110 cm",
@@ -214,6 +219,7 @@
       "images": [
         "images/eron-sholk.jpg"
       ],
+      "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
       "size_en": "110 × 110 cm",
@@ -253,6 +259,7 @@
       "images": [
         "images/organza.jpg"
       ],
+      "cover": "",
       "size": "100 × 100 sm",
       "size_ru": "100 × 100 см",
       "size_en": "100 × 100 cm",
@@ -293,6 +300,7 @@
         "images/shifon.jpg",
         "images/shifon-2.jpg"
       ],
+      "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
       "size_en": "110 × 110 cm",
@@ -332,6 +340,7 @@
       "images": [
         "images/sherst.jpg"
       ],
+      "cover": "",
       "size": "150 × 150 sm",
       "size_ru": "150 × 150 см",
       "size_en": "150 × 150 cm",
@@ -371,6 +380,7 @@
       "images": [
         "images/dvaynoy-luks.jpg"
       ],
+      "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
       "size_en": "110 × 110 cm",
@@ -410,6 +420,7 @@
       "images": [
         "images/kashemir-sharf.jpg"
       ],
+      "cover": "",
       "size": "85 × 175 sm",
       "size_ru": "85 × 175 см",
       "size_en": "85 × 175 cm",
@@ -449,6 +460,7 @@
       "images": [
         "images/turkiya.jpg"
       ],
+      "cover": "",
       "size": "",
       "material": "Mayin mato (Turkiya)",
       "material_ru": "Мягкая ткань (Турция)",
