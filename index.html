@@ -265,7 +265,9 @@ img.so{filter:grayscale(.55) opacity(.5)}
 
   /* colors */
   .colors{display:flex;flex-wrap:wrap;gap:40px 56px;justify-content:center}
-  .color{display:flex;flex-direction:column;align-items:center;gap:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .color{display:flex;flex-direction:column;align-items:center;gap:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:none;border:0;padding:0;font-family:inherit;cursor:pointer}
+  .color:hover{color:var(--ink)}
+  .color:hover i{transform:scale(1.08);box-shadow:0 6px 18px rgba(43,38,34,.18)}
   .color i{width:84px;height:84px;border-radius:50%;border:1px solid var(--line);transition:.3s}
   .color:hover i{transform:translateY(-6px);box-shadow:0 14px 30px rgba(43,38,34,.12)}
   .color:hover{color:var(--ink)}
@@ -878,7 +880,7 @@ ${products('', C['top'], S, true)}
 
 <section class="alt"><div class="wrap">
   ${head(R, '', true)}
-  <div class="colors r">${(R.items || []).map(c => `<span class="color"><i style="background:${esc(c.color)}"></i>${txt(c.name)}</span>`).join('')}</div>
+  <div class="colors r">${(R.items || []).map(c => `<button class="color" data-color="${esc(c.name)}"><i style="background:${esc(c.color)}"></i>${txt(c.name)}</button>`).join('')}</div>
 </div></section>
 
 <section><div class="wrap ben-wrap">
@@ -989,6 +991,7 @@ function boot(again) {
   });
   document.querySelectorAll('[data-cart]').forEach(b => b.onclick = () => openCart());
   document.querySelectorAll('[data-search]').forEach(b => b.onclick = openSearch);
+  document.querySelectorAll('[data-color]').forEach(b => b.onclick = () => { openSearch(); const inp = document.querySelector('#srch input'); inp.value = b.dataset.color; renderSearch(inp.value); });
   document.querySelectorAll('[data-lang]').forEach(b => b.onclick = () => setLang(b.dataset.lang));
   document.getElementById('shade').onclick = closeCart;
   updateBadges();
