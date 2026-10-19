@@ -36,7 +36,7 @@
   "phone": "+998 99 981 13 53",
   "telegram": "https://t.me/shahnoza_nodirovna",
   "email": "eliteplatok@gmail.com",
-  "instagram": "https://www.instagram.com/eliteplatok/",
+  "instagram": "https://www.instagram.com/elite_platok/",
   "whatsapp": "https://wa.me/998999811353",
   "whatsapp_user": "@eliteplatok",
   "footer_tagline": "Hijobga mehr uyg‘otadigan ro‘mollar.",
@@ -224,5 +224,8 @@
   "store_label_telegram_en": "Telegram",
   "store_label_whatsapp": "WhatsApp",
   "store_label_whatsapp_ru": "WhatsApp",
-  "store_label_whatsapp_en": "WhatsApp"
+  "store_label_whatsapp_en": "WhatsApp",
+  "store_label_instagram": "Instagram",
+  "store_label_instagram_ru": "Instagram",
+  "store_label_instagram_en": "Instagram"
 }

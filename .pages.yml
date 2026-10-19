@@ -101,6 +101,9 @@ content:
       - { name: store_label_whatsapp, label: "Do‘kon: WhatsApp", type: string }
       - { name: store_label_whatsapp_ru, label: "Do‘kon: WhatsApp (RU)", type: string }
       - { name: store_label_whatsapp_en, label: "Do‘kon: WhatsApp (EN)", type: string }
+      - { name: store_label_instagram, label: "Do‘kon: Instagram", type: string }
+      - { name: store_label_instagram_ru, label: "Do‘kon: Instagram (RU)", type: string }
+      - { name: store_label_instagram_en, label: "Do‘kon: Instagram (EN)", type: string }
       - { name: product_label_size, label: "Mahsulot oynasi: «O‘lcham» yozuvi", type: string }
       - { name: product_label_size_ru, label: "Mahsulot oynasi: «O‘lcham» yozuvi (RU)", type: string }
       - { name: product_label_size_en, label: "Mahsulot oynasi: «O‘lcham» yozuvi (EN)", type: string }
