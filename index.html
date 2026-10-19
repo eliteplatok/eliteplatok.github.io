@@ -871,6 +871,17 @@ function render(C) {
 </div></section>
 
 ${products('yangi', C['yangi'], S)}
+
+<section id="aksessuarlar"><div class="wrap acc">
+  <div class="acc-img r"><img src="${img(A.image)}" alt="" loading="lazy"></div>
+  <div class="r">
+    <div class="eyebrow">${txt(A.eyebrow)}</div>
+    <h2>${txt(A.title)}</h2>
+    <p class="lead">${txt(A.text)}</p>
+    <ul>${(A.items || []).map(a => `<li><b>${txt(a.name)}</b><small>${txt(a.note)}</small></li>`).join('')}</ul>
+    <a href="${esc(S.telegram)}" ${ext} class="btn">${txt(A.button)}</a>
+  </div>
+</div></section>
 ${(() => { const Y = C['yetkazish']; return Y && Y.title ? `<section id="yetkazish" class="alt"><div class="wrap">
   ${head(Y)}
   <div class="steps">${(Y.steps || []).map(x => `<div class="step r"><b>${txt(x.number)}</b><h3>${txt(x.title)}</h3><p>${txt(x.text)}</p></div>`).join('')}</div>
@@ -906,17 +917,6 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
     <a href="#yangi" class="btn">${txt(O.button)}</a>
   </div>
 </section>` : ''}
-
-<section id="aksessuarlar"><div class="wrap acc">
-  <div class="acc-img r"><img src="${img(A.image)}" alt="" loading="lazy"></div>
-  <div class="r">
-    <div class="eyebrow">${txt(A.eyebrow)}</div>
-    <h2>${txt(A.title)}</h2>
-    <p class="lead">${txt(A.text)}</p>
-    <ul>${(A.items || []).map(a => `<li><b>${txt(a.name)}</b><small>${txt(a.note)}</small></li>`).join('')}</ul>
-    <a href="${esc(S.telegram)}" ${ext} class="btn">${txt(A.button)}</a>
-  </div>
-</div></section>
 
 <section id="dokon"><div class="wrap store">
   <div class="store-img r"><img src="${img(D.image)}" alt="" loading="lazy"></div>
