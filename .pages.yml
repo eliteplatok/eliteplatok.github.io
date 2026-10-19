@@ -144,6 +144,9 @@ content:
       - { name: search_filters, label: "Qidiruv: filtr nomlari (tartib: yangi, bestseller, bir rangli, printli, bandanka, shoyi, tvil, chegirma, aksiya)", type: string }
       - { name: search_filters_ru, label: "Qidiruv: filtr nomlari (RU)", type: string }
       - { name: search_filters_en, label: "Qidiruv: filtr nomlari (EN)", type: string }
+      - { name: fabric_message, label: "Matolar: Telegramga tayyor xabar ({mato} o‘rniga mato nomi qo‘yiladi)", type: text }
+      - { name: fabric_message_ru, label: "Matolar: Telegramga tayyor xabar (RU)", type: text }
+      - { name: fabric_message_en, label: "Matolar: Telegramga tayyor xabar (EN)", type: text }
       - { name: promo3_label, label: "Aksiya: savatda chiqadigan yozuv", type: string }
       - { name: promo3_label_ru, label: "Aksiya: savatda chiqadigan yozuv (RU)", type: string }
       - { name: promo3_label_en, label: "Aksiya: savatda chiqadigan yozuv (EN)", type: string }

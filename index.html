@@ -873,7 +873,7 @@ ${products('', C['top'], S, true)}
 
 <section id="matolar"><div class="wrap">
   ${head(F)}
-  <div class="fab r">${(F.items || []).map(m => `<a href="${esc(S.telegram)}" ${ext}><h3>${txt(m.name)}</h3><p>${txt(m.description)}</p><span>${txt(F.link_label)}</span></a>`).join('')}</div>
+  <div class="fab r">${(F.items || []).map(m => `<a href="${esc(S.telegram + (S.fabric_message ? (S.telegram.includes('?') ? '&' : '?') + 'text=' + encodeURIComponent(S.fabric_message.replace('{mato}', m.name)) : ''))}" ${ext}><h3>${txt(m.name)}</h3><p>${txt(m.description)}</p><span>${txt(F.link_label)}</span></a>`).join('')}</div>
 </div></section>
 
 <section class="alt"><div class="wrap">
