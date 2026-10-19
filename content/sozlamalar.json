@@ -217,5 +217,8 @@
   "store_label_phone_en": "Phone",
   "store_label_email": "E-pochta",
   "store_label_email_ru": "Эл. почта",
-  "store_label_email_en": "Email"
+  "store_label_email_en": "Email",
+  "store_label_telegram": "Telegram",
+  "store_label_telegram_ru": "Telegram",
+  "store_label_telegram_en": "Telegram"
 }

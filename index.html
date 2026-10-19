@@ -457,6 +457,7 @@ const img = p => esc(String(p || '').replace(/^\/+/, ''));
 const ext = 'target="_blank" rel="noopener"';
 const smP = p => { const s = String(p || '').replace(/^\/+/, ''); return s.startsWith('images/') && !s.startsWith('images/sm/') ? 'images/sm/' + s.slice(7) : s; };
 const smImg = (p, extra = '') => `src="${esc(smP(p))}" onerror="this.onerror=null;this.src='${img(p)}'" ${extra}`;
+const tgUser = u => { const m = String(u || '').match(/t\.me\/([A-Za-z0-9_]{3,})/); return m ? '@' + m[1] : ''; };
 const tel = p => 'tel:' + String(p || '').replace(/[^\d+]/g, '');
 
 function head(d, link, center) {
@@ -921,6 +922,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
       <div><dt>${txt(S.store_label_address)}</dt><dd>${txt(D.address)}</dd></div>
       ${D.landmark ? `<div><dt>${txt(S.store_label_landmark)}</dt><dd>${txt(D.landmark)}</dd></div>` : ''}
       <div><dt>${txt(S.store_label_phone)}</dt><dd><a href="${tel(S.phone)}">${txt(S.phone)}</a></dd></div>
+      ${tgUser(S.telegram) ? `<div><dt>${txt(S.store_label_telegram)}</dt><dd><a href="${esc(S.telegram)}" ${ext}>${txt(tgUser(S.telegram))}</a></dd></div>` : ''}
       ${S.email ? `<div><dt>${txt(S.store_label_email)}</dt><dd><a href="mailto:${esc(S.email)}">${txt(S.email)}</a></dd></div>` : ''}
     </dl>
     <div class="btns">
@@ -937,7 +939,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
   <p class="tag">${txt(S.footer_tagline)}</p>
   <div class="social">
     ${S.instagram ? `<a href="${esc(S.instagram)}" ${ext}>Instagram</a>` : ''}
-    ${S.telegram ? `<a href="${esc(S.telegram)}" ${ext}>Telegram</a>` : ''}
+    ${S.telegram ? `<a href="${esc(S.telegram)}" ${ext}>Telegram ${txt(tgUser(S.telegram))}</a>` : ''}
     ${S.whatsapp ? `<a href="${esc(S.whatsapp)}" ${ext}>WhatsApp</a>` : ''}
     ${S.email ? `<a href="mailto:${esc(S.email)}">${txt(S.email)}</a>` : ''}
   </div>

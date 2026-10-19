@@ -94,6 +94,9 @@ content:
       - { name: store_label_email, label: "Do‘kon: E-pochta", type: string }
       - { name: store_label_email_ru, label: "Do‘kon: E-pochta (RU)", type: string }
       - { name: store_label_email_en, label: "Do‘kon: E-pochta (EN)", type: string }
+      - { name: store_label_telegram, label: "Do‘kon: Telegram", type: string }
+      - { name: store_label_telegram_ru, label: "Do‘kon: Telegram (RU)", type: string }
+      - { name: store_label_telegram_en, label: "Do‘kon: Telegram (EN)", type: string }
       - { name: product_label_size, label: "Mahsulot oynasi: «O‘lcham» yozuvi", type: string }
       - { name: product_label_size_ru, label: "Mahsulot oynasi: «O‘lcham» yozuvi (RU)", type: string }
       - { name: product_label_size_en, label: "Mahsulot oynasi: «O‘lcham» yozuvi (EN)", type: string }
