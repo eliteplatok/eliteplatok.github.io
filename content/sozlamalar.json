@@ -38,6 +38,7 @@
   "email": "eliteplatok@gmail.com",
   "instagram": "https://www.instagram.com/eliteplatok/",
   "whatsapp": "https://wa.me/998999811353",
+  "whatsapp_user": "@eliteplatok",
   "footer_tagline": "Hijobga mehr uyg‘otadigan ro‘mollar.",
   "footer_tagline_ru": "Платки, пробуждающие любовь к хиджабу.",
   "footer_tagline_en": "Scarves that inspire love for hijab.",
@@ -220,5 +221,8 @@
   "store_label_email_en": "Email",
   "store_label_telegram": "Telegram",
   "store_label_telegram_ru": "Telegram",
-  "store_label_telegram_en": "Telegram"
+  "store_label_telegram_en": "Telegram",
+  "store_label_whatsapp": "WhatsApp",
+  "store_label_whatsapp_ru": "WhatsApp",
+  "store_label_whatsapp_en": "WhatsApp"
 }

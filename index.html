@@ -923,6 +923,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
       ${D.landmark ? `<div><dt>${txt(S.store_label_landmark)}</dt><dd>${txt(D.landmark)}</dd></div>` : ''}
       <div><dt>${txt(S.store_label_phone)}</dt><dd><a href="${tel(S.phone)}">${txt(S.phone)}</a></dd></div>
       ${tgUser(S.telegram) ? `<div><dt>${txt(S.store_label_telegram)}</dt><dd><a href="${esc(S.telegram)}" ${ext}>${txt(tgUser(S.telegram))}</a></dd></div>` : ''}
+      ${S.whatsapp ? `<div><dt>${txt(S.store_label_whatsapp)}</dt><dd><a href="${esc(S.whatsapp)}" ${ext}>${txt(S.whatsapp_user || 'WhatsApp')}</a></dd></div>` : ''}
       ${S.email ? `<div><dt>${txt(S.store_label_email)}</dt><dd><a href="mailto:${esc(S.email)}">${txt(S.email)}</a></dd></div>` : ''}
     </dl>
     <div class="btns">
@@ -940,7 +941,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
   <div class="social">
     ${S.instagram ? `<a href="${esc(S.instagram)}" ${ext}>Instagram</a>` : ''}
     ${S.telegram ? `<a href="${esc(S.telegram)}" ${ext}>Telegram ${txt(tgUser(S.telegram))}</a>` : ''}
-    ${S.whatsapp ? `<a href="${esc(S.whatsapp)}" ${ext}>WhatsApp</a>` : ''}
+    ${S.whatsapp ? `<a href="${esc(S.whatsapp)}" ${ext}>WhatsApp ${txt(S.whatsapp_user || '')}</a>` : ''}
     ${S.email ? `<a href="mailto:${esc(S.email)}">${txt(S.email)}</a>` : ''}
   </div>
   <div class="copy">${txt(S.footer_copy)}</div>

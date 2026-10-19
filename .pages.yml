@@ -19,6 +19,7 @@ content:
       - { name: email, label: "Elektron pochta", type: string }
       - { name: instagram, label: "Instagram havolasi", type: string }
       - { name: whatsapp, label: "WhatsApp havolasi (https://wa.me/998...)", type: string }
+      - { name: whatsapp_user, label: "WhatsApp foydalanuvchi nomi (saytda ko‘rinadi, masalan @eliteplatok)", type: string }
       - { name: order_button, label: "Yuqoridagi «Buyurtma» tugmasi", type: string }
       - { name: order_button_ru, label: "Yuqoridagi «Buyurtma» tugmasi (RU)", type: string }
       - { name: order_button_en, label: "Yuqoridagi «Buyurtma» tugmasi (EN)", type: string }
@@ -97,6 +98,9 @@ content:
       - { name: store_label_telegram, label: "Do‘kon: Telegram", type: string }
       - { name: store_label_telegram_ru, label: "Do‘kon: Telegram (RU)", type: string }
       - { name: store_label_telegram_en, label: "Do‘kon: Telegram (EN)", type: string }
+      - { name: store_label_whatsapp, label: "Do‘kon: WhatsApp", type: string }
+      - { name: store_label_whatsapp_ru, label: "Do‘kon: WhatsApp (RU)", type: string }
+      - { name: store_label_whatsapp_en, label: "Do‘kon: WhatsApp (EN)", type: string }
       - { name: product_label_size, label: "Mahsulot oynasi: «O‘lcham» yozuvi", type: string }
       - { name: product_label_size_ru, label: "Mahsulot oynasi: «O‘lcham» yozuvi (RU)", type: string }
       - { name: product_label_size_en, label: "Mahsulot oynasi: «O‘lcham» yozuvi (EN)", type: string }
