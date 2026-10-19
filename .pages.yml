@@ -259,6 +259,7 @@ content:
       - { name: button_ru, label: "Tugma matni (RU)", type: string }
       - { name: button_en, label: "Tugma matni (EN)", type: string }
       - { name: image_wide, label: "Keng asosiy rasm (to‘ldirilsa, uchta rasm o‘rniga butun ekranga shu chiqadi)", type: image }
+      - { name: image_wide_mobile, label: "Keng asosiy rasm — telefon uchun yengil nusxa (ixtiyoriy)", type: image }
       - { name: image_left, label: "Chap rasm", type: image }
       - { name: image_center, label: "Markaziy rasm (telefonda faqat shu ko‘rinadi)", type: image }
       - { name: image_right, label: "O‘ng rasm", type: image }
