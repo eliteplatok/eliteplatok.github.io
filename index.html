@@ -921,6 +921,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
       <div><dt>${txt(S.store_label_address)}</dt><dd>${txt(D.address)}</dd></div>
       ${D.landmark ? `<div><dt>${txt(S.store_label_landmark)}</dt><dd>${txt(D.landmark)}</dd></div>` : ''}
       <div><dt>${txt(S.store_label_phone)}</dt><dd><a href="${tel(S.phone)}">${txt(S.phone)}</a></dd></div>
+      ${S.email ? `<div><dt>${txt(S.store_label_email)}</dt><dd><a href="mailto:${esc(S.email)}">${txt(S.email)}</a></dd></div>` : ''}
     </dl>
     <div class="btns">
       <a href="${esc(D.map_link)}" ${ext} class="btn solid">${txt(D.map_button)}</a>
@@ -938,6 +939,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
     ${S.instagram ? `<a href="${esc(S.instagram)}" ${ext}>Instagram</a>` : ''}
     ${S.telegram ? `<a href="${esc(S.telegram)}" ${ext}>Telegram</a>` : ''}
     ${S.whatsapp ? `<a href="${esc(S.whatsapp)}" ${ext}>WhatsApp</a>` : ''}
+    ${S.email ? `<a href="mailto:${esc(S.email)}">${txt(S.email)}</a>` : ''}
   </div>
   <div class="copy">${txt(S.footer_copy)}</div>
 </div></footer>
