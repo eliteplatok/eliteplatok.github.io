@@ -116,6 +116,7 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
+            "images/pushti-5-2.jpg",
             "images/pushti-5-1.jpg"
           ],
           "swatch": "images/pushti-5-1.jpg"
@@ -141,7 +142,6 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-7-2.jpg",
             "images/pushti-7-1.jpg"
           ],
           "swatch": "images/pushti-7-1.jpg"
