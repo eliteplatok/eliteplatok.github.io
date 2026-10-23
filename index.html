@@ -68,6 +68,24 @@
   .hero .btn{border-color:#fff;color:#fff;margin:4px}
   .hero .btn:hover,.hero .btn.solid{background:#fff;color:var(--ink)}
   .hero .btn.solid:hover{background:transparent;color:#fff}
+  /* ivory hero: warm ivory veil + slow light sweep */
+  .hero.wide{background:#f8f2e7}
+  .hero.wide img{filter:saturate(.9) brightness(1.04)}
+  .hero.wide::after{background:linear-gradient(to top,rgba(248,242,231,.98) 0%,rgba(248,242,231,.93) 34%,rgba(248,242,231,.7) 50%,rgba(248,242,231,.22) 72%,rgba(248,242,231,.08) 100%)}
+  .hero.wide::before{content:"";position:absolute;top:0;bottom:0;left:-60%;width:45%;z-index:1;pointer-events:none;background:linear-gradient(105deg,rgba(255,250,240,0) 0%,rgba(255,250,240,.38) 45%,rgba(255,255,255,.6) 50%,rgba(255,250,240,.38) 55%,rgba(255,250,240,0) 100%);mix-blend-mode:soft-light;animation:heroShine 7s ease-in-out 1s infinite}
+  @keyframes heroShine{0%{transform:translateX(0) skewX(-12deg)}55%,100%{transform:translateX(420%) skewX(-12deg)}}
+  .hero.wide .hero-txt{color:var(--ink)}
+  .hero.wide .hero-txt .eyebrow{color:var(--accent)}
+  .hero.wide h1{text-shadow:none;font-weight:500}
+  .hero.wide p{text-shadow:none}
+  .hero.wide h1 .shine{background:linear-gradient(100deg,#2b2622 0%,#2b2622 42%,#a07a4e 50%,#2b2622 58%,#2b2622 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:textShine 6s ease-in-out 1.5s infinite}
+  @keyframes textShine{0%{background-position:100% 0}60%,100%{background-position:0 0}}
+  .hero.wide .btn{border-color:var(--ink);color:var(--ink)}
+  .hero.wide .btn.solid{background:var(--ink);color:#f8f2e7}
+  .hero.wide .btn.solid:hover{background:transparent;color:var(--ink)}
+  .hero.wide .hero-txt .btn.solid::after{border-color:var(--ink)}
+  .hero.wide .srch-btn{border-color:var(--ink);color:var(--ink);background:rgba(248,242,231,.6)}
+  @media (prefers-reduced-motion:reduce){.hero.wide::before,.hero.wide h1 .shine{animation:none}}
 
   /* products */
   .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 24px}
@@ -861,7 +879,7 @@ function render(C) {
   <img src="${img(H.image_right)}" alt="">`}
   <div class="hero-txt r">
     <div class="eyebrow">${txt(H.eyebrow)}</div>
-    <h1>${txt(H.title)}</h1>
+    <h1><span class="shine">${txt(H.title)}</span></h1>
     ${H.subtitle ? `<p>${txt(H.subtitle)}</p>` : ''}
     <div class="hero-act"><a href="#yangi" class="btn solid">${txt(H.button)}</a><button class="srch-btn" data-search aria-label="${esc(S.search_title)}" title="${esc(S.search_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></button></div>
   </div>
