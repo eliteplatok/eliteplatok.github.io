@@ -361,6 +361,7 @@ img.so{filter:grayscale(.55) opacity(.5)}
 #biz .opt-b{margin-bottom:10px}
 #biz .opt-btn{padding:16px 28px}
 .opt-s{display:none}
+.opt{position:relative;overflow:hidden}.opt>:not(.stars-l){position:relative;z-index:1}
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
   .step{background:var(--bg);padding:28px 24px 26px;position:relative}
   .step b{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--bg);font-family:var(--serif);font-weight:400;font-size:18px;margin-bottom:18px}
@@ -490,12 +491,12 @@ const tgUser = u => { const m = String(u || '').match(/t\.me\/([A-Za-z0-9_]{3,})
 const igUser = u => { const m = String(u || '').match(/instagram\.com\/([A-Za-z0-9_.]+)/); return m ? '@' + m[1] : ''; };
 const tel = p => 'tel:' + String(p || '').replace(/[^\d+]/g, '');
 
-function starField() {
-  let seed = 7; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+function starField(n = 110, seed = 7) {
+  const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
   let h = '';
-  for (let k = 0; k < 110; k++) {
+  for (let k = 0; k < n; k++) {
     const sz = (2 + r() * 4).toFixed(1), x = (r() * 100).toFixed(2), y = (r() * 100).toFixed(2);
-    h += `<i class="${r() < .35 ? 'w' : ''}${k >= 60 ? ' x' : ''}" style="left:${x}%;top:${y}%;width:${sz}px;height:${sz}px;--d:${(2.2 + r() * 3.5).toFixed(2)}s;--w:${(-r() * 5).toFixed(2)}s"></i>`;
+    h += `<i class="${r() < .35 ? 'w' : ''}${k >= n * .55 ? ' x' : ''}" style="left:${x}%;top:${y}%;width:${sz}px;height:${sz}px;--d:${(2.2 + r() * 3.5).toFixed(2)}s;--w:${(-r() * 5).toFixed(2)}s"></i>`;
   }
   return `<div class="stars-l" aria-hidden="true">${h}</div>`;
 }
@@ -900,7 +901,7 @@ function render(C) {
 <section id="biz" class="alt"><div class="wrap">
   ${head(W)}
   ${(W.mission || []).length ? `<ul class="mis">${W.mission.map(m => `<li class="r">${m.title ? `<b>${txt(m.title)}</b> ` : ''}${txt(m.text)}</li>`).join('')}</ul>` : ''}
-  ${W.wholesale_title ? `<div class="opt r">
+  ${W.wholesale_title ? `<div class="opt r">${starField(46, 13)}
     <div>${W.wholesale_badge ? `<span class="opt-b">${txt(W.wholesale_badge)}</span>` : ''}<h3>${txt(W.wholesale_title)}</h3><p class="opt-l">${txt(W.wholesale_text)}</p>${W.wholesale_text_short ? `<p class="opt-s">${txt(W.wholesale_text_short)}</p>` : ''}</div>
     <a class="opt-btn" href="${esc(S.telegram)}${S.telegram.includes('?') ? '&' : '?'}text=${encodeURIComponent(W.wholesale_message || 'OPTOM')}" ${ext}>${txt(W.wholesale_button)} <span>→</span></a>
   </div>` : ''}
