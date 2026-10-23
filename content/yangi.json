@@ -65,6 +65,7 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
+            "images/pushti-1-2.jpg",
             "images/pushti-1-1.jpg"
           ],
           "swatch": "images/pushti-1-1.jpg"
