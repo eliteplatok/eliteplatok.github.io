@@ -734,7 +734,7 @@
             "images/atlas-4.jpg",
             "images/atlas-mato-3.jpg"
           ],
-          "sold_out": true,
+          "sold_out": false,
           "card_hide": false
         },
         {
@@ -988,7 +988,7 @@
       "badge_en": "Offers",
       "is_new": false,
       "sold_out": false,
-      "sold_photos": "18",
+      "sold_photos": "",
       "tags": "printli",
       "promo_group": "tvil"
     },
