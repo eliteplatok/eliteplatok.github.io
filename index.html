@@ -69,23 +69,23 @@
   .hero .btn:hover,.hero .btn.solid{background:#fff;color:var(--ink)}
   .hero .btn.solid:hover{background:transparent;color:#fff}
   /* plain ivory hero with tiny twinkling stars */
-  .hero.stars{display:flex;align-items:center;justify-content:center;height:auto;min-height:clamp(420px,72vh,740px);background:radial-gradient(ellipse at 50% 42%,#fffcf6 0%,#f8f2e7 58%,#f2e9db 100%)}
+  .hero.stars{display:flex;align-items:center;justify-content:center;height:auto;min-height:clamp(420px,72vh,740px);background:radial-gradient(ellipse at 50% 40%,#5a3a2a 0%,#3f271c 52%,#2a1912 100%)}
   .hero.stars::after{display:none}
   .stars-l{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-  .stars-l i{position:absolute;display:block;background:#c4a06c;clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);opacity:.15;animation:twinkle var(--d,3s) ease-in-out var(--w,0s) infinite}
-  .stars-l i.w{background:#fff;filter:drop-shadow(0 0 2px rgba(214,180,120,.9))}
+  .stars-l i{position:absolute;display:block;background:#e9c98f;filter:drop-shadow(0 0 2px rgba(240,205,140,.85));clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);opacity:.3;animation:twinkle var(--d,3s) ease-in-out var(--w,0s) infinite}
+  .stars-l i.w{background:#fffaf0;filter:drop-shadow(0 0 3px rgba(255,240,210,.95))}
   @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.55) rotate(0)}50%{opacity:1;transform:scale(1) rotate(20deg)}}
-  .hero.stars .hero-txt{position:relative;bottom:auto;padding:64px 16px;color:var(--ink)}
-  .hero.stars .hero-txt .eyebrow{color:var(--accent)}
+  .hero.stars .hero-txt{position:relative;bottom:auto;padding:64px 16px;color:#f8f2e7}
+  .hero.stars .hero-txt .eyebrow{color:#d9b98a}
   .hero.stars h1{text-shadow:none;font-weight:500}
   .hero.stars p{text-shadow:none}
-  .hero.stars h1 .shine{background:linear-gradient(100deg,#2b2622 0%,#2b2622 42%,#a07a4e 50%,#2b2622 58%,#2b2622 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:textShine 6s ease-in-out 1.5s infinite}
+  .hero.stars h1 .shine{background:linear-gradient(100deg,#f8f2e7 0%,#f8f2e7 42%,#e6c27e 50%,#f8f2e7 58%,#f8f2e7 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:textShine 6s ease-in-out 1.5s infinite}
   @keyframes textShine{0%{background-position:100% 0}60%,100%{background-position:0 0}}
-  .hero.stars .btn{border-color:var(--ink);color:var(--ink)}
-  .hero.stars .btn.solid{background:var(--ink);color:#f8f2e7}
-  .hero.stars .btn.solid:hover{background:transparent;color:var(--ink)}
-  .hero.stars .hero-txt .btn.solid::after{border-color:var(--ink)}
-  .hero.stars .srch-btn{border-color:var(--ink);color:var(--ink);background:rgba(255,255,255,.5)}
+  .hero.stars .btn{border-color:#f8f2e7;color:#f8f2e7}
+  .hero.stars .btn.solid{background:#f8f2e7;color:#3f271c}
+  .hero.stars .btn.solid:hover{background:transparent;color:#f8f2e7}
+  .hero.stars .hero-txt .btn.solid::after{border-color:#f8f2e7}
+  .hero.stars .srch-btn{border-color:#f8f2e7;color:#f8f2e7;background:rgba(255,255,255,.08)}
   @media (max-width:760px){.stars-l i.x{display:none}.hero.stars{min-height:0;aspect-ratio:auto;height:auto;max-height:none}.hero.stars .hero-txt{padding:72px 16px 64px}}
   @media (prefers-reduced-motion:reduce){.stars-l i,.hero.stars h1 .shine{animation:none}.stars-l i{opacity:.6}}
 
