@@ -308,6 +308,7 @@ content:
               - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
               - { name: sold_out, label: "Tugagan (sotildi) — rasmda «Sotildi» yozuvi chiqadi", type: boolean }
               - { name: card_hide, label: "Kartochka karuselida ko‘rsatilmasin (faqat tovar ochilganda)", type: boolean }
+              - { name: swatch, label: "Yumaloq belgi uchun rasm (bo‘sh bo‘lsa — birinchi rasm)", type: image }
               - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
           - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
           - { name: size_ru, label: "O‘lchami (RU)", type: string }
@@ -393,6 +394,7 @@ content:
               - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
               - { name: sold_out, label: "Tugagan (sotildi) — rasmda «Sotildi» yozuvi chiqadi", type: boolean }
               - { name: card_hide, label: "Kartochka karuselida ko‘rsatilmasin (faqat tovar ochilganda)", type: boolean }
+              - { name: swatch, label: "Yumaloq belgi uchun rasm (bo‘sh bo‘lsa — birinchi rasm)", type: image }
               - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
           - { name: size, label: "O‘lchami (masalan 110 × 110 sm)", type: string }
           - { name: size_ru, label: "O‘lchami (RU)", type: string }

@@ -487,7 +487,7 @@ const dots = n => n > 8 ? `<div class="count">1 / ${n}</div>`
 let USD = 0; // so‘m per 1 $ (Central Bank rate, refreshed daily)
 const usdSum = p => +p.price_usd > 0 && USD ? Math.round(+p.price_usd * USD / 1000) * 1000 : 0;
 const soldPhotos = p => new Set(String(p.sold_photos || '').split(/[^0-9]+/).filter(Boolean).map(Number)); // 1-based photo numbers
-const swBg = v => v.hex ? esc(v.hex) : `url(&quot;${esc(smP(v.ims[0]))}&quot;) center/260% #ddd`;
+const swBg = v => v.hex ? esc(v.hex) : `url(&quot;${esc(smP(v.swatch || v.ims[0]))}&quot;) center/260% #ddd`;
 const priceNum = p => usdSum(p) || +p.price_number || 0;
 const convHtml = p => usdSum(p) ? `<div class="pconv">≈ ${fmt(usdSum(p))} ${txt(S_.currency)}</div>` : '';
 const priceText = (p, S) => (p.price || S.price_on_request) + (usdSum(p) ? ` (≈ ${fmt(usdSum(p))} ${S.currency})` : '');

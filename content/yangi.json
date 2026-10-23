@@ -19,7 +19,7 @@
       "images": [
 
       ],
-      "cover": "",
+      "cover": "images/pushti-9-2.jpg",
       "size": "90 × 90 sm",
       "size_ru": "90 × 90 см",
       "size_en": "90 × 90 cm",
@@ -66,7 +66,8 @@
           "card_hide": false,
           "images": [
             "images/pushti-1-1.jpg"
-          ]
+          ],
+          "swatch": "images/pushti-1-1.jpg"
         },
         {
           "name": "№2",
@@ -76,9 +77,10 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-2-1.jpg",
-            "images/pushti-2-2.jpg"
-          ]
+            "images/pushti-2-2.jpg",
+            "images/pushti-2-1.jpg"
+          ],
+          "swatch": "images/pushti-2-1.jpg"
         },
         {
           "name": "№3",
@@ -88,9 +90,10 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-3-1.jpg",
-            "images/pushti-3-2.jpg"
-          ]
+            "images/pushti-3-2.jpg",
+            "images/pushti-3-1.jpg"
+          ],
+          "swatch": "images/pushti-3-1.jpg"
         },
         {
           "name": "№4",
@@ -100,9 +103,10 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-4-1.jpg",
-            "images/pushti-4-2.jpg"
-          ]
+            "images/pushti-4-2.jpg",
+            "images/pushti-4-1.jpg"
+          ],
+          "swatch": "images/pushti-4-1.jpg"
         },
         {
           "name": "№5",
@@ -113,7 +117,8 @@
           "card_hide": false,
           "images": [
             "images/pushti-5-1.jpg"
-          ]
+          ],
+          "swatch": "images/pushti-5-1.jpg"
         },
         {
           "name": "№6",
@@ -123,9 +128,10 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-6-1.jpg",
-            "images/pushti-6-2.jpg"
-          ]
+            "images/pushti-6-2.jpg",
+            "images/pushti-6-1.jpg"
+          ],
+          "swatch": "images/pushti-6-1.jpg"
         },
         {
           "name": "№7",
@@ -135,9 +141,10 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-7-1.jpg",
-            "images/pushti-7-2.jpg"
-          ]
+            "images/pushti-7-2.jpg",
+            "images/pushti-7-1.jpg"
+          ],
+          "swatch": "images/pushti-7-1.jpg"
         },
         {
           "name": "№8",
@@ -147,10 +154,11 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-8-1.jpg",
             "images/pushti-8-2.jpg",
-            "images/pushti-8-3.jpg"
-          ]
+            "images/pushti-8-3.jpg",
+            "images/pushti-8-1.jpg"
+          ],
+          "swatch": "images/pushti-8-1.jpg"
         },
         {
           "name": "№9",
@@ -160,9 +168,10 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-9-1.jpg",
-            "images/pushti-9-2.jpg"
-          ]
+            "images/pushti-9-2.jpg",
+            "images/pushti-9-1.jpg"
+          ],
+          "swatch": "images/pushti-9-1.jpg"
         },
         {
           "name": "№10",
@@ -172,10 +181,11 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-10-1.jpg",
             "images/pushti-10-2.jpg",
-            "images/pushti-10-3.jpg"
-          ]
+            "images/pushti-10-3.jpg",
+            "images/pushti-10-1.jpg"
+          ],
+          "swatch": "images/pushti-10-1.jpg"
         },
         {
           "name": "№11",
@@ -185,9 +195,10 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-11-1.jpg",
-            "images/pushti-11-2.jpg"
-          ]
+            "images/pushti-11-2.jpg",
+            "images/pushti-11-1.jpg"
+          ],
+          "swatch": "images/pushti-11-1.jpg"
         }
       ],
       "price_ru": "155 000 сум",
@@ -895,15 +906,21 @@
       "images": [
         "images/qora-toplam-1.jpg",
         "images/qora-toplam-2.jpg",
+        "images/tvil-yoyma-6.jpg",
         "images/qora-toplam-3.jpg",
+        "images/tvil-yoyma-4.jpg",
         "images/qora-toplam-4.jpg",
+        "images/tvil-yoyma-7.jpg",
         "images/qora-toplam-5.jpg",
+        "images/tvil-yoyma-2.jpg",
         "images/qora-toplam-6.jpg",
+        "images/tvil-yoyma-5.jpg",
         "images/qora-toplam-7.jpg",
         "images/qora-toplam-8.jpg",
         "images/qora-toplam-9.jpg",
         "images/qora-toplam-10.jpg",
         "images/qora-toplam-11.jpg",
+        "images/tvil-yoyma-16.jpg",
         "images/qora-toplam-12.jpg",
         "images/manzara-toplam-1.jpg",
         "images/manzara-toplam-2.jpg",
@@ -913,14 +930,27 @@
         "images/manzara-toplam-6.jpg",
         "images/manzara-toplam-7.jpg",
         "images/pastel-toplam-1.jpg",
+        "images/tvil-yoyma-18.jpg",
         "images/pastel-toplam-2.jpg",
         "images/pastel-toplam-3.jpg",
         "images/gulli-shoyi-1.jpg",
         "images/tvil-qoshimcha-1.jpg",
+        "images/tvil-yoyma-1.jpg",
         "images/tvil-qoshimcha-2.jpg",
+        "images/tvil-yoyma-14.jpg",
         "images/tvil-qoshimcha-3.jpg",
+        "images/tvil-yoyma-10.jpg",
         "images/tvil-qoshimcha-4.jpg",
-        "images/tvil-qoshimcha-5.jpg"
+        "images/tvil-qoshimcha-5.jpg",
+        "images/tvil-yoyma-9.jpg",
+        "images/tvil-yoyma-3.jpg",
+        "images/tvil-yoyma-8.jpg",
+        "images/tvil-yoyma-11.jpg",
+        "images/tvil-yoyma-12.jpg",
+        "images/tvil-yoyma-13.jpg",
+        "images/tvil-yoyma-15.jpg",
+        "images/tvil-yoyma-17.jpg",
+        "images/tvil-yoyma-19.jpg"
       ],
       "cover": "",
       "size": "90 × 90 sm",
@@ -932,9 +962,9 @@
       "color": "Oq-qora naqshlar, kulrang va to‘q ko‘k monogramma naqshlar, manzarali printlar (zaytun, havorang, bej, terrakota), pastel pushti va bej, yorqin gulli",
       "color_ru": "Чёрно-белые узоры, серые и тёмно-синие монограммные узоры, пейзажные принты (оливковый, голубой, бежевый, терракотовый), пастельные розовые и бежевые, яркие цветочные",
       "color_en": "Black-and-white patterns, grey and navy monogram patterns, landscape prints (olive, sky blue, beige, terracotta), pastel pink and beige, bright florals",
-      "description": "20 dan ortiq naqsh — klassik oq-qoradan nafis manzaralar va pastel ranglargacha.",
-      "description_ru": "Более 20 узоров — от классического чёрно-белого до изящных пейзажей и пастельных тонов.",
-      "description_en": "Over 20 patterns — from classic black-and-white to elegant landscapes and pastel tones.",
+      "description": "35 dan ortiq naqsh — klassik oq-qoradan nafis manzaralar va pastel ranglargacha.",
+      "description_ru": "Более 35 узоров — от классического чёрно-белого до изящных пейзажей и пастельных тонов.",
+      "description_en": "Over 35 patterns — from classic black-and-white to elegant landscapes and pastel tones.",
       "details": "Italyan tvil shoyisidan tayyorlangan ro‘mollar: yuzasi silliq, yengil jilo beradi, boshda sirpanmaydi va shaklini yaxshi ushlaydi.\n\nTanlov keng: oq-qora geometrik, nuqtali, gulli va barokko naqshlar; daraxt va qushlar tasvirlangan nafis manzara printlari keng chiziqli hoshiya bilan; yumshoq pastel pushti va bej ornamentlar; to‘q yashil fondagi yorqin lolalar.\n\nKundalik kiyim, ish va mehmondorchilik uchun birdek mos. Bir nechta naqshni olib, liboslaringizga qarab almashtirib yurish qulay — buning uchun maxsus taklif ham bor.",
       "details_ru": "Платки из итальянского твил шёлка: гладкая поверхность с лёгким блеском, не соскальзывают и хорошо держат форму.\n\nШирокий выбор: чёрно-белые геометрические, в горошек, цветочные и барочные узоры; изящные пейзажные принты с деревьями и птицами в широкой полосатой кайме; нежные пастельные розовые и бежевые орнаменты; яркие тюльпаны на тёмно-зелёном фоне.\n\nПодходят для повседневной носки, работы и походов в гости. Удобно взять несколько узоров и менять их под наряды — для этого есть специальное предложение.",
       "details_en": "Scarves made of Italian twill silk: a smooth surface with a light sheen, they don’t slip and hold their shape well.\n\nA wide choice: black-and-white geometric, polka dot, floral and baroque patterns; elegant landscape prints with trees and birds framed by a wide striped border; soft pastel pink and beige ornaments; bright tulips on a dark green background.\n\nSuitable for everyday wear, work and visits. It’s handy to take several patterns and switch them to match your outfits — there’s a special offer for that.",
@@ -958,7 +988,7 @@
       "badge_en": "Offers",
       "is_new": false,
       "sold_out": false,
-      "sold_photos": "12",
+      "sold_photos": "18",
       "tags": "printli",
       "promo_group": "tvil"
     },
