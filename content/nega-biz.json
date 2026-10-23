@@ -1,10 +1,10 @@
 {
-  "eyebrow": "Biz haqimizda",
-  "eyebrow_ru": "О нас",
-  "eyebrow_en": "About us",
-  "title": "ELITE PLATOK — bu:",
-  "title_ru": "ELITE PLATOK — это:",
-  "title_en": "ELITE PLATOK is:",
+  "eyebrow": "",
+  "eyebrow_ru": "",
+  "eyebrow_en": "",
+  "title": "Biz haqimizda",
+  "title_ru": "О нас",
+  "title_en": "About us",
   "mission": [
     {
       "title": "",
@@ -13,6 +13,14 @@
       "text": "Ayollarning sifatli va qulay narxdagi ro‘molga bo‘lgan ehtiyojlariga xizmat qilamiz.",
       "text_ru": "Мы служим потребностям женщин в качественных платках по доступной цене.",
       "text_en": "We serve women’s need for quality, affordable scarves."
+    },
+    {
+      "title": "",
+      "title_ru": "",
+      "title_en": "",
+      "text": "Ro‘mol va sharflar Turkiya, Dubay, Xitoy, Misr, O‘zbekiston va Dog‘istondan keltiriladi.",
+      "text_ru": "Платки и шарфы привозим из Турции, Дубая, Китая, Египта, Узбекистана и Дагестана.",
+      "text_en": "Our scarves and shawls come from Turkey, Dubai, China, Egypt, Uzbekistan and Dagestan."
     },
     {
       "title": "",
