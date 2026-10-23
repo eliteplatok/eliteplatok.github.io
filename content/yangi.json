@@ -65,7 +65,7 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-1.jpg"
+            "images/pushti-1-1.jpg"
           ]
         },
         {
@@ -76,7 +76,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-2.jpg"
+            "images/pushti-2-1.jpg",
+            "images/pushti-2-2.jpg"
           ]
         },
         {
@@ -87,7 +88,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-3.jpg"
+            "images/pushti-3-1.jpg",
+            "images/pushti-3-2.jpg"
           ]
         },
         {
@@ -98,7 +100,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-4.jpg"
+            "images/pushti-4-1.jpg",
+            "images/pushti-4-2.jpg"
           ]
         },
         {
@@ -109,7 +112,7 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-5.jpg"
+            "images/pushti-5-1.jpg"
           ]
         },
         {
@@ -120,7 +123,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-6.jpg"
+            "images/pushti-6-1.jpg",
+            "images/pushti-6-2.jpg"
           ]
         },
         {
@@ -131,7 +135,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-7.jpg"
+            "images/pushti-7-1.jpg",
+            "images/pushti-7-2.jpg"
           ]
         },
         {
@@ -142,7 +147,9 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-8.jpg"
+            "images/pushti-8-1.jpg",
+            "images/pushti-8-2.jpg",
+            "images/pushti-8-3.jpg"
           ]
         },
         {
@@ -153,7 +160,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-9.jpg"
+            "images/pushti-9-1.jpg",
+            "images/pushti-9-2.jpg"
           ]
         },
         {
@@ -164,7 +172,9 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-10.jpg"
+            "images/pushti-10-1.jpg",
+            "images/pushti-10-2.jpg",
+            "images/pushti-10-3.jpg"
           ]
         },
         {
@@ -175,7 +185,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/pushti-toplam-11.jpg"
+            "images/pushti-11-1.jpg",
+            "images/pushti-11-2.jpg"
           ]
         }
       ],
