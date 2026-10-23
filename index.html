@@ -487,6 +487,7 @@ const dots = n => n > 8 ? `<div class="count">1 / ${n}</div>`
 let USD = 0; // so‘m per 1 $ (Central Bank rate, refreshed daily)
 const usdSum = p => +p.price_usd > 0 && USD ? Math.round(+p.price_usd * USD / 1000) * 1000 : 0;
 const soldPhotos = p => new Set(String(p.sold_photos || '').split(/[^0-9]+/).filter(Boolean).map(Number)); // 1-based photo numbers
+const swBg = v => v.hex ? esc(v.hex) : `url(&quot;${esc(smP(v.ims[0]))}&quot;) center/260% #ddd`;
 const priceNum = p => usdSum(p) || +p.price_number || 0;
 const convHtml = p => usdSum(p) ? `<div class="pconv">≈ ${fmt(usdSum(p))} ${txt(S_.currency)}</div>` : '';
 const priceText = (p, S) => (p.price || S.price_on_request) + (usdSum(p) ? ` (≈ ${fmt(usdSum(p))} ${S.currency})` : '');
@@ -502,7 +503,7 @@ function card(p, S) {
   const slides = vars.length ? [...(p.cover ? [{ im: p.cover, v: -1 }] : []), ...vars.map((v, k) => ({ im: v.ims[0], v: k })).filter(x => !vars[x.v].card_hide)] : ims.map(im => ({ im, v: -1 }));
   const cims = slides.map(x => x.im), slideOf = k => slides.findIndex(x => x.v === k), off = 0;
   const sp = soldPhotos(p), soldAt = k => !!(p.sold_out || (vars.length ? slides[k] && slides[k].v >= 0 && vars[slides[k].v].sold_out : sp.has(k + 1)));
-  const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${slideOf(k) === 0 ? 'on' : ''}${v.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" data-s="${slideOf(k)}" style="--c:${esc(v.hex || '#ccc')}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
+  const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${slideOf(k) === 0 ? 'on' : ''}${v.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" data-s="${slideOf(k)}" style="--c:${swBg(v)}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
   return `<div class="card r" data-p="${i}" data-map="${slides.map(x => x.v).join(',')}" role="button" tabindex="0" aria-label="${esc(p.name)}">
     <div class="ph">
       <div class="slides">${cims.map((s, k) => k ? `<img class="${soldAt(k) ? 'so' : ''}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img class="${soldAt(k) ? 'so' : ''}" ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
@@ -555,7 +556,7 @@ function openProduct(i, push = true, vi = 0) {
         ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}
         <h2>${txt(p.name)}</h2>
         ${priceHtml(p)}
-        ${p.vars.length ? `<div class="sw"><div class="sw-h">${txt(S.product_label_color)} —<b>${txt(v.name)}</b></div><div class="sw-g">${p.vars.map((x, k) => `<button class="${k === vi ? 'on' : ''}${x.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" style="--c:${esc(x.hex || '#ccc')}" aria-label="${esc(x.name)}" title="${esc(x.name)}"></button>`).join('')}</div></div>` : ''}
+        ${p.vars.length ? `<div class="sw"><div class="sw-h">${txt(v.hex ? S.product_label_color : (S.product_label_pattern || S.product_label_color))} —<b>${txt(v.name)}</b></div><div class="sw-g">${p.vars.map((x, k) => `<button class="${k === vi ? 'on' : ''}${x.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" style="--c:${swBg(x)}" aria-label="${esc(x.name)}" title="${esc(x.name)}"></button>`).join('')}</div></div>` : ''}
         ${p.description ? `<p class="lead">${txt(p.description)}</p>` : ''}
         <dl class="spec">${row(S.product_label_size, p.size)}${row(S.product_label_material, p.material)}${p.vars.length ? "" : row(S.product_label_color, p.color)}</dl>
         <div class="pm-btns">

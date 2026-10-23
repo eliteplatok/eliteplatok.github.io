@@ -13,6 +13,178 @@
   "link_label_en": "View all",
   "products": [
     {
+      "name": "Pushti Italia ro‘mollar",
+      "name_ru": "Розовые итальянские платки",
+      "name_en": "Pink Italian Scarves",
+      "images": [
+
+      ],
+      "cover": "",
+      "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
+      "material": "Italyan premium tvil",
+      "material_ru": "Итальянский премиум-твил",
+      "material_en": "Italian premium twill",
+      "color": "11 xil naqsh: nozik pushti, och lila va oq tuslarda",
+      "color_ru": "11 узоров в нежно-розовых, светло-лиловых и белых тонах",
+      "color_en": "11 patterns in soft pink, light lilac and white tones",
+      "description": "Italyan premium tvil ro‘mollar — Yevropa dizaynlarining 1:1 nusxasi, 11 xil naqshda.",
+      "description_ru": "Итальянские платки из премиум-твила — копия европейских дизайнов 1:1, 11 узоров.",
+      "description_en": "Italian premium twill scarves — 1:1 copies of European designs, in 11 patterns.",
+      "details": "Pushti Italia ro‘mollar — Italyan premium tvil ro‘mollari, Yevropa dizaynlari bo‘yicha birga-bir ishlangan nusxalar. Mato silliq va zich, yengil jilo beradi, boshda sirpanmaydi va shaklini yaxshi ushlaydi. O‘lchami 90 × 90 sm.\n\nTo‘plamda 11 xil naqsh bor: nozik pushti, och lila va oq tuslardagi klassik panjara, gulli, nuqtali va manzarali printlar. Har bir naqsh rasmini bosib ko‘ring — ro‘mol yoyilgan holda to‘liq ko‘rinadi.\n\nKundalik obraz, ish va mehmondorchilik uchun birdek mos; sovg‘a sifatida ham chiroyli tanlov.",
+      "details_ru": "Розовые итальянские платки из премиум-твила, выполненные 1:1 по европейским дизайнам. Ткань гладкая и плотная, с лёгким блеском, не соскальзывает и хорошо держит форму. Размер 90 × 90 см.\n\nВ коллекции 11 узоров: классическая решётка, цветочные, горошек и пейзажные принты в нежно-розовых, светло-лиловых и белых тонах. Нажмите на любой узор — платок показан полностью в развёрнутом виде.\n\nПодходит для повседневного образа, работы и походов в гости, а также как красивый подарок.",
+      "details_en": "Pink Italian Scarves — premium Italian twill made 1:1 after European designs. The fabric is smooth and dense with a light sheen, doesn’t slip and holds its shape well. Size 90 × 90 cm.\n\nThe collection has 11 patterns: classic lattice, florals, polka dots and landscape prints in soft pink, light lilac and white. Tap any pattern to see the scarf laid out in full.\n\nSuitable for everyday wear, work and visits — and a lovely gift.",
+      "care": "30°C da qo‘lda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Стирать вручную при 30°C или сдавать в химчистку. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C or dry clean. Do not wring, dry in the shade. Iron inside out at low temperature.",
+      "price": "155 000 so‘m",
+      "price_note": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 155000,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1",
+          "name_ru": "№1",
+          "name_en": "No. 1",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-1.jpg"
+          ]
+        },
+        {
+          "name": "№2",
+          "name_ru": "№2",
+          "name_en": "No. 2",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-2.jpg"
+          ]
+        },
+        {
+          "name": "№3",
+          "name_ru": "№3",
+          "name_en": "No. 3",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-3.jpg"
+          ]
+        },
+        {
+          "name": "№4",
+          "name_ru": "№4",
+          "name_en": "No. 4",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-4.jpg"
+          ]
+        },
+        {
+          "name": "№5",
+          "name_ru": "№5",
+          "name_en": "No. 5",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-5.jpg"
+          ]
+        },
+        {
+          "name": "№6",
+          "name_ru": "№6",
+          "name_en": "No. 6",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-6.jpg"
+          ]
+        },
+        {
+          "name": "№7",
+          "name_ru": "№7",
+          "name_en": "No. 7",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-7.jpg"
+          ]
+        },
+        {
+          "name": "№8",
+          "name_ru": "№8",
+          "name_en": "No. 8",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-8.jpg"
+          ]
+        },
+        {
+          "name": "№9",
+          "name_ru": "№9",
+          "name_en": "No. 9",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-9.jpg"
+          ]
+        },
+        {
+          "name": "№10",
+          "name_ru": "№10",
+          "name_en": "No. 10",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-10.jpg"
+          ]
+        },
+        {
+          "name": "№11",
+          "name_ru": "№11",
+          "name_en": "No. 11",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/pushti-toplam-11.jpg"
+          ]
+        }
+      ],
+      "price_ru": "155 000 сум",
+      "price_en": "155,000 UZS",
+      "price_note_ru": "",
+      "price_note_en": ""
+    },
+    {
       "name": "Eksklyuziv ikki tomonlama ro‘mol «Atirgul va yurak»",
       "name_ru": "Эксклюзивный двусторонний платок «Розы и сердце»",
       "name_en": "Exclusive Reversible Scarf “Roses & Heart”",

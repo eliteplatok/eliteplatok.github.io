@@ -113,6 +113,9 @@ content:
       - { name: product_label_color, label: "Mahsulot oynasi: «Rang» yozuvi", type: string }
       - { name: product_label_color_ru, label: "Mahsulot oynasi: «Rang» yozuvi (RU)", type: string }
       - { name: product_label_color_en, label: "Mahsulot oynasi: «Rang» yozuvi (EN)", type: string }
+      - { name: product_label_pattern, label: "Mahsulot oynasi: «Naqsh» (rangi o‘rniga naqsh rasmi bo‘lsa)", type: string }
+      - { name: product_label_pattern_ru, label: "Mahsulot oynasi: «Naqsh» (RU)", type: string }
+      - { name: product_label_pattern_en, label: "Mahsulot oynasi: «Naqsh» (EN)", type: string }
       - { name: product_tab_details, label: "Bo‘lim nomi: Batafsil", type: string }
       - { name: product_tab_details_ru, label: "Bo‘lim nomi: Batafsil (RU)", type: string }
       - { name: product_tab_details_en, label: "Bo‘lim nomi: Batafsil (EN)", type: string }
