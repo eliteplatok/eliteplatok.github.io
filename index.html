@@ -68,24 +68,26 @@
   .hero .btn{border-color:#fff;color:#fff;margin:4px}
   .hero .btn:hover,.hero .btn.solid{background:#fff;color:var(--ink)}
   .hero .btn.solid:hover{background:transparent;color:#fff}
-  /* ivory hero: warm ivory veil + slow light sweep */
-  .hero.wide{background:#f8f2e7}
-  .hero.wide img{filter:saturate(.9) brightness(1.04)}
-  .hero.wide::after{background:linear-gradient(to top,rgba(248,242,231,.98) 0%,rgba(248,242,231,.93) 34%,rgba(248,242,231,.7) 50%,rgba(248,242,231,.22) 72%,rgba(248,242,231,.08) 100%)}
-  .hero.wide::before{content:"";position:absolute;top:0;bottom:0;left:-60%;width:45%;z-index:1;pointer-events:none;background:linear-gradient(105deg,rgba(255,250,240,0) 0%,rgba(255,250,240,.38) 45%,rgba(255,255,255,.6) 50%,rgba(255,250,240,.38) 55%,rgba(255,250,240,0) 100%);mix-blend-mode:soft-light;animation:heroShine 7s ease-in-out 1s infinite}
-  @keyframes heroShine{0%{transform:translateX(0) skewX(-12deg)}55%,100%{transform:translateX(420%) skewX(-12deg)}}
-  .hero.wide .hero-txt{color:var(--ink)}
-  .hero.wide .hero-txt .eyebrow{color:var(--accent)}
-  .hero.wide h1{text-shadow:none;font-weight:500}
-  .hero.wide p{text-shadow:none}
-  .hero.wide h1 .shine{background:linear-gradient(100deg,#2b2622 0%,#2b2622 42%,#a07a4e 50%,#2b2622 58%,#2b2622 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:textShine 6s ease-in-out 1.5s infinite}
+  /* plain ivory hero with tiny twinkling stars */
+  .hero.stars{display:flex;align-items:center;justify-content:center;height:auto;min-height:clamp(420px,72vh,740px);background:radial-gradient(ellipse at 50% 42%,#fffcf6 0%,#f8f2e7 58%,#f2e9db 100%)}
+  .hero.stars::after{display:none}
+  .stars-l{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+  .stars-l i{position:absolute;display:block;background:#c4a06c;clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);opacity:.15;animation:twinkle var(--d,3s) ease-in-out var(--w,0s) infinite}
+  .stars-l i.w{background:#fff;filter:drop-shadow(0 0 2px rgba(214,180,120,.9))}
+  @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.55) rotate(0)}50%{opacity:1;transform:scale(1) rotate(20deg)}}
+  .hero.stars .hero-txt{position:relative;bottom:auto;padding:64px 16px;color:var(--ink)}
+  .hero.stars .hero-txt .eyebrow{color:var(--accent)}
+  .hero.stars h1{text-shadow:none;font-weight:500}
+  .hero.stars p{text-shadow:none}
+  .hero.stars h1 .shine{background:linear-gradient(100deg,#2b2622 0%,#2b2622 42%,#a07a4e 50%,#2b2622 58%,#2b2622 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:textShine 6s ease-in-out 1.5s infinite}
   @keyframes textShine{0%{background-position:100% 0}60%,100%{background-position:0 0}}
-  .hero.wide .btn{border-color:var(--ink);color:var(--ink)}
-  .hero.wide .btn.solid{background:var(--ink);color:#f8f2e7}
-  .hero.wide .btn.solid:hover{background:transparent;color:var(--ink)}
-  .hero.wide .hero-txt .btn.solid::after{border-color:var(--ink)}
-  .hero.wide .srch-btn{border-color:var(--ink);color:var(--ink);background:rgba(248,242,231,.6)}
-  @media (prefers-reduced-motion:reduce){.hero.wide::before,.hero.wide h1 .shine{animation:none}}
+  .hero.stars .btn{border-color:var(--ink);color:var(--ink)}
+  .hero.stars .btn.solid{background:var(--ink);color:#f8f2e7}
+  .hero.stars .btn.solid:hover{background:transparent;color:var(--ink)}
+  .hero.stars .hero-txt .btn.solid::after{border-color:var(--ink)}
+  .hero.stars .srch-btn{border-color:var(--ink);color:var(--ink);background:rgba(255,255,255,.5)}
+  @media (max-width:760px){.stars-l i.x{display:none}.hero.stars{min-height:0;aspect-ratio:auto;height:auto;max-height:none}.hero.stars .hero-txt{padding:72px 16px 64px}}
+  @media (prefers-reduced-motion:reduce){.stars-l i,.hero.stars h1 .shine{animation:none}.stars-l i{opacity:.6}}
 
   /* products */
   .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 24px}
@@ -488,6 +490,16 @@ const tgUser = u => { const m = String(u || '').match(/t\.me\/([A-Za-z0-9_]{3,})
 const igUser = u => { const m = String(u || '').match(/instagram\.com\/([A-Za-z0-9_.]+)/); return m ? '@' + m[1] : ''; };
 const tel = p => 'tel:' + String(p || '').replace(/[^\d+]/g, '');
 
+function starField() {
+  let seed = 7; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  let h = '';
+  for (let k = 0; k < 110; k++) {
+    const sz = (2 + r() * 4).toFixed(1), x = (r() * 100).toFixed(2), y = (r() * 100).toFixed(2);
+    h += `<i class="${r() < .35 ? 'w' : ''}${k >= 60 ? ' x' : ''}" style="left:${x}%;top:${y}%;width:${sz}px;height:${sz}px;--d:${(2.2 + r() * 3.5).toFixed(2)}s;--w:${(-r() * 5).toFixed(2)}s"></i>`;
+  }
+  return `<div class="stars-l" aria-hidden="true">${h}</div>`;
+}
+
 function head(d, link, center) {
   return `<div class="head${center ? ' center' : ''} r"><div>
     ${d.eyebrow ? `<div class="eyebrow">${txt(d.eyebrow)}</div>` : ''}
@@ -873,8 +885,8 @@ function render(C) {
   <button class="cart-ic" data-cart aria-label="${esc(S.cart_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button></div>
 </div></header>
 
-<div class="hero${H.image_wide ? ' wide' : ''}">
-  ${H.image_wide ? `<picture>${H.image_wide_mobile ? `<source media="(max-width:760px)" srcset="${img(H.image_wide_mobile)}">` : ''}<img class="main" src="${img(H.image_wide)}" alt="" fetchpriority="high"></picture>` : `<img src="${img(H.image_left)}" alt="">
+<div class="hero${H.plain_stars ? ' stars' : H.image_wide ? ' wide' : ''}">
+  ${H.plain_stars ? starField() : H.image_wide ? `<picture>${H.image_wide_mobile ? `<source media="(max-width:760px)" srcset="${img(H.image_wide_mobile)}">` : ''}<img class="main" src="${img(H.image_wide)}" alt="" fetchpriority="high"></picture>` : `<img src="${img(H.image_left)}" alt="">
   <img class="main" src="${img(H.image_center)}" alt="">
   <img src="${img(H.image_right)}" alt="">`}
   <div class="hero-txt r">

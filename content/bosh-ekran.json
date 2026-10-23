@@ -15,5 +15,6 @@
   "image_center": "images/turkiya-tvil.jpg",
   "image_right": "images/kashka.jpg",
   "image_wide": "images/hero-dokon.jpg",
-  "image_wide_mobile": "images/hero-dokon-m.jpg"
+  "image_wide_mobile": "images/hero-dokon-m.jpg",
+  "plain_stars": true
 }
