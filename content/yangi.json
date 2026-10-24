@@ -13,6 +13,187 @@
   "link_label_en": "View all",
   "products": [
     {
+      "name": "Dog‘iston tvil ro‘mollari",
+      "name_ru": "Дагестанские платки из твила",
+      "name_en": "Dagestan twill scarves",
+      "images": [
+
+      ],
+      "cover": "images/tvil55-1-1.jpg",
+      "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
+      "material": "Dog‘iston tvili",
+      "material_ru": "Дагестанский твил",
+      "material_en": "Dagestan twill",
+      "color": "10 xil naqsh: ko‘k, bej, kulrang, bordo va jigarrang tuslarda",
+      "color_ru": "10 узоров в голубых, бежевых, серых, бордовых и коричневых тонах",
+      "color_en": "10 patterns in blue, beige, grey, burgundy and brown tones",
+      "description": "Dog‘iston tvil ro‘mollari — 10 xil naqsh, har biri manekenda va yoyilgan holda.",
+      "description_ru": "Дагестанские платки из твила — 10 узоров, каждый на манекене и в развёрнутом виде.",
+      "description_en": "Dagestan twill scarves — 10 patterns, each shown on a mannequin and laid flat.",
+      "details": "Dog‘iston tvilidan yangi ro‘mollar: mato silliq va zich, yengil jilo beradi, boshda sirpanmaydi va shaklini yaxshi ushlaydi.\n\nTo‘plamda 10 xil naqsh bor: ko‘k gulli va leopard, bej va jigarrang monogramma, kulrang panjara, bordo manzara va panjara, oq fonda jigarrang gullar, ko‘k geometrik va jigarrang nuqtali. Har bir naqshni tanlang — avval manekendagi ko‘rinishi, keyin yoyilgan holda to‘liq rasmi chiqadi.\n\nKundalik obraz, ish va mehmondorchilik uchun birdek mos; sovg‘a sifatida ham chiroyli tanlov.",
+      "details_ru": "Новые платки из дагестанского твила: ткань гладкая и плотная, с лёгким блеском, не соскальзывает и хорошо держит форму.\n\nВ коллекции 10 узоров: голубые цветы и леопард, бежевая и коричневая монограмма, серая решётка, бордовый пейзаж и решётка, коричневые цветы на светлом фоне, голубая геометрия и коричневый горошек. Выберите узор — сначала он показан на манекене, затем полностью в развёрнутом виде.\n\nПодходит для повседневного образа, работы и походов в гости, а также как красивый подарок.",
+      "details_en": "New scarves of Dagestan twill: smooth, dense fabric with a light sheen that doesn’t slip and holds its shape well.\n\nThe collection has 10 patterns: blue floral and leopard, beige and brown monogram, grey lattice, burgundy landscape and lattice, brown flowers on ivory, blue geometric and brown polka dots. Pick a pattern to see it on a mannequin first, then laid out in full.\n\nSuitable for everyday wear, work and visits — and a lovely gift.",
+      "care": "30°C da qo‘lda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Стирать вручную при 30°C или сдавать в химчистку. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C or dry clean. Do not wring, dry in the shade. Iron inside out at low temperature.",
+      "price": "55 000 so‘m",
+      "price_note": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 55000,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "Ko‘k gulli",
+          "name_ru": "Голубой с цветами",
+          "name_en": "Blue floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-1-1.jpg",
+            "images/tvil55-1-2.jpg"
+          ],
+          "swatch": "images/tvil55-1-2.jpg"
+        },
+        {
+          "name": "Ko‘k leopard",
+          "name_ru": "Голубой леопард",
+          "name_en": "Blue leopard",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-2-1.jpg",
+            "images/tvil55-2-2.jpg"
+          ],
+          "swatch": "images/tvil55-2-2.jpg"
+        },
+        {
+          "name": "Bej monogramma",
+          "name_ru": "Бежевая монограмма",
+          "name_en": "Beige monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-3-1.jpg",
+            "images/tvil55-3-2.jpg"
+          ],
+          "swatch": "images/tvil55-3-2.jpg"
+        },
+        {
+          "name": "Kulrang panjara",
+          "name_ru": "Серая решётка",
+          "name_en": "Grey lattice",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-4-1.jpg",
+            "images/tvil55-4-2.jpg"
+          ],
+          "swatch": "images/tvil55-4-2.jpg"
+        },
+        {
+          "name": "Bordo manzara",
+          "name_ru": "Бордовый пейзаж",
+          "name_en": "Burgundy landscape",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-5-1.jpg",
+            "images/tvil55-5-2.jpg"
+          ],
+          "swatch": "images/tvil55-5-2.jpg"
+        },
+        {
+          "name": "Jigarrang monogramma",
+          "name_ru": "Коричневая монограмма",
+          "name_en": "Brown monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-6-1.jpg",
+            "images/tvil55-6-2.jpg"
+          ],
+          "swatch": "images/tvil55-6-2.jpg"
+        },
+        {
+          "name": "Oq, jigarrang gulli",
+          "name_ru": "Белый с коричневыми цветами",
+          "name_en": "Ivory with brown flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-7-1.jpg",
+            "images/tvil55-7-2.jpg"
+          ],
+          "swatch": "images/tvil55-7-2.jpg"
+        },
+        {
+          "name": "Ko‘k geometrik",
+          "name_ru": "Голубая геометрия",
+          "name_en": "Blue geometric",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-8-1.jpg",
+            "images/tvil55-8-2.jpg"
+          ],
+          "swatch": "images/tvil55-8-2.jpg"
+        },
+        {
+          "name": "Bordo panjara",
+          "name_ru": "Бордовая решётка",
+          "name_en": "Burgundy lattice",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-9-1.jpg",
+            "images/tvil55-9-2.jpg"
+          ],
+          "swatch": "images/tvil55-9-2.jpg"
+        },
+        {
+          "name": "Jigarrang nuqtali",
+          "name_ru": "Коричневый в горошек",
+          "name_en": "Brown polka dot",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/tvil55-10-1.jpg",
+            "images/tvil55-10-2.jpg"
+          ],
+          "swatch": "images/tvil55-10-2.jpg"
+        }
+      ],
+      "price_ru": "55 000 сум",
+      "price_en": "55,000 UZS",
+      "price_note_ru": "",
+      "price_note_en": ""
+    },
+    {
       "name": "Pushti Italia ro‘mollar",
       "name_ru": "Розовые итальянские платки",
       "name_en": "Pink Italian Scarves",
