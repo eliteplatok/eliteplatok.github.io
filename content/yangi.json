@@ -199,6 +199,165 @@
       "price_note_en": ""
     },
     {
+      "name": "«ELF PRIVE» namozlik",
+      "name_ru": "Намазлык «ELF PRIVE»",
+      "name_en": "“ELF PRIVE” prayer set",
+      "images": [
+
+      ],
+      "cover": "",
+      "size": "Free size",
+      "size_ru": "Free size (свободный размер)",
+      "size_en": "Free size",
+      "material": "",
+      "material_ru": "",
+      "material_en": "",
+      "color": "5 rang",
+      "color_ru": "5 цветов",
+      "color_en": "5 colours",
+      "description": "Belidan bog‘ichli kapyushonli tunika va keng, oqimli pastki qism — nafis va qulay.",
+      "description_ru": "Туника с капюшоном и поясом-завязкой и широкий струящийся низ — изящно и удобно.",
+      "description_en": "Hooded tunic with a tie waist and a wide, flowing lower part — graceful and comfortable.",
+      "details": "«ELF PRIVE» — namozlik to‘plami: kapyushonli keng tunika, yelka va yenglari burmali, beli bog‘ich bilan qomatga moslanadi; pastki qismi juda keng va oqimli.\n\nYumshoq mato tanaga yopishmaydi, harakatni cheklamaydi — namozda ham, kundalik kiyimda ham qulay. Kapyushon sochni to‘liq yopadi.\n\nO‘lchami free size. 5 xil rangda: bej, qora, to‘q ko‘k, xaki va jigarrang.",
+      "details_ru": "«ELF PRIVE» — намазлык: свободная туника с капюшоном, драпировкой на плечах и рукавах и поясом-завязкой по талии; очень широкий струящийся низ.\n\nМягкая ткань не облегает и не сковывает движений — удобно и для намаза, и на каждый день. Капюшон полностью закрывает волосы.\n\nРазмер free size. 5 цветов: бежевый, чёрный, тёмно-синий, хаки и коричневый.",
+      "details_en": "“ELF PRIVE” is a prayer set: a loose hooded tunic with gathered shoulders and sleeves and a tie waist, over a very wide, flowing lower part.\n\nSoft fabric that never clings or restricts movement — comfortable for prayer and every day. The hood fully covers the hair.\n\nFree size. 5 colours: beige, black, navy, khaki and brown.",
+      "care": "30°C da nozik rejimda yoki qo‘lda yuving. Siqmang, ilgichda soyada quriting. Past haroratda dazmollang.",
+      "care_ru": "Стирать при 30°C в деликатном режиме или вручную. Не отжимать, сушить на плечиках в тени. Гладить при низкой температуре.",
+      "care_en": "Wash at 30°C on a delicate cycle or by hand. Do not wring; dry on a hanger in the shade. Iron on low.",
+      "price": "899 000 so‘m",
+      "price_note": "",
+      "old_price": "1 000 000 so‘m",
+      "old_price_ru": "1 000 000 сум",
+      "old_price_en": "1,000,000 UZS",
+      "price_number": 899000,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "namozlik",
+      "variants": [
+        {
+          "name": "Bej",
+          "name_ru": "Бежевый",
+          "name_en": "Beige",
+          "hex": "#b9a58c",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/elf-bej.jpg"
+          ]
+        },
+        {
+          "name": "Qora",
+          "name_ru": "Чёрный",
+          "name_en": "Black",
+          "hex": "#1c1a1b",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/elf-qora.jpg"
+          ]
+        },
+        {
+          "name": "To‘q ko‘k",
+          "name_ru": "Тёмно-синий",
+          "name_en": "Navy",
+          "hex": "#1f2a52",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/elf-toq-kok.jpg"
+          ]
+        },
+        {
+          "name": "Xaki",
+          "name_ru": "Хаки",
+          "name_en": "Khaki",
+          "hex": "#7a7461",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/elf-xaki.jpg"
+          ]
+        },
+        {
+          "name": "Jigarrang",
+          "name_ru": "Коричневый",
+          "name_en": "Brown",
+          "hex": "#4b3226",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/elf-jigarrang-1.jpg",
+            "images/elf-jigarrang-2.jpg"
+          ]
+        }
+      ],
+      "price_ru": "899 000 сум",
+      "price_en": "899,000 UZS",
+      "price_note_ru": "",
+      "price_note_en": ""
+    },
+    {
+      "name": "«NATURAL» namozlik",
+      "name_ru": "Намазлык «NATURAL»",
+      "name_en": "“NATURAL” prayer dress",
+      "images": [
+        "images/natural-toq-kok.jpg"
+      ],
+      "cover": "",
+      "size": "Free size",
+      "size_ru": "Free size (свободный размер)",
+      "size_en": "Free size",
+      "material": "",
+      "material_ru": "",
+      "material_en": "",
+      "color": "To‘q ko‘k",
+      "color_ru": "Тёмно-синий",
+      "color_en": "Navy",
+      "description": "Bir butun keng ko‘ylak va uzun kapyushon — sodda, nafis va qulay.",
+      "description_ru": "Цельное свободное платье с длинным капюшоном — просто, изящно и удобно.",
+      "description_en": "One-piece loose dress with a long hood — simple, graceful and comfortable.",
+      "details": "«NATURAL» — ko‘ylakli namozlik: bir butun keng ko‘ylak va yelkani yopib turadigan uzun kapyushon.\n\nKiyish oson — bir harakatda kiyiladi, mato yumshoq va oqimli, tanaga yopishmaydi. Namoz uchun ham, uy va safar uchun ham qulay.\n\nO‘lchami free size. Rangi — to‘q ko‘k.",
+      "details_ru": "«NATURAL» — намазлык-платье: цельное свободное платье и длинный капюшон, закрывающий плечи.\n\nНадевается одним движением, ткань мягкая и струящаяся, не облегает. Удобно и для намаза, и дома, и в поездке.\n\nРазмер free size. Цвет — тёмно-синий.",
+      "details_en": "“NATURAL” is a prayer dress: a one-piece loose dress with a long hood that covers the shoulders.\n\nSlips on in one movement; the fabric is soft and fluid and never clings. Comfortable for prayer, at home and when travelling.\n\nFree size. Colour: navy.",
+      "care": "30°C da nozik rejimda yoki qo‘lda yuving. Siqmang, ilgichda soyada quriting. Past haroratda dazmollang.",
+      "care_ru": "Стирать при 30°C в деликатном режиме или вручную. Не отжимать, сушить на плечиках в тени. Гладить при низкой температуре.",
+      "care_en": "Wash at 30°C on a delicate cycle or by hand. Do not wring; dry on a hanger in the shade. Iron on low.",
+      "price": "899 000 so‘m",
+      "price_note": "",
+      "old_price": "1 000 000 so‘m",
+      "old_price_ru": "1 000 000 сум",
+      "old_price_en": "1,000,000 UZS",
+      "price_number": 899000,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "namozlik",
+      "variants": [
+
+      ],
+      "price_ru": "899 000 сум",
+      "price_en": "899,000 UZS",
+      "price_note_ru": "",
+      "price_note_en": ""
+    },
+    {
       "name": "Dog‘iston tvil ro‘mollari",
       "name_ru": "Дагестанские платки из твила",
       "name_en": "Dagestan twill scarves",

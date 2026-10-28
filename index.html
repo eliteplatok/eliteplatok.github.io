@@ -112,12 +112,15 @@
     html.min .pm-gal{background:none}
     html.min .allc{display:none}
   }
+  /* performance: animations only run while their block is on screen */
+  .opt:not(.inview) *,.opt:not(.inview)::after,.hero:not(.inview) *{animation-play-state:paused!important}
+  .stars-l i{will-change:opacity,transform}
   /* plain ivory hero with tiny twinkling stars */
   .hero.stars{display:flex;align-items:center;justify-content:center;height:auto;min-height:clamp(420px,72vh,740px);background:radial-gradient(ellipse at 50% 40%,#5a3a2a 0%,#3f271c 52%,#2a1912 100%)}
   .hero.stars::after{display:none}
   .stars-l{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-  .stars-l i{position:absolute;display:block;background:#e9c98f;filter:drop-shadow(0 0 2px rgba(240,205,140,.85));clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);opacity:.3;animation:twinkle var(--d,3s) ease-in-out var(--w,0s) infinite}
-  .stars-l i.w{background:#fffaf0;filter:drop-shadow(0 0 3px rgba(255,240,210,.95))}
+  .stars-l i{position:absolute;display:block;background:#f1d6a0;clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);opacity:.3;animation:twinkle var(--d,3s) ease-in-out var(--w,0s) infinite}
+  .stars-l i.w{background:#fffaf0}
   @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.55) rotate(0)}50%{opacity:1;transform:scale(1) rotate(20deg)}}
   .hero.stars .hero-txt{position:relative;bottom:auto;padding:64px 16px;color:#f8f2e7}
   .hero.stars .hero-txt .eyebrow{color:#d9b98a}
@@ -1170,6 +1173,8 @@ function boot(again) {
   document.documentElement.lang = LANG;
   document.getElementById('app').innerHTML = render(loc(RAW));
   bindMiniBrand();
+  const vis = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('inview', e.isIntersecting)), { rootMargin: '80px' });
+  document.querySelectorAll('.opt, .hero').forEach(el => vis.observe(el));
   const io = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
   }), { threshold: .12 });
