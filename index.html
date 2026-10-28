@@ -68,6 +68,36 @@
   .hero .btn{border-color:#fff;color:#fff;margin:4px}
   .hero .btn:hover,.hero .btn.solid{background:#fff;color:var(--ink)}
   .hero .btn.solid:hover{background:transparent;color:#fff}
+  /* minimal entry (acham-style): full-bleed photo + logo, photo-only grid; all info inside the product window */
+  .hero.mini{display:block;position:relative;height:calc(100vh - 106px);min-height:520px;background:#2a1912}
+  .hero.mini .mini-ph{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+  .hero.mini .mini-ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+  .hero.mini .mini-ph img.main{order:2}
+  .hero.mini .mini-ph img.side:last-child{order:3}
+  .hero.mini::after{background:linear-gradient(to top,rgba(26,16,11,.78) 0%,rgba(26,16,11,.28) 45%,rgba(26,16,11,.12) 70%,rgba(26,16,11,.3) 100%)}
+  .hero.mini .mini-txt{position:absolute;left:0;right:0;bottom:11%;z-index:2;display:block;text-align:center;padding:0 16px}
+  .hero.mini .mini-txt img.mini-logo{position:static;display:block;width:min(700px,86%);height:auto;object-fit:contain;margin:0 auto 30px}
+  .hero.mini h1{color:#f8f2e7;font-size:clamp(44px,8vw,110px);letter-spacing:.06em;margin-bottom:24px}
+  .mini-link{display:inline-block;color:#f8f2e7;font-size:13px;letter-spacing:.32em;text-transform:uppercase;padding-bottom:7px;border-bottom:1px solid rgba(248,242,231,.7);transition:opacity .25s}
+  .mini-link:hover{opacity:.7}
+  html.min #yangi{padding-top:48px}
+  html.min #yangi .wrap{max-width:none;padding:0 4px}
+  html.min #yangi .head{justify-content:center;text-align:center;margin-bottom:28px}
+  html.min #yangi .head .eyebrow,html.min #yangi .head .lead{display:none}
+  html.min #yangi .head h2{font-size:15px;letter-spacing:.32em;text-transform:uppercase;font-family:var(--sans);font-weight:400}
+  html.min #yangi .grid{gap:4px}
+  html.min #yangi .card .ph{margin-bottom:0}
+  html.min #yangi .card h3,html.min #yangi .card .meta,html.min #yangi .card .sw-mini,html.min #yangi .card .d,html.min #yangi .card .price,html.min #yangi .card .order{display:none}
+  @media (max-width:760px){.hero.mini .mini-ph{grid-template-columns:1fr}.hero.mini .mini-ph img.side{display:none}.hero.mini{height:86vh;min-height:0}.hero.mini .mini-txt{bottom:9%}.hero.mini .mini-txt img.mini-logo{width:90%;margin-bottom:22px}html.min #yangi{padding-top:36px}}
+  /* minimal mode, desktop: product photos stacked vertically (scroll), info stays sticky on the right; phones keep the swipe carousel */
+  @media (min-width:1001px){
+    html.min .pm-body{grid-template-columns:1.1fr 1fr;max-width:1400px}
+    html.min .pm-slides{display:block;overflow:visible;height:auto;min-height:0;scroll-snap-type:none}
+    html.min .pm-slides img{height:auto;aspect-ratio:3/4;display:block;margin:0 0 4px}
+    html.min .pm-gal .arr,html.min .pm-gal .dots,html.min .pm-thumbs,html.min .pm-gal .count{display:none}
+    html.min .pm-gal{background:none}
+    html.min .allc{display:none}
+  }
   /* plain ivory hero with tiny twinkling stars */
   .hero.stars{display:flex;align-items:center;justify-content:center;height:auto;min-height:clamp(420px,72vh,740px);background:radial-gradient(ellipse at 50% 40%,#5a3a2a 0%,#3f271c 52%,#2a1912 100%)}
   .hero.stars::after{display:none}
@@ -605,6 +635,7 @@ function openProduct(i, push = true, vi = 0) {
   bindSlider(track, pm.querySelector('.pm-gal'));
   pm.querySelectorAll('.pm-thumbs button').forEach(b => b.onclick = () => track.scrollTo({ left: b.dataset.k * track.clientWidth, behavior: 'smooth' }));
   pm.querySelectorAll('.allc-g button').forEach(b => b.onclick = () => {
+    if (getComputedStyle(track).display === 'block') { const im = track.children[b.dataset.k]; pm.scrollTo({ top: im.getBoundingClientRect().top - pm.getBoundingClientRect().top + pm.scrollTop - 64, behavior: 'smooth' }); return; }
     track.scrollTo({ left: b.dataset.k * track.clientWidth });
     pm.scrollTo({ top: 0, behavior: 'smooth' });
   });
@@ -858,6 +889,16 @@ function toast(t) {
   clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove('on'), 2200);
 }
 
+function miniHero(H, S) {
+  return `<div class="hero mini">
+  <div class="mini-ph">${(H.images_min && H.images_min.length ? H.images_min : ['images/abaya-1-1.jpg', 'images/pushti-9-2.jpg', 'images/tvil55-1-1.jpg']).map((s, k) => `<img class="${k ? 'side' : 'main'}" ${rImg(s, k ? '33vw' : '(max-width:760px) 100vw, 33vw', `alt="" decoding="async"${k ? ' loading="lazy"' : ' fetchpriority="high"'}`)}>`).join('')}</div>
+  <div class="mini-txt r">
+    ${H.logo ? `<img class="mini-logo" src="${img(H.logo)}" alt="Elite Platok &amp; Abaya" width="1090" height="240">` : `<h1>${txt(S.logo)}</h1>`}
+    <a href="#yangi" class="mini-link">${txt(H.button)}</a>
+  </div>
+</div>`;
+}
+
 function products(id, d, S, alt) {
   const link = d.link_label ? `<a href="${esc(S.instagram)}" ${ext} class="link">${txt(d.link_label)}</a>` : '';
   return `<section ${id ? `id="${id}"` : ''} class="${alt ? 'alt' : ''}"><div class="wrap">
@@ -868,6 +909,8 @@ function products(id, d, S, alt) {
 
 function render(C) {
   PRODUCTS.length = 0;
+  const MIN = new URLSearchParams(location.search).has('min') || C['sozlamalar'].minimal === true;
+  document.documentElement.classList.toggle('min', MIN);
   const S = S_ = C['sozlamalar'], H = C['bosh-ekran'], F = C['matolar'], R = C['ranglar'], B = C['afzalliklar'],
         O = C['aksiya'], A = C['aksessuarlar'], W = C['nega-biz'], D = C['dokon'];
   document.title = S.seo_title || S.logo;
@@ -888,7 +931,7 @@ function render(C) {
   <button class="cart-ic" data-cart aria-label="${esc(S.cart_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button></div>
 </div></header>
 
-<div class="hero${H.plain_stars ? ' stars' : H.image_wide ? ' wide' : ''}">
+${MIN ? miniHero(H, S) + products('yangi', C['yangi'], S) : `<div class="hero${H.plain_stars ? ' stars' : H.image_wide ? ' wide' : ''}">
   ${H.plain_stars ? starField() : H.image_wide ? `<picture>${H.image_wide_mobile ? `<source media="(max-width:760px)" srcset="${img(H.image_wide_mobile)}">` : ''}<img class="main" src="${img(H.image_wide)}" alt="" fetchpriority="high"></picture>` : `<img src="${img(H.image_left)}" alt="">
   <img class="main" src="${img(H.image_center)}" alt="">
   <img src="${img(H.image_right)}" alt="">`}
@@ -898,7 +941,7 @@ function render(C) {
     ${H.subtitle ? `<p>${txt(H.subtitle)}</p>` : ''}
     <div class="hero-act"><a href="#yangi" class="btn solid">${txt(H.button)}</a><button class="srch-btn" data-search aria-label="${esc(S.search_title)}" title="${esc(S.search_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></button></div>
   </div>
-</div>
+</div>`}
 
 <section id="biz" class="alt"><div class="wrap">
   ${head(W)}
@@ -909,7 +952,7 @@ function render(C) {
   </div>` : ''}
 </div></section>
 
-${products('yangi', C['yangi'], S)}
+${MIN ? '' : products('yangi', C['yangi'], S)}
 
 <section id="aksessuarlar"><div class="wrap acc">
   <div class="acc-img r"><img ${rImg(A.image, '(max-width:1000px) 100vw, 50vw', 'alt="" loading="lazy" decoding="async"')}></div>
