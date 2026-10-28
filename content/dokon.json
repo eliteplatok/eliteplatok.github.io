@@ -18,5 +18,9 @@
   "map_button_en": "View on map",
   "call_button": "Qo‘ng‘iroq qilish",
   "call_button_ru": "Позвонить",
-  "call_button_en": "Call us"
+  "call_button_en": "Call us",
+  "map_query": "Seoul Mun Tashkent",
+  "map_pin": "Seoul Mun · D58, 1-qavat, o‘ng qanot",
+  "map_pin_ru": "Seoul Mun · D58, 1 этаж, правое крыло",
+  "map_pin_en": "Seoul Mun · D58, 1st floor, right wing"
 }

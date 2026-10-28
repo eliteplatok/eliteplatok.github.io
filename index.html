@@ -454,6 +454,12 @@ img.so{filter:grayscale(.55) opacity(.5)}
   /* store */
   .store{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
   .store-img{aspect-ratio:4/3;overflow:hidden}
+  .store-map{position:relative;background:var(--bg-2)}
+  .store-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.85)}
+  .map-pin{position:absolute;left:12px;bottom:64px;z-index:2;background:rgba(233,226,217,.96);padding:10px 14px;box-shadow:0 4px 18px rgba(0,0,0,.15);display:flex;flex-direction:column;gap:2px;line-height:1.3}
+  .map-pin b{font-family:var(--serif);font-weight:500;font-size:17px;letter-spacing:.06em}
+  .map-pin span{font-size:12px;color:var(--muted)}
+
   .store-img img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
   .store h3{font-size:clamp(30px,3.6vw,42px);margin:14px 0 18px;line-height:1.15}
   .store dl{border-top:1px solid var(--line);margin-bottom:36px}
@@ -1102,7 +1108,8 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
 </section>` : ''}
 
 <section id="dokon"><div class="wrap store">
-  <div class="store-img r"><img ${rImg(D.image, '(max-width:1000px) 100vw, 50vw', 'alt="" loading="lazy" decoding="async"')}></div>
+  <div class="store-img store-map r">${D.map_embed !== false ? `<iframe src="https://maps.google.com/maps?q=${encodeURIComponent(D.map_query || 'Seoul Mun Tashkent')}&z=17&hl=${LANG === 'en' ? 'en' : LANG === 'ru' ? 'ru' : 'uz'}&output=embed" title="${esc(D.map_button || 'Map')}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    <a class="map-pin" href="${esc(D.map_link)}" ${ext}><b>Elite Platok</b><span>${txt(D.map_pin || 'Seoul Mun · D58, 1-qavat')}</span></a>` : `<img ${rImg(D.image, '(max-width:1000px) 100vw, 50vw', 'alt="" loading="lazy" decoding="async"')}>`}</div>
   <div class="r">
     <div class="eyebrow">${txt(D.eyebrow)}</div>
     <h3>${txt(D.title)}</h3>
