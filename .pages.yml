@@ -11,6 +11,7 @@ content:
     format: json
     fields:
       - { name: logo, label: "Logotip matni", type: string }
+      - { name: minimal, label: "Minimal ko‘rinish (acham uslubi): katta foto + faqat rasmlar to‘ri", type: boolean }
       - { name: top_bar, label: "Eng tepadagi qora chiziq matni", type: string }
       - { name: top_bar_ru, label: "Eng tepadagi qora chiziq matni (RU)", type: string }
       - { name: top_bar_en, label: "Eng tepadagi qora chiziq matni (EN)", type: string }
