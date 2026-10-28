@@ -12,15 +12,15 @@
   "landmark": "«Cheesesteak» va «Emsan» yonida",
   "landmark_ru": "рядом с «Cheesesteak» и «Emsan»",
   "landmark_en": "next to Cheesesteak and Emsan",
-  "map_link": "https://www.google.com/maps/search/?api=1&query=Seoul+Mun+Tashkent",
+  "map_link": "https://www.google.com/maps/search/?api=1&query=Mog+Bang+Seoul+Tashkent",
   "map_button": "Xaritada ko‘rish",
   "map_button_ru": "Посмотреть на карте",
   "map_button_en": "View on map",
   "call_button": "Qo‘ng‘iroq qilish",
   "call_button_ru": "Позвонить",
   "call_button_en": "Call us",
-  "map_query": "Seoul Mun Tashkent",
-  "map_pin": "Seoul Mun · D58, 1-qavat, o‘ng qanot",
-  "map_pin_ru": "Seoul Mun · D58, 1 этаж, правое крыло",
-  "map_pin_en": "Seoul Mun · D58, 1st floor, right wing"
+  "map_query": "Mog Bang, Tashkent",
+  "map_pin": "Seoul Mun · D58, «Mog Bang» yonida",
+  "map_pin_ru": "Seoul Mun · D58, рядом с «Mog Bang»",
+  "map_pin_en": "Seoul Mun · D58, next to “Mog Bang”"
 }
