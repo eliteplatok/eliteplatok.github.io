@@ -204,9 +204,9 @@
   "search_chips": "Pushti, Qora, Oq, Kulrang, Ko‘k, Yashil, Qizil, Bordo, Bej, Binafsha",
   "search_chips_ru": "Розовый, Чёрный, Белый, Серый, Синий, Зелёный, Красный, Бордовый, Бежевый, Фиолетовый",
   "search_chips_en": "Pink, Black, White, Grey, Blue, Green, Red, Burgundy, Beige, Purple",
-  "search_filters": "Yangi kolleksiya, Bestseller, Bir rangli, Printli, Bandanka, Shoyi (sholk), Tvil, Chegirmada, Aksiyada",
-  "search_filters_ru": "Новая коллекция, Бестселлеры, Однотонные, С принтом, Банданы, Шёлк, Твил, Со скидкой, По акции",
-  "search_filters_en": "New collection, Bestsellers, Solid colour, Printed, Bandanas, Silk, Twill, On sale, Bundle offers",
+  "search_filters": "Yangi kolleksiya, Bestseller, Bir rangli, Printli, Bandanka, Shoyi (sholk), Tvil, Chegirmada, Aksiyada, Saralanganlar",
+  "search_filters_ru": "Новая коллекция, Бестселлеры, Однотонные, С принтом, Банданы, Шёлк, Твил, Со скидкой, По акции, Избранное",
+  "search_filters_en": "New collection, Bestsellers, Solid colour, Printed, Bandanas, Silk, Twill, On sale, Bundle offers, Favourites",
   "fabric_message": "Assalomu alaykum! \"{mato}\" kerak.",
   "fabric_message_ru": "Здравствуйте! Нужен \"{mato}\".",
   "fabric_message_en": "Hello! I need \"{mato}\".",
@@ -236,5 +236,14 @@
   "product_tg_button_en": "Message on Telegram",
   "product_tg_message": "Assalomu Alaykum, shu modelni batafsil malumoti kerak",
   "product_tg_message_ru": "Ассалому алайкум, нужна подробная информация об этой модели",
-  "product_tg_message_en": "Assalomu alaykum, I’d like more details about this model"
+  "product_tg_message_en": "Assalomu alaykum, I’d like more details about this model",
+  "fav_label": "Saralanganlar",
+  "fav_label_ru": "Избранное",
+  "fav_label_en": "Favourites",
+  "fav_added": "Saralanganlarga qo‘shildi",
+  "fav_added_ru": "Добавлено в избранное",
+  "fav_added_en": "Added to favourites",
+  "fav_removed": "Saralanganlardan olib tashlandi",
+  "fav_removed_ru": "Удалено из избранного",
+  "fav_removed_en": "Removed from favourites"
 }

@@ -272,6 +272,23 @@ img.so{filter:grayscale(.55) opacity(.5)}
   button.nav-cta{background:none;font-family:inherit;color:var(--ink);cursor:pointer;font-weight:300}
   .nav-cta .n{display:inline-grid;place-items:center;min-width:18px;height:18px;margin-left:6px;border-radius:9px;background:var(--ink);color:var(--bg);font-size:10px;letter-spacing:0;padding:0 5px}
   .nav-cta:hover .n{background:var(--bg);color:var(--ink)}
+  .pm-acts{display:flex;align-items:center;gap:6px}
+  .pm-ic{background:none;border:0;position:relative;cursor:pointer;color:var(--ink);padding:7px;display:grid;place-items:center}
+  .pm-ic svg{width:21px;height:21px;display:block}
+  .pm-ic:hover{opacity:.7}
+  .pm-ic .n{position:absolute;top:0;right:-2px;min-width:16px;height:16px;border-radius:8px;background:var(--ink);color:var(--bg);font-size:10px;display:grid;place-items:center;padding:0 4px}
+  .pm-fav.on svg{fill:#b4374a;stroke:#b4374a}
+  .pm-acts .pm-x{margin-left:8px}
+  .qa{position:absolute;top:46px;right:10px;z-index:4;display:flex;flex-direction:column;gap:8px;opacity:0;transform:translateX(6px);transition:opacity .25s,transform .25s}
+  .card:hover .qa,.card:focus-within .qa{opacity:1;transform:none}
+  .qa button{width:38px;height:38px;border-radius:50%;border:0;background:rgba(247,243,238,.94);color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);transition:transform .2s}
+  .qa button:hover{transform:scale(1.08)}
+  .qa svg{width:18px;height:18px}
+  .qa-fav.on svg,.fav-ic.on svg{fill:#b4374a;stroke:#b4374a}
+  @media (hover:none){.qa{opacity:1;transform:none;top:auto;bottom:10px;flex-direction:row}.qa button{width:34px;height:34px}}
+  .fav-ic{background:none;border:0;position:relative;cursor:pointer;color:var(--ink);padding:6px}
+  .fav-ic svg{width:21px;height:21px;display:block}
+  .fav-ic .n{position:absolute;top:-2px;right:-4px;min-width:17px;height:17px;border-radius:9px;background:#b4374a;color:#fff;font-size:10px;display:grid;place-items:center;padding:0 4px}
   .cart-ic{display:none;grid-column:3;justify-self:end;background:none;border:0;position:relative;cursor:pointer;color:var(--ink);padding:6px}
   .cart-ic svg{width:22px;height:22px;display:block}
   .cart-ic .n{position:absolute;top:-2px;right:-4px;min-width:17px;height:17px;border-radius:9px;background:var(--ink);color:var(--bg);font-size:10px;display:grid;place-items:center;padding:0 4px}
@@ -566,6 +583,17 @@ const priceText = (p, S) => (p.price || S.price_on_request) + (usdSum(p) ? ` (�
 const priceHtml = p => (p.price ? `<div class="price">${txt(p.price)}${p.old_price ? ` <s>${txt(p.old_price)}</s>` : ''}</div>` : `<div class="price ask">${txt(S_.price_on_request)}</div>`)
   + convHtml(p) + (p.price_note ? `<div class="pnote">${txt(p.price_note)}</div>` : '');
 
+/* favourites (heart) — kept in this browser only */
+let FAV = (() => { try { return JSON.parse(localStorage.getItem('ep_fav') || '[]'); } catch (e) { return []; } })();
+const isFav = slug => FAV.includes(slug);
+function toggleFav(slug) {
+  FAV = isFav(slug) ? FAV.filter(x => x !== slug) : [...FAV, slug];
+  try { localStorage.setItem('ep_fav', JSON.stringify(FAV)); } catch (e) {}
+  updateFavBadge(); return isFav(slug);
+}
+function updatePmCart() { const n = cartCount(); document.querySelectorAll('[data-pcart] .n').forEach(b => { b.hidden = !n; b.textContent = n; }); }
+function updateFavBadge() { document.querySelectorAll('[data-favs] .n').forEach(b => { b.hidden = !FAV.length; b.textContent = FAV.length; }); }
+
 function card(p, S) {
   const i = PRODUCTS.length, vars = VARS(p), ims = vars.length ? vars.map(v => v.ims[0]) : imgsOf(p);
   let slug = slugify(p.name_uz || p.name) || 'mahsulot';
@@ -583,7 +611,8 @@ function card(p, S) {
       ${dots(cims.length)}
       ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}${p.is_new ? '<span class="newb">NEW</span>' : ''}
       <span class="so-tag"${soldAt(0) ? '' : ' hidden'}>${txt(S.sold_out_label)}</span>
-      <span class="order">${txt(S.card_order_label)}</span></div>
+      <span class="order">${txt(S.card_order_label)}</span>
+      <div class="qa"><button class="qa-fav${isFav(slug) ? ' on' : ''}" data-qfav aria-label="${esc(S.fav_label || 'Saralanganlar')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20.3 4.6 13a4.8 4.8 0 0 1 6.8-6.8l.6.6.6-.6a4.8 4.8 0 0 1 6.8 6.8z"/></svg></button><button class="qa-cart" data-qcart aria-label="${esc(S.product_add_button)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></button></div></div>
     <h3>${txt(p.name)}</h3>${p.size || p.material ? `<div class="meta">${txt(p.size || p.material)}</div>` : ''}${sw}
     ${p.description ? `<p class="d">${txt(p.description)}</p>` : ''}
     ${priceHtml(p)}
@@ -617,7 +646,7 @@ function openProduct(i, push = true, vi = 0) {
   const row = (l, v) => v ? `<div><dt>${txt(l)}</dt><dd>${txt(v)}</dd></div>` : '';
   const acc = (t, v, open) => v ? `<details class="acc-item"${open ? ' open' : ''}><summary>${txt(t)}</summary><p>${txt(v)}</p></details>` : '';
   pm.innerHTML = `
-    <div class="pm-top"><a href="#" class="logo" data-close>${txt(S.logo)}</a><button class="pm-x" data-close>${txt(S.close_label)} <b>×</b></button></div>
+    <div class="pm-top"><a href="#" class="logo" data-close>${txt(S.logo)}</a><div class="pm-acts"><button class="pm-ic pm-fav${isFav(p.slug) ? ' on' : ''}" data-pfav aria-label="${esc(S.fav_label || 'Saralanganlar')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20.3 4.6 13a4.8 4.8 0 0 1 6.8-6.8l.6.6.6-.6a4.8 4.8 0 0 1 6.8 6.8z"/></svg></button><button class="pm-ic" data-pcart aria-label="${esc(S.product_add_button)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button><button class="pm-x" data-close>${txt(S.close_label)} <b>×</b></button></div></div>
     <div class="pm-body">
       <div class="pm-gal"><span class="so-tag"${soldK(0) ? '' : ' hidden'}>${txt(S.sold_out_label)}</span>
         <div class="pm-slides">${ims.map((s, k) => `<img class="${soldK(k) ? 'so' : ''}" ${rImg(s, '(max-width:1000px) 100vw, 55vw')} loading="${k ? 'lazy' : 'eager'}" decoding="async" alt="${esc(p.name + (v ? ' — ' + v.name : ''))}" draggable="false">`).join('')}</div>
@@ -651,6 +680,9 @@ function openProduct(i, push = true, vi = 0) {
   pm.querySelectorAll('.sw-g button').forEach(b => b.onclick = () => { const st = pm.scrollTop; openProduct(i, true, +b.dataset.v); pm.scrollTop = st;
     const g = pm.querySelector(".pm-gal").getBoundingClientRect(); if (g.bottom < 120) pm.scrollTo({ top: 0, behavior: "smooth" }); });
   pm.querySelectorAll('[data-close]').forEach(b => b.onclick = e => { e.preventDefault(); closeProduct(); });
+  pm.querySelector('[data-pfav]').onclick = e => { const on = toggleFav(p.slug); e.currentTarget.classList.toggle('on', on); toast(on ? (S.fav_added || 'Saralanganlarga qo‘shildi') : (S.fav_removed || 'Saralanganlardan olib tashlandi')); };
+  pm.querySelector('[data-pcart]').onclick = () => { if (sold) return toast(S.sold_out_label); cartAdd(p.slug, vi); toast(S.cart_added); updatePmCart(); };
+  updatePmCart();
   pm.querySelector('[data-add]').onclick = () => { if (sold) return; cartAdd(p.slug, vi); toast(S.cart_added); openCart(); };
   pm.querySelector('[data-share]').onclick = async () => {
     const url = location.origin + location.pathname + '#' + hash;
@@ -844,7 +876,8 @@ const FILTERS = [
   ['silk', p => silkRe.test(norm([p.name_uz || p.name, p.material_uz || p.material].join(' ')))],
   ['twill', p => /tvil/.test(norm([p.name_uz || p.name, p.material_uz || p.material].join(' ')))],
   ['sale', p => !!String(p.old_price || '').trim()],
-  ['promo', p => !!p.promo3]
+  ['promo', p => !!p.promo3],
+  ['fav', p => isFav(p.slug)]
 ];
 let SEARCH_F = -1;
 function runSearch(q) {
@@ -969,6 +1002,7 @@ function render(C) {
   <a href="#" class="logo">${txt(S.logo)}</a>
   <div class="nav-r">${langHtml('lang-nav')}
   <button class="nav-cta" data-cart>${txt(S.order_button)}<span class="n" hidden></span></button>
+  <button class="fav-ic" data-favs aria-label="${esc(S.fav_label || 'Saralanganlar')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20.3 4.6 13a4.8 4.8 0 0 1 6.8-6.8l.6.6.6-.6a4.8 4.8 0 0 1 6.8 6.8z"/></svg><span class="n" hidden></span></button>
   <button class="cart-ic" data-cart aria-label="${esc(S.cart_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button></div>
 </div></header>
 
@@ -1121,11 +1155,16 @@ function boot(again) {
     const open = () => openProduct(+c.dataset.p, true, PRODUCTS[+c.dataset.p].vars.length ? Math.max(0, map[Math.round(sl.scrollLeft / (sl.clientWidth || 1))] || 0) : 0);
     let sx = 0;
     c.addEventListener('pointerdown', e => sx = e.clientX);
-    c.addEventListener('click', e => { if (Math.abs(e.clientX - sx) < 8 && !e.target.closest('.arr, .sw-mini')) open(); });
+    c.addEventListener('click', e => { if (Math.abs(e.clientX - sx) < 8 && !e.target.closest('.arr, .sw-mini, .qa')) open(); });
+    const P = PRODUCTS[+c.dataset.p], curV = () => P.vars.length ? Math.max(0, map[Math.round(sl.scrollLeft / (sl.clientWidth || 1))] || 0) : 0;
+    c.querySelector('[data-qfav]').onclick = e => { e.stopPropagation(); const on = toggleFav(P.slug); e.currentTarget.classList.toggle('on', on); toast(on ? (S_.fav_added || 'Saralanganlarga qo‘shildi') : (S_.fav_removed || 'Saralanganlardan olib tashlandi')); };
+    c.querySelector('[data-qcart]').onclick = e => { e.stopPropagation(); const k = curV(); if (P.sold_out || (P.vars[k] && P.vars[k].sold_out)) return toast(S_.sold_out_label); cartAdd(P.slug, k); toast(S_.cart_added); };
     c.addEventListener('keydown', e => { if (e.key === 'Enter') open(); });
   });
   document.querySelectorAll('[data-cart]').forEach(b => b.onclick = () => openCart());
   document.querySelectorAll('[data-search]').forEach(b => b.onclick = openSearch);
+  document.querySelectorAll('[data-favs]').forEach(b => b.onclick = () => { openSearch(); const n = FILTERS.findIndex(f => f[0] === 'fav'), ch = document.querySelector(`#srch .srch-f button[data-f="${n}"]`); if (ch) ch.click(); else { SEARCH_F = n; renderSearch(''); } });
+  updateFavBadge();
   document.querySelectorAll('[data-color]').forEach(b => b.onclick = () => { openSearch(); const inp = document.querySelector('#srch input'); inp.value = b.dataset.color; renderSearch(inp.value); });
   document.querySelectorAll('[data-lang]').forEach(b => b.onclick = () => setLang(b.dataset.lang));
   document.getElementById('shade').onclick = closeCart;
