@@ -230,5 +230,11 @@
   "store_label_whatsapp_en": "WhatsApp",
   "store_label_instagram": "Instagram",
   "store_label_instagram_ru": "Instagram",
-  "store_label_instagram_en": "Instagram"
+  "store_label_instagram_en": "Instagram",
+  "product_tg_button": "Telegramdan yozish",
+  "product_tg_button_ru": "Написать в Telegram",
+  "product_tg_button_en": "Message on Telegram",
+  "product_tg_message": "Assalomu Alaykum, shu modelni batafsil malumoti kerak",
+  "product_tg_message_ru": "Ассалому алайкум, нужна подробная информация об этой модели",
+  "product_tg_message_en": "Assalomu alaykum, I’d like more details about this model"
 }

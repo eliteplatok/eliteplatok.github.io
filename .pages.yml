@@ -53,6 +53,12 @@ content:
       - { name: product_call_button, label: "Mahsulot oynasi: qo‘ng‘iroq tugmasi", type: string }
       - { name: product_call_button_ru, label: "Mahsulot oynasi: qo‘ng‘iroq tugmasi (RU)", type: string }
       - { name: product_call_button_en, label: "Mahsulot oynasi: qo‘ng‘iroq tugmasi (EN)", type: string }
+      - { name: product_tg_button, label: "Mahsulot oynasi: Telegram tugmasi", type: string }
+      - { name: product_tg_button_ru, label: "Mahsulot oynasi: Telegram tugmasi (RU)", type: string }
+      - { name: product_tg_button_en, label: "Mahsulot oynasi: Telegram tugmasi (EN)", type: string }
+      - { name: product_tg_message, label: "Telegram tayyor xabari (model nomi va rasm havolasi o‘zi qo‘shiladi)", type: string }
+      - { name: product_tg_message_ru, label: "Telegram tayyor xabari (RU)", type: string }
+      - { name: product_tg_message_en, label: "Telegram tayyor xabari (EN)", type: string }
       - { name: product_share_button, label: "Mahsulot oynasi: ulashish tugmasi", type: string }
       - { name: product_share_button_ru, label: "Mahsulot oynasi: ulashish tugmasi (RU)", type: string }
       - { name: product_share_button_en, label: "Mahsulot oynasi: ulashish tugmasi (EN)", type: string }

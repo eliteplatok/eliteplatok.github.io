@@ -85,6 +85,7 @@
   html.min header .logo{visibility:hidden}
   body.lock .mini-brand{display:none}
   .mini-link{display:inline-block;color:#f8f2e7;font-size:13px;letter-spacing:.32em;text-transform:uppercase;padding-bottom:7px;border-bottom:1px solid rgba(248,242,231,.7);transition:opacity .25s}
+  .tg-ask{display:inline-flex;align-items:center;justify-content:center;gap:8px}.tg-ask svg{width:16px;height:16px;flex:none}
   .mini-link:hover{opacity:.7;animation-play-state:paused}
   .mini-link{animation:optShake 3.2s ease-in-out 1.2s infinite}
   @media (prefers-reduced-motion:reduce){.mini-link{animation:none}}
@@ -632,7 +633,7 @@ function openProduct(i, push = true, vi = 0) {
         <dl class="spec">${row(S.product_label_size, p.size)}${row(S.product_label_material, p.material)}${p.vars.length ? "" : row(S.product_label_color, p.color)}</dl>
         <div class="pm-btns">
           <button class="btn solid" data-add${sold ? ' disabled' : ''}>${txt(sold ? S.sold_out_label : S.product_add_button)}</button>
-          ${S.phone ? `<a class="btn" href="${tel(S.phone)}">${txt(S.product_call_button)}</a>` : ''}
+          ${S.telegram ? `<a class="btn tg-ask" href="${esc(tgAsk(S, p, v, ims[0]))}" ${ext}><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 4.3 2.9 11.4c-1.3.5-1.3 1.2-.2 1.6l4.7 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.8c.3-1.3-.5-1.9-1.5-1.4zM8.9 14.2l9.4-5.9c.5-.3.9-.1.5.2l-8 7.3-.3 3.4-1.6-5z"/></svg>${txt(S.product_tg_button || 'Telegramdan yozish')}</a>` : ''}
           <button class="btn" data-share>${txt(S.product_share_button)}</button>
         </div>
         ${!p.vars.length && p.ims.length > 4 ? `<div class="allc"><div class="allc-h">${txt(S.product_all_colors)} <span>${p.ims.length}</span></div><div class="allc-g">${p.ims.map((s, k) => `<button data-k="${k}" aria-label="${k + 1}"><img ${smImg(s, 'alt="" loading="lazy" decoding="async"')}></button>`).join('')}</div></div>` : ''}
@@ -929,6 +930,14 @@ function bindMiniBrand() {
   const req = () => { if (!raf) raf = requestAnimationFrame(frame); };
   if (!window._mbOn) { window._mbOn = 1; addEventListener('scroll', () => window._mb && window._mb(), { passive: true }); addEventListener('resize', () => window._mb && window._mb()); }
   window._mb = req; frame();
+}
+
+/* Telegram link with a ready message: greeting + model name + direct photo link (Telegram shows the photo preview) */
+function tgAsk(S, p, v, im) {
+  const base = location.origin + location.pathname.replace(/[^/]*$/, '');
+  const photo = im ? base + String(img(im)).replace(/^\.?\//, '') : '';
+  const msg = [S.product_tg_message || 'Assalomu Alaykum, shu modelni batafsil malumoti kerak', p.name + (v && v.name ? ' — ' + v.name : ''), photo].filter(Boolean).join('\n');
+  return S.telegram + (S.telegram.includes('?') ? '&' : '?') + 'text=' + encodeURIComponent(msg);
 }
 
 function products(id, d, S, alt) {
