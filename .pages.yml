@@ -256,6 +256,7 @@ content:
       - { name: title_ru, label: "Asosiy sarlavha (RU)", type: text }
       - { name: title_en, label: "Asosiy sarlavha (EN)", type: text }
       - { name: plain_stars, label: "Bir tonli ivory fon + mayda yulduzchalar (rasm o‘rniga)", type: boolean }
+      - { name: logo, label: "Bosh ekrandagi logotip (shaffof PNG)", type: image }
       - { name: subtitle, label: "Sarlavha ostidagi matn", type: string }
       - { name: subtitle_ru, label: "Sarlavha ostidagi matn (RU)", type: string }
       - { name: subtitle_en, label: "Sarlavha ostidagi matn (EN)", type: string }
