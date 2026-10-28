@@ -77,7 +77,7 @@
   @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.55) rotate(0)}50%{opacity:1;transform:scale(1) rotate(20deg)}}
   .hero.stars .hero-txt{position:relative;bottom:auto;padding:64px 16px;color:#f8f2e7}
   .hero.stars .hero-txt .eyebrow{color:#d9b98a}
-  .hero .hero-txt img.hero-logo{display:block;width:min(620px,88%);height:auto;object-fit:contain;margin:0 auto 26px;filter:drop-shadow(0 0 14px rgba(233,201,143,.25))}
+  .hero .hero-txt img.hero-logo{display:block;width:min(520px,80%);height:auto;object-fit:contain;margin:0 auto 26px;filter:drop-shadow(0 0 14px rgba(233,201,143,.25))}
   @media (max-width:760px){.hero .hero-txt img.hero-logo{width:92%;margin-bottom:18px}}
   .hero.stars h1{text-shadow:none;font-weight:500}
   .hero.stars p{text-shadow:none}
@@ -893,7 +893,7 @@ function render(C) {
   <img class="main" src="${img(H.image_center)}" alt="">
   <img src="${img(H.image_right)}" alt="">`}
   <div class="hero-txt r">
-    ${H.logo ? `<img class="hero-logo" src="${img(H.logo)}" alt="Elite Platok &amp; Abaya" width="1380" height="330">` : `<div class="eyebrow">${txt(H.eyebrow)}</div>`}
+    ${H.logo ? `<img class="hero-logo" src="${img(H.logo)}" alt="Elite Platok &amp; Abaya" width="1090" height="240">` : `<div class="eyebrow">${txt(H.eyebrow)}</div>`}
     <h1><span class="shine">${txt(H.title)}</span></h1>
     ${H.subtitle ? `<p>${txt(H.subtitle)}</p>` : ''}
     <div class="hero-act"><a href="#yangi" class="btn solid">${txt(H.button)}</a><button class="srch-btn" data-search aria-label="${esc(S.search_title)}" title="${esc(S.search_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></button></div>
