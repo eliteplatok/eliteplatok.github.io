@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#f7f3ee; --bg-2:#efe8df; --ink:#2b2622; --muted:#857a70; --line:#ddd3c7; --accent:#8c6a4f;
+    --bg:#e9e2d9; --bg-2:#ded5ca; --ink:#2b2622; --muted:#73685e; --line:#d1c6b9; --accent:#8c6a4f;
     --serif:"Cormorant Garamond", Georgia, serif; --sans:"Inter", system-ui, sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -36,7 +36,7 @@
 
   /* top bar + header */
   .bar{background:var(--ink);color:var(--bg);text-align:center;font-size:10px;letter-spacing:.25em;text-transform:uppercase;padding:9px 16px}
-  header{position:sticky;top:0;z-index:20;background:rgba(247,243,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header{position:sticky;top:0;z-index:20;background:rgba(233,226,217,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:72px}
   .logo{font-family:var(--serif);font-size:24px;letter-spacing:.22em;grid-column:2;text-align:center;white-space:nowrap}
   .menu{grid-column:1;grid-row:1;display:flex;gap:26px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
@@ -83,8 +83,13 @@
   .mini-brand .dk{position:absolute;inset:0;opacity:0}
   .mini-brand.docked .lt{opacity:0}.mini-brand.docked .dk{opacity:1}
   html.min header .logo{visibility:hidden}
-  body.lock .mini-brand{display:none}
+  body.lock .mini-brand,html:has(.menu.open) .mini-brand{display:none}
   .mini-link{display:inline-block;color:#f8f2e7;font-size:13px;letter-spacing:.32em;text-transform:uppercase;padding-bottom:7px;border-bottom:1px solid rgba(248,242,231,.7);transition:opacity .25s}
+  /* minimal: no dark strip on the page (white header first, like acham); the strip shows inside the product window */
+  html.min body>#app>.bar,html.min #app>.bar{display:none}
+  .pm-bar{display:block!important;text-align:center!important}
+  .lang-menu{display:none}
+  @media (max-width:1000px){html.min .menu.open .lang-menu{display:flex;gap:6px;padding:14px 18px 10px;border-top:1px solid var(--line)}html.min .menu .lang-menu button{font-size:12px}}
   .tg-ask{display:inline-flex;align-items:center;justify-content:center;gap:8px}.tg-ask svg{width:16px;height:16px;flex:none}
   .mini-link:hover{opacity:.7;animation-play-state:paused}
   .mini-link{animation:optShake 3.2s ease-in-out 1.2s infinite}
@@ -147,13 +152,13 @@
   .price.ask{font-weight:300;font-size:13px;color:var(--muted);letter-spacing:.04em}
   .badge{position:absolute;top:14px;left:14px;z-index:1;background:var(--bg);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:6px 10px}
   .badge.dark{background:var(--ink);color:var(--bg)}
-  .order{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(247,243,238,.95);text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:12px;opacity:0;transform:translateY(8px);transition:.35s}
+  .order{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(233,226,217,.95);text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:12px;opacity:0;transform:translateY(8px);transition:.35s}
   .card:hover .order{opacity:1;transform:none}
   .card{cursor:pointer;display:block}
   .card .slides{display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .card .slides::-webkit-scrollbar{display:none}
   .card .slides img{flex:0 0 100%;scroll-snap-align:start}
-  .card .arr{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;border:0;border-radius:50%;background:rgba(247,243,238,.9);color:var(--ink);font-size:16px;cursor:pointer;opacity:0;transition:.3s;display:grid;place-items:center}
+  .card .arr{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;border:0;border-radius:50%;background:rgba(233,226,217,.9);color:var(--ink);font-size:16px;cursor:pointer;opacity:0;transition:.3s;display:grid;place-items:center}
   .card .arr.prev{left:10px}.card .arr.next{right:10px}
   .card:hover .arr{opacity:1}
   .dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:6px;z-index:2;pointer-events:none}
@@ -168,7 +173,7 @@
   .pm{position:fixed;inset:0;z-index:100;background:var(--bg);overflow-y:auto;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;-webkit-overflow-scrolling:touch}
   .pm.open{opacity:1;visibility:visible}
   body.lock{overflow:hidden}
-  .pm-top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 24px;background:rgba(247,243,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .pm-top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 24px;background:rgba(233,226,217,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .pm-top .logo{grid-column:auto;font-size:20px}
   .pm-x{background:none;border:0;font-size:12px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;color:var(--ink);display:flex;align-items:center;gap:10px}
   .pm-x b{font-size:26px;font-weight:300;line-height:1}
@@ -178,7 +183,7 @@
   .pm-slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;height:calc(100vh - 64px);min-height:520px}
   .pm-slides::-webkit-scrollbar{display:none}
   .pm-slides img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start}
-  .pm-gal .arr{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border:0;border-radius:50%;background:rgba(247,243,238,.92);font-size:20px;cursor:pointer;display:grid;place-items:center;color:var(--ink)}
+  .pm-gal .arr{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border:0;border-radius:50%;background:rgba(233,226,217,.92);font-size:20px;cursor:pointer;display:grid;place-items:center;color:var(--ink)}
   .pm-gal .arr.prev{left:18px}.pm-gal .arr.next{right:18px}
   .pm-gal .dots{bottom:20px}
   .pm-gal .dots i{width:28px;background:rgba(255,255,255,.5)}
@@ -221,7 +226,7 @@ img.so{filter:grayscale(.55) opacity(.5)}
     .srch-btn svg{width:22px;height:22px}
     .srch{position:fixed;inset:0;z-index:60;background:var(--bg);overflow-y:auto;display:none}
     .srch.open{display:block}
-    .srch-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:12px;padding:0 24px;height:72px;background:rgba(247,243,238,.96);border-bottom:1px solid var(--line)}
+    .srch-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:12px;padding:0 24px;height:72px;background:rgba(233,226,217,.96);border-bottom:1px solid var(--line)}
     .srch-top svg{width:22px;height:22px;flex:none;color:var(--muted)}
     .srch-top input{flex:1;min-width:0;border:0;background:none;font:inherit;font-size:18px;color:var(--ink);outline:none}
     .srch-chips{display:flex;gap:8px;flex-wrap:wrap;padding:16px 24px 0;max-width:1240px;margin:0 auto}
@@ -233,7 +238,7 @@ img.so{filter:grayscale(.55) opacity(.5)}
     .srch-res{max-width:1240px;margin:0 auto;padding:18px 24px 60px}
     .sv-top{gap:12px}.sv-top>svg{width:22px;height:22px;flex:none}
     .sv-h{flex:1;font-size:clamp(22px,2.4vw,30px);margin:0}
-    .sv-x{position:absolute;top:8px;right:8px;z-index:3;width:36px;height:36px;border-radius:50%;border:0;background:rgba(247,243,238,.94);color:var(--ink);display:grid;place-items:center;cursor:pointer}
+    .sv-x{position:absolute;top:8px;right:8px;z-index:3;width:36px;height:36px;border-radius:50%;border:0;background:rgba(233,226,217,.94);color:var(--ink);display:grid;place-items:center;cursor:pointer}
     .sv-x svg{width:18px;height:18px}
     .sv-empty{max-width:520px;line-height:1.6}
     .srch-hint,.srch-n{color:var(--muted);font-size:14px;margin:6px 0 16px}
@@ -286,7 +291,7 @@ img.so{filter:grayscale(.55) opacity(.5)}
   .pm-acts .pm-x{margin-left:8px}
   .qa{position:absolute;top:46px;right:10px;z-index:4;display:flex;flex-direction:column;gap:8px;opacity:0;transform:translateX(6px);transition:opacity .25s,transform .25s}
   .card:hover .qa,.card:focus-within .qa{opacity:1;transform:none}
-  .qa button{width:38px;height:38px;border-radius:50%;border:0;background:rgba(247,243,238,.94);color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);transition:transform .2s}
+  .qa button{width:38px;height:38px;border-radius:50%;border:0;background:rgba(233,226,217,.94);color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);transition:transform .2s}
   .qa button:hover{transform:scale(1.08)}
   .qa svg{width:18px;height:18px}
   .qa-fav.on svg,.fav-ic.on svg,.sv-x svg{fill:currentColor}
@@ -651,6 +656,7 @@ function openProduct(i, push = true, vi = 0) {
   const row = (l, v) => v ? `<div><dt>${txt(l)}</dt><dd>${txt(v)}</dd></div>` : '';
   const acc = (t, v, open) => v ? `<details class="acc-item"${open ? ' open' : ''}><summary>${txt(t)}</summary><p>${txt(v)}</p></details>` : '';
   pm.innerHTML = `
+    ${document.documentElement.classList.contains('min') && S.top_bar ? `<div class="bar pm-bar"><span>${txt(S.top_bar)}</span></div>` : ''}
     <div class="pm-top"><a href="#" class="logo" data-close>${txt(S.logo)}</a><div class="pm-acts"><button class="pm-ic pm-fav${isFav(p.slug) ? ' on' : ''}" data-pfav aria-label="${esc(S.fav_label || 'Saralanganlar')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M18.5 21 12 15.6 5.5 21V4.2c0-.7.5-1.2 1.2-1.2h10.6c.7 0 1.2.5 1.2 1.2z"/></svg></button><button class="pm-ic" data-pcart aria-label="${esc(S.product_add_button)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button><button class="pm-x" data-close>${txt(S.close_label)} <b>×</b></button></div></div>
     <div class="pm-body">
       <div class="pm-gal"><span class="so-tag"${soldK(0) ? '' : ' hidden'}>${txt(S.sold_out_label)}</span>
@@ -1016,6 +1022,7 @@ function render(C) {
     <a href="#yangi">${txt(S.menu_new)}</a><a href="#matolar">${txt(S.menu_fabrics)}</a>
     ${O.show !== false ? `<a href="#aksiya">${txt(S.menu_offer)}</a>` : ''}
     <a href="#aksessuarlar">${txt(S.menu_accessories)}</a><a href="#dokon">${txt(S.menu_store)}</a>
+    ${langHtml('lang-menu')}
   </nav>
   <button class="burger" aria-label="${esc(S.menu_label)}" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span></button>
   <a href="#" class="logo">${txt(S.logo)}</a>
