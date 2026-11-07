@@ -793,16 +793,22 @@ function renderCart(view = 'list') {
   const lines = cartLines(), { sum, unknown, saved } = cartTotals(lines);
   const head = t => `<div class="dr-head"><h3>${txt(t)}</h3><button class="dr-x" data-x aria-label="${esc(S.close_label)}">×</button></div>`;
   const total = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' ' + S.currency : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)}: −${fmt(saved)} ${txt(S.currency)}</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}${S.cart_delivery_note ? `<p class="dnote">${txt(S.cart_delivery_note)}</p>` : ''}`;
-  if (view === 'ok') {
-    dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="ok"><div class="ic">✓</div><h3>${txt(S.success_title)}</h3><p>${txt(S.success_text)}</p><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
+  if (view === 'ok' || view === 'paid' || view === 'unpaid') {
+    const T = view === 'paid' ? ['✓', S.paid_title || 'To‘lov qabul qilindi', S.paid_text || 'Rahmat! Buyurtmangiz to‘landi, menejerimiz tez orada yetkazib berish vaqtini aniqlaydi.']
+      : view === 'unpaid' ? ['!', S.unpaid_title || 'To‘lov yakunlanmadi', S.unpaid_text || 'To‘lov o‘tmadi yoki bekor qilindi. Savatingiz saqlandi — qayta urinib ko‘ring yoki menejer orqali buyurtma bering.']
+      : ['✓', S.success_title, S.success_text];
+    dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="ok"><div class="ic">${T[0]}</div><h3>${txt(T[1])}</h3><p>${txt(T[2])}</p><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
   } else if (!lines.length) {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="empty">${txt(S.cart_empty)}<br><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
   } else if (view === 'form') {
+    const payOk = !!(S.payme_enabled && S.payme_api && sum > 0 && !unknown);
     dr.innerHTML = head(S.form_title) + `<div class="dr-body"><form class="frm" novalidate>
       <label>${txt(S.form_name)}<input name="name" autocomplete="name" required maxlength="80"></label>
       <label>${txt(S.form_phone)}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+998" required maxlength="30"></label>
       <div class="seg"><label><input type="radio" name="how" value="delivery" checked>${txt(S.form_delivery)}</label><label><input type="radio" name="how" value="pickup">${txt(S.form_pickup)}</label></div>
       <label class="addr">${txt(S.form_address)}<input name="address" autocomplete="street-address" maxlength="200"></label>
+      ${payOk ? `<div class="seg pay-seg"><label><input type="radio" name="pay" value="payme" checked>${txt(S.pay_payme || 'Payme orqali to‘lash')}</label><label><input type="radio" name="pay" value="manager">${txt(S.pay_manager || 'Menejer bilan kelishish')}</label></div>`
+        : S.payme_enabled && S.payme_api && unknown ? `<p class="tot-note">${txt(S.pay_unknown_note || 'Savatda narxi ko‘rsatilmagan mahsulot bor — narxni menejer aytadi, to‘lov keyin.')}</p>` : ''}
       <label>${txt(S.form_comment)}<textarea name="comment" maxlength="500"></textarea></label>
       <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="err" aria-live="polite"></div>
@@ -811,6 +817,8 @@ function renderCart(view = 'list') {
     <div class="dr-foot">${total}<button class="btn solid" data-send>${txt(S.form_submit)}</button><button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
     const f = dr.querySelector('form'), addr = dr.querySelector('.addr');
     f.querySelectorAll('[name=how]').forEach(r => r.onchange = () => addr.style.display = f.elements.namedItem('how').value === 'pickup' ? 'none' : '');
+    const sendBtn = dr.querySelector('[data-send]'), payBtnText = () => { const v = (f.elements.namedItem('pay') || {}).value; sendBtn.textContent = v === 'payme' ? (S.pay_submit || 'To‘lovga o‘tish') : S.form_submit; };
+    f.querySelectorAll('[name=pay]').forEach(r => r.onchange = payBtnText); payBtnText();
     f.onsubmit = e => { e.preventDefault(); sendOrder(f); };
     dr.querySelector('[data-send]').onclick = () => sendOrder(f);
     dr.querySelector('[data-back]').onclick = () => renderCart('list');
@@ -847,6 +855,18 @@ async function sendOrder(f) {
     image: x.im ? new URL(String(x.im).replace(/^\/+/, ''), location.origin + location.pathname).href : '' }));
   o.total = t.sum; o.unknown = t.unknown; o.lang = LANG; o.text = orderText(o);
   btn.disabled = true; btn.textContent = S.form_sending;
+  const pay = (f.elements.namedItem('pay') || {}).value === 'payme' ? 'payme' : 'manager';
+  if (S.payme_enabled && S.payme_api) { // Payme o‘chiq bo‘lsa mijoz ma’lumoti tashqi serverga yuborilmaydi
+    try {
+      const r = await fetch(S.payme_api.replace(/\/+$/, '') + '/api/orders', { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ name: o.name, phone: o.phone, how: o.how, address: o.address, comment: o.comment, website: o.website, lang: o.lang, pay,
+          items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
+      const j = await r.json();
+      if (j.ok && pay === 'payme' && j.checkout_url) { location.href = j.checkout_url; return; } // savat to‘lov tasdiqlangach tozalanadi
+      if (j.ok && pay === 'manager') { cart = []; saveCart(); renderCart('ok'); return; }
+    } catch (e) {}
+    if (pay === 'payme') { err.textContent = S.pay_error || 'To‘lovni boshlab bo‘lmadi. Qayta urinib ko‘ring yoki «Menejer bilan kelishish»ni tanlang.'; btn.disabled = false; btn.textContent = S.pay_submit || 'To‘lovga o‘tish'; return; }
+  }
   let ok = false;
   if (S.order_endpoint) {
     try {
@@ -1231,6 +1251,26 @@ addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') t.scrollBy({ left: -t.clientWidth, behavior: 'smooth' });
 });
 
+/* Payme'dan qaytish: ?paid=<token> — to'lov holatini serverdan so'raymiz */
+async function checkPaid() {
+  const q = new URLSearchParams(location.search), t = q.get('paid');
+  if (!t || !S_.payme_api) return;
+  q.delete('paid');
+  history.replaceState(history.state, '', location.pathname + (q.toString() ? '?' + q : '') + location.hash);
+  let st = '';
+  for (let k = 0; k < 6; k++) {
+    try {
+      const r = await fetch(S_.payme_api.replace(/\/+$/, '') + '/api/orders/status?t=' + encodeURIComponent(t), { cache: 'no-store' });
+      if (r.status === 404) break; // noma'lum buyurtma — kutishdan foyda yo'q
+      st = (await r.json()).status || '';
+    } catch (e) {}
+    if (['paid', 'cancelled', 'refunded'].includes(st)) break;
+    await new Promise(r => setTimeout(r, 2000));
+  }
+  if (st === 'paid') { cart = []; saveCart(); }
+  openCart(st === 'paid' ? 'paid' : 'unpaid');
+}
+
 async function usdRate() {
   const day = new Date().toISOString().slice(0, 10);
   try { const c = JSON.parse(localStorage.getItem('ep-usd')); if (c && c.day === day && c.rate > 0) return c.rate; } catch (e) {}
@@ -1248,6 +1288,7 @@ Promise.all([usdRate(), ...FILES.map(f => fetch(`content/${f}.json`, { cache: 'n
     USD = rate || +RAW.sozlamalar.usd_rate || 0;
     boot();
     fromHash();
+    checkPaid();
   })
   .catch(err => {
     const msg = { uz: 'Ma’lumotlarni yuklab bo‘lmadi. Sahifani yangilang.', ru: 'Не удалось загрузить данные. Обновите страницу.', en: 'Could not load the page. Please refresh.' }[LANG];
