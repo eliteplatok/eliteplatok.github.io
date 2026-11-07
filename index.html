@@ -337,6 +337,8 @@ img.so{filter:grayscale(.55) opacity(.5)}
   .seg input{position:absolute;opacity:0;pointer-events:none}
   .seg label{flex-direction:row;justify-content:center;padding:13px 8px;cursor:pointer;color:var(--ink);font-size:11px;text-align:center;transition:.2s}
   .seg label:has(input:checked){background:var(--ink);color:var(--bg)}
+  .seg label.off{cursor:not-allowed;opacity:.45;flex-wrap:wrap;row-gap:3px}
+  .seg .soon{flex-basis:100%;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
   .frm .err{color:#a33;font-size:13px;min-height:18px}
   .hp{position:absolute;left:-9999px}
   .ok{padding:70px 8px;text-align:center}
@@ -802,12 +804,14 @@ function renderCart(view = 'list') {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="empty">${txt(S.cart_empty)}<br><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
   } else if (view === 'form') {
     const payOk = !!(S.payme_enabled && S.payme_api && sum > 0 && !unknown);
+    const paySoon = !payOk && !!S.payme_soon && !unknown; // Payme ko‘rinadi, lekin hali tanlab bo‘lmaydi
     dr.innerHTML = head(S.form_title) + `<div class="dr-body"><form class="frm" novalidate>
       <label>${txt(S.form_name)}<input name="name" autocomplete="name" required maxlength="80"></label>
       <label>${txt(S.form_phone)}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+998" required maxlength="30"></label>
       <div class="seg"><label><input type="radio" name="how" value="delivery" checked>${txt(S.form_delivery)}</label><label><input type="radio" name="how" value="pickup">${txt(S.form_pickup)}</label></div>
       <label class="addr">${txt(S.form_address)}<input name="address" autocomplete="street-address" maxlength="200"></label>
       ${payOk ? `<div class="seg pay-seg"><label><input type="radio" name="pay" value="payme" checked>${txt(S.pay_payme || 'Payme orqali to‘lash')}</label><label><input type="radio" name="pay" value="manager">${txt(S.pay_manager || 'Menejer bilan kelishish')}</label></div>`
+        : paySoon ? `<div class="seg pay-seg"><label class="off" aria-disabled="true"><input type="radio" name="pay" value="payme" disabled>${txt(S.pay_payme || 'Payme orqali to‘lash')}<span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label><label><input type="radio" name="pay" value="manager" checked>${txt(S.pay_manager || 'Menejer bilan kelishish')}</label></div>`
         : S.payme_enabled && S.payme_api && unknown ? `<p class="tot-note">${txt(S.pay_unknown_note || 'Savatda narxi ko‘rsatilmagan mahsulot bor — narxni menejer aytadi, to‘lov keyin.')}</p>` : ''}
       <label>${txt(S.form_comment)}<textarea name="comment" maxlength="500"></textarea></label>
       <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
