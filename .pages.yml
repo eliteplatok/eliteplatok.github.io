@@ -136,6 +136,35 @@ content:
       - { name: delivery_text_ru, label: "Yetkazib berish va to‘lov matni (RU)", type: text }
       - { name: delivery_text_en, label: "Yetkazib berish va to‘lov matni (EN)", type: text }
       - { name: order_endpoint, label: "Buyurtma qabul qiluvchi manzil (Google Apps Script URL; bo‘sh bo‘lsa buyurtma Telegram orqali yuboriladi)", type: string }
+      - { name: payme_enabled, label: "💳 Payme orqali online to‘lov yoqilgan", type: boolean }
+      - { name: payme_api, label: "💳 To‘lov serveri manzili (masalan https://pay.eliteplatok.uz)", type: string }
+      - { name: pay_payme, label: "💳 To‘lov usuli: Payme", type: string }
+      - { name: pay_payme_ru, label: "💳 To‘lov usuli: Payme (RU)", type: string }
+      - { name: pay_payme_en, label: "💳 To‘lov usuli: Payme (EN)", type: string }
+      - { name: pay_manager, label: "💳 To‘lov usuli: menejer bilan kelishish", type: string }
+      - { name: pay_manager_ru, label: "💳 To‘lov usuli: menejer bilan kelishish (RU)", type: string }
+      - { name: pay_manager_en, label: "💳 To‘lov usuli: menejer bilan kelishish (EN)", type: string }
+      - { name: pay_submit, label: "💳 «To‘lovga o‘tish» tugmasi", type: string }
+      - { name: pay_submit_ru, label: "💳 «To‘lovga o‘tish» tugmasi (RU)", type: string }
+      - { name: pay_submit_en, label: "💳 «To‘lovga o‘tish» tugmasi (EN)", type: string }
+      - { name: pay_error, label: "💳 To‘lovni boshlab bo‘lmaganda xabar", type: text }
+      - { name: pay_error_ru, label: "💳 To‘lovni boshlab bo‘lmaganda xabar (RU)", type: text }
+      - { name: pay_error_en, label: "💳 To‘lovni boshlab bo‘lmaganda xabar (EN)", type: text }
+      - { name: pay_unknown_note, label: "💳 Savatda narxsiz mahsulot bo‘lganda izoh", type: text }
+      - { name: pay_unknown_note_ru, label: "💳 Savatda narxsiz mahsulot bo‘lganda izoh (RU)", type: text }
+      - { name: pay_unknown_note_en, label: "💳 Savatda narxsiz mahsulot bo‘lganda izoh (EN)", type: text }
+      - { name: paid_title, label: "💳 To‘lov qabul qilindi — sarlavha", type: string }
+      - { name: paid_title_ru, label: "💳 To‘lov qabul qilindi — sarlavha (RU)", type: string }
+      - { name: paid_title_en, label: "💳 To‘lov qabul qilindi — sarlavha (EN)", type: string }
+      - { name: paid_text, label: "💳 To‘lov qabul qilindi — matn", type: text }
+      - { name: paid_text_ru, label: "💳 To‘lov qabul qilindi — matn (RU)", type: text }
+      - { name: paid_text_en, label: "💳 To‘lov qabul qilindi — matn (EN)", type: text }
+      - { name: unpaid_title, label: "💳 To‘lov o‘tmadi — sarlavha", type: string }
+      - { name: unpaid_title_ru, label: "💳 To‘lov o‘tmadi — sarlavha (RU)", type: string }
+      - { name: unpaid_title_en, label: "💳 To‘lov o‘tmadi — sarlavha (EN)", type: string }
+      - { name: unpaid_text, label: "💳 To‘lov o‘tmadi — matn", type: text }
+      - { name: unpaid_text_ru, label: "💳 To‘lov o‘tmadi — matn (RU)", type: text }
+      - { name: unpaid_text_en, label: "💳 To‘lov o‘tmadi — matn (EN)", type: text }
       - { name: price_on_request, label: "Narx yozilmagan mahsulotda chiqadigan yozuv", type: string }
       - { name: price_on_request_ru, label: "Narx yozilmagan mahsulotda chiqadigan yozuv (RU)", type: string }
       - { name: price_on_request_en, label: "Narx yozilmagan mahsulotda chiqadigan yozuv (EN)", type: string }
