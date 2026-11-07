@@ -137,6 +137,10 @@ content:
       - { name: delivery_text_en, label: "Yetkazib berish va to‘lov matni (EN)", type: text }
       - { name: order_endpoint, label: "Buyurtma qabul qiluvchi manzil (Google Apps Script URL; bo‘sh bo‘lsa buyurtma Telegram orqali yuboriladi)", type: string }
       - { name: payme_enabled, label: "💳 Payme orqali online to‘lov yoqilgan", type: boolean }
+      - { name: payme_soon, label: "💳 Payme o‘chiq paytda ham «Tez kunda» deb ko‘rsatilsin (bosib bo‘lmaydi)", type: boolean }
+      - { name: pay_soon, label: "💳 «Tez kunda» yozuvi", type: string }
+      - { name: pay_soon_ru, label: "💳 «Tez kunda» yozuvi (RU)", type: string }
+      - { name: pay_soon_en, label: "💳 «Tez kunda» yozuvi (EN)", type: string }
       - { name: payme_api, label: "💳 To‘lov serveri manzili (masalan https://pay.eliteplatok.uz)", type: string }
       - { name: pay_payme, label: "💳 To‘lov usuli: Payme", type: string }
       - { name: pay_payme_ru, label: "💳 To‘lov usuli: Payme (RU)", type: string }
