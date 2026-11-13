@@ -2126,7 +2126,7 @@
       "name_ru": "Жаккардовые платки",
       "name_en": "Jacquard scarves",
       "images": [],
-      "cover": "images/jakkard-muqova.jpg",
+      "cover": "images/jakkard-video-poster.jpg",
       "size": "1 × 1 m (100 × 100 sm)",
       "size_ru": "1 × 1 м (100 × 100 см)",
       "size_en": "1 × 1 m (100 × 100 cm)",
@@ -2331,7 +2331,8 @@
           "sold_out": false,
           "card_hide": false
         }
-      ]
+      ],
+      "video": "video/jakkard.mp4"
     },
     {
       "name": "Kashka sharflar",
