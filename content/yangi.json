@@ -62,21 +62,333 @@
       "sold_out": false,
       "sold_photos": "",
       "tags": "abaya",
-      "variants": [
-
-      ],
+      "variants": [],
       "price_ru": "999 000 сум",
       "price_en": "999,000 UZS",
       "price_note_ru": "",
       "price_note_en": ""
     },
     {
+      "name": "Yevro natural sholk ro‘mollar",
+      "name_ru": "Европейские платки из натурального шёлка",
+      "name_en": "European Natural Silk Scarves",
+      "images": [],
+      "cover": "images/yevro-sholk-2.jpg",
+      "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
+      "material": "Natural sho‘yi · 100% qo‘l ishi",
+      "material_ru": "Натуральный шёлк · 100% ручная работа",
+      "material_en": "Natural silk · 100% handmade",
+      "color": "21 xil 3D print (maxsus buyurtma asosida)",
+      "color_ru": "21 вариант 3D-принта (по специальному заказу)",
+      "color_en": "21 3D-print designs (made to our special order)",
+      "description": "Natural sho‘yi, qo‘l ishi, 3D printlar — 28 $, 2 tasi 40 $.",
+      "description_ru": "Натуральный шёлк, ручная работа, 3D-принты — 28 $, 2 шт. 40 $.",
+      "description_en": "Natural silk, handmade, 3D prints — $28, 2 for $40.",
+      "details": "Yevro natural sholk ro‘mollar — 100% qo‘l ishi, chetlari ham qo‘lda nozik bukilgan. 3D usulida ishlangan printlar do‘konimizning maxsus buyurtmasi asosida ishlab chiqarilgan, shuning uchun bunday naqshlarni boshqa joyda topa olmaysiz. O‘lchami 90 × 90 sm.\n\nTo‘plamda 21 xil naqsh bor: gulli, klassik zanjirli, geometrik va manzarali printlar. Har bir naqshni tanlab, rasmini ko‘ring — ko‘pchiligida yoyilgan holdagi rasmi ham bor.\n\nNarxi 28 $, 2 tasi — 40 $ (maxsus narx). Ma’qul kelmagan ro‘mol qaytarib olinadi yoki almashtirib beriladi — buning uchun shourumimizga keling.",
+      "details_ru": "Европейские платки из натурального шёлка — 100% ручная работа, края подшиты вручную. Принты в технике 3D произведены по специальному заказу нашего магазина, поэтому таких узоров вы не найдёте в другом месте. Размер 90 × 90 см.\n\nВ коллекции 21 узор: цветочные, классические цепи, геометрия и пейзажные принты. Выберите узор, чтобы посмотреть фото — у большинства есть и фото в развёрнутом виде.\n\nЦена 28 $, 2 платка — 40 $ (специальная цена). Если платок не подошёл, мы примем его обратно или обменяем — для этого приходите в наш шоурум.",
+      "details_en": "European natural silk scarves — 100% handmade, with hand-rolled edges. The 3D prints are produced to our shop’s special order, so you won’t find these patterns anywhere else. Size 90 × 90 cm.\n\nThe collection has 21 patterns: florals, classic chains, geometric and scenic prints. Pick a pattern to see its photo — most also have a laid-out shot.\n\nPrice $28, any 2 for $40 (special price). If a scarf doesn’t suit you, we’ll take it back or exchange it — just visit our showroom.",
+      "care": "Faqat qo‘lda, sovuq suvda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Только ручная стирка в холодной воде или химчистка. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash in cold water only, or dry clean. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
+      "price": "28 $",
+      "price_ru": "28 $",
+      "price_en": "$28",
+      "price_note": "2 tasi — 40 $ · Qaytarish yoki almashtirish mumkin",
+      "price_note_ru": "2 шт. — 40 $ · Возврат или обмен",
+      "price_note_en": "2 for $40 · Returns or exchange",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 0,
+      "price_usd": 28,
+      "promo3": true,
+      "promo_qty": 2,
+      "promo_total": 0,
+      "promo_usd": 40,
+      "promo_group": "yevro-sholk",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1",
+          "name_ru": "№1",
+          "name_en": "No. 1",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-1.jpg"
+          ],
+          "swatch": "images/yevro-sholk-1.jpg"
+        },
+        {
+          "name": "№2",
+          "name_ru": "№2",
+          "name_en": "No. 2",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-2.jpg"
+        },
+        {
+          "name": "№3",
+          "name_ru": "№3",
+          "name_en": "No. 3",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-3.jpg",
+            "images/yevro-sholk-3-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-3.jpg"
+        },
+        {
+          "name": "№4",
+          "name_ru": "№4",
+          "name_en": "No. 4",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-4.jpg"
+          ],
+          "swatch": "images/yevro-sholk-4.jpg"
+        },
+        {
+          "name": "№5",
+          "name_ru": "№5",
+          "name_en": "No. 5",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-5.jpg",
+            "images/yevro-sholk-5-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-5.jpg"
+        },
+        {
+          "name": "№6",
+          "name_ru": "№6",
+          "name_en": "No. 6",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-6.jpg"
+          ],
+          "swatch": "images/yevro-sholk-6.jpg"
+        },
+        {
+          "name": "№7",
+          "name_ru": "№7",
+          "name_en": "No. 7",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-7.jpg",
+            "images/yevro-sholk-7-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-7.jpg"
+        },
+        {
+          "name": "№8",
+          "name_ru": "№8",
+          "name_en": "No. 8",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-8.jpg",
+            "images/yevro-sholk-8-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-8.jpg"
+        },
+        {
+          "name": "№9",
+          "name_ru": "№9",
+          "name_en": "No. 9",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-9.jpg"
+          ],
+          "swatch": "images/yevro-sholk-9.jpg"
+        },
+        {
+          "name": "№10",
+          "name_ru": "№10",
+          "name_en": "No. 10",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-10.jpg",
+            "images/yevro-sholk-10-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-10.jpg"
+        },
+        {
+          "name": "№11",
+          "name_ru": "№11",
+          "name_en": "No. 11",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-11.jpg"
+          ],
+          "swatch": "images/yevro-sholk-11.jpg"
+        },
+        {
+          "name": "№12",
+          "name_ru": "№12",
+          "name_en": "No. 12",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-12.jpg",
+            "images/yevro-sholk-12-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-12.jpg"
+        },
+        {
+          "name": "№13",
+          "name_ru": "№13",
+          "name_en": "No. 13",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-13.jpg"
+          ],
+          "swatch": "images/yevro-sholk-13.jpg"
+        },
+        {
+          "name": "№14",
+          "name_ru": "№14",
+          "name_en": "No. 14",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-14.jpg",
+            "images/yevro-sholk-14-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-14.jpg"
+        },
+        {
+          "name": "№15",
+          "name_ru": "№15",
+          "name_en": "No. 15",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-15.jpg",
+            "images/yevro-sholk-15-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-15.jpg"
+        },
+        {
+          "name": "№16",
+          "name_ru": "№16",
+          "name_en": "No. 16",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-16.jpg",
+            "images/yevro-sholk-16-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-16.jpg"
+        },
+        {
+          "name": "№17",
+          "name_ru": "№17",
+          "name_en": "No. 17",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-17.jpg",
+            "images/yevro-sholk-17-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-17.jpg"
+        },
+        {
+          "name": "№18",
+          "name_ru": "№18",
+          "name_en": "No. 18",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-18.jpg",
+            "images/yevro-sholk-18-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-18.jpg"
+        },
+        {
+          "name": "№19",
+          "name_ru": "№19",
+          "name_en": "No. 19",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-19.jpg",
+            "images/yevro-sholk-19-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-19.jpg"
+        },
+        {
+          "name": "№20",
+          "name_ru": "№20",
+          "name_en": "No. 20",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-20.jpg",
+            "images/yevro-sholk-20-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-20.jpg"
+        },
+        {
+          "name": "№21",
+          "name_ru": "№21",
+          "name_en": "No. 21",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-21.jpg",
+            "images/yevro-sholk-21-2.jpg"
+          ],
+          "swatch": "images/yevro-sholk-21.jpg"
+        }
+      ]
+    },
+    {
       "name": "«ADEL» namozlik",
       "name_ru": "Намазлык «ADEL»",
       "name_en": "“ADEL” prayer set",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "",
       "size": "Free size",
       "size_ru": "Free size (свободный размер)",
@@ -202,9 +514,7 @@
       "name": "«ELF PRIVE» namozlik",
       "name_ru": "Намазлык «ELF PRIVE»",
       "name_en": "“ELF PRIVE” prayer set",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "",
       "size": "Free size",
       "size_ru": "Free size (свободный размер)",
@@ -349,9 +659,7 @@
       "sold_out": false,
       "sold_photos": "",
       "tags": "namozlik",
-      "variants": [
-
-      ],
+      "variants": [],
       "price_ru": "899 000 сум",
       "price_en": "899,000 UZS",
       "price_note_ru": "",
@@ -361,9 +669,7 @@
       "name": "Dog‘iston tvil ro‘mollari",
       "name_ru": "Дагестанские платки из твила",
       "name_en": "Dagestan twill scarves",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "images/tvil55-1-1.jpg",
       "size": "90 × 90 sm",
       "size_ru": "90 × 90 см",
@@ -542,9 +848,7 @@
       "name": "Pushti Italia ro‘mollar",
       "name_ru": "Розовые итальянские платки",
       "name_en": "Pink Italian Scarves",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "images/pushti-9-2.jpg",
       "size": "90 × 90 sm",
       "size_ru": "90 × 90 см",
@@ -788,9 +1092,7 @@
       "name": "Jatka ro‘mollar",
       "name_ru": "Платки из жатки",
       "name_en": "Crinkle Cotton Scarves",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "images/jatka-muqova.jpg",
       "size": "90 × 90 sm",
       "size_ru": "90 × 90 см",
@@ -1006,9 +1308,7 @@
       "name": "Dubay ipak ro‘mollari",
       "name_ru": "Платки из дубайского шёлка",
       "name_en": "Dubai Silk Scarves",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
@@ -1177,9 +1477,7 @@
       "name": "Turkiya tvil sholk ro‘mollar",
       "name_ru": "Турецкие платки твиль шолк",
       "name_en": "Turkish Twill Silk Scarves",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "",
       "size": "",
       "material": "Tvil shoyi, bir rangli",
@@ -1522,9 +1820,7 @@
       "name": "Jakkard ro‘mollar",
       "name_ru": "Жаккардовые платки",
       "name_en": "Jacquard scarves",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "images/jakkard-muqova.jpg",
       "size": "1 × 1 m (100 × 100 sm)",
       "size_ru": "1 × 1 м (100 × 100 см)",
@@ -1736,9 +2032,7 @@
       "name": "Kashka sharflar",
       "name_ru": "Шарфы кашка",
       "name_en": "Kashka scarves",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "",
       "size": "70 × 170 sm",
       "size_ru": "70 × 170 см",
@@ -1950,9 +2244,7 @@
       "name": "Shifon sharflar",
       "name_ru": "Шифоновые шарфы",
       "name_en": "Chiffon scarves",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "",
       "size": "",
       "material": "Shifon",
@@ -2137,9 +2429,7 @@
       "name": "Organza ro‘mol",
       "name_ru": "Платок из органзы",
       "name_en": "Organza scarf",
-      "images": [
-
-      ],
+      "images": [],
       "cover": "images/organza.jpg",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",

@@ -778,7 +778,7 @@ function cartTotals(lines) {
     const v = priceNum(x.p);
     if (!v) { unknown = true; return; }
     if (x.p.promo3 && +S_.promo3_total) {
-      const g = groups[x.p.promo_group || x.slug] ||= { qty: 0, unit: v, n: +x.p.promo_qty || 3, total: +x.p.promo_total || +S_.promo3_total };
+      const g = groups[x.p.promo_group || x.slug] ||= { qty: 0, unit: v, n: +x.p.promo_qty || 3, total: (+x.p.promo_usd > 0 && USD ? Math.round(+x.p.promo_usd * USD / 1000) * 1000 : 0) || +x.p.promo_total || +S_.promo3_total };
       g.qty += x.qty; return;
     }
     sum += v * x.qty;

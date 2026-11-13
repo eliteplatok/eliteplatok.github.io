@@ -380,6 +380,7 @@ content:
           - { name: promo3, label: "Aksiyada (savatda avtomatik hisoblanadi)", type: boolean }
           - { name: promo_qty, label: "Aksiya: nechta olinganda (masalan 3 yoki 2)", type: number }
           - { name: promo_total, label: "Aksiya: shuncha donaning umumiy narxi, so‘m (masalan 100000)", type: number }
+          - { name: promo_usd, label: "Aksiya: shuncha donaning umumiy narxi, dollarda (narx dollarda bo‘lsa, masalan 40)", type: number }
           - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
           - { name: promo_group_ru, label: "Aksiya guruhi (RU)", type: string }
           - { name: promo_group_en, label: "Aksiya guruhi (EN)", type: string }
@@ -466,6 +467,7 @@ content:
           - { name: promo3, label: "Aksiyada (savatda avtomatik hisoblanadi)", type: boolean }
           - { name: promo_qty, label: "Aksiya: nechta olinganda (masalan 3 yoki 2)", type: number }
           - { name: promo_total, label: "Aksiya: shuncha donaning umumiy narxi, so‘m (masalan 100000)", type: number }
+          - { name: promo_usd, label: "Aksiya: shuncha donaning umumiy narxi, dollarda (narx dollarda bo‘lsa, masalan 40)", type: number }
           - { name: promo_group, label: "Aksiya guruhi (bir guruhdagi mahsulotlar «3 tasi» aksiyasida birga hisoblanadi, masalan: tvil, kashka)", type: string }
           - { name: promo_group_ru, label: "Aksiya guruhi (RU)", type: string }
           - { name: promo_group_en, label: "Aksiya guruhi (EN)", type: string }
