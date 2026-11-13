@@ -385,6 +385,164 @@
       ]
     },
     {
+      "name": "Xitoy tvil sholk ro‘mollar",
+      "name_ru": "Китайские платки из твил-шёлка",
+      "name_en": "Chinese Twill Silk Scarves",
+      "images": [],
+      "cover": "images/xitoy-tvil-2.jpg",
+      "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
+      "material": "Tvil sholk · chetlari mashinada bukilgan",
+      "material_ru": "Твил-шёлк · края подшиты машинным швом",
+      "material_en": "Twill silk · machine-stitched hems",
+      "color": "9 xil print: ko‘k, oq va kulrang tuslarda",
+      "color_ru": "9 принтов в синих, белых и серых тонах",
+      "color_en": "9 prints in blue, white and grey tones",
+      "description": "Tvil sholk, 90 × 90 sm — 75 000 so‘m, 3 tasi 100 000 so‘m.",
+      "description_ru": "Твил-шёлк, 90 × 90 см — 75 000 сум, 3 шт. 100 000 сум.",
+      "description_en": "Twill silk, 90 × 90 cm — 75,000 UZS, 3 for 100,000 UZS.",
+      "details": "Xitoy tvil sholk ro‘mollari — silliq, yengil jiloli mato, boshda chiroyli turadi va shaklini yaxshi ushlaydi. Chetlari mashinada toza bukib tikilgan. O‘lchami 90 × 90 sm.\n\nTo‘plamda 9 xil print bor: ko‘k-oq, gulli, nuqtali, monogrammali, chiziqli va panjara naqshlar. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Китайские платки из твил-шёлка — гладкая ткань с лёгким блеском, красиво ложится и хорошо держит форму. Края аккуратно подшиты машинным швом. Размер 90 × 90 см.\n\nВ коллекции 9 принтов: сине-белый, цветочные, горошек, монограмма, полоска и решётка. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Chinese twill silk scarves — smooth fabric with a light sheen that drapes well and holds its shape. Neat machine-stitched hems. Size 90 × 90 cm.\n\nThe collection has 9 prints: blue & white, florals, polka dots, monogram, stripes and lattice. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
+      "price": "75 000 so‘m",
+      "price_ru": "75 000 сум",
+      "price_en": "75,000 UZS",
+      "price_note": "3 tasi — 100 000 so‘m",
+      "price_note_ru": "3 шт. — 100 000 сум",
+      "price_note_en": "3 for 100,000 UZS",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 75000,
+      "price_usd": 0,
+      "promo3": true,
+      "promo_qty": 3,
+      "promo_total": 100000,
+      "promo_usd": 0,
+      "promo_group": "xitoy-tvil",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1 Ko‘k-oq",
+          "name_ru": "№1 Сине-белый",
+          "name_en": "No. 1 Blue & white",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-1.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-1.jpg"
+        },
+        {
+          "name": "№2 Ko‘k gulli",
+          "name_ru": "№2 Синий с цветами",
+          "name_en": "No. 2 Blue floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-2.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-2.jpg"
+        },
+        {
+          "name": "№3 Ko‘k naqshli",
+          "name_ru": "№3 Синий узор",
+          "name_en": "No. 3 Blue pattern",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-3.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-3.jpg"
+        },
+        {
+          "name": "№4 Oq, ko‘k nuqtali",
+          "name_ru": "№4 Белый в голубой горошек",
+          "name_en": "No. 4 White, blue dots",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-4.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-4.jpg"
+        },
+        {
+          "name": "№5 Oq-qora gulli",
+          "name_ru": "№5 Бело-чёрный с цветами",
+          "name_en": "No. 5 Black & white floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-5.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-5.jpg"
+        },
+        {
+          "name": "№6 Kulrang monogramma",
+          "name_ru": "№6 Серая монограмма",
+          "name_en": "No. 6 Grey monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-6.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-6.jpg"
+        },
+        {
+          "name": "№7 Kulrang gulli",
+          "name_ru": "№7 Серый с цветами",
+          "name_en": "No. 7 Grey floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-7.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-7.jpg"
+        },
+        {
+          "name": "№8 Kulrang chiziqli",
+          "name_ru": "№8 Серый в полоску",
+          "name_en": "No. 8 Grey striped",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-8.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-8.jpg"
+        },
+        {
+          "name": "№9 Havorang panjara",
+          "name_ru": "№9 Голубая решётка",
+          "name_en": "No. 9 Light blue lattice",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-9.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-9.jpg"
+        }
+      ]
+    },
+    {
       "name": "«ADEL» namozlik",
       "name_ru": "Намазлык «ADEL»",
       "name_en": "“ADEL” prayer set",
