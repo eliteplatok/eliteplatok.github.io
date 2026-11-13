@@ -862,7 +862,8 @@ async function sendOrder(f) {
   const pay = (f.elements.namedItem('pay') || {}).value === 'payme' ? 'payme' : 'manager';
   if (S.payme_enabled && S.payme_api) { // Payme o‘chiq bo‘lsa mijoz ma’lumoti tashqi serverga yuborilmaydi
     try {
-      const r = await fetch(S.payme_api.replace(/\/+$/, '') + '/api/orders', { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      const ctl = new AbortController(); setTimeout(() => ctl.abort(), 20000); // server javob bermasa tugma osilib qolmasin
+      const r = await fetch(S.payme_api.replace(/\/+$/, '') + '/api/orders', { method: 'POST', signal: ctl.signal, headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify({ name: o.name, phone: o.phone, how: o.how, address: o.address, comment: o.comment, website: o.website, lang: o.lang, pay,
           items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
       const j = await r.json();
