@@ -13,9 +13,9 @@
   "link_label_en": "View all",
   "products": [
     {
-      "name": "«MUNISA» abaya",
-      "name_ru": "Абая «MUNISA»",
-      "name_en": "“MUNISA” abaya",
+      "name": "«MOONIS» abaya",
+      "name_ru": "Абая «MOONIS»",
+      "name_en": "“MOONIS” abaya",
       "images": [
         "images/abaya-1-1.jpg",
         "images/abaya-1-2.jpg",
@@ -38,9 +38,9 @@
       "description": "Mualliflik dizayni: qora Dubay kuprasi, nuqtali Italiya tvili va nafis gipyur bezak.",
       "description_ru": "Авторский дизайн: чёрная дубайская купра, итальянский твил в горошек и изящный гипюр.",
       "description_en": "Designer piece: black Dubai cupro, polka-dot Italian twill and delicate guipure trim.",
-      "details": "«MUNISA» — Elite Platok'ning mualliflik dizaynidagi abaya.\n\nYuqori qismi Dubay kuprasidan tikilgan: mato yumshoq va oqimli, tanaga yoqimli tegadi, havo o‘tkazadi va ajinlanmaydi, chuqur qora rangi uzoq vaqt yo‘qolmaydi. Etagi va yeng uchlari oq fonda qora nuqtali Italiya natural tvilidan: zich, silliq, yengil jilo beradi va shaklini chiroyli ushlaydi.\n\nIkki mato tutashgan joy yuqori sifatli viskozadan ishlangan gipyur bilan bezatilgan — nafis va yengil. Ko‘rinmas tugmalar abayaga ortiqcha detalsiz, toza va elegant ko‘rinish beradi, stoyka yoqa va A-siluet esa qomatni chiroyli ko‘rsatib, harakatni erkin qoldiradi.\n\nBayram, mehmondorchilik, to‘y va kundalik nafis obraz uchun mos.",
-      "details_ru": "«MUNISA» — абая авторского дизайна Elite Platok.\n\nВерх сшит из дубайской купры: ткань мягкая и струящаяся, приятная к телу, дышит и не мнётся, глубокий чёрный цвет долго не тускнеет. Низ и края рукавов — из итальянского натурального твила, белого в чёрный горошек: плотный, гладкий, с лёгким блеском, красиво держит форму.\n\nСтык тканей украшен гипюром из высококачественной вискозы — изящно и легко. Потайные пуговицы придают абае чистый, элегантный вид без лишних деталей, а воротник-стойка и А-силуэт красиво подчёркивают фигуру и не стесняют движений.\n\nПодходит для праздников, походов в гости, свадеб и элегантного повседневного образа.",
-      "details_en": "“MUNISA” is an Elite Platok designer abaya.\n\nThe upper part is Dubai cupro: soft and fluid, pleasant on the skin, breathable and crease-resistant, with a deep black that stays rich. The hem and cuffs are Italian natural twill, white with black polka dots: dense, smooth, with a light sheen and a beautiful drape.\n\nThe seam between the fabrics is trimmed with high-quality viscose guipure — delicate and light. Hidden buttons give a clean, elegant look, while the stand collar and A-line silhouette flatter the figure and leave room to move.\n\nPerfect for celebrations, visits, weddings and elegant everyday wear.",
+      "details": "«MOONIS» — Elite Platok'ning mualliflik dizaynidagi abaya.\n\nYuqori qismi Dubay kuprasidan tikilgan: mato yumshoq va oqimli, tanaga yoqimli tegadi, havo o‘tkazadi va ajinlanmaydi, chuqur qora rangi uzoq vaqt yo‘qolmaydi. Etagi va yeng uchlari oq fonda qora nuqtali Italiya natural tvilidan: zich, silliq, yengil jilo beradi va shaklini chiroyli ushlaydi.\n\nIkki mato tutashgan joy yuqori sifatli viskozadan ishlangan gipyur bilan bezatilgan — nafis va yengil. Ko‘rinmas tugmalar abayaga ortiqcha detalsiz, toza va elegant ko‘rinish beradi, stoyka yoqa va A-siluet esa qomatni chiroyli ko‘rsatib, harakatni erkin qoldiradi.\n\nBayram, mehmondorchilik, to‘y va kundalik nafis obraz uchun mos.",
+      "details_ru": "«MOONIS» — абая авторского дизайна Elite Platok.\n\nВерх сшит из дубайской купры: ткань мягкая и струящаяся, приятная к телу, дышит и не мнётся, глубокий чёрный цвет долго не тускнеет. Низ и края рукавов — из итальянского натурального твила, белого в чёрный горошек: плотный, гладкий, с лёгким блеском, красиво держит форму.\n\nСтык тканей украшен гипюром из высококачественной вискозы — изящно и легко. Потайные пуговицы придают абае чистый, элегантный вид без лишних деталей, а воротник-стойка и А-силуэт красиво подчёркивают фигуру и не стесняют движений.\n\nПодходит для праздников, походов в гости, свадеб и элегантного повседневного образа.",
+      "details_en": "“MOONIS” is an Elite Platok designer abaya.\n\nThe upper part is Dubai cupro: soft and fluid, pleasant on the skin, breathable and crease-resistant, with a deep black that stays rich. The hem and cuffs are Italian natural twill, white with black polka dots: dense, smooth, with a light sheen and a beautiful drape.\n\nThe seam between the fabrics is trimmed with high-quality viscose guipure — delicate and light. Hidden buttons give a clean, elegant look, while the stand collar and A-line silhouette flatter the figure and leave room to move.\n\nPerfect for celebrations, visits, weddings and elegant everyday wear.",
       "care": "30°C da nozik rejimda yoki qo‘lda yuving. Siqmang, ilgichda soyada quriting. Past haroratda teskari tomonidan dazmollang; gipyurni bug‘ bilan tekislang.",
       "care_ru": "Стирать при 30°C в деликатном режиме или вручную. Не отжимать, сушить на плечиках в тени. Гладить с изнанки при низкой температуре; гипюр отпаривать.",
       "care_en": "Wash at 30°C on a delicate cycle or by hand. Do not wring; dry on a hanger in the shade. Iron inside out on low; steam the guipure.",
@@ -67,6 +67,153 @@
       "price_en": "999,000 UZS",
       "price_note_ru": "",
       "price_note_en": ""
+    },
+    {
+      "name": "«1969» ro‘mollari",
+      "name_ru": "Платки «1969»",
+      "name_en": "“1969” Scarves",
+      "images": [],
+      "cover": "images/1969-video-poster.jpg",
+      "video": "video/1969-romollar.mp4",
+      "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
+      "material": "",
+      "material_ru": "",
+      "material_en": "",
+      "color": "8 xil rang, bodom (paisley) naqshi",
+      "color_ru": "8 расцветок, узор пейсли",
+      "color_en": "8 colourways, paisley print",
+      "description": "Katta 110 × 110 sm, bodom naqshi — 230 000 so‘m, 2 tasi 350 000 so‘m.",
+      "description_ru": "Большой размер 110 × 110 см, узор пейсли — 230 000 сум, 2 шт. 350 000 сум.",
+      "description_en": "Large 110 × 110 cm, paisley print — 230,000 UZS, 2 for 350,000 UZS.",
+      "details": "«1969» brendining ro‘mollari — katta 110 × 110 sm o‘lchamda, klassik bodom (paisley) naqshi bilan. Katta o‘lcham turli usulda o‘rashga qulay, boshda to‘liq va chiroyli turadi.\n\nNaqsh 8 xil rangda: qizil, kulrang-oltin, havorang, bej-sariq, pushti-moviy, bordo, ko‘k va pushti-kulrang. Har bir rangni tanlab, manekendagi rasmini ko‘ring.\n\nDonasi 230 000 so‘m, istalgan 2 tasi — 350 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Платки бренда «1969» — большой размер 110 × 110 см, классический узор пейсли. Большой размер удобно завязывать разными способами, платок красиво и полностью ложится.\n\n8 расцветок: красная, серо-золотая, голубая, бежево-жёлтая, розово-голубая, бордовая, синяя и розово-серая. Выберите цвет, чтобы посмотреть фото на манекене.\n\nЦена 230 000 сум, любые 2 — 350 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Scarves by “1969” — a large 110 × 110 cm size with a classic paisley print. The generous size ties in many ways and drapes fully.\n\n8 colourways: red, grey & gold, sky blue, beige & yellow, pink & blue, burgundy, blue and pink & grey. Pick a colour to see it on the mannequin.\n\n230,000 UZS each, any 2 for 350,000 UZS (the special price is applied in the cart automatically).",
+      "care": "Qo‘lda, sovuq suvda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda dazmollang.",
+      "care_ru": "Ручная стирка в холодной воде или химчистка. Не отжимать, сушить в тени. Гладить при низкой температуре.",
+      "care_en": "Hand wash in cold water or dry clean. Do not wring, dry in the shade. Iron at low temperature.",
+      "price": "230 000 so‘m",
+      "price_ru": "230 000 сум",
+      "price_en": "230,000 UZS",
+      "price_note": "2 tasi — 350 000 so‘m",
+      "price_note_ru": "2 шт. — 350 000 сум",
+      "price_note_en": "2 for 350,000 UZS",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 230000,
+      "price_usd": 0,
+      "promo3": true,
+      "promo_qty": 2,
+      "promo_total": 350000,
+      "promo_usd": 0,
+      "promo_group": "romol-1969",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1 Qizil",
+          "name_ru": "№1 Красный",
+          "name_en": "No. 1 Red",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-1.jpg"
+          ],
+          "swatch": "images/romol-1969-1.jpg"
+        },
+        {
+          "name": "№2 Kulrang-oltin",
+          "name_ru": "№2 Серо-золотой",
+          "name_en": "No. 2 Grey & gold",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-2.jpg"
+          ],
+          "swatch": "images/romol-1969-2.jpg"
+        },
+        {
+          "name": "№3 Havorang",
+          "name_ru": "№3 Голубой",
+          "name_en": "No. 3 Sky blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-3.jpg"
+          ],
+          "swatch": "images/romol-1969-3.jpg"
+        },
+        {
+          "name": "№4 Bej-sariq",
+          "name_ru": "№4 Бежево-жёлтый",
+          "name_en": "No. 4 Beige & yellow",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-4.jpg"
+          ],
+          "swatch": "images/romol-1969-4.jpg"
+        },
+        {
+          "name": "№5 Pushti-moviy",
+          "name_ru": "№5 Розово-голубой",
+          "name_en": "No. 5 Pink & blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-5.jpg"
+          ],
+          "swatch": "images/romol-1969-5.jpg"
+        },
+        {
+          "name": "№6 Bordo",
+          "name_ru": "№6 Бордовый",
+          "name_en": "No. 6 Burgundy",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-6.jpg"
+          ],
+          "swatch": "images/romol-1969-6.jpg"
+        },
+        {
+          "name": "№7 Ko‘k",
+          "name_ru": "№7 Синий",
+          "name_en": "No. 7 Blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-7.jpg"
+          ],
+          "swatch": "images/romol-1969-7.jpg"
+        },
+        {
+          "name": "№8 Pushti-kulrang",
+          "name_ru": "№8 Розово-серый",
+          "name_en": "No. 8 Pink & grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-8.jpg"
+          ],
+          "swatch": "images/romol-1969-8.jpg"
+        }
+      ]
     },
     {
       "name": "Yevro natural sholk ro‘mollar",

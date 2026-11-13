@@ -338,6 +338,7 @@ content:
           - { name: name_en, label: "Nomi (EN)", type: string }
           - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
           - { name: cover, label: "Muqova rasmi (ranglari bor tovar uchun: kartochkada birinchi chiqadi)", type: image }
+          - { name: video, label: "Kartochka videosi (mp4, ovozsiz takrorlanadi; muqova rasmi uning ustida turadi)", type: string }
           - name: variants
             label: "Ranglar (bir rangli tovar uchun: har rangga o‘z rasmlari va dumaloq rang tugmasi; to‘ldirilsa yuqoridagi «Rasmlar» o‘rniga ishlatiladi)"
             type: object
@@ -425,6 +426,7 @@ content:
           - { name: name_en, label: "Nomi (EN)", type: string }
           - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
           - { name: cover, label: "Muqova rasmi (ranglari bor tovar uchun: kartochkada birinchi chiqadi)", type: image }
+          - { name: video, label: "Kartochka videosi (mp4, ovozsiz takrorlanadi; muqova rasmi uning ustida turadi)", type: string }
           - name: variants
             label: "Ranglar (bir rangli tovar uchun: har rangga o‘z rasmlari va dumaloq rang tugmasi; to‘ldirilsa yuqoridagi «Rasmlar» o‘rniga ishlatiladi)"
             type: object

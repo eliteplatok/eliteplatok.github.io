@@ -143,6 +143,7 @@
   .card .ph{aspect-ratio:3/4;margin-bottom:16px;position:relative;overflow:hidden;background:var(--bg-2)}
   .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease}
   .card:hover .ph img{transform:scale(1.05)}
+  .card .ph video{width:100%;height:100%;object-fit:cover;flex:0 0 100%;display:block;pointer-events:none}
   .card h3{font-size:22px;line-height:1.2}
   .card .meta{font-size:12px;color:var(--muted);letter-spacing:.06em;margin-top:2px}
   .card .d{font-size:13px;opacity:.8;margin-top:8px;line-height:1.5}
@@ -160,7 +161,7 @@
   .card{cursor:pointer;display:block}
   .card .slides{display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .card .slides::-webkit-scrollbar{display:none}
-  .card .slides img{flex:0 0 100%;scroll-snap-align:start}
+  .card .slides img,.card .slides video{flex:0 0 100%;scroll-snap-align:start}
   .card .arr{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;border:0;border-radius:50%;background:rgba(233,226,217,.9);color:var(--ink);font-size:16px;cursor:pointer;opacity:0;transition:.3s;display:grid;place-items:center}
   .card .arr.prev{left:10px}.card .arr.next{right:10px}
   .card:hover .arr{opacity:1}
@@ -627,7 +628,7 @@ function card(p, S) {
   const sw = vars.length > 1 ? `<div class="sw-mini">${vars.slice(0, 9).map((v, k) => `<button class="${slideOf(k) === 0 ? 'on' : ''}${v.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" data-s="${slideOf(k)}" style="--c:${swBg(v)}" aria-label="${esc(v.name)}" title="${esc(v.name)}"></button>`).join('')}${vars.length > 9 ? `<span>+${vars.length - 9}</span>` : ''}</div>` : '';
   return `<div class="card r" data-p="${i}" data-map="${slides.map(x => x.v).join(',')}" role="button" tabindex="0" aria-label="${esc(p.name)}">
     <div class="ph">
-      <div class="slides">${cims.map((s, k) => k ? `<img class="${soldAt(k) ? 'so' : ''}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img class="${soldAt(k) ? 'so' : ''}" ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
+      <div class="slides">${cims.map((s, k) => k === 0 && p.video ? `<video class="cvid${soldAt(0) ? ' so' : ''}" muted loop playsinline preload="none" poster="${esc(smP(s))}" data-vsrc="${esc(p.video)}" aria-label="${esc(p.name)}"></video>` : k ? `<img class="${soldAt(k) ? 'so' : ''}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img class="${soldAt(k) ? 'so' : ''}" ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
       ${cims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>` : ''}
       ${dots(cims.length)}
       ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}${p.is_new ? '<span class="newb">NEW</span>' : ''}
@@ -1207,6 +1208,9 @@ function boot(again) {
   document.querySelectorAll('.menu a').forEach(a => a.onclick = () => document.getElementById('menu').classList.remove('open'));
   const wake = (c, all) => c.querySelectorAll('.slides img[data-src]').forEach((i, n) => { if (!all && n) return; i.onerror = () => { i.onerror = null; i.src = i.dataset.full; }; i.src = i.dataset.src; i.removeAttribute('data-src'); });
   const seen = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { wake(e.target, false); seen.unobserve(e.target); } }), { rootMargin: '200px' });
+  // looping card videos (product.video): load when near the screen, play only while visible
+  const vio = new IntersectionObserver(es => es.forEach(e => { const v = e.target; if (e.isIntersecting) { if (v.dataset.vsrc) { v.src = v.dataset.vsrc; v.removeAttribute('data-vsrc'); } v.play().catch(() => {}); } else v.pause(); }), { rootMargin: '150px' });
+  document.querySelectorAll('video.cvid').forEach(v => vio.observe(v));
   document.querySelectorAll('.card').forEach(c => {
     seen.observe(c);
     ['pointerenter', 'touchstart', 'focusin'].forEach(ev => c.addEventListener(ev, () => wake(c, true), { once: true, passive: true }));
