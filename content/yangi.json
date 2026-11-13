@@ -2655,13 +2655,7 @@
       "name": "Gulli naqshli to‘plam",
       "name_ru": "Набор с цветочным узором",
       "name_en": "Floral pattern collection",
-      "images": [
-        "images/gulli-toplam-1.jpg",
-        "images/gulli-toplam-2.jpg",
-        "images/gulli-toplam-3.jpg",
-        "images/gulli-toplam-4.jpg",
-        "images/gulli-toplam-5.jpg"
-      ],
+      "images": [],
       "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
@@ -2698,7 +2692,74 @@
       "sold_out": false,
       "sold_photos": "",
       "tags": "printli",
-      "promo_group": ""
+      "promo_group": "",
+      "variants": [
+        {
+          "name": "Jigarrang",
+          "name_ru": "Коричневый",
+          "name_en": "Brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-1.jpg",
+            "images/gulli-toplam-1-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-1-2.jpg"
+        },
+        {
+          "name": "Ko‘k",
+          "name_ru": "Синий",
+          "name_en": "Blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-2.jpg",
+            "images/gulli-toplam-2-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-2-2.jpg"
+        },
+        {
+          "name": "Kulrang",
+          "name_ru": "Серый",
+          "name_en": "Grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-3.jpg",
+            "images/gulli-toplam-3-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-3-2.jpg"
+        },
+        {
+          "name": "Zaytun",
+          "name_ru": "Оливковый",
+          "name_en": "Olive",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-4.jpg",
+            "images/gulli-toplam-4-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-4-2.jpg"
+        },
+        {
+          "name": "Oltin-jigarrang",
+          "name_ru": "Золотисто-коричневый",
+          "name_en": "Golden brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-5.jpg",
+            "images/gulli-toplam-5-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-5-2.jpg"
+        }
+      ]
     },
     {
       "name": "Arab naqshli ro‘mol",
