@@ -125,7 +125,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/romol-1969-1.jpg"
+            "images/romol-1969-1.jpg",
+            "images/romol-1969-1-2.jpg"
           ],
           "swatch": "images/romol-1969-1.jpg"
         },
@@ -137,7 +138,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/romol-1969-2.jpg"
+            "images/romol-1969-2.jpg",
+            "images/romol-1969-2-2.jpg"
           ],
           "swatch": "images/romol-1969-2.jpg"
         },
@@ -149,7 +151,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/romol-1969-3.jpg"
+            "images/romol-1969-3.jpg",
+            "images/romol-1969-3-2.jpg"
           ],
           "swatch": "images/romol-1969-3.jpg"
         },
@@ -161,7 +164,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/romol-1969-4.jpg"
+            "images/romol-1969-4.jpg",
+            "images/romol-1969-4-2.jpg"
           ],
           "swatch": "images/romol-1969-4.jpg"
         },
@@ -173,7 +177,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/romol-1969-5.jpg"
+            "images/romol-1969-5.jpg",
+            "images/romol-1969-5-2.jpg"
           ],
           "swatch": "images/romol-1969-5.jpg"
         },
@@ -185,7 +190,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/romol-1969-6.jpg"
+            "images/romol-1969-6.jpg",
+            "images/romol-1969-6-2.jpg"
           ],
           "swatch": "images/romol-1969-6.jpg"
         },
@@ -197,7 +203,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/romol-1969-7.jpg"
+            "images/romol-1969-7.jpg",
+            "images/romol-1969-7-2.jpg"
           ],
           "swatch": "images/romol-1969-7.jpg"
         },
@@ -209,7 +216,8 @@
           "sold_out": false,
           "card_hide": false,
           "images": [
-            "images/romol-1969-8.jpg"
+            "images/romol-1969-8.jpg",
+            "images/romol-1969-8-2.jpg"
           ],
           "swatch": "images/romol-1969-8.jpg"
         }
