@@ -69,6 +69,186 @@
       "price_note_en": "Special price — first 3 purchases only"
     },
     {
+      "name": "Yevro sherst ro‘mollar",
+      "name_ru": "Европейские шерстяные платки",
+      "name_en": "European Wool Scarves",
+      "images": [],
+      "cover": "images/yevro-sherst-7-1.jpg",
+      "size": "",
+      "size_ru": "",
+      "size_en": "",
+      "material": "Sherst (jun)",
+      "material_ru": "Шерсть",
+      "material_en": "Wool",
+      "color": "10 xil: bodom (paisley) va gulli printlar, kulrang, lilak, qora, yashil va jigarrang tuslarda",
+      "color_ru": "10 вариантов: пейсли и цветочные принты в серых, сиреневых, чёрных, зелёных и коричневых тонах",
+      "color_en": "10 designs: paisley and floral prints in grey, lilac, black, green and brown tones",
+      "description": "Issiq va yumshoq yevro sherst ro‘mollar — 10 xil dizayn.",
+      "description_ru": "Тёплые и мягкие европейские шерстяные платки — 10 дизайнов.",
+      "description_en": "Warm, soft European wool scarves — 10 designs.",
+      "details": "Yevro sherst ro‘mollar — sovuq kunlar uchun issiq va yumshoq tanlov. Mato tanaga yoqimli, boshda chiroyli turadi, chetlari nozik popukli.\n\nTo‘plamda 10 xil dizayn bor: klassik bodom (paisley) naqshlari va nafis gulli printlar — kulrang, lilak, qora, yashil va jigarrang tuslarda. Har bir dizaynni tanlab, ro‘molning print tomoni va yoyilgan ko‘rinishini ko‘ring.",
+      "details_ru": "Европейские шерстяные платки — тёплый и мягкий выбор для холодных дней. Ткань приятна к телу, красиво держится, края с тонкой бахромой.\n\nВ коллекции 10 дизайнов: классический пейсли и изящные цветочные принты в серых, сиреневых, чёрных, зелёных и коричневых тонах. Выберите дизайн, чтобы увидеть принт и платок в развёрнутом виде.",
+      "details_en": "European wool scarves — a warm, soft choice for cold days. Pleasant on the skin, sits beautifully, with fine fringed edges.\n\nThe collection has 10 designs: classic paisley and delicate floral prints in grey, lilac, black, green and brown. Pick a design to see the print side and the scarf laid out.",
+      "care": "Qo‘lda, sovuq suvda, jun uchun vosita bilan yuving yoki kimyoviy tozalashga bering. Siqmang, tekis yoyib quriting.",
+      "care_ru": "Ручная стирка в холодной воде средством для шерсти или химчистка. Не отжимать, сушить в расправленном виде.",
+      "care_en": "Hand wash cold with a wool detergent, or dry clean. Do not wring, dry flat.",
+      "price": "",
+      "price_ru": "",
+      "price_en": "",
+      "price_note": "",
+      "price_note_ru": "",
+      "price_note_en": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 0,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_usd": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "Kulrang-pushti bodom",
+          "name_ru": "Серо-розовый пейсли",
+          "name_en": "Grey & pink paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-1-1.jpg",
+            "images/yevro-sherst-1-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-1-1.jpg"
+        },
+        {
+          "name": "Kulrang bodom",
+          "name_ru": "Серый пейсли",
+          "name_en": "Grey paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-2-1.jpg",
+            "images/yevro-sherst-2-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-2-1.jpg"
+        },
+        {
+          "name": "Lilak bodom",
+          "name_ru": "Сиреневый пейсли",
+          "name_en": "Lilac paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-3-1.jpg",
+            "images/yevro-sherst-3-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-3-1.jpg"
+        },
+        {
+          "name": "To‘q kulrang bodom",
+          "name_ru": "Тёмно-серый пейсли",
+          "name_en": "Dark grey paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-4-1.jpg",
+            "images/yevro-sherst-4-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-4-1.jpg"
+        },
+        {
+          "name": "To‘q kulrang gulli",
+          "name_ru": "Тёмно-серый с цветами",
+          "name_en": "Dark grey floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-5-1.jpg",
+            "images/yevro-sherst-5-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-5-1.jpg"
+        },
+        {
+          "name": "Qora gulli",
+          "name_ru": "Чёрный с цветами",
+          "name_en": "Black floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-6-1.jpg",
+            "images/yevro-sherst-6-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-6-1.jpg"
+        },
+        {
+          "name": "Pushti-lilak gulli",
+          "name_ru": "Розово-сиреневый с цветами",
+          "name_en": "Pink & lilac floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-7-1.jpg",
+            "images/yevro-sherst-7-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-7-1.jpg"
+        },
+        {
+          "name": "Kulrang gulli",
+          "name_ru": "Серый с цветами",
+          "name_en": "Grey floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-8-1.jpg",
+            "images/yevro-sherst-8-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-8-1.jpg"
+        },
+        {
+          "name": "Yashil gulli",
+          "name_ru": "Зелёный с цветами",
+          "name_en": "Green floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-9-1.jpg",
+            "images/yevro-sherst-9-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-9-1.jpg"
+        },
+        {
+          "name": "Jigarrang gulli",
+          "name_ru": "Коричневый с цветами",
+          "name_en": "Brown floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-10-1.jpg",
+            "images/yevro-sherst-10-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-10-1.jpg"
+        }
+      ]
+    },
+    {
       "name": "«1969» printlari",
       "name_ru": "Принты «1969»",
       "name_en": "“1969” Prints",
