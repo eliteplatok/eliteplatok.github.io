@@ -476,6 +476,9 @@ img.so{filter:grayscale(.55) opacity(.5)}
   /* footer */
   footer{border-top:1px solid var(--line);padding:80px 0 40px;text-align:center}
   footer .logo{font-size:32px;display:block}
+  footer .legal{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin:28px 0 18px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+  footer .legal a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+  footer .rekv{color:var(--muted);font-size:11px;margin-top:10px;line-height:1.6}
   footer .tag{color:var(--muted);font-family:var(--serif);font-style:italic;font-size:21px;margin:12px 0 36px}
   .social{display:flex;justify-content:center;gap:32px;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
   .social a{border-bottom:1px solid transparent;padding-bottom:3px}.social a:hover{border-color:var(--ink)}
@@ -1169,7 +1172,9 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
     ${S.whatsapp ? `<a href="${esc(S.whatsapp)}" ${ext}>WhatsApp ${txt(S.whatsapp_user || '')}</a>` : ''}
     ${S.email ? `<a href="mailto:${esc(S.email)}">${txt(S.email)}</a>` : ''}
   </div>
+  <div class="legal"><a href="/oferta/">Ommaviy oferta</a><a href="/maxfiylik/">Maxfiylik siyosati</a></div>
   <div class="copy">${txt(S.footer_copy)}</div>
+  <div class="rekv">YaTT Iminova Feruza Xamra qizi · JShShIR 42005966600042 · Toshkent sh., Yakkasaroy tumani, Seul ko‘chasi, 7/2, «Seoul Mun», D58</div>
 </div></footer>
 
 <a href="${esc(S.telegram)}" ${ext} class="fab-order">${txt(S.order_button_mobile)}</a>
