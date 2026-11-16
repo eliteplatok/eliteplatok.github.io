@@ -275,6 +275,123 @@
       ]
     },
     {
+      "name": "Kapyushonli to‘plamlar",
+      "name_ru": "Комплекты с капюшоном",
+      "name_en": "Hooded Sets",
+      "images": [],
+      "cover": "images/kap-kulrang-2.jpg",
+      "size": "",
+      "size_ru": "",
+      "size_en": "",
+      "material": "",
+      "material_ru": "",
+      "material_en": "",
+      "color": "4 rang: kulrang, bej, lila, zaytun",
+      "color_ru": "4 цвета: серый, бежевый, сиреневый, оливковый",
+      "color_en": "4 colours: grey, beige, lilac, olive",
+      "description": "Kapyushonli keng va qulay to‘plamlar — 4 rang. Narxi va o‘lchami — menejerdan so‘rang.",
+      "description_ru": "Свободные удобные комплекты с капюшоном — 4 цвета. Цену и размер уточняйте у менеджера.",
+      "description_en": "Loose, comfortable hooded sets — 4 colours. Ask the manager for price and size.",
+      "details": "Keng bichimli, yumshoq matodan kapyushonli to‘plamlar: harakatga erkinlik beradi, yopiq va qulay. Kundalik, sport va sayr uchun mos. Ranglar: kulrang, bej, lila va zaytun.\n\nNarxi va o‘lchami — menejerdan so‘rang.",
+      "details_ru": "Свободные комплекты с капюшоном из мягкой ткани: не стесняют движений, закрытые и удобные. Для каждого дня, спорта и прогулок. Цвета: серый, бежевый, сиреневый и оливковый.\n\nЦену и размер уточняйте у менеджера.",
+      "details_en": "Loose-fit hooded sets in soft fabric: free movement, modest and comfortable. For everyday, sport and walks. Colours: grey, beige, lilac and olive.\n\nAsk the manager for price and size.",
+      "care": "",
+      "care_ru": "",
+      "care_en": "",
+      "price": "",
+      "price_ru": "",
+      "price_en": "",
+      "price_note": "",
+      "price_note_ru": "",
+      "price_note_en": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 0,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_usd": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "",
+      "variants": [
+        {
+          "name": "Kulrang",
+          "name_ru": "Серый",
+          "name_en": "Grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kap-kulrang-1.jpg",
+            "images/kap-kulrang-2.jpg",
+            "images/kap-kulrang-3.jpg",
+            "images/kap-kulrang-4.jpg",
+            "images/kap-kulrang-5.jpg",
+            "images/kap-kulrang-6.jpg",
+            "images/kap-kulrang-7.jpg"
+          ],
+          "swatch": "images/kap-kulrang-1.jpg"
+        },
+        {
+          "name": "Bej",
+          "name_ru": "Бежевый",
+          "name_en": "Beige",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kap-bej-1.jpg",
+            "images/kap-bej-2.jpg",
+            "images/kap-bej-3.jpg",
+            "images/kap-bej-4.jpg",
+            "images/kap-bej-5.jpg",
+            "images/kap-bej-6.jpg",
+            "images/kap-bej-7.jpg",
+            "images/kap-bej-8.jpg"
+          ],
+          "swatch": "images/kap-bej-1.jpg"
+        },
+        {
+          "name": "Lila",
+          "name_ru": "Сиреневый",
+          "name_en": "Lilac",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kap-lila-1.jpg",
+            "images/kap-lila-2.jpg",
+            "images/kap-lila-3.jpg"
+          ],
+          "swatch": "images/kap-lila-1.jpg"
+        },
+        {
+          "name": "Zaytun",
+          "name_ru": "Оливковый",
+          "name_en": "Olive",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kap-zaytun-1.jpg",
+            "images/kap-zaytun-2.jpg",
+            "images/kap-zaytun-3.jpg",
+            "images/kap-zaytun-4.jpg",
+            "images/kap-zaytun-5.jpg"
+          ],
+          "swatch": "images/kap-zaytun-1.jpg"
+        }
+      ]
+    },
+    {
       "name": "Yevro sherst ro‘mollar",
       "name_ru": "Европейские шерстяные платки",
       "name_en": "European Wool Scarves",
@@ -1096,6 +1213,624 @@
             "images/xitoy-tvil-9.jpg"
           ],
           "swatch": "images/xitoy-tvil-9.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Bir rangli ro‘mollar",
+      "name_ru": "Однотонные платки",
+      "name_en": "Solid Colour Scarves",
+      "images": [],
+      "cover": "images/birrang-2.jpg",
+      "size": "",
+      "size_ru": "",
+      "size_en": "",
+      "material": "",
+      "material_ru": "",
+      "material_en": "",
+      "color": "13 rang",
+      "color_ru": "13 цветов",
+      "color_en": "13 colours",
+      "description": "Bir rangli yengil ro‘mollar — 13 xil rang. Narxi va o‘lchami — menejerdan so‘rang.",
+      "description_ru": "Лёгкие однотонные платки — 13 цветов. Цену и размер уточняйте у менеджера.",
+      "description_en": "Light solid-colour scarves — 13 colours. Ask the manager for price and size.",
+      "details": "Yengil, mayin bir rangli ro‘mollar: kundalik obraz uchun qulay, istalgan kiyimga mos keladi. To‘plamda 13 xil rang bor — rangni tanlab, rasmini ko‘ring.\n\nNarxi va o‘lchami — menejerdan so‘rang.",
+      "details_ru": "Лёгкие мягкие однотонные платки — удобны на каждый день и подходят к любой одежде. В коллекции 13 цветов — выберите цвет, чтобы посмотреть фото.\n\nЦену и размер уточняйте у менеджера.",
+      "details_en": "Light, soft solid-colour scarves — easy for everyday wear and go with any outfit. 13 colours — pick one to see its photo.\n\nAsk the manager for price and size.",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
+      "price": "",
+      "price_ru": "",
+      "price_en": "",
+      "price_note": "",
+      "price_note_ru": "",
+      "price_note_en": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 0,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_usd": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "bir rangli",
+      "variants": [
+        {
+          "name": "Krem",
+          "name_ru": "Кремовый",
+          "name_en": "Cream",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-1.jpg"
+          ],
+          "swatch": "images/birrang-1.jpg"
+        },
+        {
+          "name": "Fuksiya",
+          "name_ru": "Фуксия",
+          "name_en": "Fuchsia",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-2.jpg"
+          ],
+          "swatch": "images/birrang-2.jpg"
+        },
+        {
+          "name": "To‘q ko‘k",
+          "name_ru": "Тёмно-синий",
+          "name_en": "Navy",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-3.jpg"
+          ],
+          "swatch": "images/birrang-3.jpg"
+        },
+        {
+          "name": "Lila",
+          "name_ru": "Сиреневый",
+          "name_en": "Lilac",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-4.jpg"
+          ],
+          "swatch": "images/birrang-4.jpg"
+        },
+        {
+          "name": "To‘q jigarrang",
+          "name_ru": "Тёмно-коричневый",
+          "name_en": "Dark brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-5.jpg"
+          ],
+          "swatch": "images/birrang-5.jpg"
+        },
+        {
+          "name": "Malina",
+          "name_ru": "Малиновый",
+          "name_en": "Raspberry",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-6.jpg"
+          ],
+          "swatch": "images/birrang-6.jpg"
+        },
+        {
+          "name": "Oq",
+          "name_ru": "Белый",
+          "name_en": "White",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-7.jpg"
+          ],
+          "swatch": "images/birrang-7.jpg"
+        },
+        {
+          "name": "Shaftoli",
+          "name_ru": "Персиковый",
+          "name_en": "Peach",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-8.jpg"
+          ],
+          "swatch": "images/birrang-8.jpg"
+        },
+        {
+          "name": "Xantal",
+          "name_ru": "Горчичный",
+          "name_en": "Mustard",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-9.jpg"
+          ],
+          "swatch": "images/birrang-9.jpg"
+        },
+        {
+          "name": "Xaki",
+          "name_ru": "Хаки",
+          "name_en": "Khaki",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-10.jpg"
+          ],
+          "swatch": "images/birrang-10.jpg"
+        },
+        {
+          "name": "Qizil",
+          "name_ru": "Красный",
+          "name_en": "Red",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-11.jpg"
+          ],
+          "swatch": "images/birrang-11.jpg"
+        },
+        {
+          "name": "Binafsha",
+          "name_ru": "Фиолетовый",
+          "name_en": "Purple",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-12.jpg"
+          ],
+          "swatch": "images/birrang-12.jpg"
+        },
+        {
+          "name": "Terrakota",
+          "name_ru": "Терракотовый",
+          "name_en": "Terracotta",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/birrang-13.jpg"
+          ],
+          "swatch": "images/birrang-13.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Bodom naqshli ro‘mollar",
+      "name_ru": "Платки с узором пейсли",
+      "name_en": "Paisley Scarves",
+      "images": [],
+      "cover": "images/bodom-3.jpg",
+      "size": "",
+      "size_ru": "",
+      "size_en": "",
+      "material": "",
+      "material_ru": "",
+      "material_en": "",
+      "color": "12 xil rang, bodom (paisley) naqshi",
+      "color_ru": "12 расцветок, узор пейсли",
+      "color_en": "12 colourways, paisley print",
+      "description": "Klassik bodom (paisley) naqshli ro‘mollar — 12 xil rang. Narxi va o‘lchami — menejerdan so‘rang.",
+      "description_ru": "Платки с классическим узором пейсли — 12 расцветок. Цену и размер уточняйте у менеджера.",
+      "description_en": "Classic paisley scarves — 12 colourways. Ask the manager for price and size.",
+      "details": "Klassik bodom (paisley) naqshi va bezakli hoshiya — an’anaviy va zamonaviy obrazga birdek mos. To‘plamda 12 xil rang: pushti, qizil, bej, jigarrang, yashil, binafsha, zaytun va boshqalar.\n\nNarxi va o‘lchami — menejerdan so‘rang.",
+      "details_ru": "Классический узор пейсли и декоративная кайма — подходят и к традиционному, и к современному образу. 12 расцветок: розовая, красная, бежевая, коричневая, зелёная, фиолетовая, оливковая и другие.\n\nЦену и размер уточняйте у менеджера.",
+      "details_en": "Classic paisley print with an ornate border — suits both traditional and modern looks. 12 colourways: pink, red, beige, brown, green, purple, olive and more.\n\nAsk the manager for price and size.",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
+      "price": "",
+      "price_ru": "",
+      "price_en": "",
+      "price_note": "",
+      "price_note_ru": "",
+      "price_note_en": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 0,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_usd": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "Pushti",
+          "name_ru": "Розовый",
+          "name_en": "Pink",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-1.jpg"
+          ],
+          "swatch": "images/bodom-1.jpg"
+        },
+        {
+          "name": "Zaytun",
+          "name_ru": "Оливковый",
+          "name_en": "Olive",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-2.jpg"
+          ],
+          "swatch": "images/bodom-2.jpg"
+        },
+        {
+          "name": "Qizil",
+          "name_ru": "Красный",
+          "name_en": "Red",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-3.jpg"
+          ],
+          "swatch": "images/bodom-3.jpg"
+        },
+        {
+          "name": "Bej",
+          "name_ru": "Бежевый",
+          "name_en": "Beige",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-4.jpg"
+          ],
+          "swatch": "images/bodom-4.jpg"
+        },
+        {
+          "name": "Jigarrang",
+          "name_ru": "Коричневый",
+          "name_en": "Brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-5.jpg"
+          ],
+          "swatch": "images/bodom-5.jpg"
+        },
+        {
+          "name": "Pushti, qora hoshiyali",
+          "name_ru": "Розовый с чёрной каймой",
+          "name_en": "Pink, black border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-6.jpg"
+          ],
+          "swatch": "images/bodom-6.jpg"
+        },
+        {
+          "name": "Qizil hoshiyali",
+          "name_ru": "С красной каймой",
+          "name_en": "Red border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-7.jpg"
+          ],
+          "swatch": "images/bodom-7.jpg"
+        },
+        {
+          "name": "Qora-jigarrang",
+          "name_ru": "Чёрно-коричневый",
+          "name_en": "Black & brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-8.jpg"
+          ],
+          "swatch": "images/bodom-8.jpg"
+        },
+        {
+          "name": "Yashil",
+          "name_ru": "Зелёный",
+          "name_en": "Green",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-9.jpg"
+          ],
+          "swatch": "images/bodom-9.jpg"
+        },
+        {
+          "name": "Qizil-qora",
+          "name_ru": "Красно-чёрный",
+          "name_en": "Red & black",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-10.jpg"
+          ],
+          "swatch": "images/bodom-10.jpg"
+        },
+        {
+          "name": "Binafsha",
+          "name_ru": "Фиолетовый",
+          "name_en": "Purple",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-11.jpg"
+          ],
+          "swatch": "images/bodom-11.jpg"
+        },
+        {
+          "name": "Zaytun-qora",
+          "name_ru": "Оливково-чёрный",
+          "name_en": "Olive & black",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-12.jpg"
+          ],
+          "swatch": "images/bodom-12.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Havorang naqshli ro‘mollar",
+      "name_ru": "Платки в голубых тонах",
+      "name_en": "Sky-Blue Print Scarves",
+      "images": [],
+      "cover": "images/havorang-7.jpg",
+      "size": "",
+      "size_ru": "",
+      "size_en": "",
+      "material": "",
+      "material_ru": "",
+      "material_en": "",
+      "color": "14 xil print, havorang va moviy tuslarda",
+      "color_ru": "14 принтов в голубых тонах",
+      "color_en": "14 prints in sky-blue tones",
+      "description": "Havorang va moviy tuslardagi naqshli ro‘mollar — 14 xil print. Narxi va o‘lchami — menejerdan so‘rang.",
+      "description_ru": "Платки с принтами в голубых тонах — 14 принтов. Цену и размер уточняйте у менеджера.",
+      "description_en": "Sky-blue print scarves — 14 prints. Ask the manager for price and size.",
+      "details": "Nafis havorang va moviy tuslardagi ro‘mollar: kapalakli, gulli, geometrik va hoshiyali naqshlar. Har bir printni tanlab, yoyilgan holdagi rasmini ko‘ring.\n\nNarxi va o‘lchami — menejerdan so‘rang.",
+      "details_ru": "Нежные платки в голубых тонах: бабочки, цветы, геометрия и кайма. Выберите принт, чтобы посмотреть фото в разложенном виде.\n\nЦену и размер уточняйте у менеджера.",
+      "details_en": "Delicate scarves in sky-blue tones: butterflies, florals, geometrics and borders. Pick a print to see it laid flat.\n\nAsk the manager for price and size.",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
+      "price": "",
+      "price_ru": "",
+      "price_en": "",
+      "price_note": "",
+      "price_note_ru": "",
+      "price_note_en": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 0,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_usd": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1",
+          "name_ru": "№1",
+          "name_en": "No. 1",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-1.jpg"
+          ],
+          "swatch": "images/havorang-1.jpg"
+        },
+        {
+          "name": "№2",
+          "name_ru": "№2",
+          "name_en": "No. 2",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-2.jpg"
+          ],
+          "swatch": "images/havorang-2.jpg"
+        },
+        {
+          "name": "№3",
+          "name_ru": "№3",
+          "name_en": "No. 3",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-3.jpg"
+          ],
+          "swatch": "images/havorang-3.jpg"
+        },
+        {
+          "name": "№4",
+          "name_ru": "№4",
+          "name_en": "No. 4",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-4.jpg"
+          ],
+          "swatch": "images/havorang-4.jpg"
+        },
+        {
+          "name": "№5",
+          "name_ru": "№5",
+          "name_en": "No. 5",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-5.jpg"
+          ],
+          "swatch": "images/havorang-5.jpg"
+        },
+        {
+          "name": "№6",
+          "name_ru": "№6",
+          "name_en": "No. 6",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-6.jpg"
+          ],
+          "swatch": "images/havorang-6.jpg"
+        },
+        {
+          "name": "№7",
+          "name_ru": "№7",
+          "name_en": "No. 7",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-7.jpg"
+          ],
+          "swatch": "images/havorang-7.jpg"
+        },
+        {
+          "name": "№8",
+          "name_ru": "№8",
+          "name_en": "No. 8",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-8.jpg"
+          ],
+          "swatch": "images/havorang-8.jpg"
+        },
+        {
+          "name": "№9",
+          "name_ru": "№9",
+          "name_en": "No. 9",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-9.jpg"
+          ],
+          "swatch": "images/havorang-9.jpg"
+        },
+        {
+          "name": "№10",
+          "name_ru": "№10",
+          "name_en": "No. 10",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-10.jpg"
+          ],
+          "swatch": "images/havorang-10.jpg"
+        },
+        {
+          "name": "№11",
+          "name_ru": "№11",
+          "name_en": "No. 11",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-11.jpg"
+          ],
+          "swatch": "images/havorang-11.jpg"
+        },
+        {
+          "name": "№12",
+          "name_ru": "№12",
+          "name_en": "No. 12",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-12.jpg"
+          ],
+          "swatch": "images/havorang-12.jpg"
+        },
+        {
+          "name": "№13",
+          "name_ru": "№13",
+          "name_en": "No. 13",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-13.jpg"
+          ],
+          "swatch": "images/havorang-13.jpg"
+        },
+        {
+          "name": "№14",
+          "name_ru": "№14",
+          "name_en": "No. 14",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/havorang-14.jpg"
+          ],
+          "swatch": "images/havorang-14.jpg"
         }
       ]
     },
