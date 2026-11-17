@@ -275,7 +275,7 @@
   "pay_unknown_note_ru": "В корзине есть товар без цены — менеджер уточнит стоимость, оплата после этого.",
   "pay_unknown_note_en": "Your cart has an item without a price — a manager will confirm it, payment comes after.",
   "tolov_api": "https://eliteplatok.uz/tolov",
-  "click_enabled": false,
+  "click_enabled": true,
   "click_soon": true,
   "pay_click": "Click orqali to‘lash",
   "pay_click_ru": "Оплатить через Click",
