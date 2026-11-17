@@ -340,6 +340,22 @@ img.so{filter:grayscale(.55) opacity(.5)}
   .seg label:has(input:checked){background:var(--ink);color:var(--bg)}
   .seg label.off{cursor:not-allowed;opacity:.45;flex-wrap:wrap;row-gap:3px}
   .seg .soon{flex-basis:100%;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+  /* to‘lov usuli: tugma ustida bitta ixcham qator (Payme · Click · Rahmat · Menejer) — doim ko‘rinadi, joy kam oladi */
+  .dr-foot .pay-box{margin:10px 0}
+  .dr-foot .pay-h{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .dr-foot .pay-seg{grid-template-columns:repeat(var(--n,4),1fr)}
+  .dr-foot .pay-seg label{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;align-content:center;row-gap:1px;min-width:0;padding:10px 2px;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;line-height:1.25;overflow-wrap:anywhere}
+  .dr-foot .pay-seg label+label{border-left:1px solid var(--line)}
+  .dr-foot .pay-seg .soon{font-size:8px;letter-spacing:.06em}
+  .dr-foot .pay-seg label:not(.off):hover{background:var(--bg-2)}
+  .dr-foot .pay-seg label:has(input:checked){background:var(--ink);color:var(--bg)}
+  .dr-foot .pay-seg label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:-2px}
+  .dr-foot .pay-box.need .pay-seg{border-color:#a33;box-shadow:0 0 0 1px #a33}
+  .dr-foot .foot-err{color:#a33;font-size:12px;line-height:1.4;text-align:center;margin:0 0 8px}
+  .dr-foot .foot-err:empty{display:none}
+  .frm .dnote{margin:0}
+  /* past ekran (kichik telefon, yotiq holat): butun savat bitta bo‘lib aylanadi — forma ham, tugma ham doim yetib boriladi */
+  @media (max-height:600px){.drawer{overflow-y:auto}.dr-body{flex:none;overflow:visible}}
   .dr-foot .consent{margin:12px 0 0;font-size:11px;line-height:1.5;color:var(--muted);text-align:center}
   .dr-foot .consent a{color:inherit;text-decoration:underline}
   .frm .err{color:#a33;font-size:13px;min-height:18px}
@@ -800,7 +816,9 @@ function renderCart(view = 'list') {
   cart = cart.filter(x => { const p = findP(x.slug); return p && (!x.v || p.vars[x.v]); });
   const lines = cartLines(), { sum, unknown, saved } = cartTotals(lines);
   const head = t => `<div class="dr-head"><h3>${txt(t)}</h3><button class="dr-x" data-x aria-label="${esc(S.close_label)}">×</button></div>`;
-  const total = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' ' + S.currency : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)}: −${fmt(saved)} ${txt(S.currency)}</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}${S.cart_delivery_note ? `<p class="dnote">${txt(S.cart_delivery_note)}</p>` : ''}`;
+  const totalCore = `<div class="tot"><span>${txt(S.cart_total)}</span><b>${sum ? fmt(sum) + ' ' + S.currency : '—'}</b></div>${saved ? `<p class="tot-note" style="color:var(--accent)">${txt(S.promo3_label)}: −${fmt(saved)} ${txt(S.currency)}</p>` : ''}${unknown ? `<p class="tot-note">${txt(S.cart_total_note)}</p>` : ''}`;
+  const dnote = S.cart_delivery_note ? `<p class="dnote">${txt(S.cart_delivery_note)}</p>` : '';
+  const total = totalCore + dnote;
   if (view === 'ok' || view === 'paid' || view === 'unpaid') {
     const T = view === 'paid' ? ['✓', S.paid_title || 'To‘lov qabul qilindi', S.paid_text || 'Rahmat! Buyurtmangiz to‘landi, menejerimiz tez orada yetkazib berish vaqtini aniqlaydi.']
       : view === 'unpaid' ? ['!', S.unpaid_title || 'To‘lov yakunlanmadi', S.unpaid_text || 'To‘lov o‘tmadi yoki bekor qilindi. Savatingiz saqlandi — qayta urinib ko‘ring yoki menejer orqali buyurtma bering.']
@@ -815,27 +833,28 @@ function renderCart(view = 'list') {
       ['click', S.pay_click || 'Click orqali to‘lash', !!(S.click_enabled && S.tolov_api), !!S.click_soon],
       ['rahmat', S.pay_rahmat || 'Rahmat orqali to‘lash', !!(S.rahmat_enabled && S.tolov_api), !!S.rahmat_soon],
     ].map(([v, name, on, soon]) => ({ v, name, ok: on && sum > 0 && !unknown, soon }));
-    const payShown = unknown ? [] : PM.filter(m => m.ok || m.soon), payFirst = payShown.find(m => m.ok);
-    const paySeg = payShown.length ? `<div class="seg pay-seg">${payShown.map(m => m.ok
-        ? `<label><input type="radio" name="pay" value="${m.v}"${m === payFirst ? ' checked' : ''}>${txt(m.name)}</label>`
-        : `<label class="off" aria-disabled="true"><input type="radio" name="pay" value="${m.v}" disabled>${txt(m.name)}<span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label>`).join('')}<label><input type="radio" name="pay" value="manager"${payFirst ? '' : ' checked'}>${txt(S.pay_manager || 'Menejer bilan kelishish')}</label></div>`
+    // Usul oldindan tanlanmaydi — mijoz Payme, Click, Rahmat yoki menejerdan birini o‘zi tanlaydi (tugma ustida, doim ko‘rinadi)
+    const payShown = unknown ? [] : PM.filter(m => m.ok || m.soon);
+    const BRAND = { payme: 'Payme', click: 'Click', rahmat: 'Rahmat' }; // qisqa nom — bitta qatorga sig‘adi; to‘liq nomi title/aria-label da
+    const paySeg = payShown.length ? `<div class="pay-box"><div class="pay-h">${txt(S.pay_choose || 'To‘lov usulini tanlang')}</div><div class="seg pay-seg" style="--n:${payShown.length + 1}">${payShown.map(m => m.ok
+        ? `<label title="${esc(m.name)}"><input type="radio" name="pay" form="ep-order" value="${m.v}" aria-label="${esc(m.name)}">${BRAND[m.v]}</label>`
+        : `<label class="off" aria-disabled="true" title="${esc(m.name)}"><input type="radio" name="pay" form="ep-order" value="${m.v}" disabled aria-label="${esc(m.name)}">${BRAND[m.v]}<span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label>`).join('')}<label title="${esc(S.pay_manager || 'Menejer bilan kelishish')}"><input type="radio" name="pay" form="ep-order" value="manager" aria-label="${esc(S.pay_manager || 'Menejer bilan kelishish')}">${txt(S.pay_manager_short || 'Menejer')}</label></div></div>`
       : unknown && ((S.payme_enabled && S.payme_api) || ((S.click_enabled || S.rahmat_enabled) && S.tolov_api)) ?`<p class="tot-note">${txt(S.pay_unknown_note || 'Savatda narxi ko‘rsatilmagan mahsulot bor — narxni menejer aytadi, to‘lov keyin.')}</p>` : '';
-    dr.innerHTML = head(S.form_title) + `<div class="dr-body"><form class="frm" novalidate>
+    dr.innerHTML = head(S.form_title) + `<div class="dr-body"><form class="frm" id="ep-order" novalidate>
       <label>${txt(S.form_name)}<input name="name" autocomplete="name" required maxlength="80"></label>
       <label>${txt(S.form_phone)}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+998" required maxlength="30"></label>
       <div class="seg"><label><input type="radio" name="how" value="delivery" checked>${txt(S.form_delivery)}</label><label><input type="radio" name="how" value="pickup">${txt(S.form_pickup)}</label></div>
       <label class="addr">${txt(S.form_address)}<input name="address" autocomplete="street-address" maxlength="200"></label>
-      ${paySeg}
       <label>${txt(S.form_comment)}<textarea name="comment" maxlength="500"></textarea></label>
       <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <div class="err" aria-live="polite"></div>
       <div class="mini">${lines.map(x => `<div><span>${txt(x.name)} × ${x.qty}</span><span>${txt(priceText(x.p, S))}</span></div>`).join('')}</div>
+      ${dnote}
     </form></div>
-    <div class="dr-foot">${total}<button class="btn solid" data-send>${txt(S.form_submit)}</button><p class="consent">${txt(S.consent_before || 'Buyurtma berish orqali siz')} <a href="/oferta/" target="_blank" rel="noopener">${txt(S.consent_offer || 'Ommaviy oferta')}</a> ${txt(S.consent_and || 'va')} <a href="/maxfiylik/" target="_blank" rel="noopener">${txt(S.consent_privacy || 'Maxfiylik siyosati')}</a>${/^[.,;:!?]/.test(S.consent_after || '') ? '' : ' '}${txt(S.consent_after || 'shartlariga rozilik bildirasiz.')}</p><button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
+    <div class="dr-foot">${totalCore}${paySeg}<div class="err foot-err" aria-live="polite"></div><button class="btn solid" data-send>${txt(S.form_submit)}</button><p class="consent">${txt(S.consent_before || 'Buyurtma berish orqali siz')} <a href="/oferta/" target="_blank" rel="noopener">${txt(S.consent_offer || 'Ommaviy oferta')}</a> ${txt(S.consent_and || 'va')} <a href="/maxfiylik/" target="_blank" rel="noopener">${txt(S.consent_privacy || 'Maxfiylik siyosati')}</a>${/^[.,;:!?]/.test(S.consent_after || '') ? '' : ' '}${txt(S.consent_after || 'shartlariga rozilik bildirasiz.')}</p><button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
     const f = dr.querySelector('form'), addr = dr.querySelector('.addr');
     f.querySelectorAll('[name=how]').forEach(r => r.onchange = () => addr.style.display = f.elements.namedItem('how').value === 'pickup' ? 'none' : '');
     const sendBtn = dr.querySelector('[data-send]'), payBtnText = () => { const v = (f.elements.namedItem('pay') || {}).value; sendBtn.textContent = ['payme', 'click', 'rahmat'].includes(v) ? (S.pay_submit || 'To‘lovga o‘tish') : S.form_submit; };
-    f.querySelectorAll('[name=pay]').forEach(r => r.onchange = payBtnText); payBtnText();
+    dr.querySelectorAll('[name=pay]').forEach(r => r.onchange = () => { payBtnText(); dr.querySelector('.foot-err').textContent = ''; dr.querySelector('.pay-box')?.classList.remove('need'); }); payBtnText();
     f.onsubmit = e => { e.preventDefault(); sendOrder(f); };
     dr.querySelector('[data-send]').onclick = () => sendOrder(f);
     dr.querySelector('[data-back]').onclick = () => renderCart('list');
@@ -863,10 +882,16 @@ function orderText(o) {
   return L.join('\n');
 }
 async function sendOrder(f) {
-  const S = S_, err = f.querySelector('.err'), btn = document.querySelector('[data-send]');
+  const S = S_, err = document.querySelector('#drawer .foot-err'), btn = document.querySelector('[data-send]'); // xabar tugma ustida — doim ko‘rinadi
+  err.textContent = '';
   const E = n => f.elements.namedItem(n);
   const o = { name: E('name').value.trim(), phone: E('phone').value.trim(), how: E('how').value, address: E('address').value.trim(), comment: E('comment').value.trim(), website: E('website').value };
-  if (o.name.length < 2 || o.phone.replace(/\D/g, '').length < 7) { err.textContent = S.form_error; return; }
+  if (o.name.length < 2 || o.phone.replace(/\D/g, '').length < 7) { err.textContent = S.form_error; (o.name.length < 2 ? E('name') : E('phone')).focus(); return; }
+  const payBox = document.querySelector('#drawer .pay-box');
+  if (payBox && !payBox.querySelector('input[name=pay]:checked')) { // to‘lov usuli tanlanmagan — hech qayerga yubormaymiz
+    err.textContent = S.pay_choose_error || 'Avval to‘lov usulini tanlang: Payme, Click, Rahmat yoki menejer.';
+    payBox.classList.add('need'); return;
+  }
   const lines = cartLines(), t = cartTotals(lines);
   o.items = lines.map(x => ({ name: x.name_uz, qty: x.qty, price: priceText({ ...x.p, price: x.p.price_uz || x.p.price }, S_UZ), link: location.origin + location.pathname + '#' + x.key,
     image: x.im ? new URL(String(x.im).replace(/^\/+/, ''), location.origin + location.pathname).href : '' }));
@@ -897,7 +922,7 @@ async function sendOrder(f) {
       if (j.ok && pay === 'payme' && j.checkout_url) { location.href = j.checkout_url; return; } // savat to‘lov tasdiqlangach tozalanadi
       if (j.ok && pay === 'manager') { cart = []; saveCart(); renderCart('ok'); return; }
     } catch (e) {}
-    if (pay === 'payme') { err.textContent = S.pay_error || 'To‘lovni boshlab bo‘lmadi. Qayta urinib ko‘ring yoki «Menejer bilan kelishish»ni tanlang.'; btn.disabled = false; btn.textContent = S.pay_submit || 'To‘lovga o‘tish'; return; }
+    if (pay === 'payme') return payErr();
   }
   let ok = false;
   if (S.order_endpoint) {

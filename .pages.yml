@@ -158,6 +158,15 @@ content:
       - { name: pay_unknown_note_ru, label: "💳 Savatda narxsiz mahsulot bo‘lganda izoh (RU)", type: text }
       - { name: pay_unknown_note_en, label: "💳 Savatda narxsiz mahsulot bo‘lganda izoh (EN)", type: text }
       - { name: tolov_api, label: "💳 Click va Rahmat to‘lov xizmati manzili (https://eliteplatok.uz/tolov)", type: string }
+      - { name: pay_manager_short, label: "💳 Menejer — qisqa nomi (tugmada)", type: string }
+      - { name: pay_manager_short_ru, label: "💳 Menejer — qisqa nomi (RU)", type: string }
+      - { name: pay_manager_short_en, label: "💳 Menejer — qisqa nomi (EN)", type: string }
+      - { name: pay_choose, label: "💳 «To‘lov usulini tanlang» sarlavhasi", type: string }
+      - { name: pay_choose_ru, label: "💳 «To‘lov usulini tanlang» sarlavhasi (RU)", type: string }
+      - { name: pay_choose_en, label: "💳 «To‘lov usulini tanlang» sarlavhasi (EN)", type: string }
+      - { name: pay_choose_error, label: "💳 Usul tanlanmaganda xabar", type: text }
+      - { name: pay_choose_error_ru, label: "💳 Usul tanlanmaganda xabar (RU)", type: text }
+      - { name: pay_choose_error_en, label: "💳 Usul tanlanmaganda xabar (EN)", type: text }
       - { name: click_enabled, label: "💳 Click orqali online to‘lov yoqilgan", type: boolean }
       - { name: click_soon, label: "💳 Click o‘chiq paytda «Tez kunda» deb ko‘rsatilsin", type: boolean }
       - { name: pay_click, label: "💳 To‘lov usuli: Click", type: string }
