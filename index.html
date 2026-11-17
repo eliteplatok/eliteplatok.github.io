@@ -348,7 +348,15 @@ img.so{filter:grayscale(.55) opacity(.5)}
   .dr-foot .pay-seg label+label{border-left:1px solid var(--line)}
   .dr-foot .pay-seg .soon{font-size:8px;letter-spacing:.06em}
   .dr-foot .pay-seg label:not(.off):hover{background:var(--bg-2)}
-  .dr-foot .pay-seg label:has(input:checked){background:var(--ink);color:var(--bg)}
+  /* tanlangan usul: fon qora bo‘lmaydi (logotiplar ko‘rinib tursin) — qalin ramka va oq fon */
+  .dr-foot .pay-seg label{min-height:48px;background:#fff}
+  .dr-foot .pay-seg label.off{background:transparent}
+  .dr-foot .pay-seg label:has(input:checked){background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+  .dr-foot .pay-seg .pay-logo{display:block;width:auto;max-width:100%;object-fit:contain}
+  .dr-foot .pay-seg .pl-payme{height:19px}
+  .dr-foot .pay-seg .pl-click{height:20px}
+  .dr-foot .pay-seg .pl-rahmat{height:13px}
+  .dr-foot .pay-seg label.off .pay-logo{filter:grayscale(1)}
   .dr-foot .pay-seg label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:-2px}
   .dr-foot .pay-box.need .pay-seg{border-color:#a33;box-shadow:0 0 0 1px #a33}
   .dr-foot .foot-err{color:#a33;font-size:12px;line-height:1.4;text-align:center;margin:0 0 8px}
@@ -835,7 +843,8 @@ function renderCart(view = 'list') {
     ].map(([v, name, on, soon]) => ({ v, name, ok: on && sum > 0 && !unknown, soon }));
     // Usul oldindan tanlanmaydi — mijoz Payme, Click, Rahmat yoki menejerdan birini o‘zi tanlaydi (tugma ustida, doim ko‘rinadi)
     const payShown = unknown ? [] : PM.filter(m => m.ok || m.soon);
-    const BRAND = { payme: 'Payme', click: 'Click', rahmat: 'Rahmat' }; // qisqa nom — bitta qatorga sig‘adi; to‘liq nomi title/aria-label da
+    // rasmiy logotiplar (cdn.payme.uz, docs.click.uz, rhmt.uz) — images/pay/; to‘liq nomi title/aria-label da
+    const BRAND = Object.fromEntries(['payme', 'click', 'rahmat'].map(v => [v, `<img class="pay-logo pl-${v}" src="images/pay/${v}.svg" alt="${v[0].toUpperCase() + v.slice(1)}" width="80" height="22" decoding="async">`]));
     const paySeg = payShown.length ? `<div class="pay-box"><div class="pay-h">${txt(S.pay_choose || 'To‘lov usulini tanlang')}</div><div class="seg pay-seg" style="--n:${payShown.length + 1}">${payShown.map(m => m.ok
         ? `<label title="${esc(m.name)}"><input type="radio" name="pay" form="ep-order" value="${m.v}" aria-label="${esc(m.name)}">${BRAND[m.v]}</label>`
         : `<label class="off" aria-disabled="true" title="${esc(m.name)}"><input type="radio" name="pay" form="ep-order" value="${m.v}" disabled aria-label="${esc(m.name)}">${BRAND[m.v]}<span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label>`).join('')}<label title="${esc(S.pay_manager || 'Menejer bilan kelishish')}"><input type="radio" name="pay" form="ep-order" value="manager" aria-label="${esc(S.pay_manager || 'Menejer bilan kelishish')}">${txt(S.pay_manager_short || 'Menejer')}</label></div></div>`
