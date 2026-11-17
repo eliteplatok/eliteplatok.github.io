@@ -157,6 +157,17 @@ content:
       - { name: pay_unknown_note, label: "💳 Savatda narxsiz mahsulot bo‘lganda izoh", type: text }
       - { name: pay_unknown_note_ru, label: "💳 Savatda narxsiz mahsulot bo‘lganda izoh (RU)", type: text }
       - { name: pay_unknown_note_en, label: "💳 Savatda narxsiz mahsulot bo‘lganda izoh (EN)", type: text }
+      - { name: tolov_api, label: "💳 Click va Rahmat to‘lov xizmati manzili (https://eliteplatok.uz/tolov)", type: string }
+      - { name: click_enabled, label: "💳 Click orqali online to‘lov yoqilgan", type: boolean }
+      - { name: click_soon, label: "💳 Click o‘chiq paytda «Tez kunda» deb ko‘rsatilsin", type: boolean }
+      - { name: pay_click, label: "💳 To‘lov usuli: Click", type: string }
+      - { name: pay_click_ru, label: "💳 To‘lov usuli: Click (RU)", type: string }
+      - { name: pay_click_en, label: "💳 To‘lov usuli: Click (EN)", type: string }
+      - { name: rahmat_enabled, label: "💳 Rahmat orqali online to‘lov yoqilgan", type: boolean }
+      - { name: rahmat_soon, label: "💳 Rahmat o‘chiq paytda «Tez kunda» deb ko‘rsatilsin", type: boolean }
+      - { name: pay_rahmat, label: "💳 To‘lov usuli: Rahmat", type: string }
+      - { name: pay_rahmat_ru, label: "💳 To‘lov usuli: Rahmat (RU)", type: string }
+      - { name: pay_rahmat_en, label: "💳 To‘lov usuli: Rahmat (EN)", type: string }
       - { name: paid_title, label: "💳 To‘lov qabul qilindi — sarlavha", type: string }
       - { name: paid_title_ru, label: "💳 To‘lov qabul qilindi — sarlavha (RU)", type: string }
       - { name: paid_title_en, label: "💳 To‘lov qabul qilindi — sarlavha (EN)", type: string }

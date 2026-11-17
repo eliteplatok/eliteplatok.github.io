@@ -340,6 +340,8 @@ img.so{filter:grayscale(.55) opacity(.5)}
   .seg label:has(input:checked){background:var(--ink);color:var(--bg)}
   .seg label.off{cursor:not-allowed;opacity:.45;flex-wrap:wrap;row-gap:3px}
   .seg .soon{flex-basis:100%;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+  .dr-foot .consent{margin:12px 0 0;font-size:11px;line-height:1.5;color:var(--muted);text-align:center}
+  .dr-foot .consent a{color:inherit;text-decoration:underline}
   .frm .err{color:#a33;font-size:13px;min-height:18px}
   .hp{position:absolute;left:-9999px}
   .ok{padding:70px 8px;text-align:center}
@@ -807,25 +809,32 @@ function renderCart(view = 'list') {
   } else if (!lines.length) {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="empty">${txt(S.cart_empty)}<br><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
   } else if (view === 'form') {
-    const payOk = !!(S.payme_enabled && S.payme_api && sum > 0 && !unknown);
-    const paySoon = !payOk && !!S.payme_soon && !unknown; // Payme ko‘rinadi, lekin hali tanlab bo‘lmaydi
+    // Onlayn to‘lov usullari: yoqilgani tanlanadi, «tez kunda» belgisi qo‘yilgani ko‘rinadi, lekin bosib bo‘lmaydi
+    const PM = [
+      ['payme', S.pay_payme || 'Payme orqali to‘lash', !!(S.payme_enabled && S.payme_api), !!S.payme_soon],
+      ['click', S.pay_click || 'Click orqali to‘lash', !!(S.click_enabled && S.tolov_api), !!S.click_soon],
+      ['rahmat', S.pay_rahmat || 'Rahmat orqali to‘lash', !!(S.rahmat_enabled && S.tolov_api), !!S.rahmat_soon],
+    ].map(([v, name, on, soon]) => ({ v, name, ok: on && sum > 0 && !unknown, soon }));
+    const payShown = unknown ? [] : PM.filter(m => m.ok || m.soon), payFirst = payShown.find(m => m.ok);
+    const paySeg = payShown.length ? `<div class="seg pay-seg">${payShown.map(m => m.ok
+        ? `<label><input type="radio" name="pay" value="${m.v}"${m === payFirst ? ' checked' : ''}>${txt(m.name)}</label>`
+        : `<label class="off" aria-disabled="true"><input type="radio" name="pay" value="${m.v}" disabled>${txt(m.name)}<span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label>`).join('')}<label><input type="radio" name="pay" value="manager"${payFirst ? '' : ' checked'}>${txt(S.pay_manager || 'Menejer bilan kelishish')}</label></div>`
+      : unknown && ((S.payme_enabled && S.payme_api) || ((S.click_enabled || S.rahmat_enabled) && S.tolov_api)) ?`<p class="tot-note">${txt(S.pay_unknown_note || 'Savatda narxi ko‘rsatilmagan mahsulot bor — narxni menejer aytadi, to‘lov keyin.')}</p>` : '';
     dr.innerHTML = head(S.form_title) + `<div class="dr-body"><form class="frm" novalidate>
       <label>${txt(S.form_name)}<input name="name" autocomplete="name" required maxlength="80"></label>
       <label>${txt(S.form_phone)}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+998" required maxlength="30"></label>
       <div class="seg"><label><input type="radio" name="how" value="delivery" checked>${txt(S.form_delivery)}</label><label><input type="radio" name="how" value="pickup">${txt(S.form_pickup)}</label></div>
       <label class="addr">${txt(S.form_address)}<input name="address" autocomplete="street-address" maxlength="200"></label>
-      ${payOk ? `<div class="seg pay-seg"><label><input type="radio" name="pay" value="payme" checked>${txt(S.pay_payme || 'Payme orqali to‘lash')}</label><label><input type="radio" name="pay" value="manager">${txt(S.pay_manager || 'Menejer bilan kelishish')}</label></div>`
-        : paySoon ? `<div class="seg pay-seg"><label class="off" aria-disabled="true"><input type="radio" name="pay" value="payme" disabled>${txt(S.pay_payme || 'Payme orqali to‘lash')}<span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label><label><input type="radio" name="pay" value="manager" checked>${txt(S.pay_manager || 'Menejer bilan kelishish')}</label></div>`
-        : S.payme_enabled && S.payme_api && unknown ? `<p class="tot-note">${txt(S.pay_unknown_note || 'Savatda narxi ko‘rsatilmagan mahsulot bor — narxni menejer aytadi, to‘lov keyin.')}</p>` : ''}
+      ${paySeg}
       <label>${txt(S.form_comment)}<textarea name="comment" maxlength="500"></textarea></label>
       <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="err" aria-live="polite"></div>
       <div class="mini">${lines.map(x => `<div><span>${txt(x.name)} × ${x.qty}</span><span>${txt(priceText(x.p, S))}</span></div>`).join('')}</div>
     </form></div>
-    <div class="dr-foot">${total}<button class="btn solid" data-send>${txt(S.form_submit)}</button><button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
+    <div class="dr-foot">${total}<button class="btn solid" data-send>${txt(S.form_submit)}</button><p class="consent">${txt(S.consent_before || 'Buyurtma berish orqali siz')} <a href="/oferta/" target="_blank" rel="noopener">${txt(S.consent_offer || 'Ommaviy oferta')}</a> ${txt(S.consent_and || 'va')} <a href="/maxfiylik/" target="_blank" rel="noopener">${txt(S.consent_privacy || 'Maxfiylik siyosati')}</a>${/^[.,;:!?]/.test(S.consent_after || '') ? '' : ' '}${txt(S.consent_after || 'shartlariga rozilik bildirasiz.')}</p><button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
     const f = dr.querySelector('form'), addr = dr.querySelector('.addr');
     f.querySelectorAll('[name=how]').forEach(r => r.onchange = () => addr.style.display = f.elements.namedItem('how').value === 'pickup' ? 'none' : '');
-    const sendBtn = dr.querySelector('[data-send]'), payBtnText = () => { const v = (f.elements.namedItem('pay') || {}).value; sendBtn.textContent = v === 'payme' ? (S.pay_submit || 'To‘lovga o‘tish') : S.form_submit; };
+    const sendBtn = dr.querySelector('[data-send]'), payBtnText = () => { const v = (f.elements.namedItem('pay') || {}).value; sendBtn.textContent = ['payme', 'click', 'rahmat'].includes(v) ? (S.pay_submit || 'To‘lovga o‘tish') : S.form_submit; };
     f.querySelectorAll('[name=pay]').forEach(r => r.onchange = payBtnText); payBtnText();
     f.onsubmit = e => { e.preventDefault(); sendOrder(f); };
     dr.querySelector('[data-send]').onclick = () => sendOrder(f);
@@ -863,7 +872,21 @@ async function sendOrder(f) {
     image: x.im ? new URL(String(x.im).replace(/^\/+/, ''), location.origin + location.pathname).href : '' }));
   o.total = t.sum; o.unknown = t.unknown; o.lang = LANG; o.text = orderText(o);
   btn.disabled = true; btn.textContent = S.form_sending;
-  const pay = (f.elements.namedItem('pay') || {}).value === 'payme' ? 'payme' : 'manager';
+  const pv = (f.elements.namedItem('pay') || {}).value, pay = ['payme', 'click', 'rahmat'].includes(pv) ? pv : 'manager';
+  const payErr = (m) => { err.textContent = m || S.pay_error || 'To‘lovni boshlab bo‘lmadi. Qayta urinib ko‘ring yoki «Menejer bilan kelishish»ni tanlang.'; btn.disabled = false; btn.textContent = S.pay_submit || 'To‘lovga o‘tish'; };
+  if (pay === 'click' || pay === 'rahmat') { // Click va Rahmat — O‘zbekistondagi o‘z to‘lov xizmatimiz (eliteplatok.uz/tolov)
+    if (!S.tolov_api) return payErr();
+    try {
+      const ctl = new AbortController(); setTimeout(() => ctl.abort(), 20000);
+      const r = await fetch(S.tolov_api.replace(/\/+$/, '') + '/api/orders', { method: 'POST', signal: ctl.signal, headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ name: o.name, phone: o.phone, how: o.how, address: o.address, comment: o.comment, website: o.website, lang: o.lang, pay: 'online', provider: pay,
+          items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
+      const j = await r.json();
+      if (j.ok && j.checkout_url) { location.href = j.checkout_url; return; } // savat to‘lov tasdiqlangach tozalanadi
+      if (j.ok) { cart = []; saveCart(); renderCart('ok'); return; } // honeypot
+      return payErr(LANG === 'uz' && j.error ? j.error : '');
+    } catch (e) { return payErr(); }
+  }
   if (S.payme_enabled && S.payme_api) { // Payme o‘chiq bo‘lsa mijoz ma’lumoti tashqi serverga yuborilmaydi
     try {
       const ctl = new AbortController(); setTimeout(() => ctl.abort(), 20000); // server javob bermasa tugma osilib qolmasin
@@ -1265,16 +1288,16 @@ addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') t.scrollBy({ left: -t.clientWidth, behavior: 'smooth' });
 });
 
-/* Payme'dan qaytish: ?paid=<token> — to'lov holatini serverdan so'raymiz */
+/* To‘lovdan qaytish: Payme — ?paid=<token> (payme_api), Click/Rahmat — ?tpaid=<token> (tolov_api); holatni serverdan so‘raymiz */
 async function checkPaid() {
-  const q = new URLSearchParams(location.search), t = q.get('paid');
-  if (!t || !S_.payme_api) return;
-  q.delete('paid');
+  const q = new URLSearchParams(location.search), own = q.get('tpaid'), t = own || q.get('paid'), api = own ? S_.tolov_api : S_.payme_api;
+  if (!t || !api) return;
+  ['paid', 'tpaid', 'paymentStatus'].forEach(k => q.delete(k));
   history.replaceState(history.state, '', location.pathname + (q.toString() ? '?' + q : '') + location.hash);
   let st = '';
   for (let k = 0; k < 6; k++) {
     try {
-      const r = await fetch(S_.payme_api.replace(/\/+$/, '') + '/api/orders/status?t=' + encodeURIComponent(t), { cache: 'no-store' });
+      const r = await fetch(api.replace(/\/+$/, '') + '/api/orders/status?t=' + encodeURIComponent(t), { cache: 'no-store' });
       if (r.status === 404) break; // noma'lum buyurtma — kutishdan foyda yo'q
       st = (await r.json()).status || '';
     } catch (e) {}
@@ -1284,6 +1307,14 @@ async function checkPaid() {
   if (st === 'paid') { cart = []; saveCart(); }
   openCart(st === 'paid' ? 'paid' : 'unpaid');
 }
+/* To‘lov sahifasidan «Orqaga» bosilsa, brauzer sahifani keshdan tiklaydi — «Yuborilmoqda» holatida qotgan tugmani qayta faollashtiramiz */
+addEventListener('pageshow', e => {
+  if (!e.persisted) return;
+  const b = document.querySelector('#drawer [data-send]'), f = document.querySelector('#drawer form');
+  if (!b || !f) return;
+  const v = (f.elements.namedItem('pay') || {}).value;
+  b.disabled = false; b.textContent = ['payme', 'click', 'rahmat'].includes(v) ? (S_.pay_submit || 'To‘lovga o‘tish') : S_.form_submit;
+});
 
 async function usdRate() {
   const day = new Date().toISOString().slice(0, 10);
