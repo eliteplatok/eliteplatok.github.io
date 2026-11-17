@@ -161,6 +161,48 @@ content:
       - { name: pay_manager_short, label: "💳 Menejer — qisqa nomi (tugmada)", type: string }
       - { name: pay_manager_short_ru, label: "💳 Menejer — qisqa nomi (RU)", type: string }
       - { name: pay_manager_short_en, label: "💳 Menejer — qisqa nomi (EN)", type: string }
+      - { name: form_next, label: "🧾 1-qadam tugmasi «Davom etish»", type: string }
+      - { name: form_next_ru, label: "🧾 1-qadam tugmasi «Davom etish» (RU)", type: string }
+      - { name: form_next_en, label: "🧾 1-qadam tugmasi «Davom etish» (EN)", type: string }
+      - { name: form_how, label: "🧾 «Qabul qilish usuli» sarlavhasi", type: string }
+      - { name: form_how_ru, label: "🧾 «Qabul qilish usuli» sarlavhasi (RU)", type: string }
+      - { name: form_how_en, label: "🧾 «Qabul qilish usuli» sarlavhasi (EN)", type: string }
+      - { name: form_optional, label: "🧾 «ixtiyoriy» belgisi", type: string }
+      - { name: form_optional_ru, label: "🧾 «ixtiyoriy» belgisi (RU)", type: string }
+      - { name: form_optional_en, label: "🧾 «ixtiyoriy» belgisi (EN)", type: string }
+      - { name: err_name, label: "🧾 Xato: ism", type: string }
+      - { name: err_name_ru, label: "🧾 Xato: ism (RU)", type: string }
+      - { name: err_name_en, label: "🧾 Xato: ism (EN)", type: string }
+      - { name: err_phone, label: "🧾 Xato: telefon", type: string }
+      - { name: err_phone_ru, label: "🧾 Xato: telefon (RU)", type: string }
+      - { name: err_phone_en, label: "🧾 Xato: telefon (EN)", type: string }
+      - { name: err_how, label: "🧾 Xato: qabul qilish usuli", type: string }
+      - { name: err_how_ru, label: "🧾 Xato: qabul qilish usuli (RU)", type: string }
+      - { name: err_how_en, label: "🧾 Xato: qabul qilish usuli (EN)", type: string }
+      - { name: err_address, label: "🧾 Xato: manzil", type: string }
+      - { name: err_address_ru, label: "🧾 Xato: manzil (RU)", type: string }
+      - { name: err_address_en, label: "🧾 Xato: manzil (EN)", type: string }
+      - { name: step_info, label: "🧾 1-qadam nomi", type: string }
+      - { name: step_info_ru, label: "🧾 1-qadam nomi (RU)", type: string }
+      - { name: step_info_en, label: "🧾 1-qadam nomi (EN)", type: string }
+      - { name: step_pay, label: "🧾 2-qadam nomi", type: string }
+      - { name: step_pay_ru, label: "🧾 2-qadam nomi (RU)", type: string }
+      - { name: step_pay_en, label: "🧾 2-qadam nomi (EN)", type: string }
+      - { name: pay_title, label: "💳 2-qadam sarlavhasi", type: string }
+      - { name: pay_title_ru, label: "💳 2-qadam sarlavhasi (RU)", type: string }
+      - { name: pay_title_en, label: "💳 2-qadam sarlavhasi (EN)", type: string }
+      - { name: pay_summary, label: "💳 «Buyurtmangiz» sarlavhasi", type: string }
+      - { name: pay_summary_ru, label: "💳 «Buyurtmangiz» sarlavhasi (RU)", type: string }
+      - { name: pay_summary_en, label: "💳 «Buyurtmangiz» sarlavhasi (EN)", type: string }
+      - { name: pay_edit, label: "💳 «O‘zgartirish» havolasi", type: string }
+      - { name: pay_edit_ru, label: "💳 «O‘zgartirish» havolasi (RU)", type: string }
+      - { name: pay_edit_en, label: "💳 «O‘zgartirish» havolasi (EN)", type: string }
+      - { name: pay_back, label: "💳 «Orqaga» havolasi", type: string }
+      - { name: pay_back_ru, label: "💳 «Orqaga» havolasi (RU)", type: string }
+      - { name: pay_back_en, label: "💳 «Orqaga» havolasi (EN)", type: string }
+      - { name: pay_manager_note, label: "💳 Menejer usuli izohi", type: string }
+      - { name: pay_manager_note_ru, label: "💳 Menejer usuli izohi (RU)", type: string }
+      - { name: pay_manager_note_en, label: "💳 Menejer usuli izohi (EN)", type: string }
       - { name: pay_choose, label: "💳 «To‘lov usulini tanlang» sarlavhasi", type: string }
       - { name: pay_choose_ru, label: "💳 «To‘lov usulini tanlang» sarlavhasi (RU)", type: string }
       - { name: pay_choose_en, label: "💳 «To‘lov usulini tanlang» sarlavhasi (EN)", type: string }

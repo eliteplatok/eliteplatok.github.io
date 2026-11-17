@@ -340,25 +340,46 @@ img.so{filter:grayscale(.55) opacity(.5)}
   .seg label:has(input:checked){background:var(--ink);color:var(--bg)}
   .seg label.off{cursor:not-allowed;opacity:.45;flex-wrap:wrap;row-gap:3px}
   .seg .soon{flex-basis:100%;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
-  /* to‘lov usuli: tugma ustida bitta ixcham qator (Payme · Click · Rahmat · Menejer) — doim ko‘rinadi, joy kam oladi */
-  .dr-foot .pay-box{margin:10px 0}
-  .dr-foot .pay-h{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-  .dr-foot .pay-seg{grid-template-columns:repeat(var(--n,4),1fr)}
-  .dr-foot .pay-seg label{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;align-content:center;row-gap:1px;min-width:0;padding:10px 2px;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;line-height:1.25;overflow-wrap:anywhere}
-  .dr-foot .pay-seg label+label{border-left:1px solid var(--line)}
-  .dr-foot .pay-seg .soon{font-size:8px;letter-spacing:.06em}
-  .dr-foot .pay-seg label:not(.off):hover{background:var(--bg-2)}
-  /* tanlangan usul: fon qora bo‘lmaydi (logotiplar ko‘rinib tursin) — qalin ramka va oq fon */
-  .dr-foot .pay-seg label{min-height:48px;background:#fff}
-  .dr-foot .pay-seg label.off{background:transparent}
-  .dr-foot .pay-seg label:has(input:checked){background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
-  .dr-foot .pay-seg .pay-logo{display:block;width:auto;max-width:100%;object-fit:contain}
-  .dr-foot .pay-seg .pl-payme{height:19px}
-  .dr-foot .pay-seg .pl-click{height:20px}
-  .dr-foot .pay-seg .pl-rahmat{height:13px}
-  .dr-foot .pay-seg label.off .pay-logo{filter:grayscale(1)}
-  .dr-foot .pay-seg label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:-2px}
-  .dr-foot .pay-box.need .pay-seg{border-color:#a33;box-shadow:0 0 0 1px #a33}
+  /* --- rasmiylashtirish: 1-qadam ma'lumotlar, 2-qadam to'lov usuli --- */
+  .dr-steps{flex:none;display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .dr-steps span{padding:10px 24px 8px;border-bottom:2px solid transparent}
+  .dr-steps span.on{color:var(--ink);border-bottom-color:var(--ink)}
+  .frm .req{color:#a33;font-style:normal;margin-left:3px}
+  .frm .fopt{letter-spacing:.06em;text-transform:none;opacity:.8;margin-left:4px}
+  .frm .grp{display:flex;flex-direction:column;gap:6px}
+  .frm .seg label+label{border-left:1px solid var(--line)}
+  .frm .grp-h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .frm .ferr{color:#a33;font-size:12px;letter-spacing:0;text-transform:none;line-height:1.35}
+  .frm .ferr:empty{display:none}
+  .frm .bad input,.frm .bad textarea{border-color:#a33}
+  .frm .bad .seg{border-color:#a33;box-shadow:0 0 0 1px #a33}
+  .pay-step{padding-top:12px;display:flex;flex-direction:column;gap:12px}
+  .sum-card{background:#fff;border:1px solid var(--line);padding:14px 16px;font-size:13px;line-height:1.55;overflow-wrap:anywhere}
+  .sum-card .sum-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .sum-card .mini{margin-top:10px;padding:10px 0 0}
+  .pay-h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .pay-list{display:flex;flex-direction:column;gap:6px}
+  .pay-row{position:relative;display:flex;align-items:center;gap:14px;min-height:56px;padding:8px 14px;background:#fff;border:1px solid var(--line);cursor:pointer;transition:border-color .2s,box-shadow .2s}
+  .pay-row input{position:absolute;opacity:0;pointer-events:none}
+  .pay-row .pay-ic{flex:none;width:84px;display:flex;align-items:center;color:var(--ink)}
+  .pay-row .pay-logo{display:block;width:auto;max-width:100%}
+  .pay-row .pl-payme{height:22px}
+  .pay-row .pl-click{height:24px}
+  .pay-row .pl-rahmat{height:16px}
+  .pay-row .pay-tx{flex:1;min-width:0;font-size:13px;line-height:1.35;color:var(--ink)}
+  .pay-row .pay-tx small{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+  .pay-row .pay-dot{flex:none;width:20px;height:20px;border:1.5px solid var(--line);border-radius:50%;display:grid;place-items:center}
+  .pay-row:not(.off):hover{border-color:var(--muted)}
+  .pay-row:has(input:checked){border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+  .pay-row:has(input:checked) .pay-dot{border-color:var(--ink)}
+  .pay-row:has(input:checked) .pay-dot::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--ink)}
+  .pay-row:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+  .pay-row.off{cursor:not-allowed;background:transparent}
+  .pay-row.off .pay-logo{filter:grayscale(1);opacity:.6}
+  .pay-row.off .pay-tx{color:var(--muted)}
+  .pay-row .soon{flex:none;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:3px 6px;white-space:nowrap}
+  .pay-list.need .pay-row:not(.off){border-color:#a33}
+  .dr-foot .btn.wait{opacity:.55}
   .dr-foot .foot-err{color:#a33;font-size:12px;line-height:1.4;text-align:center;margin:0 0 8px}
   .dr-foot .foot-err:empty{display:none}
   .frm .dnote{margin:0}
@@ -834,39 +855,83 @@ function renderCart(view = 'list') {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="ok"><div class="ic">${T[0]}</div><h3>${txt(T[1])}</h3><p>${txt(T[2])}</p><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
   } else if (!lines.length) {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body"><div class="empty">${txt(S.cart_empty)}<br><button class="btn" data-x>${txt(S.cart_continue)}</button></div></div>`;
-  } else if (view === 'form') {
-    // Onlayn to‘lov usullari: yoqilgani tanlanadi, «tez kunda» belgisi qo‘yilgani ko‘rinadi, lekin bosib bo‘lmaydi
+  } else if (view === 'form' || view === 'pay') {
+    // Rasmiylashtirish 2 qadam: 1) ism, telefon, qabul qilish usuli, manzil (majburiy)  2) to‘lov usuli (Payme · Click · Rahmat · menejer)
     const PM = [
       ['payme', S.pay_payme || 'Payme orqali to‘lash', !!(S.payme_enabled && S.payme_api), !!S.payme_soon],
       ['click', S.pay_click || 'Click orqali to‘lash', !!(S.click_enabled && S.tolov_api), !!S.click_soon],
       ['rahmat', S.pay_rahmat || 'Rahmat orqali to‘lash', !!(S.rahmat_enabled && S.tolov_api), !!S.rahmat_soon],
     ].map(([v, name, on, soon]) => ({ v, name, ok: on && sum > 0 && !unknown, soon }));
-    // Usul oldindan tanlanmaydi — mijoz Payme, Click, Rahmat yoki menejerdan birini o‘zi tanlaydi (tugma ustida, doim ko‘rinadi)
-    const payShown = unknown ? [] : PM.filter(m => m.ok || m.soon);
-    // rasmiy logotiplar (cdn.payme.uz, docs.click.uz, rhmt.uz) — images/pay/; to‘liq nomi title/aria-label da
-    const BRAND = Object.fromEntries(['payme', 'click', 'rahmat'].map(v => [v, `<img class="pay-logo pl-${v}" src="images/pay/${v}.svg" alt="${v[0].toUpperCase() + v.slice(1)}" width="80" height="22" decoding="async">`]));
-    const paySeg = payShown.length ? `<div class="pay-box"><div class="pay-h">${txt(S.pay_choose || 'To‘lov usulini tanlang')}</div><div class="seg pay-seg" style="--n:${payShown.length + 1}">${payShown.map(m => m.ok
-        ? `<label title="${esc(m.name)}"><input type="radio" name="pay" form="ep-order" value="${m.v}" aria-label="${esc(m.name)}">${BRAND[m.v]}</label>`
-        : `<label class="off" aria-disabled="true" title="${esc(m.name)}"><input type="radio" name="pay" form="ep-order" value="${m.v}" disabled aria-label="${esc(m.name)}">${BRAND[m.v]}<span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label>`).join('')}<label title="${esc(S.pay_manager || 'Menejer bilan kelishish')}"><input type="radio" name="pay" form="ep-order" value="manager" aria-label="${esc(S.pay_manager || 'Menejer bilan kelishish')}">${txt(S.pay_manager_short || 'Menejer')}</label></div></div>`
-      : unknown && ((S.payme_enabled && S.payme_api) || ((S.click_enabled || S.rahmat_enabled) && S.tolov_api)) ?`<p class="tot-note">${txt(S.pay_unknown_note || 'Savatda narxi ko‘rsatilmagan mahsulot bor — narxni menejer aytadi, to‘lov keyin.')}</p>` : '';
-    dr.innerHTML = head(S.form_title) + `<div class="dr-body"><form class="frm" id="ep-order" novalidate>
-      <label>${txt(S.form_name)}<input name="name" autocomplete="name" required maxlength="80"></label>
-      <label>${txt(S.form_phone)}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+998" required maxlength="30"></label>
-      <div class="seg"><label><input type="radio" name="how" value="delivery" checked>${txt(S.form_delivery)}</label><label><input type="radio" name="how" value="pickup">${txt(S.form_pickup)}</label></div>
-      <label class="addr">${txt(S.form_address)}<input name="address" autocomplete="street-address" maxlength="200"></label>
-      <label>${txt(S.form_comment)}<textarea name="comment" maxlength="500"></textarea></label>
-      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <div class="mini">${lines.map(x => `<div><span>${txt(x.name)} × ${x.qty}</span><span>${txt(priceText(x.p, S))}</span></div>`).join('')}</div>
-      ${dnote}
-    </form></div>
-    <div class="dr-foot">${totalCore}${paySeg}<div class="err foot-err" aria-live="polite"></div><button class="btn solid" data-send>${txt(S.form_submit)}</button><p class="consent">${txt(S.consent_before || 'Buyurtma berish orqali siz')} <a href="/oferta/" target="_blank" rel="noopener">${txt(S.consent_offer || 'Ommaviy oferta')}</a> ${txt(S.consent_and || 'va')} <a href="/maxfiylik/" target="_blank" rel="noopener">${txt(S.consent_privacy || 'Maxfiylik siyosati')}</a>${/^[.,;:!?]/.test(S.consent_after || '') ? '' : ' '}${txt(S.consent_after || 'shartlariga rozilik bildirasiz.')}</p><button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
-    const f = dr.querySelector('form'), addr = dr.querySelector('.addr');
-    f.querySelectorAll('[name=how]').forEach(r => r.onchange = () => addr.style.display = f.elements.namedItem('how').value === 'pickup' ? 'none' : '');
-    const sendBtn = dr.querySelector('[data-send]'), payBtnText = () => { const v = (f.elements.namedItem('pay') || {}).value; sendBtn.textContent = ['payme', 'click', 'rahmat'].includes(v) ? (S.pay_submit || 'To‘lovga o‘tish') : S.form_submit; };
-    dr.querySelectorAll('[name=pay]').forEach(r => r.onchange = () => { payBtnText(); dr.querySelector('.foot-err').textContent = ''; dr.querySelector('.pay-box')?.classList.remove('need'); }); payBtnText();
-    f.onsubmit = e => { e.preventDefault(); sendOrder(f); };
-    dr.querySelector('[data-send]').onclick = () => sendOrder(f);
-    dr.querySelector('[data-back]').onclick = () => renderCart('list');
+    const payShown = unknown ? [] : PM.filter(m => m.ok || m.soon), hasPay = payShown.some(m => m.ok); // onlayn usul bo‘lmasa 2-qadam kerak emas
+    const D = orderDraft();
+    const steps = n => hasPay ? `<div class="dr-steps"><span class="${n === 1 ? 'on' : ''}">1. ${txt(S.step_info || 'Ma’lumotlar')}</span><span class="${n === 2 ? 'on' : ''}">2. ${txt(S.step_pay || 'To‘lov')}</span></div>` : '';
+    const consent = `<p class="consent">${txt(S.consent_before || 'Buyurtma berish orqali siz')} <a href="/oferta/" target="_blank" rel="noopener">${txt(S.consent_offer || 'Ommaviy oferta')}</a> ${txt(S.consent_and || 'va')} <a href="/maxfiylik/" target="_blank" rel="noopener">${txt(S.consent_privacy || 'Maxfiylik siyosati')}</a>${/^[.,;:!?]/.test(S.consent_after || '') ? '' : ' '}${txt(S.consent_after || 'shartlariga rozilik bildirasiz.')}</p>`;
+    const mini = `<div class="mini">${lines.map(x => `<div><span>${txt(x.name)} × ${x.qty}</span><span>${txt(priceText(x.p, S))}</span></div>`).join('')}</div>`;
+    if (view === 'pay' && (!hasPay || orderCheck(D).length)) view = 'form'; // ma’lumot to‘liq bo‘lmasa 2-qadamga o‘tilmaydi
+    if (view === 'form') {
+      const req = '<i class="req" aria-hidden="true">*</i>';
+      dr.innerHTML = head(S.form_title) + steps(1) + `<div class="dr-body"><form class="frm" id="ep-order" novalidate>
+        <label data-f="name"><span>${txt(S.form_name)}${req}</span><input name="name" autocomplete="name" required aria-required="true" maxlength="80" value="${esc(D.name)}"><span class="ferr" aria-live="polite"></span></label>
+        <label data-f="phone"><span>${txt(S.form_phone)}${req}</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+998 90 123 45 67" required aria-required="true" maxlength="30" value="${esc(D.phone)}"><span class="ferr" aria-live="polite"></span></label>
+        <div class="grp" data-f="how" role="radiogroup" aria-required="true"><span class="grp-h">${txt(S.form_how || 'Qabul qilish usuli')}${req}</span>
+          <div class="seg"><label><input type="radio" name="how" value="delivery"${D.how === 'delivery' ? ' checked' : ''}>${txt(S.form_delivery)}</label><label><input type="radio" name="how" value="pickup"${D.how === 'pickup' ? ' checked' : ''}>${txt(S.form_pickup)}</label></div><span class="ferr" aria-live="polite"></span></div>
+        <label class="addr" data-f="address"${D.how === 'delivery' ? '' : ' style="display:none"'}><span>${txt(S.form_address)}${req}</span><input name="address" autocomplete="street-address" aria-required="true" maxlength="200" value="${esc(D.address)}"><span class="ferr" aria-live="polite"></span></label>
+        <label><span>${txt(S.form_comment)}<span class="fopt">(${txt(S.form_optional || 'ixtiyoriy')})</span></span><textarea name="comment" maxlength="500">${esc(D.comment)}</textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        ${mini}
+        ${dnote}
+        ${unknown && ((S.payme_enabled && S.payme_api) || ((S.click_enabled || S.rahmat_enabled) && S.tolov_api)) ? `<p class="tot-note">${txt(S.pay_unknown_note || 'Savatda narxi ko‘rsatilmagan mahsulot bor — narxni menejer aytadi, to‘lov keyin.')}</p>` : ''}
+      </form></div>
+      <div class="dr-foot">${totalCore}<div class="err foot-err" aria-live="polite"></div><button class="btn solid" ${hasPay ? 'data-next' : 'data-send'}>${txt(hasPay ? (S.form_next || 'Davom etish') : S.form_submit)}</button>${hasPay ? '' : consent}<button class="rm" data-back style="display:block;margin:14px auto 0">${txt(S.form_back)}</button></div>`;
+      const f = dr.querySelector('form'), addr = dr.querySelector('.addr'), ferr = dr.querySelector('.foot-err');
+      const clear = k => { const b = f.querySelector(`[data-f="${k}"]`); if (b) { b.classList.remove('bad'); b.querySelector('.ferr').textContent = ''; } if (!f.querySelector('.bad')) ferr.textContent = ''; };
+      const keep = () => saveDraft(readOrder(f));
+      f.querySelectorAll('[name=how]').forEach(r => r.onchange = () => { addr.style.display = r.value === 'pickup' ? 'none' : ''; clear('how'); if (r.value === 'pickup') clear('address'); keep(); });
+      ['name', 'phone', 'address', 'comment'].forEach(k => { const el = f.elements.namedItem(k); el.oninput = () => { clear(k); keep(); }; });
+      f.elements.namedItem('phone').onfocus = e => { if (!e.target.value.trim()) e.target.value = '+998 '; };
+      const go = () => {
+        const o = readOrder(f), bad = orderCheck(o);
+        saveDraft(o);
+        f.querySelectorAll('[data-f]').forEach(b => { const m = bad.find(x => x[0] === b.dataset.f); b.classList.toggle('bad', !!m); b.querySelector('.ferr').textContent = m ? m[1] : ''; });
+        if (bad.length) { // birinchi xato maydonga olib boramiz
+          ferr.textContent = S.form_error;
+          const b = f.querySelector('.bad'), el = b.querySelector('input:not([type=radio]),textarea');
+          el ? el.focus() : b.scrollIntoView({ block: 'center', behavior: 'smooth' });
+          return;
+        }
+        ferr.textContent = '';
+        hasPay ? renderCart('pay') : sendOrder('manager');
+      };
+      f.onsubmit = e => { e.preventDefault(); go(); };
+      dr.querySelector('[data-next],[data-send]').onclick = go;
+      dr.querySelector('[data-back]').onclick = () => renderCart('list');
+    } else {
+      const logo = v => `<img class="pay-logo pl-${v}" src="images/pay/${v}.svg" alt="" width="84" height="24" decoding="async">`; // rasmiy logotiplar: cdn.payme.uz, docs.click.uz, rhmt.uz
+      const chat = '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5" stroke-linecap="round"/></svg>';
+      dr.innerHTML = head(S.pay_title || 'To‘lov usuli') + steps(2) + `<div class="dr-body"><div class="pay-step">
+        <div class="sum-card"><div class="sum-h"><span>${txt(S.pay_summary || 'Buyurtmangiz')}</span><button type="button" class="rm" data-edit>${txt(S.pay_edit || 'O‘zgartirish')}</button></div>
+          <div>${esc(D.name)} · ${esc(D.phone)}</div>
+          <div>${D.how === 'pickup' ? txt(S.form_pickup) : txt(S.form_delivery) + ': ' + esc(D.address)}</div>
+          ${D.comment ? `<div style="color:var(--muted)">${esc(D.comment)}</div>` : ''}
+          ${mini}</div>
+        <div class="pay-h" id="pay-h">${txt(S.pay_choose || 'To‘lov usulini tanlang')}</div>
+        <div class="pay-list" role="radiogroup" aria-labelledby="pay-h">${payShown.map(m => m.ok
+          ? `<label class="pay-row"><input type="radio" name="pay" value="${m.v}"><span class="pay-ic">${logo(m.v)}</span><span class="pay-tx">${txt(m.name)}</span><span class="pay-dot"></span></label>`
+          : `<label class="pay-row off" aria-disabled="true"><input type="radio" name="pay" value="${m.v}" disabled><span class="pay-ic">${logo(m.v)}</span><span class="pay-tx">${txt(m.name)}</span><span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label>`).join('')}
+          <label class="pay-row"><input type="radio" name="pay" value="manager"><span class="pay-ic">${chat}</span><span class="pay-tx">${txt(S.pay_manager || 'Menejer bilan kelishish')}<small>${txt(S.pay_manager_note || 'To‘lov va yetkazishni menejer bilan kelishasiz')}</small></span><span class="pay-dot"></span></label>
+        </div>
+      </div></div>
+      <div class="dr-foot">${totalCore}<div class="err foot-err" aria-live="polite"></div><button class="btn solid wait" data-send>${txt(S.form_submit)}</button>${consent}<button class="rm" data-edit style="display:block;margin:14px auto 0">${txt(S.pay_back || 'Orqaga')}</button></div>`;
+      const btn = dr.querySelector('[data-send]'), list = dr.querySelector('.pay-list'), ferr = dr.querySelector('.foot-err');
+      const picked = () => (dr.querySelector('input[name=pay]:checked') || {}).value;
+      dr.querySelectorAll('input[name=pay]').forEach(r => r.onchange = () => { btn.classList.remove('wait'); btn.textContent = payBtnLabel(picked()); list.classList.remove('need'); ferr.textContent = ''; });
+      btn.onclick = () => {
+        const v = picked();
+        if (!v) { ferr.textContent = S.pay_choose_error || 'Avval to‘lov usulini tanlang: Payme, Click, Rahmat yoki menejer.'; list.classList.add('need'); list.scrollIntoView({ block: 'center', behavior: 'smooth' }); return; } // usul tanlanmagan — hech qayerga yubormaymiz
+        sendOrder(v);
+      };
+      dr.querySelectorAll('[data-edit]').forEach(b => b.onclick = () => renderCart('form'));
+    }
   } else {
     dr.innerHTML = head(S.cart_title) + `<div class="dr-body">${lines.map(x => `
       <div class="ci"><img ${smImg(x.im, 'alt=""')}>
@@ -890,24 +955,35 @@ function orderText(o) {
   L.push('', `${U.cart_total}: ${o.total ? o.total.toLocaleString('ru-RU') + ' so‘m' : '—'}${o.unknown ? ' (+ aksiya / $ mahsulotlar)' : ''}`);
   return L.join('\n');
 }
-async function sendOrder(f) {
-  const S = S_, err = document.querySelector('#drawer .foot-err'), btn = document.querySelector('[data-send]'); // xabar tugma ustida — doim ko‘rinadi
+/* Buyurtma ma’lumotlari (ism, telefon, qabul qilish usuli, manzil, izoh) — qadamlar orasida va sahifa yangilanganda saqlanadi (faqat shu brauzer sessiyasida) */
+let ORDER = (() => { try { return JSON.parse(sessionStorage.getItem('ep_order')) || {}; } catch (e) { return {}; } })();
+const orderDraft = () => ({ name: '', phone: '', how: '', address: '', comment: '', website: '', ...ORDER });
+function saveDraft(o) { ORDER = { name: o.name, phone: o.phone, how: o.how, address: o.address, comment: o.comment, website: o.website || '' }; try { sessionStorage.setItem('ep_order', JSON.stringify(ORDER)); } catch (e) {} }
+function readOrder(f) { const E = n => f.elements.namedItem(n); return { name: E('name').value.trim(), phone: E('phone').value.trim(), how: E('how').value || '', address: E('address').value.trim(), comment: E('comment').value.trim(), website: E('website').value }; }
+/* Majburiy maydonlar: ism, telefon, qabul qilish usuli; yetkazib berishda — manzil. Qaytaradi: [[maydon, xabar], …] */
+function orderCheck(o) {
+  const S = S_, bad = [], d = String(o.phone || '').replace(/\D/g, '');
+  if (String(o.name || '').trim().length < 2) bad.push(['name', S.err_name || 'Ismingizni yozing.']);
+  if (!(d.startsWith('998') ? d.length === 12 : d.length >= 9 && d.length <= 15)) bad.push(['phone', S.err_phone || 'Telefon raqamini to‘liq yozing, masalan +998 90 123 45 67.']);
+  if (o.how !== 'delivery' && o.how !== 'pickup') bad.push(['how', S.err_how || 'Yetkazib berish yoki do‘kondan olib ketishni tanlang.']);
+  else if (o.how === 'delivery' && String(o.address || '').trim().length < 5) bad.push(['address', S.err_address || 'Yetkazib berish manzilini yozing.']);
+  return bad;
+}
+const payBtnLabel = v => ['payme', 'click', 'rahmat'].includes(v) ? (S_.pay_submit || 'To‘lovga o‘tish') : S_.form_submit;
+async function sendOrder(pv) {
+  const S = S_, err = document.querySelector('#drawer .foot-err'), btn = document.querySelector('#drawer [data-send]'); // xabar tugma ustida — doim ko‘rinadi
   err.textContent = '';
-  const E = n => f.elements.namedItem(n);
-  const o = { name: E('name').value.trim(), phone: E('phone').value.trim(), how: E('how').value, address: E('address').value.trim(), comment: E('comment').value.trim(), website: E('website').value };
-  if (o.name.length < 2 || o.phone.replace(/\D/g, '').length < 7) { err.textContent = S.form_error; (o.name.length < 2 ? E('name') : E('phone')).focus(); return; }
-  const payBox = document.querySelector('#drawer .pay-box');
-  if (payBox && !payBox.querySelector('input[name=pay]:checked')) { // to‘lov usuli tanlanmagan — hech qayerga yubormaymiz
-    err.textContent = S.pay_choose_error || 'Avval to‘lov usulini tanlang: Payme, Click, Rahmat yoki menejer.';
-    payBox.classList.add('need'); return;
-  }
+  const o = orderDraft();
+  if (orderCheck(o).length) return renderCart('form'); // ma’lumot to‘liq emas — 1-qadamga qaytamiz
+  if (o.how === 'pickup') o.address = '';
   const lines = cartLines(), t = cartTotals(lines);
   o.items = lines.map(x => ({ name: x.name_uz, qty: x.qty, price: priceText({ ...x.p, price: x.p.price_uz || x.p.price }, S_UZ), link: location.origin + location.pathname + '#' + x.key,
     image: x.im ? new URL(String(x.im).replace(/^\/+/, ''), location.origin + location.pathname).href : '' }));
   o.total = t.sum; o.unknown = t.unknown; o.lang = LANG; o.text = orderText(o);
   btn.disabled = true; btn.textContent = S.form_sending;
-  const pv = (f.elements.namedItem('pay') || {}).value, pay = ['payme', 'click', 'rahmat'].includes(pv) ? pv : 'manager';
-  const payErr = (m) => { err.textContent = m || S.pay_error || 'To‘lovni boshlab bo‘lmadi. Qayta urinib ko‘ring yoki «Menejer bilan kelishish»ni tanlang.'; btn.disabled = false; btn.textContent = S.pay_submit || 'To‘lovga o‘tish'; };
+  const pay = ['payme', 'click', 'rahmat'].includes(pv) ? pv : 'manager';
+  const sent = () => { saveDraft({ ...o, comment: '' }); cart = []; saveCart(); renderCart('ok'); };
+  const payErr = (m) => { err.textContent = m || S.pay_error || 'To‘lovni boshlab bo‘lmadi. Qayta urinib ko‘ring yoki «Menejer bilan kelishish»ni tanlang.'; btn.disabled = false; btn.textContent = payBtnLabel(pay); };
   if (pay === 'click' || pay === 'rahmat') { // Click va Rahmat — O‘zbekistondagi o‘z to‘lov xizmatimiz (eliteplatok.uz/tolov)
     if (!S.tolov_api) return payErr();
     try {
@@ -917,7 +993,7 @@ async function sendOrder(f) {
           items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
       const j = await r.json();
       if (j.ok && j.checkout_url) { location.href = j.checkout_url; return; } // savat to‘lov tasdiqlangach tozalanadi
-      if (j.ok) { cart = []; saveCart(); renderCart('ok'); return; } // honeypot
+      if (j.ok) return sent(); // honeypot
       return payErr(LANG === 'uz' && j.error ? j.error : '');
     } catch (e) { return payErr(); }
   }
@@ -929,7 +1005,7 @@ async function sendOrder(f) {
           items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
       const j = await r.json();
       if (j.ok && pay === 'payme' && j.checkout_url) { location.href = j.checkout_url; return; } // savat to‘lov tasdiqlangach tozalanadi
-      if (j.ok && pay === 'manager') { cart = []; saveCart(); renderCart('ok'); return; }
+      if (j.ok && pay === 'manager') return sent();
     } catch (e) {}
     if (pay === 'payme') return payErr();
   }
@@ -944,10 +1020,9 @@ async function sendOrder(f) {
     if (S.order_endpoint) alert(S.fallback_text);
     const url = `${S.telegram}${S.telegram.includes('?') ? '&' : '?'}text=${encodeURIComponent(o.text)}`;
     const w = window.open(url, '_blank');
-    if (!w) { cart = []; saveCart(); location.href = url; return; }
+    if (!w) { saveDraft({ ...o, comment: '' }); cart = []; saveCart(); location.href = url; return; }
   }
-  cart = []; saveCart();
-  renderCart('ok');
+  sent();
 }
 
 /* --- search: by name and colour, colour families include their shades (pushti → och pushti, fuksiya…) --- */
@@ -1344,10 +1419,9 @@ async function checkPaid() {
 /* To‘lov sahifasidan «Orqaga» bosilsa, brauzer sahifani keshdan tiklaydi — «Yuborilmoqda» holatida qotgan tugmani qayta faollashtiramiz */
 addEventListener('pageshow', e => {
   if (!e.persisted) return;
-  const b = document.querySelector('#drawer [data-send]'), f = document.querySelector('#drawer form');
-  if (!b || !f) return;
-  const v = (f.elements.namedItem('pay') || {}).value;
-  b.disabled = false; b.textContent = ['payme', 'click', 'rahmat'].includes(v) ? (S_.pay_submit || 'To‘lovga o‘tish') : S_.form_submit;
+  const b = document.querySelector('#drawer [data-send]');
+  if (!b) return;
+  b.disabled = false; b.textContent = payBtnLabel((document.querySelector('#drawer input[name=pay]:checked') || {}).value);
 });
 
 async function usdRate() {
