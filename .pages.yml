@@ -57,6 +57,12 @@ content:
       - { name: product_tg_button, label: "Mahsulot oynasi: Telegram tugmasi", type: string }
       - { name: product_tg_button_ru, label: "Mahsulot oynasi: Telegram tugmasi (RU)", type: string }
       - { name: product_tg_button_en, label: "Mahsulot oynasi: Telegram tugmasi (EN)", type: string }
+      - { name: product_ig_video, label: "Mahsulot oynasi: Instagram video tugmasi", type: string }
+      - { name: product_ig_video_ru, label: "Mahsulot oynasi: Instagram video tugmasi (RU)", type: string }
+      - { name: product_ig_video_en, label: "Mahsulot oynasi: Instagram video tugmasi (EN)", type: string }
+      - { name: card_ig_video, label: "Kartochka: Instagram video belgisi", type: string }
+      - { name: card_ig_video_ru, label: "Kartochka: Instagram video belgisi (RU)", type: string }
+      - { name: card_ig_video_en, label: "Kartochka: Instagram video belgisi (EN)", type: string }
       - { name: product_tg_message, label: "Telegram tayyor xabari (model nomi va rasm havolasi o‘zi qo‘shiladi)", type: string }
       - { name: product_tg_message_ru, label: "Telegram tayyor xabari (RU)", type: string }
       - { name: product_tg_message_en, label: "Telegram tayyor xabari (EN)", type: string }
@@ -242,6 +248,12 @@ content:
       - { name: sold_out_label, label: "Yozuv: «Sotildi»", type: string }
       - { name: sold_out_label_ru, label: "Yozuv: «Sotildi» (RU)", type: string }
       - { name: sold_out_label_en, label: "Yozuv: «Sotildi» (EN)", type: string }
+      - { name: stock_left, label: "Yozuv: «Faqat {n} ta qoldi» ({n} o‘rniga son qo‘yiladi)", type: string }
+      - { name: stock_left_ru, label: "Yozuv: «Faqat {n} ta qoldi» (RU)", type: string }
+      - { name: stock_left_en, label: "Yozuv: «Faqat {n} ta qoldi» (EN)", type: string }
+      - { name: sold_week_label, label: "Yozuv: «Bu hafta {n} ta sotildi»", type: string }
+      - { name: sold_week_label_ru, label: "Yozuv: «Bu hafta {n} ta sotildi» (RU)", type: string }
+      - { name: sold_week_label_en, label: "Yozuv: «Bu hafta {n} ta sotildi» (EN)", type: string }
       - { name: search_title, label: "Qidiruv: sarlavha", type: string }
       - { name: search_title_ru, label: "Qidiruv: sarlavha (RU)", type: string }
       - { name: search_title_en, label: "Qidiruv: sarlavha (EN)", type: string }
@@ -401,6 +413,7 @@ content:
           - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
           - { name: cover, label: "Muqova rasmi (ranglari bor tovar uchun: kartochkada birinchi chiqadi)", type: image }
           - { name: video, label: "Kartochka videosi (mp4, ovozsiz takrorlanadi; muqova rasmi uning ustida turadi)", type: string }
+          - { name: ig_video, label: "Instagram video havolasi (kartochkada «Videoni ko‘rish» tugmasi va tovar oynasida «Taklifimiz videosini ko‘rish»)", type: string }
           - name: variants
             label: "Ranglar (bir rangli tovar uchun: har rangga o‘z rasmlari va dumaloq rang tugmasi; to‘ldirilsa yuqoridagi «Rasmlar» o‘rniga ishlatiladi)"
             type: object
@@ -413,6 +426,7 @@ content:
               - { name: name_en, label: "Rang nomi (EN)", type: string }
               - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
               - { name: sold_out, label: "Tugagan (sotildi) — rasmda «Sotildi» yozuvi chiqadi", type: boolean }
+              - { name: stock, label: "Shu rangdan nechta qoldi (bo‘sh = ko‘rsatilmaydi; 0 = sotildi)", type: number }
               - { name: card_hide, label: "Kartochka karuselida ko‘rsatilmasin (faqat tovar ochilganda)", type: boolean }
               - { name: swatch, label: "Yumaloq belgi uchun rasm (bo‘sh bo‘lsa — birinchi rasm)", type: image }
               - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
@@ -457,6 +471,8 @@ content:
           - { name: badge_en, label: "Belgi (EN)", type: string }
           - { name: is_new, label: "Yangi (o‘ng burchakda miltillovchi NEW belgisi)", type: boolean }
           - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
+          - { name: stock, label: "Nechta qoldi — «Faqat N ta qoldi» yozuvi (bo‘sh = ko‘rsatilmaydi; 0 = sotildi)", type: number }
+          - { name: sold_week, label: "Bu hafta nechta sotildi — «Bu hafta N ta sotildi» (faqat haqiqiy son; bo‘sh = ko‘rsatilmaydi)", type: number }
           - { name: sold_photos, label: "Tugagan ro‘mollar — rasm raqamlari (ranglari bo‘lmagan tovar uchun, masalan: 3, 7)", type: string }
           - { name: tags, label: "Qidiruv teglari (vergul bilan): bir rangli / printli / bestseller / bandanka", type: string }
 
@@ -489,6 +505,7 @@ content:
           - { name: images, label: "Rasmlar (birinchisi asosiy; karuselda shu tartibda chiqadi)", type: image, list: true }
           - { name: cover, label: "Muqova rasmi (ranglari bor tovar uchun: kartochkada birinchi chiqadi)", type: image }
           - { name: video, label: "Kartochka videosi (mp4, ovozsiz takrorlanadi; muqova rasmi uning ustida turadi)", type: string }
+          - { name: ig_video, label: "Instagram video havolasi (kartochkada «Videoni ko‘rish» tugmasi va tovar oynasida «Taklifimiz videosini ko‘rish»)", type: string }
           - name: variants
             label: "Ranglar (bir rangli tovar uchun: har rangga o‘z rasmlari va dumaloq rang tugmasi; to‘ldirilsa yuqoridagi «Rasmlar» o‘rniga ishlatiladi)"
             type: object
@@ -501,6 +518,7 @@ content:
               - { name: name_en, label: "Rang nomi (EN)", type: string }
               - { name: hex, label: "Dumaloq rangi (masalan #e3aab3)", type: string }
               - { name: sold_out, label: "Tugagan (sotildi) — rasmda «Sotildi» yozuvi chiqadi", type: boolean }
+              - { name: stock, label: "Shu rangdan nechta qoldi (bo‘sh = ko‘rsatilmaydi; 0 = sotildi)", type: number }
               - { name: card_hide, label: "Kartochka karuselida ko‘rsatilmasin (faqat tovar ochilganda)", type: boolean }
               - { name: swatch, label: "Yumaloq belgi uchun rasm (bo‘sh bo‘lsa — birinchi rasm)", type: image }
               - { name: images, label: "Shu rangning rasmlari (manekenda, yoyilgan…)", type: image, list: true }
@@ -545,6 +563,8 @@ content:
           - { name: badge_en, label: "Belgi (EN)", type: string }
           - { name: is_new, label: "Yangi (o‘ng burchakda miltillovchi NEW belgisi)", type: boolean }
           - { name: sold_out, label: "Butun tovar tugagan (sotildi)", type: boolean }
+          - { name: stock, label: "Nechta qoldi — «Faqat N ta qoldi» yozuvi (bo‘sh = ko‘rsatilmaydi; 0 = sotildi)", type: number }
+          - { name: sold_week, label: "Bu hafta nechta sotildi — «Bu hafta N ta sotildi» (faqat haqiqiy son; bo‘sh = ko‘rsatilmaydi)", type: number }
           - { name: sold_photos, label: "Tugagan ro‘mollar — rasm raqamlari (ranglari bo‘lmagan tovar uchun, masalan: 3, 7)", type: string }
           - { name: tags, label: "Qidiruv teglari (vergul bilan): bir rangli / printli / bestseller / bandanka", type: string }
 
