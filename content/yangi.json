@@ -67,7 +67,8 @@
       "price_en": "900,000 UZS",
       "price_note_ru": "Специальная цена — на оставшиеся штуки",
       "price_note_en": "Special price — for the remaining pieces",
-      "stock": 2
+      "stock": 2,
+      "ig_video": "https://www.instagram.com/elite.abaya.uz/reel/Dfe3c8zuJAA/"
     },
     {
       "name": "Dog‘iston tvil sholk ro‘mollar",
@@ -274,7 +275,8 @@
           "swatch": "images/dagiston-tvil-13.jpg"
         }
       ],
-      "sold_week": 7
+      "sold_week": 7,
+      "ig_video": "https://www.instagram.com/eliteplatok/reel/DfeiZ4bszzi/"
     },
     {
       "name": "Kapyushonli to‘plamlar",
@@ -1969,7 +1971,8 @@
       "price_ru": "1 500 000 сум",
       "price_en": "1,500,000 UZS",
       "price_note_ru": "",
-      "price_note_en": ""
+      "price_note_en": "",
+      "ig_video": "https://www.instagram.com/elite.abaya.uz/reel/Df4OzhiufUR/"
     },
     {
       "name": "«ELF PRIVE» namozlik",
