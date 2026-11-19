@@ -222,6 +222,9 @@ content:
       - { name: pay_click_en, label: "💳 To‘lov usuli: Click (EN)", type: string }
       - { name: rahmat_enabled, label: "💳 Rahmat orqali online to‘lov yoqilgan", type: boolean }
       - { name: rahmat_soon, label: "💳 Rahmat o‘chiq paytda «Tez kunda» deb ko‘rsatilsin", type: boolean }
+      - { name: rahmat_fee_note, label: "💳 Rahmat: xizmat haqi izohi (bo‘sh bo‘lsa ko‘rinmaydi)", type: string }
+      - { name: rahmat_fee_note_ru, label: "💳 Rahmat: xizmat haqi izohi (RU)", type: string }
+      - { name: rahmat_fee_note_en, label: "💳 Rahmat: xizmat haqi izohi (EN)", type: string }
       - { name: pay_rahmat, label: "💳 To‘lov usuli: Rahmat", type: string }
       - { name: pay_rahmat_ru, label: "💳 To‘lov usuli: Rahmat (RU)", type: string }
       - { name: pay_rahmat_en, label: "💳 To‘lov usuli: Rahmat (EN)", type: string }

@@ -939,7 +939,7 @@ function renderCart(view = 'list') {
           ${mini}</div>
         <div class="pay-h" id="pay-h">${txt(S.pay_choose || 'To‘lov usulini tanlang')}</div>
         <div class="pay-list" role="radiogroup" aria-labelledby="pay-h">${payShown.map(m => m.ok
-          ? `<label class="pay-row"><input type="radio" name="pay" value="${m.v}"><span class="pay-ic">${logo(m.v)}</span><span class="pay-tx">${txt(m.name)}</span><span class="pay-dot"></span></label>`
+          ? `<label class="pay-row"><input type="radio" name="pay" value="${m.v}"><span class="pay-ic">${logo(m.v)}</span><span class="pay-tx">${txt(m.name)}${S[m.v + '_fee_note'] ? `<small>${txt(S[m.v + '_fee_note'])}</small>` : ''}</span><span class="pay-dot"></span></label>`
           : `<label class="pay-row off" aria-disabled="true"><input type="radio" name="pay" value="${m.v}" disabled><span class="pay-ic">${logo(m.v)}</span><span class="pay-tx">${txt(m.name)}</span><span class="soon">${txt(S.pay_soon || 'Tez kunda')}</span></label>`).join('')}
           <label class="pay-row"><input type="radio" name="pay" value="manager"><span class="pay-ic">${chat}</span><span class="pay-tx">${txt(S.pay_manager || 'Menejer bilan kelishish')}<small>${txt(S.pay_manager_note || 'To‘lov va yetkazishni menejer bilan kelishasiz')}</small></span><span class="pay-dot"></span></label>
         </div>
