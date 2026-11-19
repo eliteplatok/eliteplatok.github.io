@@ -2230,7 +2230,7 @@
       "badge_ru": "",
       "badge_en": "",
       "is_new": true,
-      "sold_out": false,
+      "sold_out": true,
       "sold_photos": "",
       "tags": "namozlik",
       "variants": [],
