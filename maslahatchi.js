@@ -10,7 +10,7 @@
   const $priceNum = () => typeof priceNum !== 'undefined' ? priceNum : null;
   const SS = { get: k => { try { return sessionStorage.getItem('ep-mx-' + k); } catch (e) { return null; } },
                set: (k, v) => { try { sessionStorage.setItem('ep-mx-' + k, v); } catch (e) {} } };
-  const goal = g => { try { if (window.ym && $S_().metrika_id) ym($S_().metrika_id, 'reachGoal', 'mx_' + g); } catch (e) {} };
+  const goal = g => { try { if (window.ym) ym(+$S_().metrika_id || 114361342, 'reachGoal', 'mx_' + g); } catch (e) {} try { if (window.gtag) gtag('event', 'mx_' + g); } catch (e) {} };
   const E = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
   const T = {
