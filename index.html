@@ -605,6 +605,7 @@ img.so{filter:grayscale(.55) opacity(.5)}
     .pm-btns{grid-template-columns:1fr}
   }
 </style>
+<script src="/stat.js" defer></script>
 </head>
 <body>
 <div id="app"></div>
@@ -932,7 +933,7 @@ function renderCart(view = 'list') {
       const logo = v => `<img class="pay-logo pl-${v}" src="images/pay/${v}.svg" alt="" width="84" height="24" decoding="async">`; // rasmiy logotiplar: cdn.payme.uz, docs.click.uz, rhmt.uz
       const chat = '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5" stroke-linecap="round"/></svg>';
       dr.innerHTML = head(S.pay_title || 'To‘lov usuli') + steps(2) + `<div class="dr-body"><div class="pay-step">
-        <div class="sum-card"><div class="sum-h"><span>${txt(S.pay_summary || 'Buyurtmangiz')}</span><button type="button" class="rm" data-edit>${txt(S.pay_edit || 'O‘zgartirish')}</button></div>
+        <div class="sum-card ym-hide-content"><div class="sum-h"><span>${txt(S.pay_summary || 'Buyurtmangiz')}</span><button type="button" class="rm" data-edit>${txt(S.pay_edit || 'O‘zgartirish')}</button></div>
           <div>${esc(D.name)} · ${esc(D.phone)}</div>
           <div>${D.how === 'pickup' ? txt(S.form_pickup) : txt(S.form_delivery) + ': ' + esc(D.address)}</div>
           ${D.comment ? `<div style="color:var(--muted)">${esc(D.comment)}</div>` : ''}
