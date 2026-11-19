@@ -777,9 +777,13 @@ function openProduct(i, push = true, vi = 0) {
   updatePmCart();
   pm.querySelector('[data-add]').onclick = () => { if (sold) return; cartAdd(p.slug, vi); toast(S.cart_added); openCart(); };
   pm.querySelector('[data-share]').onclick = async () => {
-    const url = location.origin + location.pathname + '#' + hash;
-    try { if (navigator.share) { await navigator.share({ title: p.name, url }); return; } } catch (e) { return; }
-    try { await navigator.clipboard.writeText(url); toast(S.product_link_copied); } catch (e) { prompt('', url); }
+    const url = location.origin + location.pathname + (LANG !== 'uz' ? '?lang=' + LANG : '') + '#' + hash;
+    let ok = false;
+    try { await navigator.clipboard.writeText(url); ok = true; } catch (e) {}
+    if (!ok) try { const ta = document.createElement('textarea'); ta.value = url; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0'; document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, url.length); ok = document.execCommand('copy'); ta.remove(); } catch (e) {}
+    if (ok) toast(S.product_link_copied);
+    if (navigator.share && matchMedia('(pointer:coarse)').matches) { try { await navigator.share({ title: p.name, url }); } catch (e) {} return; }
+    if (!ok) prompt('', url);
   };
   pm.scrollTop = 0;
   pm.classList.add('open'); document.body.classList.add('lock');
