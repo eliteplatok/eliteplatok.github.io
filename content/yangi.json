@@ -1978,200 +1978,6 @@
       ]
     },
     {
-      "name": "Bodom naqshli ro‘mollar",
-      "name_ru": "Платки с узором пейсли",
-      "name_en": "Paisley Scarves",
-      "images": [],
-      "cover": "images/bodom-3.jpg",
-      "size": "",
-      "size_ru": "",
-      "size_en": "",
-      "material": "",
-      "material_ru": "",
-      "material_en": "",
-      "color": "12 xil rang, bodom (paisley) naqshi",
-      "color_ru": "12 расцветок, узор пейсли",
-      "color_en": "12 colourways, paisley print",
-      "description": "Klassik bodom (paisley) naqshli ro‘mollar — 12 xil rang.",
-      "description_ru": "Платки с классическим узором пейсли — 12 расцветок.",
-      "description_en": "Classic paisley scarves — 12 colourways.",
-      "details": "Klassik bodom (paisley) naqshi va bezakli hoshiya — an’anaviy va zamonaviy obrazga birdek mos. To‘plamda 12 xil rang: pushti, qizil, bej, jigarrang, yashil, binafsha, zaytun va boshqalar.",
-      "details_ru": "Классический узор пейсли и декоративная кайма — подходят и к традиционному, и к современному образу. 12 расцветок: розовая, красная, бежевая, коричневая, зелёная, фиолетовая, оливковая и другие.",
-      "details_en": "Classic paisley print with an ornate border — suits both traditional and modern looks. 12 colourways: pink, red, beige, brown, green, purple, olive and more.",
-      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
-      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
-      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
-      "price": "",
-      "price_ru": "",
-      "price_en": "",
-      "price_note": "",
-      "price_note_ru": "",
-      "price_note_en": "",
-      "old_price": "",
-      "old_price_ru": "",
-      "old_price_en": "",
-      "price_number": 0,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 0,
-      "promo_total": 0,
-      "promo_usd": 0,
-      "promo_group": "",
-      "badge": "",
-      "badge_ru": "",
-      "badge_en": "",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "variants": [
-        {
-          "name": "Pushti",
-          "name_ru": "Розовый",
-          "name_en": "Pink",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-1.jpg"
-          ],
-          "swatch": "images/bodom-1.jpg"
-        },
-        {
-          "name": "Zaytun",
-          "name_ru": "Оливковый",
-          "name_en": "Olive",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-2.jpg"
-          ],
-          "swatch": "images/bodom-2.jpg"
-        },
-        {
-          "name": "Qizil",
-          "name_ru": "Красный",
-          "name_en": "Red",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-3.jpg"
-          ],
-          "swatch": "images/bodom-3.jpg"
-        },
-        {
-          "name": "Bej",
-          "name_ru": "Бежевый",
-          "name_en": "Beige",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-4.jpg"
-          ],
-          "swatch": "images/bodom-4.jpg"
-        },
-        {
-          "name": "Jigarrang",
-          "name_ru": "Коричневый",
-          "name_en": "Brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-5.jpg"
-          ],
-          "swatch": "images/bodom-5.jpg"
-        },
-        {
-          "name": "Pushti, qora hoshiyali",
-          "name_ru": "Розовый с чёрной каймой",
-          "name_en": "Pink, black border",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-6.jpg"
-          ],
-          "swatch": "images/bodom-6.jpg"
-        },
-        {
-          "name": "Qizil hoshiyali",
-          "name_ru": "С красной каймой",
-          "name_en": "Red border",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-7.jpg"
-          ],
-          "swatch": "images/bodom-7.jpg"
-        },
-        {
-          "name": "Qora-jigarrang",
-          "name_ru": "Чёрно-коричневый",
-          "name_en": "Black & brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-8.jpg"
-          ],
-          "swatch": "images/bodom-8.jpg"
-        },
-        {
-          "name": "Yashil",
-          "name_ru": "Зелёный",
-          "name_en": "Green",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-9.jpg"
-          ],
-          "swatch": "images/bodom-9.jpg"
-        },
-        {
-          "name": "Qizil-qora",
-          "name_ru": "Красно-чёрный",
-          "name_en": "Red & black",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-10.jpg"
-          ],
-          "swatch": "images/bodom-10.jpg"
-        },
-        {
-          "name": "Binafsha",
-          "name_ru": "Фиолетовый",
-          "name_en": "Purple",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-11.jpg"
-          ],
-          "swatch": "images/bodom-11.jpg"
-        },
-        {
-          "name": "Zaytun-qora",
-          "name_ru": "Оливково-чёрный",
-          "name_en": "Olive & black",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-12.jpg"
-          ],
-          "swatch": "images/bodom-12.jpg"
-        }
-      ]
-    },
-    {
       "name": "Havorang to‘plam",
       "name_ru": "Голубая коллекция",
       "name_en": "Sky-Blue Collection",
@@ -3132,26 +2938,26 @@
       "price_note_en": "2 for 120,000 UZS"
     },
     {
-      "name": "Dubay ipak ro‘mollari",
-      "name_ru": "Платки из дубайского шёлка",
-      "name_en": "Dubai Silk Scarves",
+      "name": "Bodom naqshli ro‘mollar",
+      "name_ru": "Платки с узором пейсли",
+      "name_en": "Paisley Scarves",
       "images": [],
-      "cover": "",
+      "cover": "images/dubay-ipak-1.jpg",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
       "size_en": "110 × 110 cm",
       "material": "Dubay ipagi, batistdek mayin",
       "material_ru": "Дубайский шёлк, мягкий как батист",
       "material_en": "Dubai silk, soft as batiste",
-      "color": "10 xil: pushti, to‘q zaytun, sutrang, zaytun-bej, qizil-jigarrang, qizil, fistashka, bordo, yashil, zaytun-yashil",
-      "color_ru": "10 вариантов: розовый, тёмно-оливковый, молочный, оливково-бежевый, красно-коричневый, красный, фисташковый, бордовый, зелёный, оливково-зелёный",
-      "color_en": "10 options: pink, dark olive, milky white, olive beige, reddish brown, red, pistachio, burgundy, green, olive green",
-      "description": "Nafis bodom naqshi, batistdek mayin mato — har kuni kiyish uchun yoqimli.",
-      "description_ru": "Изящный узор пейсли и ткань, мягкая как батист, — приятно носить каждый день.",
-      "description_en": "An elegant paisley pattern on fabric as soft as batiste — a pleasure to wear every day.",
-      "details": "Dubay ipagidan tayyorlangan ro‘mollar — mato juda mayin va yengil, teksturasi batistni eslatadi: teriga yoqimli tegadi, havo o‘tkazadi va boshda chiroyli tushadi. O‘lchami 110 × 110 sm — har xil usulda o‘rashga yetadi. Chetlari mashinada toza va pishiq bukilgan.\n\nKlassik bodom (paisley) naqshi va hoshiyali ramka ro‘molga boy, sokin ko‘rinish beradi. 10 xil rangdan tanlang: nozik pushti va sutrangdan to‘q zaytun, bordo va yashilgacha — kundalik kiyim, ish va mehmondorchilik uchun birdek mos.\n\nHar bir rangning manekendagi va yoyilgan ko‘rinishi bor — naqsh va rangni yaqindan ko‘ring.",
-      "details_ru": "Платки из дубайского шёлка — ткань очень мягкая и лёгкая, по текстуре напоминает батист: приятна к коже, пропускает воздух и красиво ложится. Размер 110 × 110 см — хватает для разных способов завязывания. Края аккуратно и прочно подшиты на машинке.\n\nКлассический узор пейсли и обрамляющая кайма придают платку богатый, спокойный вид. Выберите из 10 расцветок: от нежного розового и молочного до тёмно-оливкового, бордового и зелёного — подходят для повседневной носки, работы и походов в гости.\n\nДля каждого цвета есть фото на манекене и в развёрнутом виде — рассмотрите узор и цвет вблизи.",
-      "details_en": "Scarves made of Dubai silk — the fabric is very soft and light, with a texture reminiscent of batiste: gentle on the skin, breathable and drapes beautifully. The 110 × 110 cm size is enough for many ways of wrapping. The edges are neatly and durably machine-hemmed.\n\nA classic paisley pattern with a framing border gives the scarf a rich yet calm look. Choose from 10 colourways: from delicate pink and milky white to dark olive, burgundy and green — suitable for everyday wear, work and visits.\n\nEach colour has a photo on the mannequin and laid out flat — see the pattern and colour up close.",
+      "color": "19 xil: klassik bodom (peysli) naqshi 13 rangda va kalligrafik naqsh 6 xil dizaynda",
+      "color_ru": "19 вариантов: классический пейсли в 13 расцветках и каллиграфический узор в 6 дизайнах",
+      "color_en": "19 options: classic paisley in 13 colours and calligraphy pattern in 6 designs",
+      "description": "Klassik bodom (peysli) va kalligrafik naqsh, batistdek mayin mato — har kuni kiyish uchun yoqimli.",
+      "description_ru": "Классический пейсли и каллиграфический узор, ткань мягкая как батист, — приятно носить каждый день.",
+      "description_en": "Classic paisley and calligraphy prints on batiste-soft fabric — a pleasure to wear every day.",
+      "details": "Dubay ipagidan tayyorlangan ro‘mollar — mato juda mayin va yengil, teksturasi batistni eslatadi: teriga yoqimli tegadi, havo o‘tkazadi va boshda chiroyli tushadi. O‘lchami 110 × 110 sm — har xil usulda o‘rashga yetadi. Chetlari mashinada toza va pishiq bukilgan.\n\nKlassik bodom (paisley) naqshi va hoshiyali ramka ro‘molga boy, sokin ko‘rinish beradi. 13 xil rangdan tanlang: nozik pushti va sutrangdan to‘q zaytun, bordo, binafsha va yashilgacha. Shuningdek, kalligrafik naqsh va gulli 6 xil dizayn ham bor — kundalik kiyim, ish va mehmondorchilik uchun birdek mos.\n\nHar bir rangning manekendagi va yoyilgan ko‘rinishi bor — naqsh va rangni yaqindan ko‘ring.",
+      "details_ru": "Платки из дубайского шёлка — ткань очень мягкая и лёгкая, по текстуре напоминает батист: приятна к коже, пропускает воздух и красиво ложится. Размер 110 × 110 см — хватает для разных способов завязывания. Края аккуратно и прочно подшиты на машинке.\n\nКлассический узор пейсли и обрамляющая кайма придают платку богатый, спокойный вид. Выберите из 13 расцветок: от нежного розового и молочного до тёмно-оливкового, бордового, фиолетового и зелёного. Также есть 6 дизайнов с каллиграфическим узором и цветами — подходят для повседневной носки, работы и походов в гости.\n\nДля каждого цвета есть фото на манекене и в развёрнутом виде — рассмотрите узор и цвет вблизи.",
+      "details_en": "Scarves made of Dubai silk — the fabric is very soft and light, with a texture reminiscent of batiste: gentle on the skin, breathable and drapes beautifully. The 110 × 110 cm size is enough for many ways of wrapping. The edges are neatly and durably machine-hemmed.\n\nA classic paisley pattern with a framing border gives the scarf a rich yet calm look. Choose from 13 paisley colourways plus 6 calligraphy-and-floral designs: from delicate pink and milky white to dark olive, burgundy and green — suitable for everyday wear, work and visits.\n\nEach colour has a photo on the mannequin and laid out flat — see the pattern and colour up close.",
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
       "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
       "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
@@ -3181,7 +2987,8 @@
           "hex": "#c49a96",
           "images": [
             "images/dubay-ipak-1.jpg",
-            "images/dubay-ipak-mato-1.jpg"
+            "images/dubay-ipak-mato-1.jpg",
+            "images/bodom-1.jpg"
           ],
           "sold_out": false,
           "card_hide": false
@@ -3193,7 +3000,8 @@
           "hex": "#4f4c3c",
           "images": [
             "images/dubay-ipak-2.jpg",
-            "images/dubay-ipak-mato-2.jpg"
+            "images/dubay-ipak-mato-2.jpg",
+            "images/bodom-2.jpg"
           ],
           "sold_out": false,
           "card_hide": false
@@ -3205,7 +3013,8 @@
           "hex": "#d8c9b6",
           "images": [
             "images/dubay-ipak-3.jpg",
-            "images/dubay-ipak-mato-3.jpg"
+            "images/dubay-ipak-mato-3.jpg",
+            "images/bodom-4.jpg"
           ],
           "sold_out": false,
           "card_hide": false
@@ -3217,7 +3026,8 @@
           "hex": "#8f8466",
           "images": [
             "images/dubay-ipak-4.jpg",
-            "images/dubay-ipak-mato-4.jpg"
+            "images/dubay-ipak-mato-4.jpg",
+            "images/bodom-5.jpg"
           ],
           "sold_out": false,
           "card_hide": false
@@ -3229,7 +3039,8 @@
           "hex": "#7a5546",
           "images": [
             "images/dubay-ipak-5.jpg",
-            "images/dubay-ipak-mato-5.jpg"
+            "images/dubay-ipak-mato-5.jpg",
+            "images/bodom-6.jpg"
           ],
           "sold_out": false,
           "card_hide": false
@@ -3241,7 +3052,8 @@
           "hex": "#a3283a",
           "images": [
             "images/dubay-ipak-6.jpg",
-            "images/dubay-ipak-mato-6.jpg"
+            "images/dubay-ipak-mato-6.jpg",
+            "images/bodom-7.jpg"
           ],
           "sold_out": false,
           "card_hide": false
@@ -3265,7 +3077,8 @@
           "hex": "#6a2229",
           "images": [
             "images/dubay-ipak-8.jpg",
-            "images/dubay-ipak-mato-8.jpg"
+            "images/dubay-ipak-mato-8.jpg",
+            "images/bodom-10.jpg"
           ],
           "sold_out": false,
           "card_hide": false
@@ -3277,7 +3090,8 @@
           "hex": "#2f4a40",
           "images": [
             "images/dubay-ipak-9.jpg",
-            "images/dubay-ipak-mato-9.jpg"
+            "images/dubay-ipak-mato-9.jpg",
+            "images/bodom-9.jpg"
           ],
           "sold_out": false,
           "card_hide": false
@@ -3289,16 +3103,126 @@
           "hex": "#5c5a34",
           "images": [
             "images/dubay-ipak-10.jpg",
-            "images/dubay-ipak-mato-10.jpg"
+            "images/dubay-ipak-mato-10.jpg",
+            "images/bodom-12.jpg"
           ],
           "sold_out": false,
           "card_hide": false
+        },
+        {
+          "name": "To‘q qizil",
+          "name_ru": "Тёмно-красный",
+          "name_en": "Deep red",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-3.jpg"
+          ],
+          "swatch": "images/bodom-3.jpg"
+        },
+        {
+          "name": "Qora-jigarrang",
+          "name_ru": "Чёрно-коричневый",
+          "name_en": "Black & brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-8.jpg"
+          ],
+          "swatch": "images/bodom-8.jpg"
+        },
+        {
+          "name": "Binafsha",
+          "name_ru": "Фиолетовый",
+          "name_en": "Purple",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-11.jpg"
+          ],
+          "swatch": "images/bodom-11.jpg"
+        },
+        {
+          "name": "Kalligrafiya — kulrang",
+          "name_ru": "Каллиграфия — серый",
+          "name_en": "Calligraphy — grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-1.jpg"
+          ],
+          "swatch": "images/kalligrafiya-1.jpg"
+        },
+        {
+          "name": "Kalligrafiya — bordo",
+          "name_ru": "Каллиграфия — бордовый",
+          "name_en": "Calligraphy — burgundy",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-2.jpg"
+          ],
+          "swatch": "images/kalligrafiya-2.jpg"
+        },
+        {
+          "name": "Kalligrafiya — oltin-jigarrang",
+          "name_ru": "Каллиграфия — золотисто-коричневый",
+          "name_en": "Calligraphy — golden brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-3.jpg"
+          ],
+          "swatch": "images/kalligrafiya-3.jpg"
+        },
+        {
+          "name": "Kalligrafiya — binafsha gulli",
+          "name_ru": "Каллиграфия — сиреневый с цветами",
+          "name_en": "Calligraphy — lilac floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-4.jpg"
+          ],
+          "swatch": "images/kalligrafiya-4.jpg"
+        },
+        {
+          "name": "Kalligrafiya — ko‘k gulli",
+          "name_ru": "Каллиграфия — синий с цветами",
+          "name_en": "Calligraphy — blue floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-5.jpg"
+          ],
+          "swatch": "images/kalligrafiya-5.jpg"
+        },
+        {
+          "name": "Kalligrafiya — qora, qizil atirgulli",
+          "name_ru": "Каллиграфия — чёрный с красными розами",
+          "name_en": "Calligraphy — black with red roses",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-6.jpg"
+          ],
+          "swatch": "images/kalligrafiya-6.jpg"
         }
       ],
       "price_ru": "55 000 сум",
       "price_en": "55,000 UZS",
       "price_note_ru": "3 шт. — 150 000 сум",
-      "price_note_en": "3 for 150,000 UZS"
+      "price_note_en": "3 for 150,000 UZS",
+      "sold_week": 7
     },
     {
       "name": "Turkiya tvil sholk ro‘mollar",
@@ -4174,129 +4098,6 @@
       ]
     },
     {
-      "name": "Kalligrafiya naqshli to‘plam",
-      "name_ru": "Коллекция с каллиграфическим узором",
-      "name_en": "Calligraphy Pattern Collection",
-      "images": [],
-      "cover": "",
-      "size": "110 × 110 sm",
-      "size_ru": "110 × 110 см",
-      "size_en": "110 × 110 cm",
-      "material": "Yengil shoyisimon mato",
-      "material_ru": "Лёгкая шелковистая ткань",
-      "material_en": "Light silky fabric",
-      "color": "6 xil: kulrang, bordo, oltin-jigarrang, binafsha va ko‘k gulli, qora fonda qizil atirgulli",
-      "color_ru": "6 вариантов: серый, бордовый, золотисто-коричневый, сиреневый и синий с цветами, чёрный с красными розами",
-      "color_en": "6 designs: grey, burgundy, golden brown, lilac and blue florals, black with red roses",
-      "description": "Kalligrafik naqsh va gullar — 6 xil dizayn, 110 × 110 sm. 3 tasi 100 000 so‘m.",
-      "description_ru": "Каллиграфический узор и цветы — 6 дизайнов, 110 × 110 см. 3 шт. 100 000 сум.",
-      "description_en": "Calligraphy patterns and florals — 6 designs, 110 × 110 cm. 3 for 100,000 UZS.",
-      "details": "Kalligrafiya naqshli to‘plam — nafis yozuvsimon naqsh va gullar uyg‘unlashgan ro‘mollar. To‘plamda 6 xil dizayn bor: kulrang, bordo va oltin-jigarrang kalligrafik naqshlar, binafsha va ko‘k katta gulli, hamda qora fonda qizil atirgulli.\n\nHar bir dizaynni tanlab, ro‘molning to‘liq yoyilgan rasmini ko‘ring.\n\nO‘lchami 110 × 110 sm, yengil shoyisimon mato. Narxi: 3 tasi — 100 000 so‘m.",
-      "details_ru": "Коллекция с каллиграфическим узором — платки, где изящный узор, похожий на надписи, сочетается с цветами. 6 дизайнов: серый, бордовый и золотисто-коричневый каллиграфический узор, крупные сиреневые и синие цветы, а также красные розы на чёрном фоне.\n\nВыберите дизайн, чтобы увидеть платок полностью в развёрнутом виде.\n\nРазмер 110 × 110 см, лёгкая шелковистая ткань. Цена: 3 шт. — 100 000 сум.",
-      "details_en": "The Calligraphy Pattern Collection pairs elegant script-like patterns with florals. 6 designs: grey, burgundy and golden-brown calligraphy patterns, large lilac and blue flowers, and red roses on black.\n\nPick a design to see the scarf laid out in full.\n\nSize 110 × 110 cm, light silky fabric. Price: 3 for 100,000 UZS.",
-      "care": "30°C da qo‘lda yoki nozik rejimda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
-      "care_ru": "Стирать вручную или в деликатном режиме при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
-      "care_en": "Hand or gentle wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
-      "price": "3 ta — 100 000 so‘m",
-      "price_ru": "3 шт. — 100 000 сум",
-      "price_en": "3 for 100,000 UZS",
-      "price_note": "",
-      "price_note_ru": "",
-      "price_note_en": "",
-      "old_price": "",
-      "old_price_ru": "",
-      "old_price_en": "",
-      "price_number": 0,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 3,
-      "promo_total": 0,
-      "promo_usd": 0,
-      "promo_group": "",
-      "badge": "",
-      "badge_ru": "",
-      "badge_en": "",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "variants": [
-        {
-          "name": "Kulrang",
-          "name_ru": "Серый",
-          "name_en": "Grey",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-1.jpg"
-          ],
-          "swatch": "images/kalligrafiya-1.jpg"
-        },
-        {
-          "name": "Bordo",
-          "name_ru": "Бордовый",
-          "name_en": "Burgundy",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-2.jpg"
-          ],
-          "swatch": "images/kalligrafiya-2.jpg"
-        },
-        {
-          "name": "Oltin-jigarrang",
-          "name_ru": "Золотисто-коричневый",
-          "name_en": "Golden brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-3.jpg"
-          ],
-          "swatch": "images/kalligrafiya-3.jpg"
-        },
-        {
-          "name": "Binafsha gulli",
-          "name_ru": "Сиреневый с цветами",
-          "name_en": "Lilac floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-4.jpg"
-          ],
-          "swatch": "images/kalligrafiya-4.jpg"
-        },
-        {
-          "name": "Ko‘k gulli",
-          "name_ru": "Синий с цветами",
-          "name_en": "Blue floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-5.jpg"
-          ],
-          "swatch": "images/kalligrafiya-5.jpg"
-        },
-        {
-          "name": "Qora, qizil atirgulli",
-          "name_ru": "Чёрный с красными розами",
-          "name_en": "Black with red roses",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-6.jpg"
-          ],
-          "swatch": "images/kalligrafiya-6.jpg"
-        }
-      ],
-      "sold_week": 7
-    },
-    {
       "name": "Arab naqshli ro‘mol",
       "name_ru": "Платок с арабским узором",
       "name_en": "Arabic pattern scarf",
@@ -4338,7 +4139,7 @@
       "badge_ru": "",
       "badge_en": "",
       "is_new": true,
-      "sold_out": false,
+      "sold_out": true,
       "sold_photos": "",
       "tags": "printli",
       "promo_group": ""
