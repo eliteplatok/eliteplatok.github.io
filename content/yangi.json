@@ -1112,9 +1112,9 @@
       "promo_total": 100000,
       "promo_usd": 0,
       "promo_group": "xitoy-tvil",
-      "badge": "",
-      "badge_ru": "",
-      "badge_en": "",
+      "badge": "3 tasi 100 000",
+      "badge_ru": "3 за 100 000",
+      "badge_en": "3 for 100,000",
       "is_new": true,
       "sold_out": false,
       "sold_photos": "",
@@ -1769,7 +1769,7 @@
           "swatch": "images/tvil-yoyma-17.jpg"
         }
       ],
-      "sold_week": 33,
+      "sold_week": 199,
       "ig_video": "https://www.instagram.com/reel/DfwXWvWMxBz/"
     },
     {
