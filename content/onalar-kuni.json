@@ -1,0 +1,87 @@
+{
+  "show": true,
+  "from": "2026-11-22T00:00:00+05:00",
+  "to": "2026-12-01T00:00:00+05:00",
+  "percent": 50,
+  "eyebrow": "Onalar kuni · 30-noyabrgacha",
+  "eyebrow_ru": "День матери · до 30 ноября",
+  "eyebrow_en": "Mother’s Day · until 30 November",
+  "title": "Onangizga ro‘mol — 50% chegirma bilan",
+  "title_ru": "Платок для мамы — со скидкой 50%",
+  "title_en": "A scarf for your mother — 50% off",
+  "text": "U doim avval sizni o‘ylaydi. Bu safar siz uni o‘ylang. Qaynoq taklif: 2, 3 yoki 10 talik set olsangiz, 50% ustiga yana arzon — onangizga, qaynonangizga, opa-singillaringizga. Bu narxlar faqat shu sahifada, onlayn buyurtmada amal qiladi. O‘zbekiston bo‘ylab 1 kunda yetkazamiz.",
+  "text_ru": "Она всегда сначала думает о вас. В этот раз подумайте о ней. Горячее предложение: сет из 2, 3 или 10 платков ещё дешевле поверх скидки 50% — маме, свекрови, сёстрам. Цены действуют только на этой странице при онлайн-заказе. Доставка по Узбекистану за 1 день.",
+  "text_en": "She always thinks of you first. This time, think of her. Hot offer: sets of 2, 3 or 10 scarves cost even less on top of 50% off — for your mother, mother-in-law and sisters. These prices apply only on this page, for online orders. Delivered across Uzbekistan in 1 day.",
+  "badge": "−50%",
+  "badge_ru": "−50%",
+  "badge_en": "−50%",
+  "note_on": "Onalar kuni narxi · 30-noyabrgacha",
+  "note_on_ru": "Цена ко Дню матери · до 30 ноября",
+  "note_on_en": "Mother’s Day price · until 30 November",
+  "note_before": "27-noyabrdan: {narx} so‘m (−50%)",
+  "note_before_ru": "С 27 ноября: {narx} сум (−50%)",
+  "note_before_en": "From 27 November: {narx} UZS (−50%)",
+  "top_bar": "Onalar kuni: 30-noyabrgacha −50% · 2, 3 va 10 talik setlar yana arzon",
+  "top_bar_ru": "День матери: до 30 ноября −50% · сеты из 2, 3 и 10 ещё дешевле",
+  "top_bar_en": "Mother’s Day: 50% off until 30 November · sets of 2, 3 and 10 cost even less",
+  "products": [
+    "Qishki kashemir ro‘mollar",
+    "Xitoy tvil sholk ro‘mollar",
+    "Dog‘iston tvil sholk ro‘mollar",
+    "Yevro sherst ro‘mollar",
+    "«1969» printlari",
+    "Jatka ro‘mollar",
+    "Jakkard ro‘mollar",
+    "Pushti Italia ro‘mollar",
+    "Kashka sharflar"
+  ],
+  "sets": {
+    "Qishki kashemir ro‘mollar": {
+      "2": 80000,
+      "3": 115000,
+      "10": 379000
+    },
+    "Xitoy tvil sholk ro‘mollar": {
+      "3": 100000,
+      "10": 320000
+    },
+    "Dog‘iston tvil sholk ro‘mollar": {
+      "2": 109000,
+      "3": 159000,
+      "10": 519000
+    },
+    "Jatka ro‘mollar": {
+      "2": 85000,
+      "3": 125000,
+      "10": 399000
+    },
+    "Pushti Italia ro‘mollar": {
+      "2": 149000,
+      "3": 219000,
+      "10": 699000
+    },
+    "«1969» printlari": {
+      "2": 219000,
+      "3": 319000,
+      "10": 1039000
+    },
+    "Jakkard ro‘mollar": {
+      "2": 95000,
+      "3": 139000,
+      "10": 449000
+    },
+    "Yevro sherst ro‘mollar": {
+      "2": 239000,
+      "3": 349000,
+      "10": 1129000
+    },
+    "Kashka sharflar": {
+      "2": 43000,
+      "3": 62000,
+      "10": 199000
+    }
+  },
+  "all_link": "Barcha ro‘mollarni ko‘rish",
+  "all_link_ru": "Смотреть все платки",
+  "all_link_en": "See all scarves"
+}

@@ -167,6 +167,11 @@
   .price.ask{font-weight:300;font-size:13px;color:var(--muted);letter-spacing:.04em}
   .badge{position:absolute;top:14px;left:14px;z-index:1;background:var(--bg);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:6px 10px}
   .badge.dark{background:var(--ink);color:var(--bg)}
+  section[data-mk]{background:linear-gradient(180deg,#fbf1ee,#f6efe6);border-bottom:1px solid #ead9cf}
+  html.mk-page .hero,html.mk-page #app section:not([data-mk]),html.mk-page .menu a{display:none}
+  .mk-all{display:block;text-align:center;margin-top:34px}
+  section[data-mk] .badge.dark{background:#6e1423;color:#fff;font-size:12px;letter-spacing:.06em}
+  section[data-mk] .price{color:#6e1423}
   .order{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(233,226,217,.95);text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:12px;opacity:0;transform:translateY(8px);transition:.35s}
   .card:hover .order{opacity:1;transform:none}
   .card{cursor:pointer;display:block}
@@ -619,7 +624,7 @@ let LANG = (() => {
   try { const l = localStorage.getItem('ep-lang'); if (LANGS.includes(l)) return l; } catch (e) {}
   return 'uz';
 })();
-const FILES = ['sozlamalar','yetkazish','bosh-ekran','yangi','top','matolar','ranglar','afzalliklar','aksiya','aksessuarlar','nega-biz','dokon'];
+const FILES = ['sozlamalar','yetkazish','bosh-ekran','yangi','top','matolar','ranglar','afzalliklar','aksiya','aksessuarlar','nega-biz','dokon','onalar-kuni'];
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const txt = s => esc(s).replace(/\n/g, '<br>');
@@ -810,7 +815,8 @@ function fromHash() {
   i >= 0 ? openProduct(i, false, (+n || 1) - 1) : closeProduct(true);
 }
 /* --- cart --- */
-const CART_KEY = 'ep-cart';
+const MK_PAGE = new URLSearchParams(location.search).has('onalar'); // Onalar kuni sahifasi: /onalar-kuni → /?onalar (aksiya narxi faqat shu yerda, savati alohida)
+const CART_KEY = MK_PAGE ? 'ep-cart-mk' : 'ep-cart';
 let cart = [];
 try { cart = JSON.parse(localStorage.getItem(CART_KEY)) || []; } catch (e) { cart = []; }
 const saveCart = () => { try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch (e) {} updateBadges(); };
@@ -845,6 +851,8 @@ function cartLines() {
   return cart.map(x => { const p = findP(x.slug), v = p && p.vars[x.v || 0];
     return p && { ...x, p, key: keyOf(x), name: p.name + (v ? ' — ' + v.name : ''), name_uz: (p.name_uz || p.name) + (v ? ' — ' + (v.name_uz || v.name) : ''), im: v ? v.ims[0] : p.ims[0] }; }).filter(Boolean);
 }
+// Set narxi: q dona uchun eng arzon yig‘ma (dona narxi + {soni: summa} setlari). To‘lov serveridagi setTotal bilan bir xil.
+function setTotal(q, unit, sets) { const best = [0]; for (let i = 1; i <= q; i++) { best[i] = best[i - 1] + unit; for (const n in sets) if (+n <= i && +sets[n] > 0) best[i] = Math.min(best[i], best[i - n] + +sets[n]); } return best[q]; }
 function cartTotals(lines) {
   // "3 for X" offers are counted per promo group, so different products' offers never mix
   let sum = 0, unknown = false, saved = 0;
@@ -852,6 +860,7 @@ function cartTotals(lines) {
   lines.forEach(x => {
     const v = priceNum(x.p);
     if (!v) { unknown = true; return; }
+    if (x.p.mk_sets) { const g = groups['mk:' + x.slug] ||= { qty: 0, unit: v, sets: x.p.mk_sets }; g.qty += x.qty; return; } // Onalar kuni setlari: bir turdan 2/3/10 ta
     if (x.p.promo3 && +S_.promo3_total) {
       const g = groups[x.p.promo_group || x.slug] ||= { qty: 0, unit: v, n: +x.p.promo_qty || 3, total: (+x.p.promo_usd > 0 && USD ? Math.round(+x.p.promo_usd * USD / 1000) * 1000 : 0) || +x.p.promo_total || +S_.promo3_total };
       g.qty += x.qty; return;
@@ -859,7 +868,7 @@ function cartTotals(lines) {
     sum += v * x.qty;
   });
   Object.values(groups).forEach(g => {
-    const full = Math.floor(g.qty / g.n) * g.total + (g.qty % g.n) * g.unit;
+    const full = g.sets ? setTotal(g.qty, g.unit, g.sets) : Math.floor(g.qty / g.n) * g.total + (g.qty % g.n) * g.unit;
     saved += g.qty * g.unit - full; sum += full;
   });
   return { sum, unknown, saved };
@@ -885,7 +894,7 @@ function renderCart(view = 'list') {
       ['payme', S.pay_payme || 'Payme orqali to‘lash', !!(S.payme_enabled && S.payme_api), !!S.payme_soon],
       ['click', S.pay_click || 'Click orqali to‘lash', !!(S.click_enabled && S.tolov_api), !!S.click_soon],
       ['rahmat', S.pay_rahmat || 'Rahmat orqali to‘lash', !!(S.rahmat_enabled && S.tolov_api), !!S.rahmat_soon],
-    ].map(([v, name, on, soon]) => ({ v, name, ok: on && sum > 0 && !unknown, soon }));
+    ].map(([v, name, on, soon]) => ({ v, name, ok: on && sum > 0 && !unknown && !(v === 'payme' && lines.some(x => x.p.mk_sale)), soon })); // Payme serveri (tashqi) aksiya narxini bilmaydi — aksiya tovari bo‘lsa Click/Rahmat
     const payShown = unknown ? [] : PM.filter(m => m.ok || m.soon), hasPay = payShown.some(m => m.ok); // onlayn usul bo‘lmasa 2-qadam kerak emas
     const D = orderDraft();
     const steps = n => hasPay ? `<div class="dr-steps"><span class="${n === 1 ? 'on' : ''}">1. ${txt(S.step_info || 'Ma’lumotlar')}</span><span class="${n === 2 ? 'on' : ''}">2. ${txt(S.step_pay || 'To‘lov')}</span></div>` : '';
@@ -1014,7 +1023,7 @@ async function sendOrder(pv) {
       const ctl = new AbortController(); setTimeout(() => ctl.abort(), 20000);
       const r = await fetch(S.tolov_api.replace(/\/+$/, '') + '/api/orders', { method: 'POST', signal: ctl.signal, headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify({ name: o.name, phone: o.phone, how: o.how, address: o.address, comment: o.comment, website: o.website, lang: o.lang, pay: 'online', provider: pay,
-          items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
+          mk: MK_ON ? 1 : 0, items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
       const j = await r.json();
       if (j.ok && j.checkout_url) { location.href = j.checkout_url; return; } // savat to‘lov tasdiqlangach tozalanadi
       if (j.ok) return sent(); // honeypot
@@ -1026,7 +1035,7 @@ async function sendOrder(pv) {
       const ctl = new AbortController(); setTimeout(() => ctl.abort(), 20000); // server javob bermasa tugma osilib qolmasin
       const r = await fetch(S.payme_api.replace(/\/+$/, '') + '/api/orders', { method: 'POST', signal: ctl.signal, headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify({ name: o.name, phone: o.phone, how: o.how, address: o.address, comment: o.comment, website: o.website, lang: o.lang, pay,
-          items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
+          mk: MK_ON ? 1 : 0, items: cart.map(x => ({ slug: x.slug, v: x.v || 0, qty: x.qty })) }) });
       const j = await r.json();
       if (j.ok && pay === 'payme' && j.checkout_url) { location.href = j.checkout_url; return; } // savat to‘lov tasdiqlangach tozalanadi
       if (j.ok && pay === 'manager') return sent();
@@ -1226,6 +1235,7 @@ function render(C) {
   <button class="cart-ic" data-cart aria-label="${esc(S.cart_title)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button></div>
 </div></header>
 
+${C['onalar-kuni'] && C['onalar-kuni'].show !== false ? products('onalar-kuni', C['onalar-kuni'], S).replace('<section ', '<section data-mk ').replace(/<\/div><\/section>$/, `<a class="link mk-all" href="/">${txt(C['onalar-kuni'].all_link || '')}</a></div></section>`) : ''}
 ${MIN ? miniHero(H, S) + products('yangi', C['yangi'], S) : `<div class="hero${H.plain_stars ? ' stars' : H.image_wide ? ' wide' : ''}">
   ${H.plain_stars ? starField() : H.image_wide ? `<picture>${H.image_wide_mobile ? `<source media="(max-width:760px)" srcset="${img(H.image_wide_mobile)}">` : ''}<img class="main" src="${img(H.image_wide)}" alt="" fetchpriority="high"></picture>` : `<img src="${img(H.image_left)}" alt="">
   <img class="main" src="${img(H.image_center)}" alt="">
@@ -1437,7 +1447,7 @@ async function checkPaid() {
     if (['paid', 'cancelled', 'refunded'].includes(st)) break;
     await new Promise(r => setTimeout(r, 2000));
   }
-  if (st === 'paid') { cart = []; saveCart(); }
+  if (st === 'paid') { cart = []; saveCart(); try { localStorage.removeItem('ep-cart-mk'); } catch (e) {} } // to‘lovdan qaytish bosh sahifaga keladi — Onalar kuni savati ham tozalanadi
   openCart(st === 'paid' ? 'paid' : 'unpaid');
 }
 /* To‘lov sahifasidan «Orqaga» bosilsa, brauzer sahifani keshdan tiklaydi — «Yuborilmoqda» holatida qotgan tugmani qayta faollashtiramiz */
@@ -1459,11 +1469,41 @@ async function usdRate() {
   } catch (e) {}
   return 0;
 }
-Promise.all([usdRate(), ...FILES.map(f => fetch(`content/${f}.json`, { cache: 'no-cache' }).then(r => r.json()))])
+/* Onalar kuni aksiyasi (content/onalar-kuni.json): muddat ichida ro‘yxatdagi tovarlarning dona narxi percent% arzon, «N tasi» to‘plami o‘chadi,
+   tovarlar sahifa tepasidagi alohida blokka ko‘chadi. Muddatgacha — blok e’lon sifatida turadi (narx o‘zgarmaydi), muddatdan keyin o‘zi yo‘qoladi.
+   DIQQAT: to‘lov serveri (apps/eliteplatok-pay/server.mjs, catalog()) xuddi shu qoidani o‘z soati bilan qo‘llaydi — ikkalasini birga o‘zgartiring.
+   Vaqt brauzer soatidan emas, server javobidagi Date sarlavhasidan olinadi (telefon soati noto‘g‘ri bo‘lsa ham narx to‘g‘ri chiqadi). */
+let SRV_NOW = 0, MK_ON = false;
+function saleApply() {
+  const M = RAW['onalar-kuni']; if (!M || M.show === false) return;
+  if (!MK_PAGE) { M.show = false; return; } // bosh sahifa o‘zgarmaydi: aksiya faqat /onalar-kuni sahifasida
+  let now = SRV_NOW || Date.now(); const a = Date.parse(M.from), b = Date.parse(M.to);
+  if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) { const x = Date.parse(new URLSearchParams(location.search).get('mk_now') || ''); if (x > 0) now = x; } // faqat lokal sinov uchun
+  if (!(a < b) || now >= b) { M.show = false; return; }
+  const on = MK_ON = now >= a, k = 1 - (+M.percent || 50) / 100, names = new Set(M.products || []), items = [];
+  const f = n => n.toLocaleString('ru-RU').replace(/[  ]/g, ' '), tr = (s, n) => String(s || '').replace('{narx}', n);
+  for (const file of ['yangi', 'top']) { const d = RAW[file]; if (!d || !Array.isArray(d.products)) continue;
+    d.products = d.products.filter(p => {
+      if (!names.has(p.name) || !(+p.price_number > 0) || p.sold_out) return true;
+      const full = +p.price_number, cut = Math.round(full * k / 500) * 500, q = { ...p }, sets = (M.sets || {})[p.name] || null,
+        sn = (mid, cur, ff) => Object.entries(sets).map(([n, s]) => n + mid + ff(+s)).join(' · ') + cur; // «2 tasi — 80 000 · 3 tasi — 115 000 so‘m»
+      if (on) Object.assign(q, { mk_sale: true, price_number: cut, price_usd: 0, promo3: false, sold_week: 0,
+        price: f(cut) + ' so‘m', price_ru: f(cut) + ' сум', price_en: cut.toLocaleString('en-US') + ' UZS',
+        old_price: f(full) + ' so‘m', old_price_ru: f(full) + ' сум', old_price_en: full.toLocaleString('en-US') + ' UZS',
+        mk_sets: sets, price_note: sets ? sn(' tasi — ', ' so‘m', f) : M.note_on || '', price_note_ru: sets ? sn(' шт. — ', ' сум', f) : M.note_on_ru || '', price_note_en: sets ? sn(' for ', ' UZS', n => n.toLocaleString('en-US')) : M.note_on_en || '',
+        badge: M.badge || '', badge_ru: M.badge_ru || M.badge || '', badge_en: M.badge_en || M.badge || '' });
+      else Object.assign(q, { price_note: tr(M.note_before, f(cut)), price_note_ru: tr(M.note_before_ru, f(cut)), price_note_en: tr(M.note_before_en, cut.toLocaleString('en-US')) });
+      items.push(q); return false; }); }
+  M.products = items; if (!items.length) { M.show = false; return; }
+  if (M.top_bar) Object.assign(RAW.sozlamalar, { top_bar: M.top_bar, top_bar_ru: M.top_bar_ru || M.top_bar, top_bar_en: M.top_bar_en || M.top_bar });
+}
+Promise.all([usdRate(), ...FILES.map(f => fetch(`content/${f}.json`, { cache: 'no-cache' }).then(r => { const d = Date.parse(r.headers.get('date') || ''); if (d > 0) SRV_NOW = Math.max(SRV_NOW, d + (+r.headers.get('age') || 0) * 1000); return r.json(); }))])
   .then(([rate, ...list]) => {
     RAW = Object.fromEntries(FILES.map((f, i) => [f, list[i]]));
     USD = rate || +RAW.sozlamalar.usd_rate || 0;
+    saleApply();
     boot();
+    document.documentElement.classList.toggle('mk-page', MK_PAGE && RAW['onalar-kuni'].show !== false);
     fromHash();
     checkPaid();
   })
