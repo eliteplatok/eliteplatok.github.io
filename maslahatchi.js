@@ -83,6 +83,19 @@
   };
   const L = () => T[$LANG()] || T.uz;
 
+  /* --- AI sotuvchi (Telegram botdagi «Madina» bilan bir xil miya): mijoz yozsa, javobni server beradi --- */
+  const AT = {
+    uz: { ph: 'Savolingizni yozing…', send: 'Yuborish', orType: 'Yoki savolingizni pastga yozing — javob beraman.', err: 'Xabar yetib bormadi. Internetni tekshirib, qayta yuboring.', busy: 'Hozir juda ko‘p xabar keldi — birozdan keyin yozing yoki menejerga Telegram orqali murojaat qiling.', open: 'Ko‘rish' },
+    ru: { ph: 'Напишите ваш вопрос…', send: 'Отправить', orType: 'Или напишите вопрос ниже — я отвечу.', err: 'Сообщение не отправилось. Проверьте интернет и отправьте ещё раз.', busy: 'Сейчас слишком много сообщений — напишите чуть позже или менеджеру в Telegram.', open: 'Смотреть' },
+    en: { ph: 'Type your question…', send: 'Send', orType: 'Or type your question below — I’ll answer.', err: 'The message wasn’t sent. Check your connection and try again.', busy: 'Too many messages right now — please write a bit later or message our manager on Telegram.', open: 'View' },
+  };
+  const LA = () => AT[$LANG()] || AT.uz;
+  const API = '/bot/web/';
+  const LS = { get: k => { try { return localStorage.getItem('ep-ai-' + k); } catch (e) { return null; } },
+               set: (k, v) => { try { localStorage.setItem('ep-ai-' + k, v); } catch (e) {} } };
+  const AI = { t: /^[a-f0-9]{40}$/.test(LS.get('t') || '') ? LS.get('t') : '', after: 0, seen: new Set(), polling: false, typing: false, tyEl: null, act: 0, sending: false, wait: 0, loadAt: Date.now() };
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+
   /* --- colour tone of a variant hex --- */
   function tone(hex) {
     const m = String(hex || '').match(/^#?([0-9a-f]{6})$/i); if (!m) return '';
@@ -166,6 +179,18 @@
   .mx-sw button{width:54px;border:0;background:none;padding:0;cursor:pointer;font:400 10px/1.2 var(--sans,system-ui);color:var(--ink,#2b2622);text-align:center}
   .mx-sw img{width:54px;height:72px;object-fit:cover;border-radius:8px;display:block;margin-bottom:3px;outline:1px solid var(--line,#d1c6b9)}
   .mx-sw button.ok img{outline:2px solid #4caf6a}
+  .mx-f{display:flex;gap:8px;align-items:center;padding:10px 12px;border-top:1px solid var(--line,#d1c6b9);background:#fff;flex:none}
+  .mx-f input{flex:1;min-width:0;border:1px solid var(--line,#d1c6b9);border-radius:999px;padding:10px 14px;font:400 16px/1.25 var(--sans,system-ui);background:#f6f1eb;color:var(--ink,#2b2622);outline:none}
+  .mx-f input:focus{border-color:var(--ink,#2b2622)}
+  .mx-f button{width:40px;height:40px;flex:none;border-radius:50%;border:0;background:var(--ink,#2b2622);color:var(--bg,#e9e2d9);cursor:pointer;display:grid;place-items:center}
+  .mx-f button svg{width:18px;height:18px}.mx-f button:disabled{opacity:.45;cursor:default}
+  .mx-f .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .mx-m.mx-ty{display:flex;gap:5px;padding:13px 14px}.mx-ty i{width:7px;height:7px;border-radius:50%;background:var(--muted,#73685e);opacity:.35;animation:mxTy 1.1s infinite}
+  .mx-ty i:nth-child(2){animation-delay:.18s}.mx-ty i:nth-child(3){animation-delay:.36s}
+  @keyframes mxTy{0%,60%,100%{opacity:.25;transform:none}30%{opacity:.9;transform:translateY(-3px)}}
+  .mx-c .pr .nt{display:block;font-size:11px;color:var(--muted,#73685e);margin-top:2px}
+  .mx-o a.off{opacity:.4;pointer-events:none}
+  .mx-fab.new i{box-shadow:0 0 0 3px #e2554f}
   @keyframes mxIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
   @media (max-width:900px){.mx-fab{bottom:84px;right:14px;padding:10px 12px}.mx-fab span{display:none}.mx{right:12px;left:12px;width:auto;bottom:12px;max-height:calc(100vh - 90px)}}
   `;
@@ -184,12 +209,16 @@
     fab.innerHTML = `<i>✦</i><span>${E(t.help)}</span>`; fab.setAttribute('aria-label', t.help);
     box.setAttribute('aria-label', t.expert);
     const keep = body ? body.innerHTML : '';
-    box.innerHTML = `<div class="mx-h"><div class="mx-av">EP</div><div><b>${E(t.expert)}</b><small>online</small></div><button class="mx-x" aria-label="${E(t.close)}">×</button></div><div class="mx-b"></div>`;
-    body = box.querySelector('.mx-b'); body.innerHTML = keep;
+    const a = LA();
+    box.innerHTML = `<div class="mx-h"><div class="mx-av">EP</div><div><b>${E(t.expert)}</b><small>online</small></div><button class="mx-x" aria-label="${E(t.close)}">×</button></div><div class="mx-b"></div>`
+      + `<form class="mx-f" autocomplete="off"><input type="text" maxlength="1500" enterkeyhint="send" placeholder="${E(a.ph)}" aria-label="${E(a.ph)}"><input class="hp" name="website" tabindex="-1" aria-hidden="true"><button type="submit" aria-label="${E(a.send)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>`;
+    body = box.querySelector('.mx-b'); body.innerHTML = keep; AI.tyEl = body.querySelector('.mx-ty');
     box.querySelector('.mx-x').onclick = close;
+    const f = box.querySelector('.mx-f');
+    f.onsubmit = e => { e.preventDefault(); const inp = f.querySelector('input'); if (f.querySelector('.hp').value) return; aiSend(inp.value, inp); };
   }
   const isOpen = () => box.classList.contains('on');
-  function open() { box.classList.add('on'); fab.classList.add('hid'); }
+  function open() { box.classList.add('on'); fab.classList.add('hid'); fab.classList.remove('new'); if (AI.t) poll(); }
   function close() { box.classList.remove('on'); fab.classList.remove('hid'); SS.set('closed', '1'); }
   const scroll = () => requestAnimationFrame(() => body.scrollTop = body.scrollHeight);
   function say(html, me) { const d = document.createElement('div'); d.className = 'mx-m' + (me ? ' me' : ''); d.innerHTML = html; body.appendChild(d); scroll(); return d; }
@@ -209,10 +238,92 @@
 
   /* --- dialog --- */
   function start() {
-    const t = L(); body.innerHTML = ''; A = {}; shown = [];
-    say(`<b>${E(t.hi)}</b><br>${E(t.hi2)}`);
+    const t = L(); body.innerHTML = ''; AI.tyEl = null; A = {}; shown = [];
+    say(`<b>${E(t.hi)}</b><br>${E(t.hi2)}<br><span style="color:var(--muted,#73685e);font-size:13px">${E(LA().orType)}</span>`);
     opts([{ label: t.yes, cls: 'solid', go: () => { goal('start'); later(q1); } }, { label: t.no, go: () => later(close, 250) }]);
   }
+
+  /* --- AI suhbat --- */
+  function aiCtx() {
+    const P = $PRODUCTS() || [], o = {};
+    if (document.getElementById('pm')?.classList.contains('open')) { const s = decodeURIComponent(location.hash.slice(1).split('/')[0] || ''); if (s) o.view = s; }
+    try {
+      const c = typeof cart !== 'undefined' && Array.isArray(cart) ? cart : [];
+      o.cart = c.slice(0, 10).map(x => { const p = P.find(q => q.slug === x.slug), v = p && p.vars[x.v | 0]; return { id: x.slug, v: v ? (v.name_uz || v.name) : '', qty: x.qty }; });
+    } catch (e) {}
+    return o;
+  }
+  const aiSrc = () => { const u = new URLSearchParams(location.search).get('utm_source') || ''; const s = 'sayt' + (u ? '_' + u.replace(/[^A-Za-z0-9_-]/g, '').slice(0, 40) : ''); return s; };
+  function aiTyping(on) {
+    if (AI.tyEl) { AI.tyEl.remove(); AI.tyEl = null; }
+    if (on) { AI.tyEl = document.createElement('div'); AI.tyEl.className = 'mx-m mx-ty'; AI.tyEl.innerHTML = '<i></i><i></i><i></i>'; body.appendChild(AI.tyEl); scroll(); }
+  }
+  async function aiSend(text, inp) {
+    text = String(text || '').trim(); if (!text || AI.sending) return;
+    const btn = box.querySelector('.mx-f button');
+    AI.sending = true; btn.disabled = true;
+    body.querySelectorAll('.mx-o').forEach(d => { if (!d.querySelector('a')) d.remove(); });   // maslahatchi savollari tugmalari yopiladi — endi erkin suhbat
+    say(E(text), true); if (inp) inp.value = '';
+    goal(AI.t ? 'ai_msg' : 'ai_start'); AI.act = Date.now();
+    let ok = false;
+    try {
+      const r = await fetch(API + 'msg', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ t: AI.t || undefined, text, lang: $LANG(), ctx: aiCtx(), src: aiSrc() }) });
+      const j = await r.json().catch(() => ({}));
+      if (j.t) { AI.t = j.t; LS.set('t', j.t); }
+      if (j.id) { AI.seen.add(j.id); }
+      if (j.ok) ok = true; else say(E(j.error === 'busy' ? LA().busy : LA().err));
+    } catch (e) { say(E(LA().err)); }
+    AI.sending = false; btn.disabled = false;
+    if (ok) { AI.wait = Date.now() + 9000; aiTyping(true); poll(); }
+  }
+  function aiCard(it) {
+    const P = $PRODUCTS() || [], i = P.findIndex(p => p.slug === it.id), p = P[i];
+    let k = p && it.v ? p.vars.findIndex(v => v.name === it.v || v.name_uz === it.v) : 0; if (k < 0) k = 0;
+    const img = p && p.vars[k] ? thumb(p, k) : E(it.img || '');
+    const pr = it.price || {};
+    const c = document.createElement('div'); c.className = 'mx-c';
+    c.innerHTML = `<img src="${img}" alt="" loading="lazy"><div><h4>${E(it.name)}${it.vname ? ` — <span style="font-weight:300">${E(it.vname)}</span>` : ''}</h4>`
+      + `<div class="pr">${pr.now ? E(pr.now) : `<i>${E(L().ask)}</i>`}${pr.old ? ` <s>${E(pr.old)}</s>` : ''}${pr.note ? `<span class="nt">${E(pr.note)}</span>` : ''}</div>`
+      + (i >= 0 ? `<div class="acts"><button class="solid">${E(LA().open)}</button></div>` : '') + '</div>';
+    if (i >= 0) c.onclick = () => { goal('ai_view'); window.openProduct && openProduct(i, true, k); box.classList.remove('on'); fab.classList.remove('hid'); };
+    body.appendChild(c);
+  }
+  function aiRender(ev) {
+    if (ev.id > AI.after) AI.after = ev.id;
+    if (AI.seen.has(ev.id)) return;
+    AI.seen.add(ev.id); AI.act = Date.now(); if (ev.type !== 'me') AI.wait = 0;
+    const ty = !!AI.tyEl; if (ty) aiTyping(false);
+    if (ev.type === 'me') say(E(ev.text), true);
+    else if (ev.type === 'text') {
+      say(E(ev.text).replace(/\n/g, '<br>'));
+      if (ev.buttons && ev.buttons.length) {
+        const d = opts(ev.buttons.map(b => ({ label: b.text, href: b.url, cls: 'solid', keep: true, go: () => goal('ai_pay') })));
+        d.querySelectorAll('a').forEach(a => { a.dataset.ref = ev.id; });
+      }
+      if (!isOpen() && ev.at > AI.loadAt) fab.classList.add('new');
+    } else if (ev.type === 'products') (ev.items || []).forEach(aiCard);
+    else if (ev.type === 'expire') body.querySelectorAll(`a[data-ref="${+ev.ref}"]`).forEach(a => { a.classList.add('off'); a.removeAttribute('href'); });
+    if (ty && ev.type === 'me') aiTyping(true);
+    scroll();
+  }
+  async function poll() {
+    if (AI.polling || !AI.t) return;
+    AI.polling = true;
+    try {
+      while (AI.t && document.visibilityState !== 'hidden' && Date.now() - AI.act < 20 * 60_000) {
+        let j = null;
+        try {
+          const r = await fetch(`${API}poll?t=${AI.t}&after=${AI.after}&ty=${AI.typing ? 1 : 0}`, { cache: 'no-store' });
+          if (r.status === 404) { AI.t = ''; LS.set('t', ''); break; }
+          if (r.ok) j = await r.json();
+        } catch (e) {}
+        if (!j) { await sleep(6000); continue; }
+        (j.events || []).forEach(aiRender);
+        AI.typing = !!j.typing; const on = AI.typing || Date.now() < (AI.wait || 0); if (on !== !!AI.tyEl || on) aiTyping(on);
+      }
+    } finally { AI.polling = false; }
+  }
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && AI.t && (isOpen() || Date.now() - AI.act < 20 * 60_000)) poll(); });
   function origin() {
     const t = L(); goal('origin');
     say(E(t.originA)); later(() => { say(E(t.originB)); opts([{ label: t.more, go: () => later(results, 200) }, { label: t.restart, echo: false, go: () => later(start, 100) }]); }, 700);
@@ -317,8 +428,14 @@
     // tilni almashtirganda matnlar yangilanadi
     let lang = $LANG(); setInterval(() => { if ($LANG() !== lang) { lang = $LANG(); paint(); } }, 800);
     // salomlashish: 18 soniyadan keyin, bir tashrifda bir marta, mahsulot/savat oynasi ochiq bo'lmasa
-    const greet = () => { if (SS.get('greeted') || SS.get('closed')) { fab.classList.remove('hid'); return; } if (busy()) return setTimeout(greet, 4000); SS.set('greeted', '1'); goal('greet'); start(); open(); };
+    const greet = () => { if (SS.get('greeted') || SS.get('closed') || AI.t) { fab.classList.remove('hid'); return; } if (busy()) return setTimeout(greet, 4000); SS.set('greeted', '1'); goal('greet'); start(); open(); };
     fab.classList.remove('hid');
+    // Avval AI bilan yozishgan bo'lsa — yozishma tiklanadi; to'lovdan qaytganda (?chat=1) chat o'zi ochiladi.
+    if (AI.t) {
+      AI.act = Date.now();
+      if (/[?&]chat=/.test(location.search)) { open(); history.replaceState(history.state, '', location.pathname + location.search.replace(/[?&]chat=[^&]*/, '').replace(/^&/, '?') + location.hash); }
+      else poll();
+    }
     setTimeout(greet, Math.max(0, 18000 - (Date.now() - t0)));
     // ketmoqchi bo'lsa: kompyuterda sichqoncha yuqoriga chiqsa; telefonda 50 soniya harakatsizlik
     document.addEventListener('mouseout', e => { if (!e.relatedTarget && e.clientY <= 0 && Date.now() - t0 > 12000) goodbye(); });
