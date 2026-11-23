@@ -1314,6 +1314,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
     <dl>
       <div><dt>${txt(S.store_label_address)}</dt><dd>${D.map_link ? `<a href="${esc(D.map_link)}" ${ext}>${txt(D.address)}</a>` : txt(D.address)}</dd></div>
       ${D.landmark ? `<div><dt>${txt(S.store_label_landmark)}</dt><dd>${txt(D.landmark)}</dd></div>` : ''}
+      ${D.hours ? `<div><dt>${txt(S.store_label_hours || 'Ish vaqti')}</dt><dd>${txt(D.hours)}</dd></div>` : ''}
       <div><dt>${txt(S.store_label_phone)}</dt><dd><a href="${tel(S.phone)}">${txt(S.phone)}</a></dd></div>
       ${tgUser(S.telegram) ? `<div><dt>${txt(S.store_label_telegram)}</dt><dd><a href="${esc(S.telegram)}" ${ext}>${txt(tgUser(S.telegram))}</a></dd></div>` : ''}
       ${S.whatsapp ? `<div><dt>${txt(S.store_label_whatsapp)}</dt><dd><a href="${esc(S.whatsapp)}" ${ext}>${txt(S.whatsapp_user || 'WhatsApp')}</a></dd></div>` : ''}
