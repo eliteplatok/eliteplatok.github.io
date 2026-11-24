@@ -3718,48 +3718,72 @@
       "price_note_en": "2 for 120,000 UZS"
     },
     {
-      "name": "Bodom naqshli ro‘mollar",
-      "name_ru": "Платки с узором пейсли",
-      "name_en": "Paisley Scarves",
+      "name": "Paxta ipak ro‘mollar",
+      "name_ru": "Платки из хлопкового шёлка",
+      "name_en": "Cotton Silk Scarves",
       "images": [],
-      "cover": "images/dubay-ipak-1.jpg",
+      "cover": "",
       "size": "110 × 110 sm",
       "size_ru": "110 × 110 см",
       "size_en": "110 × 110 cm",
-      "material": "Dubay ipagi, batistdek mayin",
-      "material_ru": "Дубайский шёлк, мягкий как батист",
-      "material_en": "Dubai silk, soft as batiste",
-      "color": "19 xil: klassik bodom (peysli) naqshi 13 rangda va kalligrafik naqsh 6 xil dizaynda",
-      "color_ru": "19 вариантов: классический пейсли в 13 расцветках и каллиграфический узор в 6 дизайнах",
-      "color_en": "19 options: classic paisley in 13 colours and calligraphy pattern in 6 designs",
-      "description": "Klassik bodom (peysli) va kalligrafik naqsh, batistdek mayin mato — har kuni kiyish uchun yoqimli.",
-      "description_ru": "Классический пейсли и каллиграфический узор, ткань мягкая как батист, — приятно носить каждый день.",
-      "description_en": "Classic paisley and calligraphy prints on batiste-soft fabric — a pleasure to wear every day.",
-      "details": "Dubay ipagidan tayyorlangan ro‘mollar — mato juda mayin va yengil, teksturasi batistni eslatadi: teriga yoqimli tegadi, havo o‘tkazadi va boshda chiroyli tushadi. O‘lchami 110 × 110 sm — har xil usulda o‘rashga yetadi. Chetlari mashinada toza va pishiq bukilgan.\n\nKlassik bodom (paisley) naqshi va hoshiyali ramka ro‘molga boy, sokin ko‘rinish beradi. 13 xil rangdan tanlang: nozik pushti va sutrangdan to‘q zaytun, bordo, binafsha va yashilgacha. Shuningdek, kalligrafik naqsh va gulli 6 xil dizayn ham bor — kundalik kiyim, ish va mehmondorchilik uchun birdek mos.\n\nHar bir rangning manekendagi va yoyilgan ko‘rinishi bor — naqsh va rangni yaqindan ko‘ring.",
-      "details_ru": "Платки из дубайского шёлка — ткань очень мягкая и лёгкая, по текстуре напоминает батист: приятна к коже, пропускает воздух и красиво ложится. Размер 110 × 110 см — хватает для разных способов завязывания. Края аккуратно и прочно подшиты на машинке.\n\nКлассический узор пейсли и обрамляющая кайма придают платку богатый, спокойный вид. Выберите из 13 расцветок: от нежного розового и молочного до тёмно-оливкового, бордового, фиолетового и зелёного. Также есть 6 дизайнов с каллиграфическим узором и цветами — подходят для повседневной носки, работы и походов в гости.\n\nДля каждого цвета есть фото на манекене и в развёрнутом виде — рассмотрите узор и цвет вблизи.",
-      "details_en": "Scarves made of Dubai silk — the fabric is very soft and light, with a texture reminiscent of batiste: gentle on the skin, breathable and drapes beautifully. The 110 × 110 cm size is enough for many ways of wrapping. The edges are neatly and durably machine-hemmed.\n\nA classic paisley pattern with a framing border gives the scarf a rich yet calm look. Choose from 13 paisley colourways plus 6 calligraphy-and-floral designs: from delicate pink and milky white to dark olive, burgundy and green — suitable for everyday wear, work and visits.\n\nEach colour has a photo on the mannequin and laid out flat — see the pattern and colour up close.",
+      "material": "Paxta ipak",
+      "material_ru": "Хлопковый шёлк",
+      "material_en": "Cotton silk",
+      "color": "Bodom (paisley), kalligrafiya va gulli naqshlar — turli ranglarda",
+      "color_ru": "Пейсли, каллиграфия и цветочные узоры — разные расцветки",
+      "color_en": "Paisley, calligraphy and floral prints in various colours",
+      "description": "Paxta ipak ro‘mollar, 110 × 110 sm — 75 000 so‘m, 3 tasi 100 000 so‘m.",
+      "description_ru": "Платки из хлопкового шёлка, 110 × 110 см — 75 000 сум, 3 шт. 100 000 сум.",
+      "description_en": "Cotton silk scarves, 110 × 110 cm — 75,000 UZS, 3 for 100,000 UZS.",
+      "details": "Paxta ipak ro‘mollar — mayin, yengil va tanaga yoqimli mato, boshda chiroyli turadi. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nKolleksiyada bodom (paisley), kalligrafiya va gulli naqshlar turli ranglarda. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Платки из хлопкового шёлка — нежная, лёгкая и приятная к телу ткань, красиво смотрится на голове. Размер 110 × 110 см — удобно завязывать разными способами.\n\nВ коллекции пейсли, каллиграфия и цветочные узоры в разных расцветках. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Cotton silk scarves — soft, light fabric that feels pleasant on the skin and looks beautiful worn. 110 × 110 cm — easy to tie in different ways.\n\nThe collection has paisley, calligraphy and floral prints in various colours. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
       "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
       "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
-      "price": "55 000 so‘m",
-      "price_note": "3 tasi — 150 000 so‘m",
+      "price": "75 000 so‘m",
+      "price_note": "3 tasi — 100 000 so‘m",
       "old_price": "",
       "old_price_ru": "",
       "old_price_en": "",
-      "price_number": 55000,
+      "price_number": 75000,
       "price_usd": 0,
       "promo3": true,
       "promo_qty": 3,
-      "promo_total": 150000,
-      "promo_group": "dubay-ipak",
-      "badge": "",
-      "badge_ru": "",
-      "badge_en": "",
+      "promo_total": 100000,
+      "promo_group": "paxta-ipak",
+      "badge": "3 tasi 100 000",
+      "badge_ru": "3 за 100 000",
+      "badge_en": "3 for 100,000",
       "is_new": true,
       "sold_out": false,
       "sold_photos": "",
       "tags": "printli",
       "variants": [
+        {
+          "name": "Jigarrang-pushti bodom",
+          "name_ru": "Коричнево-розовый пейсли",
+          "name_en": "Brown & pink paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/paxta-ipak-1.jpg"
+          ],
+          "swatch": "images/paxta-ipak-1-print.jpg"
+        },
+        {
+          "name": "Binafsha-lavanda bodom",
+          "name_ru": "Фиолетово-лавандовый пейсли",
+          "name_en": "Purple & lavender paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/paxta-ipak-2.jpg"
+          ],
+          "swatch": "images/paxta-ipak-2-print.jpg"
+        },
         {
           "name": "Pushti",
           "name_ru": "Розовый",
@@ -3996,12 +4020,91 @@
             "images/kalligrafiya-6.jpg"
           ],
           "swatch": "images/kalligrafiya-6.jpg"
+        },
+        {
+          "name": "Gulli — Jigarrang",
+          "name_ru": "Цветочный — Коричневый",
+          "name_en": "Floral — Brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-1.jpg",
+            "images/gulli-toplam-1-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-1-2.jpg"
+        },
+        {
+          "name": "Gulli — Ko‘k",
+          "name_ru": "Цветочный — Синий",
+          "name_en": "Floral — Blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-2.jpg",
+            "images/gulli-toplam-2-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-2-2.jpg"
+        },
+        {
+          "name": "Gulli — Kulrang",
+          "name_ru": "Цветочный — Серый",
+          "name_en": "Floral — Grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-3.jpg",
+            "images/gulli-toplam-3-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-3-2.jpg"
+        },
+        {
+          "name": "Gulli — Zaytun",
+          "name_ru": "Цветочный — Оливковый",
+          "name_en": "Floral — Olive",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-4.jpg",
+            "images/gulli-toplam-4-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-4-2.jpg"
+        },
+        {
+          "name": "Gulli — Oltin-jigarrang",
+          "name_ru": "Цветочный — Золотисто-коричневый",
+          "name_en": "Floral — Golden brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-5.jpg",
+            "images/gulli-toplam-5-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-5-2.jpg"
+        },
+        {
+          "name": "Arab naqshli",
+          "name_ru": "Арабский узор",
+          "name_en": "Arabic pattern",
+          "hex": "",
+          "sold_out": true,
+          "card_hide": true,
+          "images": [
+            "images/arab-naqsh-1.jpg",
+            "images/arab-naqsh-2.jpg",
+            "images/arab-naqsh-3.jpg"
+          ],
+          "swatch": "images/arab-naqsh-1.jpg"
         }
       ],
-      "price_ru": "55 000 сум",
-      "price_en": "55,000 UZS",
-      "price_note_ru": "3 шт. — 150 000 сум",
-      "price_note_en": "3 for 150,000 UZS",
+      "price_ru": "75 000 сум",
+      "price_en": "75,000 UZS",
+      "price_note_ru": "3 шт. — 100 000 сум",
+      "price_note_en": "3 for 100,000 UZS",
       "sold_week": 7
     },
     {
@@ -4767,163 +4870,6 @@
           "card_hide": false
         }
       ]
-    },
-    {
-      "name": "Gulli naqshli to‘plam",
-      "name_ru": "Набор с цветочным узором",
-      "name_en": "Floral pattern collection",
-      "images": [],
-      "cover": "",
-      "size": "110 × 110 sm",
-      "size_ru": "110 × 110 см",
-      "size_en": "110 × 110 cm",
-      "material": "Yengil shoyisimon mato",
-      "material_ru": "Лёгкая шелковистая ткань",
-      "material_en": "Light silky fabric",
-      "color": "Sutrang fonda shaftoli, kulrang, ko‘k va zaytun rang gullar",
-      "color_ru": "Персиковые, серые, голубые и оливковые цветы на молочном фоне",
-      "color_en": "Peach, grey, blue and olive flowers on a milky white background",
-      "description": "Nafis gul naqshlari va rangli hoshiya — har kuni yangi obraz.",
-      "description_ru": "Изящные цветочные узоры и цветная кайма — каждый день новый образ.",
-      "description_en": "Elegant floral patterns and a coloured border — a new look every day.",
-      "details": "Sutrang fondagi yirik va mayda gul naqshlari ro‘molga yengillik va bahoriy kayfiyat beradi. Har bir rangda hoshiyasi naqsh rangiga moslab tanlangan: shaftoli, zaytun, ko‘k va kulrang. Mato yengil, silliq va yumshoq — boshda chiroyli tushadi, bog‘lash oson.\n\nKundalik kiyim bilan ham, mehmondorchilik obrazi bilan ham birdek mos. Bir nechta rangini olib, liboslaringizga qarab almashtirib yurish qulay.",
-      "details_ru": "Крупные и мелкие цветочные узоры на молочном фоне придают платку лёгкость и весеннее настроение. В каждом цвете кайма подобрана в тон узору: персиковая, оливковая, голубая и серая. Ткань лёгкая, гладкая и мягкая — красиво ложится, легко завязывается.\n\nОдинаково хорошо сочетается и с повседневной одеждой, и с образом для гостей. Удобно взять несколько цветов и менять их под наряды.",
-      "details_en": "Large and small floral patterns on a milky white background give the scarf lightness and a spring mood. In each colour the border matches the pattern: peach, olive, blue and grey. The fabric is light, smooth and soft — it drapes beautifully and is easy to tie.\n\nPairs equally well with everyday clothes and with an outfit for visits. It’s handy to take several colours and switch them to match your outfits.",
-      "care": "30°C da qo‘lda yoki nozik rejimda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
-      "care_ru": "Стирать вручную или в деликатном режиме при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
-      "care_en": "Hand or gentle wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
-      "price": "3 ta — 100 000 so‘m",
-      "price_ru": "3 шт. — 100 000 сум",
-      "price_en": "3 for 100,000 UZS",
-      "price_note": "",
-      "old_price": "",
-      "price_number": 0,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 3,
-      "promo_total": 0,
-      "badge": "",
-      "badge_ru": "",
-      "badge_en": "",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "promo_group": "",
-      "variants": [
-        {
-          "name": "Jigarrang",
-          "name_ru": "Коричневый",
-          "name_en": "Brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-1.jpg",
-            "images/gulli-toplam-1-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-1-2.jpg"
-        },
-        {
-          "name": "Ko‘k",
-          "name_ru": "Синий",
-          "name_en": "Blue",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-2.jpg",
-            "images/gulli-toplam-2-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-2-2.jpg"
-        },
-        {
-          "name": "Kulrang",
-          "name_ru": "Серый",
-          "name_en": "Grey",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-3.jpg",
-            "images/gulli-toplam-3-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-3-2.jpg"
-        },
-        {
-          "name": "Zaytun",
-          "name_ru": "Оливковый",
-          "name_en": "Olive",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-4.jpg",
-            "images/gulli-toplam-4-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-4-2.jpg"
-        },
-        {
-          "name": "Oltin-jigarrang",
-          "name_ru": "Золотисто-коричневый",
-          "name_en": "Golden brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-5.jpg",
-            "images/gulli-toplam-5-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-5-2.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Arab naqshli ro‘mol",
-      "name_ru": "Платок с арабским узором",
-      "name_en": "Arabic pattern scarf",
-      "images": [
-        "images/arab-naqsh-1.jpg",
-        "images/arab-naqsh-2.jpg",
-        "images/arab-naqsh-3.jpg"
-      ],
-      "cover": "",
-      "size": "110 × 110 sm",
-      "size_ru": "110 × 110 см",
-      "size_en": "110 × 110 cm",
-      "material": "Dubay ipagi",
-      "material_ru": "Дубайский шёлк",
-      "material_en": "Dubai silk",
-      "color": "Bordo, sutrang, qora",
-      "color_ru": "Бордовый, молочный, чёрный",
-      "color_en": "Burgundy, milky white, black",
-      "description": "Arab xattotligidan ilhomlangan naqsh — nafis va o‘ziga xos.",
-      "description_ru": "Узор, вдохновлённый арабской каллиграфией, — изящный и самобытный.",
-      "description_en": "A pattern inspired by Arabic calligraphy — elegant and distinctive.",
-      "details": "Ro‘mol yuzasi arab harflari uslubidagi erkin, oqimli naqsh bilan bezatilgan. Bordo, sutrang va qora ranglarda — naqsh har birida mato rangiga mos, sokin tusda berilgan. Matosi Dubay ipagi: yengil, yumshoq va boshda yaxshi turadi; chetlari qo‘lda bukilgan.\n\nKundalik obrazga ham, mehmondorchilikka ham mos keladigan, ko‘zga tashlanadigan, lekin bosiq ro‘mol.",
-      "details_ru": "Поверхность платка украшена свободным струящимся узором в стиле арабских букв. В бордовом, молочном и чёрном цветах — в каждом узор выполнен в спокойном тоне под цвет ткани. Ткань — дубайский шёлк: лёгкая, мягкая и хорошо держится на голове; края подшиты вручную.\n\nЗаметный, но сдержанный платок, который подойдёт и к повседневному образу, и для походов в гости.",
-      "details_en": "The scarf is decorated with a free, flowing pattern in the style of Arabic letters. In burgundy, milky white and black — in each, the pattern is in a calm tone matching the fabric. The fabric is Dubai silk: light, soft and stays well in place; the edges are hand-hemmed.\n\nA noticeable yet understated scarf that suits both everyday looks and visits.",
-      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
-      "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
-      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
-      "price": "3 ta — 100 000 so‘m",
-      "price_ru": "3 шт. — 100 000 сум",
-      "price_en": "3 for 100,000 UZS",
-      "price_note": "",
-      "old_price": "",
-      "price_number": 0,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 3,
-      "promo_total": 0,
-      "badge": "",
-      "badge_ru": "",
-      "badge_en": "",
-      "is_new": true,
-      "sold_out": true,
-      "sold_photos": "",
-      "tags": "printli",
-      "promo_group": ""
     },
     {
       "name": "Organza ro‘mol",
