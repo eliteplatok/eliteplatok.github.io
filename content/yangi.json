@@ -2281,7 +2281,7 @@
       "badge_ru": "",
       "badge_en": "",
       "is_new": true,
-      "sold_out": false,
+      "sold_out": true,
       "sold_photos": "",
       "tags": "",
       "variants": [
@@ -2290,7 +2290,7 @@
           "name_ru": "Серый",
           "name_en": "Grey",
           "hex": "",
-          "sold_out": false,
+          "sold_out": true,
           "card_hide": false,
           "images": [
             "images/kap-kulrang-1.jpg",
@@ -2308,7 +2308,7 @@
           "name_ru": "Бежевый",
           "name_en": "Beige",
           "hex": "",
-          "sold_out": false,
+          "sold_out": true,
           "card_hide": false,
           "images": [
             "images/kap-bej-1.jpg",
@@ -2327,7 +2327,7 @@
           "name_ru": "Сиреневый",
           "name_en": "Lilac",
           "hex": "",
-          "sold_out": false,
+          "sold_out": true,
           "card_hide": false,
           "images": [
             "images/kap-lila-1.jpg",
@@ -2341,7 +2341,7 @@
           "name_ru": "Оливковый",
           "name_en": "Olive",
           "hex": "",
-          "sold_out": false,
+          "sold_out": true,
           "card_hide": false,
           "images": [
             "images/kap-zaytun-1.jpg",
