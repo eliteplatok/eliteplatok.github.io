@@ -167,6 +167,7 @@
   .price.ask{font-weight:300;font-size:13px;color:var(--muted);letter-spacing:.04em}
   .badge{position:absolute;top:14px;left:14px;z-index:1;background:var(--bg);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:6px 10px}
   .badge.dark{background:var(--ink);color:var(--bg)}
+  .ft{font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:.06em;margin-left:4px;white-space:nowrap}
   section[data-mk]{background:linear-gradient(180deg,#fbf1ee,#f6efe6);border-bottom:1px solid #ead9cf}
   html.mk-page .hero,html.mk-page #app section:not([data-mk]),html.mk-page .menu a{display:none}
   .mk-all{display:block;text-align:center;margin-top:34px}
@@ -704,7 +705,7 @@ function card(p, S) {
       <div class="slides">${cims.map((s, k) => k === 0 && p.video ? `<video class="cvid${soldAt(0) ? ' so' : ''}" muted loop playsinline preload="none" poster="${esc(smP(s))}" data-vsrc="${esc(p.video)}" aria-label="${esc(p.name)}"></video>` : k ? `<img class="${soldAt(k) ? 'so' : ''}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="${esc(smP(s))}" data-full="${img(s)}" alt="" decoding="async" draggable="false">` : `<img class="${soldAt(k) ? 'so' : ''}" ${smImg(s, `alt="${esc(p.name)}" loading="lazy" decoding="async" draggable="false"`)}>`).join('')}</div>
       ${cims.length > 1 ? `<button class="arr prev" aria-label="${esc(S_.prev_label)}">‹</button><button class="arr next" aria-label="${esc(S_.next_label)}">›</button>` : ''}
       ${dots(cims.length)}
-      ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}${p.is_new ? '<span class="newb">NEW</span>' : ''}
+      ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}${p.flash_to ? ` <b class="ft" data-ft="${esc(p.flash_to)}"></b>` : ''}</span>` : ''}${p.is_new ? '<span class="newb">NEW</span>' : ''}
       ${igVid(p) ? `<a class="igv" href="${esc(igVid(p))}" ${ext} aria-label="${esc(S.card_ig_video || 'Video')}">${IG_ICON}<span>${txt(S.card_ig_video || 'Video')}</span></a>` : ''}
       <span class="so-tag"${soldAt(0) ? '' : ' hidden'}>${txt(S.sold_out_label)}</span>
       <span class="order">${txt(S.card_order_label)}</span>
@@ -742,7 +743,7 @@ function openProduct(i, push = true, vi = 0) {
   const row = (l, v) => v ? `<div><dt>${txt(l)}</dt><dd>${txt(v)}</dd></div>` : '';
   const acc = (t, v, open) => v ? `<details class="acc-item"${open ? ' open' : ''}><summary>${txt(t)}</summary><p>${txt(v)}</p></details>` : '';
   pm.innerHTML = `
-    ${document.documentElement.classList.contains('min') && S.top_bar ? `<div class="bar pm-bar"><span>${txt(S.top_bar)}</span></div>` : ''}
+    ${document.documentElement.classList.contains('min') && S.top_bar ? `<div class="bar pm-bar"><span>${txt(S.top_bar)}${S.flash_to ? ` <b class="ft" data-ft="${esc(S.flash_to)}"></b>` : ''}</span></div>` : ''}
     <div class="pm-top"><a href="#" class="logo" data-close>${txt(S.logo)}</a><div class="pm-acts"><button class="pm-ic pm-fav${isFav(p.slug) ? ' on' : ''}" data-pfav aria-label="${esc(S.fav_label || 'Saralanganlar')}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M18.5 21 12 15.6 5.5 21V4.2c0-.7.5-1.2 1.2-1.2h10.6c.7 0 1.2.5 1.2 1.2z"/></svg></button><button class="pm-ic" data-pcart aria-label="${esc(S.product_add_button)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" hidden></span></button><button class="pm-x" data-close>${txt(S.close_label)} <b>×</b></button></div></div>
     <div class="pm-body">
       <div class="pm-gal"><span class="so-tag"${soldK(0) ? '' : ' hidden'}>${txt(S.sold_out_label)}</span>
@@ -751,7 +752,7 @@ function openProduct(i, push = true, vi = 0) {
         ${ims.length > 1 ? `<div class="pm-thumbs">${ims.map((s, k) => `<button class="${k ? '' : 'on'}" data-k="${k}"><img ${smImg(s, 'alt="" loading="lazy" decoding="async"')}></button>`).join('')}</div>` : ''}
       </div>
       <div class="pm-info">
-        ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}</span>` : ''}
+        ${p.badge ? `<span class="badge${p.old_price ? ' dark' : ''}">${txt(p.badge)}${p.flash_to ? ` <b class="ft" data-ft="${esc(p.flash_to)}"></b>` : ''}</span>` : ''}
         <h2>${txt(p.name)}</h2>
         ${priceHtml(p)}${stockHtml(p, v)}${soldWeekHtml(p)}
         ${p.vars.length ? `<div class="sw"><div class="sw-h">${txt(v.hex ? S.product_label_color : (S.product_label_pattern || S.product_label_color))} —<b>${txt(v.name)}</b></div><div class="sw-g">${p.vars.map((x, k) => `<button class="${k === vi ? 'on' : ''}${x.sold_out || p.sold_out ? ' so' : ''}" data-v="${k}" style="--c:${swBg(x)}" aria-label="${esc(x.name)}" title="${esc(x.name)}"></button>`).join('')}</div></div>` : ''}
@@ -1219,7 +1220,7 @@ function render(C) {
   document.querySelector('meta[name=description]').setAttribute('content', S.seo_description || '');
 
   return `
-<div class="bar"><span>${txt(S.top_bar)}</span>${langHtml("lang-bar")}</div>
+<div class="bar"><span>${txt(S.top_bar)}${S.flash_to ? ` <b class="ft" data-ft="${esc(S.flash_to)}"></b>` : ''}</span>${langHtml("lang-bar")}</div>
 <header><div class="wrap nav">
   <nav class="menu" id="menu">
     <a href="#yangi">${txt(S.menu_new)}</a><a href="#matolar">${txt(S.menu_fabrics)}</a>
@@ -1475,6 +1476,19 @@ async function usdRate() {
    DIQQAT: to‘lov serveri (apps/eliteplatok-pay/server.mjs, catalog()) xuddi shu qoidani o‘z soati bilan qo‘llaydi — ikkalasini birga o‘zgartiring.
    Vaqt brauzer soatidan emas, server javobidagi Date sarlavhasidan olinadi (telefon soati noto‘g‘ri bo‘lsa ham narx to‘g‘ri chiqadi). */
 let SRV_NOW = 0, MK_ON = false;
+/* Flash aksiya: tovarda flash_to (muddat) va flash_orig (asl narx maydonlari) bo‘lsa — muddatgacha chegirma narxi va ortga sanovchi soat,
+   muddat o‘tgach asl narx o‘zi qaytadi (server soati bo‘yicha). sozlamalar.flash_to + flash_top_bar* — tepa qatordagi e’lon. */
+let FT_SKEW = 0;
+function flashApply() {
+  const now = SRV_NOW || Date.now(), gone = t => now >= Date.parse(t); FT_SKEW = SRV_NOW ? SRV_NOW - Date.now() : 0;
+  for (const file of ['yangi', 'top']) { const d = RAW[file]; if (!d || !Array.isArray(d.products)) continue;
+    d.products.forEach(p => { if (p.flash_to && gone(p.flash_to)) { Object.assign(p, p.flash_orig || {}); delete p.flash_to; } }); }
+  const s = RAW.sozlamalar; if (s && s.flash_to) { if (gone(s.flash_to)) delete s.flash_to;
+    else Object.assign(s, { top_bar: s.flash_top_bar || s.top_bar, top_bar_ru: s.flash_top_bar_ru || s.flash_top_bar || s.top_bar_ru, top_bar_en: s.flash_top_bar_en || s.flash_top_bar || s.top_bar_en }); }
+  setInterval(() => { const els = document.querySelectorAll('[data-ft]'); if (!els.length) return; const t = Date.now() + FT_SKEW, z = n => String(n).padStart(2, '0');
+    els.forEach(el => { const ms = Date.parse(el.dataset.ft) - t; if (ms <= 0) { if (!flashApply.done) { flashApply.done = 1; setTimeout(() => location.reload(), 1500); } el.textContent = '00:00:00'; return; }
+      const h = Math.floor(ms / 3600000), m = Math.floor(ms / 60000) % 60, sec = Math.floor(ms / 1000) % 60; el.textContent = (h >= 24 ? Math.floor(h / 24) + 'd ' + z(h % 24) : z(h)) + ':' + z(m) + ':' + z(sec); }); }, 1000);
+}
 function saleApply() {
   const M = RAW['onalar-kuni']; if (!M || M.show === false) return;
   if (!MK_PAGE) { M.show = false; return; } // bosh sahifa o‘zgarmaydi: aksiya faqat /onalar-kuni sahifasida
@@ -1502,6 +1516,7 @@ Promise.all([usdRate(), ...FILES.map(f => fetch(`content/${f}.json`, { cache: 'n
   .then(([rate, ...list]) => {
     RAW = Object.fromEntries(FILES.map((f, i) => [f, list[i]]));
     USD = rate || +RAW.sozlamalar.usd_rate || 0;
+    flashApply();
     saleApply();
     boot();
     document.documentElement.classList.toggle('mk-page', MK_PAGE && RAW['onalar-kuni'].show !== false);
