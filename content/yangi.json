@@ -1084,15 +1084,15 @@
       "material": "Tvil sholk · chetlari mashinada bukilgan",
       "material_ru": "Твил-шёлк · края подшиты машинным швом",
       "material_en": "Twill silk · machine-stitched hems",
-      "color": "Hozir sotuvda 8 xil print: shahar xaritasi va bodomsimon naqshlar — qora-oq, to‘q ko‘k, havorang, pudra, bej-jigarrang va bordo tuslarda",
-      "color_ru": "Сейчас в наличии 8 принтов: карта города и узоры — чёрно-белый, тёмно-синий, голубой, пудровый, бежево-коричневый и бордовый",
-      "color_en": "8 prints in stock now: city map and ornamental patterns in black & white, navy, light blue, powder pink, beige-brown and burgundy",
+      "color": "Hozir sotuvda 26 xil print: gulli, atirgulli, monogrammali, shahar xaritasi va bodomsimon naqshlar — qora-oq, jigarrang, bej, kulrang, havorang, to‘q ko‘k, pushti va bordo tuslarda",
+      "color_ru": "Сейчас в наличии 26 принтов: цветы, розы, монограммы, карта города и орнаменты — чёрно-белые, коричневые, бежевые, серые, голубые, тёмно-синие, розовые и бордовые",
+      "color_en": "26 prints in stock now: florals, roses, monograms, city maps and ornaments in black & white, brown, beige, grey, light blue, navy, pink and burgundy",
       "description": "Tvil sholk, 90 × 90 sm — 75 000 so‘m, 3 tasi 100 000 so‘m.",
       "description_ru": "Твил-шёлк, 90 × 90 см — 75 000 сум, 3 шт. 100 000 сум.",
       "description_en": "Twill silk, 90 × 90 cm — 75,000 UZS, 3 for 100,000 UZS.",
-      "details": "Xitoy tvil sholk ro‘mollari — silliq, yengil jiloli mato, boshda chiroyli turadi va shaklini yaxshi ushlaydi. Chetlari mashinada toza bukib tikilgan. O‘lchami 90 × 90 sm.\n\nHozir sotuvda 8 xil print bor (№53–60): shahar xaritasi va bodomsimon naqshlar. Avvalgi printlar tugagan — ular «tugadi» belgisi bilan ko‘rinadi. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
-      "details_ru": "Китайские платки из твил-шёлка — гладкая ткань с лёгким блеском, красиво ложится и хорошо держит форму. Края аккуратно подшиты машинным швом. Размер 90 × 90 см.\n\nСейчас в наличии 8 принтов (№53–60): карта города и орнаментальные узоры. Прежние принты закончились — они отмечены «продано». Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
-      "details_en": "Chinese twill silk scarves — smooth fabric with a light sheen that drapes well and holds its shape. Neat machine-stitched hems. Size 90 × 90 cm.\n\n8 prints are in stock now (No. 53–60): city map and ornamental patterns. Earlier prints are sold out and marked as such. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
+      "details": "Xitoy tvil sholk ro‘mollari — silliq, yengil jiloli mato, boshda chiroyli turadi va shaklini yaxshi ushlaydi. Chetlari mashinada toza bukib tikilgan. O‘lchami 90 × 90 sm.\n\nHozir sotuvda 26 xil print bor (№53–78): gulli, atirgulli, monogrammali, shahar xaritasi va bodomsimon naqshlar. Avvalgi printlar tugagan — ular «tugadi» belgisi bilan ko‘rinadi. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Китайские платки из твил-шёлка — гладкая ткань с лёгким блеском, красиво ложится и хорошо держит форму. Края аккуратно подшиты машинным швом. Размер 90 × 90 см.\n\nСейчас в наличии 26 принтов (№53–78): цветы, розы, монограммы, карта города и орнаменты. Прежние принты закончились — они отмечены «продано». Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Chinese twill silk scarves — smooth fabric with a light sheen that drapes well and holds its shape. Neat machine-stitched hems. Size 90 × 90 cm.\n\n26 prints are in stock now (No. 53–78): florals, roses, monograms, city maps and ornaments. Earlier prints are sold out and marked as such. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
       "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
       "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
@@ -1215,6 +1215,222 @@
             "images/xitoy-tvil-60.jpg"
           ],
           "swatch": "images/xitoy-tvil-60-print.jpg"
+        },
+        {
+          "name": "№61 Jigarrang, oq gulli",
+          "name_ru": "№61 Коричневый, белые цветы",
+          "name_en": "No. 61 Brown, white flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-61.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-61-print.jpg"
+        },
+        {
+          "name": "№62 Kulrang-jigarrang, oq gulli",
+          "name_ru": "№62 Серо-коричневый, белые цветы",
+          "name_en": "No. 62 Taupe, white flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-62.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-62-print.jpg"
+        },
+        {
+          "name": "№63 Oq-kulrang, sariq naqshli",
+          "name_ru": "№63 Бело-серый с жёлтым",
+          "name_en": "No. 63 White & grey with yellow",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-63.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-63-print.jpg"
+        },
+        {
+          "name": "№64 Kulrang monogramma",
+          "name_ru": "№64 Серая монограмма",
+          "name_en": "No. 64 Grey monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-64.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-64-print.jpg"
+        },
+        {
+          "name": "№65 Havorang monogramma",
+          "name_ru": "№65 Голубая монограмма",
+          "name_en": "No. 65 Light blue monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-65.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-65-print.jpg"
+        },
+        {
+          "name": "№66 Kulrang, shahar xaritasi",
+          "name_ru": "№66 Серый, карта города",
+          "name_en": "No. 66 Grey, city map",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-66.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-66-print.jpg"
+        },
+        {
+          "name": "№67 Oq, gul chizmasi, to‘q ko‘k hoshiya",
+          "name_ru": "№67 Белый, графичные цветы, синяя кайма",
+          "name_en": "No. 67 White line flowers, navy border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-67.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-67-print.jpg"
+        },
+        {
+          "name": "№68 Bej-jigarrang atirgulli",
+          "name_ru": "№68 Бежево-коричневые розы",
+          "name_en": "No. 68 Beige & brown roses",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-68.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-68-print.jpg"
+        },
+        {
+          "name": "№69 Bej-jigarrang, katta gulli",
+          "name_ru": "№69 Бежево-коричневый, крупные цветы",
+          "name_en": "No. 69 Beige & brown, large flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-69.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-69-print.jpg"
+        },
+        {
+          "name": "№70 Oq, kulrang gulli",
+          "name_ru": "№70 Белый, серые цветы",
+          "name_en": "No. 70 White, grey flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-70.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-70-print.jpg"
+        },
+        {
+          "name": "№71 Qora, oq gulli",
+          "name_ru": "№71 Чёрный, белые цветы",
+          "name_en": "No. 71 Black, white flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-71.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-71-print.jpg"
+        },
+        {
+          "name": "№72 Oq, oltin rang gulli",
+          "name_ru": "№72 Белый, золотистые цветы",
+          "name_en": "No. 72 White, golden flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-72.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-72-print.jpg"
+        },
+        {
+          "name": "№73 Oq, bordo gulli",
+          "name_ru": "№73 Белый, бордовые цветы",
+          "name_en": "No. 73 White, burgundy flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-73.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-73-print.jpg"
+        },
+        {
+          "name": "№74 Havorang, gulli",
+          "name_ru": "№74 Голубой, цветы",
+          "name_en": "No. 74 Light blue, flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-74.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-74-print.jpg"
+        },
+        {
+          "name": "№75 Oq, qora gulli",
+          "name_ru": "№75 Белый, чёрные цветы",
+          "name_en": "No. 75 White, black flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-75.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-75-print.jpg"
+        },
+        {
+          "name": "№76 Pushti-jigarrang, gulli",
+          "name_ru": "№76 Розово-коричневый, цветы",
+          "name_en": "No. 76 Rose brown, flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-76.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-76-print.jpg"
+        },
+        {
+          "name": "№77 Bej, qora gulli",
+          "name_ru": "№77 Бежевый, чёрные цветы",
+          "name_en": "No. 77 Beige, black flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-77.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-77-print.jpg"
+        },
+        {
+          "name": "№78 Oq-bordo, manzarali",
+          "name_ru": "№78 Бело-бордовый, пейзаж",
+          "name_en": "No. 78 White & burgundy, scenic",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-78.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-78-print.jpg"
         },
         {
           "name": "№1 Ko‘k-oq",
