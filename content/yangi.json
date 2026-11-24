@@ -1665,6 +1665,18 @@
       "tags": "printli",
       "variants": [
         {
+          "name": "№5 Havorang-pushti, manzarali",
+          "name_ru": "№5 Голубо-розовый, пейзаж",
+          "name_en": "No. 5 Blue & pink, scenic",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-5.jpg"
+          ],
+          "swatch": "images/polo-lux-5-print.jpg"
+        },
+        {
           "name": "№1 Bej-havorang, kamar naqshli",
           "name_ru": "№1 Бежево-голубой, узор ремни",
           "name_en": "No. 1 Beige & blue, belt print",
@@ -1711,18 +1723,6 @@
             "images/polo-lux-4.jpg"
           ],
           "swatch": "images/polo-lux-4-print.jpg"
-        },
-        {
-          "name": "№5 Havorang-pushti, manzarali",
-          "name_ru": "№5 Голубо-розовый, пейзаж",
-          "name_en": "No. 5 Blue & pink, scenic",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-5.jpg"
-          ],
-          "swatch": "images/polo-lux-5-print.jpg"
         },
         {
           "name": "№6 Oq-havorang monogramma",
