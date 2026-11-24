@@ -1084,15 +1084,15 @@
       "material": "Tvil sholk · chetlari mashinada bukilgan",
       "material_ru": "Твил-шёлк · края подшиты машинным швом",
       "material_en": "Twill silk · machine-stitched hems",
-      "color": "Hozir sotuvda 26 xil print: gulli, atirgulli, monogrammali, shahar xaritasi va bodomsimon naqshlar — qora-oq, jigarrang, bej, kulrang, havorang, to‘q ko‘k, pushti va bordo tuslarda",
-      "color_ru": "Сейчас в наличии 26 принтов: цветы, розы, монограммы, карта города и орнаменты — чёрно-белые, коричневые, бежевые, серые, голубые, тёмно-синие, розовые и бордовые",
-      "color_en": "26 prints in stock now: florals, roses, monograms, city maps and ornaments in black & white, brown, beige, grey, light blue, navy, pink and burgundy",
+      "color": "Hozir sotuvda 52 xil print: gulli, atirgulli, monogrammali, manzarali, geometrik, nuqtali va shahar xaritasi naqshlari — qora-oq, to‘q ko‘k, havorang, kulrang, bej, jigarrang, pushti, yashil va bordo tuslarda",
+      "color_ru": "Сейчас в наличии 52 принтов: цветы, розы, монограммы, пейзажи, геометрия, горошек и карта города — чёрно-белые, тёмно-синие, голубые, серые, бежевые, коричневые, розовые, зелёные и бордовые",
+      "color_en": "52 prints in stock now: florals, roses, monograms, scenic, geometric, dots and city maps in black & white, navy, light blue, grey, beige, brown, pink, green and burgundy",
       "description": "Tvil sholk, 90 × 90 sm — 75 000 so‘m, 3 tasi 100 000 so‘m.",
       "description_ru": "Твил-шёлк, 90 × 90 см — 75 000 сум, 3 шт. 100 000 сум.",
       "description_en": "Twill silk, 90 × 90 cm — 75,000 UZS, 3 for 100,000 UZS.",
-      "details": "Xitoy tvil sholk ro‘mollari — silliq, yengil jiloli mato, boshda chiroyli turadi va shaklini yaxshi ushlaydi. Chetlari mashinada toza bukib tikilgan. O‘lchami 90 × 90 sm.\n\nHozir sotuvda 26 xil print bor (№53–78): gulli, atirgulli, monogrammali, shahar xaritasi va bodomsimon naqshlar. Avvalgi printlar tugagan — ular «tugadi» belgisi bilan ko‘rinadi. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
-      "details_ru": "Китайские платки из твил-шёлка — гладкая ткань с лёгким блеском, красиво ложится и хорошо держит форму. Края аккуратно подшиты машинным швом. Размер 90 × 90 см.\n\nСейчас в наличии 26 принтов (№53–78): цветы, розы, монограммы, карта города и орнаменты. Прежние принты закончились — они отмечены «продано». Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
-      "details_en": "Chinese twill silk scarves — smooth fabric with a light sheen that drapes well and holds its shape. Neat machine-stitched hems. Size 90 × 90 cm.\n\n26 prints are in stock now (No. 53–78): florals, roses, monograms, city maps and ornaments. Earlier prints are sold out and marked as such. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
+      "details": "Xitoy tvil sholk ro‘mollari — silliq, yengil jiloli mato, boshda chiroyli turadi va shaklini yaxshi ushlaydi. Chetlari mashinada toza bukib tikilgan. O‘lchami 90 × 90 sm.\n\nHozir sotuvda 52 xil print bor: gulli, atirgulli, monogrammali, manzarali, geometrik, nuqtali va shahar xaritasi naqshlari. Qolgan printlar tugagan — ular «tugadi» belgisi bilan ko‘rinadi. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Китайские платки из твил-шёлка — гладкая ткань с лёгким блеском, красиво ложится и хорошо держит форму. Края аккуратно подшиты машинным швом. Размер 90 × 90 см.\n\nСейчас в наличии 52 принтов: цветы, розы, монограммы, пейзажи, геометрия, горошек и карта города. Остальные принты закончились — они отмечены «продано». Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Chinese twill silk scarves — smooth fabric with a light sheen that drapes well and holds its shape. Neat machine-stitched hems. Size 90 × 90 cm.\n\n52 prints are in stock now: florals, roses, monograms, scenic, geometric, dots and city maps. The other prints are sold out and marked as such. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
       "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
       "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
@@ -1433,13 +1433,206 @@
           "swatch": "images/xitoy-tvil-78-print.jpg"
         },
         {
+          "name": "№79 Qora-oq uchburchakli",
+          "name_ru": "№79 Чёрно-белые треугольники",
+          "name_en": "No. 79 Black & white triangles",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-79.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-79-print.jpg"
+        },
+        {
+          "name": "№80 Qora-oq geometrik",
+          "name_ru": "№80 Чёрно-белая геометрия",
+          "name_en": "No. 80 Black & white geometric",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-80.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-80-print.jpg"
+        },
+        {
+          "name": "№81 Qora, jigarrang barglar",
+          "name_ru": "№81 Чёрный, коричневые листья",
+          "name_en": "No. 81 Black, brown leaves",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-81.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-81-print.jpg"
+        },
+        {
+          "name": "№82 To‘q ko‘k, yozuvli hoshiya",
+          "name_ru": "№82 Тёмно-синий, кайма с надписями",
+          "name_en": "No. 82 Navy, lettered border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-82.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-82-print.jpg"
+        },
+        {
+          "name": "№83 To‘q ko‘k-oq romb",
+          "name_ru": "№83 Сине-белые ромбы",
+          "name_en": "No. 83 Navy & white diamonds",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-83.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-83-print.jpg"
+        },
+        {
+          "name": "№84 To‘q ko‘k, oq naqshli",
+          "name_ru": "№84 Тёмно-синий, белый узор",
+          "name_en": "No. 84 Navy, white pattern",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-84.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-84-print.jpg"
+        },
+        {
+          "name": "№85 Kulrang, oq gulli",
+          "name_ru": "№85 Серый, белые цветы",
+          "name_en": "No. 85 Grey, white flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-85.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-85-print.jpg"
+        },
+        {
+          "name": "№86 Kulrang, oq nuqtali",
+          "name_ru": "№86 Серый, белый горошек",
+          "name_en": "No. 86 Grey, white dots",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-86.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-86-print.jpg"
+        },
+        {
+          "name": "№87 Kulrang tangachali",
+          "name_ru": "№87 Серый, чешуйчатый узор",
+          "name_en": "No. 87 Grey scale pattern",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-87.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-87-print.jpg"
+        },
+        {
+          "name": "№88 To‘q ko‘k manzarali",
+          "name_ru": "№88 Тёмно-синий пейзаж",
+          "name_en": "No. 88 Navy scenic",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-88.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-88-print.jpg"
+        },
+        {
+          "name": "№89 Pushti-kulrang, o‘simlik naqshli",
+          "name_ru": "№89 Розово-серый, растительный узор",
+          "name_en": "No. 89 Pink & grey botanical",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-89.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-89-print.jpg"
+        },
+        {
+          "name": "№90 Bej-havorang abstrakt",
+          "name_ru": "№90 Бежево-голубая абстракция",
+          "name_en": "No. 90 Beige & blue abstract",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-90.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-90-print.jpg"
+        },
+        {
+          "name": "№91 Bej, gul chizmasi",
+          "name_ru": "№91 Бежевый, графичные цветы",
+          "name_en": "No. 91 Beige line flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-91.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-91-print.jpg"
+        },
+        {
+          "name": "№92 Oq, havorang gulli",
+          "name_ru": "№92 Белый, голубые цветы",
+          "name_en": "No. 92 White, blue flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-92.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-92-print.jpg"
+        },
+        {
+          "name": "№93 Qora, oq-oltin gulli",
+          "name_ru": "№93 Чёрный, бело-золотые цветы",
+          "name_en": "No. 93 Black, white & gold flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-93.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-93-print.jpg"
+        },
+        {
+          "name": "№94 Oq, zanjir naqshli",
+          "name_ru": "№94 Белый, узор цепи",
+          "name_en": "No. 94 White chain pattern",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-94.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-94-print.jpg"
+        },
+        {
           "name": "№1 Ko‘k-oq",
           "name_ru": "№1 Сине-белый",
           "name_en": "No. 1 Blue & white",
           "hex": "",
-          "sold_out": true,
-          "card_hide": true,
+          "sold_out": false,
+          "card_hide": false,
           "images": [
+            "images/xitoy-tvil-1-v2.jpg",
             "images/xitoy-tvil-1.jpg",
             "images/tvil55-8-1.jpg",
             "images/tvil55-8-2.jpg"
@@ -1451,14 +1644,124 @@
           "name_ru": "№2 Синий с цветами",
           "name_en": "No. 2 Blue floral",
           "hex": "",
-          "sold_out": true,
-          "card_hide": true,
+          "sold_out": false,
+          "card_hide": false,
           "images": [
+            "images/xitoy-tvil-2-v2.jpg",
             "images/xitoy-tvil-2.jpg",
             "images/tvil55-1-1.jpg",
             "images/tvil55-1-2.jpg"
           ],
           "swatch": "images/xitoy-tvil-2-print.jpg"
+        },
+        {
+          "name": "№4 Oq, ko‘k nuqtali",
+          "name_ru": "№4 Белый в голубой горошек",
+          "name_en": "No. 4 White, blue dots",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-4-v2.jpg",
+            "images/xitoy-tvil-4.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-4-print.jpg"
+        },
+        {
+          "name": "№9 Havorang panjara",
+          "name_ru": "№9 Голубая решётка",
+          "name_en": "No. 9 Light blue lattice",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-9-v2.jpg",
+            "images/xitoy-tvil-9.jpg",
+            "images/tvil-qoshimcha-5.jpg",
+            "images/tvil-yoyma-9.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-9-print.jpg"
+        },
+        {
+          "name": "№14 Jigarrang monogramma",
+          "name_ru": "№14 Коричневая монограмма",
+          "name_en": "No. 14 Brown monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-14-v2.jpg",
+            "images/tvil55-6-1.jpg",
+            "images/tvil55-6-2.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-14-v2-print.jpg"
+        },
+        {
+          "name": "№19 Qora-oq chiziqli",
+          "name_ru": "№19 Чёрно-белый в полоску",
+          "name_en": "No. 19 Black & white stripes",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-19-v2.jpg",
+            "images/qora-toplam-2.jpg",
+            "images/tvil-yoyma-6.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-19-v2-print.jpg"
+        },
+        {
+          "name": "№22 Qora, oq gulli",
+          "name_ru": "№22 Чёрный с белыми цветами",
+          "name_en": "No. 22 Black, white florals",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-22-v2.jpg",
+            "images/qora-toplam-5.jpg",
+            "images/tvil-yoyma-2.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-22-v2-print.jpg"
+        },
+        {
+          "name": "№30 Oq-qora manzara",
+          "name_ru": "№30 Чёрно-белый пейзаж",
+          "name_en": "No. 30 Black & white scenic",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-30-v2.jpg",
+            "images/manzara-toplam-1.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-30-v2-print.jpg"
+        },
+        {
+          "name": "№41 Yashil, pushti atirgulli",
+          "name_ru": "№41 Зелёный, розовые розы",
+          "name_en": "No. 41 Green, pink roses",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-41-v2.jpg",
+            "images/gulli-shoyi-1.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-41-v2-print.jpg"
+        },
+        {
+          "name": "№50 Bej, oq gulli",
+          "name_ru": "№50 Бежевый, белые цветы",
+          "name_en": "No. 50 Beige, white florals",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/xitoy-tvil-50-v2.jpg",
+            "images/tvil-yoyma-13.jpg"
+          ],
+          "swatch": "images/xitoy-tvil-50-v2-print.jpg"
         },
         {
           "name": "№3 Ko‘k naqshli",
@@ -1471,18 +1774,6 @@
             "images/xitoy-tvil-3.jpg"
           ],
           "swatch": "images/xitoy-tvil-3-print.jpg"
-        },
-        {
-          "name": "№4 Oq, ko‘k nuqtali",
-          "name_ru": "№4 Белый в голубой горошек",
-          "name_en": "No. 4 White, blue dots",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/xitoy-tvil-4.jpg"
-          ],
-          "swatch": "images/xitoy-tvil-4-print.jpg"
         },
         {
           "name": "№5 Oq-qora gulli",
@@ -1531,20 +1822,6 @@
             "images/xitoy-tvil-8.jpg"
           ],
           "swatch": "images/xitoy-tvil-8-print.jpg"
-        },
-        {
-          "name": "№9 Havorang panjara",
-          "name_ru": "№9 Голубая решётка",
-          "name_en": "No. 9 Light blue lattice",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/xitoy-tvil-9.jpg",
-            "images/tvil-qoshimcha-5.jpg",
-            "images/tvil-yoyma-9.jpg"
-          ],
-          "swatch": "images/xitoy-tvil-9-print.jpg"
         },
         {
           "name": "№10 Ko‘k leopard",
@@ -1599,19 +1876,6 @@
           "swatch": "images/tvil55-5-2.jpg"
         },
         {
-          "name": "№14 Jigarrang monogramma",
-          "name_ru": "№14 Коричневая монограмма",
-          "name_en": "No. 14 Brown monogram",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/tvil55-6-1.jpg",
-            "images/tvil55-6-2.jpg"
-          ],
-          "swatch": "images/tvil55-6-2.jpg"
-        },
-        {
           "name": "№15 Oq, jigarrang gulli",
           "name_ru": "№15 Белый с коричневыми цветами",
           "name_en": "No. 15 Ivory with brown flowers",
@@ -1663,19 +1927,6 @@
           "swatch": "images/qora-toplam-1.jpg"
         },
         {
-          "name": "№19 Qora-oq chiziqli",
-          "name_ru": "№19 Чёрно-белый в полоску",
-          "name_en": "No. 19 Black & white stripes",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/qora-toplam-2.jpg",
-            "images/tvil-yoyma-6.jpg"
-          ],
-          "swatch": "images/tvil-yoyma-6.jpg"
-        },
-        {
           "name": "№20 Qora romb naqshli",
           "name_ru": "№20 Чёрный, ромбы",
           "name_en": "No. 20 Black diamond print",
@@ -1700,19 +1951,6 @@
             "images/tvil-yoyma-7.jpg"
           ],
           "swatch": "images/tvil-yoyma-7.jpg"
-        },
-        {
-          "name": "№22 Qora, oq gulli",
-          "name_ru": "№22 Чёрный с белыми цветами",
-          "name_en": "No. 22 Black, white florals",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/qora-toplam-5.jpg",
-            "images/tvil-yoyma-2.jpg"
-          ],
-          "swatch": "images/tvil-yoyma-2.jpg"
         },
         {
           "name": "№23 Qora, mayda gulli",
@@ -1799,18 +2037,6 @@
             "images/qora-toplam-12.jpg"
           ],
           "swatch": "images/qora-toplam-12.jpg"
-        },
-        {
-          "name": "№30 Oq-qora manzara",
-          "name_ru": "№30 Чёрно-белый пейзаж",
-          "name_en": "No. 30 Black & white scenic",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/manzara-toplam-1.jpg"
-          ],
-          "swatch": "images/manzara-toplam-1.jpg"
         },
         {
           "name": "№31 Yashil manzara",
@@ -1934,18 +2160,6 @@
           "swatch": "images/pastel-toplam-3.jpg"
         },
         {
-          "name": "№41 Yashil, pushti atirgulli",
-          "name_ru": "№41 Зелёный, розовые розы",
-          "name_en": "No. 41 Green, pink roses",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/gulli-shoyi-1.jpg"
-          ],
-          "swatch": "images/gulli-shoyi-1.jpg"
-        },
-        {
           "name": "№42 Qora, oq uchburchakli",
           "name_ru": "№42 Чёрный, белые треугольники",
           "name_en": "No. 42 Black, white triangles",
@@ -2043,18 +2257,6 @@
             "images/tvil-yoyma-12.jpg"
           ],
           "swatch": "images/tvil-yoyma-12.jpg"
-        },
-        {
-          "name": "№50 Bej, oq gulli",
-          "name_ru": "№50 Бежевый, белые цветы",
-          "name_en": "No. 50 Beige, white florals",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/tvil-yoyma-13.jpg"
-          ],
-          "swatch": "images/tvil-yoyma-13.jpg"
         },
         {
           "name": "№51 Oq-kulrang, oltin ramka",
