@@ -13,1143 +13,6 @@
   "link_label_en": "View all",
   "products": [
     {
-      "name": "«MOONIS» abaya",
-      "name_ru": "Абая «MOONIS»",
-      "name_en": "“MOONIS” abaya",
-      "images": [
-        "images/abaya-1-1.jpg",
-        "images/abaya-1-2.jpg",
-        "images/abaya-1-3.jpg",
-        "images/abaya-1-4.jpg",
-        "images/abaya-1-5.jpg",
-        "images/abaya-1-6.jpg",
-        "images/abaya-1-7.jpg"
-      ],
-      "cover": "",
-      "size": "Free size",
-      "size_ru": "Free size",
-      "size_en": "Free size",
-      "material": "Dubay kuprasi, Italiya natural tvili, viskoza gipyur",
-      "material_ru": "Дубайская купра, итальянский натуральный твил, гипюр из вискозы",
-      "material_en": "Dubai cupro, Italian natural twill, viscose guipure",
-      "color": "Qora, oq fonda qora nuqtali",
-      "color_ru": "Чёрный, белый в чёрный горошек",
-      "color_en": "Black, white with black polka dots",
-      "description": "Eksklyuziv dizayn, atigi 3 dona tikilgan: qora Dubay kuprasi, nuqtali Italiya tvili va nafis gipyur bezak.",
-      "description_ru": "Эксклюзивный дизайн, сшито всего 3 штуки: чёрная дубайская купра, итальянский твил в горошек и нежный гипюр.",
-      "description_en": "Exclusive design, only 3 pieces made: black Dubai cupro, polka-dot Italian twill and delicate guipure trim.",
-      "details": "«MOONIS» — Elite Platok'ning mualliflik dizaynidagi eksklyuziv abaya. Atigi 3 dona tikilgan, o‘lchami Free size.\n\nYuqori qismi Dubay kuprasidan tikilgan: mato yumshoq va oqimli, tanaga yoqimli tegadi, havo o‘tkazadi va ajinlanmaydi, chuqur qora rangi uzoq vaqt yo‘qolmaydi. Etagi va yeng uchlari oq fonda qora nuqtali Italiya natural tvilidan: zich, silliq, yengil jilo beradi va shaklini chiroyli ushlaydi.\n\nIkki mato tutashgan joy yuqori sifatli viskozadan ishlangan gipyur bilan bezatilgan — nafis va yengil. Ko‘rinmas tugmalar abayaga ortiqcha detalsiz, toza va elegant ko‘rinish beradi, stoyka yoqa va A-siluet esa qomatni chiroyli ko‘rsatib, harakatni erkin qoldiradi.\n\nBayram, mehmondorchilik, to‘y va kundalik nafis obraz uchun mos.",
-      "details_ru": "Эксклюзивная абая. Сшито всего 3 штуки, размер Free size.\n\n«MOONIS» — абая авторского дизайна Elite Platok.\n\nВерх сшит из дубайской купры: ткань мягкая и струящаяся, приятная к телу, дышит и не мнётся, глубокий чёрный цвет долго не тускнеет. Низ и края рукавов — из итальянского натурального твила, белого в чёрный горошек: плотный, гладкий, с лёгким блеском, красиво держит форму.\n\nСтык тканей украшен гипюром из высококачественной вискозы — изящно и легко. Потайные пуговицы придают абае чистый, элегантный вид без лишних деталей, а воротник-стойка и А-силуэт красиво подчёркивают фигуру и не стесняют движений.\n\nПодходит для праздников, походов в гости, свадеб и элегантного повседневного образа.",
-      "details_en": "An exclusive abaya. Only 3 pieces made, Free size.\n\n“MOONIS” is an Elite Platok designer abaya.\n\nThe upper part is Dubai cupro: soft and fluid, pleasant on the skin, breathable and crease-resistant, with a deep black that stays rich. The hem and cuffs are Italian natural twill, white with black polka dots: dense, smooth, with a light sheen and a beautiful drape.\n\nThe seam between the fabrics is trimmed with high-quality viscose guipure — delicate and light. Hidden buttons give a clean, elegant look, while the stand collar and A-line silhouette flatter the figure and leave room to move.\n\nPerfect for celebrations, visits, weddings and elegant everyday wear.",
-      "care": "30°C da nozik rejimda yoki qo‘lda yuving. Siqmang, ilgichda soyada quriting. Past haroratda teskari tomonidan dazmollang; gipyurni bug‘ bilan tekislang.",
-      "care_ru": "Стирать при 30°C в деликатном режиме или вручную. Не отжимать, сушить на плечиках в тени. Гладить с изнанки при низкой температуре; гипюр отпаривать.",
-      "care_en": "Wash at 30°C on a delicate cycle or by hand. Do not wring; dry on a hanger in the shade. Iron inside out on low; steam the guipure.",
-      "price": "900 000 so‘m",
-      "price_note": "Maxsus narx — qolgan xaridlar uchun",
-      "old_price": "999 000 so‘m",
-      "old_price_ru": "999 000 сум",
-      "old_price_en": "999,000 UZS",
-      "price_number": 900000,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 0,
-      "promo_total": 0,
-      "promo_group": "",
-      "badge": "Maxsus narx",
-      "badge_ru": "Спеццена",
-      "badge_en": "Special price",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "abaya",
-      "variants": [],
-      "price_ru": "900 000 сум",
-      "price_en": "900,000 UZS",
-      "price_note_ru": "Специальная цена — на оставшиеся штуки",
-      "price_note_en": "Special price — for the remaining pieces",
-      "stock": 2,
-      "ig_video": "https://www.instagram.com/elite.abaya.uz/reel/Dfe3c8zuJAA/"
-    },
-    {
-      "name": "Dog‘iston tvil sholk ro‘mollar",
-      "name_ru": "Дагестанские платки из твил-шёлка",
-      "name_en": "Dagestan Twill Silk Scarves",
-      "images": [],
-      "cover": "images/dagiston-tvil-5.jpg",
-      "size": "90 × 90 sm",
-      "size_ru": "90 × 90 см",
-      "size_en": "90 × 90 cm",
-      "material": "Tvil sholk",
-      "material_ru": "Твил-шёлк",
-      "material_en": "Twill silk",
-      "color": "13 xil print: mashhur brendlar uslubi va yevro stil",
-      "color_ru": "13 принтов: в стиле известных брендов и евростиль",
-      "color_en": "13 prints: famous-brand style and Euro style",
-      "description": "Dog‘iston tvil sholk, 90 × 90 sm — 115 000 so‘m, 2 tasi 180 000 so‘m (2026-yil oxirigacha).",
-      "description_ru": "Дагестанский твил-шёлк, 90 × 90 см — 115 000 сум, 2 шт. 180 000 сум (до конца 2026 года).",
-      "description_en": "Dagestan twill silk, 90 × 90 cm — 115,000 UZS, 2 for 180,000 UZS (until the end of 2026).",
-      "details": "Dog‘iston tvil sholk ro‘mollari — zich, silliq va mayin jiloli mato. Boshda chiroyli turadi, shaklini yaxshi ushlaydi va kam g‘ijimlanadi. O‘lchami 90 × 90 sm.\n\nTo‘plamda 13 xil print: mashhur brendlar uslubidagi monogramma va zanjir naqshlari hamda yevro stildagi gulli, geometrik va halqali dizaynlar. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 115 000 so‘m, istalgan 2 tasi — 180 000 so‘m. Maxsus narx 2026-yil oxirigacha amal qiladi (savatda o‘zi hisoblanadi).",
-      "details_ru": "Дагестанские платки из твил-шёлка — плотная гладкая ткань с мягким блеском. Красиво ложится, хорошо держит форму и мало мнётся. Размер 90 × 90 см.\n\nВ коллекции 13 принтов: монограммы и цепи в стиле известных брендов, а также цветочные, геометрические и кольцевые узоры в евростиле. Выберите принт, чтобы посмотреть фото.\n\nЦена 115 000 сум, любые 2 — 180 000 сум. Специальная цена действует до конца 2026 года (считается в корзине автоматически).",
-      "details_en": "Dagestan twill silk scarves — dense, smooth fabric with a soft sheen. Drapes beautifully, holds its shape and barely creases. Size 90 × 90 cm.\n\nThe collection has 13 prints: monograms and chains in the style of famous brands, plus Euro-style florals, geometrics and ring patterns. Pick a print to see its photo.\n\n115,000 UZS each, any 2 for 180,000 UZS. The special price is valid until the end of 2026 (applied in the cart automatically).",
-      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
-      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
-      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
-      "price": "115 000 so‘m",
-      "price_ru": "115 000 сум",
-      "price_en": "115,000 UZS",
-      "price_note": "2 tasi — 180 000 so‘m (2026-yil oxirigacha)",
-      "price_note_ru": "2 шт. — 180 000 сум (до конца 2026 года)",
-      "price_note_en": "2 for 180,000 UZS (until end of 2026)",
-      "old_price": "",
-      "old_price_ru": "",
-      "old_price_en": "",
-      "price_number": 115000,
-      "price_usd": 0,
-      "promo3": true,
-      "promo_qty": 2,
-      "promo_total": 180000,
-      "promo_usd": 0,
-      "promo_group": "dagiston-tvil",
-      "badge": "Maxsus narx",
-      "badge_ru": "Спеццена",
-      "badge_en": "Special price",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "variants": [
-        {
-          "name": "№1 Yashil zanjirli",
-          "name_ru": "№1 Зелёный с цепями",
-          "name_en": "No. 1 Green chain print",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-1.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-1.jpg"
-        },
-        {
-          "name": "№2 Bej-jigarrang",
-          "name_ru": "№2 Бежево-коричневый",
-          "name_en": "No. 2 Beige & brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-2.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-2.jpg"
-        },
-        {
-          "name": "№3 Kulrang-moviy gulli",
-          "name_ru": "№3 Серо-голубой с цветами",
-          "name_en": "No. 3 Grey-blue floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-3.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-3.jpg"
-        },
-        {
-          "name": "№4 Kulrang-bej gulli",
-          "name_ru": "№4 Серо-бежевый с цветами",
-          "name_en": "No. 4 Grey-beige floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-4.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-4.jpg"
-        },
-        {
-          "name": "№5 Oq-moviy yirik gulli",
-          "name_ru": "№5 Бело-голубой с крупными цветами",
-          "name_en": "No. 5 White & blue large floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-5.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-5.jpg"
-        },
-        {
-          "name": "№6 Havorang geometrik",
-          "name_ru": "№6 Голубой геометрический",
-          "name_en": "No. 6 Sky-blue geometric",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-6.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-6.jpg"
-        },
-        {
-          "name": "№7 Ko‘k, gulli hoshiyali",
-          "name_ru": "№7 Синий с цветочной каймой",
-          "name_en": "No. 7 Blue with floral border",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-7.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-7.jpg"
-        },
-        {
-          "name": "№8 Havorang halqali",
-          "name_ru": "№8 Голубой с кольцами",
-          "name_en": "No. 8 Sky-blue rings",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-8.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-8.jpg"
-        },
-        {
-          "name": "№9 To‘q ko‘k halqali",
-          "name_ru": "№9 Тёмно-синий с кольцами",
-          "name_en": "No. 9 Navy rings",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-9.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-9.jpg"
-        },
-        {
-          "name": "№10 Oq-qizil gulli",
-          "name_ru": "№10 Бело-красный с цветами",
-          "name_en": "No. 10 White & red floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-10.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-10.jpg"
-        },
-        {
-          "name": "№11 Jigarrang-shaftoli gulli",
-          "name_ru": "№11 Коричнево-персиковый с цветами",
-          "name_en": "No. 11 Brown & peach floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-11.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-11.jpg"
-        },
-        {
-          "name": "№12 Bej rombli",
-          "name_ru": "№12 Бежевый с ромбами",
-          "name_en": "No. 12 Beige diamonds",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-12.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-12.jpg"
-        },
-        {
-          "name": "№13 Kulrang-jigarrang halqali",
-          "name_ru": "№13 Серо-коричневый с кольцами",
-          "name_en": "No. 13 Taupe rings",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/dagiston-tvil-13.jpg"
-          ],
-          "swatch": "images/dagiston-tvil-13.jpg"
-        }
-      ],
-      "sold_week": 7,
-      "ig_video": "https://www.instagram.com/eliteplatok/reel/DfeiZ4bszzi/"
-    },
-    {
-      "name": "Kapyushonli to‘plamlar",
-      "name_ru": "Комплекты с капюшоном",
-      "name_en": "Hooded Sets",
-      "images": [],
-      "cover": "images/kap-kulrang-2.jpg",
-      "size": "",
-      "size_ru": "",
-      "size_en": "",
-      "material": "",
-      "material_ru": "",
-      "material_en": "",
-      "color": "4 rang: kulrang, bej, lila, zaytun",
-      "color_ru": "4 цвета: серый, бежевый, сиреневый, оливковый",
-      "color_en": "4 colours: grey, beige, lilac, olive",
-      "description": "Kapyushonli keng va qulay to‘plamlar — 4 rang.",
-      "description_ru": "Свободные удобные комплекты с капюшоном — 4 цвета.",
-      "description_en": "Loose, comfortable hooded sets — 4 colours.",
-      "details": "Keng bichimli, yumshoq matodan kapyushonli to‘plamlar: harakatga erkinlik beradi, yopiq va qulay. Kundalik, sport va sayr uchun mos. Ranglar: kulrang, bej, lila va zaytun.",
-      "details_ru": "Свободные комплекты с капюшоном из мягкой ткани: не стесняют движений, закрытые и удобные. Для каждого дня, спорта и прогулок. Цвета: серый, бежевый, сиреневый и оливковый.",
-      "details_en": "Loose-fit hooded sets in soft fabric: free movement, modest and comfortable. For everyday, sport and walks. Colours: grey, beige, lilac and olive.",
-      "care": "",
-      "care_ru": "",
-      "care_en": "",
-      "price": "",
-      "price_ru": "",
-      "price_en": "",
-      "price_note": "",
-      "price_note_ru": "",
-      "price_note_en": "",
-      "old_price": "",
-      "old_price_ru": "",
-      "old_price_en": "",
-      "price_number": 0,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 0,
-      "promo_total": 0,
-      "promo_usd": 0,
-      "promo_group": "",
-      "badge": "",
-      "badge_ru": "",
-      "badge_en": "",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "",
-      "variants": [
-        {
-          "name": "Kulrang",
-          "name_ru": "Серый",
-          "name_en": "Grey",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kap-kulrang-1.jpg",
-            "images/kap-kulrang-2.jpg",
-            "images/kap-kulrang-3.jpg",
-            "images/kap-kulrang-4.jpg",
-            "images/kap-kulrang-5.jpg",
-            "images/kap-kulrang-6.jpg",
-            "images/kap-kulrang-7.jpg"
-          ],
-          "swatch": "images/kap-kulrang-1.jpg"
-        },
-        {
-          "name": "Bej",
-          "name_ru": "Бежевый",
-          "name_en": "Beige",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kap-bej-1.jpg",
-            "images/kap-bej-2.jpg",
-            "images/kap-bej-3.jpg",
-            "images/kap-bej-4.jpg",
-            "images/kap-bej-5.jpg",
-            "images/kap-bej-6.jpg",
-            "images/kap-bej-7.jpg",
-            "images/kap-bej-8.jpg"
-          ],
-          "swatch": "images/kap-bej-1.jpg"
-        },
-        {
-          "name": "Lila",
-          "name_ru": "Сиреневый",
-          "name_en": "Lilac",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kap-lila-1.jpg",
-            "images/kap-lila-2.jpg",
-            "images/kap-lila-3.jpg"
-          ],
-          "swatch": "images/kap-lila-1.jpg"
-        },
-        {
-          "name": "Zaytun",
-          "name_ru": "Оливковый",
-          "name_en": "Olive",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kap-zaytun-1.jpg",
-            "images/kap-zaytun-2.jpg",
-            "images/kap-zaytun-3.jpg",
-            "images/kap-zaytun-4.jpg",
-            "images/kap-zaytun-5.jpg"
-          ],
-          "swatch": "images/kap-zaytun-1.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Yevro sherst ro‘mollar",
-      "name_ru": "Европейские шерстяные платки",
-      "name_en": "European Wool Scarves",
-      "images": [],
-      "cover": "images/yevro-sherst-7-1.jpg",
-      "size": "110 × 110 sm",
-      "size_ru": "110 × 110 см",
-      "size_en": "110 × 110 cm",
-      "material": "Yumshoq, sifatli sherst",
-      "material_ru": "Мягкая качественная шерсть",
-      "material_en": "Soft quality wool",
-      "color": "10 xil ikki tomonlama ro‘mol: bir tomoni bodom yoki gulli print, ikkinchi tomoni monogramma/panjara naqsh",
-      "color_ru": "10 двусторонних платков: одна сторона — пейсли или цветы, другая — монограмма/решётка",
-      "color_en": "10 reversible scarves: paisley or floral on one side, monogram/lattice on the other",
-      "description": "Noodatiy ikki tomonlama yevro sherst, 110 × 110 sm — 250 000 so‘m, 2 tasi 350 000 so‘m.",
-      "description_ru": "Необычная двусторонняя европейская шерсть, 110 × 110 см — 250 000 сум, 2 шт. 350 000 сум.",
-      "description_en": "Unusual reversible European wool, 110 × 110 cm — 250,000 UZS, 2 for 350,000 UZS.",
-      "details": "Mashhur Yevropa brendining lyuks nusxasi. Yevro sherst ro‘mollar — noodatiy, ikki tomonlama ro‘mollar: har birida ikki xil print bor. Bir tomonida bodom (paisley) yoki nafis gulli naqsh, ikkinchi tomonida bosiq monogramma yoki panjara naqsh. Kayfiyatingizga qarab qaysi tomonini kiyishni tanlaysiz — bitta ro‘mol, ikki xil obraz.\n\nYumshoq, sifatli sherst: issiq, tanaga yoqimli, boshda chiroyli turadi, chetlari nozik popukli.\n\nTo‘plamda 10 xil ro‘mol bor: kulrang, lilak, qora, yashil va jigarrang tuslarda. Har birini tanlab, ikkala tomonini ko‘ring — birinchi rasmda bir tomoni, ikkinchisida boshqa tomoni.\n\nO‘lchami 110 × 110 sm. Donasi 250 000 so‘m, istalgan 2 tasi — 350 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
-      "details_ru": "Люкс-копия известного европейского бренда. Европейские шерстяные платки — необычные, двусторонние: в каждом два разных принта. С одной стороны пейсли или изящные цветы, с другой — сдержанная монограмма или решётка. Выбирайте сторону по настроению — один платок, два образа.\n\nМягкая качественная шерсть: тёплая, приятная к телу, красиво держится, края с тонкой бахромой.\n\nВ коллекции 10 платков в серых, сиреневых, чёрных, зелёных и коричневых тонах. Выберите платок, чтобы увидеть обе стороны — на первом фото одна сторона, на втором другая.\n\nРазмер 110 × 110 см. Цена 250 000 сум, любые 2 — 350 000 сум (специальная цена считается в корзине автоматически).",
-      "details_en": "A luxury copy of a famous European brand. European wool scarves — unusual and reversible: every scarf carries two different prints. Paisley or delicate florals on one side, a subtle monogram or lattice on the other. Choose the side to suit your mood — one scarf, two looks.\n\nSoft quality wool: warm and pleasant on the skin, it sits beautifully, with fine fringed edges.\n\n10 scarves in grey, lilac, black, green and brown. Pick one to see both sides — one side in the first photo, the other in the second.\n\nSize 110 × 110 cm. 250,000 UZS each, any 2 for 350,000 UZS (the special price is applied in the cart automatically).",
-      "care": "Qo‘lda, sovuq suvda, jun uchun vosita bilan yuving yoki kimyoviy tozalashga bering. Siqmang, tekis yoyib quriting.",
-      "care_ru": "Ручная стирка в холодной воде средством для шерсти или химчистка. Не отжимать, сушить в расправленном виде.",
-      "care_en": "Hand wash cold with a wool detergent, or dry clean. Do not wring, dry flat.",
-      "price": "125 000 so‘m",
-      "price_ru": "125 000 сум",
-      "price_en": "125,000 UZS",
-      "price_note": "Aksiya bugun soat 24:00 da tugaydi",
-      "price_note_ru": "Акция заканчивается сегодня в 24:00",
-      "price_note_en": "Offer ends today at midnight",
-      "old_price": "250 000 so‘m",
-      "old_price_ru": "250 000 сум",
-      "old_price_en": "250,000 UZS",
-      "price_number": 125000,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 2,
-      "promo_total": 350000,
-      "promo_usd": 0,
-      "promo_group": "yevro-sherst",
-      "badge": "−50%",
-      "badge_ru": "−50%",
-      "badge_en": "−50%",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "variants": [
-        {
-          "name": "Kulrang-pushti bodom / monogramma",
-          "name_ru": "Серо-розовый пейсли / монограмма",
-          "name_en": "Grey & pink paisley / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-1-1.jpg",
-            "images/yevro-sherst-1-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-1-1.jpg"
-        },
-        {
-          "name": "Kulrang bodom / monogramma",
-          "name_ru": "Серый пейсли / монограмма",
-          "name_en": "Grey paisley / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-2-1.jpg",
-            "images/yevro-sherst-2-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-2-1.jpg"
-        },
-        {
-          "name": "Lilak bodom / monogramma",
-          "name_ru": "Сиреневый пейсли / монограмма",
-          "name_en": "Lilac paisley / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-3-1.jpg",
-            "images/yevro-sherst-3-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-3-1.jpg"
-        },
-        {
-          "name": "To‘q kulrang bodom / monogramma",
-          "name_ru": "Тёмно-серый пейсли / монограмма",
-          "name_en": "Dark grey paisley / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-4-1.jpg",
-            "images/yevro-sherst-4-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-4-1.jpg"
-        },
-        {
-          "name": "To‘q kulrang gulli / monogramma",
-          "name_ru": "Тёмно-серый с цветами / монограмма",
-          "name_en": "Dark grey floral / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-5-1.jpg",
-            "images/yevro-sherst-5-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-5-1.jpg"
-        },
-        {
-          "name": "Qora gulli / monogramma",
-          "name_ru": "Чёрный с цветами / монограмма",
-          "name_en": "Black floral / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-6-1.jpg",
-            "images/yevro-sherst-6-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-6-1.jpg"
-        },
-        {
-          "name": "Pushti-lilak gulli / monogramma",
-          "name_ru": "Розово-сиреневый с цветами / монограмма",
-          "name_en": "Pink & lilac floral / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-7-1.jpg",
-            "images/yevro-sherst-7-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-7-1.jpg"
-        },
-        {
-          "name": "Kulrang gulli / monogramma",
-          "name_ru": "Серый с цветами / монограмма",
-          "name_en": "Grey floral / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-8-1.jpg",
-            "images/yevro-sherst-8-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-8-1.jpg"
-        },
-        {
-          "name": "Yashil gulli / monogramma",
-          "name_ru": "Зелёный с цветами / монограмма",
-          "name_en": "Green floral / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-9-1.jpg",
-            "images/yevro-sherst-9-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-9-1.jpg"
-        },
-        {
-          "name": "Jigarrang gulli / monogramma",
-          "name_ru": "Коричневый с цветами / монограмма",
-          "name_en": "Brown floral / monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sherst-10-1.jpg",
-            "images/yevro-sherst-10-2.jpg"
-          ],
-          "swatch": "images/yevro-sherst-10-1.jpg"
-        }
-      ],
-      "ig_video": "https://www.instagram.com/reel/Df9jzqEsYrH/",
-      "flash_to": "2026-11-25T00:00:00+05:00",
-      "flash_orig": {
-        "price": "250 000 so‘m",
-        "price_ru": "250 000 сум",
-        "price_en": "250,000 UZS",
-        "price_note": "Mashhur Yevropa brendining lyuks nusxasi · 2 tasi — 350 000 so‘m",
-        "price_note_ru": "Люкс-копия известного европейского бренда · 2 шт. — 350 000 сум",
-        "price_note_en": "Luxury copy of a famous European brand · 2 for 350,000 UZS",
-        "old_price": "",
-        "old_price_ru": "",
-        "old_price_en": "",
-        "price_number": 250000,
-        "price_usd": 0,
-        "promo3": true,
-        "badge": "Ikki tomonlama",
-        "badge_ru": "Двусторонний",
-        "badge_en": "Reversible"
-      }
-    },
-    {
-      "name": "«1969» printlari",
-      "name_ru": "Принты «1969»",
-      "name_en": "“1969” Prints",
-      "images": [],
-      "cover": "",
-      "size": "110 × 110 sm",
-      "size_ru": "110 × 110 см",
-      "size_en": "110 × 110 cm",
-      "material": "Harir (Misr)",
-      "material_ru": "Харир (Египет)",
-      "material_en": "Harir (Egypt)",
-      "color": "10 xil rang, bodom (paisley) naqshi",
-      "color_ru": "10 расцветок, узор пейсли",
-      "color_en": "10 colourways, paisley print",
-      "description": "1969 Collection — vintage uslubdagi klassika. 110 × 110 sm, bodom naqshi — 230 000 so‘m, 2 tasi 350 000 so‘m.",
-      "description_ru": "1969 Collection — классика в винтажном стиле. 110 × 110 см, узор пейсли — 230 000 сум, 2 шт. 350 000 сум.",
-      "description_en": "1969 Collection — vintage-style classics. 110 × 110 cm, paisley print — 230,000 UZS, 2 for 350,000 UZS.",
-      "details": "1969 COLLECTION — TIMELESS ELEGANCE\n\nModa o‘zgaradi, haqiqiy klassika esa doim qadrlanadi. 1969 ro‘moli — faqat boshga o‘rash uchun aksessuar emas, balki vintage moda, retro estetika va klassik dizayn ruhini ifoda etuvchi uslub.\n\nNomi 1969-yildan olingan: bu yil moda tarixida o‘ziga xos davr bo‘lgan — retro va vintage uslubi ommalashgan, uzun ipak sharflar kiyimning muhim aksessuariga aylangan, gulli, nuqtali va chegarasi bezakli printlar keng qo‘llangan.\n\nKolleksiyada klassik bodom (paisley) naqshi 10 xil rangda: qizil, kulrang-oltin, havorang, bej-sariq, pushti-moviy, bordo, ko‘k va pushti-kulrang, bej-jigarrang va kulrang-zarg‘aldoq. Har bir naqshda alohida xarakter, har bir obrazda o‘zgacha uslub. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nMatosi — harir: mayin va yumshoq, yengil, shamolda yengil harakatlanadi, kam g‘ijimlanadi va tanaga yoqimli tegadi.\n\nDonasi 230 000 so‘m, istalgan 2 tasi — 350 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).\n\nELITE PLATOK — klassikadan ilhomlangan zamonaviy tanlov.",
-      "details_ru": "1969 COLLECTION — TIMELESS ELEGANCE\n\nМода меняется, а настоящая классика ценится всегда. Платок 1969 — не просто аксессуар, а стиль, передающий дух винтажной моды, ретро-эстетики и классического дизайна.\n\nНазвание отсылает к 1969 году — особой эпохе в истории моды: тогда стали популярны ретро и винтаж, длинные шёлковые шарфы превратились в важный аксессуар, широко использовались цветочные, точечные принты и принты с декоративной каймой.\n\nВ коллекции классический узор пейсли в 8 расцветках: красная, серо-золотая, голубая, бежево-жёлтая, розово-голубая, бордовая, синяя и розово-серая, бежево-коричневая и серо-оранжевая. В каждом узоре — свой характер, в каждом образе — особый стиль. Размер 110 × 110 см — удобно завязывать разными способами.\n\nТкань — харир: нежная и мягкая, лёгкая, красиво движется на ветру, мало мнётся и приятна к телу.\n\nЦена 230 000 сум, любые 2 — 350 000 сум (специальная цена считается в корзине автоматически).\n\nELITE PLATOK — современный выбор, вдохновлённый классикой.",
-      "details_en": "1969 COLLECTION — TIMELESS ELEGANCE\n\nFashion changes, true classics are always valued. The 1969 scarf is more than an accessory — it carries the spirit of vintage fashion, retro aesthetics and classic design.\n\nThe name refers to 1969, a distinctive era in fashion history: retro and vintage styles took off, long silk scarves became a key accessory, and floral, dotted and border-trimmed prints were everywhere.\n\nThe collection features a classic paisley print in 10 colourways: red, grey & gold, sky blue, beige & yellow, pink & blue, burgundy, blue and pink & grey. Each print has its own character, each look its own style. 110 × 110 cm — easy to tie in many ways.\n\nFabric — harir: fine and soft, lightweight, flows gently in the breeze, barely creases and feels pleasant on the skin.\n\n230,000 UZS each, any 2 for 350,000 UZS (the special price is applied in the cart automatically).\n\nELITE PLATOK — a modern choice inspired by the classics.",
-      "care": "Qo‘lda, sovuq suvda yuving. Siqmang, soyada quriting. Past haroratda dazmollang.",
-      "care_ru": "Ручная стирка в холодной воде или химчистка. Не отжимать, сушить в тени. Гладить при низкой температуре.",
-      "care_en": "Hand wash in cold water or dry clean. Do not wring, dry in the shade. Iron at low temperature.",
-      "price": "115 000 so‘m",
-      "price_ru": "115 000 сум",
-      "price_en": "115,000 UZS",
-      "price_note": "Aksiya bugun soat 24:00 da tugaydi",
-      "price_note_ru": "Акция заканчивается сегодня в 24:00",
-      "price_note_en": "Offer ends today at midnight",
-      "old_price": "230 000 so‘m",
-      "old_price_ru": "230 000 сум",
-      "old_price_en": "230,000 UZS",
-      "price_number": 115000,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 2,
-      "promo_total": 350000,
-      "promo_usd": 0,
-      "promo_group": "romol-1969",
-      "badge": "−50%",
-      "badge_ru": "−50%",
-      "badge_en": "−50%",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "variants": [
-        {
-          "name": "№1 Qizil",
-          "name_ru": "№1 Красный",
-          "name_en": "No. 1 Red",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-1-v3.jpg",
-            "images/romol-1969-1.jpg",
-            "images/romol-1969-1-2.jpg"
-          ],
-          "swatch": "images/romol-1969-1-v3-print.jpg"
-        },
-        {
-          "name": "№2 Kulrang-oltin",
-          "name_ru": "№2 Серо-золотой",
-          "name_en": "No. 2 Grey & gold",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-2-v3.jpg",
-            "images/romol-1969-2.jpg",
-            "images/romol-1969-2-2.jpg"
-          ],
-          "swatch": "images/romol-1969-2-v3-print.jpg"
-        },
-        {
-          "name": "№3 Havorang",
-          "name_ru": "№3 Голубой",
-          "name_en": "No. 3 Sky blue",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-3-v3.jpg",
-            "images/romol-1969-3.jpg",
-            "images/romol-1969-3-2.jpg"
-          ],
-          "swatch": "images/romol-1969-3-v3-print.jpg"
-        },
-        {
-          "name": "№4 Bej-sariq",
-          "name_ru": "№4 Бежево-жёлтый",
-          "name_en": "No. 4 Beige & yellow",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-4-v3.jpg",
-            "images/romol-1969-4.jpg",
-            "images/romol-1969-4-2.jpg"
-          ],
-          "swatch": "images/romol-1969-4-v3-print.jpg"
-        },
-        {
-          "name": "№5 Pushti-moviy",
-          "name_ru": "№5 Розово-голубой",
-          "name_en": "No. 5 Pink & blue",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-5-v3.jpg",
-            "images/romol-1969-5.jpg",
-            "images/romol-1969-5-2.jpg"
-          ],
-          "swatch": "images/romol-1969-5-v3-print.jpg"
-        },
-        {
-          "name": "№6 Bordo",
-          "name_ru": "№6 Бордовый",
-          "name_en": "No. 6 Burgundy",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-6-v3.jpg",
-            "images/romol-1969-6.jpg",
-            "images/romol-1969-6-2.jpg"
-          ],
-          "swatch": "images/romol-1969-6-v3-print.jpg"
-        },
-        {
-          "name": "№7 Ko‘k",
-          "name_ru": "№7 Синий",
-          "name_en": "No. 7 Blue",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-7-v3.jpg",
-            "images/romol-1969-7.jpg",
-            "images/romol-1969-7-2.jpg"
-          ],
-          "swatch": "images/romol-1969-7-v3-print.jpg"
-        },
-        {
-          "name": "№8 Pushti-kulrang",
-          "name_ru": "№8 Розово-серый",
-          "name_en": "No. 8 Pink & grey",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-8-v3.jpg",
-            "images/romol-1969-8.jpg",
-            "images/romol-1969-8-2.jpg"
-          ],
-          "swatch": "images/romol-1969-8-v3-print.jpg"
-        },
-        {
-          "name": "№9 Bej-jigarrang",
-          "name_ru": "№9 Бежево-коричневый",
-          "name_en": "No. 9 Beige-brown",
-          "hex": "",
-          "sold_out": false,
-          "images": [
-            "images/romol-1969-9-v3.jpg",
-            "images/romol-1969-9-2.jpg"
-          ],
-          "swatch": "images/romol-1969-9-v3-print.jpg"
-        },
-        {
-          "name": "№10 Kulrang-zarg‘aldoq",
-          "name_ru": "№10 Серо-оранжевый",
-          "name_en": "No. 10 Grey & orange",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/romol-1969-10.jpg"
-          ],
-          "swatch": "images/romol-1969-10-print.jpg"
-        }
-      ],
-      "ig_video": "https://www.instagram.com/reel/DfpPzorMPHI/",
-      "flash_to": "2026-11-25T00:00:00+05:00",
-      "flash_orig": {
-        "price": "230 000 so‘m",
-        "price_ru": "230 000 сум",
-        "price_en": "230,000 UZS",
-        "price_note": "2 tasi — 350 000 so‘m",
-        "price_note_ru": "2 шт. — 350 000 сум",
-        "price_note_en": "2 for 350,000 UZS",
-        "old_price": "",
-        "old_price_ru": "",
-        "old_price_en": "",
-        "price_number": 230000,
-        "price_usd": 0,
-        "promo3": true,
-        "badge": "Vintage Luxury",
-        "badge_ru": "Vintage Luxury",
-        "badge_en": "Vintage Luxury"
-      }
-    },
-    {
-      "name": "Yevro natural sholk ro‘mollar",
-      "name_ru": "Европейские платки из натурального шёлка",
-      "name_en": "European Natural Silk Scarves",
-      "images": [],
-      "cover": "images/yevro-sholk-8.jpg",
-      "size": "90 × 90 sm",
-      "size_ru": "90 × 90 см",
-      "size_en": "90 × 90 cm",
-      "material": "Natural sho‘yi · 100% qo‘l ishi",
-      "material_ru": "Натуральный шёлк · 100% ручная работа",
-      "material_en": "Natural silk · 100% handmade",
-      "color": "21 xil 3D print (maxsus buyurtma asosida)",
-      "color_ru": "21 вариант 3D-принта (по специальному заказу)",
-      "color_en": "21 3D-print designs (made to our special order)",
-      "description": "Natural sho‘yi, qo‘l ishi, 3D printlar — 28 $, 2 tasi 40 $.",
-      "description_ru": "Натуральный шёлк, ручная работа, 3D-принты — 28 $, 2 шт. 40 $.",
-      "description_en": "Natural silk, handmade, 3D prints — $28, 2 for $40.",
-      "details": "Yevro natural sholk ro‘mollar — 100% qo‘l ishi, chetlari ham qo‘lda nozik bukilgan. 3D usulida ishlangan printlar do‘konimizning maxsus buyurtmasi asosida ishlab chiqarilgan, shuning uchun bunday naqshlarni boshqa joyda topa olmaysiz. O‘lchami 90 × 90 sm.\n\nTo‘plamda 21 xil naqsh bor: gulli, klassik zanjirli, geometrik va manzarali printlar. Har bir naqshni tanlab, rasmini ko‘ring — ko‘pchiligida yoyilgan holdagi rasmi ham bor.\n\nNarxi 28 $, 2 tasi — 40 $ (maxsus narx). Ma’qul kelmagan ro‘mol qaytarib olinadi yoki almashtirib beriladi — buning uchun shourumimizga keling.",
-      "details_ru": "Европейские платки из натурального шёлка — 100% ручная работа, края подшиты вручную. Принты в технике 3D произведены по специальному заказу нашего магазина, поэтому таких узоров вы не найдёте в другом месте. Размер 90 × 90 см.\n\nВ коллекции 21 узор: цветочные, классические цепи, геометрия и пейзажные принты. Выберите узор, чтобы посмотреть фото — у большинства есть и фото в развёрнутом виде.\n\nЦена 28 $, 2 платка — 40 $ (специальная цена). Если платок не подошёл, мы примем его обратно или обменяем — для этого приходите в наш шоурум.",
-      "details_en": "European natural silk scarves — 100% handmade, with hand-rolled edges. The 3D prints are produced to our shop’s special order, so you won’t find these patterns anywhere else. Size 90 × 90 cm.\n\nThe collection has 21 patterns: florals, classic chains, geometric and scenic prints. Pick a pattern to see its photo — most also have a laid-out shot.\n\nPrice $28, any 2 for $40 (special price). If a scarf doesn’t suit you, we’ll take it back or exchange it — just visit our showroom.",
-      "care": "Faqat qo‘lda, sovuq suvda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
-      "care_ru": "Только ручная стирка в холодной воде или химчистка. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
-      "care_en": "Hand wash in cold water only, or dry clean. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
-      "price": "14 $",
-      "price_ru": "14 $",
-      "price_en": "$14",
-      "price_note": "Aksiya bugun soat 24:00 da tugaydi",
-      "price_note_ru": "Акция заканчивается сегодня в 24:00",
-      "price_note_en": "Offer ends today at midnight",
-      "old_price": "28 $",
-      "old_price_ru": "28 $",
-      "old_price_en": "$28",
-      "price_number": 0,
-      "price_usd": 14.0,
-      "promo3": false,
-      "promo_qty": 2,
-      "promo_total": 0,
-      "promo_usd": 40,
-      "promo_group": "yevro-sholk",
-      "badge": "−50%",
-      "badge_ru": "−50%",
-      "badge_en": "−50%",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "variants": [
-        {
-          "name": "№1",
-          "name_ru": "№1",
-          "name_en": "No. 1",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-1.jpg"
-          ],
-          "swatch": "images/yevro-sholk-1.jpg"
-        },
-        {
-          "name": "№2",
-          "name_ru": "№2",
-          "name_en": "No. 2",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-2.jpg",
-            "images/yevro-sholk-2-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-2.jpg"
-        },
-        {
-          "name": "№3",
-          "name_ru": "№3",
-          "name_en": "No. 3",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-3.jpg",
-            "images/yevro-sholk-3-2.jpg",
-            "images/yevro-sholk-3-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-3.jpg"
-        },
-        {
-          "name": "№4",
-          "name_ru": "№4",
-          "name_en": "No. 4",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-4.jpg"
-          ],
-          "swatch": "images/yevro-sholk-4.jpg"
-        },
-        {
-          "name": "№5",
-          "name_ru": "№5",
-          "name_en": "No. 5",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-5.jpg",
-            "images/yevro-sholk-5-2.jpg",
-            "images/yevro-sholk-5-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-5.jpg"
-        },
-        {
-          "name": "№6",
-          "name_ru": "№6",
-          "name_en": "No. 6",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-6.jpg",
-            "images/yevro-sholk-6-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-6.jpg"
-        },
-        {
-          "name": "№7",
-          "name_ru": "№7",
-          "name_en": "No. 7",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-7.jpg",
-            "images/yevro-sholk-7-2.jpg",
-            "images/yevro-sholk-7-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-7.jpg"
-        },
-        {
-          "name": "№8",
-          "name_ru": "№8",
-          "name_en": "No. 8",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-8.jpg",
-            "images/yevro-sholk-8-2.jpg",
-            "images/yevro-sholk-8-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-8.jpg"
-        },
-        {
-          "name": "№9",
-          "name_ru": "№9",
-          "name_en": "No. 9",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-9.jpg"
-          ],
-          "swatch": "images/yevro-sholk-9.jpg"
-        },
-        {
-          "name": "№10",
-          "name_ru": "№10",
-          "name_en": "No. 10",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-10.jpg",
-            "images/yevro-sholk-10-2.jpg",
-            "images/yevro-sholk-10-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-10.jpg"
-        },
-        {
-          "name": "№11",
-          "name_ru": "№11",
-          "name_en": "No. 11",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-11.jpg"
-          ],
-          "swatch": "images/yevro-sholk-11.jpg"
-        },
-        {
-          "name": "№12",
-          "name_ru": "№12",
-          "name_en": "No. 12",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-12.jpg",
-            "images/yevro-sholk-12-2.jpg",
-            "images/yevro-sholk-12-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-12.jpg"
-        },
-        {
-          "name": "№13",
-          "name_ru": "№13",
-          "name_en": "No. 13",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-13.jpg"
-          ],
-          "swatch": "images/yevro-sholk-13.jpg"
-        },
-        {
-          "name": "№14",
-          "name_ru": "№14",
-          "name_en": "No. 14",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-14.jpg",
-            "images/yevro-sholk-14-2.jpg",
-            "images/yevro-sholk-14-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-14.jpg"
-        },
-        {
-          "name": "№15",
-          "name_ru": "№15",
-          "name_en": "No. 15",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-15.jpg",
-            "images/yevro-sholk-15-2.jpg",
-            "images/yevro-sholk-15-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-15.jpg"
-        },
-        {
-          "name": "№16",
-          "name_ru": "№16",
-          "name_en": "No. 16",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-16.jpg",
-            "images/yevro-sholk-16-2.jpg",
-            "images/yevro-sholk-16-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-16.jpg"
-        },
-        {
-          "name": "№17",
-          "name_ru": "№17",
-          "name_en": "No. 17",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-17.jpg",
-            "images/yevro-sholk-17-2.jpg",
-            "images/yevro-sholk-17-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-17.jpg"
-        },
-        {
-          "name": "№18",
-          "name_ru": "№18",
-          "name_en": "No. 18",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-18.jpg",
-            "images/yevro-sholk-18-2.jpg",
-            "images/yevro-sholk-18-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-18.jpg"
-        },
-        {
-          "name": "№19",
-          "name_ru": "№19",
-          "name_en": "No. 19",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-19.jpg",
-            "images/yevro-sholk-19-2.jpg",
-            "images/yevro-sholk-19-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-19.jpg"
-        },
-        {
-          "name": "№20",
-          "name_ru": "№20",
-          "name_en": "No. 20",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-20.jpg",
-            "images/yevro-sholk-20-2.jpg",
-            "images/yevro-sholk-20-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-20.jpg"
-        },
-        {
-          "name": "№21",
-          "name_ru": "№21",
-          "name_en": "No. 21",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/yevro-sholk-21.jpg",
-            "images/yevro-sholk-21-2.jpg",
-            "images/yevro-sholk-21-3.jpg"
-          ],
-          "swatch": "images/yevro-sholk-21.jpg"
-        }
-      ],
-      "flash_to": "2026-11-25T00:00:00+05:00",
-      "flash_orig": {
-        "price": "28 $",
-        "price_ru": "28 $",
-        "price_en": "$28",
-        "price_note": "2 tasi — 40 $ · Qaytarish yoki almashtirish mumkin",
-        "price_note_ru": "2 шт. — 40 $ · Возврат или обмен",
-        "price_note_en": "2 for $40 · Returns or exchange",
-        "old_price": "",
-        "old_price_ru": "",
-        "old_price_en": "",
-        "price_number": 0,
-        "price_usd": 28,
-        "promo3": true,
-        "badge": "",
-        "badge_ru": "",
-        "badge_en": ""
-      }
-    },
-    {
       "name": "Xitoy tvil sholk ro‘mollar",
       "name_ru": "Китайские платки из твил-шёлка",
       "name_en": "Chinese Twill Silk Scarves",
@@ -2364,6 +1227,1781 @@
       "ig_video": "https://www.instagram.com/reel/DfwXWvWMxBz/"
     },
     {
+      "name": "Paxta ipak ro‘mollar",
+      "name_ru": "Платки из хлопкового шёлка",
+      "name_en": "Cotton Silk Scarves",
+      "images": [],
+      "cover": "",
+      "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
+      "material": "Paxta ipak",
+      "material_ru": "Хлопковый шёлк",
+      "material_en": "Cotton silk",
+      "color": "Bodom (paisley), kalligrafiya va gulli naqshlar — turli ranglarda",
+      "color_ru": "Пейсли, каллиграфия и цветочные узоры — разные расцветки",
+      "color_en": "Paisley, calligraphy and floral prints in various colours",
+      "description": "Paxta ipak ro‘mollar, 110 × 110 sm — 75 000 so‘m, 3 tasi 100 000 so‘m.",
+      "description_ru": "Платки из хлопкового шёлка, 110 × 110 см — 75 000 сум, 3 шт. 100 000 сум.",
+      "description_en": "Cotton silk scarves, 110 × 110 cm — 75,000 UZS, 3 for 100,000 UZS.",
+      "details": "Paxta ipak ro‘mollar — mayin, yengil va tanaga yoqimli mato, boshda chiroyli turadi. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nKolleksiyada bodom (paisley), kalligrafiya va gulli naqshlar turli ranglarda. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Платки из хлопкового шёлка — нежная, лёгкая и приятная к телу ткань, красиво смотрится на голове. Размер 110 × 110 см — удобно завязывать разными способами.\n\nВ коллекции пейсли, каллиграфия и цветочные узоры в разных расцветках. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Cotton silk scarves — soft, light fabric that feels pleasant on the skin and looks beautiful worn. 110 × 110 cm — easy to tie in different ways.\n\nThe collection has paisley, calligraphy and floral prints in various colours. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
+      "price": "75 000 so‘m",
+      "price_note": "3 tasi — 100 000 so‘m",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 75000,
+      "price_usd": 0,
+      "promo3": true,
+      "promo_qty": 3,
+      "promo_total": 100000,
+      "promo_group": "paxta-ipak",
+      "badge": "3 tasi 100 000",
+      "badge_ru": "3 за 100 000",
+      "badge_en": "3 for 100,000",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "Jigarrang-pushti bodom",
+          "name_ru": "Коричнево-розовый пейсли",
+          "name_en": "Brown & pink paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/paxta-ipak-1.jpg"
+          ],
+          "swatch": "images/paxta-ipak-1-print.jpg"
+        },
+        {
+          "name": "Binafsha-lavanda bodom",
+          "name_ru": "Фиолетово-лавандовый пейсли",
+          "name_en": "Purple & lavender paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/paxta-ipak-2.jpg"
+          ],
+          "swatch": "images/paxta-ipak-2-print.jpg"
+        },
+        {
+          "name": "Pushti",
+          "name_ru": "Розовый",
+          "name_en": "Pink",
+          "hex": "#c49a96",
+          "images": [
+            "images/dubay-ipak-1.jpg",
+            "images/dubay-ipak-mato-1.jpg",
+            "images/bodom-1.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "To‘q zaytun",
+          "name_ru": "Тёмно-оливковый",
+          "name_en": "Dark olive",
+          "hex": "#4f4c3c",
+          "images": [
+            "images/dubay-ipak-2.jpg",
+            "images/dubay-ipak-mato-2.jpg",
+            "images/bodom-2.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "Sutrang",
+          "name_ru": "Молочный",
+          "name_en": "Milky white",
+          "hex": "#d8c9b6",
+          "images": [
+            "images/dubay-ipak-3.jpg",
+            "images/dubay-ipak-mato-3.jpg",
+            "images/bodom-4.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "Zaytun-bej",
+          "name_ru": "Оливково-бежевый",
+          "name_en": "Olive beige",
+          "hex": "#8f8466",
+          "images": [
+            "images/dubay-ipak-4.jpg",
+            "images/dubay-ipak-mato-4.jpg",
+            "images/bodom-5.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "Qizil-jigarrang",
+          "name_ru": "Красно-коричневый",
+          "name_en": "Reddish brown",
+          "hex": "#7a5546",
+          "images": [
+            "images/dubay-ipak-5.jpg",
+            "images/dubay-ipak-mato-5.jpg",
+            "images/bodom-6.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "Qizil",
+          "name_ru": "Красный",
+          "name_en": "Red",
+          "hex": "#a3283a",
+          "images": [
+            "images/dubay-ipak-6.jpg",
+            "images/dubay-ipak-mato-6.jpg",
+            "images/bodom-7.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "Fistashka",
+          "name_ru": "Фисташковый",
+          "name_en": "Pistachio",
+          "hex": "#a39a80",
+          "images": [
+            "images/dubay-ipak-7.jpg",
+            "images/dubay-ipak-mato-7.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "Bordo",
+          "name_ru": "Бордовый",
+          "name_en": "Burgundy",
+          "hex": "#6a2229",
+          "images": [
+            "images/dubay-ipak-8.jpg",
+            "images/dubay-ipak-mato-8.jpg",
+            "images/bodom-10.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "Yashil",
+          "name_ru": "Зелёный",
+          "name_en": "Green",
+          "hex": "#2f4a40",
+          "images": [
+            "images/dubay-ipak-9.jpg",
+            "images/dubay-ipak-mato-9.jpg",
+            "images/bodom-9.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "Zaytun-yashil",
+          "name_ru": "Оливково-зелёный",
+          "name_en": "Olive green",
+          "hex": "#5c5a34",
+          "images": [
+            "images/dubay-ipak-10.jpg",
+            "images/dubay-ipak-mato-10.jpg",
+            "images/bodom-12.jpg"
+          ],
+          "sold_out": false,
+          "card_hide": false
+        },
+        {
+          "name": "To‘q qizil",
+          "name_ru": "Тёмно-красный",
+          "name_en": "Deep red",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-3.jpg"
+          ],
+          "swatch": "images/bodom-3.jpg"
+        },
+        {
+          "name": "Qora-jigarrang",
+          "name_ru": "Чёрно-коричневый",
+          "name_en": "Black & brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-8.jpg"
+          ],
+          "swatch": "images/bodom-8.jpg"
+        },
+        {
+          "name": "Binafsha",
+          "name_ru": "Фиолетовый",
+          "name_en": "Purple",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-11.jpg"
+          ],
+          "swatch": "images/bodom-11.jpg"
+        },
+        {
+          "name": "Kalligrafiya — kulrang",
+          "name_ru": "Каллиграфия — серый",
+          "name_en": "Calligraphy — grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-1.jpg"
+          ],
+          "swatch": "images/kalligrafiya-1.jpg"
+        },
+        {
+          "name": "Kalligrafiya — bordo",
+          "name_ru": "Каллиграфия — бордовый",
+          "name_en": "Calligraphy — burgundy",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-2.jpg"
+          ],
+          "swatch": "images/kalligrafiya-2.jpg"
+        },
+        {
+          "name": "Kalligrafiya — oltin-jigarrang",
+          "name_ru": "Каллиграфия — золотисто-коричневый",
+          "name_en": "Calligraphy — golden brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-3.jpg"
+          ],
+          "swatch": "images/kalligrafiya-3.jpg"
+        },
+        {
+          "name": "Kalligrafiya — binafsha gulli",
+          "name_ru": "Каллиграфия — сиреневый с цветами",
+          "name_en": "Calligraphy — lilac floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-4.jpg"
+          ],
+          "swatch": "images/kalligrafiya-4.jpg"
+        },
+        {
+          "name": "Kalligrafiya — ko‘k gulli",
+          "name_ru": "Каллиграфия — синий с цветами",
+          "name_en": "Calligraphy — blue floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-5.jpg"
+          ],
+          "swatch": "images/kalligrafiya-5.jpg"
+        },
+        {
+          "name": "Kalligrafiya — qora, qizil atirgulli",
+          "name_ru": "Каллиграфия — чёрный с красными розами",
+          "name_en": "Calligraphy — black with red roses",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kalligrafiya-6.jpg"
+          ],
+          "swatch": "images/kalligrafiya-6.jpg"
+        },
+        {
+          "name": "Gulli — Jigarrang",
+          "name_ru": "Цветочный — Коричневый",
+          "name_en": "Floral — Brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-1.jpg",
+            "images/gulli-toplam-1-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-1-2.jpg"
+        },
+        {
+          "name": "Gulli — Ko‘k",
+          "name_ru": "Цветочный — Синий",
+          "name_en": "Floral — Blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-2.jpg",
+            "images/gulli-toplam-2-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-2-2.jpg"
+        },
+        {
+          "name": "Gulli — Kulrang",
+          "name_ru": "Цветочный — Серый",
+          "name_en": "Floral — Grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-3.jpg",
+            "images/gulli-toplam-3-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-3-2.jpg"
+        },
+        {
+          "name": "Gulli — Zaytun",
+          "name_ru": "Цветочный — Оливковый",
+          "name_en": "Floral — Olive",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-4.jpg",
+            "images/gulli-toplam-4-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-4-2.jpg"
+        },
+        {
+          "name": "Gulli — Oltin-jigarrang",
+          "name_ru": "Цветочный — Золотисто-коричневый",
+          "name_en": "Floral — Golden brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/gulli-toplam-5.jpg",
+            "images/gulli-toplam-5-2.jpg"
+          ],
+          "swatch": "images/gulli-toplam-5-2.jpg"
+        },
+        {
+          "name": "Arab naqshli",
+          "name_ru": "Арабский узор",
+          "name_en": "Arabic pattern",
+          "hex": "",
+          "sold_out": true,
+          "card_hide": true,
+          "images": [
+            "images/arab-naqsh-1.jpg",
+            "images/arab-naqsh-2.jpg",
+            "images/arab-naqsh-3.jpg"
+          ],
+          "swatch": "images/arab-naqsh-1.jpg"
+        }
+      ],
+      "price_ru": "75 000 сум",
+      "price_en": "75,000 UZS",
+      "price_note_ru": "3 шт. — 100 000 сум",
+      "price_note_en": "3 for 100,000 UZS",
+      "sold_week": 7
+    },
+    {
+      "name": "«Polo Lux» havorang to‘plam",
+      "name_ru": "Голубая коллекция «Polo Lux»",
+      "name_en": "«Polo Lux» Sky-Blue Collection",
+      "images": [],
+      "cover": "",
+      "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
+      "material": "Italyan premium sholk",
+      "material_ru": "Итальянский премиум-шёлк",
+      "material_en": "Italian premium silk",
+      "color": "15 xil print, havorang va moviy tuslarda",
+      "color_ru": "15 принтов в голубых тонах",
+      "color_en": "15 prints in sky-blue tones",
+      "description": "Yevropaning mashhur kolleksiyalaridan — «Polo Lux» kolleksiyasi. Havorang va moviy tuslarda 15 xil print, 90 × 90 sm — 155 000 so‘m.",
+      "description_ru": "Из известных европейских коллекций — коллекция «Polo Lux». 15 принтов в голубых тонах, 90 × 90 см — 155 000 сум.",
+      "description_en": "From Europe’s famous collections — the «Polo Lux» collection. 15 prints in sky-blue tones, 90 × 90 cm — 155,000 UZS.",
+      "details": "«Polo Lux» — Yevropaning mashhur kolleksiyalaridan. Nafis havorang va moviy tuslardagi ro‘mollar: gulli, ornamentli, monogrammali, geometrik va manzarali printlar. O‘lchami 90 × 90 sm — boshga ham, bo‘yinga ham qulay bog‘lanadi.\n\nChetlari qo‘lda bukilib tikilgan (ruchnoy podgib): hoshiya nozik va tekis chiqadi, ro‘mol qimmatbaho ko‘rinadi. Barcha 15 xil print hozir sotuvda — har birini tanlab, boshdagi ko‘rinishini ko‘ring.\n\nNarxi — 155 000 so‘m.",
+      "details_ru": "«Polo Lux» — из известных европейских коллекций. Нежные платки в голубых тонах: цветы, орнаменты, монограммы, геометрия и пейзажи. Размер 90 × 90 см — удобно повязывать и на голову, и на шею.\n\nКрая подогнуты и подшиты вручную: кромка тонкая и ровная, платок выглядит дорого. Все 15 принтов в наличии — выберите принт, чтобы посмотреть, как он смотрится на голове.\n\nЦена — 155 000 сум.",
+      "details_en": "«Polo Lux» — from Europe’s famous collections. Delicate scarves in sky-blue tones: florals, ornaments, monograms, geometrics and scenic prints. 90 × 90 cm — easy to tie on the head or around the neck.\n\nThe hems are rolled and stitched by hand, giving a fine, even edge and a luxurious look. All 15 prints are in stock — pick one to see how it looks worn.\n\nPrice — 155,000 UZS.",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
+      "price": "77 500 so‘m",
+      "price_ru": "77 500 сум",
+      "price_en": "77,500 UZS",
+      "price_note": "Aksiya bugun soat 24:00 da tugaydi",
+      "price_note_ru": "Акция заканчивается сегодня в 24:00",
+      "price_note_en": "Offer ends today at midnight",
+      "old_price": "155 000 so‘m",
+      "old_price_ru": "155 000 сум",
+      "old_price_en": "155,000 UZS",
+      "price_number": 77500,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_usd": 0,
+      "promo_group": "",
+      "badge": "−50%",
+      "badge_ru": "−50%",
+      "badge_en": "−50%",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1 Bej-havorang, kamar naqshli",
+          "name_ru": "№1 Бежево-голубой, узор ремни",
+          "name_en": "No. 1 Beige & blue, belt print",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-1.jpg"
+          ],
+          "swatch": "images/polo-lux-1-print.jpg"
+        },
+        {
+          "name": "№2 Oq-havorang, ornamentli",
+          "name_ru": "№2 Бело-голубой орнамент",
+          "name_en": "No. 2 White & blue ornament",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-2.jpg"
+          ],
+          "swatch": "images/polo-lux-2-print.jpg"
+        },
+        {
+          "name": "№3 Havorang, mayda bodomli",
+          "name_ru": "№3 Голубой, мелкий пейсли",
+          "name_en": "No. 3 Sky blue, small paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-3.jpg"
+          ],
+          "swatch": "images/polo-lux-3-print.jpg"
+        },
+        {
+          "name": "№4 Havorang, mayda gulli",
+          "name_ru": "№4 Голубой, мелкие цветы",
+          "name_en": "No. 4 Sky blue, small flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-4.jpg"
+          ],
+          "swatch": "images/polo-lux-4-print.jpg"
+        },
+        {
+          "name": "№5 Havorang-pushti, manzarali",
+          "name_ru": "№5 Голубо-розовый, пейзаж",
+          "name_en": "No. 5 Blue & pink, scenic",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-5.jpg"
+          ],
+          "swatch": "images/polo-lux-5-print.jpg"
+        },
+        {
+          "name": "№6 Oq-havorang monogramma",
+          "name_ru": "№6 Бело-голубая монограмма",
+          "name_en": "No. 6 White & blue monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-6.jpg"
+          ],
+          "swatch": "images/polo-lux-6-print.jpg"
+        },
+        {
+          "name": "№7 Havorang-bej, hoshiyali",
+          "name_ru": "№7 Голубо-бежевый с каймой",
+          "name_en": "No. 7 Blue & beige, bordered",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-7.jpg"
+          ],
+          "swatch": "images/polo-lux-7-print.jpg"
+        },
+        {
+          "name": "№8 Oq-kulrang monogramma",
+          "name_ru": "№8 Бело-серая монограмма",
+          "name_en": "No. 8 White & grey monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-8.jpg"
+          ],
+          "swatch": "images/polo-lux-8-print.jpg"
+        },
+        {
+          "name": "№9 Havorang atirgulli",
+          "name_ru": "№9 Голубые розы",
+          "name_en": "No. 9 Sky blue roses",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-9.jpg"
+          ],
+          "swatch": "images/polo-lux-9-print.jpg"
+        },
+        {
+          "name": "№10 Yashil-havorang, ornamentli",
+          "name_ru": "№10 Зелёно-голубой орнамент",
+          "name_en": "No. 10 Green & blue ornament",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-10.jpg"
+          ],
+          "swatch": "images/polo-lux-10-print.jpg"
+        },
+        {
+          "name": "№11 Ko‘k-havorang geometrik",
+          "name_ru": "№11 Сине-голубая геометрия",
+          "name_en": "No. 11 Blue geometric",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-11.jpg"
+          ],
+          "swatch": "images/polo-lux-11-print.jpg"
+        },
+        {
+          "name": "№12 Havorang-sariq naqshli",
+          "name_ru": "№12 Голубо-жёлтый узор",
+          "name_en": "No. 12 Blue & yellow pattern",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-12.jpg"
+          ],
+          "swatch": "images/polo-lux-12-print.jpg"
+        },
+        {
+          "name": "№13 Lavanda rang naqshli",
+          "name_ru": "№13 Лавандовый узор",
+          "name_en": "No. 13 Lavender pattern",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-13.jpg"
+          ],
+          "swatch": "images/polo-lux-13-print.jpg"
+        },
+        {
+          "name": "№14 Ko‘k-oq, katta gulli",
+          "name_ru": "№14 Сине-белый, крупный цветок",
+          "name_en": "No. 14 Blue & white, large flower",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-14.jpg"
+          ],
+          "swatch": "images/polo-lux-14-print.jpg"
+        },
+        {
+          "name": "№15 Ko‘k-oq abstrakt",
+          "name_ru": "№15 Сине-белая абстракция",
+          "name_en": "No. 15 Blue & white abstract",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/polo-lux-15.jpg"
+          ],
+          "swatch": "images/polo-lux-15-print.jpg"
+        }
+      ],
+      "flash_to": "2026-11-25T00:00:00+05:00",
+      "flash_orig": {
+        "price": "155 000 so‘m",
+        "price_ru": "155 000 сум",
+        "price_en": "155,000 UZS",
+        "price_note": "",
+        "price_note_ru": "",
+        "price_note_en": "",
+        "old_price": "",
+        "old_price_ru": "",
+        "old_price_en": "",
+        "price_number": 155000,
+        "price_usd": 0,
+        "promo3": false,
+        "badge": "",
+        "badge_ru": "",
+        "badge_en": ""
+      }
+    },
+    {
+      "name": "«MOONIS» abaya",
+      "name_ru": "Абая «MOONIS»",
+      "name_en": "“MOONIS” abaya",
+      "images": [
+        "images/abaya-1-1.jpg",
+        "images/abaya-1-2.jpg",
+        "images/abaya-1-3.jpg",
+        "images/abaya-1-4.jpg",
+        "images/abaya-1-5.jpg",
+        "images/abaya-1-6.jpg",
+        "images/abaya-1-7.jpg"
+      ],
+      "cover": "",
+      "size": "Free size",
+      "size_ru": "Free size",
+      "size_en": "Free size",
+      "material": "Dubay kuprasi, Italiya natural tvili, viskoza gipyur",
+      "material_ru": "Дубайская купра, итальянский натуральный твил, гипюр из вискозы",
+      "material_en": "Dubai cupro, Italian natural twill, viscose guipure",
+      "color": "Qora, oq fonda qora nuqtali",
+      "color_ru": "Чёрный, белый в чёрный горошек",
+      "color_en": "Black, white with black polka dots",
+      "description": "Eksklyuziv dizayn, atigi 3 dona tikilgan: qora Dubay kuprasi, nuqtali Italiya tvili va nafis gipyur bezak.",
+      "description_ru": "Эксклюзивный дизайн, сшито всего 3 штуки: чёрная дубайская купра, итальянский твил в горошек и нежный гипюр.",
+      "description_en": "Exclusive design, only 3 pieces made: black Dubai cupro, polka-dot Italian twill and delicate guipure trim.",
+      "details": "«MOONIS» — Elite Platok'ning mualliflik dizaynidagi eksklyuziv abaya. Atigi 3 dona tikilgan, o‘lchami Free size.\n\nYuqori qismi Dubay kuprasidan tikilgan: mato yumshoq va oqimli, tanaga yoqimli tegadi, havo o‘tkazadi va ajinlanmaydi, chuqur qora rangi uzoq vaqt yo‘qolmaydi. Etagi va yeng uchlari oq fonda qora nuqtali Italiya natural tvilidan: zich, silliq, yengil jilo beradi va shaklini chiroyli ushlaydi.\n\nIkki mato tutashgan joy yuqori sifatli viskozadan ishlangan gipyur bilan bezatilgan — nafis va yengil. Ko‘rinmas tugmalar abayaga ortiqcha detalsiz, toza va elegant ko‘rinish beradi, stoyka yoqa va A-siluet esa qomatni chiroyli ko‘rsatib, harakatni erkin qoldiradi.\n\nBayram, mehmondorchilik, to‘y va kundalik nafis obraz uchun mos.",
+      "details_ru": "Эксклюзивная абая. Сшито всего 3 штуки, размер Free size.\n\n«MOONIS» — абая авторского дизайна Elite Platok.\n\nВерх сшит из дубайской купры: ткань мягкая и струящаяся, приятная к телу, дышит и не мнётся, глубокий чёрный цвет долго не тускнеет. Низ и края рукавов — из итальянского натурального твила, белого в чёрный горошек: плотный, гладкий, с лёгким блеском, красиво держит форму.\n\nСтык тканей украшен гипюром из высококачественной вискозы — изящно и легко. Потайные пуговицы придают абае чистый, элегантный вид без лишних деталей, а воротник-стойка и А-силуэт красиво подчёркивают фигуру и не стесняют движений.\n\nПодходит для праздников, походов в гости, свадеб и элегантного повседневного образа.",
+      "details_en": "An exclusive abaya. Only 3 pieces made, Free size.\n\n“MOONIS” is an Elite Platok designer abaya.\n\nThe upper part is Dubai cupro: soft and fluid, pleasant on the skin, breathable and crease-resistant, with a deep black that stays rich. The hem and cuffs are Italian natural twill, white with black polka dots: dense, smooth, with a light sheen and a beautiful drape.\n\nThe seam between the fabrics is trimmed with high-quality viscose guipure — delicate and light. Hidden buttons give a clean, elegant look, while the stand collar and A-line silhouette flatter the figure and leave room to move.\n\nPerfect for celebrations, visits, weddings and elegant everyday wear.",
+      "care": "30°C da nozik rejimda yoki qo‘lda yuving. Siqmang, ilgichda soyada quriting. Past haroratda teskari tomonidan dazmollang; gipyurni bug‘ bilan tekislang.",
+      "care_ru": "Стирать при 30°C в деликатном режиме или вручную. Не отжимать, сушить на плечиках в тени. Гладить с изнанки при низкой температуре; гипюр отпаривать.",
+      "care_en": "Wash at 30°C on a delicate cycle or by hand. Do not wring; dry on a hanger in the shade. Iron inside out on low; steam the guipure.",
+      "price": "900 000 so‘m",
+      "price_note": "Maxsus narx — qolgan xaridlar uchun",
+      "old_price": "999 000 so‘m",
+      "old_price_ru": "999 000 сум",
+      "old_price_en": "999,000 UZS",
+      "price_number": 900000,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_group": "",
+      "badge": "Maxsus narx",
+      "badge_ru": "Спеццена",
+      "badge_en": "Special price",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "abaya",
+      "variants": [],
+      "price_ru": "900 000 сум",
+      "price_en": "900,000 UZS",
+      "price_note_ru": "Специальная цена — на оставшиеся штуки",
+      "price_note_en": "Special price — for the remaining pieces",
+      "stock": 2,
+      "ig_video": "https://www.instagram.com/elite.abaya.uz/reel/Dfe3c8zuJAA/"
+    },
+    {
+      "name": "Dog‘iston tvil sholk ro‘mollar",
+      "name_ru": "Дагестанские платки из твил-шёлка",
+      "name_en": "Dagestan Twill Silk Scarves",
+      "images": [],
+      "cover": "images/dagiston-tvil-5.jpg",
+      "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
+      "material": "Tvil sholk",
+      "material_ru": "Твил-шёлк",
+      "material_en": "Twill silk",
+      "color": "13 xil print: mashhur brendlar uslubi va yevro stil",
+      "color_ru": "13 принтов: в стиле известных брендов и евростиль",
+      "color_en": "13 prints: famous-brand style and Euro style",
+      "description": "Dog‘iston tvil sholk, 90 × 90 sm — 115 000 so‘m, 2 tasi 180 000 so‘m (2026-yil oxirigacha).",
+      "description_ru": "Дагестанский твил-шёлк, 90 × 90 см — 115 000 сум, 2 шт. 180 000 сум (до конца 2026 года).",
+      "description_en": "Dagestan twill silk, 90 × 90 cm — 115,000 UZS, 2 for 180,000 UZS (until the end of 2026).",
+      "details": "Dog‘iston tvil sholk ro‘mollari — zich, silliq va mayin jiloli mato. Boshda chiroyli turadi, shaklini yaxshi ushlaydi va kam g‘ijimlanadi. O‘lchami 90 × 90 sm.\n\nTo‘plamda 13 xil print: mashhur brendlar uslubidagi monogramma va zanjir naqshlari hamda yevro stildagi gulli, geometrik va halqali dizaynlar. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 115 000 so‘m, istalgan 2 tasi — 180 000 so‘m. Maxsus narx 2026-yil oxirigacha amal qiladi (savatda o‘zi hisoblanadi).",
+      "details_ru": "Дагестанские платки из твил-шёлка — плотная гладкая ткань с мягким блеском. Красиво ложится, хорошо держит форму и мало мнётся. Размер 90 × 90 см.\n\nВ коллекции 13 принтов: монограммы и цепи в стиле известных брендов, а также цветочные, геометрические и кольцевые узоры в евростиле. Выберите принт, чтобы посмотреть фото.\n\nЦена 115 000 сум, любые 2 — 180 000 сум. Специальная цена действует до конца 2026 года (считается в корзине автоматически).",
+      "details_en": "Dagestan twill silk scarves — dense, smooth fabric with a soft sheen. Drapes beautifully, holds its shape and barely creases. Size 90 × 90 cm.\n\nThe collection has 13 prints: monograms and chains in the style of famous brands, plus Euro-style florals, geometrics and ring patterns. Pick a print to see its photo.\n\n115,000 UZS each, any 2 for 180,000 UZS. The special price is valid until the end of 2026 (applied in the cart automatically).",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
+      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
+      "price": "115 000 so‘m",
+      "price_ru": "115 000 сум",
+      "price_en": "115,000 UZS",
+      "price_note": "2 tasi — 180 000 so‘m (2026-yil oxirigacha)",
+      "price_note_ru": "2 шт. — 180 000 сум (до конца 2026 года)",
+      "price_note_en": "2 for 180,000 UZS (until end of 2026)",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 115000,
+      "price_usd": 0,
+      "promo3": true,
+      "promo_qty": 2,
+      "promo_total": 180000,
+      "promo_usd": 0,
+      "promo_group": "dagiston-tvil",
+      "badge": "Maxsus narx",
+      "badge_ru": "Спеццена",
+      "badge_en": "Special price",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1 Yashil zanjirli",
+          "name_ru": "№1 Зелёный с цепями",
+          "name_en": "No. 1 Green chain print",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-1.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-1.jpg"
+        },
+        {
+          "name": "№2 Bej-jigarrang",
+          "name_ru": "№2 Бежево-коричневый",
+          "name_en": "No. 2 Beige & brown",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-2.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-2.jpg"
+        },
+        {
+          "name": "№3 Kulrang-moviy gulli",
+          "name_ru": "№3 Серо-голубой с цветами",
+          "name_en": "No. 3 Grey-blue floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-3.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-3.jpg"
+        },
+        {
+          "name": "№4 Kulrang-bej gulli",
+          "name_ru": "№4 Серо-бежевый с цветами",
+          "name_en": "No. 4 Grey-beige floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-4.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-4.jpg"
+        },
+        {
+          "name": "№5 Oq-moviy yirik gulli",
+          "name_ru": "№5 Бело-голубой с крупными цветами",
+          "name_en": "No. 5 White & blue large floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-5.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-5.jpg"
+        },
+        {
+          "name": "№6 Havorang geometrik",
+          "name_ru": "№6 Голубой геометрический",
+          "name_en": "No. 6 Sky-blue geometric",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-6.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-6.jpg"
+        },
+        {
+          "name": "№7 Ko‘k, gulli hoshiyali",
+          "name_ru": "№7 Синий с цветочной каймой",
+          "name_en": "No. 7 Blue with floral border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-7.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-7.jpg"
+        },
+        {
+          "name": "№8 Havorang halqali",
+          "name_ru": "№8 Голубой с кольцами",
+          "name_en": "No. 8 Sky-blue rings",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-8.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-8.jpg"
+        },
+        {
+          "name": "№9 To‘q ko‘k halqali",
+          "name_ru": "№9 Тёмно-синий с кольцами",
+          "name_en": "No. 9 Navy rings",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-9.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-9.jpg"
+        },
+        {
+          "name": "№10 Oq-qizil gulli",
+          "name_ru": "№10 Бело-красный с цветами",
+          "name_en": "No. 10 White & red floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-10.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-10.jpg"
+        },
+        {
+          "name": "№11 Jigarrang-shaftoli gulli",
+          "name_ru": "№11 Коричнево-персиковый с цветами",
+          "name_en": "No. 11 Brown & peach floral",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-11.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-11.jpg"
+        },
+        {
+          "name": "№12 Bej rombli",
+          "name_ru": "№12 Бежевый с ромбами",
+          "name_en": "No. 12 Beige diamonds",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-12.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-12.jpg"
+        },
+        {
+          "name": "№13 Kulrang-jigarrang halqali",
+          "name_ru": "№13 Серо-коричневый с кольцами",
+          "name_en": "No. 13 Taupe rings",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/dagiston-tvil-13.jpg"
+          ],
+          "swatch": "images/dagiston-tvil-13.jpg"
+        }
+      ],
+      "sold_week": 7,
+      "ig_video": "https://www.instagram.com/eliteplatok/reel/DfeiZ4bszzi/"
+    },
+    {
+      "name": "Kapyushonli to‘plamlar",
+      "name_ru": "Комплекты с капюшоном",
+      "name_en": "Hooded Sets",
+      "images": [],
+      "cover": "images/kap-kulrang-2.jpg",
+      "size": "",
+      "size_ru": "",
+      "size_en": "",
+      "material": "",
+      "material_ru": "",
+      "material_en": "",
+      "color": "4 rang: kulrang, bej, lila, zaytun",
+      "color_ru": "4 цвета: серый, бежевый, сиреневый, оливковый",
+      "color_en": "4 colours: grey, beige, lilac, olive",
+      "description": "Kapyushonli keng va qulay to‘plamlar — 4 rang.",
+      "description_ru": "Свободные удобные комплекты с капюшоном — 4 цвета.",
+      "description_en": "Loose, comfortable hooded sets — 4 colours.",
+      "details": "Keng bichimli, yumshoq matodan kapyushonli to‘plamlar: harakatga erkinlik beradi, yopiq va qulay. Kundalik, sport va sayr uchun mos. Ranglar: kulrang, bej, lila va zaytun.",
+      "details_ru": "Свободные комплекты с капюшоном из мягкой ткани: не стесняют движений, закрытые и удобные. Для каждого дня, спорта и прогулок. Цвета: серый, бежевый, сиреневый и оливковый.",
+      "details_en": "Loose-fit hooded sets in soft fabric: free movement, modest and comfortable. For everyday, sport and walks. Colours: grey, beige, lilac and olive.",
+      "care": "",
+      "care_ru": "",
+      "care_en": "",
+      "price": "",
+      "price_ru": "",
+      "price_en": "",
+      "price_note": "",
+      "price_note_ru": "",
+      "price_note_en": "",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 0,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 0,
+      "promo_total": 0,
+      "promo_usd": 0,
+      "promo_group": "",
+      "badge": "",
+      "badge_ru": "",
+      "badge_en": "",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "",
+      "variants": [
+        {
+          "name": "Kulrang",
+          "name_ru": "Серый",
+          "name_en": "Grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kap-kulrang-1.jpg",
+            "images/kap-kulrang-2.jpg",
+            "images/kap-kulrang-3.jpg",
+            "images/kap-kulrang-4.jpg",
+            "images/kap-kulrang-5.jpg",
+            "images/kap-kulrang-6.jpg",
+            "images/kap-kulrang-7.jpg"
+          ],
+          "swatch": "images/kap-kulrang-1.jpg"
+        },
+        {
+          "name": "Bej",
+          "name_ru": "Бежевый",
+          "name_en": "Beige",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kap-bej-1.jpg",
+            "images/kap-bej-2.jpg",
+            "images/kap-bej-3.jpg",
+            "images/kap-bej-4.jpg",
+            "images/kap-bej-5.jpg",
+            "images/kap-bej-6.jpg",
+            "images/kap-bej-7.jpg",
+            "images/kap-bej-8.jpg"
+          ],
+          "swatch": "images/kap-bej-1.jpg"
+        },
+        {
+          "name": "Lila",
+          "name_ru": "Сиреневый",
+          "name_en": "Lilac",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kap-lila-1.jpg",
+            "images/kap-lila-2.jpg",
+            "images/kap-lila-3.jpg"
+          ],
+          "swatch": "images/kap-lila-1.jpg"
+        },
+        {
+          "name": "Zaytun",
+          "name_ru": "Оливковый",
+          "name_en": "Olive",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/kap-zaytun-1.jpg",
+            "images/kap-zaytun-2.jpg",
+            "images/kap-zaytun-3.jpg",
+            "images/kap-zaytun-4.jpg",
+            "images/kap-zaytun-5.jpg"
+          ],
+          "swatch": "images/kap-zaytun-1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Yevro sherst ro‘mollar",
+      "name_ru": "Европейские шерстяные платки",
+      "name_en": "European Wool Scarves",
+      "images": [],
+      "cover": "images/yevro-sherst-7-1.jpg",
+      "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
+      "material": "Yumshoq, sifatli sherst",
+      "material_ru": "Мягкая качественная шерсть",
+      "material_en": "Soft quality wool",
+      "color": "10 xil ikki tomonlama ro‘mol: bir tomoni bodom yoki gulli print, ikkinchi tomoni monogramma/panjara naqsh",
+      "color_ru": "10 двусторонних платков: одна сторона — пейсли или цветы, другая — монограмма/решётка",
+      "color_en": "10 reversible scarves: paisley or floral on one side, monogram/lattice on the other",
+      "description": "Noodatiy ikki tomonlama yevro sherst, 110 × 110 sm — 250 000 so‘m, 2 tasi 350 000 so‘m.",
+      "description_ru": "Необычная двусторонняя европейская шерсть, 110 × 110 см — 250 000 сум, 2 шт. 350 000 сум.",
+      "description_en": "Unusual reversible European wool, 110 × 110 cm — 250,000 UZS, 2 for 350,000 UZS.",
+      "details": "Mashhur Yevropa brendining lyuks nusxasi. Yevro sherst ro‘mollar — noodatiy, ikki tomonlama ro‘mollar: har birida ikki xil print bor. Bir tomonida bodom (paisley) yoki nafis gulli naqsh, ikkinchi tomonida bosiq monogramma yoki panjara naqsh. Kayfiyatingizga qarab qaysi tomonini kiyishni tanlaysiz — bitta ro‘mol, ikki xil obraz.\n\nYumshoq, sifatli sherst: issiq, tanaga yoqimli, boshda chiroyli turadi, chetlari nozik popukli.\n\nTo‘plamda 10 xil ro‘mol bor: kulrang, lilak, qora, yashil va jigarrang tuslarda. Har birini tanlab, ikkala tomonini ko‘ring — birinchi rasmda bir tomoni, ikkinchisida boshqa tomoni.\n\nO‘lchami 110 × 110 sm. Donasi 250 000 so‘m, istalgan 2 tasi — 350 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Люкс-копия известного европейского бренда. Европейские шерстяные платки — необычные, двусторонние: в каждом два разных принта. С одной стороны пейсли или изящные цветы, с другой — сдержанная монограмма или решётка. Выбирайте сторону по настроению — один платок, два образа.\n\nМягкая качественная шерсть: тёплая, приятная к телу, красиво держится, края с тонкой бахромой.\n\nВ коллекции 10 платков в серых, сиреневых, чёрных, зелёных и коричневых тонах. Выберите платок, чтобы увидеть обе стороны — на первом фото одна сторона, на втором другая.\n\nРазмер 110 × 110 см. Цена 250 000 сум, любые 2 — 350 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "A luxury copy of a famous European brand. European wool scarves — unusual and reversible: every scarf carries two different prints. Paisley or delicate florals on one side, a subtle monogram or lattice on the other. Choose the side to suit your mood — one scarf, two looks.\n\nSoft quality wool: warm and pleasant on the skin, it sits beautifully, with fine fringed edges.\n\n10 scarves in grey, lilac, black, green and brown. Pick one to see both sides — one side in the first photo, the other in the second.\n\nSize 110 × 110 cm. 250,000 UZS each, any 2 for 350,000 UZS (the special price is applied in the cart automatically).",
+      "care": "Qo‘lda, sovuq suvda, jun uchun vosita bilan yuving yoki kimyoviy tozalashga bering. Siqmang, tekis yoyib quriting.",
+      "care_ru": "Ручная стирка в холодной воде средством для шерсти или химчистка. Не отжимать, сушить в расправленном виде.",
+      "care_en": "Hand wash cold with a wool detergent, or dry clean. Do not wring, dry flat.",
+      "price": "125 000 so‘m",
+      "price_ru": "125 000 сум",
+      "price_en": "125,000 UZS",
+      "price_note": "Aksiya bugun soat 24:00 da tugaydi",
+      "price_note_ru": "Акция заканчивается сегодня в 24:00",
+      "price_note_en": "Offer ends today at midnight",
+      "old_price": "250 000 so‘m",
+      "old_price_ru": "250 000 сум",
+      "old_price_en": "250,000 UZS",
+      "price_number": 125000,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 2,
+      "promo_total": 350000,
+      "promo_usd": 0,
+      "promo_group": "yevro-sherst",
+      "badge": "−50%",
+      "badge_ru": "−50%",
+      "badge_en": "−50%",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "Kulrang-pushti bodom / monogramma",
+          "name_ru": "Серо-розовый пейсли / монограмма",
+          "name_en": "Grey & pink paisley / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-1-1.jpg",
+            "images/yevro-sherst-1-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-1-1.jpg"
+        },
+        {
+          "name": "Kulrang bodom / monogramma",
+          "name_ru": "Серый пейсли / монограмма",
+          "name_en": "Grey paisley / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-2-1.jpg",
+            "images/yevro-sherst-2-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-2-1.jpg"
+        },
+        {
+          "name": "Lilak bodom / monogramma",
+          "name_ru": "Сиреневый пейсли / монограмма",
+          "name_en": "Lilac paisley / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-3-1.jpg",
+            "images/yevro-sherst-3-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-3-1.jpg"
+        },
+        {
+          "name": "To‘q kulrang bodom / monogramma",
+          "name_ru": "Тёмно-серый пейсли / монограмма",
+          "name_en": "Dark grey paisley / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-4-1.jpg",
+            "images/yevro-sherst-4-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-4-1.jpg"
+        },
+        {
+          "name": "To‘q kulrang gulli / monogramma",
+          "name_ru": "Тёмно-серый с цветами / монограмма",
+          "name_en": "Dark grey floral / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-5-1.jpg",
+            "images/yevro-sherst-5-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-5-1.jpg"
+        },
+        {
+          "name": "Qora gulli / monogramma",
+          "name_ru": "Чёрный с цветами / монограмма",
+          "name_en": "Black floral / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-6-1.jpg",
+            "images/yevro-sherst-6-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-6-1.jpg"
+        },
+        {
+          "name": "Pushti-lilak gulli / monogramma",
+          "name_ru": "Розово-сиреневый с цветами / монограмма",
+          "name_en": "Pink & lilac floral / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-7-1.jpg",
+            "images/yevro-sherst-7-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-7-1.jpg"
+        },
+        {
+          "name": "Kulrang gulli / monogramma",
+          "name_ru": "Серый с цветами / монограмма",
+          "name_en": "Grey floral / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-8-1.jpg",
+            "images/yevro-sherst-8-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-8-1.jpg"
+        },
+        {
+          "name": "Yashil gulli / monogramma",
+          "name_ru": "Зелёный с цветами / монограмма",
+          "name_en": "Green floral / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-9-1.jpg",
+            "images/yevro-sherst-9-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-9-1.jpg"
+        },
+        {
+          "name": "Jigarrang gulli / monogramma",
+          "name_ru": "Коричневый с цветами / монограмма",
+          "name_en": "Brown floral / monogram",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sherst-10-1.jpg",
+            "images/yevro-sherst-10-2.jpg"
+          ],
+          "swatch": "images/yevro-sherst-10-1.jpg"
+        }
+      ],
+      "ig_video": "https://www.instagram.com/reel/Df9jzqEsYrH/",
+      "flash_to": "2026-11-25T00:00:00+05:00",
+      "flash_orig": {
+        "price": "250 000 so‘m",
+        "price_ru": "250 000 сум",
+        "price_en": "250,000 UZS",
+        "price_note": "Mashhur Yevropa brendining lyuks nusxasi · 2 tasi — 350 000 so‘m",
+        "price_note_ru": "Люкс-копия известного европейского бренда · 2 шт. — 350 000 сум",
+        "price_note_en": "Luxury copy of a famous European brand · 2 for 350,000 UZS",
+        "old_price": "",
+        "old_price_ru": "",
+        "old_price_en": "",
+        "price_number": 250000,
+        "price_usd": 0,
+        "promo3": true,
+        "badge": "Ikki tomonlama",
+        "badge_ru": "Двусторонний",
+        "badge_en": "Reversible"
+      }
+    },
+    {
+      "name": "«1969» printlari",
+      "name_ru": "Принты «1969»",
+      "name_en": "“1969” Prints",
+      "images": [],
+      "cover": "",
+      "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
+      "material": "Harir (Misr)",
+      "material_ru": "Харир (Египет)",
+      "material_en": "Harir (Egypt)",
+      "color": "10 xil rang, bodom (paisley) naqshi",
+      "color_ru": "10 расцветок, узор пейсли",
+      "color_en": "10 colourways, paisley print",
+      "description": "1969 Collection — vintage uslubdagi klassika. 110 × 110 sm, bodom naqshi — 230 000 so‘m, 2 tasi 350 000 so‘m.",
+      "description_ru": "1969 Collection — классика в винтажном стиле. 110 × 110 см, узор пейсли — 230 000 сум, 2 шт. 350 000 сум.",
+      "description_en": "1969 Collection — vintage-style classics. 110 × 110 cm, paisley print — 230,000 UZS, 2 for 350,000 UZS.",
+      "details": "1969 COLLECTION — TIMELESS ELEGANCE\n\nModa o‘zgaradi, haqiqiy klassika esa doim qadrlanadi. 1969 ro‘moli — faqat boshga o‘rash uchun aksessuar emas, balki vintage moda, retro estetika va klassik dizayn ruhini ifoda etuvchi uslub.\n\nNomi 1969-yildan olingan: bu yil moda tarixida o‘ziga xos davr bo‘lgan — retro va vintage uslubi ommalashgan, uzun ipak sharflar kiyimning muhim aksessuariga aylangan, gulli, nuqtali va chegarasi bezakli printlar keng qo‘llangan.\n\nKolleksiyada klassik bodom (paisley) naqshi 10 xil rangda: qizil, kulrang-oltin, havorang, bej-sariq, pushti-moviy, bordo, ko‘k va pushti-kulrang, bej-jigarrang va kulrang-zarg‘aldoq. Har bir naqshda alohida xarakter, har bir obrazda o‘zgacha uslub. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nMatosi — harir: mayin va yumshoq, yengil, shamolda yengil harakatlanadi, kam g‘ijimlanadi va tanaga yoqimli tegadi.\n\nDonasi 230 000 so‘m, istalgan 2 tasi — 350 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).\n\nELITE PLATOK — klassikadan ilhomlangan zamonaviy tanlov.",
+      "details_ru": "1969 COLLECTION — TIMELESS ELEGANCE\n\nМода меняется, а настоящая классика ценится всегда. Платок 1969 — не просто аксессуар, а стиль, передающий дух винтажной моды, ретро-эстетики и классического дизайна.\n\nНазвание отсылает к 1969 году — особой эпохе в истории моды: тогда стали популярны ретро и винтаж, длинные шёлковые шарфы превратились в важный аксессуар, широко использовались цветочные, точечные принты и принты с декоративной каймой.\n\nВ коллекции классический узор пейсли в 8 расцветках: красная, серо-золотая, голубая, бежево-жёлтая, розово-голубая, бордовая, синяя и розово-серая, бежево-коричневая и серо-оранжевая. В каждом узоре — свой характер, в каждом образе — особый стиль. Размер 110 × 110 см — удобно завязывать разными способами.\n\nТкань — харир: нежная и мягкая, лёгкая, красиво движется на ветру, мало мнётся и приятна к телу.\n\nЦена 230 000 сум, любые 2 — 350 000 сум (специальная цена считается в корзине автоматически).\n\nELITE PLATOK — современный выбор, вдохновлённый классикой.",
+      "details_en": "1969 COLLECTION — TIMELESS ELEGANCE\n\nFashion changes, true classics are always valued. The 1969 scarf is more than an accessory — it carries the spirit of vintage fashion, retro aesthetics and classic design.\n\nThe name refers to 1969, a distinctive era in fashion history: retro and vintage styles took off, long silk scarves became a key accessory, and floral, dotted and border-trimmed prints were everywhere.\n\nThe collection features a classic paisley print in 10 colourways: red, grey & gold, sky blue, beige & yellow, pink & blue, burgundy, blue and pink & grey. Each print has its own character, each look its own style. 110 × 110 cm — easy to tie in many ways.\n\nFabric — harir: fine and soft, lightweight, flows gently in the breeze, barely creases and feels pleasant on the skin.\n\n230,000 UZS each, any 2 for 350,000 UZS (the special price is applied in the cart automatically).\n\nELITE PLATOK — a modern choice inspired by the classics.",
+      "care": "Qo‘lda, sovuq suvda yuving. Siqmang, soyada quriting. Past haroratda dazmollang.",
+      "care_ru": "Ручная стирка в холодной воде или химчистка. Не отжимать, сушить в тени. Гладить при низкой температуре.",
+      "care_en": "Hand wash in cold water or dry clean. Do not wring, dry in the shade. Iron at low temperature.",
+      "price": "115 000 so‘m",
+      "price_ru": "115 000 сум",
+      "price_en": "115,000 UZS",
+      "price_note": "Aksiya bugun soat 24:00 da tugaydi",
+      "price_note_ru": "Акция заканчивается сегодня в 24:00",
+      "price_note_en": "Offer ends today at midnight",
+      "old_price": "230 000 so‘m",
+      "old_price_ru": "230 000 сум",
+      "old_price_en": "230,000 UZS",
+      "price_number": 115000,
+      "price_usd": 0,
+      "promo3": false,
+      "promo_qty": 2,
+      "promo_total": 350000,
+      "promo_usd": 0,
+      "promo_group": "romol-1969",
+      "badge": "−50%",
+      "badge_ru": "−50%",
+      "badge_en": "−50%",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1 Qizil",
+          "name_ru": "№1 Красный",
+          "name_en": "No. 1 Red",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-1-v3.jpg",
+            "images/romol-1969-1.jpg",
+            "images/romol-1969-1-2.jpg"
+          ],
+          "swatch": "images/romol-1969-1-v3-print.jpg"
+        },
+        {
+          "name": "№2 Kulrang-oltin",
+          "name_ru": "№2 Серо-золотой",
+          "name_en": "No. 2 Grey & gold",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-2-v3.jpg",
+            "images/romol-1969-2.jpg",
+            "images/romol-1969-2-2.jpg"
+          ],
+          "swatch": "images/romol-1969-2-v3-print.jpg"
+        },
+        {
+          "name": "№3 Havorang",
+          "name_ru": "№3 Голубой",
+          "name_en": "No. 3 Sky blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-3-v3.jpg",
+            "images/romol-1969-3.jpg",
+            "images/romol-1969-3-2.jpg"
+          ],
+          "swatch": "images/romol-1969-3-v3-print.jpg"
+        },
+        {
+          "name": "№4 Bej-sariq",
+          "name_ru": "№4 Бежево-жёлтый",
+          "name_en": "No. 4 Beige & yellow",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-4-v3.jpg",
+            "images/romol-1969-4.jpg",
+            "images/romol-1969-4-2.jpg"
+          ],
+          "swatch": "images/romol-1969-4-v3-print.jpg"
+        },
+        {
+          "name": "№5 Pushti-moviy",
+          "name_ru": "№5 Розово-голубой",
+          "name_en": "No. 5 Pink & blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-5-v3.jpg",
+            "images/romol-1969-5.jpg",
+            "images/romol-1969-5-2.jpg"
+          ],
+          "swatch": "images/romol-1969-5-v3-print.jpg"
+        },
+        {
+          "name": "№6 Bordo",
+          "name_ru": "№6 Бордовый",
+          "name_en": "No. 6 Burgundy",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-6-v3.jpg",
+            "images/romol-1969-6.jpg",
+            "images/romol-1969-6-2.jpg"
+          ],
+          "swatch": "images/romol-1969-6-v3-print.jpg"
+        },
+        {
+          "name": "№7 Ko‘k",
+          "name_ru": "№7 Синий",
+          "name_en": "No. 7 Blue",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-7-v3.jpg",
+            "images/romol-1969-7.jpg",
+            "images/romol-1969-7-2.jpg"
+          ],
+          "swatch": "images/romol-1969-7-v3-print.jpg"
+        },
+        {
+          "name": "№8 Pushti-kulrang",
+          "name_ru": "№8 Розово-серый",
+          "name_en": "No. 8 Pink & grey",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-8-v3.jpg",
+            "images/romol-1969-8.jpg",
+            "images/romol-1969-8-2.jpg"
+          ],
+          "swatch": "images/romol-1969-8-v3-print.jpg"
+        },
+        {
+          "name": "№9 Bej-jigarrang",
+          "name_ru": "№9 Бежево-коричневый",
+          "name_en": "No. 9 Beige-brown",
+          "hex": "",
+          "sold_out": false,
+          "images": [
+            "images/romol-1969-9-v3.jpg",
+            "images/romol-1969-9-2.jpg"
+          ],
+          "swatch": "images/romol-1969-9-v3-print.jpg"
+        },
+        {
+          "name": "№10 Kulrang-zarg‘aldoq",
+          "name_ru": "№10 Серо-оранжевый",
+          "name_en": "No. 10 Grey & orange",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/romol-1969-10.jpg"
+          ],
+          "swatch": "images/romol-1969-10-print.jpg"
+        }
+      ],
+      "ig_video": "https://www.instagram.com/reel/DfpPzorMPHI/",
+      "flash_to": "2026-11-25T00:00:00+05:00",
+      "flash_orig": {
+        "price": "230 000 so‘m",
+        "price_ru": "230 000 сум",
+        "price_en": "230,000 UZS",
+        "price_note": "2 tasi — 350 000 so‘m",
+        "price_note_ru": "2 шт. — 350 000 сум",
+        "price_note_en": "2 for 350,000 UZS",
+        "old_price": "",
+        "old_price_ru": "",
+        "old_price_en": "",
+        "price_number": 230000,
+        "price_usd": 0,
+        "promo3": true,
+        "badge": "Vintage Luxury",
+        "badge_ru": "Vintage Luxury",
+        "badge_en": "Vintage Luxury"
+      }
+    },
+    {
+      "name": "Yevro natural sholk ro‘mollar",
+      "name_ru": "Европейские платки из натурального шёлка",
+      "name_en": "European Natural Silk Scarves",
+      "images": [],
+      "cover": "images/yevro-sholk-8.jpg",
+      "size": "90 × 90 sm",
+      "size_ru": "90 × 90 см",
+      "size_en": "90 × 90 cm",
+      "material": "Natural sho‘yi · 100% qo‘l ishi",
+      "material_ru": "Натуральный шёлк · 100% ручная работа",
+      "material_en": "Natural silk · 100% handmade",
+      "color": "21 xil 3D print (maxsus buyurtma asosida)",
+      "color_ru": "21 вариант 3D-принта (по специальному заказу)",
+      "color_en": "21 3D-print designs (made to our special order)",
+      "description": "Natural sho‘yi, qo‘l ishi, 3D printlar — 28 $, 2 tasi 40 $.",
+      "description_ru": "Натуральный шёлк, ручная работа, 3D-принты — 28 $, 2 шт. 40 $.",
+      "description_en": "Natural silk, handmade, 3D prints — $28, 2 for $40.",
+      "details": "Yevro natural sholk ro‘mollar — 100% qo‘l ishi, chetlari ham qo‘lda nozik bukilgan. 3D usulida ishlangan printlar do‘konimizning maxsus buyurtmasi asosida ishlab chiqarilgan, shuning uchun bunday naqshlarni boshqa joyda topa olmaysiz. O‘lchami 90 × 90 sm.\n\nTo‘plamda 21 xil naqsh bor: gulli, klassik zanjirli, geometrik va manzarali printlar. Har bir naqshni tanlab, rasmini ko‘ring — ko‘pchiligida yoyilgan holdagi rasmi ham bor.\n\nNarxi 28 $, 2 tasi — 40 $ (maxsus narx). Ma’qul kelmagan ro‘mol qaytarib olinadi yoki almashtirib beriladi — buning uchun shourumimizga keling.",
+      "details_ru": "Европейские платки из натурального шёлка — 100% ручная работа, края подшиты вручную. Принты в технике 3D произведены по специальному заказу нашего магазина, поэтому таких узоров вы не найдёте в другом месте. Размер 90 × 90 см.\n\nВ коллекции 21 узор: цветочные, классические цепи, геометрия и пейзажные принты. Выберите узор, чтобы посмотреть фото — у большинства есть и фото в развёрнутом виде.\n\nЦена 28 $, 2 платка — 40 $ (специальная цена). Если платок не подошёл, мы примем его обратно или обменяем — для этого приходите в наш шоурум.",
+      "details_en": "European natural silk scarves — 100% handmade, with hand-rolled edges. The 3D prints are produced to our shop’s special order, so you won’t find these patterns anywhere else. Size 90 × 90 cm.\n\nThe collection has 21 patterns: florals, classic chains, geometric and scenic prints. Pick a pattern to see its photo — most also have a laid-out shot.\n\nPrice $28, any 2 for $40 (special price). If a scarf doesn’t suit you, we’ll take it back or exchange it — just visit our showroom.",
+      "care": "Faqat qo‘lda, sovuq suvda yuving yoki kimyoviy tozalashga bering. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Только ручная стирка в холодной воде или химчистка. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash in cold water only, or dry clean. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
+      "price": "14 $",
+      "price_ru": "14 $",
+      "price_en": "$14",
+      "price_note": "Aksiya bugun soat 24:00 da tugaydi",
+      "price_note_ru": "Акция заканчивается сегодня в 24:00",
+      "price_note_en": "Offer ends today at midnight",
+      "old_price": "28 $",
+      "old_price_ru": "28 $",
+      "old_price_en": "$28",
+      "price_number": 0,
+      "price_usd": 14.0,
+      "promo3": false,
+      "promo_qty": 2,
+      "promo_total": 0,
+      "promo_usd": 40,
+      "promo_group": "yevro-sholk",
+      "badge": "−50%",
+      "badge_ru": "−50%",
+      "badge_en": "−50%",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "№1",
+          "name_ru": "№1",
+          "name_en": "No. 1",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-1.jpg"
+          ],
+          "swatch": "images/yevro-sholk-1.jpg"
+        },
+        {
+          "name": "№2",
+          "name_ru": "№2",
+          "name_en": "No. 2",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-2.jpg",
+            "images/yevro-sholk-2-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-2.jpg"
+        },
+        {
+          "name": "№3",
+          "name_ru": "№3",
+          "name_en": "No. 3",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-3.jpg",
+            "images/yevro-sholk-3-2.jpg",
+            "images/yevro-sholk-3-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-3.jpg"
+        },
+        {
+          "name": "№4",
+          "name_ru": "№4",
+          "name_en": "No. 4",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-4.jpg"
+          ],
+          "swatch": "images/yevro-sholk-4.jpg"
+        },
+        {
+          "name": "№5",
+          "name_ru": "№5",
+          "name_en": "No. 5",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-5.jpg",
+            "images/yevro-sholk-5-2.jpg",
+            "images/yevro-sholk-5-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-5.jpg"
+        },
+        {
+          "name": "№6",
+          "name_ru": "№6",
+          "name_en": "No. 6",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-6.jpg",
+            "images/yevro-sholk-6-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-6.jpg"
+        },
+        {
+          "name": "№7",
+          "name_ru": "№7",
+          "name_en": "No. 7",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-7.jpg",
+            "images/yevro-sholk-7-2.jpg",
+            "images/yevro-sholk-7-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-7.jpg"
+        },
+        {
+          "name": "№8",
+          "name_ru": "№8",
+          "name_en": "No. 8",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-8.jpg",
+            "images/yevro-sholk-8-2.jpg",
+            "images/yevro-sholk-8-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-8.jpg"
+        },
+        {
+          "name": "№9",
+          "name_ru": "№9",
+          "name_en": "No. 9",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-9.jpg"
+          ],
+          "swatch": "images/yevro-sholk-9.jpg"
+        },
+        {
+          "name": "№10",
+          "name_ru": "№10",
+          "name_en": "No. 10",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-10.jpg",
+            "images/yevro-sholk-10-2.jpg",
+            "images/yevro-sholk-10-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-10.jpg"
+        },
+        {
+          "name": "№11",
+          "name_ru": "№11",
+          "name_en": "No. 11",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-11.jpg"
+          ],
+          "swatch": "images/yevro-sholk-11.jpg"
+        },
+        {
+          "name": "№12",
+          "name_ru": "№12",
+          "name_en": "No. 12",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-12.jpg",
+            "images/yevro-sholk-12-2.jpg",
+            "images/yevro-sholk-12-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-12.jpg"
+        },
+        {
+          "name": "№13",
+          "name_ru": "№13",
+          "name_en": "No. 13",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-13.jpg"
+          ],
+          "swatch": "images/yevro-sholk-13.jpg"
+        },
+        {
+          "name": "№14",
+          "name_ru": "№14",
+          "name_en": "No. 14",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-14.jpg",
+            "images/yevro-sholk-14-2.jpg",
+            "images/yevro-sholk-14-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-14.jpg"
+        },
+        {
+          "name": "№15",
+          "name_ru": "№15",
+          "name_en": "No. 15",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-15.jpg",
+            "images/yevro-sholk-15-2.jpg",
+            "images/yevro-sholk-15-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-15.jpg"
+        },
+        {
+          "name": "№16",
+          "name_ru": "№16",
+          "name_en": "No. 16",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-16.jpg",
+            "images/yevro-sholk-16-2.jpg",
+            "images/yevro-sholk-16-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-16.jpg"
+        },
+        {
+          "name": "№17",
+          "name_ru": "№17",
+          "name_en": "No. 17",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-17.jpg",
+            "images/yevro-sholk-17-2.jpg",
+            "images/yevro-sholk-17-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-17.jpg"
+        },
+        {
+          "name": "№18",
+          "name_ru": "№18",
+          "name_en": "No. 18",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-18.jpg",
+            "images/yevro-sholk-18-2.jpg",
+            "images/yevro-sholk-18-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-18.jpg"
+        },
+        {
+          "name": "№19",
+          "name_ru": "№19",
+          "name_en": "No. 19",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-19.jpg",
+            "images/yevro-sholk-19-2.jpg",
+            "images/yevro-sholk-19-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-19.jpg"
+        },
+        {
+          "name": "№20",
+          "name_ru": "№20",
+          "name_en": "No. 20",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-20.jpg",
+            "images/yevro-sholk-20-2.jpg",
+            "images/yevro-sholk-20-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-20.jpg"
+        },
+        {
+          "name": "№21",
+          "name_ru": "№21",
+          "name_en": "No. 21",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/yevro-sholk-21.jpg",
+            "images/yevro-sholk-21-2.jpg",
+            "images/yevro-sholk-21-3.jpg"
+          ],
+          "swatch": "images/yevro-sholk-21.jpg"
+        }
+      ],
+      "flash_to": "2026-11-25T00:00:00+05:00",
+      "flash_orig": {
+        "price": "28 $",
+        "price_ru": "28 $",
+        "price_en": "$28",
+        "price_note": "2 tasi — 40 $ · Qaytarish yoki almashtirish mumkin",
+        "price_note_ru": "2 шт. — 40 $ · Возврат или обмен",
+        "price_note_en": "2 for $40 · Returns or exchange",
+        "old_price": "",
+        "old_price_ru": "",
+        "old_price_en": "",
+        "price_number": 0,
+        "price_usd": 28,
+        "promo3": true,
+        "badge": "",
+        "badge_ru": "",
+        "badge_en": ""
+      }
+    },
+    {
       "name": "Qishki kashemir ro‘mollar",
       "name_ru": "Зимние кашемировые платки",
       "name_en": "Winter Cashmere Scarves",
@@ -2690,254 +3328,6 @@
           "swatch": "images/birrang-13.jpg"
         }
       ]
-    },
-    {
-      "name": "«Polo Lux» havorang to‘plam",
-      "name_ru": "Голубая коллекция «Polo Lux»",
-      "name_en": "«Polo Lux» Sky-Blue Collection",
-      "images": [],
-      "cover": "",
-      "size": "90 × 90 sm",
-      "size_ru": "90 × 90 см",
-      "size_en": "90 × 90 cm",
-      "material": "Italyan premium sholk",
-      "material_ru": "Итальянский премиум-шёлк",
-      "material_en": "Italian premium silk",
-      "color": "15 xil print, havorang va moviy tuslarda",
-      "color_ru": "15 принтов в голубых тонах",
-      "color_en": "15 prints in sky-blue tones",
-      "description": "Yevropaning mashhur kolleksiyalaridan — «Polo Lux» kolleksiyasi. Havorang va moviy tuslarda 15 xil print, 90 × 90 sm — 155 000 so‘m.",
-      "description_ru": "Из известных европейских коллекций — коллекция «Polo Lux». 15 принтов в голубых тонах, 90 × 90 см — 155 000 сум.",
-      "description_en": "From Europe’s famous collections — the «Polo Lux» collection. 15 prints in sky-blue tones, 90 × 90 cm — 155,000 UZS.",
-      "details": "«Polo Lux» — Yevropaning mashhur kolleksiyalaridan. Nafis havorang va moviy tuslardagi ro‘mollar: gulli, ornamentli, monogrammali, geometrik va manzarali printlar. O‘lchami 90 × 90 sm — boshga ham, bo‘yinga ham qulay bog‘lanadi.\n\nChetlari qo‘lda bukilib tikilgan (ruchnoy podgib): hoshiya nozik va tekis chiqadi, ro‘mol qimmatbaho ko‘rinadi. Barcha 15 xil print hozir sotuvda — har birini tanlab, boshdagi ko‘rinishini ko‘ring.\n\nNarxi — 155 000 so‘m.",
-      "details_ru": "«Polo Lux» — из известных европейских коллекций. Нежные платки в голубых тонах: цветы, орнаменты, монограммы, геометрия и пейзажи. Размер 90 × 90 см — удобно повязывать и на голову, и на шею.\n\nКрая подогнуты и подшиты вручную: кромка тонкая и ровная, платок выглядит дорого. Все 15 принтов в наличии — выберите принт, чтобы посмотреть, как он смотрится на голове.\n\nЦена — 155 000 сум.",
-      "details_en": "«Polo Lux» — from Europe’s famous collections. Delicate scarves in sky-blue tones: florals, ornaments, monograms, geometrics and scenic prints. 90 × 90 cm — easy to tie on the head or around the neck.\n\nThe hems are rolled and stitched by hand, giving a fine, even edge and a luxurious look. All 15 prints are in stock — pick one to see how it looks worn.\n\nPrice — 155,000 UZS.",
-      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda teskari tomonidan dazmollang.",
-      "care_ru": "Ручная стирка при 30°C. Не отжимать, сушить в тени. Гладить с изнанки при низкой температуре.",
-      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron inside out at low temperature.",
-      "price": "77 500 so‘m",
-      "price_ru": "77 500 сум",
-      "price_en": "77,500 UZS",
-      "price_note": "Aksiya bugun soat 24:00 da tugaydi",
-      "price_note_ru": "Акция заканчивается сегодня в 24:00",
-      "price_note_en": "Offer ends today at midnight",
-      "old_price": "155 000 so‘m",
-      "old_price_ru": "155 000 сум",
-      "old_price_en": "155,000 UZS",
-      "price_number": 77500,
-      "price_usd": 0,
-      "promo3": false,
-      "promo_qty": 0,
-      "promo_total": 0,
-      "promo_usd": 0,
-      "promo_group": "",
-      "badge": "−50%",
-      "badge_ru": "−50%",
-      "badge_en": "−50%",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "variants": [
-        {
-          "name": "№1 Bej-havorang, kamar naqshli",
-          "name_ru": "№1 Бежево-голубой, узор ремни",
-          "name_en": "No. 1 Beige & blue, belt print",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-1.jpg"
-          ],
-          "swatch": "images/polo-lux-1-print.jpg"
-        },
-        {
-          "name": "№2 Oq-havorang, ornamentli",
-          "name_ru": "№2 Бело-голубой орнамент",
-          "name_en": "No. 2 White & blue ornament",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-2.jpg"
-          ],
-          "swatch": "images/polo-lux-2-print.jpg"
-        },
-        {
-          "name": "№3 Havorang, mayda bodomli",
-          "name_ru": "№3 Голубой, мелкий пейсли",
-          "name_en": "No. 3 Sky blue, small paisley",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-3.jpg"
-          ],
-          "swatch": "images/polo-lux-3-print.jpg"
-        },
-        {
-          "name": "№4 Havorang, mayda gulli",
-          "name_ru": "№4 Голубой, мелкие цветы",
-          "name_en": "No. 4 Sky blue, small flowers",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-4.jpg"
-          ],
-          "swatch": "images/polo-lux-4-print.jpg"
-        },
-        {
-          "name": "№5 Havorang-pushti, manzarali",
-          "name_ru": "№5 Голубо-розовый, пейзаж",
-          "name_en": "No. 5 Blue & pink, scenic",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-5.jpg"
-          ],
-          "swatch": "images/polo-lux-5-print.jpg"
-        },
-        {
-          "name": "№6 Oq-havorang monogramma",
-          "name_ru": "№6 Бело-голубая монограмма",
-          "name_en": "No. 6 White & blue monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-6.jpg"
-          ],
-          "swatch": "images/polo-lux-6-print.jpg"
-        },
-        {
-          "name": "№7 Havorang-bej, hoshiyali",
-          "name_ru": "№7 Голубо-бежевый с каймой",
-          "name_en": "No. 7 Blue & beige, bordered",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-7.jpg"
-          ],
-          "swatch": "images/polo-lux-7-print.jpg"
-        },
-        {
-          "name": "№8 Oq-kulrang monogramma",
-          "name_ru": "№8 Бело-серая монограмма",
-          "name_en": "No. 8 White & grey monogram",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-8.jpg"
-          ],
-          "swatch": "images/polo-lux-8-print.jpg"
-        },
-        {
-          "name": "№9 Havorang atirgulli",
-          "name_ru": "№9 Голубые розы",
-          "name_en": "No. 9 Sky blue roses",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-9.jpg"
-          ],
-          "swatch": "images/polo-lux-9-print.jpg"
-        },
-        {
-          "name": "№10 Yashil-havorang, ornamentli",
-          "name_ru": "№10 Зелёно-голубой орнамент",
-          "name_en": "No. 10 Green & blue ornament",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-10.jpg"
-          ],
-          "swatch": "images/polo-lux-10-print.jpg"
-        },
-        {
-          "name": "№11 Ko‘k-havorang geometrik",
-          "name_ru": "№11 Сине-голубая геометрия",
-          "name_en": "No. 11 Blue geometric",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-11.jpg"
-          ],
-          "swatch": "images/polo-lux-11-print.jpg"
-        },
-        {
-          "name": "№12 Havorang-sariq naqshli",
-          "name_ru": "№12 Голубо-жёлтый узор",
-          "name_en": "No. 12 Blue & yellow pattern",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-12.jpg"
-          ],
-          "swatch": "images/polo-lux-12-print.jpg"
-        },
-        {
-          "name": "№13 Lavanda rang naqshli",
-          "name_ru": "№13 Лавандовый узор",
-          "name_en": "No. 13 Lavender pattern",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-13.jpg"
-          ],
-          "swatch": "images/polo-lux-13-print.jpg"
-        },
-        {
-          "name": "№14 Ko‘k-oq, katta gulli",
-          "name_ru": "№14 Сине-белый, крупный цветок",
-          "name_en": "No. 14 Blue & white, large flower",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-14.jpg"
-          ],
-          "swatch": "images/polo-lux-14-print.jpg"
-        },
-        {
-          "name": "№15 Ko‘k-oq abstrakt",
-          "name_ru": "№15 Сине-белая абстракция",
-          "name_en": "No. 15 Blue & white abstract",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/polo-lux-15.jpg"
-          ],
-          "swatch": "images/polo-lux-15-print.jpg"
-        }
-      ],
-      "flash_to": "2026-11-25T00:00:00+05:00",
-      "flash_orig": {
-        "price": "155 000 so‘m",
-        "price_ru": "155 000 сум",
-        "price_en": "155,000 UZS",
-        "price_note": "",
-        "price_note_ru": "",
-        "price_note_en": "",
-        "old_price": "",
-        "old_price_ru": "",
-        "old_price_en": "",
-        "price_number": 155000,
-        "price_usd": 0,
-        "promo3": false,
-        "badge": "",
-        "badge_ru": "",
-        "badge_en": ""
-      }
     },
     {
       "name": "«ADEL» namozlik",
@@ -3716,396 +4106,6 @@
       "price_en": "90,000 UZS",
       "price_note_ru": "2 шт. — 120 000 сум",
       "price_note_en": "2 for 120,000 UZS"
-    },
-    {
-      "name": "Paxta ipak ro‘mollar",
-      "name_ru": "Платки из хлопкового шёлка",
-      "name_en": "Cotton Silk Scarves",
-      "images": [],
-      "cover": "",
-      "size": "110 × 110 sm",
-      "size_ru": "110 × 110 см",
-      "size_en": "110 × 110 cm",
-      "material": "Paxta ipak",
-      "material_ru": "Хлопковый шёлк",
-      "material_en": "Cotton silk",
-      "color": "Bodom (paisley), kalligrafiya va gulli naqshlar — turli ranglarda",
-      "color_ru": "Пейсли, каллиграфия и цветочные узоры — разные расцветки",
-      "color_en": "Paisley, calligraphy and floral prints in various colours",
-      "description": "Paxta ipak ro‘mollar, 110 × 110 sm — 75 000 so‘m, 3 tasi 100 000 so‘m.",
-      "description_ru": "Платки из хлопкового шёлка, 110 × 110 см — 75 000 сум, 3 шт. 100 000 сум.",
-      "description_en": "Cotton silk scarves, 110 × 110 cm — 75,000 UZS, 3 for 100,000 UZS.",
-      "details": "Paxta ipak ro‘mollar — mayin, yengil va tanaga yoqimli mato, boshda chiroyli turadi. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nKolleksiyada bodom (paisley), kalligrafiya va gulli naqshlar turli ranglarda. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
-      "details_ru": "Платки из хлопкового шёлка — нежная, лёгкая и приятная к телу ткань, красиво смотрится на голове. Размер 110 × 110 см — удобно завязывать разными способами.\n\nВ коллекции пейсли, каллиграфия и цветочные узоры в разных расцветках. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
-      "details_en": "Cotton silk scarves — soft, light fabric that feels pleasant on the skin and looks beautiful worn. 110 × 110 cm — easy to tie in different ways.\n\nThe collection has paisley, calligraphy and floral prints in various colours. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
-      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
-      "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
-      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
-      "price": "75 000 so‘m",
-      "price_note": "3 tasi — 100 000 so‘m",
-      "old_price": "",
-      "old_price_ru": "",
-      "old_price_en": "",
-      "price_number": 75000,
-      "price_usd": 0,
-      "promo3": true,
-      "promo_qty": 3,
-      "promo_total": 100000,
-      "promo_group": "paxta-ipak",
-      "badge": "3 tasi 100 000",
-      "badge_ru": "3 за 100 000",
-      "badge_en": "3 for 100,000",
-      "is_new": true,
-      "sold_out": false,
-      "sold_photos": "",
-      "tags": "printli",
-      "variants": [
-        {
-          "name": "Jigarrang-pushti bodom",
-          "name_ru": "Коричнево-розовый пейсли",
-          "name_en": "Brown & pink paisley",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/paxta-ipak-1.jpg"
-          ],
-          "swatch": "images/paxta-ipak-1-print.jpg"
-        },
-        {
-          "name": "Binafsha-lavanda bodom",
-          "name_ru": "Фиолетово-лавандовый пейсли",
-          "name_en": "Purple & lavender paisley",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/paxta-ipak-2.jpg"
-          ],
-          "swatch": "images/paxta-ipak-2-print.jpg"
-        },
-        {
-          "name": "Pushti",
-          "name_ru": "Розовый",
-          "name_en": "Pink",
-          "hex": "#c49a96",
-          "images": [
-            "images/dubay-ipak-1.jpg",
-            "images/dubay-ipak-mato-1.jpg",
-            "images/bodom-1.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "To‘q zaytun",
-          "name_ru": "Тёмно-оливковый",
-          "name_en": "Dark olive",
-          "hex": "#4f4c3c",
-          "images": [
-            "images/dubay-ipak-2.jpg",
-            "images/dubay-ipak-mato-2.jpg",
-            "images/bodom-2.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "Sutrang",
-          "name_ru": "Молочный",
-          "name_en": "Milky white",
-          "hex": "#d8c9b6",
-          "images": [
-            "images/dubay-ipak-3.jpg",
-            "images/dubay-ipak-mato-3.jpg",
-            "images/bodom-4.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "Zaytun-bej",
-          "name_ru": "Оливково-бежевый",
-          "name_en": "Olive beige",
-          "hex": "#8f8466",
-          "images": [
-            "images/dubay-ipak-4.jpg",
-            "images/dubay-ipak-mato-4.jpg",
-            "images/bodom-5.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "Qizil-jigarrang",
-          "name_ru": "Красно-коричневый",
-          "name_en": "Reddish brown",
-          "hex": "#7a5546",
-          "images": [
-            "images/dubay-ipak-5.jpg",
-            "images/dubay-ipak-mato-5.jpg",
-            "images/bodom-6.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "Qizil",
-          "name_ru": "Красный",
-          "name_en": "Red",
-          "hex": "#a3283a",
-          "images": [
-            "images/dubay-ipak-6.jpg",
-            "images/dubay-ipak-mato-6.jpg",
-            "images/bodom-7.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "Fistashka",
-          "name_ru": "Фисташковый",
-          "name_en": "Pistachio",
-          "hex": "#a39a80",
-          "images": [
-            "images/dubay-ipak-7.jpg",
-            "images/dubay-ipak-mato-7.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "Bordo",
-          "name_ru": "Бордовый",
-          "name_en": "Burgundy",
-          "hex": "#6a2229",
-          "images": [
-            "images/dubay-ipak-8.jpg",
-            "images/dubay-ipak-mato-8.jpg",
-            "images/bodom-10.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "Yashil",
-          "name_ru": "Зелёный",
-          "name_en": "Green",
-          "hex": "#2f4a40",
-          "images": [
-            "images/dubay-ipak-9.jpg",
-            "images/dubay-ipak-mato-9.jpg",
-            "images/bodom-9.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "Zaytun-yashil",
-          "name_ru": "Оливково-зелёный",
-          "name_en": "Olive green",
-          "hex": "#5c5a34",
-          "images": [
-            "images/dubay-ipak-10.jpg",
-            "images/dubay-ipak-mato-10.jpg",
-            "images/bodom-12.jpg"
-          ],
-          "sold_out": false,
-          "card_hide": false
-        },
-        {
-          "name": "To‘q qizil",
-          "name_ru": "Тёмно-красный",
-          "name_en": "Deep red",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-3.jpg"
-          ],
-          "swatch": "images/bodom-3.jpg"
-        },
-        {
-          "name": "Qora-jigarrang",
-          "name_ru": "Чёрно-коричневый",
-          "name_en": "Black & brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-8.jpg"
-          ],
-          "swatch": "images/bodom-8.jpg"
-        },
-        {
-          "name": "Binafsha",
-          "name_ru": "Фиолетовый",
-          "name_en": "Purple",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/bodom-11.jpg"
-          ],
-          "swatch": "images/bodom-11.jpg"
-        },
-        {
-          "name": "Kalligrafiya — kulrang",
-          "name_ru": "Каллиграфия — серый",
-          "name_en": "Calligraphy — grey",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-1.jpg"
-          ],
-          "swatch": "images/kalligrafiya-1.jpg"
-        },
-        {
-          "name": "Kalligrafiya — bordo",
-          "name_ru": "Каллиграфия — бордовый",
-          "name_en": "Calligraphy — burgundy",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-2.jpg"
-          ],
-          "swatch": "images/kalligrafiya-2.jpg"
-        },
-        {
-          "name": "Kalligrafiya — oltin-jigarrang",
-          "name_ru": "Каллиграфия — золотисто-коричневый",
-          "name_en": "Calligraphy — golden brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-3.jpg"
-          ],
-          "swatch": "images/kalligrafiya-3.jpg"
-        },
-        {
-          "name": "Kalligrafiya — binafsha gulli",
-          "name_ru": "Каллиграфия — сиреневый с цветами",
-          "name_en": "Calligraphy — lilac floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-4.jpg"
-          ],
-          "swatch": "images/kalligrafiya-4.jpg"
-        },
-        {
-          "name": "Kalligrafiya — ko‘k gulli",
-          "name_ru": "Каллиграфия — синий с цветами",
-          "name_en": "Calligraphy — blue floral",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-5.jpg"
-          ],
-          "swatch": "images/kalligrafiya-5.jpg"
-        },
-        {
-          "name": "Kalligrafiya — qora, qizil atirgulli",
-          "name_ru": "Каллиграфия — чёрный с красными розами",
-          "name_en": "Calligraphy — black with red roses",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/kalligrafiya-6.jpg"
-          ],
-          "swatch": "images/kalligrafiya-6.jpg"
-        },
-        {
-          "name": "Gulli — Jigarrang",
-          "name_ru": "Цветочный — Коричневый",
-          "name_en": "Floral — Brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-1.jpg",
-            "images/gulli-toplam-1-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-1-2.jpg"
-        },
-        {
-          "name": "Gulli — Ko‘k",
-          "name_ru": "Цветочный — Синий",
-          "name_en": "Floral — Blue",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-2.jpg",
-            "images/gulli-toplam-2-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-2-2.jpg"
-        },
-        {
-          "name": "Gulli — Kulrang",
-          "name_ru": "Цветочный — Серый",
-          "name_en": "Floral — Grey",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-3.jpg",
-            "images/gulli-toplam-3-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-3-2.jpg"
-        },
-        {
-          "name": "Gulli — Zaytun",
-          "name_ru": "Цветочный — Оливковый",
-          "name_en": "Floral — Olive",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-4.jpg",
-            "images/gulli-toplam-4-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-4-2.jpg"
-        },
-        {
-          "name": "Gulli — Oltin-jigarrang",
-          "name_ru": "Цветочный — Золотисто-коричневый",
-          "name_en": "Floral — Golden brown",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/gulli-toplam-5.jpg",
-            "images/gulli-toplam-5-2.jpg"
-          ],
-          "swatch": "images/gulli-toplam-5-2.jpg"
-        },
-        {
-          "name": "Arab naqshli",
-          "name_ru": "Арабский узор",
-          "name_en": "Arabic pattern",
-          "hex": "",
-          "sold_out": true,
-          "card_hide": true,
-          "images": [
-            "images/arab-naqsh-1.jpg",
-            "images/arab-naqsh-2.jpg",
-            "images/arab-naqsh-3.jpg"
-          ],
-          "swatch": "images/arab-naqsh-1.jpg"
-        }
-      ],
-      "price_ru": "75 000 сум",
-      "price_en": "75,000 UZS",
-      "price_note_ru": "3 шт. — 100 000 сум",
-      "price_note_en": "3 for 100,000 UZS",
-      "sold_week": 7
     },
     {
       "name": "Turkiya tvil sholk ro‘mollar",
