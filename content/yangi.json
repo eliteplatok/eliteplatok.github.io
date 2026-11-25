@@ -1238,15 +1238,15 @@
       "material": "Dubay ipagi va o‘zbek paxtasi aralashmasi",
       "material_ru": "Смесь дубайского шёлка и узбекского хлопка",
       "material_en": "Blend of Dubai silk and Uzbek cotton",
-      "color": "Mayda gulli, kalligrafiya va katta gulli naqshlar — 21 xil print",
-      "color_ru": "Мелкие цветы, каллиграфия и крупные цветы — 21 принт",
-      "color_en": "Small florals, calligraphy and large florals — 21 prints",
+      "color": "Mayda gulli, kalligrafiya va katta gulli naqshlar — 20 xil print",
+      "color_ru": "Мелкие цветы, каллиграфия и крупные цветы — 20 принт",
+      "color_en": "Small florals, calligraphy and large florals — 20 prints",
       "description": "O‘zbek ipagi to‘plami: Dubay ipagi va o‘zbek paxtasi aralashmasi, 110 × 110 sm. O‘zbekistonda ishlab chiqarilgan. Donasi 75 000 so‘m, 3 tasi 100 000 so‘m.",
       "description_ru": "Коллекция «Узбекский шёлк»: смесь дубайского шёлка и узбекского хлопка, 110 × 110 см. Производство — Узбекистан. 75 000 сум, 3 шт. 100 000 сум.",
       "description_en": "Uzbek Silk Collection: a blend of Dubai silk and Uzbek cotton, 110 × 110 cm. Made in Uzbekistan. 75,000 UZS each, 3 for 100,000 UZS.",
-      "details": "O‘zbek ipagi to‘plami — Dubay ipagi va o‘zbek paxtasi aralashmasidan to‘qilgan mayin, yengil ro‘mollar. Tanaga yoqimli, havo o‘tkazadi va boshda chiroyli turadi. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nIshlab chiqaruvchi: O‘zbekiston.\n\nHozir sotuvda 21 xil print: mayda gulli, kalligrafiya, katta gulli va bodom naqshlar. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
-      "details_ru": "Коллекция «Узбекский шёлк» — нежные, лёгкие платки из смеси дубайского шёлка и узбекского хлопка. Приятны к телу, пропускают воздух и красиво смотрятся на голове. Размер 110 × 110 см — удобно завязывать разными способами.\n\nПроизводство: Узбекистан.\n\nСейчас в продаже 21 принт: мелкие цветы, каллиграфия, крупные цветы и пейсли. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
-      "details_en": "Uzbek Silk Collection — soft, light scarves woven from a blend of Dubai silk and Uzbek cotton. Pleasant on the skin, breathable and beautiful worn. 110 × 110 cm — easy to tie in different ways.\n\nMade in Uzbekistan.\n\n21 prints in stock now: small florals, calligraphy, large florals and paisley. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
+      "details": "O‘zbek ipagi to‘plami — Dubay ipagi va o‘zbek paxtasi aralashmasidan to‘qilgan mayin, yengil ro‘mollar. Tanaga yoqimli, havo o‘tkazadi va boshda chiroyli turadi. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nIshlab chiqaruvchi: O‘zbekiston.\n\nHozir sotuvda 20 xil print: mayda gulli, kalligrafiya, katta gulli va bodom naqshlar. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Коллекция «Узбекский шёлк» — нежные, лёгкие платки из смеси дубайского шёлка и узбекского хлопка. Приятны к телу, пропускают воздух и красиво смотрятся на голове. Размер 110 × 110 см — удобно завязывать разными способами.\n\nПроизводство: Узбекистан.\n\nСейчас в продаже 20 принт: мелкие цветы, каллиграфия, крупные цветы и пейсли. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Uzbek Silk Collection — soft, light scarves woven from a blend of Dubai silk and Uzbek cotton. Pleasant on the skin, breathable and beautiful worn. 110 × 110 cm — easy to tie in different ways.\n\nMade in Uzbekistan.\n\n20 prints in stock now: small florals, calligraphy, large florals and paisley. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
       "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
       "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
@@ -1280,18 +1280,6 @@
             "images/paxta-ipak-1.jpg"
           ],
           "swatch": "images/paxta-ipak-1-print.jpg"
-        },
-        {
-          "name": "Bordo, mayda gulli",
-          "name_ru": "Бордовый, мелкие цветы",
-          "name_en": "Burgundy, small flowers",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/ozbek-ipagi-1.jpg"
-          ],
-          "swatch": "images/ozbek-ipagi-1-print.jpg"
         },
         {
           "name": "Qora, zarg‘aldoq gulli",
@@ -2075,6 +2063,127 @@
         }
       ],
       "ig_video": "https://www.instagram.com/reel/Df4JVnKMZ8U/"
+    },
+    {
+      "name": "Bodom sholk ro‘mollar",
+      "name_ru": "Платки «Бодом» из шёлка",
+      "name_en": "Bodom Silk Scarves",
+      "images": [],
+      "cover": "",
+      "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
+      "material": "Sholk va paxta (kotton) aralashmasi",
+      "material_ru": "Смесь шёлка и хлопка",
+      "material_en": "Silk and cotton blend",
+      "color": "Bodom (paisley) naqshlar va mayda gulli print — 6 xil",
+      "color_ru": "Пейсли и мелкие цветы — 6 принтов",
+      "color_en": "Paisley and small floral prints — 6 designs",
+      "description": "Bodom sholk ro‘mollar: sholk va kotton aralashmasi, mayin va yumshoq, boshda sirpanmaydi. Donasi 75 000 so‘m, 3 tasi 100 000 so‘m.",
+      "description_ru": "Платки «Бодом»: смесь шёлка и хлопка, нежные и мягкие, не скользят на голове. 75 000 сум, 3 шт. 100 000 сум.",
+      "description_en": "Bodom silk scarves: a silk and cotton blend, soft and gentle, they don't slip on the head. 75,000 UZS each, 3 for 100,000 UZS.",
+      "details": "Bodom sholk ro‘mollar — sholk va kotton aralashmasidan tayyorlangan yuqori sifatli ro‘mollar. Mato mayin va yumshoq, ammo boshda sirpanmaydi — kun bo‘yi joyida turadi.\n\nKolleksiyada klassik bodom (paisley) naqshlar va mayda gulli print — 6 xil. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Платки «Бодом» — качественные платки из смеси шёлка и хлопка. Ткань нежная и мягкая, но не скользит на голове — держится весь день.\n\nВ коллекции классический пейсли и мелкий цветочный принт — 6 вариантов. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Bodom silk scarves — high-quality scarves made from a silk and cotton blend. The fabric is soft and gentle, yet doesn't slip on the head — it stays in place all day.\n\nThe collection has classic paisley and a small floral print — 6 designs. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
+      "price": "75 000 so‘m",
+      "price_note": "3 tasi — 100 000 so‘m",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 75000,
+      "price_usd": 0,
+      "promo3": true,
+      "promo_qty": 3,
+      "promo_total": 100000,
+      "promo_group": "paxta-ipak",
+      "badge": "3 tasi 100 000",
+      "badge_ru": "3 за 100 000",
+      "badge_en": "3 for 100,000",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "Pushti-jigarrang bodom, jigarrang hoshiya",
+          "name_ru": "Розово-коричневый пейсли, коричневая кайма",
+          "name_en": "Pink-brown paisley, brown border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-sholk-1.jpg"
+          ],
+          "swatch": "images/bodom-sholk-1-print.jpg"
+        },
+        {
+          "name": "Jigarrang-bej bodom, zaytun hoshiya",
+          "name_ru": "Коричнево-бежевый пейсли, оливковая кайма",
+          "name_en": "Brown-beige paisley, olive border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-sholk-2.jpg"
+          ],
+          "swatch": "images/bodom-sholk-2-print.jpg"
+        },
+        {
+          "name": "Kulrang-jigarrang bodom, zaytun hoshiya",
+          "name_ru": "Серо-коричневый пейсли, оливковая кайма",
+          "name_en": "Grey-brown paisley, olive border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-sholk-3.jpg"
+          ],
+          "swatch": "images/bodom-sholk-3-print.jpg"
+        },
+        {
+          "name": "Terrakota bodom, qora hoshiya",
+          "name_ru": "Терракотовый пейсли, чёрная кайма",
+          "name_en": "Terracotta paisley, black border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-sholk-4.jpg"
+          ],
+          "swatch": "images/bodom-sholk-4-print.jpg"
+        },
+        {
+          "name": "Zaytun-jigarrang bodom, yashil hoshiya",
+          "name_ru": "Оливково-коричневый пейсли, зелёная кайма",
+          "name_en": "Olive-brown paisley, green border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/bodom-sholk-5.jpg"
+          ],
+          "swatch": "images/bodom-sholk-5-print.jpg"
+        },
+        {
+          "name": "Bordo, mayda gulli",
+          "name_ru": "Бордовый, мелкие цветы",
+          "name_en": "Burgundy, small flowers",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/ozbek-ipagi-1.jpg"
+          ],
+          "swatch": "images/ozbek-ipagi-1-print.jpg"
+        }
+      ],
+      "price_ru": "75 000 сум",
+      "price_en": "75,000 UZS",
+      "price_note_ru": "3 шт. — 100 000 сум",
+      "price_note_en": "3 for 100,000 UZS"
     },
     {
       "name": "Sarpo set",
