@@ -3627,7 +3627,7 @@
       "sold_photos": "",
       "tags": "",
       "ig_video": "",
-      "sold_week": 4
+      "sold_week": 8
     },
     {
       "name": "Xitoy kashemir ro‘mollar",
@@ -4412,7 +4412,9 @@
       "price_ru": "155 000 сум",
       "price_en": "155,000 UZS",
       "price_note_ru": "",
-      "price_note_en": ""
+      "price_note_en": "",
+      "ig_video": "https://www.instagram.com/reel/DgE5tAbRpIA/",
+      "sold_week": 4
     },
     {
       "name": "Eksklyuziv ikki tomonlama ro‘mol «Atirgul va yurak»",
