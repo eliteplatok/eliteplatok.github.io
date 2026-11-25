@@ -15,14 +15,14 @@
   "landmark": "«Cheesesteak» va «Emsan» yonida",
   "landmark_ru": "рядом с «Cheesesteak» и «Emsan»",
   "landmark_en": "next to Cheesesteak and Emsan",
-  "map_link": "https://www.google.com/maps/search/?api=1&query=76XW%2B8GP+Tashkent",
+  "map_link": "https://maps.app.goo.gl/TkeVjaCq1PfYubg97",
   "map_button": "Xaritada ko‘rish",
   "map_button_ru": "Посмотреть на карте",
   "map_button_en": "View on map",
   "call_button": "Qo‘ng‘iroq qilish",
   "call_button_ru": "Позвонить",
   "call_button_en": "Call us",
-  "map_query": "76XW+8GP Tashkent",
+  "map_query": "41.299518,69.245763",
   "map_pin": "Seoul Mun · O‘ng qirg‘oq, 1-qavat, D-58",
   "map_pin_ru": "Seoul Mun · правое крыло, 1-й этаж, D-58",
   "map_pin_en": "Seoul Mun · right wing, 1st floor, D-58",
@@ -37,5 +37,26 @@
   "exit_stay_en": "Stay on the site",
   "exit_leave": "Chiqish",
   "exit_leave_ru": "Выйти",
-  "exit_leave_en": "Leave"
+  "exit_leave_en": "Leave",
+  "maps_label": "Boshqa xaritada ochish:",
+  "maps_label_ru": "Открыть в другой карте:",
+  "maps_label_en": "Open in another map:",
+  "maps": [
+    {
+      "name": "Google Maps",
+      "url": "https://maps.app.goo.gl/TkeVjaCq1PfYubg97"
+    },
+    {
+      "name": "Yandex Maps",
+      "url": "https://yandex.uz/maps/?pt=69.245763,41.299518&z=18&l=map"
+    },
+    {
+      "name": "2GIS",
+      "url": "https://2gis.uz/tashkent/geo/69.245763,41.299518"
+    },
+    {
+      "name": "Apple Maps",
+      "url": "https://maps.apple.com/?ll=41.299518,69.245763&q=Elite%20Platok"
+    }
+  ]
 }

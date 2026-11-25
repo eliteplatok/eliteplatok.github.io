@@ -15,6 +15,10 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   [hidden]{display:none!important}
+  .maps{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:16px;font-size:12px;color:var(--muted)}
+  .maps a{border:1px solid var(--line);padding:7px 12px;letter-spacing:.06em;color:var(--ink)}
+  .maps a:hover{border-color:var(--ink)}
+  #exitm .maps{justify-content:center;margin:-6px 0 18px}
   #exitm{position:fixed;inset:0;z-index:9999;background:rgba(43,38,34,.55);display:flex;align-items:center;justify-content:center;padding:16px}
   #exitm .box{background:var(--bg);max-width:440px;width:100%;padding:30px 26px 24px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative}
   #exitm h3{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1.2;margin-bottom:12px}
@@ -639,6 +643,7 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt
 const txt = s => esc(s).replace(/\n/g, '<br>');
 const img = p => esc(String(p || '').replace(/^\/+/, ''));
 const ext = 'target="_blank" rel="noopener"';
+const mapsHtml = D => (D.maps || []).length ? `<div class="maps"><span>${txt(D.maps_label)}</span>${D.maps.map(m => `<a href="${esc(m.url)}" ${ext}>${txt(m.name)}</a>`).join('')}</div>` : '';
 const smP = p => { const s = String(p || '').replace(/^\/+/, ''); return s.startsWith('images/') && !s.startsWith('images/sm/') ? 'images/sm/' + s.slice(7) : s; };
 const mdP = p => { const s = String(p || '').replace(/^\/+/, ''); return s.startsWith('images/') && !/^images\/(sm|md)\//.test(s) ? 'images/md/' + s.slice(7) : s; };
 const rImg = (p, sizes, extra = '') => `src="${img(p)}" srcset="${esc(mdP(p))} 900w, ${img(p)} 1400w" sizes="${sizes}" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='${img(p)}'" ${extra}`;
@@ -1335,6 +1340,7 @@ ${O.show !== false ? `<section class="offer" id="aksiya">
       <a href="${esc(D.map_link)}" ${ext} class="btn solid">${txt(D.map_button)}</a>
       <a href="${tel(S.phone)}" class="btn">${txt(D.call_button)}</a>
     </div>
+    ${mapsHtml(D)}
   </div>
 </div></section>
 
@@ -1443,7 +1449,7 @@ addEventListener('popstate', fromHash);
     el.id = 'exitm';
     el.innerHTML = `<div class="box" role="dialog" aria-modal="true"><button class="x" aria-label="×">×</button>
       <h3>${txt(D.exit_title)}</h3><p>${txt(D.exit_text)}</p>
-      <div class="adr">📍 ${D.map_link ? `<a href="${esc(D.map_link)}" ${ext}>${txt(D.address)}</a>` : txt(D.address)}</div>
+      <div class="adr">📍 ${D.map_link ? `<a href="${esc(D.map_link)}" ${ext}>${txt(D.address)}</a>` : txt(D.address)}</div>${mapsHtml(D)}
       <div class="b"><button class="btn solid" data-a="stay">${txt(D.exit_stay)}</button>
       ${S.instagram ? `<a class="btn" href="${esc(S.instagram)}" ${ext}>Instagram</a>` : ''}
       ${onLeave ? `<button class="btn" data-a="leave">${txt(D.exit_leave)}</button>` : ''}</div></div>`;
