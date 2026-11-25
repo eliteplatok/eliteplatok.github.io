@@ -1270,6 +1270,18 @@
       "tags": "printli",
       "variants": [
         {
+          "name": "Jigarrang-pushti bodom",
+          "name_ru": "Коричнево-розовый пейсли",
+          "name_en": "Brown & pink paisley",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/paxta-ipak-1.jpg"
+          ],
+          "swatch": "images/paxta-ipak-1-print.jpg"
+        },
+        {
           "name": "Bordo, mayda gulli",
           "name_ru": "Бордовый, мелкие цветы",
           "name_en": "Burgundy, small flowers",
@@ -1496,18 +1508,6 @@
             "images/ozbek-ipagi-19.jpg"
           ],
           "swatch": "images/ozbek-ipagi-19-print.jpg"
-        },
-        {
-          "name": "Jigarrang-pushti bodom",
-          "name_ru": "Коричнево-розовый пейсли",
-          "name_en": "Brown & pink paisley",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/paxta-ipak-1.jpg"
-          ],
-          "swatch": "images/paxta-ipak-1-print.jpg"
         },
         {
           "name": "Binafsha-lavanda bodom",
