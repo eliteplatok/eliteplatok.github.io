@@ -22,5 +22,8 @@
     "images/abaya-hero-bog.jpg",
     "images/abaya-1-6.jpg",
     "images/abaya-1-7.jpg"
-  ]
+  ],
+  "nudge": "Tovarlarni ko‘rish",
+  "nudge_ru": "Смотреть товары",
+  "nudge_en": "View products"
 }

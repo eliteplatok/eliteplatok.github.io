@@ -129,6 +129,16 @@
     html.min .allc{display:none}
   }
   /* performance: animations only run while their block is on screen */
+  /* shorter cover: products peek below + nudge pill */
+  .hero.mini{height:calc(70svh - 73px)!important;min-height:360px!important}
+  html.min #yangi{padding-top:22px!important}
+  html.min #yangi .head{margin-bottom:14px!important}
+  #nudge{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));z-index:60;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:13px 22px;background:#2a1912;color:#f8f2e7;border:1px solid rgba(248,242,231,.35);border-radius:999px;font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;box-shadow:0 8px 28px rgba(0,0,0,.28);white-space:nowrap;cursor:pointer;transition:opacity .35s,transform .35s;animation:nudgeB 2.2s ease-in-out 1s infinite}
+  #nudge svg{width:16px;height:16px}
+  #nudge.off{opacity:0;pointer-events:none;transform:translate(-50%,20px);animation:none}
+  @keyframes nudgeB{0%,100%{margin-bottom:0}50%{margin-bottom:7px}}
+  @media (max-width:760px){.hero.mini{height:calc(66svh - 60px)!important}#nudge{font-size:11px;padding:12px 18px;bottom:calc(80px + env(safe-area-inset-bottom))}}
+  @media (prefers-reduced-motion:reduce){#nudge{animation:none}}
   .opt:not(.inview) *,.opt:not(.inview)::after,.hero:not(.inview) *{animation-play-state:paused!important}
   .stars-l i{will-change:opacity,transform}
   /* plain ivory hero with tiny twinkling stars */
@@ -1387,6 +1397,17 @@ function boot(again) {
   document.documentElement.lang = LANG;
   document.getElementById('app').innerHTML = render(loc(RAW));
   bindMiniBrand();
+  (() => { // nudge pill: invites visitors to scroll down to the products
+    const hero = document.querySelector('.hero.mini'), tgt = document.getElementById('yangi');
+    document.getElementById('nudge')?.remove();
+    if (!hero || !tgt) return;
+    const b = document.createElement('button'); b.id = 'nudge'; b.type = 'button';
+    b.innerHTML = `<span>${txt((loc(RAW)['bosh-ekran'] || {}).nudge || 'Tovarlarni ko‘rish')}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M6 13l6 6 6-6"/></svg>`;
+    b.onclick = () => tgt.scrollIntoView({ behavior: 'smooth' });
+    document.body.appendChild(b);
+    const upd = () => b.classList.toggle('off', scrollY > hero.offsetHeight * .35 || location.hash.length > 1 && location.hash !== '#yangi' && location.hash !== '#');
+    addEventListener('scroll', upd, { passive: true }); upd();
+  })();
   const vis = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('inview', e.isIntersecting)), { rootMargin: '80px' });
   document.querySelectorAll('.opt, .hero').forEach(el => vis.observe(el));
   const io = new IntersectionObserver(es => es.forEach(e => {
