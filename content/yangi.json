@@ -1238,15 +1238,15 @@
       "material": "Dubay ipagi va o‘zbek paxtasi aralashmasi",
       "material_ru": "Смесь дубайского шёлка и узбекского хлопка",
       "material_en": "Blend of Dubai silk and Uzbek cotton",
-      "color": "Kalligrafiya, katta gulli va bodom naqshlar — 14 xil print",
-      "color_ru": "Каллиграфия, крупные цветы и пейсли — 14 принтов",
-      "color_en": "Calligraphy, large florals and paisley — 14 prints",
+      "color": "Katta gulli va bodom naqshlar — 7 xil print",
+      "color_ru": "Крупные цветы и пейсли — 7 принтов",
+      "color_en": "Large florals and paisley — 7 prints",
       "description": "O‘zbek ipagi to‘plami: Dubay ipagi va o‘zbek paxtasi aralashmasi, 110 × 110 sm. O‘zbekistonda ishlab chiqarilgan. Donasi 75 000 so‘m, 3 tasi 100 000 so‘m.",
       "description_ru": "Коллекция «Узбекский шёлк»: смесь дубайского шёлка и узбекского хлопка, 110 × 110 см. Производство — Узбекистан. 75 000 сум, 3 шт. 100 000 сум.",
       "description_en": "Uzbek Silk Collection: a blend of Dubai silk and Uzbek cotton, 110 × 110 cm. Made in Uzbekistan. 75,000 UZS each, 3 for 100,000 UZS.",
-      "details": "O‘zbek ipagi to‘plami — Dubay ipagi va o‘zbek paxtasi aralashmasidan to‘qilgan mayin, yengil ro‘mollar. Tanaga yoqimli, havo o‘tkazadi va boshda chiroyli turadi. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nIshlab chiqaruvchi: O‘zbekiston.\n\nHozir sotuvda 14 xil print: kalligrafiya, katta gulli va bodom naqshlar. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
-      "details_ru": "Коллекция «Узбекский шёлк» — нежные, лёгкие платки из смеси дубайского шёлка и узбекского хлопка. Приятны к телу, пропускают воздух и красиво смотрятся на голове. Размер 110 × 110 см — удобно завязывать разными способами.\n\nПроизводство: Узбекистан.\n\nСейчас в продаже 14 принт: каллиграфия, крупные цветы и пейсли. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
-      "details_en": "Uzbek Silk Collection — soft, light scarves woven from a blend of Dubai silk and Uzbek cotton. Pleasant on the skin, breathable and beautiful worn. 110 × 110 cm — easy to tie in different ways.\n\nMade in Uzbekistan.\n\n14 prints in stock now: calligraphy, large florals and paisley. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
+      "details": "O‘zbek ipagi to‘plami — Dubay ipagi va o‘zbek paxtasi aralashmasidan to‘qilgan mayin, yengil ro‘mollar. Tanaga yoqimli, havo o‘tkazadi va boshda chiroyli turadi. O‘lchami 110 × 110 sm — turli usulda o‘rashga qulay.\n\nIshlab chiqaruvchi: O‘zbekiston.\n\nHozir sotuvda 7 xil print: katta gulli va bodom naqshlar. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Коллекция «Узбекский шёлк» — нежные, лёгкие платки из смеси дубайского шёлка и узбекского хлопка. Приятны к телу, пропускают воздух и красиво смотрятся на голове. Размер 110 × 110 см — удобно завязывать разными способами.\n\nПроизводство: Узбекистан.\n\nСейчас в продаже 7 принтов: крупные цветы и пейсли. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "Uzbek Silk Collection — soft, light scarves woven from a blend of Dubai silk and Uzbek cotton. Pleasant on the skin, breathable and beautiful worn. 110 × 110 cm — easy to tie in different ways.\n\nMade in Uzbekistan.\n\n7 prints in stock now: large florals and paisley. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
       "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
       "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
       "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
@@ -1280,90 +1280,6 @@
             "images/paxta-ipak-1.jpg"
           ],
           "swatch": "images/paxta-ipak-1-print.jpg"
-        },
-        {
-          "name": "Bordo kalligrafiya",
-          "name_ru": "Бордовая каллиграфия",
-          "name_en": "Burgundy calligraphy",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/ozbek-ipagi-8.jpg"
-          ],
-          "swatch": "images/ozbek-ipagi-8-print.jpg"
-        },
-        {
-          "name": "Kulrang kalligrafiya",
-          "name_ru": "Серая каллиграфия",
-          "name_en": "Grey calligraphy",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/ozbek-ipagi-9.jpg"
-          ],
-          "swatch": "images/ozbek-ipagi-9-print.jpg"
-        },
-        {
-          "name": "Oq-kulrang kalligrafiya, to‘q ko‘k hoshiya",
-          "name_ru": "Бело-серая каллиграфия, тёмно-синяя кайма",
-          "name_en": "White-grey calligraphy, navy border",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/ozbek-ipagi-10.jpg"
-          ],
-          "swatch": "images/ozbek-ipagi-10-print.jpg"
-        },
-        {
-          "name": "Oq kalligrafiya, qora hoshiya",
-          "name_ru": "Белая каллиграфия, чёрная кайма",
-          "name_en": "White calligraphy, black border",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/ozbek-ipagi-11.jpg"
-          ],
-          "swatch": "images/ozbek-ipagi-11-print.jpg"
-        },
-        {
-          "name": "Bej kalligrafiya, qora hoshiya",
-          "name_ru": "Бежевая каллиграфия, чёрная кайма",
-          "name_en": "Beige calligraphy, black border",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/ozbek-ipagi-12.jpg"
-          ],
-          "swatch": "images/ozbek-ipagi-12-print.jpg"
-        },
-        {
-          "name": "Oq kalligrafiya, oltin-jigarrang hoshiya",
-          "name_ru": "Белая каллиграфия, золотисто-коричневая кайма",
-          "name_en": "White calligraphy, golden-brown border",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/ozbek-ipagi-13.jpg"
-          ],
-          "swatch": "images/ozbek-ipagi-13-print.jpg"
-        },
-        {
-          "name": "Kulrang-jigarrang kalligrafiya",
-          "name_ru": "Серо-коричневая каллиграфия",
-          "name_en": "Grey-brown calligraphy",
-          "hex": "",
-          "sold_out": false,
-          "card_hide": false,
-          "images": [
-            "images/ozbek-ipagi-14.jpg"
-          ],
-          "swatch": "images/ozbek-ipagi-14-print.jpg"
         },
         {
           "name": "Oq, jigarrang lolali",
@@ -2227,6 +2143,139 @@
             "images/ozbek-ipagi-7.jpg"
           ],
           "swatch": "images/ozbek-ipagi-7-print.jpg"
+        }
+      ],
+      "price_ru": "75 000 сум",
+      "price_en": "75,000 UZS",
+      "price_note_ru": "3 шт. — 100 000 сум",
+      "price_note_en": "3 for 100,000 UZS"
+    },
+    {
+      "name": "«Arabica» sholk ro‘mollar",
+      "name_ru": "Платки «Arabica» из шёлка",
+      "name_en": "«Arabica» Silk Scarves",
+      "images": [],
+      "cover": "",
+      "size": "110 × 110 sm",
+      "size_ru": "110 × 110 см",
+      "size_en": "110 × 110 cm",
+      "material": "Sholk va paxta (kotton) aralashmasi",
+      "material_ru": "Смесь шёлка и хлопка",
+      "material_en": "Silk and cotton blend",
+      "color": "Arab kalligrafiyasi naqshlari — 7 xil",
+      "color_ru": "Узоры арабской каллиграфии — 7 вариантов",
+      "color_en": "Arabic calligraphy prints — 7 designs",
+      "description": "«Arabica» sholk ro‘mollar: sholk va kotton aralashmasi, mayin va yumshoq, boshda sirpanmaydi. Donasi 75 000 so‘m, 3 tasi 100 000 so‘m.",
+      "description_ru": "Платки «Arabica»: смесь шёлка и хлопка, нежные и мягкие, не скользят на голове. 75 000 сум, 3 шт. 100 000 сум.",
+      "description_en": "«Arabica» silk scarves: a silk and cotton blend, soft and gentle, they don't slip on the head. 75,000 UZS each, 3 for 100,000 UZS.",
+      "details": "«Arabica» sholk ro‘mollar — sholk va kotton aralashmasidan tayyorlangan yuqori sifatli ro‘mollar. Mato mayin va yumshoq, ammo boshda sirpanmaydi — kun bo‘yi joyida turadi.\n\nKolleksiyada arab kalligrafiyasi naqshlari — 7 xil. Har bir printni tanlab, rasmini ko‘ring.\n\nDonasi 75 000 so‘m, istalgan 3 tasi — 100 000 so‘m (maxsus narx savatda o‘zi hisoblanadi).",
+      "details_ru": "Платки «Arabica» — качественные платки из смеси шёлка и хлопка. Ткань нежная и мягкая, но не скользит на голове — держится весь день.\n\nВ коллекции узоры арабской каллиграфии — 7 вариантов. Выберите принт, чтобы посмотреть фото.\n\nЦена 75 000 сум, любые 3 — 100 000 сум (специальная цена считается в корзине автоматически).",
+      "details_en": "«Arabica» silk scarves — high-quality scarves made from a silk and cotton blend. The fabric is soft and gentle, yet doesn't slip on the head — it stays in place all day.\n\nThe collection has Arabic calligraphy prints — 7 designs. Pick a print to see its photo.\n\n75,000 UZS each, any 3 for 100,000 UZS (the special price is applied in the cart automatically).",
+      "care": "30°C da qo‘lda yuving. Siqmang, soyada quriting. Past haroratda, mato orqali dazmollang.",
+      "care_ru": "Стирать вручную при 30°C. Не отжимать, сушить в тени. Гладить через ткань при низкой температуре.",
+      "care_en": "Hand wash at 30°C. Do not wring, dry in the shade. Iron through a cloth at low temperature.",
+      "price": "75 000 so‘m",
+      "price_note": "3 tasi — 100 000 so‘m",
+      "old_price": "",
+      "old_price_ru": "",
+      "old_price_en": "",
+      "price_number": 75000,
+      "price_usd": 0,
+      "promo3": true,
+      "promo_qty": 3,
+      "promo_total": 100000,
+      "promo_group": "paxta-ipak",
+      "badge": "3 tasi 100 000",
+      "badge_ru": "3 за 100 000",
+      "badge_en": "3 for 100,000",
+      "is_new": true,
+      "sold_out": false,
+      "sold_photos": "",
+      "tags": "printli",
+      "variants": [
+        {
+          "name": "Bordo kalligrafiya",
+          "name_ru": "Бордовая каллиграфия",
+          "name_en": "Burgundy calligraphy",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/ozbek-ipagi-8.jpg"
+          ],
+          "swatch": "images/ozbek-ipagi-8-print.jpg"
+        },
+        {
+          "name": "Kulrang kalligrafiya",
+          "name_ru": "Серая каллиграфия",
+          "name_en": "Grey calligraphy",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/ozbek-ipagi-9.jpg"
+          ],
+          "swatch": "images/ozbek-ipagi-9-print.jpg"
+        },
+        {
+          "name": "Oq-kulrang kalligrafiya, to‘q ko‘k hoshiya",
+          "name_ru": "Бело-серая каллиграфия, тёмно-синяя кайма",
+          "name_en": "White-grey calligraphy, navy border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/ozbek-ipagi-10.jpg"
+          ],
+          "swatch": "images/ozbek-ipagi-10-print.jpg"
+        },
+        {
+          "name": "Oq kalligrafiya, qora hoshiya",
+          "name_ru": "Белая каллиграфия, чёрная кайма",
+          "name_en": "White calligraphy, black border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/ozbek-ipagi-11.jpg"
+          ],
+          "swatch": "images/ozbek-ipagi-11-print.jpg"
+        },
+        {
+          "name": "Bej kalligrafiya, qora hoshiya",
+          "name_ru": "Бежевая каллиграфия, чёрная кайма",
+          "name_en": "Beige calligraphy, black border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/ozbek-ipagi-12.jpg"
+          ],
+          "swatch": "images/ozbek-ipagi-12-print.jpg"
+        },
+        {
+          "name": "Oq kalligrafiya, oltin-jigarrang hoshiya",
+          "name_ru": "Белая каллиграфия, золотисто-коричневая кайма",
+          "name_en": "White calligraphy, golden-brown border",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/ozbek-ipagi-13.jpg"
+          ],
+          "swatch": "images/ozbek-ipagi-13-print.jpg"
+        },
+        {
+          "name": "Kulrang-jigarrang kalligrafiya",
+          "name_ru": "Серо-коричневая каллиграфия",
+          "name_en": "Grey-brown calligraphy",
+          "hex": "",
+          "sold_out": false,
+          "card_hide": false,
+          "images": [
+            "images/ozbek-ipagi-14.jpg"
+          ],
+          "swatch": "images/ozbek-ipagi-14-print.jpg"
         }
       ],
       "price_ru": "75 000 сум",
