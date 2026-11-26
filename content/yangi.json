@@ -5455,12 +5455,12 @@
       "name_en": "Organza scarf",
       "images": [],
       "cover": "images/organza.jpg",
-      "size": "110 × 110 sm",
-      "size_ru": "110 × 110 см",
-      "size_en": "110 × 110 cm",
-      "material": "Organza",
-      "material_ru": "Органза",
-      "material_en": "Organza",
+      "size": "100 × 100 sm",
+      "size_ru": "100 × 100 см",
+      "size_en": "100 × 100 cm",
+      "material": "Organza (Turkiya)",
+      "material_ru": "Органза (Турция)",
+      "material_en": "Organza (Turkey)",
       "color": "Oq, jigarrang, kulrang, sutrang, zumrad",
       "color_ru": "Белый, коричневый, серый, молочный, изумрудный",
       "color_en": "White, brown, grey, milky white, emerald",
@@ -5473,10 +5473,10 @@
       "care": "Sovuq suvda qo‘lda yuving. Siqmang. Past haroratda, mato orqali dazmollang.",
       "care_ru": "Стирать вручную в холодной воде. Не отжимать. Гладить через ткань при низкой температуре.",
       "care_en": "Hand wash in cold water. Do not wring. Iron through a cloth at low temperature.",
-      "price": "",
+      "price": "90 000 so‘m",
       "price_note": "",
       "old_price": "",
-      "price_number": 0,
+      "price_number": 90000,
       "price_usd": 0,
       "promo3": false,
       "promo_qty": 3,
@@ -5514,7 +5514,9 @@
           "sold_out": false,
           "card_hide": false
         }
-      ]
+      ],
+      "price_ru": "90 000 сум",
+      "price_en": "90,000 UZS"
     }
   ]
 }
