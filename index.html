@@ -1572,7 +1572,7 @@ function saleApply() {
   for (const file of ['yangi', 'top']) { const d = RAW[file]; if (!d || !Array.isArray(d.products)) continue;
     d.products = d.products.filter(p => {
       if (!names.has(p.name) || !(+p.price_number > 0) || p.sold_out) return true;
-      const full = +p.price_number, cut = Math.round(full * k / 500) * 500, q = { ...p }, sets = (M.sets || {})[p.name] || null,
+      const full = +((p.flash_to && p.flash_orig && p.flash_orig.price_number) || p.price_number), cut = Math.round(full * k / 500) * 500, q = { ...p }, sets = (M.sets || {})[p.name] || null,
         sn = (mid, cur, ff) => Object.entries(sets).map(([n, s]) => n + mid + ff(+s)).join(' · ') + cur; // «2 tasi — 80 000 · 3 tasi — 115 000 so‘m»
       if (on) Object.assign(q, { mk_sale: true, price_number: cut, price_usd: 0, promo3: false, sold_week: 0,
         price: f(cut) + ' so‘m', price_ru: f(cut) + ' сум', price_en: cut.toLocaleString('en-US') + ' UZS',

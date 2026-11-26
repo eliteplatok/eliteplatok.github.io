@@ -380,5 +380,9 @@
   "unpaid_title_en": "Payment not completed",
   "unpaid_text": "To‘lov o‘tmadi yoki bekor qilindi. Savatingiz saqlandi — qayta urinib ko‘ring yoki menejer orqali buyurtma bering.",
   "unpaid_text_ru": "Оплата не прошла или была отменена. Корзина сохранена — попробуйте снова или оформите заказ через менеджера.",
-  "unpaid_text_en": "The payment failed or was cancelled. Your cart is saved — try again or order through a manager."
+  "unpaid_text_en": "The payment failed or was cancelled. Your cart is saved — try again or order through a manager.",
+  "flash_to": "2026-12-01T00:00:00+05:00",
+  "flash_top_bar": "❄️ Qishki kolleksiyaga −50% · tugashiga:",
+  "flash_top_bar_ru": "❄️ Зимняя коллекция −50% · до конца:",
+  "flash_top_bar_en": "❄️ Winter collection −50% · ends in:"
 }
