@@ -47,19 +47,19 @@
       "title": "Yetkazamiz",
       "title_ru": "Доставляем",
       "title_en": "We deliver",
-      "text": "Toshkent bo‘ylab kun davomida kuryer orqali, viloyatlarga EMU pochta orqali 1–2 kunda yetkazamiz.",
-      "text_ru": "По Ташкенту — курьером в течение дня, в регионы — почтой EMU за 1–2 дня.",
-      "text_en": "Within Tashkent by courier the same day, to the regions via EMU post in 1–2 days."
+      "text": "Toshkent bo‘ylab — Yandex taksi orqali, viloyatlarga — BTS yoki EMU pochta orqali (EMU — 1–2 kunda) yetkazamiz.",
+      "text_ru": "По Ташкенту — через Яндекс Такси, в регионы — через BTS или почтой EMU (EMU — за 1–2 дня).",
+      "text_en": "Within Tashkent via Yandex Taxi, to the regions via BTS or EMU post (EMU — 1–2 days)."
     }
   ],
   "info": [
     {
-      "title": "EMU pochta — 1–2 kunda",
-      "title_ru": "Почта EMU — за 1–2 дня",
-      "title_en": "EMU post — in 1–2 days",
-      "text": "O‘zbekiston bo‘ylab EMU pochta orqali 1–2 kunda yetkazamiz. Toshkent bo‘ylab — kun davomida kuryer orqali.",
-      "text_ru": "По всему Узбекистану — почтой EMU за 1–2 дня. По Ташкенту — курьером в течение дня.",
-      "text_en": "Across Uzbekistan via EMU post in 1–2 days. Within Tashkent — by courier the same day."
+      "title": "Yandex taksi · BTS · EMU",
+      "title_ru": "Яндекс Такси · BTS · EMU",
+      "title_en": "Yandex Taxi · BTS · EMU",
+      "text": "Toshkent bo‘ylab Yandex taksi orqali yetkazamiz. Viloyatlarga — BTS yoki EMU pochta orqali (EMU — 1–2 kunda).",
+      "text_ru": "По Ташкенту доставляем через Яндекс Такси. В регионы — через BTS или почтой EMU (EMU — за 1–2 дня).",
+      "text_en": "Within Tashkent we deliver via Yandex Taxi. To the regions — via BTS or EMU post (EMU — 1–2 days)."
     },
     {
       "title": "Qulay to‘lov",
